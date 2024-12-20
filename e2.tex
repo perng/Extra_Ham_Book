@@ -1,0 +1,867 @@
+
+\chapter{E2: Operating Procedures}
+
+
+% ------------------------------------------------------------------------
+% SECTION E2A: Amateur Radio in Space
+% ------------------------------------------------------------------------
+\section{E2A: Amateur Radio in Space - Reaching for the Stars!}
+
+\subsection*{Understanding the Basics}
+Get ready to launch into the exciting world of \textcolor{myblue}{\textbf{amateur radio in space}}! We’re talking about communicating through satellites, whether they're circling the Earth or zipping through the solar system. This area covers how ham operators use those wonderful tools in space.
+\par
+    You will get to know  \textcolor{myblue}{\textbf{Amateur Satellites}}, often known as "birds", these are our space based relays for communicating! Understanding the basics of \textcolor{myblue}{\textbf{Orbital Mechanics}} will make sure that you understand how the position of the satellites changes relative to Earth. This knowledge will give you a better chance to access these satellites when they're above your horizon.
+\par
+We'll also touch upon  \textcolor{myblue}{\textbf{Frequencies and Modes}} used for communication with satellites as well as \textcolor{myblue}{\textbf{satellite hardware}}, and \textcolor{myblue}{\textbf{satellite operations}}—the nitty-gritty of how to make contact!
+
+\mybox{mygreen}{
+  \textbf{Fun Fact}: Did you know that some satellites used by hams are designed, built and launched by amateurs? This is a remarkable demonstration of what a combined enthusiasm, ingenuity, and team work can create. There are plenty of resources available to learn and join these communities!
+  }
+
+
+\subsection{Inverting Linear Transponders}
+
+An \textit{inverting linear transponder} is a specialized type of radio repeater, commonly employed in communication satellites, that reverses the frequency order of the received signals before re-transmission. This section details its operation and purpose.
+
+\subsubsection*{Basic Function}
+
+Unlike traditional repeaters that operate on a single frequency pair, a linear transponder handles a range, or band, of frequencies. Its core functionalities include:
+
+\begin{itemize}
+    \item \textbf{Receiving a frequency band:} The transponder receives a range of frequencies on the uplink (ground to satellite).
+    \item \textbf{Frequency conversion:} This received band is shifted to a different frequency range for the downlink (satellite to ground). This frequency translation is essential to prevent interference between the uplink and downlink signals.
+    \item \textbf{Frequency order inversion:} This is the defining characteristic of an inverting transponder. A signal received at the higher end of the uplink band is re-transmitted at the \textit{lower} end of the downlink band, and vice versa.
+\end{itemize}
+
+\subsubsection*{Mechanism of Inversion}
+
+Frequency inversion is typically achieved through a \textit{mixer} circuit. A mixer combines two input frequencies, producing output signals at the sum and difference of these frequencies. In an inverting transponder:
+
+\begin{enumerate}
+    \item The received uplink signal is mixed with a locally generated frequency within the transponder.
+    \item The \textit{difference} frequency resulting from this mixing process is selected for re-transmission. This selection of the difference frequency is what causes the frequency inversion.
+\end{enumerate}
+
+\textbf{Example:} Consider a transponder with an uplink band of 144–146 MHz and a downlink band of 435–437 MHz. If a signal is received at 145 MHz (mid-band) and mixed with a local oscillator frequency of 580 MHz, the difference frequency is $580 \, \text{MHz} - 145 \, \text{MHz} = 435 \, \text{MHz}$. However, a signal received at 146 MHz (high end of the uplink) results in a difference frequency of $580 \, \text{MHz} - 146 \, \text{MHz} = 434 \, \text{MHz}$. This demonstrates the inversion; a higher uplink frequency corresponds to a lower downlink frequency.
+
+\subsubsection*{Rationale for Inversion: Doppler Mitigation}
+
+The primary motivation for using inverting transponders, particularly in satellite communications, is to mitigate the \textit{Doppler effect}.
+
+\begin{itemize}
+    \item \textbf{Doppler effect:} The relative motion between a satellite and a ground station causes a frequency shift in the received signal. The frequency increases as the satellite approaches and decreases as it recedes.
+    \item \textbf{Inverting transponders and Doppler:} The frequency inversion in the transponder effectively cancels out a significant portion of the Doppler shift. A positive Doppler shift on the uplink is largely counteracted by a negative Doppler shift on the downlink, simplifying tuning for ground stations.
+\end{itemize}
+
+\subsubsection*{Consequences of Inversion}
+
+The frequency inversion has some important consequences:
+
+\begin{itemize}
+    \item \textbf{Sideband reversal:} Single-sideband (SSB) signals are inverted. Transmitting with upper sideband (USB) on the uplink will result in lower sideband (LSB) reception on the downlink, and vice versa.
+    \item \textbf{Tuning considerations:} Operators must account for the frequency inversion when tuning their radios. Tuning "up" on the uplink necessitates tuning "down" on the downlink.
+\end{itemize}
+
+In conclusion, inverting linear transponders are crucial components in satellite communication systems, effectively mitigating the Doppler effect and facilitating reliable communication despite the relative motion between satellites and ground stations.
+
+
+  
+\subsection*{Key Concepts for the Questions}
+\begin{itemize}
+    \item \textbf{Ascending/Descending Pass:} The direction a satellite appears to be moving across the sky.
+    \item \textbf{Linear Transponder:} A type of satellite repeater that re-transmits signals without demodulating and remodulating them.
+    \item \textbf{Mode:} Describes the uplink and downlink frequency bands used by a satellite.
+    \item \textbf{Keplerian Elements:}  Parameters defining the orbit of a satellite.
+    \item \textbf{Circular Polarization:}  The method of transmission where the signal rotates as it transmits. This helps reduce the fading from signal reflections.
+    \item \textbf{Effective Radiated Power (ERP):} Total power transmitted by antenna when considering the antenna gain. This limit is applied to many satellite operations.
+     \item \textbf{Geostationary orbit:} The satellite is fixed at the same location on earth relative to ground.
+    \item \textbf{L and S bands:} specific frequency bands commonly used in satellite communication.
+    \item \textbf{Digital store-and-forward:} A mode of satellite operation which stores and transmits messages.
+
+\end{itemize}
+
+\subsection*{Practice Questions}
+\begin{enumerate}
+      \item What is the direction of an ascending pass for an amateur satellite?
+    \begin{enumerate}
+        \item  From west to east
+       \item  From east to west
+        \item \textbf{C. From south to north}
+        \item  From north to south
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+    When a satellite is ascending, its path will appear to be moving from south towards north.
+    
+    \item Which of the following is characteristic of an inverting linear transponder?
+       \begin{enumerate}
+        \item  Doppler shift is reduced because the uplink and downlink shifts are in opposite directions
+        \item  Signal position in the band is reversed
+       \item  Upper sideband on the uplink becomes lower sideband on the downlink, and vice versa
+        \item \textbf{D. All these choices are correct}
+        \end{enumerate}
+       \textcolor{myred}{Explanation:}
+      In an inverting linear transponder, all of these behaviors happen to the signal.
+
+     \item How is an upload signal processed by an inverting linear transponder?
+     \begin{enumerate}
+        \item  The signal is detected and remodulated on the reverse sideband
+        \item  The signal is passed through a nonlinear filter
+         \item  The signal is reduced to I and Q components, and the Q component is filtered out
+        \item \textbf{D. The signal is mixed with a local oscillator signal and the difference product is transmitted}
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+    The signal is not demodulated, but simply mixed with a local oscillator for transmitting on different frequency.
+
+    \item What is meant by the "mode" of an amateur radio satellite?
+    \begin{enumerate}
+    \item  Whether the satellite is in a low earth or geostationary orbit
+        \item \textbf{B. The satellite's uplink and downlink frequency bands}
+        \item  The satellite's orientation with respect to the Earth
+       \item  Whether the satellite is in a polar or equatorial orbit
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+    The mode of a satellite refers to frequency ranges for uplink (receive) and downlink (transmit) for the satellite.
+     
+      \item What do the letters in a satellite's mode designator specify?
+        \begin{enumerate}
+        \item  Power limits for uplink and downlink transmissions
+     \item  The location of the ground control station
+         \item  The polarization of uplink and downlink signals
+        \item \textbf{D. The uplink and downlink frequency ranges}
+    \end{enumerate}
+       \textcolor{myred}{Explanation:}
+        Satellite designators specify the frequency ranges. For example "Mode VU" indicates a VHF uplink and UHF downlink.
+       
+        \item What are Keplerian elements?
+        \begin{enumerate}
+        \item \textbf{A. Parameters that define the orbit of a satellite}
+        \item  Phase reversing elements in a Yagi antenna
+    \item  High-emission heater filaments used in magnetron tubes
+        \item  Encrypting codes used for spread spectrum modulation
+    \end{enumerate}
+        \textcolor{myred}{Explanation:}
+        Keplerian elements are the parameters that define the orbit of any celestial objects.
+    
+        \item Which of the following types of signals can be relayed through a linear transponder?
+        \begin{enumerate}
+         \item  FM and CW
+       \item  SSB and SSTV
+       \item  PSK and packet
+       \item \textbf{D. All these choices are correct}
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     A linear transponder transmits all types of signal through.
+      
+         \item Why should effective radiated power (ERP) be limited to a satellite that uses a linear transponder?
+    \begin{enumerate}
+      \item  To prevent creating errors in the satellite telemetry
+       \item \textbf{B. To avoid reducing the downlink power to all other users}
+       \item  To prevent the satellite from emitting out-of-band signals
+        \item  To avoid interfering with terrestrial QSOS
+     \end{enumerate}
+   \textcolor{myred}{Explanation:}
+   Higher ERP in transponders, can saturate and cause reduction in transmitted power for other users.
+
+   \item What do the terms "L band" and "S band" specify?
+      \begin{enumerate}
+      \item \textbf{A. The 23- and 13-centimeter bands}
+        \item  The 2-meter and 70-centimeter bands
+        \item  FM and digital store-and-forward systems
+         \item  Which sideband to use
+      \end{enumerate}
+        \textcolor{myred}{Explanation:}
+   L-Band and S-Band are among the many band designators. The specify a frequency range. L-band is roughly 23 cm wavelength and S band is around 13 cm wavelength.
+         
+          \item What type of satellite appears to stay in one position in the sky?
+    \begin{enumerate}
+        \item  HEO
+         \item \textbf{B. Geostationary}
+         \item  Geomagnetic
+          \item  LEO
+     \end{enumerate}
+     \textcolor{myred}{Explanation:}
+        A geostationary satellite appears in the same position due to the specific altitude and speed it circles earth, so that the orbit speed matches with Earth's rotation.
+
+  \item What type of antenna can be used to minimize the effects of spin modulation and Faraday rotation?
+        \begin{enumerate}
+        \item  A linearly polarized antenna
+      \item \textbf{B. A circularly polarized antenna}
+        \item  An isotropic antenna
+       \item  A log-periodic dipole array
+     \end{enumerate}
+       \textcolor{myred}{Explanation:}
+        Circularly polarized antennas minimizes polarization problems of the received signals due to spin or Faraday rotation.
+      
+       \item What is the purpose of digital store-and-forward functions on an amateur radio satellite?
+    \begin{enumerate}
+     \item  To upload operational software for the transponder
+     \item  To delay download of telemetry between satellites
+      \item \textbf{C. To hold digital messages in the satellite for later download}
+        \item  To relay messages between satellites
+      \end{enumerate}
+    \textcolor{myred}{Explanation:}
+        Digital store-and-forward enables a satellite to store digital messages and send them later.
+ 
+ \item Question Deleted (section not renumbered)
+\end{enumerate}
+
+% ------------------------------------------------------------------------
+% SECTION E2B: Television Practices
+% ------------------------------------------------------------------------
+\section{E2B: Television Practices - Seeing is Believing!}
+
+\subsection*{Understanding the Basics}
+In this section, we'll be diving into the world of television through the lens of amateur radio. Get ready for concepts that are a bit different from audio communications.
+We'll look at \textcolor{myblue}{\textbf{fast-scan television (FSTV) standards and techniques}}, which are used for high-resolution moving video signals, along with \textcolor{myblue}{\textbf{slow-scan television (SSTV) standards and techniques}}, a more resource-friendly way to send still images over radio. We will understand how images are created with these technologies.
+
+\mybox{mygreen}{
+  \textbf{Fun Fact}: Did you know that SSTV originated as a way to send images over the radio bands in the early 1900's?  It was designed to accommodate the limited bandwidth of radio channels at that time, using audio tones to represent different aspects of an image!
+  }
+
+\subsection*{Key Concepts for the Questions}
+\begin{itemize}
+    \item \textbf{Fast-Scan TV (FSTV):} A method to transmit high resolution, moving video.
+    \item \textbf{Slow-Scan TV (SSTV):} A method of transmitting still images slowly over radio.
+    \item \textbf{Interlaced Scanning:} A method of generating a picture by scanning alternating lines.
+    \item \textbf{Vestigial Sideband Modulation:} A type of amplitude modulation where one sideband is mostly suppressed and another is transmitted.
+    \item \textbf{Coding Rate:}  A parameter for forward error correction which relates the total data stream to the user information it carries.
+      \item \textbf{DVB-T (Digital Video Broadcasting-Terrestrial):} A standard for digital TV transmission.
+     \item \textbf{Digital Radio Mondiale (DRM):} A digital radio protocol, that can be used for transmitting slow scan tv signals.
+         \item \textbf{Vertical Interval Signaling (VIS):} Control data sent with every slow-scan TV transmission.
+\end{itemize}
+
+\subsection*{Practice Questions}
+\begin{enumerate}
+    \item In digital television, what does a coding rate of 3/4 mean?
+    \begin{enumerate}
+       \item \textbf{A. 25\% of the data sent is forward error correction data}
+        \item  Data compression reduces data rate by 3/4
+       \item  1/4 of the time interval is used as a guard interval
+       \item  Three, four-bit words are used to transmit each pixel
+    \end{enumerate}
+        \textcolor{myred}{Explanation:}
+    A coding rate of 3/4, indicates 25% of the transmitted bits is used for error correction data.
+
+  \item How many horizontal lines make up a fast-scan (NTSC) television frame?
+      \begin{enumerate}
+      \item  30
+        \item  60
+     \item \textbf{C. 525}
+       \item  1080
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     An NTSC frame consists of 525 horizontal lines.
+
+  \item How is an interlaced scanning pattern generated in a fast-scan (NTSC) television system?
+      \begin{enumerate}
+        \item  By scanning two fields simultaneously
+       \item  By scanning each field from bottom-to-top
+     \item  By scanning lines from left-to-right in one field and right-to-left in the next
+        \item \textbf{D. By scanning odd-numbered lines in one field and even-numbered lines in the next}
+        \end{enumerate}
+   \textcolor{myred}{Explanation:}
+    In NTSC system, odd lines are drawn in first frame and even lines are drawn in second to generate a complete frame.
+
+    \item How is color information sent in analog SSTV?
+       \begin{enumerate}
+        \item \textbf{A. Color lines are sent sequentially}
+         \item  Color information is sent on a 2.8 kHz subcarrier
+          \item  Color is sent in a color burst at the end of each line
+         \item  Color is amplitude modulated on the frequency modulated intensity signal
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+    In analog SSTV, color is send as a series of sequential signals each carrying one primary color information.
+
+       \item Which of the following describes the use of vestigial sideband in analog fast-scan TV transmissions?
+    \begin{enumerate}
+        \item  The vestigial sideband carries the audio information
+      \item  The vestigial sideband contains chroma information
+         \item \textbf{C. Vestigial sideband reduces the bandwidth while increasing the fidelity of low frequency video components}
+       \item  Vestigial sideband provides high frequency emphasis to sharpen the picture
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+    The use of vestigial sideband modulation reduces the bandwith of the transmitted signal with minimal impact in the content.
+    
+    \item What is vestigial sideband modulation?
+      \begin{enumerate}
+       \item \textbf{A. Amplitude modulation in which one complete sideband and a portion of the other are transmitted}
+         \item  A type of modulation in which one sideband is inverted
+      \item  Narrow-band FM modulation achieved by filtering one sideband from the audio before frequency modulating the carrier
+        \item  Spread spectrum modulation achieved by applying FM modulation following single sideband amplitude modulation
+     \end{enumerate}
+        \textcolor{myred}{Explanation:}
+       In vestigial side band, one side band is transmitted completely and some parts of the other sideband is also included.
+
+   \item Which types of modulation are used for amateur television DVB-T signals?
+      \begin{enumerate}
+          \item  FM and FSK
+          \item \textbf{B. QAM and QPSK}
+         \item  AM and OOK
+         \item  All these choices are correct
+        \end{enumerate}
+       \textcolor{myred}{Explanation:}
+     DVB-T signals typically use QAM and QPSK modulation for their transmissions.
+     
+    \item What technique allows commercial analog TV receivers to be used for fast-scan TV operations on the 70-centimeter band?
+       \begin{enumerate}
+      \item \textbf{A. Transmitting on channels shared with cable TV}
+        \item  Using converted satellite TV dishes
+         \item  Transmitting on the abandoned TV channel 2
+      \item  Using USB and demodulating the signal with a computer sound card
+        \end{enumerate}
+      \textcolor{myred}{Explanation:}
+        Many amateur transmissions utilize unused cable TV frequencies to be received on TV receivers.
+      
+     \item What kind of receiver can be used to receive and decode SSTV using the Digital Radio Mondiale (DRM) protocol?
+      \begin{enumerate}
+       \item  CDMA
+       \item  AREDN
+      \item  AM
+       \item \textbf{D. SSB}
+      \end{enumerate}
+       \textcolor{myred}{Explanation:}
+        DRM protocol used for slow-scan tv is modulated in SSB.
+
+    \item What aspect of an analog slow-scan television signal encodes the brightness of the picture?
+      \begin{enumerate}
+      \item \textbf{A. Tone frequency}
+        \item  Tone amplitude
+    \item  Sync amplitude
+       \item  Sync frequency
+        \end{enumerate}
+       \textcolor{myred}{Explanation:}
+        In analog SSTV systems, image brightness is encoded as variation in the frequency of an audio signal.
+
+         \item What is the function of the vertical interval signaling (VIS) code sent as part of an SSTV transmission?
+       \begin{enumerate}
+          \item  To lock the color burst oscillator in color SSTV images
+        \item \textbf{B. To identify the SSTV mode being used}
+       \item  To provide vertical synchronization
+        \item  To identify the call sign of the station transmitting
+        \end{enumerate}
+       \textcolor{myred}{Explanation:}
+        VIS code specifies the mode used for SSTV transmission.
+
+    \item What signals SSTV receiving software to begin a new picture line?
+    \begin{enumerate}
+      \item \textbf{A. Specific tone frequencies}
+       \item  Elapsed time
+     \item  Specific tone amplitudes
+       \item  A two-tone signal
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+       Specific tone frequencies indicate a new line beginning to the software.
+\end{enumerate}
+
+
+
+Okay, here's the LaTeX source code for sections E2C and E2D, continuing the previous structure and maintaining the cheerful tone!
+
+% ------------------------------------------------------------------------
+% SECTION E2C: Contest and DX Operating
+% ------------------------------------------------------------------------
+\section{E2C: Contest and DX Operating - Time to Compete and Explore!}
+
+\subsection*{Understanding the Basics}
+Get ready to ramp up the excitement with \textcolor{myblue}{\textbf{contest and DX operating}}! This is where the friendly competition and long-distance communication challenges meet. You will explore how to make contacts with rare stations using techniques and special skills.
+We will learn about \textcolor{myblue}{\textbf{Remote operation techniques}} that allow you to control a radio station from a distance, making you a "contester" wherever you are.
+Understanding how data is stored in a log is essential in \textcolor{myblue}{\textbf{log data formats}} and it is needed for contest submissions and DX contact confirmations. You will also explore the concept of \textcolor{myblue}{\textbf{contact confirmation}} and finally we will touch on the area of \textcolor{myblue}{\textbf{RF network systems}}, such as mesh networks.
+
+\mybox{mygreen}{
+  \textbf{Fun Fact}: Did you know some contesters work to set records for the total number of contacts during a given period of time?  Contests also foster innovative strategies that drive the development of new hardware and techniques in ham radio!
+  }
+
+\subsection*{Key Concepts for the Questions}
+\begin{itemize}
+    \item \textbf{Remote control/operation:} Operating a station from a distant location.
+    \item \textbf{Contesting:}  Friendly competition of making the highest number of contacts in limited time.
+     \item \textbf{Cabrillo Format:} A standard for submitting electronic contest logs.
+     \item \textbf{Logbook of the World (LoTW):} An online service for confirming contacts with another operator.
+    \item \textbf{DX QSL Manager:} Someone who handles incoming and outgoing QSL cards (contact confirmations) for a rare station.
+    \item \textbf{National Calling Frequency:}  A common frequency used to initiate contact in different bands.
+     \item \textbf{Mesh Networks:} A type of network that utilizes radio links for connecting devices over a large area.
+    \item  \textbf{Latency:} The delay between an action and the corresponding change in transmitted signal
+
+\end{itemize}
+
+\subsection*{Practice Questions}
+\begin{enumerate}
+  \item What indicator is required to be used by US-licensed operators when operating a station via remote control and the remote transmitter is located in the US?
+    \begin{enumerate}
+        \item  / followed by the USPS two-letter abbreviation for the state in which the remote station is located
+        \item  /R\# where \# is the district of the remote station
+        \item  / followed by the ARRL Section of the remote station
+        \item \textbf{D. No additional indicator is required}
+    \end{enumerate}
+     \textcolor{myred}{Explanation:}
+     When the transmitter location and operation is within US territories, no specific location indicator is needed for a remotely controlled station.
+
+  \item Which of the following file formats is used for exchanging amateur radio log data?
+      \begin{enumerate}
+      \item  NEC
+        \item  ARLD
+        \item \textbf{C. ADIF}
+       \item  OCF
+    \end{enumerate}
+        \textcolor{myred}{Explanation:}
+        ADIF is a standard for Amateur Data Interchange Format.
+  
+   \item From which of the following bands is amateur radio contesting generally excluded?
+       \begin{enumerate}
+       \item \textbf{A. 30 meters}
+          \item  6 meters
+        \item  70 centimeters
+        \item  33 centimeters
+    \end{enumerate}
+      \textcolor{myred}{Explanation:}
+    Contesting is not allowed on the 30 meter band.
+
+    \item Which of the following frequencies can be used for amateur radio mesh networks?
+        \begin{enumerate}
+         \item  HF frequencies where digital communications are permitted
+        \item \textbf{B. Frequencies shared with various unlicensed wireless data services}
+     \item  Cable TV channels 41-43
+       \item  The 60-meter band channel centered on 5373 kHz
+     \end{enumerate}
+        \textcolor{myred}{Explanation:}
+     Many amateur mesh networks use frequencies allocated to unlicensed wireless services.
+
+    \item What is the function of a DX QSL Manager?
+        \begin{enumerate}
+           \item  Allocate frequencies for DXpeditions
+           \item \textbf{B. Handle the receiving and sending of confirmations for a DX station}
+       \item  Run a net to allow many stations to contact a rare DX station
+         \item  Communicate to a DXpedition about propagation, band openings, pileup conditions, etc.
+       \end{enumerate}
+        \textcolor{myred}{Explanation:}
+     A QSL manager helps rare and DX stations with their contact confirmations, commonly referred as QSL cards.
+
+   \item During a VHF/UHF contest, in which band segment would you expect to find the highest level of SSB or CW activity?
+       \begin{enumerate}
+     \item  At the top of each band, usually in a segment reserved for contests
+      \item  In the middle of each band, usually on the national calling frequency
+     \item \textbf{C. In the weak signal segment of the band, with most of the activity near the calling frequency}
+     \item  In the middle of the band, usually 25 kHz above the national calling frequency
+        \end{enumerate}
+      \textcolor{myred}{Explanation:}
+        The weak signal segment of VHF and UHF bands is typically reserved for contact with CW and SSB signals.
+
+     \item What is the Cabrillo format?
+       \begin{enumerate}
+    \item \textbf{A. A standard for submission of electronic contest logs}
+      \item  A method of exchanging information during a contest QSO
+    \item  The most common set of contest rules
+    \item  A digital protocol specifically designed for rapid contest exchanges
+       \end{enumerate}
+          \textcolor{myred}{Explanation:}
+          Cabrillo is a standard file format used for exchanging contact log information in contesting events.
+         
+      \item Which of the following contacts may be confirmed through the Logbook of The World (LoTW)?
+          \begin{enumerate}
+      \item  Special event contacts between stations in the US
+        \item  Contacts between a US station and a non-US station
+         \item  Contacts for Worked All States credit
+       \item \textbf{D. All these choices are correct}
+    \end{enumerate}
+         \textcolor{myred}{Explanation:}
+      LoTW or Logbook of the world is an online system for all types of contact confirmation.
+
+    \item What type of equipment is commonly used to implement an amateur radio mesh network?
+       \begin{enumerate}
+        \item  A 2-meter VHF transceiver with a 1,200-baud modem
+         \item  A computer running EchoLink to provide interface from the radio to the internet
+      \item \textbf{C. A wireless router running custom firmware}
+     \item  A 440 MHz transceiver with a 9,600-baud modem
+    \end{enumerate}
+        \textcolor{myred}{Explanation:}
+    Mesh networks generally utilize commercial wifi routers with specific firmwares to establish radio links.
+     
+      \item Why do DX stations often transmit and receive on different frequencies?
+        \begin{enumerate}
+     \item  Because the DX station may be transmitting on a frequency that is prohibited to some responding stations
+         \item  To separate the calling stations from the DX station
+    \item  To improve operating efficiency by reducing interference
+      \item \textbf{D. All these choices are correct}
+       \end{enumerate}
+     \textcolor{myred}{Explanation:}
+     A split frequency helps with interference, different rules of operation and keeps calling station out of the transmitting band.
+
+   \item How should you generally identify your station when attempting to contact a DX station during a contest or in a pileup?
+    \begin{enumerate}
+    \item \textbf{A. Send your full call sign once or twice}
+    \item  Send only the last two letters of your call sign until you make contact
+  \item  Send your full call sign and grid square
+  \item  Send the call sign of the DX station three times, the words “this is,” then your call sign three times
+      \end{enumerate}
+   \textcolor{myred}{Explanation:}
+    When contacting a DX or contest station, you should keep identification short to avoid unnecessary traffic.
+
+       \item What indicates the delay between a control operator action and the corresponding change in the transmitted signal?
+    \begin{enumerate}
+    \item  Jitter
+      \item  Hang time
+        \item \textbf{C. Latency}
+      \item  Anti-VOX
+        \end{enumerate}
+        \textcolor{myred}{Explanation:}
+    Latency is the name given to the time delay in a control system.
+\end{enumerate}
+
+
+\subsection{Amateur Data Interchange Format (ADIF)}
+
+The Amateur Data Interchange Format (ADIF) is a standard file format used by amateur radio operators to exchange contact log information. It provides a structured and consistent way to store and share data about radio contacts (QSOs), making it easy to import and export logs between different logging software applications. This section describes the ADIF format and its key features.
+
+\subsubsection{Purpose and Structure}
+
+ADIF aims to standardize the exchange of QSO data, eliminating the need for manual conversion between different logging programs. Its structure is based on \textit{tags} and \textit{values}, similar to HTML or XML. Each QSO is represented as a set of tags, where each tag represents a specific piece of information about the contact, such as the callsign of the other station, the date and time of the contact, the frequency used, and the mode of operation.
+
+A typical ADIF record for a single QSO looks like this (simplified example):
+
+\begin{verbatim}
+<CALL:6>W1AW
+<QSO_DATE:8>20240426
+<TIME_ON:4>1234
+<BAND:3>20M
+<MODE:2>CW
+<EOR>
+\end{verbatim}
+
+\begin{itemize}
+    \item \texttt{<TAG:length>} represents the tag name and the length of the associated value. For example, \texttt{<CALL:6>} indicates the tag is \texttt{CALL} and the value is 6 characters long.
+    \item The value follows the tag.
+    \item \texttt{<EOR>} (End of Record) marks the end of a single QSO record.
+\end{itemize}
+
+\subsubsection{Key Tags and Data Types}
+
+ADIF defines a wide range of tags to capture various aspects of a QSO. Some of the most commonly used tags include:
+
+\begin{itemize}
+    \item \texttt{CALL}: The callsign of the contacted station.
+    \item \texttt{QSO\_DATE}: The date of the QSO in YYYYMMDD format.
+    \item \texttt{TIME\_ON}: The start time of the QSO in HHMM format (UTC).
+    \item \texttt{BAND}: The frequency band used (e.g., 20M, 40M).
+    \item \texttt{MODE}: The mode of operation (e.g., CW, SSB, FM).
+    \item \texttt{RST\_SENT}: The signal report sent to the other station.
+    \item \texttt{RST\_RCVD}: The signal report received from the other station.
+    \item \texttt{NAME}: The name of the operator.
+    \item \texttt{QTH}: The location of the station.
+    \item \texttt{COUNTRY}: The country of the station.
+\end{itemize}
+
+ADIF supports various data types, including strings, integers, dates, and times, ensuring data integrity and consistency.
+
+\subsubsection{ADIF Versions and Extensions}
+
+Over time, ADIF has evolved to include new tags and features. Different versions of ADIF exist, and logging software usually supports a range of versions. Additionally, some software applications may use custom tags (known as \textit{user-defined fields} or UDFs) to store information not covered by the standard ADIF tags. These UDFs are prefixed with \texttt{USERDEF} and are useful for storing application-specific data.
+
+\subsubsection{Benefits of Using ADIF}
+
+Using ADIF provides numerous benefits for amateur radio operators:
+
+\begin{itemize}
+    \item \textbf{Interoperability:} It allows seamless exchange of log data between different logging programs.
+    \item \textbf{Data preservation:} It provides a standardized format for archiving QSO data.
+    \item \textbf{Log checking and analysis:} It facilitates log checking for awards and contests.
+    \item \textbf{Online log submission:} Many online log submission systems for contests and awards accept ADIF files.
+\end{itemize}
+
+In summary, ADIF is an essential tool for modern amateur radio logging, enabling efficient data management and exchange within the amateur radio community.
+
+
+
+
+% ------------------------------------------------------------------------
+% SECTION E2D: Operating Methods: Digital Modes for VHF and UHF
+% ------------------------------------------------------------------------
+\section{E2D: Operating Methods: Digital Modes and Procedures for VHF and UHF - Digital Delights!}
+\subsection*{Understanding the Basics}
+This section is about exploring \textcolor{myblue}{\textbf{digital modes}} for VHF and UHF communication, where you will learn the magic of transmitting data across radio links using a wide variety of different techniques.
+\par
+   You will learn more about specialized digital modes for specific applications, such as  \textcolor{myblue}{\textbf{meteor scatter communications}} that bounces signals off of ionized trails of meteors. Then you will learn about \textcolor{myblue}{\textbf{APRS (Automatic Packet Reporting System)}} ,  a real time digital communication method for sending and receiving location data as well as text messages, and finally \textcolor{myblue}{\textbf{EME (Earth-Moon-Earth)} or moonbounce} which bounces radio signals off of the moon for longer distance contacts.
+
+\mybox{mygreen}{
+    \textbf{Fun Fact}: Many digital modes for VHF and UHF communications were created by hams who were looking for ways to expand the possibilities of digital radio. Ham radio continues to be an area where creativity and ingenuity drives the innovation.
+  }
+
+\subsection*{Key Concepts for the Questions}
+\begin{itemize}
+    \item \textbf{Meteor Scatter:} A technique for using radio signals bounced off of meteor trails to establish communication.
+     \item \textbf{MSK144:} A specific digital mode designed for meteor scatter communication.
+     \item \textbf{RST Report:} A code sent with radio transmissions to signify signal report.
+    \item \textbf{Earth-Moon-Earth (EME):} Communication via bouncing signals off the Moon.
+    \item \textbf{APRS (Automatic Packet Reporting System):} A digital system for real time location and data exchange.
+    \item \textbf{JT65/FT8/FT4:} Digital modes designed for weak signal operation.
+    \item  \textbf{ACK/NAK:} Packet communication signal for acknowledgements and lack of acknowledgement.
+     \item \textbf{Digipeater:} A station that receives, temporarily stores and retransmits APRS data.
+\end{itemize}
+
+\subsection*{Practice Questions}
+\begin{enumerate}
+     \item Which of the following digital modes is designed for meteor scatter communications?
+    \begin{enumerate}
+     \item  WSPR
+         \item \textbf{B. MSK144}
+          \item  Hellschreiber
+         \item  APRS
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+        MSK144 or Minimum Shift Keying (MSK), a type of Frequency Shift Keying is specifically used for meteor scatter communications.
+     
+    \item What information replaces signal-to-noise ratio when using the FT8 or FT4 modes in a VHF contest?
+        \begin{enumerate}
+           \item  RST report
+       \item  State abbreviation
+         \item  Serial number
+        \item \textbf{D. Grid square}
+    \end{enumerate}
+       \textcolor{myred}{Explanation:}
+     FT8/FT4 signals typically report the location of transmission, which is commonly expressed by a grid square instead of the traditional RST report.
+       
+      \item Which of the following digital modes is designed for EME communications?
+     \begin{enumerate}
+    \item  MSK144
+         \item  PACTOR III
+     \item  WSPR
+      \item \textbf{D. Q65}
+     \end{enumerate}
+      \textcolor{myred}{Explanation:}
+   Q65 digital mode was specifically designed to communicate for EME operation where signal to noise ratio is typically very low.
+     
+     \item What technology is used for real-time tracking of balloons carrying amateur radio transmitters?
+      \begin{enumerate}
+      \item  FT8
+       \item  Bandwidth compressed LORAN
+       \item \textbf{C. APRS}
+        \item  PACTOR III
+        \end{enumerate}
+   \textcolor{myred}{Explanation:}
+    APRS or Automatic Packet Reporting System is a common technology for tracking high-altitude balloons.
+
+       \item What is the characteristic of the JT65 mode?
+      \begin{enumerate}
+     \item  Uses only a 65 Hz bandwidth
+        \item \textbf{B. Decodes signals with a very low signal-to-noise ratio}
+       \item  Symbol rate is 65 baud
+         \item  Permits fast-scan TV transmissions over narrow bandwidth
+        \end{enumerate}
+     \textcolor{myred}{Explanation:}
+        JT65 is famous for its capability for receiving weak signal, that is well under the typical noise floor.
+
+    \item Which of the following is a method for establishing EME contacts?
+     \begin{enumerate}
+       \item \textbf{A. Time-synchronous transmissions alternating between stations}
+         \item  Storing and forwarding digital messages
+        \item  Judging optimum transmission times by monitoring beacons reflected from the moon
+        \item  High-speed CW identification to avoid fading
+     \end{enumerate}
+     \textcolor{myred}{Explanation:}
+     Due to extreme weak signal and timing issues, EME communication often involve a schedule alternating transmission times.
+
+     \item What digital protocol is used by APRS?
+         \begin{enumerate}
+       \item  PACTOR
+        \item  QAM
+      \item \textbf{C. AX.25}
+       \item  AMTOR
+       \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     APRS uses the AX.25 packet radio protocol for transferring messages.
+   
+    \item What type of packet frame is used to transmit APRS beacon data?
+    \begin{enumerate}
+     \item  Acknowledgement
+     \item  Burst
+   \item \textbf{C. Unnumbered Information}
+         \item  Connect
+      \end{enumerate}
+     \textcolor{myred}{Explanation:}
+     The beacon data in APRS is transmitted as Unnumbered Information (UI) frame.
+       
+     \item What type of modulation is used by JT65?
+      \begin{enumerate}
+        \item \textbf{A. Multitone AFSK}
+         \item  PSK
+       \item  RTTY
+       \item  QAM
+       \end{enumerate}
+     \textcolor{myred}{Explanation:}
+         JT65 mode uses Multitone Audio Frequency Shift Keying for encoding and decoding data.
+        
+     \item What does the packet path WIDE3-1 designate?
+      \begin{enumerate}
+      \item  Three stations are allowed on frequency, one transmitting at a time
+      \item  Three subcarriers are permitted, subcarrier one is being used
+       \item \textbf{C. Three digipeater hops are requested with one remaining}
+        \item  Three internet gateway stations may receive one transmission
+      \end{enumerate}
+     \textcolor{myred}{Explanation:}
+       WIDE3-1 directs a packet to be passed by three digipeaters, allowing one more hop from final digipeater.
+     
+    \item How do APRS stations relay data?
+      \begin{enumerate}
+      \item  By packet ACK/NAK relay
+        \item \textbf{B. By C4FM repeaters}
+       \item  By DMR repeaters
+       \item  By packet digipeaters
+      \end{enumerate}
+    \textcolor{myred}{Explanation:}
+      APRS data is commonly repeated through digipeaters using C4FM digital voice modulations.
+\end{enumerate}
+
+\section{E2E: Operating Methods: Digital Modes and Procedures for HF - Exploring HF Digital!}
+\subsection*{Understanding the Basics}
+Now, let's dive into the amazing world of \textcolor{myblue}{\textbf{digital modes on HF}}! This section is about how to use your radio to send digital data for longer distances through the atmosphere. You will discover the techniques used for those exciting contacts, using a variety of modulation schemes.
+\par
+    This section covers both the use of digital modes and the techniques and operation associated with the \textcolor{myblue}{\textbf{digital operation}}. You'll become familiar with everything needed for HF digital communication.
+
+\mybox{mygreen}{
+    \textbf{Fun Fact}:  Some digital modes for HF communication allow for contacts with signal power as low as a few milliwatts! These modes allow us to communicate globally, even with very modest station setups, truly showcasing the ingenuity of digital communication.
+  }
+
+\subsection*{Key Concepts for the Questions}
+\begin{itemize}
+      \item \textbf{FSK (Frequency Shift Keying):} A type of digital modulation where the frequency represents digital information.
+        \item \textbf{WSJT-X:} A suite of software for weak signal communications using many digital modes.
+      \item \textbf{FT4/FT8:} Digital modes optimized for weak signals and fast exchanges of brief messages.
+      \item \textbf{PACTOR:} A sophisticated digital mode used for reliable data transfers under challenging conditions.
+       \item  \textbf{RTTY (Radio Teletype):} A legacy digital mode.
+    \item \textbf{MFSK16:} A multitone FSK modulation scheme.
+    \item \textbf{AMTOR:} Amateur Teleprinting Over Radio, an early digital mode.
+   \item \textbf{Direct FSK/Audio FSK:} Two different implementations of Frequency Shift Keying.
+    
+\end{itemize}
+
+\subsection*{Practice Questions}
+\begin{enumerate}
+   \item Which of the following types of modulation is used for data emissions below 30 MHz?
+    \begin{enumerate}
+        \item  DTMF tones modulating an FM signal
+        \item \textbf{B. FSK}
+        \item  Pulse modulation
+        \item  Spread spectrum
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+   Frequency shift keying is a very popular method of data encoding for transmission below 30 MHz.
+       
+    \item Which of the following synchronizes WSJT-X digital mode transmit/receive timing?
+    \begin{enumerate}
+        \item  Alignment of frequency shifts
+        \item \textbf{B. Synchronization of computer clocks}
+       \item  Sync-field transmission
+        \item  Sync-pulse timing
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+        The synchronization of WSJT-X timing is entirely dependent on computer clock time.
+        
+    \item To what does the "4" in FT4 refer?
+    \begin{enumerate}
+        \item  Multiples of 4 bits of user information
+        \item \textbf{B. Four-tone continuous-phase frequency shift keying}
+        \item  Four transmit/receive cycles per minute
+         \item  All these choices are correct
+    \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     FT4 uses 4 tones FSK modulation as its encoding scheme.
+        
+        \item Which of the following is characteristic of the FST4 mode?
+      \begin{enumerate}
+         \item  Four-tone Gaussian frequency shift keying
+        \item  Variable transmit/receive periods
+         \item  Seven different tone spacings
+       \item \textbf{D. All these choices are correct}
+        \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     FST4 uses four tones with Gausian shaping. It also has variable transmit/receive periods. Finally, it uses 7 tone frequencies.
+
+        \item Which of these digital modes does not support keyboard-to-keyboard operation?
+    \begin{enumerate}
+        \item \textbf{A. WSPR}
+        \item  RTTY
+        \item  PSK31
+         \item  MFSK16
+        \end{enumerate}
+        \textcolor{myred}{Explanation:}
+     WSPR or Weak Signal Propagation Reporter is a mode that is typically sent automatically with computer software, and not designed for keyboard operations.
+         
+        \item What is the length of an FT8 transmission cycle?
+       \begin{enumerate}
+      \item  It varies with the amount of data
+        \item  8 seconds
+      \item \textbf{C. 15 seconds}
+         \item  30 seconds
+        \end{enumerate}
+   \textcolor{myred}{Explanation:}
+    The typical transmission cycle of FT8 is fixed at 15 seconds.
+
+   \item How does Q65 differ from JT65?
+        \begin{enumerate}
+        \item  Keyboard-to keyboard operation is supported
+        \item  Quadrature modulation is used
+        \item \textbf{C. Multiple receive cycles are averaged}
+        \item  All these choices are correct
+    \end{enumerate}
+       \textcolor{myred}{Explanation:}
+    Unlike JT65, Q65 mode will repeat many receive cycles to make the weak signal more robust to decode.
+
+   \item Which of the following HF digital modes can be used to transfer binary files?
+     \begin{enumerate}
+        \item  PSK31
+       \item \textbf{B. PACTOR}
+         \item  RTTY
+        \item  AMTOR
+    \end{enumerate}
+     \textcolor{myred}{Explanation:}
+     PACTOR can transmit binary files along with other data.
+       
+        \item Which of the following HF digital modes uses variable-length character coding?
+     \begin{enumerate}
+       \item  RTTY
+        \item  PACTOR
+      \item  MT63
+        \item \textbf{D. PSK31}
+        \end{enumerate}
+      \textcolor{myred}{Explanation:}
+        PSK31 utilizes variable-length character coding which encodes most common characters with a shorter symbol sequence, thus requiring smaller bandwidth.
+     
+    \item Which of these digital modes has the narrowest bandwidth?
+       \begin{enumerate}
+       \item  MFSK16
+         \item  170 Hz shift, 45-baud RTTY
+         \item \textbf{C. FT8}
+         \item  PACTOR IV
+       \end{enumerate}
+        \textcolor{myred}{Explanation:}
+      FT8 signal has very narrow bandwidth due to its use of 70Hz tones and short transmission bursts.
+        
+    \item What is the difference between direct FSK and audio FSK?
+       \begin{enumerate}
+         \item \textbf{A. Direct FSK modulates the transmitter VFO}
+      \item  Direct FSK occupies less bandwidth
+      \item  Direct FSK can transmit higher baud rates
+      \item  All these choices are correct
+     \end{enumerate}
+         \textcolor{myred}{Explanation:}
+       Direct FSK directly manipulates the oscillator frequency while audio FSK applies FSK modulation in the audio stage before transmitter modulation.
+        
+        \item How do ALE stations establish contact?
+         \begin{enumerate}
+         \item \textbf{A. ALE constantly scans a list of frequencies, activating the radio when the designated call sign is received}
+      \item  ALE radios monitor an internet site for the frequency they are being paged on
+       \item  ALE radios send a constant tone code to establish a frequency for future use
+        \item  ALE radios activate when they hear their signal echoed by back scatter
+      \end{enumerate}
+    \textcolor{myred}{Explanation:}
+     ALE capable radios constantly scan designated frequencies, listening for a matching call sign.
+
+      \item Which of these digital modes has the highest data throughput under clear communication conditions?
+       \begin{enumerate}
+        \item  MFSK16
+        \item  170 Hz shift, 45 baud RTTY
+        \item  FT8
+        \item \textbf{D. PACTOR IV}
+       \end{enumerate}
+        \textcolor{myred}{Explanation:}
+         PACTOR IV is a data mode that provides the highest through output when there are minimal interference and noise.
+\end{enumerate}

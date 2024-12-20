@@ -1,0 +1,66 @@
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{ifthen} % Make sure to include this for ifthenelse
+\usepackage{tikz}
+\usepackage{caption}
+\pgfplotsset{compat=1.18}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+\definecolor{myblue}{RGB}{77,148,255}
+\definecolor{mygreen}{RGB}{167,225,89}
+\definecolor{myred}{RGB}{255,110,110}
+
+\newcommand{\mybox}[2]{%
+  \noindent
+  \begin{center}
+    \begin{tikzpicture}
+      \node[rectangle, rounded corners, fill=#1!20, draw=#1, text width=0.9\textwidth, inner sep=10pt, align=left] (box)  {#2};
+    \end{tikzpicture}
+  \end{center}
+}
+
+
+\begin{document}
+\title{Ace Your HAM Radio Extra Class Exam}
+\author{Charles Perng}
+\date{\today}
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+%\include{e1}
+\include{e2}
+%\include{e3}
+%\include{e4}
+%\include{e5}
+\include{e6}
+\include{e7}
+\include{e8}
+\include{e9}
+\include{e0}
+
+\end{document}
