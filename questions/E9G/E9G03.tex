@@ -1,0 +1,60 @@
+\subsection{Unlocking the Secrets of Smith Charts!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9G03] Which of the following is often determined using a Smith chart?
+\begin{enumerate}[label=\Alph*.]
+    \item Beam headings and radiation patterns
+    \item Satellite azimuth and elevation bearings
+    \item \textbf{Impedance and SWR values in transmission lines}
+    \item Point-to-point propagation reliability as a function of frequency
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection{Related Concepts}
+
+The Smith chart is a graphical tool used in electrical engineering, particularly in the field of radio frequency (RF) engineering. It is primarily used to visualize complex impedance and reflection coefficients, which are crucial for understanding how signals behave along transmission lines. Key concepts associated with the Smith chart include:
+
+1. \textbf{Impedance:}: This is a measure of how much a circuit resists the flow of alternating current (AC) at a particular frequency. It is represented as a complex number composed of resistance (real part) and reactance (imaginary part).
+
+2. \textbf{Standing Wave Ratio (SWR):}: This is a measure of impedance mismatching in a transmission line. It describes the efficiency of power transmission, indicating how much power is reflected back towards the source versus how much is transferred to the load.
+
+3. \textbf{Transmission Lines:}: These are specialized cables designed to transport electrical signals from one point to another, commonly seen in RF communications.
+
+4. \textbf{Reflection Coefficient:}: This parameter quantifies the reflection of a wave at an impedance discontinuity and can be represented on the Smith chart.
+
+To effectively utilize a Smith chart, one must be familiar with how to convert complex impedance values into their corresponding locations on the chart and interpret the data effectively.
+
+\subsubsection{Calculation Steps}
+
+1. \textbf{Determine the Load Impedance:}: Assume a load impedance \( Z_L = 50 + j30 \, \Omega \).
+
+2. \textbf{Calculate the Reflection Coefficient (\( \Gamma \)):}): 
+   \[
+   \Gamma = \frac{Z_L - Z_0}{Z_L + Z_0}
+   \]
+   where \( Z_0 = 50 \, \Omega \) is the characteristic impedance of the transmission line.
+
+   Plugging in the values:
+   \[
+   \Gamma = \frac{(50 + j30) - 50}{(50 + j30) + 50} = \frac{j30}{100 + j30}
+   \]
+
+   To solve this expression, multiply the numerator and denominator by the complex conjugate of the denominator:
+   \[
+   \Gamma = \frac{j30(100 - j30)}{(100 + j30)(100 - j30)} = \frac{3000 + 900}{10000 + 900} = \frac{3900}{10900}
+   \]
+
+   The magnitude and angle of the reflection coefficient can be derived from this result.
+
+3. \textbf{Locate on the Smith Chart:}: Using the calculated reflection coefficient, find the corresponding point on the Smith chart, which can be used to derive the SWR.
+
+\begin{center}
+\begin{tikzpicture}
+    \draw (0,0) circle (4cm);
+    \draw[->] (-4.5,0) -- (4.5,0) node[right] {Re};
+    \draw[->] (0,-4.5) -- (0,4.5) node[above] {Im};
+    \foreach \i in {-3,-2,-1,1,2,3} {
+        \draw[xshift=0cm] (\i,0) -- (\i,-0.1) node[below] {\i};
+        \draw[xshift=0cm] (0,\i) -- (-0.1,\i) node[left] {\i};
+    }
+    \draw[rotate around={atan(30/50):(0,0)}] (0,0) -- (3,0) node[midway,above] {(50 + j30)};
+\end{tikzpicture}
+\end{center}

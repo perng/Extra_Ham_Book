@@ -1,0 +1,61 @@
+\subsection{Radiant Fun: Exploring Antenna Patterns!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9C02] What type of radiation pattern is created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase?
+
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Cardioid}
+    \item A figure-eight end-fire along the axis of the array
+    \item A figure-eight broadside to the axis of the array
+    \item Omni-directional
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection{Related Concepts}
+
+To answer this question, it is important to understand the principles of antenna arrays and phase differences. An antenna array consists of multiple antennas working together to enhance the signal directionality and pattern. Here, we have two vertical antennas, each with a length of 1/4 wavelength, which is a common length that allows antennas to radiate efficiently.
+
+The spacing of these antennas, which is also 1/4 wavelength, and the fact that they are fed out of phase by 90 degrees are crucial aspects of determining the resulting radiation pattern. The out-of-phase feeding implies that the signals from the two antennas will combine in such a way that they reinforce in certain directions and cancel in others.
+
+\subsubsection*{Calculation Steps:}
+
+The resulting pattern can be analyzed using the principles of superposition and phasor addition. The phasor representation of the two signals from the antennas can be denoted as:
+
+1. From Antenna 1: \( E_1 = E_0 e^{j(0)} \)
+2. From Antenna 2: \( E_2 = E_0 e^{j(\frac{\pi}{2})} \)  (90 degrees phase shift)
+
+When these two vectors are added, we can compute the resultant field strength \( E_{total} \):
+
+\[
+E_{total} = E_1 + E_2 = E_0(1 + j)
+\]
+
+In polar form, the magnitude of \( E_{total} \) can be computed as:
+
+\[
+|E_{total}| = |E_0| \sqrt{1^2 + 1^2} = |E_0| \sqrt{2} 
+\]
+
+The angle can be determined as:
+
+\[
+\theta = \tan^{-1}\left(\frac{1}{1}\right) = 45^\circ
+\]
+
+This indicates that the resultant direction of maximum radiation (constructive interference) will not only be in the direction of either antenna, but will form a pattern with a distinct shape.
+
+\subsubsection*{Radiation Pattern:}
+
+To represent this, we can visualize the radiation pattern using the drawing capability of \texttt{tikz}. A cardioid radiation pattern will be depicted, showing the directionality:
+
+\begin{tikzpicture}
+    \draw [->] (0,0) -- (3,0) node [right] {0°};
+    \draw [->] (0,0) -- (0,3) node [above] {90°};
+    \draw [->] (0,0) -- (-3,0) node [left] {180°};
+    \draw [->] (0,0) -- (0,-3) node [below] {270°};
+    
+    \draw [thick, red] plot [domain=0:360] (\x:2) node [right] {Cardioid Pattern};
+\end{tikzpicture}
+
+This diagram illustrates that the radiation pattern produced by this arrangement is a cardioid shape, peaking towards 0° and 180°, indicating the desired direction of maximum radiation while having nulls at the 90° and 270° directions.
+
+In conclusion, the correct answer to the question is:
+\textbf{A: Cardioid}

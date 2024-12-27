@@ -1,0 +1,34 @@
+\subsection{One Bit Wonder: The Magic of Gray Codes!}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Question E8C09]
+    \textbf{Question ID: E8C09} \\
+    Which digital code allows only one bit to change between sequential code values?
+    \begin{enumerate}[label=\Alph*.]
+        \item Binary Coded Decimal Code
+        \item Extended Binary Coded Decimal Interchange Code
+        \item Extended ASCII
+        \item \textbf{Gray code}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a room full of light switches that can be either on or off. If you flip one switch at a time to represent different numbers, you want to change the least amount of switches to go from one number to the next. Gray code is like a special system that helps you do just that! In Gray code, when you go from one number to the next, only one light switch changes at a time. This is really useful because it helps prevent mistakes, especially in machines and electronics.
+
+\subsubsection{Advanced Explanation}
+To understand Gray code, we first need to explore binary representation. In binary, every number is represented as a combination of bits (0s and 1s). For example, the binary representation of the decimal number 3 is 11, and for 4, it is 100. 
+
+In standard binary counting, moving from one number to the next can cause multiple bits to change. For instance, when going from 3 (11) to 4 (100), we see that two bits change. Gray code, however, was designed so that only a single bit changes with each incremental value. This property makes Gray code very useful in error correction in digital communications and in rotary encoders.
+
+To generate the Gray code for a 3-bit binary number, you can use the following formula:
+1. The most significant bit (MSB) of the Gray code is the same as the MSB of the binary number.
+2. Each subsequent bit of the Gray code can be computed as: \( G_i = B_i \oplus B_{i-1} \) where \( G \) is the Gray code bit, \( B \) is the binary bit, and \( \oplus \) is the XOR operation.
+
+For example, converting the binary representation of 0, 1, 2, and 3 to Gray code:
+- Binary 0: 000 → Gray 0: 000
+- Binary 1: 001 → Gray 1: 001 (0 \oplus 0 = 0, 0 \oplus 1 = 1)
+- Binary 2: 010 → Gray 2: 011 (0 \oplus 0 = 0, 1 \oplus 0 = 1)
+- Binary 3: 011 → Gray 3: 010 (0 \oplus 0 = 0, 1 \oplus 1 = 0)
+
+In this way, the transition from binary to Gray code ensures that only one bit changes for every step.
+
+% Diagram prompt: Generate a diagram showing the transition of binary values to Gray code, highlighting the single bits that change at each step.

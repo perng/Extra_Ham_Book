@@ -1,0 +1,38 @@
+\subsection{Harmonizing Waves: Unraveling the Square Wave!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8A01} 
+
+What technique shows that a square wave is made up of a sine wave and its odd harmonics?
+
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Fourier analysis}
+    \item Vector analysis
+    \item Numerical analysis
+    \item Differential analysis
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are listening to music, and you hear a powerful sound that seems a bit rough or sharp. This type of sound is called a square wave, and it has a unique feature: it can be created by combining different simpler sounds, like sine waves. Think of sine waves as smooth, flowing sounds. By mixing a sine wave with certain other sounds that are a bit louder or sharper, you can create that strong, sharp square wave sound. The technique to understand how this combination happens is called Fourier analysis. It's like a magic recipe for sounds!
+
+\subsubsection{Advanced Explanation}
+In mathematics and signal processing, a square wave can be expressed as a sum of sine waves of different frequencies and amplitudes. This is known as Fourier series representation. Specifically, a square wave can be expressed in terms of its odd harmonics, which means it contains only the sine waves corresponding to odd integer multiples of the fundamental frequency.
+
+The Fourier series representation of a square wave can be mathematically stated as follows:
+
+\[
+f(t) = \frac{4}{\pi} \sum_{n=0}^{\infty} \frac{1}{2n+1} \sin((2n+1) \omega_0 t)
+\]
+
+where \( \omega_0 \) is the fundamental angular frequency of the wave. This sum shows that the square wave is made up of sine waves of frequencies \( \omega_0, 3\omega_0, 5\omega_0, \ldots \) plus their corresponding amplitudes that decrease as we go to higher frequencies.
+
+To derive the function for the square wave, consider the following:
+
+1. Identify the fundamental frequency \( \omega_0 \).
+2. Recognize that the square wave contains only the sine waves at odd multiples of this frequency.
+3. Calculate the contributions from each odd harmonic.
+
+Hence, the correct answer is A: Fourier analysis, as it is the mathematical method to decompose complex waveforms into simple sinusoidal components.
+
+% Prompt for generating a diagram: Create a diagram showing a square wave alongside its corresponding Fourier series representation using odd harmonics.

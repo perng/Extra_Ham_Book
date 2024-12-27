@@ -1,0 +1,34 @@
+\subsection{Measuring ADC Magic: What Defines Quality?}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8A11}\\
+Which of the following is a measure of the quality of an analog-to-digital converter?
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Total harmonic distortion}
+    \item Peak envelope power
+    \item Reciprocal mixing
+    \item Power factor
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are listening to your favorite song on a radio. The sound you hear is a mix of different notes and sounds played together, but sometimes it doesn’t sound as clear or nice as it should. An analog-to-digital converter (often just called an ADC) helps to change those sounds into digital signals that a computer can understand. 
+
+Now, to measure how good an ADC is, we can use something called total harmonic distortion (THD). It’s like checking how much extra noise or extra sounds (like echoes) are mixed into the music you’re hearing. If there is a lot of extra noise, it means that the ADC isn’t doing its job very well. So, THD helps us figure out how “faithfully” the ADC can turn the music into digital signals, just like the radio sounds good when it clearly plays just the music without extra noise.
+
+\subsubsection{Advanced Explanation}
+Analog-to-digital converters transform continuous signals into discrete digital signals, which is critical in modern electronics. The quality of these converters can be assessed by various metrics, among which total harmonic distortion (THD) is paramount. 
+
+Total harmonic distortion is defined mathematically as follows:
+
+\[
+\text{THD} = \frac{\sqrt{ \sum_{n=2}^{N} |V_n|^2 }}{|V_1|}
+\]
+
+where \(V_1\) is the fundamental frequency component, and \(V_n\) (for \(n > 1\)) represents the harmonic frequencies. A lower THD percentage indicates a better quality ADC, as it means that fewer unwanted harmonic frequencies are produced when converting the analog signal.
+
+In contrast, the other options such as peak envelope power, reciprocal mixing, and power factor refer to different domains and do not specifically measure the quality of an ADC. Peak envelope power relates to the maximum power that a given signal can produce; reciprocal mixing affects signal processing in communications; and power factor is an electrical term relating to the efficiency of power usage in AC systems.
+
+By understanding THD and its significance, one appreciates how well an ADC can replicate an analog signal in the digital domain without introducing distortions that could degrade signal integrity.
+
+% Prompt for generating a diagram illustrating the process of an analog-to-digital converter, highlighting the input signal, the conversion process, and the output digital signal with harmonic components for further clarity.

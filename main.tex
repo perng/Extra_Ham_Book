@@ -1,66 +1,79 @@
 \documentclass[12pt]{book}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
 
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows, positioning}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{lipsum}
-\usepackage{hyperref}
-\usepackage{pgfplots}
-\usepackage{ifthen} % Make sure to include this for ifthenelse
-\usepackage{tikz}
-\usepackage{caption}
-\pgfplotsset{compat=1.18}
+% Packages for better formatting
+\usepackage{geometry} % Page layout
+\usepackage{titlesec} % Formatting headings
+\usepackage{fancyhdr} % Header/Footer
+\usepackage{hyperref} % Hyperlinks
+\usepackage{graphicx} % For images
+\usepackage{amsmath} % For math
+\usepackage{amssymb} % For math symbols
+\usepackage{enumitem} % Custom lists
+\usepackage[most]{tcolorbox}
+\usepackage{epstopdf} % For converting EPS to PDF
+
+% Page layout
+\geometry{a4paper, margin=1in}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Extra HAM!}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+
+% Title formatting
+\titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
+\titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+
+% Hyperlink setup
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
-    pdftitle={Overleaf Example},
+    pdftitle={Extra HAM!},
+    pdfauthor={Charles Perng},
+    bookmarks=true,
     pdfpagemode=FullScreen,
-    }
-
-\urlstyle{same}
-\definecolor{myblue}{RGB}{77,148,255}
-\definecolor{mygreen}{RGB}{167,225,89}
-\definecolor{myred}{RGB}{255,110,110}
-
-\newcommand{\mybox}[2]{%
-  \noindent
-  \begin{center}
-    \begin{tikzpicture}
-      \node[rectangle, rounded corners, fill=#1!20, draw=#1, text width=0.9\textwidth, inner sep=10pt, align=left] (box)  {#2};
-    \end{tikzpicture}
-  \end{center}
 }
 
-
 \begin{document}
-\title{Ace Your HAM Radio Extra Class Exam}
-\author{Charles Perng}
-\date{\today}
-\maketitle
 
-\frontmatter
+% Title page
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries Extra HAM! \\
+    \vspace{0.5cm}
+    A Test Preparation Guide \\
+    \vspace{1cm}
+    \large By Charles Perng}
+    
+    \vspace{4cm}
+    \includegraphics[width=\textwidth]{extra-ham.png} % Specify width
+    % or use \includegraphics[width=\textwidth]{extra-ham.pdf} if converted
+    
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+% Table of Contents
 \tableofcontents
+\newpage
 
-\mainmatter
+% Preface
+\chapter*{Preface}
+This book, \textit{Extra HAM!}, is designed to help you prepare for the HAM radio licensing exams. With a mix of theoretical explanations and practical exercises, you will develop the skills and confidence to ace your test. Let’s dive in!
 
-%\include{e1}
+\newpage
+
+% Chapter 1
+\include{e1}
 \include{e2}
-%\include{e3}
-%\include{e4}
-%\include{e5}
-\include{e6}
-\include{e7}
-\include{e8}
-\include{e9}
-\include{e0}
+
+\newpage
+
+% Appendices
+\appendix
 
 \end{document}

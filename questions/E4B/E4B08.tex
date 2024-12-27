@@ -1,0 +1,50 @@
+\subsection{Explore the Q Factor: Unveiling Series-Tuned Circuits!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4B08] Which of the following can be used to determine the Q of a series-tuned circuit?
+\begin{enumerate}[label=\Alph*.]
+    \item The ratio of inductive reactance to capacitive reactance
+    \item The frequency shift
+    \item \textbf{The bandwidth of the circuit's frequency response}
+    \item The resonant frequency of the circuit
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection{Related Concepts}
+
+To understand how to determine the Q factor of a series-tuned circuit, it is essential to grasp several key concepts:
+
+1. \textbf{Q Factor}: The Q factor (Quality factor) of a resonant circuit quantifies its bandwidth relative to its center frequency. A higher Q factor indicates a narrower bandwidth and implies that a circuit can resonate at a specific frequency with less energy loss.
+
+2. \textbf{Bandwidth}: This concept refers to the range of frequencies over which the circuit can effectively resonate. For a series-tuned circuit, the bandwidth is influenced by resistance and reactance.
+
+3. \textbf{Frequency Response}: The frequency response of a circuit shows how the output amplitude varies with frequency. The Q factor can be directly related to the bandwidth and resonant frequency observed in this response.
+
+4. \textbf{Resonant Frequency}: This is the frequency at which the inductive reactance equals the capacitive reactance, resulting in a purely resistive impedance and maximum circuit current.
+
+\subsubsection{Calculating the Q Factor}
+
+The Q factor can be determined with the following formula:
+
+\[
+Q = \frac{f_0}{\Delta f}
+\]
+
+where \( f_0 \) is the resonant frequency and \( \Delta f \) is the bandwidth (the difference between the upper and lower cutoff frequencies).
+ 
+To summarize:
+- The Q factor is a measure of how selective a circuit is, which can be understood through its bandwidth.
+- The correct answer to the question is \textbf{C}, as the bandwidth of the circuit's frequency response is what specifically measures the circuit's quality factor, influencing its performance.
+
+\subsubsection{Diagram of a Series-Tuned Circuit}
+
+A diagram illustrating a series-tuned circuit can enhance understanding. Below is a simple representation created using TikZ:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \draw (0,0) to[R, l=R, v<={$\text{Voltage } V_s$}] (0,-2)
+          to[L, l=L] (2,-2) -- (2,0) to[C, l=C] (0,0);
+    \draw[->] (2,-2) -- (3,-2) node[right] {To Output};
+    \node at (1,-1.5) {Series-Tuned Circuit};
+    \draw[->] (-1,0) -- (1,0);
+    \node at (-1,0.5) {Input};
+\end{tikzpicture}
+\end{center}

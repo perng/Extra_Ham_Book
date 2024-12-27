@@ -1,0 +1,43 @@
+\subsection*{Understanding the Charm of Odd-Order Intermodulation Products!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4D11`]
+Why are odd-order intermodulation products, created within a receiver, of particular interest compared to other products? 
+
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Odd-order products of two signals in the band being received are also likely to be within the band}
+    \item Odd-order products are more likely to overload the IF filters
+    \item Odd-order products are an indication of poor image rejection
+    \item Odd-order intermodulation produces three products for every input signal within the band of interest
+\end{enumerate} \end{tcolorbox}
+
+The correct answer is: \textbf{A}.
+
+In radio communication, intermodulation products occur when two or more signals mix in a non-linear device, such as a receiver. This can create new frequencies that are mathematically defined as the sum and difference of the original frequencies and their harmonics. Odd-order intermodulation products are particularly important for a few reasons.
+
+1. \textbf{Proximity to the Received Signals}: Odd-order products are generated from the mixing of two frequencies, typically represented as \( f_1 \) and \( f_2 \). The odd-order products are typically represented by the formula:
+   \[
+   IM_{n} = n \cdot f_1 \pm m \cdot f_2, \quad \text{where } n+m \text{ is odd}
+   \]
+   Due to their configuration, odd-order products are often closer in frequency to the original signals \( f_1 \) and \( f_2 \), which means they might fall within the receiver's passband rather than being filtered out.
+
+2. \textbf{Impact on Signal Integrity}: These odd-order products can interfere with the desired signal, causing degradation in the signal quality and leading to distortion or reduction of the Effective Receiver Sensitivity (ERS). 
+
+3. \textbf{Calculation Example}: If \( f_1 = 100 \, \text{MHz} \) and \( f_2 = 105 \, \text{MHz} \), the first-order odd intermodulation products can be calculated as follows:
+   \[
+   IM_{1} = f_1 + f_2 = 100 + 105 = 205 \, \text{MHz}
+   \]
+   \[
+   IM_{2} = 2f_1 - f_2 = 2(100) - 105 = 95 \, \text{MHz}
+   \]
+   \[
+   IM_{3} = 2f_2 - f_1 = 2(105) - 100 = 110 \, \text{MHz}
+   \]
+   Thus, the produced odd-order intermodulation products (in this example) could be \( 205 \, \text{MHz} \), \( 95 \, \text{MHz} \), and \( 110 \, \text{MHz} \), which shows they can potentially interfere with the original frequencies in the band.
+
+% 4. \textbf{Visual Representation}: The diagram below illustrates intermodulation products around fundamental frequencies.
+
+% \begin{center}
+%     \includegraphics[width=0.6\textwidth]{intermodulation_diagram.eps}
+% \end{center}
+
+In conclusion, understanding odd-order intermodulation products is crucial for effective design and operation of receivers in radio communication to ensure signal clarity and prevent degradation due to interference.

@@ -1,0 +1,87 @@
+\subsection{Boosting Signals: Calculating ERP of a Repeater Station!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9A02]
+     What is the effective radiated power (ERP) of a repeater station with 150 watts transmitter power output, 2 dB feed line loss, 2.2 dB duplexer loss, and 7 dBd antenna gain?
+
+\begin{enumerate}[label=\Alph*.]
+    \item 469 watts
+    \item 78.7 watts
+    \item 420 watts
+    \item \textbf{286 watts}
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection*{Elaboration on Related Concepts}
+
+Effective Radiated Power (ERP) is a measure of the power radiated by an antenna, considering both the gains and losses in the system. It accounts for:
+\begin{itemize}
+    \item Transmitter Power Output (TPO): The power output of the transmitter in watts.
+    \item Feed Line Loss: The reduction in power due to the transmission line between the transmitter and the antenna, measured in dB.
+    \item Duplexer Loss: The power reduction caused by the duplexer in the signal path, measured in dB.
+    \item Antenna Gain: The increase in power radiated in a specific direction due to the antenna, measured in dBd (decibels relative to a dipole antenna).
+\end{itemize}
+
+The ERP is calculated using the formula:
+\[
+\text{ERP (watts)} = \text{TPO} \times 10^{\frac{\text{Gain (dB)} - \text{Loss (dB)}}{10}}
+\]
+
+Where:
+\[
+\text{Gain (dB)} = \text{Antenna Gain (dBd)}
+\]
+\[
+\text{Loss (dB)} = \text{Feed Line Loss (dB)} + \text{Duplexer Loss (dB)}
+\]
+
+\subsubsection*{Step-by-Step Calculation}
+
+\begin{enumerate}
+    \item Start with the given values:
+    \begin{align*}
+    \text{TPO} &= 150 \, \text{watts} \\
+    \text{Feed Line Loss} &= 2 \, \text{dB} \\
+    \text{Duplexer Loss} &= 2.2 \, \text{dB} \\
+    \text{Antenna Gain} &= 7 \, \text{dBd}
+    \end{align*}
+
+    \item Calculate the total loss:
+    \[
+    \text{Total Loss (dB)} = \text{Feed Line Loss} + \text{Duplexer Loss} = 2 + 2.2 = 4.2 \, \text{dB}
+    \]
+
+    \item Subtract the total loss from the antenna gain to get the net gain:
+    \[
+    \text{Net Gain (dB)} = \text{Antenna Gain} - \text{Total Loss} = 7 - 4.2 = 2.8 \, \text{dB}
+    \]
+
+    \item Convert the net gain from dB to a power ratio:
+    \[
+    10^{\frac{\text{Net Gain}}{10}} = 10^{\frac{2.8}{10}} \approx 1.905
+    \]
+
+    \item Calculate the ERP:
+    \[
+    \text{ERP} = \text{TPO} \times 10^{\frac{\text{Net Gain}}{10}} = 150 \times 1.905 \approx 286 \, \text{watts}
+    \]
+\end{enumerate} 
+
+% \subsubsection*{Diagram Representation}
+
+% \begin{center}
+% \begin{tikzpicture}
+%     % Transmitter
+%     \node[draw, rectangle, minimum width=2.5cm, minimum height=1cm] (tx) at (0, 0) {Transmitter (150 W)};
+%     % Feed line
+%     \draw[->, thick] (tx.east) -- ++(2, 0) node[midway, above] {2 dB Loss} coordinate (feedline);
+%     % Duplexer
+%     \node[draw, rectangle, minimum width=2.5cm, minimum height=1cm, right=2cm of feedline] (duplexer) {Duplexer (2.2 dB Loss)};
+%     % Antenna
+%     \draw[->, thick] (duplexer.east) -- ++(2, 0) node[midway, above] {7 dBd Gain} coordinate (antenna);
+%     \node[draw, isosceles triangle, isosceles triangle apex angle=60, minimum height=1cm, right=4cm of duplexer] (ant) {};
+%     \node[above right=0.2cm and 0cm of ant] {Antenna};
+
+%     % Labels
+%     \node[below=0.5cm of feedline] {Feed Line};
+%     \node[below=0.5cm of duplexer] {Duplexer};
+% \end{tikzpicture}
+% \end{center}

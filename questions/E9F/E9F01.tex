@@ -1,0 +1,46 @@
+\subsection{Zooming Through: Understanding Velocity Factor in Transmission Lines!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9F01]
+What is the velocity factor of a transmission line?
+\begin{enumerate}
+    \item A: The ratio of its characteristic impedance to its termination impedance
+    \item B: The ratio of its termination impedance to its characteristic impedance
+    \item C: The velocity of a wave in the transmission line multiplied by the velocity of light in a vacuum
+    \item D: \textbf{The velocity of a wave in the transmission line divided by the velocity of light in a vacuum}
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection*{Elaboration on Related Concepts}
+
+The velocity factor (VF) of a transmission line is a critical concept in radio communication and electronics, as it affects how signals propagate along the line. The velocity factor is defined as the ratio of the speed of a signal in the transmission line to the speed of light in a vacuum. This can be represented mathematically as:
+
+\[
+VF = \frac{v}{c}
+\]
+
+where:
+- \( v \) = velocity of the signal in the transmission line
+- \( c \) = speed of light in vacuum (approximately \( 3 \times 10^8 \) m/s)
+
+The velocity of a wave in a transmission line is influenced by various factors, including the dielectric material of the insulation around the conductors. Consequently, different materials result in different velocity factors.
+
+To illustrate how this concept works in practice, let’s assume we have a coaxial cable with a velocity factor of 0.66. We can calculate the velocity of the signal in this cable as follows:
+
+\[
+v = VF \times c = 0.66 \times 3 \times 10^8 \text{ m/s} = 1.98 \times 10^8 \text{ m/s}
+\]
+
+This means that the signal travels at approximately \( 1.98 \times 10^8 \text{ m/s} \) in this cable.
+
+A common misunderstanding is to confuse velocity factor with the characteristic impedance of a transmission line or to incorrectly assume it is the ratio of impedance values. However, the velocity factor directly pertains to the speed of the wave and not to impedance ratios.
+
+% \begin{center}
+% \begin{tikzpicture}
+%     \draw[->] (0,0) -- (5,0) node[right] {Distance (m)};
+%     \draw[->] (0,0) -- (0,4) node[above] {Wave Velocity (m/s)};
+    
+%     \draw[domain=0:5,smooth,variable=\x,blue] plot ({\x},{0.66*3*(10)^(8)*\x/5});
+%     \draw[domain=0:5,smooth,variable=\x,red] plot ({\x},{3*(10)^(8)*\x/5});
+    
+%     \legend{Signal in Transmission Line, Light in Vacuum}
+% \end{tikzpicture}
+% \end{center}

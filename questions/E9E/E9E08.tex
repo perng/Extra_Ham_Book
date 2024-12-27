@@ -1,0 +1,61 @@
+\subsection{1. Discovering the Magic of Wilkinson Dividers!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9E08] What is a use for a Wilkinson divider?
+\begin{enumerate}
+    \item A: To divide the operating frequency of a transmitter signal so it can be used on a lower frequency band
+    \item B: To feed high-impedance antennas from a low-impedance source
+    \item C: To divide power equally between two 50-ohm loads while maintaining 50-ohm input impedance
+    \item D: To divide the frequency of the input to a counter to increase its frequency range
+\end{enumerate} \end{tcolorbox}
+
+
+
+\subsubsection{Understanding the Wilkinson Divider}
+
+A Wilkinson divider is a type of power divider used in radio frequency (RF) applications. It is valued for its ability to separate an input signal into two outputs while maintaining matched impedance. The key feature of a Wilkinson divider is that it allows power to be equally distributed to two loads (in this case, two 50-ohm loads) without causing additional losses due to impedance mismatch.
+
+\subsubsection{Impedance Matching Concept}
+
+To understand the operation of the Wilkinson divider, it is fundamental to grasp the concept of impedance matching. Impedance is the measure of opposition that a circuit presents to a current when a voltage is applied. In RF circuits, it is critical to match the source impedance (where the power comes from) with the load impedance (where the power goes) to maximize power transfer and minimize reflections.
+
+In the case of our Wilkinson divider, both the input and output impedances are designed to be 50 ohms. This ensures that maximum power is transferred without reflections, which is vital for maintaining signal integrity in RF systems.
+
+\subsubsection{Reaction of the Wilkinson Divider in Circuit}
+
+When an input signal is fed into a Wilkinson divider, it is split equally between the two output paths. The division is done in such a way that the input impedance remains constant at 50 ohms, thus preventing potential mismatch losses. 
+
+\subsubsection{Calculation Example}
+
+Let us say we have an input power of \( P_{in} \). The Wilkinson divider effectively splits this power equally to two outputs, resulting in:
+
+\[
+P_{out1} = P_{out2} = \frac{P_{in}}{2}
+\]
+
+For instance, if the input power is 10 Watts:
+
+\[
+P_{out1} = P_{out2} = \frac{10W}{2} = 5W
+\]
+
+Thus, each output reflects half of the input power while ensuring they remain matched to the 50-ohm load.
+
+\subsubsection{Diagram of a Wilkinson Divider}
+
+The following TikZ code can be used to illustrate a simple Wilkinson divider circuit. 
+
+\begin{center}
+\begin{tikzpicture}
+    \draw
+    (0,2) node[left]{Input} -- (1,2) -- (1,1) node[ground]{} -- (0,0)
+    (1,2) -- (3,2) -- (3,1) node[ground]{} -- (2,0)
+    (1,2) -- (3,3) -- (3,2.5) node[right]{2} -- (4,2.5) -- (4,2) node[right]{Output 1}
+    (1,2) -- (3,5) -- (3,4) node[right]{1} -- (4,4) -- (4,2) node[right]{Output 2};
+
+    \draw[->] (0.5,2) -- (1,2);
+\end{tikzpicture}
+\end{center}
+
+This diagram depicts a basic Wilkinson power divider with one input that splits into two outputs, maintaining equal power distribution while preserving the impedance characteristics. The resistor circuits at the outputs will be connected to the 50-ohm loads ensuring that the conditions for impedance matching are satisfied.
+
+By understanding the operation and function of the Wilkinson divider, one can appreciate its crucial role in RF applications, particularly in systems where signal integrity and power efficiency are paramount.

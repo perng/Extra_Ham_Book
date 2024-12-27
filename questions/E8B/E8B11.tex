@@ -1,0 +1,40 @@
+\subsection{Exploring the Magic of Digital Time Division Multiplexing!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8B11} \\
+What is digital time division multiplexing? \\
+\begin{enumerate}[label=\Alph*.]
+    \item Two or more data streams are assigned to discrete sub-carriers on an FM transmitter
+    \item \textbf{Two or more signals are arranged to share discrete time slots of a data transmission}
+    \item Two or more data streams share the same channel by transmitting time of transmission as the sub-carrier
+    \item Two or more signals are quadrature modulated to increase bandwidth efficiency
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a group of friends who want to talk to each other, but there's only one telephone line available. Instead of all of them trying to talk at the same time (which would be messy and confusing), they decide to take turns speaking. Each friend speaks for a short amount of time, and then it's the next friend's turn. This way, everyone gets a chance to talk without interrupting each other.
+
+In the same way, digital time division multiplexing (TDM) lets multiple signals share a single communication channel by splitting the time into small slots. Each signal gets its own time slot to send its information, much like friends taking turns to speak. This helps to make sure that all the information gets transmitted clearly without any mixing up!
+
+\subsubsection{Advanced Explanation}
+Digital time division multiplexing (TDM) is a technique primarily used in digital communication to transmit multiple signals over a single channel. In TDM, each signal is assigned a specific time slot during which it can transmit its data. This is in contrast to frequency division multiplexing (FDM), where multiple signals are sent simultaneously on different frequencies.
+
+For example, suppose we have three signals \( S_1, S_2, \) and \( S_3 \). If we have a total of \( N \) time slots available and each signal is assigned one time slot, the transmission can be represented as follows:
+
+\[
+\text{Time Slot Distribution:} \quad S_1 \rightarrow T_1, \quad S_2 \rightarrow T_2, \quad S_3 \rightarrow T_3, \ldots
+\]
+
+where \( T_1, T_2, T_3 \) are the discrete time slots allocated for each signal. Each signal occupies its respective time slot cyclically. For a number \( k \) of signals, the time slots are labeled from 1 to \( k \), and the transmitter switches between these slots at the beginning of each time period.
+
+Mathematically, the time division can be represented using the equation for bit allocation over time slots. If \( R \) is the total bitrate of the channel and \( N \) is the number of signals being multiplexed, the bitrate allocated to each signal \( R_i \) would be:
+
+\[
+R_i = \frac{R}{N}
+\]
+
+This means each signal gets an equal share of the total bitrate during its time slot.
+
+In conclusion, TDM effectively allows multiple digital signals to be transmitted efficiently over a single communication line by allocating distinct time intervals to each signal. This can significantly increase the efficiency and capacity of the transmission medium.
+
+% Prompt for a diagram: Create a diagram showing multiple signals sharing a single channel with designated time slots for each signal, indicating the concept of TDM visually.

@@ -1,0 +1,52 @@
+\subsection{Boosting Connections: Exploring Link Margin Magic!}
+
+\begin{tcolorbox}[colback=lightgray, colframe=black, title=E4D12]
+What is the link margin in a system with a transmit power level of 10 W (+40 dBm), a system antenna gain of 10 dBi, a cable loss of 3 dB, a path loss of 136 dB, a receiver minimum discernable signal of -103 dBm, and a required signal-to-noise ratio of 6 dB? 
+\begin{enumerate}[label=\Alph*.]
+    \item -8 dB
+    \item -14 dB
+    \item \textbf{+8 dB}
+    \item +14 dB
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to send a message using a flashlight. The brightness of your flashlight is like the transmit power, and the distance the light reaches is affected by several factors, such as how well you can aim it (antenna gain), how much light gets lost in the cable (cable loss), and how much the light spreads out over distance (path loss). To know if your flashlight is bright enough for someone to see your message (the receiver), you need to consider how faint your friend can see the light (minimum discernable signal) and how bright the message needs to be for it to be clear (signal-to-noise ratio). The link margin is like the extra brightness you have at your friend's end after considering all these losses. If you have extra brightness, you can say you are in a good spot!
+
+\subsubsection{Advanced Explanation}
+To calculate the link margin, we can use the following formula:
+
+\[
+\text{Link Margin} = \text{Received Power} - \text{Required Signal Level}
+\]
+
+1. \textbf{Calculate the Received Power:}
+   \[
+   \text{Received Power} = \text{Transmit Power} + \text{Antenna Gain} - \text{Cable Loss} - \text{Path Loss}
+   \]
+   Substituting the values:
+   \[
+   \text{Received Power} = 40 \text{ dBm} + 10 \text{ dBi} - 3 \text{ dB} - 136 \text{ dB}
+   \]
+   \[
+   \text{Received Power} = 40 + 10 - 3 - 136 = -89 \text{ dBm}
+   \]
+
+2. \textbf{Calculate the Required Signal Level:}
+   The required signal level considering the minimum discernable signal and the signal-to-noise ratio is:
+   \[
+   \text{Required Signal Level} = \text{Minimum Discernable Signal} + \text{Signal-to-Noise Ratio}
+   \]
+   Substituting the values:
+   \[
+   \text{Required Signal Level} = -103 \text{ dBm} + 6 \text{ dB} = -97 \text{ dBm}
+   \]
+
+3. \textbf{Calculate the Link Margin:}
+   Now substituting these values into the link margin formula:
+   \[
+   \text{Link Margin} = -89 \text{ dBm} - (-97 \text{ dBm}) = -89 + 97 = +8 \text{ dB}
+   \]
+
+Thus, the correct answer is +8 dB.
+

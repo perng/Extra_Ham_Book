@@ -1,0 +1,32 @@
+\subsection{Unpacking the PEP-Average Power Ratio in SSB Signals!}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Question ID: \textbf{E8A07}]
+What determines the PEP-to-average power ratio of an unprocessed single-sideband phone signal?
+\begin{enumerate}[label=\Alph*.]
+    \item The frequency of the modulating signal
+    \item \textbf{Speech characteristics}
+    \item The degree of carrier suppression
+    \item Amplifier gain
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're talking into a walkie-talkie, and your voice is turned into a signal that can travel over the air. The PEP-to-average power ratio is like measuring how strong your voice sounds when you shout compared to when you speak softly. We want to know what makes your shout (the PEP, or Peak Envelope Power) stronger relative to your normal talk (the average power). In this case, it's the way you talk—the unique features of your speech, like how loud or soft you are at different moments, which affects how strong the signal comes out in total.
+
+\subsubsection{Advanced Explanation}
+The Peak Envelope Power (PEP) to Average Power ratio for an unprocessed single-sideband (SSB) phone signal is primarily influenced by the characteristics of the speech being transmitted. In technical terms, the signal carries information which varies in amplitude based on the speech dynamics, such as consonants and vowels. These characteristics define how power is distributed in the signal.
+
+To understand why speech characteristics are crucial, consider how sounds vary: when someone speaks, the loudness and frequency of their voice change quite a bit. This means that the signal they generate can have peaks (the louder parts) and average levels. The ratio of these two—a higher PEP indicative of peaks compared to the average level—tells us about the energy and clarity of the transmitted speech.
+
+Mathematically, if we denote PEP as \( P_{peak} \) and average power as \( P_{avg} \), the ratio can be expressed as:
+\[
+R = \frac{P_{peak}}{P_{avg}}
+\]
+where \( P_{peak} \) is influenced by the peaks in the speech signal, while the average power includes all the variations over time. 
+
+The underlying concepts necessary to grasp this question include:
+1. **Amplitude Modulation**: This involves varying the amplitude of the carrier wave to match the information signal (your voice).
+2. **Power Calculations**: Understanding how to compute both peak and average power levels in a signal.
+3. **Single-Sideband Modulation (SSB)**: A method of modulating signals to improve bandwidth efficiency.
+
+For visualization, it might help to illustrate a time-domain graph of a typical speech signal, showing peaks and average levels. % Prompt: Create a time-domain representation of a typical speech signal highlighting peaks and average power levels.

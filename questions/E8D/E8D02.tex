@@ -1,0 +1,45 @@
+\subsection{Phasing Up the Fun: Exploring Spread Spectrum Techniques!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8D02} \\[0.5em]
+What spread spectrum communications technique uses a high-speed binary bit stream to shift the phase of an RF carrier? \\[0.5em]
+\begin{enumerate}[label=\Alph*.]
+    \item Frequency hopping
+    \item \textbf{Direct sequence}
+    \item Binary phase-shift keying
+    \item Phase compandored spread spectrum
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a party with a group of friends, and you're trying to have a conversation. But there's loud music playing in the background, making it hard to hear each other. To talk to your friend, you decide to create a secret code by mixing up the words so only you and your friend understand what you're saying. 
+
+In the world of communication, particularly with radio waves, there's a similar need to keep conversations private. One way to do this is by using a method that shifts the language (or phase) of the radio signal very quickly, like how you and your friend changed your words. This technique is called direct sequence spread spectrum, which means that the information is hidden in rapid, changing signals that blend together like mixing colors in art.
+
+\subsubsection{Advanced Explanation}
+In spread spectrum communications, techniques are employed to transmit information over a broad range of frequencies, which helps reduce interference and enhances security. The specific technique in question, direct sequence spread spectrum (DSSS), incorporates a binary bit stream to modulate the phase of a radio frequency (RF) carrier signal.
+
+To understand this concept in depth, we need to recognize a few key components:
+
+1. **RF Carrier Signal**: This is a continuous wave radio signal that can be modulated to carry information.
+2. **Binary Bit Stream**: This consists of bits (0s and 1s) representing the data we want to send.
+3. **Phase Modulation**: This involves changing the phase of the carrier signal based on the binary bit stream.
+
+Mathematically, the phase of the carrier wave can be expressed as:
+\[
+s(t) = A \cos(2 \pi f_c t + \phi(t))
+\]
+where \(A\) is the amplitude, \(f_c\) is the frequency of the carrier, and \(\phi(t)\) is the phase, which is adjusted according to the bit stream.
+
+For example, let’s say we have a binary bit stream \(b(t)\) such as 110011. We can represent this with a code sequence \(c(t)\) that shifts the carrier's phase according to the bits:
+\[
+\phi(t) = \begin{cases} 
+0 & \text{if } b(t) = 0 \\ 
+\pi & \text{if } b(t) = 1 
+\end{cases}
+\]
+This results in a modulated signal that varies and spreads across the frequency spectrum. The high-speed changes allow for resilience against interference and eavesdropping.
+
+Direct sequence spread spectrum is characterized by the use of a spreading code, which expands the signal into a wider bandwidth compared to the original data signal, allowing for multiple simultaneous communications without interference.
+
+% Diagram prompt: Create a diagram illustrating the phase modulation of an RF carrier signal using a binary bit stream, showing the carrier wave before and after modulation with labeled phases.

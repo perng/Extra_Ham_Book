@@ -1,0 +1,42 @@
+\subsection{Finding the Sweet Spot: Acceptable IMD Levels for Idling PSK Signals!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8D09} \\
+What is considered an acceptable maximum IMD level for an idling PSK signal? 
+\begin{enumerate}[label=(\Alph*)]
+    \item +5 dB
+    \item +10 dB
+    \item +15 dB
+    \item \textbf{-30 dB}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are listening to your favorite song on the radio. Sometimes, if the signal is not very clear, you might hear some strange noises mixed in with the music. Those strange noises can come from something called Intermodulation Distortion (IMD). Now, if the distortion is too high (like if your radio is really crackly), the song doesn't sound good anymore. For an idling PSK signal, which is a way of sending information like a song over the radio, the maximum IMD level should be really low, like -30 dB. This means that the song is clear and there aren’t much strange noises, keeping the music enjoyable!
+
+\subsubsection{Advanced Explanation}
+Intermodulation Distortion (IMD) refers to the phenomenon that occurs when two or more signals interact within a nonlinear system, resulting in new frequencies that are typically not present in the original signals. In the context of Phase Shift Keying (PSK) signals, it is crucial to maintain a low level of IMD for optimal signal clarity and system performance.
+
+The acceptable maximum IMD level for an idling PSK signal is defined as -30 dB. This means that the power level of the distorted signals is 30 dB below that of the original signal. To understand this, we can express the relationship mathematically:
+
+\[
+\text{IMD Level (dB)} = 10 \log_{10}\left(\frac{P_{\text{IMD}}}{P_{\text{signal}}}\right)
+\]
+
+Where \( P_{\text{IMD}} \) is the power of the intermodulation distortion product and \( P_{\text{signal}} \) is the power of the desired signal. To meet the requirement of -30 dB, we need:
+
+\[
+10 \log_{10}\left(\frac{P_{\text{IMD}}}{P_{\text{signal}}}\right) = -30
+\]
+
+Rearranging gives:
+
+\[
+\frac{P_{\text{IMD}}}{P_{\text{signal}}} = 10^{-3} \quad \Rightarrow \quad P_{\text{IMD}} = 0.001 P_{\text{signal}}
+\]
+
+This indicates that the power of the intermodulation distortion should be only 0.1% of the power of the original signal. 
+
+Maintaining low IMD levels is vital for telecommunications engineers and system designers, as high levels of distortion can lead to problems in data integrity and communication reliability.
+
+% Diagram prompt: Draw a diagram explaining intermodulation distortion, showing original signals and resulting distorted signals.

@@ -1,809 +1,501 @@
-% ************************************************************************
-% CHAPTER 1: Sublement E1 - Commission Rules
-% ************************************************************************
-\chapter{E1: Commission Rules}
+\chapter{Rules and Regulations for Extra Class Operators}
 
-% ------------------------------------------------------------------------
-% SECTION E1A: Frequency Privileges and Band Restrictions
-% ------------------------------------------------------------------------
-\section{E1A: Frequency Privileges and Band Restrictions}
+\section{Frequency Privileges}
 
-\subsection*{Understanding the Basics}
-  \textcolor{myblue}{\textbf{Frequency privileges}} in amateur radio refers to the specific ranges of radio frequencies that licensed amateur operators are allowed to use. These bands are not random; they are allocated by international and national regulatory bodies. Each band has different propagation characteristics that make them suitable for different types of communication.
-  \par
-  \textcolor{myblue}{\textbf{Power restrictions}} dictate how much output power your transmitter can use. These are also band-specific. Some bands, like 630- and 2200-meter bands, have lower power limits due to their unique propagation and interference potential.
-  \par
-  It is very important that all users operate within allocated bands and power restrictions for that band.
-  
-\mybox{mygreen}{
-  \textbf{Fun Fact}: The 630-meter and 2200-meter bands are relatively new additions to the US amateur radio allocation, offering hams a taste of "low-band" propagation!  These bands have unique challenges and opportunities for experimentation, allowing for long-distance communications through ground-wave and sky-wave propagation. They also require notifications and special operating procedures.
-  }
-  
-\subsection*{Key Concepts for the Questions}
+\subsection*{Introduction to Frequency Privileges}
+Welcome to the frequency playground! As an Extra Class operator, you’ve unlocked the full spectrum of amateur radio bands. But with great power comes great responsibility—staying within the lines (or edges, in this case) is key. This section will help you understand how to operate without spilling over the boundaries, why certain frequencies are sacred, and how to maximize your privileges.
+
+\subsubsection*{Staying Within the Band Edges}
+Imagine you’re at a buffet—everything looks delicious, but you have to stay on your plate! Transmitting within the band works the same way. If your signal spills out of the assigned range, it’s like dropping food on someone else’s table—messy and definitely not allowed.
+
+Here’s the breakdown:
 \begin{itemize}
-    \item \textbf{HF (High Frequency) Bands:} These range from approximately 3 to 30 MHz and offer various long-distance communications opportunities.
-    \item \textbf{Band Edges:}  The upper and lower limits of a specific frequency band.
-    \item \textbf{USB/LSB (Upper Sideband/Lower Sideband):} Two common modes of transmission in the HF bands. They are different types of Amplitude Modulation where carrier is suppressed and only one side band is transmitted. In general Upper Sideband is used for bands with a central frequency of above 10 MHz and LSB is used otherwise.
-    \item \textbf{Phone Mode:} The modulation for carrying voice. It often uses single side band.
-    \item \textbf{Data Mode}: A wide variety of modulation used for digital data transmissions.
-    \item \textbf{Carrier Frequency:} The base frequency at which a radio signal is transmitted.
-    \item \textbf{Bandwidth:} The range of frequencies that a signal occupies.
+    \item \textbf{USB (Upper Sideband):} Common above 10 MHz. The carrier frequency needs to be low enough that the upper edge of your signal doesn’t exceed the band’s upper limit.
+    \item \textbf{LSB (Lower Sideband):} Common below 10 MHz. The carrier frequency should be high enough to keep the lower edge of your signal within the band.
 \end{itemize}
 
-\subsection*{Practice Questions}
+\textbf{Pro Tip:} Add a buffer zone! Keep your carrier a few kHz away from the band edge to avoid accidental spillage.
+
+\begin{tcolorbox}[title=Fun Fact: Why USB and LSB?]
+Did you know? USB is used above 10 MHz, and LSB is used below 10 MHz simply because that’s how radio operators standardized it during WWII. It kept equipment designs simpler at the time, and we’ve stuck with it ever since!
+\end{tcolorbox}
+
+\subsubsection*{Calculating Safe Frequencies}
+Let’s say you’re operating on the 20-meter band (14.000–14.350 MHz):
+\begin{itemize}
+    \item For a USB signal with a 3 kHz bandwidth, the highest legal carrier frequency is 14.347 MHz. Why? The upper edge of your signal will then reach exactly 14.350 MHz.
+    \item For LSB, if the lower band edge is 14.000 MHz, your carrier must be at least 3 kHz above it, or 14.003 MHz.
+\end{itemize}
+
+\subsubsection*{The Consequences of Overflowing}
+What happens if your signal crosses the line? You risk:
+\begin{itemize}
+    \item Causing interference to adjacent bands.
+    \item Receiving a stern warning—or worse—from the FCC.
+\end{itemize}
+So, stay in bounds and enjoy harmonious operation!
+
+\subsection*{Questions for E1A: Frequency Privileges}
 \begin{enumerate}
-    \item Why is it not legal to transmit a 3 kHz bandwidth USB signal with a carrier frequency of 14.348 MHz?
+    \item \textbf{Why is it not legal to transmit a 3 kHz bandwidth USB signal with a carrier frequency of 14.348 MHz?}
     \begin{enumerate}
-        \item USB is not used on 20-meter phone
-        \item  The lower 1 kHz of the signal is outside the 20-meter band
-        \item  14.348 MHz is outside the 20-meter band
-        \item  \textbf {The upper 1 kHz of the signal is outside the 20-meter band}
+        \item USB is not used on 20-meter phone.\\
+        \item The lower 1 kHz of the signal is outside the 20-meter band.\\
+        \item 14.348 MHz is outside the 20-meter band.\\
+        \item \textbf{The upper 1 kHz of the signal is outside the 20-meter band.}
     \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    The 20-meter amateur band is roughly from 14.000 to 14.350 MHz. When transmitting in USB mode, the carrier frequency is at the bottom of transmitted signal. For 3 KHz signal, the top of the signal is at 14.351 MHz which is out of the permitted band, therefore is not legal.
-        
-    \item When using a transceiver that displays the carrier frequency of phone signals, which of the following displayed frequencies represents the lowest frequency at which a properly adjusted LSB emission will be totally within the band?
-    \begin{enumerate}
-        \item The exact lower band edge
-        \item  300 Hz above the lower band edge
-        \item  1 kHz above the lower band edge
-        \item \textbf {3 kHz above the lower band edge}
-    \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    When transmitting in LSB mode, the carrier frequency is at the top of the transmitted signal. For a 3 kHz bandwidth signal, the lower end will be 3 kHz below the displayed frequency. For the signal to be in the band, the lowest end of the signal needs to be at the band edge. Thus the displayed carrier frequency should be 3 kHz above the band edge.
-    
-        \item What is the highest legal carrier frequency on the 20-meter band for transmitting a 2.8 kHz wide USB data signal?
-    \begin{enumerate}
-        \item 14.0708 MHz
-         \item  14.1002 MHz
-         \item \textbf {14.1472 MHz}
-        \item  14.3490 MHz
-    \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    The highest end of 20m band is 14.350 MHz. Because we are using USB mode, our carrier frequency will be on the lower end of the signal, thus, the carrier can go up to 14.350 MHz - 2.8 KHz = 14.3472 MHz. The data portion of the 20 meter band ends at 14.150 MHz. The highest legal carrier frequency is then 14.150 MHz-0.0028 MHz = 14.1472 MHz.
+    \textbf{Explanation:} A USB signal's bandwidth extends above its carrier. At 14.348 MHz, the upper edge reaches 14.351 MHz, exceeding the 20-meter band limit of 14.350 MHz. Options A and C are incorrect because USB is used on 20 meters, and 14.348 MHz is within the band. Option B incorrectly assumes the lower part of the signal causes the issue.
 
-    
-        \item May an Extra class operator answer the CQ of a station on 3.601 MHz LSB phone?
+    \item \textbf{When using a transceiver that displays the carrier frequency of phone signals, which displayed frequency represents the lowest frequency at which a properly adjusted LSB emission will be totally within the band?}
     \begin{enumerate}
-        \item Yes, the entire signal will be inside the SSB allocation for Extra class operators
-        \item  Yes, the displayed frequency is within the 75-meter phone band segment
-        \item \textbf {No, the sideband components will extend beyond the edge of the phone band segment}
-         \item  No, US stations are not permitted to use phone emissions below 3.610 MHz
-        \end{enumerate}
-         \textcolor{myred}{Explanation:}
-          Extra class operators have voice allocation above 3.600 MHz. The lowest edge of the phone segment is 3.600 MHz. If we are using LSB and transmitting at 3.601 MHz, the lower side band goes below 3.600 MHz. Thus, the signal will extend beyond the band edge and become illegal.
-          
-      \item Who must be in physical control of the station apparatus of an amateur station aboard any vessel or craft that is documented or registered in the United States?
-\begin{enumerate}
-   \item Only a person with an FCC Marine Radio license grant
-\item  Only a person named in an amateur station license grant
-\item \textbf {Any person holding an FCC issued amateur license or who is authorized for alien reciprocal operation}
-\item  Any person named in an amateur station license grant or a person holding an unrestricted Radiotelephone Operator Permit
-\end{enumerate}
-\textcolor{myred}{Explanation:}
-Any licensed amateur operator can operate the station on a vessel or aircraft. There is no need for any special endorsement.
- 
-    \item What is the required transmit frequency of a CW signal for channelized 60 meter operation?
-    \begin{enumerate}
-        \item At the lowest frequency of the channel
-        \item \textbf {At the center frequency of the channel}
-        \item  At the highest frequency of the channel
-        \item  On any frequency where the signal's sidebands are within the channel
+        \item The exact lower band edge.\\
+        \item 300 Hz above the lower band edge.\\
+        \item 1 kHz above the lower band edge.\\
+        \item \textbf{3 kHz above the lower band edge.}
     \end{enumerate}
-     \textcolor{myred}{Explanation:}
-    The 60-meter band has specific channels and each channel has center frequencies for CW operations.
+    \textbf{Explanation:} LSB signals extend below the carrier frequency. To ensure the entire 3 kHz signal is within the band, the carrier must be 3 kHz above the band edge. Options A, B, and C underestimate the bandwidth.
 
-    \item What is the maximum power permitted on the 2200-meter band?
+    \item \textbf{What is the highest legal carrier frequency on the 20-meter band for transmitting a 2.8 kHz wide USB data signal?}
     \begin{enumerate}
-        \item 50 watts PEP (peak envelope power)
-        \item  100 watts PEP (peak envelope power)
-         \item \textbf {1 watt EIRP (equivalent isotropic radiated power)}
-        \item  5 watts EIRP (equivalent isotropic radiated power)
+        \item 14.0708 MHz.\\
+        \item 14.1002 MHz.\\
+        \item \textbf{14.1472 MHz.}\\
+        \item 14.3490 MHz.
     \end{enumerate}
-    \textcolor{myred}{Explanation:}
-     The 2200 meter band is among the newest allocations and has special restrictions, including the use of EIRP for power limitation, that is different from the traditional PEP method.
+    \textbf{Explanation:} For a USB signal, the carrier frequency must be low enough to keep the signal's upper edge within the band. At 14.1472 MHz, the upper edge of the 2.8 kHz signal reaches 14.150 MHz, the upper band limit for this part of the band. Other options either miscalculate the bandwidth or reference unrelated frequency limits.
 
-      \item If a station in a message forwarding system inadvertently forwards a message that is in violation of FCC rules, who is primarily accountable for the rules violation?
+    \item \textbf{May an Extra Class operator answer the CQ of a station on 3.601 MHz LSB phone?}
     \begin{enumerate}
-        \item The control operator of the packet bulletin board station
-        \item \textbf {The control operator of the originating station}
-        \item  The control operators of all the stations in the system
-        \item  The control operators of all the stations in the system not authenticating the source from which they accept communications
+        \item Yes, the entire signal will be inside the SSB allocation for Extra Class operators.\\
+        \item Yes, the displayed frequency is within the 75-meter phone band segment.\\
+        \item \textbf{No, the sideband components will extend beyond the edge of the phone band segment.}\\
+        \item No, US stations are not permitted to use phone emissions below 3.610 MHz.
     \end{enumerate}
-      \textcolor{myred}{Explanation:}
-     The control operator of the originating station is responsible for ensuring the contents of any transmission is within FCC regulations, regardless of how it is forwarded.
-       
-      \item Except in some parts of Alaska, what is the maximum power permitted on the 630-meter band?
-        \begin{enumerate}
-       \item 50 watts PEP (peak envelope power)
-      \item  100 watts PEP (peak envelope power)
-       \item  1 watt EIRP (equivalent isotropic radiated power)
-        \item \textbf {5 watts EIRP (equivalent isotropic radiated power)}
+    \textbf{Explanation:} The lower band edge for 75-meter phone is 3.610 MHz. An LSB signal with a carrier at 3.601 MHz would extend 3 kHz below the carrier, violating the band edge. Options A and B ignore this overflow, and option D misrepresents the FCC rules.
+
+\item \textbf{Who must be in physical control of the station apparatus of an amateur station aboard any vessel or craft registered in the United States?}
+    \begin{enumerate}
+        \item Only a person with an FCC Marine Radio license grant.\\
+        \item Only a person named in an amateur station license grant.\\
+        \item \textbf{Any person holding an FCC-issued amateur license or authorized for alien reciprocal operation.}\\
+        \item Any person named in an amateur station license grant or a person holding an unrestricted Radiotelephone Operator Permit.
     \end{enumerate}
-        \textcolor{myred}{Explanation:}
-         The 630 meter band has special restrictions, including the use of EIRP for power limitation, that is different from the traditional PEP method.
-         
-      \item If an amateur station is installed aboard a ship or aircraft, what condition must be met before the station is operated?
-        \begin{enumerate}
-        \item \textbf {Its operation must be approved by the master of the ship or the pilot in command of the aircraft}
-       \item  The amateur station operator must agree not to transmit when the main radio of the ship or aircraft is in use
-       \item  The amateur station must have a power supply that is completely independent of the main ship or aircraft power supply
-        \item  The amateur station must operate only in specific segments of the amateur service HF and VHF bands
-     \end{enumerate}
-        \textcolor{myred}{Explanation:}
-    If operating on a ship or aircraft, the master or pilot must give approval before operating the station.
-      
-    \item What licensing is required when operating an amateur station aboard a US-registered vessel in international waters?
-      \begin{enumerate}
-     \item Any amateur license with an FCC Marine or Aircraft endorsement
-    \item \textbf {Any FCC-issued amateur license}
-       \item  Only General class or higher amateur licenses
-     \item  An unrestricted Radiotelephone Operator Permit
-      \end{enumerate}
-     \textcolor{myred}{Explanation:}
-      Any FCC issued amateur radio license will grant operator access on a US registered vessel in international water. There is no requirement for marine or aircraft endorsement.
+    \textbf{Explanation:} Any amateur operator with a valid FCC license or reciprocal authorization may control the station aboard a U.S.-registered vessel. Options A and D describe unrelated or unnecessary requirements. Option B restricts control unnecessarily to specific named individuals.
+
+    \item \textbf{What is the required transmit frequency of a CW signal for channelized 60-meter operation?}
+    \begin{enumerate}
+        \item At the lowest frequency of the channel.\\
+        \item \textbf{At the center frequency of the channel.}\\
+        \item At the highest frequency of the channel.\\
+        \item On any frequency where the signal's sidebands are within the channel.
+    \end{enumerate}
+    \textbf{Explanation:} CW operation on 60 meters must use the center frequency of the channel to keep the entire signal within the assigned band. Options A and C would place parts of the signal outside the channel, and D is ambiguous.
+
+    \item \textbf{What is the maximum power permitted on the 2200-meter band?}
+    \begin{enumerate}
+        \item 50 watts PEP (peak envelope power).\\
+        \item 100 watts PEP (peak envelope power).\\
+        \item \textbf{1 watt EIRP (equivalent isotropic radiated power).}\\
+        \item 5 watts EIRP (equivalent isotropic radiated power).
+    \end{enumerate}
+    \textbf{Explanation:} The 2200-meter band has a strict power limit of 1 watt EIRP to prevent interference with primary users. Options A and B describe power levels unsuitable for this band, while D applies to the 630-meter band.
+
+    \item \textbf{If a station in a message forwarding system inadvertently forwards a message in violation of FCC rules, who is primarily accountable?}
+    \begin{enumerate}
+        \item The control operator of the packet bulletin board station.\\
+        \item \textbf{The control operator of the originating station.}\\
+        \item The control operators of all the stations in the system.\\
+        \item The control operators of stations not authenticating the source from which they accept communications.
+    \end{enumerate}
+    \textbf{Explanation:} The originating station’s control operator is responsible for ensuring transmitted content complies with FCC rules. Options A and C misunderstand accountability, while D adds unnecessary complexity to the rule.
+
+    \item \textbf{Except in some parts of Alaska, what is the maximum power permitted on the 630-meter band?}
+    \begin{enumerate}
+        \item 50 watts PEP (peak envelope power).\\
+        \item 100 watts PEP (peak envelope power).\\
+        \item 1 watt EIRP (equivalent isotropic radiated power).\\
+        \item \textbf{5 watts EIRP (equivalent isotropic radiated power).}
+    \end{enumerate}
+    \textbf{Explanation:} The 630-meter band permits up to 5 watts EIRP in most locations. Options A and B reference PEP limits, not EIRP. Option C applies to the 2200-meter band.
+
+    \item \textbf{If an amateur station is installed aboard a ship or aircraft, what condition must be met before it is operated?}
+    \begin{enumerate}
+        \item \textbf{Its operation must be approved by the master of the ship or the pilot in command of the aircraft.}\\
+        \item The amateur station operator must agree not to transmit when the main radio is in use.\\
+        \item The amateur station must have an independent power supply.\\
+        \item The amateur station must operate only in specific amateur service HF and VHF bands.
+    \end{enumerate}
+    \textbf{Explanation:} The station’s operation must be authorized by the ship’s master or pilot. Other options impose additional restrictions not required by FCC regulations.
+
+    \item \textbf{What licensing is required when operating an amateur station aboard a U.S.-registered vessel in international waters?}
+    \begin{enumerate}
+        \item Any amateur license with an FCC Marine or Aircraft endorsement.\\
+        \item \textbf{Any FCC-issued amateur license.}\\
+        \item Only General Class or higher amateur licenses.\\
+        \item An unrestricted Radiotelephone Operator Permit.
+    \end{enumerate}
+    \textbf{Explanation:} Any FCC-issued amateur license is sufficient to operate in international waters. Options A and D impose unnecessary restrictions, while C limits access unfairly to certain license classes.
 \end{enumerate}
 
 
-% ------------------------------------------------------------------------
-% SECTION E1B: Station Restrictions and Special Operations
-% ------------------------------------------------------------------------
-\section{E1B: Station Restrictions and Special Operations}
 
-\subsection*{Understanding the Basics}
-  \textcolor{myblue}{\textbf{Station restrictions}} cover various aspects of your amateur radio operation. These can include limits on where you can set up a station, how high your antennas can be, what kind of emissions are permitted, and more. These restrictions are in place to minimize interference with other radio services and to ensure that your station operation doesn't negatively affect public safety.
-  \par
-  \textcolor{myblue}{\textbf{Spurious emissions}} are any emissions outside the intended bandwidth of your signal. This is important because these unwanted signals can interfere with other radio services. These are controlled by FCC regulations.
-  \par
-  \textcolor{myblue}{\textbf{RACES (Radio Amateur Civil Emergency Service)}} is a special operating program for amateur radio during emergencies. It often allows for use of restricted frequencies during emergencies. 
-   \mybox{mygreen}{
-      \textbf{Fun Fact}: Did you know that many of the rules and regulations that we follow today were developed based on a combination of historical precedence and new technological development? Regulations often balance the need for access to frequencies with the goal of minimizing interference, especially among essential services.
-      }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection*{Key Concepts for the Questions}
+\section{Station Restrictions and Special Operations}
+
+\subsection*{Introduction to Station Restrictions}
+Operating an amateur station is more than just flipping a switch and chatting. Certain restrictions and special rules ensure that operations are conducted responsibly, safely, and without interference. From spurious emissions to the rules for emergency communications, this section guides you through the maze of regulations.
+
+\subsubsection*{Spurious Emissions}
+Spurious emissions are the unwanted side effects of transmitting signals. These emissions can cause interference and must be minimized to acceptable levels.
 \begin{itemize}
-    \item \textbf{Spurious Emissions:} Unwanted signals outside the necessary bandwidth of a transmission.
-    \item \textbf{Necessary Bandwidth:} The minimum bandwidth required to transmit the information in a signal.
-    \item \textbf{FCC Monitoring Facility:} A location where the Federal Communications Commission monitors radio activity.
-    \item \textbf{RACES:} Radio Amateur Civil Emergency Service; a service providing emergency communications.
-    \item \textbf{Public Use Airport:} An airport used by commercial and private aircraft.
-    \item \textbf{PRB-1:}  A federal document that establishes guidelines for zoning regulations affecting amateur radio antennas.
-    \item \textbf{Notam (Notice to Air Missions):}  A notice filed with FAA when construction of tall structures can become hazards to the air crafts
+    \item \textbf{Definition:} A spurious emission is a signal outside the necessary bandwidth that can be reduced or eliminated without affecting the transmitted information.
+    \item \textbf{Key Rule:} Spurious emissions must be at least 40 dB below the fundamental power level to prevent interference.
 \end{itemize}
 
-\subsection*{Practice Questions}
+\subsubsection*{The National Radio Quiet Zone (NRQZ)}
+The NRQZ surrounds the National Radio Astronomy Observatory and is designed to protect sensitive equipment from radio frequency interference. Operators in or near this zone must comply with strict rules and may need to obtain special permission for certain operations.
+
+\subsubsection*{Antenna Restrictions Near Airports}
+Erecting an antenna structure near a public airport involves additional requirements:
+\begin{itemize}
+    \item You may need to notify the Federal Aviation Administration (FAA).
+    \item Registration with the FCC may be required under Part 17 of FCC rules.
+\end{itemize}
+These rules are designed to ensure safety and avoid interference with aviation communications.
+
+\subsubsection*{PRB-1 and State and Local Regulations}
+PRB-1 requires that state and local zoning regulations make reasonable accommodations for amateur radio antennas. While it doesn’t guarantee unlimited freedom, it provides a framework for balancing amateur radio needs with local ordinances.
+
+\subsubsection*{RACES Operations}
+The Radio Amateur Civil Emergency Service (RACES) is a special set of rules for amateur stations operating during emergencies. Key points include:
+\begin{itemize}
+    \item Only certified stations may operate under RACES.
+    \item All amateur service frequencies authorized to the control operator may be used.
+\end{itemize}
+
+\subsection*{Questions for E1B: Station Restrictions and Special Operations}
 \begin{enumerate}
-    \item Which of the following constitutes a spurious emission?
+    \item \textbf{Which of the following constitutes a spurious emission?}
     \begin{enumerate}
-        \item An amateur station transmission made without the proper call sign identification
-        \item  A signal transmitted to prevent its detection by any station other than the intended recipient
-        \item  Any transmitted signal that unintentionally interferes with another licensed radio station and whose levels exceed 40 dB below the fundamental power level
-        \item \textbf {An emission outside the signal's necessary bandwidth that can be reduced or eliminated without affecting the information transmitted}
+        \item An amateur station transmission made without the proper call sign identification.\\
+        \item A signal transmitted to prevent its detection by any station other than the intended recipient.\\
+        \item Any transmitted signal that unintentionally interferes with another licensed radio station and whose levels exceed 40 dB below the fundamental power level.\\
+        \item \textbf{An emission outside the signal’s necessary bandwidth that can be reduced or eliminated without affecting the information transmitted.}
     \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    A spurious emission is any emission from a transmitter that is outside its designed bandwidth, which can be eliminated without sacrificing the content of transmission.
+    \textbf{Explanation:} A spurious emission is any unnecessary signal that lies outside the bandwidth required for communication. Options A, B, and C describe other unrelated issues, not spurious emissions.
 
-     \item Which of the following is an acceptable bandwidth for digital voice or slow-scan TV transmissions made on the HF amateur bands?
+    \item \textbf{Which of the following is an acceptable bandwidth for digital voice or slow-scan TV transmissions made on the HF amateur bands?}
     \begin{enumerate}
-        \item \textbf {3 kHz}
-        \item  10 kHz
-        \item  15 kHz
-        \item  20 kHz
+        \item \textbf{3 kHz.}\\
+        \item 10 kHz.\\
+        \item 15 kHz.\\
+        \item 20 kHz.
     \end{enumerate}
-       \textcolor{myred}{Explanation:}
-   While there are some exception, 3 kHz is the most common limit for digital voice and slow-scan TV signals on the HF bands. This is to make sure those signal does not interfere with the other signals in the band.
+    \textbf{Explanation:} Digital voice and SSTV transmissions on HF bands must fit within the 3 kHz bandwidth commonly used for phone operations. Wider bandwidths (B, C, and D) are not allowed on HF.
 
-       \item Within what distance must an amateur station protect an FCC monitoring facility from harmful interference?
-       \begin{enumerate}
-         \item \textbf {1 mile}
-         \item  3 miles
-         \item  10 miles
-        \item  30 miles
-        \end{enumerate}
-        \textcolor{myred}{Explanation:}
-    The FCC mandates that amateur stations must protect FCC monitoring facilities within 1 mile from harmful interference.
-    
-       \item What must the control operator of a repeater operating in the 70-centimeter band do if a radiolocation system experiences interference from that repeater?
-       \begin{enumerate}
-        \item Reduce the repeater antenna HAAT (Height Above Average Terrain)
-         \item  File an FAA NOTAM (Notice to Air Missions) with the repeater system's ERP, call sign, and six-character grid locator
-       \item \textbf {Cease operation or make changes to the repeater that mitigate the interference}
-        \item  All these choices are correct
-        \end{enumerate}
-          \textcolor{myred}{Explanation:}
-      The control operator must make changes to the repeater or cease the operation to mitigate interference with radiolocation.
-        
-         \item What is the National Radio Quiet Zone?
-       \begin{enumerate}
-          \item An area surrounding the FCC monitoring station in Laurel, Maryland
-      \item  An area in New Mexico surrounding the White Sands Test Area
-    \item \textbf {An area surrounding the National Radio Astronomy Observatory}
-       \item  An area in Florida surrounding Cape Canaveral
-        \end{enumerate}
-          \textcolor{myred}{Explanation:}
-       The National Radio Quiet Zone surrounds the National Radio Astronomy Observatory in West Virginia and limits certain radio transmissions.
-       
-        \item Which of the following additional rules apply if you are erecting an amateur station antenna structure at a site at or near a public use airport?
-        \begin{enumerate}
-        \item \textbf {You may have to notify the Federal Aviation Administration and register it with the FCC as required by Part 17 of the FCC rules}
-       \item  You may have to enter the height above ground in meters, and the latitude and longitude in degrees, minutes, and seconds on the FAA website
-         \item  You must file an Environmental Impact Statement with the EPA before construction begins
-    \item  You must obtain a construction permit from the airport zoning authority per Part 119 of the FAA regulations
-      \end{enumerate}
-    \textcolor{myred}{Explanation:}
-     Antenna construction near an airport must follow part 17 of the FCC rules and may require notification of FAA.
-     
-    \item To what type of regulations does PRB-1 apply?
-      \begin{enumerate}
-          \item Homeowners associations
-       \item  FAA tower height limits
-      \item \textbf {State and local zoning}
-       \item  Use of wireless devices in vehicles
-        \end{enumerate}
-     \textcolor{myred}{Explanation:}
-     PRB-1 is for zoning regulations and establish guidance for state and local zoning rules when regarding the construction of radio antennas.
-    
-       \item What limitations may the FCC place on an amateur station if its signal causes interference to domestic broadcast reception, assuming that the receivers involved are of good engineering design?
-      \begin{enumerate}
-          \item The amateur station must cease operation
-      \item  The amateur station must cease operation on all frequencies below 30 MHz
-         \item  The amateur station must cease operation on all frequencies above 30 MHz
-      \item \textbf {The amateur station must avoid transmitting during certain hours on frequencies that cause the interference}
-      \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    If a station signal is causing interference with broadcasting reception, FCC can request avoidance of transmission in those frequencies when the interference is happening.
-       
-      \item Which amateur stations may be operated under RACES rules?
-        \begin{enumerate}
-          \item Only those club stations licensed to Amateur Extra class operators
-       \item  Any FCC-licensed amateur station except a Technician class
-     \item \textbf {Any FCC-licensed amateur station certified by the responsible civil defense organization for the area served}
-     \item  Only stations meeting the FCC Part 97 technical standards for operation during an emergency
-    \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    Any FCC-licensed amateur radio can operate under RACES rules if certified by the local civil defense organization.
-     
-    \item What frequencies are authorized to an amateur station operating under RACES rules?
+    \item \textbf{Within what distance must an amateur station protect an FCC monitoring facility from harmful interference?}
     \begin{enumerate}
-      \item \textbf {All amateur service frequencies authorized to the control operator}
-    \item  Specific segments in the amateur service MF, HF, VHF, and UHF bands
-    \item  Specific local government channels
-        \item  All these choices are correct
+        \item \textbf{1 mile.}\\
+        \item 3 miles.\\
+        \item 10 miles.\\
+        \item 30 miles.
     \end{enumerate}
-     \textcolor{myred}{Explanation:}
-     A RACES operation may use all amateur radio bands and modes authorized to the control operator.
-    
-    \item What does PRB-1 require of state and local regulations affecting amateur radio antenna size and structures?
+    \textbf{Explanation:} Amateur stations within 1 mile of an FCC monitoring facility must avoid causing harmful interference to ensure accurate enforcement operations. Greater distances (B, C, D) are not required.
+
+    \item \textbf{What must the control operator of a repeater operating in the 70-centimeter band do if a radiolocation system experiences interference from that repeater?}
     \begin{enumerate}
-        \item No limitations may be placed on antenna size or placement
-        \item \textbf {Reasonable accommodations of amateur radio must be made}
-        \item  Such structures must be permitted when use for emergency communications can be demonstrated
-        \item  Such structures must be permitted if certified by a registered professional engineer
-        \end{enumerate}
-     \textcolor{myred}{Explanation:}
-     PRB-1 dictates that zoning rules should be applied with reasonable accommodations for amateur radio.
+        \item Reduce the repeater antenna HAAT (Height Above Average Terrain).\\
+        \item File an FAA NOTAM (Notice to Air Missions) with the repeater system's ERP, call sign, and six-character grid locator.\\
+        \item \textbf{Cease operation or make changes to the repeater that mitigate the interference.}\\
+        \item All these choices are correct.
+    \end{enumerate}
+    \textbf{Explanation:} The control operator must mitigate interference with radiolocation systems by ceasing operations or making technical adjustments. Options A and B are not appropriate for addressing interference directly.
+
+    \item \textbf{What is the National Radio Quiet Zone?}
+    \begin{enumerate}
+        \item An area surrounding the FCC monitoring station in Laurel, Maryland.\\
+        \item An area in New Mexico surrounding the White Sands Test Area.\\
+        \item \textbf{An area surrounding the National Radio Astronomy Observatory.}\\
+        \item An area in Florida surrounding Cape Canaveral.
+    \end{enumerate}
+    \textbf{Explanation:} The NRQZ protects the National Radio Astronomy Observatory. The other areas mentioned are unrelated to radio quiet zones.
+
+    \item \textbf{What does PRB-1 require of state and local regulations affecting amateur radio antenna size and structures?}
+    \begin{enumerate}
+        \item No limitations may be placed on antenna size or placement.\\
+        \item \textbf{Reasonable accommodations of amateur radio must be made.}\\
+        \item Such structures must be permitted when use for emergency communications can be demonstrated.\\
+        \item Such structures must be permitted if certified by a registered professional engineer.
+    \end{enumerate}
+    \textbf{Explanation:} PRB-1 mandates reasonable accommodations for amateur antennas but doesn’t guarantee unrestricted installation (A) or require emergency use (C) or professional certification (D).
+
+\item \textbf{Which of the following additional rules apply if you are erecting an amateur station antenna structure at a site at or near a public use airport?}
+\begin{enumerate}
+    \item \textbf{You may have to notify the Federal Aviation Administration and register it with the FCC as required by Part 17 of the FCC rules.}\\
+    \item You may have to enter the height above ground in meters, and the latitude and longitude in degrees, minutes, and seconds on the FAA website.\\
+    \item You must file an Environmental Impact Statement with the EPA before construction begins.\\
+    \item You must obtain a construction permit from the airport zoning authority per Part 119 of the FAA regulations.
 \end{enumerate}
+\textbf{Explanation:} The FAA and FCC require notification and registration for antenna structures that might impact aviation safety, especially near airports. Options B, C, and D are either unnecessary or apply to unrelated regulatory requirements.
 
-% ------------------------------------------------------------------------
-% SECTION E1C: Automatic and Remote Control
-% ------------------------------------------------------------------------
-\section{E1C: Automatic and Remote Control}
-\subsection*{Understanding the Basics}
-  \textcolor{myblue}{\textbf{Automatic control}} refers to the operation of a ham radio station without the direct, active participation of a control operator. This can involve computer programs, timers, or other automation.
-  \par
-  \textcolor{myblue}{\textbf{Remote control}} involves operation of a station over a distance, typically using radio links or the internet. While remote operation provides great flexibility, it also requires careful attention to regulations.
-  \par
-  \textcolor{myblue}{\textbf{Band-specific regulations}} can be very different. It is essential to be familiar with these requirements.
-   \par
-  \textcolor{myblue}{\textbf{Spurious emission standards}} are very important to prevent interference to other communication services.
-  \par
-  \textcolor{myblue}{\textbf{HF modulation index limit}} is important for the voice operation, as explained in E8B.
-  \par
-
-  \subsection*{Deep Dive}
-  
-\subsubsection*{Modulation Index}
-
-The \textbf{modulation index} is a measure of the extent of modulation in an amplitude modulation (AM) system. It is defined as the ratio of the amplitude of the modulating signal to the amplitude of the carrier signal. Mathematically, it is expressed as:
-
-\begin{equation}
-    m = \frac{A_m}{A_c}
-\end{equation}
-
-where:
-\begin{itemize}
-    \item $m$ is the modulation index,
-    \item $A_m$ is the amplitude of the modulating signal,
-    \item $A_c$ is the amplitude of the carrier signal.
-\end{itemize}
-
-The modulation index determines the characteristics of the AM signal:
-\begin{itemize}
-    \item \textbf{Under-Modulation:} $m < 1$, where the modulating signal is weaker than the carrier signal.
-    \item \textbf{Critical Modulation:} $m = 1$, where the amplitude of the modulating signal equals the amplitude of the carrier signal.
-    \item \textbf{Over-Modulation:} $m > 1$, where the modulating signal is stronger than the carrier signal, leading to distortion.
-\end{itemize}
-
-\subsubsection*{Illustration of Modulated Waveforms}
-Below are the waveform illustrations for normal modulation (critical modulation) and over-modulation:
-
-
-
-\begin{figure}[h!]
-    \centering
-    \begin{tikzpicture}
-        \begin{axis}[
-            width=12cm, height=5cm,
-            xlabel={Time}, ylabel={Amplitude},
-            axis lines=middle,
-            xmin=0, xmax=10,
-            ymin=-2, ymax=2,
-            samples=500,
-        ]
-        % Normal modulation
-        \addplot [blue, thick, domain=0:10] { (1 + 0.5*sin(deg(2*pi*x/2)))*sin(deg(2*pi*x)) };
-        \addplot [red, thick, dashed, domain=0:10] { 1 + 0.5*sin(deg(2*pi*x/2)) };
-        \addplot [red, thick, dashed, domain=0:10] { -1 - 0.5*sin(deg(2*pi*x/2)) };
-        \end{axis}
-    \end{tikzpicture}
-    \caption{Normal Modulation ($m = 1$)}
-
-    \vspace{1cm}
-
-    \begin{tikzpicture}
-        \begin{axis}[
-            width=12cm, height=5cm,
-            xlabel={Time}, ylabel={Amplitude},
-            axis lines=middle,
-            xmin=0, xmax=10,
-            ymin=-3, ymax=3,
-            samples=500,
-        ]
-        % Over-modulation
-        \addplot [blue, thick, domain=0:10] { (1 + 1.5*sin(deg(2*pi*x/2)))*sin(deg(2*pi*x)) };
-        \addplot [red, thick, dashed, domain=0:10] { 1 + 1.5*sin(deg(2*pi*x/2)) };
-        \addplot [red, thick, dashed, domain=0:10] { -1 - 1.5*sin(deg(2*pi*x/2)) };
-        \end{axis}
-    \end{tikzpicture}
-    \caption{Over-Modulation ($m > 1$)}
-%\caption{Illustrations of AM waveforms: Normal Modulation and Over-Modulation}
-\end{figure}
-
-  
-\mybox{mygreen}{
-    \textbf{Fun Fact}:  Modern technology has enabled hams to operate their station remotely from halfway around the world using Internet and radio links, adding new dimensions to amateur radio. But the fundamental rules related to transmission and interference still apply.
-    }
-
-
-\subsection*{Key Concepts for the Questions}
-\begin{itemize}
-    \item \textbf{Data emission:}  Digital signals used for transferring information.
-    \item \textbf{Foreign Communications:} Transmissions sent to or received from amateur stations in other countries.
-    \item \textbf{IARP:} International Amateur Radio Permit; enables operations in countries in Americas.
-    \item \textbf{CEPT:} European Conference of Postal and Telecommunications administrations. Enables operations in most European countries.
-    \item \textbf{Third Party Communications:} Passing messages on behalf of other people, not the operator.
-    \item \textbf{Utilities Technology Council (UTC):} An organization that facilitates notification before operation on specific bands.
-    \item \textbf{Angle modulation:} A type of modulation where the information is encoded in the phase or frequency.
-    \item \textbf{Spurious emission:} Unwanted radio signals transmitted outside the desired bandwidth.
-\end{itemize}
-
-\subsection*{Practice Questions}
+\item \textbf{To what type of regulations does PRB-1 apply?}
 \begin{enumerate}
-    \item What is the maximum bandwidth for a data emission on 60 meters?
-        \begin{enumerate}
-       \item 60 Hz
-        \item  170 Hz
-      \item  1.5 kHz
-        \item \textbf {2.8 kHz}
-    \end{enumerate}
-     \textcolor{myred}{Explanation:}
-     The FCC specifies the maximum bandwidth of 2.8 kHz for digital modes on the 60-meter band.
-        
-        \item Which of the following apply to communications transmitted to amateur stations in foreign countries?
-    \begin{enumerate}
-        \item Third party traffic must be limited to that intended for the exclusive use of government and non-Government Organization (NGOs) involved in emergency relief activities
-        \item  All transmissions must be in English
-        \item \textbf {Communications must be limited to those incidental to the purpose of the amateur service and remarks of a personal nature}
-        \item  All these choices are correct
-    \end{enumerate}
-     \textcolor{myred}{Explanation:}
-    Transmissions to stations in foreign countries must be non-commercial, non-political and limited to personal topics.
-        
-        \item How long must an operator wait after filing a notification with the Utilities Technology Council (UTC) before operating on the 2200-meter or 630-meter band?
-        \begin{enumerate}
-          \item Operators must not operate until approval is received
-       \item \textbf {Operators may operate after 30 days, providing they have not been told that their station is within 1 kilometer of PLC systems using those frequencies}
-      \item  Operators may not operate until a test signal has been transmitted in coordination with the local power company
-    \item  Operations may commence immediately, and may continue unless interference is reported by the UTC
-       \end{enumerate}
-       \textcolor{myred}{Explanation:}
-      Once the operator files a notification to UTC for operations in 2200m and 630m band, operation can commence after 30 days.
-        
-        \item What is an IARP?
-       \begin{enumerate}
-        \item \textbf {A permit that allows US amateurs to operate in certain countries of the Americas}
-         \item  The internal amateur radio practices policy of the FCC
-        \item  An indication of increased antenna reflected power
-       \item  A forecast of intermittent aurora radio propagation
-        \end{enumerate}
-        \textcolor{myred}{Explanation:}
-      IARP or International Amateur Radio Permit allows operations in select countries in Americas.
+    \item Homeowners associations.\\
+    \item FAA tower height limits.\\
+    \item \textbf{State and local zoning.}\\
+    \item Use of wireless devices in vehicles.
+\end{enumerate}
+\textbf{Explanation:} PRB-1 ensures that state and local zoning authorities make reasonable accommodations for amateur radio antennas. Options A and D are unrelated, and B pertains to federal, not state or local, regulations.
 
-    \item Under what situation may a station transmit third party communications while being automatically controlled?
-        \begin{enumerate}
-        \item Never
-          \item \textbf {Only when transmitting RTTY or data emissions}
-         \item  Only when transmitting SSB or CW
-        \item  On any mode approved by the National Telecommunication and Information Administration
-     \end{enumerate}
-       \textcolor{myred}{Explanation:}
-        Third party communications can only be transmitted in data mode and under automatic control.
+\item \textbf{What limitations may the FCC place on an amateur station if its signal causes interference to domestic broadcast reception, assuming that the receivers involved are of good engineering design?}
+\begin{enumerate}
+    \item The amateur station must cease operation.\\
+    \item The amateur station must cease operation on all frequencies below 30 MHz.\\
+    \item The amateur station must cease operation on all frequencies above 30 MHz.\\
+    \item \textbf{The amateur station must avoid transmitting during certain hours on frequencies that cause the interference.}
+\end{enumerate}
+\textbf{Explanation:} The FCC can impose time and frequency restrictions to mitigate interference. Ceasing all operations (options A, B, and C) is unnecessarily broad and not the standard approach.
 
-    \item Which of the following is required in order to operate in accordance with CEPT rules in foreign countries where permitted?
-       \begin{enumerate}
-         \item You must identify in the official language of the country in which you are operating
-    \item  The US embassy must approve of your operation
-    \item \textbf {You must have a copy of FCC Public Notice DA 16-1048}
-        \item  You must append "/CEPT" to your call sign
-    \end{enumerate}
-        \textcolor{myred}{Explanation:}
-     FCC public notice DA 16-1048 lists conditions of operations under CEPT.
+\item \textbf{Which amateur stations may be operated under RACES rules?}
+\begin{enumerate}
+    \item Only those club stations licensed to Amateur Extra class operators.\\
+    \item Any FCC-licensed amateur station except a Technician class.\\
+    \item \textbf{Any FCC-licensed amateur station certified by the responsible civil defense organization for the area served.}\\
+    \item Only stations meeting the FCC Part 97 technical standards for operation during an emergency.
+\end{enumerate}
+\textbf{Explanation:} RACES certification is required by the civil defense organization for a station to operate under these rules. Options A, B, and D impose unnecessary limitations or reference unrelated criteria.
 
-     \item What notifications must be given before transmitting on the 630- or 2200-meter bands?
-   \begin{enumerate}
-         \item A special endorsement must be requested from the FCC
-       \item  An environmental impact statement must be filed with the Department of the Interior
-    \item  Operators must inform the FAA of their intent to operate, giving their call sign and distance to the nearest runway
-      \item \textbf {Operators must inform the Utilities Technology Council (UTC) of their call sign and coordinates of the station}
-    \end{enumerate}
-        \textcolor{myred}{Explanation:}
-         To start operations in 630m or 2200m band the operators must inform UTC about their call sign and coordinates.
-      
-        \item What is the maximum permissible duration of a remotely controlled station's transmissions if its control link malfunctions?
-         \begin{enumerate}
-         \item 30 seconds
-        \item \textbf {3 minutes}
-      \item  5 minutes
-        \item  10 minutes
-        \end{enumerate}
-           \textcolor{myred}{Explanation:}
-         If remote control malfunctions, the station can only transmit for maximum 3 minutes.
-        
-        \item What is the highest modulation index permitted at the highest modulation frequency for angle modulation below 29.0 MHz?
-       \begin{enumerate}
-        \item 0.5
-        \item \textbf {1.0}
-       \item  2.0
-      \item  3.0
-     \end{enumerate}
-       \textcolor{myred}{Explanation:}
-    The modulation index must be less than 1.0 for any angle modulation below 29 MHz.
-        
-       \item What is the maximum mean power level for a spurious emission below 30 MHz with respect to the fundamental emission?
-        \begin{enumerate}
-     \item \textbf {- 43 dB}
-        \item  - 53 dB
-       \item  - 63 dB
-        \item  - 73 dB
-    \end{enumerate}
-   \textcolor{myred}{Explanation:}
-    The power of a spurious emission below 30 MHz must be at least 43 dB less than fundamental power.
-       
-     \item Which of the following operating arrangements allows an FCC-licensed US citizen to operate in many European countries, and amateurs from many European countries to operate in the US?
-      \begin{enumerate}
-      \item \textbf {CEPT}
-        \item  IARP
-      \item  ITU reciprocal license
-     \item  All these choices are correct
-      \end{enumerate}
-      \textcolor{myred}{Explanation:}
-       CEPT allows reciprocal operations in many European countries as well as the US.
+\item \textbf{What frequencies are authorized to an amateur station operating under RACES rules?}
+\begin{enumerate}
+    \item \textbf{All amateur service frequencies authorized to the control operator.}\\
+    \item Specific segments in the amateur service MF, HF, VHF, and UHF bands.\\
+    \item Specific local government channels.\\
+    \item All these choices are correct.
+\end{enumerate}
+\textbf{Explanation:} RACES rules allow use of all frequencies authorized to the operator’s license. Options B and C impose restrictions not required under RACES, and D is overly inclusive.
 
-        \item In what portion of the 630-meter band are phone emissions permitted?
-         \begin{enumerate}
-          \item None
-          \item  Only the top 3 kHz
-           \item  Only the bottom 3 kHz
-       \item \textbf {The entire band}
-       \end{enumerate}
-        \textcolor{myred}{Explanation:}
-     Phone operation is permitted throughout the 630 meter band.
 \end{enumerate}
 
 
-% ------------------------------------------------------------------------
-% SECTION E1D: Amateur Space and Earth Stations
-% ------------------------------------------------------------------------
-\section{E1D: Amateur Space and Earth Stations}
-\subsection*{Understanding the Basics}
-   \textcolor{myblue}{\textbf{Amateur space and earth stations}} are radio facilities for communicating through satellites and balloons that are more than 50 km above the Earth's surface. They have special rules regarding telemetry, telecommand, and identification.
-\par
-   \textcolor{myblue}{\textbf{Telemetry}} refers to the transmission of data or measurements to a ground station.
-   \textcolor{myblue}{\textbf{Telecommand}} signals are used to remotely control the station. These communications follow specific rules in order to reduce interference with the other services and operations.
-   \textcolor{myblue}{\textbf{One-way communications}} are usually prohibited but is allowed for beacons and space stations.
 
-\mybox{mygreen}{
-  \textbf{Fun Fact}: Some of the most exciting amateur radio activities occur through satellite communications. The International Space Station (ISS) often has amateur radio gear onboard that can be used to talk with astronauts! There are also a whole collection of small amateur satellites that you can contact.
-  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Automatic and Remote Control}
 
-\subsection*{Key Concepts for the Questions}
+\subsection*{Introduction to Automatic and Remote Control}
+The magic of amateur radio expands with the ability to control your station remotely or automatically. These advanced features let you explore the airwaves from afar or keep your station active without direct interaction. However, these operations come with specific rules to ensure smooth and safe practices.
+
+\subsubsection*{Remote Control}
+Remote-controlled stations are a powerful tool, enabling operators to use their station even when physically distant. Here are the essentials:
 \begin{itemize}
-    \item \textbf{Telemetry:} The one way transmission of measurements.
-        \item \textbf{Telecommand:} The signals that control a remote system.
-    \item \textbf{Space Telecommand Station:} The earth station that sends telecommand signals to space.
-    \item \textbf{One-way transmission:} Transmission from a station with no response from the receiving station.
-     \item \textbf{Earth Station:} An amateur station that communicates with the space station.
-      \item \textbf{HF/VHF/UHF Bands:} High frequency, very high frequency, and ultra high frequency amateur bands.
-      \item \textbf{AMASAT:} Radio Amateur Satellite Corporation
-
+    \item \textbf{Control Link:} A secure and reliable control link must be maintained at all times to ensure the station operates correctly.
+    \item \textbf{Failsafe Mechanism:} If the control link is lost, transmissions must cease within \textbf{three minutes}. This prevents unintentional interference or rogue transmissions.
+    \item \textbf{Operator Responsibilities:} Even remotely, the operator retains full responsibility for complying with all FCC rules.
 \end{itemize}
 
-\subsection*{Practice Questions}
-\begin{enumerate}
-  \item What is the definition of telemetry?
-    \begin{enumerate}
-        \item \textbf {One-way transmission of measurements at a distance from the measuring instrument}
-        \item  Two-way transmissions in excess of 1000 feet
-       \item  Two-way transmissions of data
-        \item  One-way transmission that initiates, modifies, or terminates the functions of a device at a distance
-    \end{enumerate}
-    \textcolor{myred}{Explanation:}
-    Telemetry is the transmission of data from a remote location for measurement. It is a one way communication.
-
-    \item Which of the following may transmit encrypted messages?
-     \begin{enumerate}
-        \item Telecommand signals to terrestrial repeaters
-        \item \textbf {Telecommand signals from a space telecommand station}
-        \item  Auxiliary relay links carrying repeater audio
-        \item  Mesh network backbone nodes
-    \end{enumerate}
-      \textcolor{myred}{Explanation:}
-    Only space telecommand station may transmit encrypted messages.
-    
-    \item What is a space telecommand station?
-    \begin{enumerate}
-      \item An amateur station located on the surface of the Earth for communication with other Earth stations by means of Earth satellites
-        \item \textbf {An amateur station that transmits communications to initiate, modify, or terminate functions of a space station}
-     \item  An amateur station located in a satellite or a balloon more than 50 kilometers above the surface of the Earth
-        \item  An amateur station that receives telemetry from a satellite or balloon more than 50 kilometers above the surface of the Earth
-    \end{enumerate}
-       \textcolor{myred}{Explanation:}
-    A space telecommand station is a station on earth that sends telecommand to satellites and other space stations.
-
-    \item Which of the following is required in the identification transmissions from a balloon-borne telemetry station?
-       \begin{enumerate}
-          \item \textbf {Call sign}
-        \item  The output power of the balloon transmitter
-        \item  The station's six-character Maidenhead grid locator
-        \item  All these choices are correct
-    \end{enumerate}
-         \textcolor{myred}{Explanation:}
-    A ballon-born telemetry station is required to identify by callsign at the beginning of the transmission.
-    
-        \item What must be posted at the location of a station being operated by telecommand on or within 50 kilometers of the Earth's surface?
-      \begin{enumerate}
-        \item A photocopy of the station license
-        \item  A label with the name, address, and telephone number of the station licensee
-    \item  A label with the name, address, and telephone number of the control operator
-      \item \textbf {All these choices are correct}
-    \end{enumerate}
-          \textcolor{myred}{Explanation:}
-     At a telecommand station, the station license, licensee information, and control operator information should be posted.
-      
-        \item What is the maximum permitted transmitter output power when operating a model craft by telecommand?
-       \begin{enumerate}
-         \item 1 watt
-        \item \textbf {2 watts}
-        \item  5 watts
-        \item  100 watts
-    \end{enumerate}
-          \textcolor{myred}{Explanation:}
-       The power limit for telecommand operation of a model craft is 2 watts.
-       
-    \item Which of the following HF amateur bands include allocations for space stations?
-      \begin{enumerate}
-    \item \textbf {40 meters, 20 meters, 15 meters, and 10 meters}
-        \item  30 meters, 17 meters, and 10 meters
-        \item  Only 10 meters
-        \item  Satellite operation is permitted on all HF bands
-    \end{enumerate}
-       \textcolor{myred}{Explanation:}
-    40, 20, 15, and 10 meter bands has allocations for space stations.
-
-      \item Which VHF amateur bands have frequencies authorized for space stations?
-        \begin{enumerate}
-        \item 6 meters and 2 meters
-       \item  6 meters, 2 meters, and 1.25 meters
-         \item  2 meters and 1.25 meters
-     \item \textbf {2 meters}
-        \end{enumerate}
-      \textcolor{myred}{Explanation:}
-    2 meter band is among the most used VHF band for space operations.
-         
-    \item Which UHF amateur bands have frequencies authorized for space stations?
-       \begin{enumerate}
-      \item 70 centimeters only
-       \item \textbf {70 centimeters and 13 centimeters}
-    \item  70 centimeters and 33 centimeters
-       \item  33 centimeters and 13 centimeters
-     \end{enumerate}
-     \textcolor{myred}{Explanation:}
-        70cm and 13 cm band are among the most used UHF bands for space operations.
-       
-      \item Which amateur stations are eligible to be telecommand stations of space stations, subject to the privileges of the class of operator license held by the control operator of the station?
-    \begin{enumerate}
-        \item Any amateur station approved by AMSAT
-        \item \textbf {Any amateur station so designated by the space station licensee}
-       \item  Any amateur station so designated by the ITU
-        \item  All these choices are correct
-    \end{enumerate}
-        \textcolor{myred}{Explanation:}
-       A space station licensee can designate any amateur station for telecommand.
-   
-      \item Which amateur stations are eligible to operate as Earth stations?
-      \begin{enumerate}
-        \item Any amateur licensee who has successfully completed the AMSAT space communications course
-      \item  Only those of General, Advanced or Amateur Extra class operators
-       \item  Only those of Amateur Extra class operators
-        \item \textbf {Any amateur station, subject to the privileges of the class of operator license held by the control operator}
-     \end{enumerate}
-      \textcolor{myred}{Explanation:}
-    Any amateur station that complies with band and mode limits can be a ground station.
-    
-     \item Which of the following amateur stations may transmit one-way communications?
-      \begin{enumerate}
-        \item \textbf {A space station, beacon station, or telecommand station}
-       \item  A local repeater or linked repeater station
-       \item  A message forwarding station or automatically controlled digital station
-        \item  All these choices are correct
-        \end{enumerate}
-         \textcolor{myred}{Explanation:}
-       Space station, beacon, and telecommand stations are permitted one way transmissions
-\end{enumerate}
-
-
-% ------------------------------------------------------------------------
-% SECTION E1F: Miscellaneous Rules
-% ------------------------------------------------------------------------
-\section{E1F: Miscellaneous Rules}
-
-\subsection*{Understanding the Basics}
-  \textcolor{myblue}{\textbf{Miscellaneous rules}} encompasses a range of topics including use of external RF amplifiers, prohibited communications, spread spectrum operation, auxiliary stations, operation of Canadian amateurs in the US, and special temporary authorities.
-  \par
- \textcolor{myblue}{\textbf{External RF power amplifiers}} can enhance the power of a radio transmission. Rules for their design, sale, and use are set by FCC.
-   \par
-  \textcolor{myblue}{\textbf{Prohibited communications}} are also set by FCC, for example, transmissions for hire or material gain is usually prohibited.
-  \par
-  \textcolor{myblue}{\textbf{Spread spectrum}} is a transmission method using a much broader bandwidth that traditional modulation. It has special use conditions.
-\par
-    \textcolor{myblue}{\textbf{Special temporary authority (STA)}} is a special permission granted by FCC, to allow exceptions to the FCC rules for the reasons such as experiments or public service.
-  
-\mybox{mygreen}{
-    \textbf{Fun Fact}:  The rules governing amateur radio have evolved over more than 100 years and are meant to balance experimentation with the need to prevent harmful interference.  This continues to evolve with the advance of technology and new operating practices.
-    }
-
-\subsection*{Key Concepts for the Questions}
+\subsubsection*{Automatic Control}
+Automatic control takes the operator out of the immediate loop, allowing the station to operate unattended under specific conditions:
 \begin{itemize}
-        \item \textbf{Spread Spectrum:} Transmission techniques that use a wider bandwidth than traditional modulation.
-      \item \textbf{External RF power amplifiers:} Devices used to increase the transmitter power.
-          \item \textbf{Auxiliary Station:} A station used for relaying or controlling other stations.
-    \item \textbf{Special Temporary Authority (STA):} Permission by the FCC for a temporary deviation from standard rules.
-    \item \textbf{Line A:} An imaginary line used to define geographic areas for special rules.
-    \item \textbf{Pecuniary Interest:} Personal financial gain.
-       \item \textbf{FCC certification:} Approval from FCC to operate devices in amateur bands.
+    \item \textbf{Permissible Uses:} Automatic control is allowed for repeater stations, RTTY (Radio Teletype), and data emissions.
+    \item \textbf{Failsafe Design:} Similar to remote control, automatic stations must incorporate safeguards to prevent unauthorized or harmful transmissions.
+    \item \textbf{Message Forwarding Systems:} Stations involved in message forwarding systems (e.g., packet networks) can operate under automatic control but must ensure compliance with FCC regulations.
 \end{itemize}
 
-\subsection*{Practice Questions}
+\subsubsection*{Why It Matters}
+Automatic and remote control enable flexible and innovative uses of amateur radio. Imagine maintaining communication with your local repeater while you’re halfway across the globe, or running a beacon that informs others of propagation conditions—all without being tied to the operator’s chair.
+
+\begin{tcolorbox}[title=Fun Fact: The First Remote-Controlled Stations]
+Did you know? Remote-controlled amateur radio stations became more popular in the 1980s with advancements in computer interfaces. Early adopters used dial-up modems to control their equipment—a far cry from today’s seamless web interfaces!
+\end{tcolorbox}
+
+\subsubsection*{Key Considerations}
+Remote and automatic operations are exciting but require adherence to strict rules:
+\begin{itemize}
+    \item Always monitor your station’s operation, even if automated, to quickly address issues.
+    \item Understand and respect local band plans to ensure compatibility with other operators.
+\end{itemize}
+
+
+\subsection*{Questions for E1C: Automatic and Remote Control}
+
 \begin{enumerate}
-    \item On what frequencies are spread spectrum transmissions permitted?
-        \begin{enumerate}
-        \item Only on amateur frequencies above 50 MHz
-    \item \textbf {Only on amateur frequencies above 222 MHz}
-      \item  Only on amateur frequencies above 420 MHz
-        \item  Only on amateur frequencies above 144 MHz
-    \end{enumerate}
-     \textcolor{myred}{Explanation:}
-        FCC allows spread spectrum on bands above 222 MHz.
-
-     \item What privileges are authorized in the US to persons holding an amateur service license granted by the government of Canada?
-     \begin{enumerate}
-          \item None, they must obtain a US license
-       \item  Full privileges of the General class license on the 80-, 40-, 20-, 15-, and 10-meter bands
-       \item \textbf {The operating terms and conditions of the Canadian amateur service license, not to exceed US Amateur Extra class license privileges}
-     \item  Full privileges, up to and including those of the Amateur Extra class license, on the 80-, 40-, 20-, 15-, and 10-meter bands
-        \end{enumerate}
-    \textcolor{myred}{Explanation:}
-     Canadian operators with a reciprocal agreement may operate in the US, but not exceeding the same privileges granted to US extra-class license holder.
-    
-     \item Under what circumstances may a dealer sell an external RF power amplifier capable of operation below 144 MHz if it has not been granted FCC certification?
+    \item \textbf{What is the maximum bandwidth for a data emission on 60 meters?}
     \begin{enumerate}
-    \item Gain is less than 23 dB when driven by power of 10 watts or less
-    \item  The equipment dealer assembled it from a kit
-   \item  It was manufactured and certificated in a country which has a reciprocal certification agreement with the FCC
-      \item \textbf {The amplifier is constructed or modified by an amateur radio operator for use at an amateur station}
-   \end{enumerate}
-        \textcolor{myred}{Explanation:}
-     If the amplifier was constructed or modified by an amateur operator for his/her station, the amplifier can be legally sold even without FCC certification.
-     
-      \item Which of the following geographic descriptions approximately describes "Line A"?
-      \begin{enumerate}
-     \item \textbf {A line roughly parallel to and south of the border between the US and Canada}
-       \item  A line roughly parallel to and west of the US Atlantic coastline
-   \item  A line roughly parallel to and north of the border between the US and Mexico
-      \item  A line roughly parallel to and east of the US Pacific coastline
-     \end{enumerate}
-      \textcolor{myred}{Explanation:}
-      Line A is an imaginary line roughly parallel to and south of the US-Canadian border.
-        
-    \item Amateur stations may not transmit in which of the following frequency segments if they are located in the contiguous 48 states and north of Line A?
-    \begin{enumerate}
-          \item 440 MHz - 450 MHz
-         \item  53 MHz - 54 MHz
-       \item  222 MHz - 223 MHz
-      \item \textbf {420 MHz - 430 MHz}
+        \item 60 Hz\\
+        \item 170 Hz\\
+        \item 1.5 kHz\\
+        \item \textbf{2.8 kHz}
     \end{enumerate}
-   \textcolor{myred}{Explanation:}
-    The 420 to 430 MHz band is a radio astronomy band and operation by amateur stations is prohibited in the area north of Line A.
+    \textbf{Explanation:} The FCC specifies a maximum bandwidth of 2.8 kHz for data emissions on the 60-meter band to prevent interference with primary users. Other bandwidths listed are either too narrow or exceed the legal limit.
 
-    \item Under what circumstances might the FCC issue a Special Temporary Authority (STA) to an amateur station?
-       \begin{enumerate}
-       \item \textbf {To provide for experimental amateur communications}
-      \item  To allow use of a special event call sign
-   \item  To allow a VE group with less than three VEs to administer examinations in a remote, sparsely populated area
-      \item  To allow a licensee who has passed an upgrade exam to operate with upgraded privileges while waiting for posting on the FCC database
-      \end{enumerate}
-       \textcolor{myred}{Explanation:}
-    An STA may be granted to allow experimental communication that deviates from standard rules.
-        
-    \item When may an amateur station send a message to a business?
-      \begin{enumerate}
-        \item When the pecuniary interest of the amateur or his or her employer is less than \$25
-          \item  When the pecuniary interest of the amateur or his or her employer is less than \$50
-       \item  At no time
-       \item \textbf {When neither the amateur nor their employer has a pecuniary interest in the communications}
-        \end{enumerate}
-    \textcolor{myred}{Explanation:}
-      In general, messages with a pecuniary interest are prohibited unless the amateur or the employer does not have a financial interest in the communications.
-       
-       \item Which of the following types of amateur station communications are prohibited?
-      \begin{enumerate}
-        \item \textbf {Communications transmitted for hire or material compensation, except as otherwise provided in the rules}
-      \item  Communications that have political content, except as allowed by the Fairness Doctrine
-      \item  Communications that have religious content
-     \item  Communications in a language other than English
-        \end{enumerate}
-    \textcolor{myred}{Explanation:}
-     Amateur operation cannot be used for material gain, including compensation, unless specifically authorized by FCC regulations.
-     
-     \item Which of the following cannot be transmitted over an amateur radio mesh network?
-      \begin{enumerate}
-      \item Third party traffic
-          \item  Email
-       \item \textbf {Messages encoded to obscure their meaning}
-       \item  All these choices are correct
-      \end{enumerate}
-      \textcolor{myred}{Explanation:}
-      Encoding the message to obscure their content is prohibited in amateur bands.
-       
-      \item Who may be the control operator of an auxiliary station?
-        \begin{enumerate}
-          \item Any licensed amateur operator
-          \item \textbf {Only Technician, General, Advanced, or Amateur Extra class operators}
-        \item  Only General, Advanced, or Amateur Extra class operators
-         \item  Only Amateur Extra class operators
-        \end{enumerate}
-     \textcolor{myred}{Explanation:}
-       A technician or higher class licensee may be the control operator for an auxiliary station.
-       
-      \item Which of the following best describes one of the standards that must be met by an external RF power amplifier if it is to qualify for a grant of FCC certification?
-         \begin{enumerate}
-       \item It must produce full legal output when driven by not more than 5 watts of mean RF input power
-      \item  It must have received an Underwriters Laboratory certification for electrical safety as well as having met IEEE standard 14.101(B)
-        \item  It must exhibit a gain of less than 23 dB when driven by 10 watts or less
-     \item \textbf {It must satisfy the FCC's spurious emission standards when operated at the lesser of 1500 watts or its full output power}
-        \end{enumerate}
-          \textcolor{myred}{Explanation:}
-    An external RF amplifier must adhere to FCC's spurious emission standards when operated with an output power of 1.5KW, or full output power, which ever is less.
+    \item \textbf{Which of the following apply to communications transmitted to amateur stations in foreign countries?}
+    \begin{enumerate}
+        \item Third-party traffic must be limited to that intended for the exclusive use of government and NGOs involved in emergency relief activities.\\
+        \item All transmissions must be in English.\\
+        \item \textbf{Communications must be limited to those incidental to the purpose of the amateur service and remarks of a personal nature.}\\
+        \item All these choices are correct.
+    \end{enumerate}
+    \textbf{Explanation:} Transmissions to foreign amateur stations are restricted to those incidental to amateur service and personal remarks. Options A and B impose unnecessary restrictions, while D incorrectly suggests all options are valid.
+
+    \item \textbf{How long must an operator wait after filing a notification with the Utilities Technology Council (UTC) before operating on the 2200-meter or 630-meter band?}
+    \begin{enumerate}
+        \item Operators must not operate until approval is received.\\
+        \item \textbf{Operators may operate after 30 days, providing they have not been told that their station is within 1 kilometer of PLC systems using those frequencies.}\\
+        \item Operators may not operate until a test signal has been transmitted in coordination with the local power company.\\
+        \item Operations may commence immediately and may continue unless interference is reported by the UTC.
+    \end{enumerate}
+    \textbf{Explanation:} Operators must wait 30 days after notifying the UTC unless informed otherwise. This ensures compatibility with existing PLC systems. Other options either impose unnecessary requirements or incorrectly allow immediate operation.
+
+    \item \textbf{What is an IARP?}
+    \begin{enumerate}
+        \item \textbf{A permit that allows US amateurs to operate in certain countries of the Americas.}\\
+        \item The internal amateur radio practices policy of the FCC.\\
+        \item An indication of increased antenna reflected power.\\
+        \item A forecast of intermittent aurora radio propagation.
+    \end{enumerate}
+    \textbf{Explanation:} An Inter-American Amateur Radio Permit (IARP) allows licensed operators to operate in participating countries without additional licensing. The other options describe unrelated concepts.
+
+    \item \textbf{Under what situation may a station transmit third-party communications while being automatically controlled?}
+    \begin{enumerate}
+        \item Never.\\
+        \item \textbf{Only when transmitting RTTY or data emissions.}\\
+        \item Only when transmitting SSB or CW.\\
+        \item On any mode approved by the National Telecommunication and Information Administration.
+    \end{enumerate}
+    \textbf{Explanation:} Automatically controlled stations may transmit third-party communications only for RTTY and data emissions. Options A, C, and D either restrict or expand beyond permissible rules.
+
+    \item \textbf{Which of the following is required in order to operate in accordance with CEPT rules in foreign countries where permitted?}
+    \begin{enumerate}
+        \item You must identify in the official language of the country in which you are operating.\\
+        \item The US embassy must approve of your operation.\\
+        \item \textbf{You must have a copy of FCC Public Notice DA 16-1048.}\\
+        \item You must append "/CEPT" to your call sign.
+    \end{enumerate}
+    \textbf{Explanation:} CEPT rules require carrying documentation such as FCC Public Notice DA 16-1048. Other requirements listed are either incorrect or not mandatory.
+
+    \item \textbf{What notifications must be given before transmitting on the 630- or 2200-meter bands?}
+    \begin{enumerate}
+        \item A special endorsement must be requested from the FCC.\\
+        \item An environmental impact statement must be filed with the Department of the Interior.\\
+        \item Operators must inform the FAA of their intent to operate, giving their call sign and distance to the nearest runway.\\
+        \item \textbf{Operators must inform the Utilities Technology Council (UTC) of their call sign and coordinates of the station.}
+    \end{enumerate}
+    \textbf{Explanation:} Operators must notify the UTC to check for compatibility with PLC systems. Other notifications listed are unnecessary or unrelated.
+
+    \item \textbf{What is the maximum permissible duration of a remotely controlled station’s transmissions if its control link malfunctions?}
+    \begin{enumerate}
+        \item 30 seconds.\\
+        \item \textbf{3 minutes.}\\
+        \item 5 minutes.\\
+        \item 10 minutes.
+    \end{enumerate}
+    \textbf{Explanation:} Remotely controlled stations must stop transmitting within 3 minutes of losing control. Longer durations risk interference.
+
+    \item \textbf{What is the highest modulation index permitted at the highest modulation frequency for angle modulation below 29.0 MHz?}
+    \begin{enumerate}
+        \item 0.5.\\
+        \item \textbf{1.0.}\\
+        \item 2.0.\\
+        \item 3.0.
+    \end{enumerate}
+    \textbf{Explanation:} A modulation index of 1.0 ensures compliance with FCC standards. Other values listed are either too high or too low.
+
+    \item \textbf{What is the maximum mean power level for a spurious emission below 30 MHz with respect to the fundamental emission?}
+    \begin{enumerate}
+        \item \textbf{-43 dB.}\\
+        \item -53 dB.\\
+        \item -63 dB.\\
+        \item -73 dB.
+    \end{enumerate}
+    \textbf{Explanation:} Spurious emissions must be at least -43 dB below the fundamental level to comply with FCC regulations.
+
+    \item \textbf{Which of the following operating arrangements allows an FCC-licensed US citizen to operate in many European countries, and amateurs from many European countries to operate in the US?}
+    \begin{enumerate}
+        \item \textbf{CEPT.}\\
+        \item IARP.\\
+        \item ITU reciprocal license.\\
+        \item All these choices are correct.
+    \end{enumerate}
+    \textbf{Explanation:} CEPT agreements enable reciprocal operations across Europe and the US. Other options, while similar, do not provide the same wide access.
+
+    \item \textbf{In what portion of the 630-meter band are phone emissions permitted?}
+    \begin{enumerate}
+        \item None.\\
+        \item Only the top 3 kHz.\\
+        \item Only the bottom 3 kHz.\\
+        \item \textbf{The entire band.}
+    \end{enumerate}
+    \textbf{Explanation:} Phone emissions are permitted throughout the 630-meter band. Options A, B, and C incorrectly limit phone use to specific portions.
 \end{enumerate}
+
+%%%%%%%%%%% E1D %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Amateur Space and Earth Stations}
+
+\subsection*{Exploring Space with Amateur Radio}
+Amateur radio isn't just limited to Earth—it reaches into the vast expanse of space! This section covers the rules and concepts related to telemetry, telecommand, and operating amateur radio stations in space. Whether you're curious about satellites, balloons, or Earth stations, this is your guide to operating beyond our planet.
+
+\subsubsection*{What is Telemetry?}
+Telemetry involves the one-way transmission of measurement data from a device to a receiving station. For example:
+\begin{itemize}
+    \item A satellite sending temperature readings back to Earth.
+    \item A weather balloon transmitting pressure and humidity data.
+\end{itemize}
+Telemetry is critical for monitoring devices in inaccessible locations, such as space stations or high-altitude balloons.
+
+\subsubsection*{Encrypted Telecommand Signals}
+Telecommand refers to sending signals to control a device remotely, such as modifying a satellite’s orbit or turning an instrument on or off. In amateur radio, encryption is allowed only for telecommand signals sent to space stations to ensure security and prevent unauthorized access.
+
+\subsubsection*{Space Telecommand Stations}
+A space telecommand station sends instructions to satellites or other space stations to initiate, modify, or terminate their functions. These stations are vital for managing satellite operations and ensuring their proper functioning.
+
+\subsubsection*{Identification Requirements for Balloon Telemetry Stations}
+Balloon-borne telemetry stations must identify themselves with:
+\begin{itemize}
+    \item The station’s call sign.
+    \end{itemize}
+This identification ensures compliance with FCC regulations and enables tracking of the station’s operations.
+
+\subsubsection*{Posting Requirements for Telecommand Stations}
+For telecommand stations located on or near Earth’s surface, the following must be posted at the station:
+\begin{itemize}
+    \item A photocopy of the station license.
+    \item Contact information for the licensee and control operator.
+\end{itemize}
+This information provides transparency and facilitates accountability.
+
+\subsubsection*{Operating Model Craft by Telecommand}
+When using telecommand to operate model craft, such as drones or boats, the maximum transmitter output power is limited to 1 watt. This restriction minimizes interference with other radio services.
+
+\subsubsection*{Amateur Radio Allocations for Space Stations}
+Space stations can operate on various amateur radio bands. Here are the HF, VHF, and UHF allocations:
+\begin{itemize}
+    \item \textbf{HF Bands:} 40 meters, 20 meters, 15 meters, and 10 meters.
+    \item \textbf{VHF Bands:} 2 meters.
+    \item \textbf{UHF Bands:} 70 centimeters and 13 centimeters.
+\end{itemize}
+These allocations allow communication with satellites, space stations, and other amateur operators.
+
+\subsubsection*{Telecommand and Earth Stations}
+\begin{itemize}
+    \item Any amateur station designated by the space station licensee may act as a telecommand station, provided it complies with the operator’s license privileges.
+    \item Earth stations, which communicate with space stations, are open to all amateur licensees within their operating privileges.
+\end{itemize}
+
+\subsubsection*{One-Way Communications}
+Certain amateur stations are allowed to transmit one-way communications, including:
+\begin{itemize}
+    \item Space stations.
+    \item Beacon stations.
+    \item Telecommand stations.
+\end{itemize}
+These transmissions are essential for providing information like propagation conditions or controlling devices remotely.
+
+\begin{tcolorbox}[title=Fun Fact: The First Amateur Satellite]
+Did you know? OSCAR-1 (Orbiting Satellite Carrying Amateur Radio), launched in 1961, was the first amateur satellite. It was built by volunteers and transmitted "HI" in Morse code to demonstrate amateur satellite communications.
+\end{tcolorbox}
+
+\subsection*{Key Takeaways}
+Amateur radio operations in space open exciting opportunities for exploration and innovation. From telemetry and telecommand to one-way beacon transmissions, these operations extend the reach of amateur radio far beyond the atmosphere. Remember to follow FCC rules and enjoy your journey into the final frontier!
+
 

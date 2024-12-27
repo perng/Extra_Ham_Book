@@ -1,0 +1,66 @@
+\subsection{Calculating EIRP: Let's Amplify Your Knowledge!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9A07] What is the effective isotropic radiated power (EIRP) of a repeater station with 200 watts transmitter power output, 2 dB feed line loss, 2.8 dB duplexer loss, 1.2 dB circulator loss, and 7 dBi antenna gain?
+
+\begin{enumerate}[label=\Alph*]
+    \item 159 watts
+    \item \textbf{252 watts}
+    \item 632 watts
+    \item 63.2 watts
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection{Understanding EIRP}
+
+The Effective Isotropic Radiated Power (EIRP) is a measure of the power radiated by an antenna in a specific direction, taking into account any losses due to components in the transmission line as well as the gain of the antenna itself. The formula to calculate EIRP is given by:
+
+\[
+\text{EIRP} = P_t - L + G_a
+\]
+
+where:
+- \(P_t\) = transmitter power output (in dBW)
+- \(L\) = total losses in the system (in dB)
+- \(G_a\) = antenna gain (in dBi)
+
+To calculate the total losses, we will sum up the individual losses from the feed line, duplexer, and circulator:
+
+\[
+L = 2 \text{ dB} + 2.8 \text{ dB} + 1.2 \text{ dB} = 6 \text{ dB}
+\]
+
+Next, we need to convert the transmitter power output from watts to dBW:
+
+\[
+P_t = 10 \cdot \log_{10}(200 \text{ watts}) \approx 23 \text{ dBW}
+\]
+
+Now we can calculate the EIRP:
+
+\[
+\text{EIRP} = 23 \text{ dBW} - 6 \text{ dB} + 7 \text{ dBi}
+\]
+
+Calculating this step by step:
+
+1. Subtracting losses from the transmitter power:
+   \[
+   23 \text{ dBW} - 6 \text{ dB} = 17 \text{ dBW}
+   \]
+2. Adding the antenna gain:
+   \[
+   17 \text{ dBW} + 7 \text{ dBi} = 24 \text{ dBW}
+   \]
+
+Finally, we convert the result from dBW back to watts:
+
+\[
+\text{EIRP (in watts)} = 10^{\left(\frac{24}{10}\right)} \approx 251.2 \text{ watts}
+\]
+
+Since the closest choice is 252 watts, 
+
+\subsubsection{Related Concepts}
+
+Understanding EIRP is crucial in the design and analysis of radio communication systems. The concepts involved in this calculation highlight the complexity of real-world radio systems, requiring careful consideration of both gain and loss factors. In addition to EIRP, concepts such as path loss, link budget analysis, and antenna gain are vital knowledge for anyone working in the field of radio frequency (RF) engineering.
+
+This calculation provides insight into how various components impact the overall performance of a communication system, emphasizing the importance of proper design and selection of components to ensure reliable and effective communication.

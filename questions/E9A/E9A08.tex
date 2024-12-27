@@ -1,0 +1,96 @@
+```
+\subsection{Exploring the Tiny Wonders: The Smallest First Fresnel Zone!}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title={Question ID: E9A08}]
+    Which frequency band has the smallest first Fresnel zone?
+    \begin{enumerate}[label=\Alph*.]
+        \item \textbf{5.8 GHz}
+        \item 3.4 GHz
+        \item 2.4 GHz
+        \item 900 MHz
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Concepts Related to the Fresnel Zone}
+
+The Fresnel zone is a fundamental concept in radio wave propagation that illustrates the difference in the strength of received signals at various points along the path from the transmitter to the receiver. When considering line-of-sight communication, the first Fresnel zone is the region around the straight line path that must remain clear of obstacles for optimal transmission.
+
+The radius of the first Fresnel zone at a distance \(d\) from the transmitter can be calculated using the formula:
+
+\[
+F_1 = \sqrt{\frac{\lambda d}{2}}
+\]
+
+where:
+- \(F_1\) is the radius of the first Fresnel zone,
+- \(\lambda\) is the wavelength, and
+- \(d\) is the distance to the obstacle.
+
+The wavelength \(\lambda\) can be calculated using the relationship:
+
+\[
+\lambda = \frac{c}{f}
+\]
+
+where:
+- \(c\) is the speed of light (\(c \approx 3 \times 10^8\) m/s), and
+- \(f\) is the frequency in Hertz.
+
+To determine which frequency has the smallest first Fresnel zone, we need to calculate \(\lambda\) for each frequency choice:
+
+1. \textbf{For 5.8 GHz}:
+   \[
+   \lambda_{5.8} = \frac{3 \times 10^8 \, \text{m/s}}{5.8 \times 10^9 \, \text{Hz}} \approx 0.0517 \, \text{m}
+   \]
+
+2. \textbf{For 3.4 GHz}:
+   \[
+   \lambda_{3.4} = \frac{3 \times 10^8 \, \text{m/s}}{3.4 \times 10^9 \, \text{Hz}} \approx 0.0882 \, \text{m}
+   \]
+
+3. \textbf{For 2.4 GHz}:
+   \[
+   \lambda_{2.4} = \frac{3 \times 10^8 \, \text{m/s}}{2.4 \times 10^9 \, \text{Hz}} \approx 0.125 \, \text{m}
+   \]
+
+4. \textbf{For 900 MHz}:
+   \[
+   \lambda_{900} = \frac{3 \times 10^8 \, \text{m/s}}{900 \times 10^6 \, \text{Hz}} \approx 0.333 \, \text{m}
+   \]
+
+Now we can calculate \(F_1\) for a given distance \(d\) (for simplicity, let’s assume \(d = 1000\) m):
+
+\[
+F_1 = \sqrt{\frac{\lambda d}{2}}
+\]
+- For \(5.8 \, \text{GHz}\):
+\[
+F_{1, 5.8} = \sqrt{\frac{0.0517 \times 1000}{2}} \approx 5.08 \, \text{m}
+\]
+  
+- For \(3.4 \, \text{GHz}\):
+\[
+F_{1, 3.4} = \sqrt{\frac{0.0882 \times 1000}{2}} \approx 6.66 \, \text{m}
+\]
+
+- For \(2.4 \, \text{GHz}\):
+\[
+F_{1, 2.4} = \sqrt{\frac{0.125 \times 1000}{2}} \approx 7.91 \, \text{m}
+\]
+
+- For \(900 \, \text{MHz}\):
+\[
+F_{1, 900} = \sqrt{\frac{0.333 \times 1000}{2}} \approx 12.9 \, \text{m}
+\]
+
+From these calculations, we can conclude that the frequency band with the smallest first Fresnel zone is indeed \(5.8 \, \text{GHz}\) (Choice A).
+
+% \subsubsection{Visual Representation}
+
+% To aid in understanding the concept of the Fresnel zone, a diagram can illustrate the first Fresnel zone in connection with a transmitter and receiver. 
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.6\textwidth]{fresnel_zone_diagram.jpg} % Generating diagram with SVG
+%     \caption{Illustration of the first Fresnel zone in radio communication.}
+% \end{figure}

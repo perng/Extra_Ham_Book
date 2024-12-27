@@ -1,0 +1,79 @@
+\subsection{Unlocking Antenna Magic: What Can We Measure?}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4A11] Which of the following can be measured with an antenna analyzer?
+\begin{enumerate}
+    \item A: Velocity factor
+    \item B: Cable length
+    \item C: Resonant frequency of a tuned circuit
+    \item \textbf{D: All these choices are correct}
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection*{Concepts Related to the Question}
+
+An antenna analyzer is a versatile tool used in the field of radio communication and electronics. Its primary purpose is to measure various parameters related to antennas and transmission lines. Understanding these parameters is crucial for optimizing antenna performance and ensuring effective communication.
+
+\subsubsection*{Key Concepts}
+
+1. \textbf{Velocity Factor}: This is the ratio of the speed of a signal in a cable to the speed of light in a vacuum. This factor is important in determining how effectively a transmission line can carry high-frequency signals.
+
+2. \textbf{Cable Length}: Measuring the length of a cable is essential for ensuring that it is suitable for the intended frequency range. A mismatch in cable length can cause losses and affect the overall performance of the antenna system.
+
+3. \textbf{Resonant Frequency of a Tuned Circuit}: The resonant frequency is the frequency at which an antenna or circuit can operate most efficiently. An antenna analyzer can help in tuning the circuit to this frequency, ensuring optimal transmission and reception of signals.
+
+4. \textbf{All Choices Being Correct}: The correct answer, D, indicates that an antenna analyzer can indeed measure velocity factor, cable length, and resonant frequency, showcasing its multifunctionality.
+
+\subsubsection*{Calculation Example}
+
+While no direct calculations are required for this question, understanding the calculation of the resonant frequency for a tuned circuit can be helpful. The resonant frequency \( f_{r} \) of a parallel LC circuit is given by:
+
+\[
+f_{r} = \frac{1}{2\pi\sqrt{LC}}
+\]
+
+Where:
+- \( L \) is the inductance in henries (H),
+- \( C \) is the capacitance in farads (F).
+
+For example, if we have an inductor of \( L = 10 \, \text{H} \) and a capacitor of \( C = 100 \, \mu F \):
+
+First, convert \( C \) to farads:
+
+\[
+C = 100 \, \mu F = 100 \times 10^{-6} \, F = 0.0001 \, F
+\]
+
+Now substituting into the formula:
+
+\[
+f_{r} = \frac{1}{2\pi\sqrt{10 \times 0.0001}}
+\]
+
+Calculating the square root:
+
+\[
+\sqrt{10 \times 0.0001} = \sqrt{0.001} = 0.0316228
+\]
+
+Now, substituting back:
+
+\[
+f_{r} = \frac{1}{2\pi \times 0.0316228} \approx \frac{1}{0.198943} \approx 5.03 \, \text{Hz}
+\]
+
+This calculation shows how to find the resonant frequency using an antenna analyzer's capability.
+
+\subsubsection*{Visualization}
+
+To emphasize our understanding of how these components relate to each other in a circuit, we can draw a simple LC circuit diagram using TikZ in LaTeX:
+
+\begin{center}
+\begin{tikzpicture}
+    % Draw the inductor
+    \draw (0,0) -- (1,0) to[inductor, l={$L$}] (1,2) -- (0,2) -- (0,0);
+    % Draw the capacitor
+    \draw (1,0) -- (2,0) to[capacitor, l={$C$}] (2,2) -- (1,2);
+    % Connect to ground
+    \draw (0,0) -- (0,-1) node[ground]{};
+    \draw (2,0) -- (2,-1) node[ground]{};
+\end{tikzpicture}
+\end{center}

@@ -1,0 +1,31 @@
+\subsection{Boosting Reliability: The Perks of Parity Bits in ASCII!}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Question E8D06]
+    \textbf{Question ID: E8D06} \\
+    What is the advantage of including parity bits in ASCII characters? \\
+    \begin{enumerate}[label=\Alph*.]
+        \item Faster transmission rate
+        \item Signal-to-noise ratio is improved
+        \item A larger character set is available
+        \item \textbf{Some types of errors can be detected}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending a secret message to your friend over a long distance using a walkie-talkie. Sometimes, the message can get mixed up or changed when it travels through the air, just like how it can get noisy. A parity bit is like adding a special helper at the end of your message to check if everything was delivered correctly. If there’s a problem, the helper can tell you that something went wrong, so you can try sending the message again. This helps both you and your friend understand the secret message better, even if there is noise in the air.
+
+\subsubsection{Advanced Explanation}
+In digital communications, errors can occur when data is transmitted due to various reasons like electrical interference or signal degradation. Parity bits are additional bits added to data to help detect these errors. In the case of ASCII characters, each character can be represented as a 7-bit binary number. 
+
+When a parity bit is added, it makes it an 8-bit number. The parity bit can be set to either even or odd. For example:
+- If an even parity bit is used, it means that the total number of 1's in the data bits plus the parity bit should be even.
+- If an odd parity bit is used, the total number of 1's should be odd.
+
+Calculating an example:
+Consider the ASCII character for 'A', which is `01000001` in binary. The number of ones is 3 (which is odd). For an even parity, we would add a parity bit of `1` to make it `11000001`.
+
+If the transmitted character `11000001` is received, the receiver checks the number of `1`s. If it detects an odd number of `1`s, it knows that an error has occurred during transmission, since the parity rule we set was even.
+
+This method, while not foolproof, allows for the detection of single-bit errors and is an essential component in enhancing reliability in communication systems. 
+
+% Prompt for generating a diagram explaining parity bits concept: Create a diagram that illustrates how parity bits are added to ASCII characters and how they help in error detection.

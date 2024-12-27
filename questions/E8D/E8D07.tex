@@ -1,0 +1,33 @@
+\subsection{Understanding AFSK Overmodulation: Key Causes!}
+
+\begin{tcolorbox}[colback=white!10!white, colframe=black!75!black, title={Question ID: E8D07}]
+What is a common cause of overmodulation of AFSK signals?
+\begin{enumerate}[label=\Alph*.]
+    \item Excessive numbers of retries
+    \item Excessive frequency deviation
+    \item Bit errors in the modem
+    \item \textbf{Excessive transmit audio levels}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+AFSK stands for Audio Frequency Shift Keying, which is a way of transmitting data using audio tones. Think of it like sending secret messages using different musical notes. However, if the sounds are too loud when they are sent, it can create a mess, making it hard to understand the message. This is called overmodulation. One of the reasons this happens is if the volume of the tones that are being sent is really high, causing the sounds to blend together and lose clarity. Essentially, just like yelling too loudly can distort your voice, sending audio messages too loudly can mess up the signals as well.
+
+\subsubsection{Advanced Explanation}
+In AFSK, data is transmitted by shifting the audio frequency between two discrete tones representing binary values. Overmodulation occurs when the audio signals exceed the necessary amplitude levels required for proper demodulation, resulting in distortion of the signal. 
+
+To analyze the situation, let's consider the modulation index \( h \), which is defined as:
+
+\[
+h = \frac{\Delta f}{f_b}
+\]
+
+where \( \Delta f \) is the peak frequency deviation and \( f_b \) is the bit rate. Excessive amplitude levels can lead to increased frequency deviation beyond the acceptable limits, thus increasing the `modulation index` and distorting the output signal.
+
+A technique to prevent overmodulation is to set a proper audio level using a peak meter to ensure the audio levels do not exceed the specified threshold during transmission. 
+
+In the case of the question, the correct answer is D: Excessive transmit audio levels because this leads directly to overmodulation, creating noise and distortion that makes signal demodulation challenging.
+
+% \begin{tikzpicture}
+% % Prompt to create a diagram showing levels of audio modulation, and indicating the thresholds for ideal modulation vs. overmodulation.
+% \end{tikzpicture}

@@ -1,0 +1,35 @@
+\subsection{Exploring the Bright Side of CW Signal Bandwidth!}
+
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Question E8C12]
+What factors affect the bandwidth of a transmitted CW signal?
+\begin{enumerate}[label=\Alph*.]
+    \item IF bandwidth and Q
+    \item Modulation index and output power
+    \item \textbf{Keying speed and shape factor (rise and fall time)}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+
+When we send a signal, like when we talk to someone on the radio, the way we send that signal can change how clearly we can hear it. The bandwidth is like a road that our signal travels on. If the road is wide, more people can travel at the same time, and it's easier to hear our voice. The keying speed is how fast we can send our signal, and the shape factor is how quickly the signal goes up and down when we send it. If we can change these things, we can make sure our signal is loud and clear!
+
+\subsubsection{Advanced Explanation}
+
+In the context of Continuous Wave (CW) signals, the bandwidth can be influenced by several factors. Keying speed refers to how quickly the signal can switch between on and off states, while the shape factor describes the rise and fall times of these transitions. Mathematically, the bandwidth (BW) of a CW signal can be estimated by considering the following relationships:
+
+\[
+BW \propto \frac{1}{\text{rise time}} + \frac{1}{\text{fall time}} + \frac{1}{\text{keying speed}}
+\]
+
+If the rise time and fall time of the signal are too long compared to the keying speed, the bandwidth increases, causing potential distortion in the transmission. Conversely, if these times are short, the bandwidth can be effectively minimized. 
+
+To analyze these effects mathematically, consider the Fourier Transform of a square wave modulated signal. The relationship between the rise/fall times and the frequency components can be expressed as:
+
+\[
+f(t) = A \cdot \text{rect}\left( \frac{t}{T} \right) \text{, where } T \text{ is the keying speed time.}
+\]
+
+The bandwidth can be approximated by the cutoff frequencies of the Fourier Transform of the signal, thus, the parameters of rise time and keying speed heavily influence the total bandwidth used by the CW transmission.
+
+% Diagram prompt: Create a diagram illustrating the relationship between keying speed, shape factor, and bandwidth in CW signals.
