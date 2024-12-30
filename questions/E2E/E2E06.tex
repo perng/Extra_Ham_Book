@@ -1,0 +1,32 @@
+\subsection{FT8 Fun: Unraveling Transmission Cycle Length!} \label{sec:E2E06}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E2E06} What is the length of an FT8 transmission cycle?
+    \begin{enumerate}[label=\Alph*)]
+        \item It varies with the amount of data
+        \item 8 seconds
+        \item \textbf{15 seconds}
+        \item 30 seconds
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you are sending a message using a special radio mode called FT8. This mode is designed to send short messages quickly and efficiently. The length of time it takes to send one complete message is called the transmission cycle. For FT8, this cycle is always the same length, no matter how much data you are sending. It’s like a timer that goes off every 15 seconds, telling you when to send your next message. So, the correct answer is 15 seconds!
+
+\subsubsection*{Advanced Explanation}
+FT8 is a digital mode used in amateur radio for weak signal communication. It operates on a fixed transmission cycle, which is a key feature of its protocol. The transmission cycle in FT8 is precisely 15 seconds. This cycle is divided into specific time slots for transmission and reception, ensuring synchronization between stations.
+
+The 15-second cycle is derived from the protocol design, which includes:
+\begin{itemize}
+    \item A 12.64-second transmission period for the FT8 signal.
+    \item A 2.36-second guard interval to account for propagation delays and synchronization.
+\end{itemize}
+
+Mathematically, the total cycle time \( T \) is the sum of the transmission period \( T_{tx} \) and the guard interval \( T_{guard} \):
+\[
+T = T_{tx} + T_{guard} = 12.64\, \text{seconds} + 2.36\, \text{seconds} = 15\, \text{seconds}
+\]
+
+This fixed cycle length ensures that all stations using FT8 are synchronized, allowing for efficient and reliable communication even in weak signal conditions.
+
+% Diagram prompt: Generate a diagram showing the FT8 transmission cycle with labeled time slots for transmission and guard interval.

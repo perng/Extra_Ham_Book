@@ -1,4 +1,5 @@
 import json
+import re
 
 def parse_questions(file_path):
     data = []
@@ -13,14 +14,21 @@ def parse_questions(file_path):
     while index < len(lines):
         line = lines[index]
         if line.startswith("SUBELEMENT"):
+            print('subelement', line)
             # New chapter
+            if current_section is not None:
+                current_chapter["sections"].append(current_section)
+            current_section = None
+
             if current_chapter is not None:
                 data.append(current_chapter)
+
             current_chapter = {
                 "chapter_title": line,
                 "sections": []
             }
-        elif line.startswith("E") and line[3] == " ":
+        elif re.match(r"^E\d\w ", line):
+            print('section', line)
             # New section
             if current_section is not None:
                 current_chapter["sections"].append(current_section)
@@ -30,18 +38,14 @@ def parse_questions(file_path):
             }
         elif line and current_section is not None:
             # Process question
-            print('line', line)
             question_id = line.split()[0]  # Get the question ID (e.g., E1A01)
             answer = line.split()[-1][1]  # Get the answer (e.g., (D))
-            print('answer', answer)
             index += 1  # Move to the next line for the question text
             question_text = lines[index]  # Get the question text
-            print('question_text', question_text)
             choices = {}
             for _ in range(4):
                 index += 1  # Move to the next line for each choice
                 option_line = lines[index]
-                print('option_line', option_line)
                 assert option_line[0] in "ABCD"
                 choices[option_line[0]] = option_line[3:]  # Get choice letter and text
 

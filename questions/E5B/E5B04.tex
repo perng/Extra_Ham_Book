@@ -1,0 +1,55 @@
+\subsection{Capacitor Circuit Fun: What's the Time Constant?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+\textbf{E5B04} What is the time constant of a circuit having two 220-microfarad capacitors and two 1-megohm resistors, all in parallel?
+
+\begin{enumerate}[label=\Alph*.]
+    \item 55 seconds
+    \item 110 seconds
+    \item 440 seconds
+    \item \textbf{220 seconds}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have two water tanks (capacitors) and two pipes (resistors) connected in parallel. The time constant is like the time it takes for the tanks to fill up or empty out. Since the tanks and pipes are connected in parallel, they work together to make the process faster or slower. In this case, the time constant is 220 seconds, which means it takes 220 seconds for the tanks to fill up or empty out to about 63\% of their capacity.
+
+\subsubsection*{Advanced Explanation}
+The time constant (\(\tau\)) of an RC circuit is given by the formula:
+\[
+\tau = R_{\text{eq}} \cdot C_{\text{eq}}
+\]
+where \(R_{\text{eq}}\) is the equivalent resistance and \(C_{\text{eq}}\) is the equivalent capacitance of the circuit.
+
+For resistors in parallel:
+\[
+\frac{1}{R_{\text{eq}}} = \frac{1}{R_1} + \frac{1}{R_2}
+\]
+Given \(R_1 = R_2 = 1 \text{ M}\Omega\):
+\[
+\frac{1}{R_{\text{eq}}} = \frac{1}{1 \text{ M}\Omega} + \frac{1}{1 \text{ M}\Omega} = \frac{2}{1 \text{ M}\Omega}
+\]
+\[
+R_{\text{eq}} = \frac{1 \text{ M}\Omega}{2} = 0.5 \text{ M}\Omega
+\]
+
+For capacitors in parallel:
+\[
+C_{\text{eq}} = C_1 + C_2
+\]
+Given \(C_1 = C_2 = 220 \text{ }\mu\text{F}\):
+\[
+C_{\text{eq}} = 220 \text{ }\mu\text{F} + 220 \text{ }\mu\text{F} = 440 \text{ }\mu\text{F}
+\]
+
+Now, calculate the time constant:
+\[
+\tau = R_{\text{eq}} \cdot C_{\text{eq}} = 0.5 \text{ M}\Omega \cdot 440 \text{ }\mu\text{F}
+\]
+\[
+\tau = 0.5 \times 10^6 \text{ }\Omega \cdot 440 \times 10^{-6} \text{ F} = 220 \text{ seconds}
+\]
+
+Thus, the time constant of the circuit is 220 seconds.
+
+% Diagram Prompt: A diagram showing two capacitors and two resistors connected in parallel, with labels for the values of the components and the equivalent resistance and capacitance.

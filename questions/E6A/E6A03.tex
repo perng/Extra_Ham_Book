@@ -1,0 +1,24 @@
+\subsection{Exploring the Mysteries of Reverse Bias in Diodes!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6A03] Why does a PN-junction diode not conduct current when reverse biased?
+    \begin{enumerate}[label=\Alph*)]
+        \item Only P-type semiconductor material can conduct current
+        \item Only N-type semiconductor material can conduct current
+        \item \textbf{Holes in P-type material and electrons in the N-type material are separated by the applied voltage, widening the depletion region}
+        \item Excess holes in P-type material combine with the electrons in N-type material, converting the entire diode into an insulator
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a PN-junction diode as a gate that controls the flow of electricity. When you apply a reverse bias, it's like pushing the gate closed. The positive voltage applied to the N-type material pulls the electrons away from the junction, and the negative voltage applied to the P-type material pulls the holes away from the junction. This creates a wider barrier (depletion region) that prevents current from flowing through the diode. It's like adding more locks to the gate, making it harder to open.
+
+\subsubsection{Advanced Explanation}
+In a PN-junction diode, the depletion region is a zone where free charge carriers (electrons and holes) are absent due to recombination. When a reverse bias is applied, the external voltage increases the potential barrier across the junction. The positive terminal of the battery attracts electrons from the N-type material, and the negative terminal attracts holes from the P-type material. This separation of charge carriers widens the depletion region, increasing the electric field across the junction. The increased electric field opposes the flow of majority carriers, effectively preventing current conduction. Mathematically, the width of the depletion region \( W \) can be expressed as:
+
+\[
+W = \sqrt{\frac{2 \epsilon (V_{bi} + V_R)}{q} \left( \frac{1}{N_A} + \frac{1}{N_D} \right)}
+\]
+
+where \( \epsilon \) is the permittivity of the semiconductor, \( V_{bi} \) is the built-in potential, \( V_R \) is the reverse bias voltage, \( q \) is the charge of an electron, and \( N_A \) and \( N_D \) are the acceptor and donor concentrations, respectively. As \( V_R \) increases, \( W \) increases, further inhibiting current flow.
+
+% Diagram prompt: Generate a diagram showing a PN-junction diode under reverse bias, illustrating the widening of the depletion region and the separation of charge carriers.

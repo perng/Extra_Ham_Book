@@ -1,0 +1,26 @@
+\subsection{Clearing the Air: Unveiling SSB Noise Filters!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7F02] What kind of digital signal processing audio filter is used to remove unwanted noise from a received SSB signal?
+    \begin{enumerate}[label=\Alph*]
+        \item \textbf{An adaptive filter}
+        \item A crystal-lattice filter
+        \item A Hilbert-transform filter
+        \item A phase-inverting filter
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to listen to a friend talking in a noisy room. The noise makes it hard to hear what they are saying. To make it easier, you could use a special tool that listens to the noise and then removes it from the sound you hear. This is similar to what an adaptive filter does for a Single Sideband (SSB) signal. It listens to the unwanted noise and then removes it, making the signal clearer and easier to understand.
+
+\subsubsection{Advanced Explanation}
+In digital signal processing, an adaptive filter is a system that adjusts its parameters automatically to minimize the error between the desired signal and the output signal. For SSB signals, which are a type of amplitude modulation (AM) signal, noise can be a significant issue. An adaptive filter works by continuously updating its filter coefficients based on the input signal, effectively canceling out the noise components.
+
+Mathematically, the adaptive filter can be represented as:
+\[ y(n) = \sum_{k=0}^{N-1} w_k(n) x(n-k) \]
+where \( y(n) \) is the output signal, \( w_k(n) \) are the filter coefficients at time \( n \), and \( x(n-k) \) is the input signal at time \( n-k \). The coefficients \( w_k(n) \) are updated using an algorithm such as the Least Mean Squares (LMS) algorithm:
+\[ w_k(n+1) = w_k(n) + \mu e(n) x(n-k) \]
+where \( \mu \) is the step size, and \( e(n) \) is the error signal.
+
+The adaptive filter is particularly effective in removing noise from SSB signals because it can dynamically adjust to the changing characteristics of the noise, providing a clearer and more intelligible signal.
+
+% Prompt for generating a diagram: A diagram showing the block diagram of an adaptive filter system with input signal, adaptive filter, error signal, and output signal would be helpful here.

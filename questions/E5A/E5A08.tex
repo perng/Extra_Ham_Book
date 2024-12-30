@@ -1,0 +1,41 @@
+\subsection{Resonance Revelations: The Harmony of Current and Voltage!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5A08] What is the phase relationship between the current through and the voltage across a series resonant circuit at resonance?
+    \begin{enumerate}[label=\Alph*.]
+        \item The voltage leads the current by 90 degrees
+        \item The current leads the voltage by 90 degrees
+        \item \textbf{The voltage and current are in phase}
+        \item The voltage and current are 180 degrees out of phase
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine a swing on a playground. When you push the swing at just the right time, it goes higher and higher without much effort. This is like resonance in a circuit. At resonance, the current and voltage in the circuit work together perfectly, just like the swing and your push. They move in sync, or in phase, meaning they reach their highest and lowest points at the same time. This harmony makes the circuit very efficient.
+
+\subsubsection*{Advanced Explanation}
+In a series resonant circuit, the impedance \( Z \) is given by:
+\[
+Z = R + j\left(\omega L - \frac{1}{\omega C}\right)
+\]
+where \( R \) is the resistance, \( L \) is the inductance, \( C \) is the capacitance, and \( \omega \) is the angular frequency. At resonance, the inductive reactance \( \omega L \) and the capacitive reactance \( \frac{1}{\omega C} \) cancel each other out:
+\[
+\omega L = \frac{1}{\omega C}
+\]
+This results in the impedance being purely resistive:
+\[
+Z = R
+\]
+Since the impedance is purely resistive, the phase angle \( \phi \) between the voltage \( V \) and the current \( I \) is zero:
+\[
+\phi = \arctan\left(\frac{\text{Imaginary part of } Z}{\text{Real part of } Z}\right) = \arctan\left(\frac{0}{R}\right) = 0
+\]
+Thus, the voltage and current are in phase at resonance.
+
+\subsubsection*{Related Concepts}
+\begin{itemize}
+    \item \textbf{Resonance Frequency}: The frequency at which the inductive and capacitive reactances cancel each other out, given by \( f_r = \frac{1}{2\pi\sqrt{LC}} \).
+    \item \textbf{Impedance}: The total opposition to current in an AC circuit, combining resistance and reactance.
+    \item \textbf{Phase Angle}: The difference in phase between the voltage and current in an AC circuit.
+\end{itemize}
+
+% Prompt for diagram: A diagram showing a series RLC circuit with labels for the resistor (R), inductor (L), and capacitor (C), and a graph showing the voltage and current waveforms in phase at resonance.

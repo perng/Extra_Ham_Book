@@ -1,0 +1,25 @@
+\subsection{Can Extra Class Operators Join the 3.601 MHz Cheerful Chat?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E1A04}]
+\textbf{May an Extra class operator answer the CQ of a station on 3.601 MHz LSB phone?}
+\begin{enumerate}[label=\Alph*.]
+    \item Yes, the entire signal will be inside the SSB allocation for Extra class operators
+    \item Yes, the displayed frequency is within the 75-meter phone band segment
+    \item \textbf{No, the sideband components will extend beyond the edge of the phone band segment}
+    \item No, US stations are not permitted to use phone emissions below 3.610 MHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to join a group chat on a specific frequency, but your message is too wide and spills over into a restricted area. In this case, the Extra class operator wants to join a conversation on 3.601 MHz using LSB (Lower Side Band) phone. However, the sideband components of the signal extend beyond the allowed frequency range for phone communications. This means the operator cannot legally join the chat because part of their signal would be in a forbidden zone.
+
+\subsubsection{Advanced Explanation}
+In radio communications, signals are modulated to carry information. For SSB (Single Side Band) transmissions, the signal occupies a specific bandwidth around the carrier frequency. The 75-meter phone band segment for Extra class operators in the US ranges from 3.600 MHz to 3.800 MHz. When using LSB, the lower sideband extends below the carrier frequency.
+
+For a carrier frequency of 3.601 MHz, the lower sideband components will extend below 3.600 MHz, which is outside the allowed phone band segment. This violates the FCC regulations, making it illegal for an Extra class operator to answer a CQ call on this frequency using LSB phone.
+
+Mathematically, the bandwidth of an SSB signal is typically around 3 kHz. Therefore, the lower sideband components would extend from:
+\[ 3.601 \, \text{MHz} - 3 \, \text{kHz} = 3.598 \, \text{MHz} \]
+Since 3.598 MHz is below the 3.600 MHz lower limit of the phone band segment, the signal is not compliant with the regulations.
+
+% Prompt for diagram: Generate a frequency spectrum diagram showing the 75-meter phone band segment (3.600 MHz to 3.800 MHz) and the lower sideband components of a 3.601 MHz LSB signal extending below 3.600 MHz.

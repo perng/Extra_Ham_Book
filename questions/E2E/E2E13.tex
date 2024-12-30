@@ -1,0 +1,30 @@
+\subsection{Speed Showdown: Which Digital Mode Delivers the Fastest Data?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2E13] Which of these digital modes has the highest data throughput under clear communication conditions?
+    \begin{enumerate}[label=\Alph*.]
+        \item MFSK16
+        \item 170 Hz shift, 45 baud RTTY
+        \item FT8
+        \item \textbf{PACTOR IV}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending messages through a pipe. The wider the pipe, the more messages you can send at once. In the world of radio communication, different digital modes are like different sizes of pipes. Some modes can send a lot of information quickly, while others send less information but are more reliable in noisy conditions. PACTOR IV is like the widest pipe here—it can send the most data in the shortest time when the communication conditions are clear.
+
+\subsubsection{Advanced Explanation}
+Data throughput in digital communication modes is determined by the modulation scheme, baud rate, and error correction mechanisms. PACTOR IV, which stands for Packet Telecommunication Over Radio, is a robust digital mode that combines high-speed data transmission with advanced error correction. It uses a combination of frequency-shift keying (FSK) and phase-shift keying (PSK) to achieve a high data rate. 
+
+To compare the data throughput:
+\begin{itemize}
+    \item \textbf{MFSK16}: Uses multiple frequency-shift keying with 16 tones. It has a moderate data rate but is more resilient to noise.
+    \item \textbf{170 Hz shift, 45 baud RTTY}: Radioteletype (RTTY) with a 170 Hz shift and 45 baud rate has a lower data throughput compared to more advanced modes.
+    \item \textbf{FT8}: Designed for weak signal communication, FT8 has a very low data rate but is highly reliable in poor conditions.
+    \item \textbf{PACTOR IV}: Combines high-speed modulation with error correction, achieving the highest data throughput among the listed modes.
+\end{itemize}
+
+Mathematically, the data rate \( R \) can be approximated by:
+\[ R = B \times \log_2(M) \]
+where \( B \) is the bandwidth and \( M \) is the number of symbols. PACTOR IV optimizes both \( B \) and \( M \) to maximize \( R \).
+
+% Diagram Prompt: Generate a diagram comparing the data throughput of MFSK16, RTTY, FT8, and PACTOR IV under clear communication conditions.

@@ -1,0 +1,26 @@
+\subsection{Unlocking SDR Potential: The Key to Maximum Receive Bandwidth!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7F10] What aspect of receiver analog-to-digital conversion determines the maximum receive bandwidth of a direct-sampling software defined radio (SDR)?
+    \begin{enumerate}[label=\Alph*.]
+        \item \textbf{Sample rate}
+        \item Sample width in bits
+        \item Integral non-linearity
+        \item Differential non-linearity
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to listen to a song on the radio. The radio station broadcasts the song, and your radio needs to capture it. In a software defined radio (SDR), the process of capturing the song involves converting the analog signal (the song) into a digital signal that your computer can understand. The key to how much of the song you can capture at once is determined by how fast the radio can take samples of the song. If the radio takes samples very quickly, it can capture more of the song at once, allowing you to hear a wider range of frequencies. This speed of taking samples is called the sample rate. So, the sample rate is what determines the maximum receive bandwidth of an SDR.
+
+\subsubsection{Advanced Explanation}
+In a direct-sampling SDR, the analog-to-digital converter (ADC) is responsible for converting the incoming analog signal into a digital format. The maximum receive bandwidth of the SDR is directly related to the Nyquist-Shannon sampling theorem, which states that to accurately reconstruct a signal, the sampling rate must be at least twice the highest frequency present in the signal. Mathematically, this is expressed as:
+
+\[
+f_s \geq 2 \cdot f_{\text{max}}
+\]
+
+where \( f_s \) is the sample rate and \( f_{\text{max}} \) is the highest frequency in the signal. Therefore, the sample rate of the ADC determines the maximum bandwidth that the SDR can receive. For example, if the ADC has a sample rate of 10 MHz, the maximum bandwidth that can be received is 5 MHz.
+
+Other factors, such as the sample width in bits, integral non-linearity, and differential non-linearity, affect the resolution and accuracy of the digital signal but do not directly determine the maximum receive bandwidth. The sample width in bits affects the dynamic range and quantization noise, while non-linearity parameters affect the distortion in the signal. However, these factors are secondary to the sample rate when considering the maximum bandwidth.
+
+% Diagram Prompt: Generate a diagram showing the relationship between sample rate and maximum receive bandwidth in a direct-sampling SDR.

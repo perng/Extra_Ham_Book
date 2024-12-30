@@ -1,0 +1,42 @@
+\subsection{Unlocking FPGA Design: Tools of the Trade!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6C09]
+\textbf{E6C09} What is used to design the configuration of a field-programmable gate array (FPGA)?
+\begin{enumerate}[label=\Alph*)]
+    \item Karnaugh maps
+    \item \textbf{Hardware description language (HDL)}
+    \item An auto-router
+    \item Machine and assembly language
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a big box of LEGO bricks, and you want to build something cool like a car or a house. But instead of using your hands, you need to tell a computer how to arrange the bricks. A Hardware Description Language (HDL) is like a set of instructions you write to tell the computer how to put the LEGO bricks together. In the case of an FPGA, which is like a super flexible LEGO set for electronics, HDL is the tool used to design how the electronic components should be connected to make the FPGA do what you want.
+
+\subsubsection{Advanced Explanation}
+A Field-Programmable Gate Array (FPGA) is a reconfigurable integrated circuit that can be programmed to perform specific tasks after manufacturing. The design of an FPGA's configuration is typically done using a Hardware Description Language (HDL), such as VHDL or Verilog. HDLs allow designers to describe the behavior and structure of digital systems at various levels of abstraction. 
+
+Unlike traditional programming languages that execute instructions sequentially, HDLs describe the hardware's concurrent operations. This is crucial for designing digital circuits where multiple operations occur simultaneously. For example, in VHDL, you might write:
+
+\begin{verbatim}
+entity AND_GATE is
+    port (A, B: in bit; Y: out bit);
+end AND_GATE;
+
+architecture Behavioral of AND_GATE is
+begin
+    Y <= A and B;
+end Behavioral;
+\end{verbatim}
+
+This code describes a simple AND gate, which is a basic building block in digital circuits. The FPGA's configuration is then synthesized from the HDL code, mapping the described logic onto the FPGA's programmable logic blocks and interconnects.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{FPGA Architecture}: FPGAs consist of an array of programmable logic blocks and interconnects that can be configured to implement complex digital circuits.
+    \item \textbf{Synthesis}: The process of converting HDL code into a netlist, which describes the logic gates and their interconnections.
+    \item \textbf{Place and Route}: The process of mapping the synthesized netlist onto the FPGA's physical resources.
+    \item \textbf{Simulation}: Before programming the FPGA, the HDL code is often simulated to verify its correctness.
+\end{itemize}
+
+% Prompt for diagram: A diagram showing the basic architecture of an FPGA, including logic blocks, interconnects, and I/O blocks, would be helpful here.

@@ -1,7 +1,7 @@
 import json
 import os
 # Load questions from JSON file
-with open('questions2.json', 'r') as f:
+with open('questions3.json', 'r') as f:
     questions_data = json.load(f)
 
 # Start creating the LaTeX content

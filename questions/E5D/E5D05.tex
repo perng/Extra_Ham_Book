@@ -1,0 +1,27 @@
+\subsection{Why Electrolytic Capacitors Don’t Play Nice with RF!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E5D05}]
+\textbf{What parasitic characteristic causes electrolytic capacitors to be unsuitable for use at RF?}
+\begin{enumerate}[label=\Alph*)]
+    \item Skin effect
+    \item Shunt capacitance
+    \item \textbf{Inductance}
+    \item Dielectric leakage
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water hose that you’re trying to use to fill a bucket. If the hose is too long or has too many twists and turns, the water doesn’t flow smoothly, and it takes longer to fill the bucket. Similarly, electrolytic capacitors have a hidden twist inside them called inductance. When you try to use them at high frequencies (like in radio signals), this inductance acts like a twist in the hose, making it hard for the signal to pass through smoothly. That’s why electrolytic capacitors aren’t great for RF (radio frequency) applications.
+
+\subsubsection{Advanced Explanation}
+Electrolytic capacitors are designed primarily for low-frequency applications, such as power supply filtering. However, they exhibit parasitic inductance due to their physical construction, particularly the coiled foil layers inside the capacitor. This parasitic inductance, \( L \), can be modeled as a series inductor in the capacitor’s equivalent circuit. At high frequencies, the inductive reactance \( X_L = 2\pi fL \) becomes significant, where \( f \) is the frequency. As the frequency increases, \( X_L \) increases, effectively blocking the RF signal. This makes the capacitor behave more like an inductor than a capacitor at RF frequencies, rendering it unsuitable for such applications.
+
+The impedance \( Z \) of the capacitor at a given frequency \( f \) is given by:
+\[
+Z = \sqrt{R^2 + \left(2\pi fL - \frac{1}{2\pi fC}\right)^2}
+\]
+where \( R \) is the equivalent series resistance (ESR) and \( C \) is the capacitance. At RF frequencies, the term \( 2\pi fL \) dominates, leading to high impedance and poor performance.
+
+Related concepts include the frequency-dependent behavior of capacitors, the role of parasitic elements in component performance, and the importance of selecting components with appropriate characteristics for specific frequency ranges.
+
+% [Prompt for diagram: A diagram showing the equivalent circuit of an electrolytic capacitor, including the parasitic inductance and ESR, would be helpful here.]

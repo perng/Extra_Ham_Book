@@ -1,0 +1,30 @@
+\subsection{Understanding the Dance of Current and Voltage in Reactive Power!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5D03] What is the phase relationship between current and voltage for reactive power?
+    \begin{enumerate}[label=\Alph*)]
+        \item They are out of phase
+        \item They are in phase
+        \item \textbf{They are 90 degrees out of phase}
+        \item They are 45 degrees out of phase
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are pushing a swing. If you push the swing exactly when it reaches the highest point, your push is perfectly timed with the swing's motion. This is like current and voltage being in phase. However, if you push the swing when it's already moving away from you, your push is not perfectly timed. In the case of reactive power, the current and voltage are like the swing and your push, but they are 90 degrees out of sync. This means that when the voltage is at its peak, the current is at zero, and vice versa. This misalignment is what we call being 90 degrees out of phase.
+
+\subsubsection{Advanced Explanation}
+In electrical circuits, reactive power arises due to the presence of inductors and capacitors. These components store and release energy, causing the current and voltage to be out of phase. Specifically, in an ideal inductor, the current lags the voltage by 90 degrees, while in an ideal capacitor, the current leads the voltage by 90 degrees. Mathematically, this phase relationship can be expressed using the impedance \( Z \) of the circuit:
+
+\[
+Z = R + jX
+\]
+
+where \( R \) is the resistance and \( X \) is the reactance. For a purely reactive component (no resistance), the impedance is purely imaginary, indicating a 90-degree phase shift between voltage and current. The power in such a circuit is given by:
+
+\[
+P = VI \cos(\theta)
+\]
+
+where \( \theta \) is the phase angle between voltage and current. For reactive power, \( \theta = 90^\circ \), and since \( \cos(90^\circ) = 0 \), the real power is zero, and all the power is reactive.
+
+% Prompt for diagram: A diagram showing the phase relationship between current and voltage in a purely reactive circuit, with sine waves for voltage and current, and a 90-degree phase shift indicated.

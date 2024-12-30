@@ -1,0 +1,26 @@
+\subsection{Q65 vs. JT65: What's the Difference?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2E07] How does Q65 differ from JT65?
+    \begin{enumerate}[label=\Alph*)]
+        \item Keyboard-to-keyboard operation is supported
+        \item Quadrature modulation is used
+        \item \textbf{Multiple receive cycles are averaged}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you are trying to listen to a very faint sound in a noisy room. If you listen just once, you might not hear it clearly. But if you listen multiple times and combine what you hear, the faint sound becomes clearer. This is similar to how Q65 works compared to JT65. Q65 listens multiple times and averages the results to make the signal clearer, while JT65 does not do this.
+
+\subsubsection*{Advanced Explanation}
+Q65 and JT65 are both digital modes used in amateur radio for weak signal communication. The primary difference lies in the signal processing technique. Q65 employs a method called \textit{multiple receive cycles averaging}, where the received signal is sampled and processed over several cycles. This averaging reduces noise and enhances the signal-to-noise ratio (SNR), making it more robust in weak signal conditions.
+
+Mathematically, if \( x_i(t) \) represents the received signal in the \( i \)-th cycle, the averaged signal \( \bar{x}(t) \) is given by:
+\[
+\bar{x}(t) = \frac{1}{N} \sum_{i=1}^{N} x_i(t)
+\]
+where \( N \) is the number of cycles averaged. This process effectively filters out random noise, improving the detection of the desired signal.
+
+JT65, on the other hand, does not employ this averaging technique. It relies on a single receive cycle, which may be more susceptible to noise and interference. Thus, Q65's averaging method provides a significant advantage in weak signal environments.
+
+% Diagram Prompt: Generate a diagram showing the signal processing flow for Q65 and JT65, highlighting the averaging step in Q65.

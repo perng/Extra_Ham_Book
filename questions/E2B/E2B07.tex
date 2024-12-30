@@ -1,0 +1,44 @@
+\subsection{Fun with Frequencies: Exploring DVB-T Modulation for Amateur TV!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2B07] Which types of modulation are used for amateur television DVB-T signals?
+    \begin{enumerate}[label=\Alph*)]
+        \item FM and FSK
+        \item \textbf{QAM and QPSK}
+        \item AM and OOK
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re sending a TV signal over the airwaves. To make sure the picture and sound get to your TV clearly, we use special methods called modulation. For amateur TV signals using DVB-T, we use two types of modulation: QAM and QPSK. Think of QAM as a way to pack more information into the signal, like fitting more toys into a box. QPSK is like a simpler version, where we send information in smaller chunks. Both methods help ensure the TV signal is strong and clear.
+
+\subsubsection{Advanced Explanation}
+DVB-T (Digital Video Broadcasting - Terrestrial) is a standard for transmitting digital television signals over the air. The modulation techniques used in DVB-T are crucial for efficient data transmission. 
+
+\paragraph{Quadrature Amplitude Modulation (QAM)} is a modulation scheme that conveys data by changing both the amplitude and phase of the carrier wave. It allows for higher data rates by encoding multiple bits per symbol. For example, 16-QAM encodes 4 bits per symbol, while 64-QAM encodes 6 bits per symbol.
+
+\paragraph{Quadrature Phase Shift Keying (QPSK)} is a simpler form of modulation that changes the phase of the carrier wave to represent data. It encodes 2 bits per symbol by shifting the phase by 90 degrees. QPSK is more robust against noise compared to higher-order QAM but offers lower data rates.
+
+In DVB-T, QAM and QPSK are used depending on the required data rate and the robustness needed against signal interference. QAM is typically used for higher data rates, while QPSK is used when the signal needs to be more resilient to noise.
+
+\paragraph{Calculation Example:}
+For QPSK, the phase of the carrier wave can be represented as:
+\[
+\phi(t) = \begin{cases}
+0^\circ & \text{for } 00 \\
+90^\circ & \text{for } 01 \\
+180^\circ & \text{for } 10 \\
+270^\circ & \text{for } 11
+\end{cases}
+\]
+Each phase shift corresponds to a unique 2-bit symbol.
+
+For 16-QAM, the signal can be represented as:
+\[
+s(t) = A \cos(2\pi f_c t + \phi)
+\]
+where \( A \) and \( \phi \) are chosen from a set of 16 possible combinations, each representing a unique 4-bit symbol.
+
+These modulation techniques are essential for ensuring that the digital TV signal is transmitted efficiently and can be decoded correctly at the receiver.
+
+% Diagram Prompt: Generate a diagram showing the constellation points for QPSK and 16-QAM to visually explain the phase and amplitude changes.

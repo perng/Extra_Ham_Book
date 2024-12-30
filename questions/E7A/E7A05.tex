@@ -1,0 +1,34 @@
+\subsection{Explore the Magic of Self-Alternating Circuits!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7A05]
+    \textbf{E7A05} Which of the following circuits continuously alternates between two states without an external clock signal?
+    \begin{enumerate}[label=\Alph*)]
+        \item Monostable multivibrator
+        \item J-K flip-flop
+        \item T flip-flop
+        \item \textbf{Astable multivibrator}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a light switch that keeps turning on and off by itself without anyone touching it. That's what an astable multivibrator does! It’s like a little machine that keeps flipping between two states, like a light turning on and off, all by itself. The other circuits either need a push (like a clock signal) to change states or only change once and stay that way. But the astable multivibrator is special because it keeps going back and forth without any help!
+
+\subsubsection{Advanced Explanation}
+An astable multivibrator is a type of oscillator circuit that generates a continuous square wave without requiring an external clock signal. It operates by using two transistors or operational amplifiers in a feedback loop, where each stage alternately switches the other on and off. The timing of the oscillations is determined by the values of resistors and capacitors in the circuit.
+
+The key characteristic of an astable multivibrator is that it has no stable state; it continuously oscillates between two quasi-stable states. This is in contrast to:
+- A \textbf{monostable multivibrator}, which has one stable state and one quasi-stable state, returning to the stable state after a single pulse.
+- A \textbf{J-K flip-flop} and \textbf{T flip-flop}, which are bistable devices requiring an external clock signal to change states.
+
+The frequency of oscillation \( f \) for an astable multivibrator can be calculated using the formula:
+\[
+f = \frac{1}{T}
+\]
+where \( T \) is the period of oscillation, determined by the RC time constants in the circuit.
+
+Related concepts include:
+- **Feedback loops**: Essential for maintaining oscillations.
+- **RC timing circuits**: Determine the frequency of oscillation.
+- **Transistor switching**: The mechanism by which the circuit alternates between states.
+
+% Prompt for diagram: Generate a diagram showing the basic circuit of an astable multivibrator with two transistors, resistors, and capacitors, illustrating the feedback loop and the output waveform.

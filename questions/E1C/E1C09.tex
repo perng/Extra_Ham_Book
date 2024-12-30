@@ -1,0 +1,32 @@
+\subsection{Unlocking Angle Modulation: What's the Max Modulation Index?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E1C09] What is the highest modulation index permitted at the highest modulation frequency for angle modulation below 29.0 MHz?
+    \begin{enumerate}[label=\Alph*)]
+        \item 0.5
+        \item \textbf{1.0}
+        \item 2.0
+        \item 3.0
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to send a message using a radio signal. The modulation index is like the volume of the message compared to the volume of the carrier signal. For angle modulation (which includes frequency modulation and phase modulation), there is a limit to how loud the message can be compared to the carrier signal. Below 29.0 MHz, the highest modulation index allowed is 1.0. This means the message can be as loud as the carrier signal, but not louder.
+
+\subsubsection{Advanced Explanation}
+In angle modulation, the modulation index (\(\beta\)) is a measure of how much the carrier signal's frequency or phase is altered by the modulating signal. The modulation index is defined as:
+
+\[
+\beta = \frac{\Delta f}{f_m}
+\]
+
+where \(\Delta f\) is the maximum frequency deviation and \(f_m\) is the highest modulation frequency. For frequencies below 29.0 MHz, the Federal Communications Commission (FCC) regulations specify that the maximum modulation index (\(\beta\)) permitted is 1.0. This ensures that the signal remains within the allocated bandwidth and minimizes interference with other signals.
+
+To calculate the modulation index, consider a scenario where the maximum frequency deviation (\(\Delta f\)) is 5 kHz and the highest modulation frequency (\(f_m\)) is 5 kHz:
+
+\[
+\beta = \frac{5 \text{ kHz}}{5 \text{ kHz}} = 1.0
+\]
+
+This calculation confirms that the modulation index is within the permitted limit. Understanding the modulation index is crucial for designing efficient and compliant communication systems.
+
+% [Prompt for generating a diagram: A diagram showing the relationship between the carrier signal, modulating signal, and the resulting modulated signal with a modulation index of 1.0 would be helpful here.]

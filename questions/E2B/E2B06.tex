@@ -1,0 +1,32 @@
+\subsection{Unlocking the Mystery of Vestigial Sideband Modulation!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2B06] What is vestigial sideband modulation?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Amplitude modulation in which one complete sideband and a portion of the other are transmitted}
+        \item A type of modulation in which one sideband is inverted
+        \item Narrow-band FM modulation achieved by filtering one sideband from the audio before frequency modulating the carrier
+        \item Spread spectrum modulation achieved by applying FM modulation following single sideband amplitude modulation
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending a message using a radio signal. Normally, when you use amplitude modulation (AM), you send two copies of your message—one on each side of the carrier frequency. However, sending both copies takes up a lot of space on the radio spectrum. Vestigial sideband modulation (VSB) is like sending just one full copy of the message and a tiny piece of the other copy. This way, you save space but still keep enough information so the receiver can understand the message clearly.
+
+\subsubsection{Advanced Explanation}
+Vestigial sideband modulation (VSB) is a type of amplitude modulation where one complete sideband and a portion of the other sideband are transmitted. This technique is particularly useful in television broadcasting and digital communication systems because it efficiently uses bandwidth while maintaining signal integrity.
+
+Mathematically, in AM, the modulated signal can be represented as:
+\[
+s(t) = A_c \left[1 + m(t)\right] \cos(2\pi f_c t)
+\]
+where \( A_c \) is the carrier amplitude, \( m(t) \) is the message signal, and \( f_c \) is the carrier frequency. In VSB, one sideband is fully transmitted, and a vestige (a small portion) of the other sideband is also transmitted. This is achieved by filtering the AM signal in such a way that one sideband is mostly preserved, and a small part of the other sideband is retained.
+
+The filtering process can be represented as:
+\[
+S_{\text{VSB}}(f) = S_{\text{AM}}(f) \cdot H(f)
+\]
+where \( S_{\text{AM}}(f) \) is the spectrum of the AM signal, and \( H(f) \) is the transfer function of the filter designed to retain one full sideband and a portion of the other.
+
+VSB modulation is advantageous because it reduces the required bandwidth compared to double sideband (DSB) modulation while still allowing for easy demodulation at the receiver. This makes it a popular choice in applications where bandwidth efficiency is crucial, such as in television broadcasting.
+
+% Diagram prompt: Generate a diagram showing the spectrum of a VSB signal compared to a standard AM signal, highlighting the retained sideband and the vestige of the other sideband.

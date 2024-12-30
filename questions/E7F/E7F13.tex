@@ -1,0 +1,26 @@
+\subsection{Unlocking the Magic of Taps in Digital Filters!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7F13] What is the function of taps in a digital signal processing filter?
+    \begin{enumerate}[label=\Alph*)]
+        \item To reduce excess signal pressure levels
+        \item Provide access for debugging software
+        \item Select the point at which baseband signals are generated
+        \item \textbf{Provide incremental signal delays for filter algorithms}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you are building a LEGO tower, and you want to make sure each block is placed perfectly. In digital signal processing, taps are like the steps you take to make sure each part of the signal is processed correctly. They help in creating small delays in the signal, which are essential for the filter to work properly. Think of taps as the pause buttons that allow the filter to analyze and process the signal step by step.
+
+\subsubsection*{Advanced Explanation}
+In digital signal processing, a filter is often implemented using a Finite Impulse Response (FIR) filter. The taps in an FIR filter represent the coefficients of the filter, which determine how the input signal is transformed into the output signal. Each tap corresponds to a delay element in the filter, and the number of taps is equal to the order of the filter plus one.
+
+Mathematically, the output \( y[n] \) of an FIR filter is given by:
+\[
+y[n] = \sum_{k=0}^{N} h[k] \cdot x[n-k]
+\]
+where \( h[k] \) are the filter coefficients (taps), \( x[n-k] \) is the delayed input signal, and \( N \) is the order of the filter.
+
+The taps provide incremental signal delays, which are crucial for the filter to perform its function, such as smoothing or sharpening the signal. The correct answer, \textbf{D}, highlights this essential role of taps in filter algorithms.
+
+% Prompt for generating a diagram: A diagram showing the structure of an FIR filter with labeled taps and delay elements would be helpful here.

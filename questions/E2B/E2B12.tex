@@ -1,0 +1,30 @@
+\subsection{Unlocking SSTV: When Does the Picture Come to Life?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2B12]
+\textbf{E2B12} What signals SSTV receiving software to begin a new picture line?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Specific tone frequencies}
+    \item Elapsed time
+    \item Specific tone amplitudes
+    \item A two-tone signal
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are watching a slideshow of pictures, and each picture is made up of many lines. For the slideshow to work correctly, the projector needs to know when to start drawing each new line. In Slow Scan Television (SSTV), the receiving software uses specific tone frequencies as a signal to start a new picture line. Think of these tones as a little ding that tells the software, Hey, it's time to start the next line! This ensures that the picture is built correctly, line by line.
+
+\subsubsection{Advanced Explanation}
+In SSTV, the image is transmitted line by line, and each line is represented by a series of audio tones. These tones correspond to different brightness levels of the image. To synchronize the receiving software with the transmitted image, specific tone frequencies are used as markers to indicate the start of a new picture line. 
+
+The synchronization process relies on the fact that the receiving software is tuned to detect these specific frequencies. When the software detects the designated frequency, it knows that the next set of tones corresponds to a new line of the image. This method ensures that the image is reconstructed accurately, as the software can precisely determine where each line begins.
+
+Mathematically, the synchronization can be represented as:
+\[
+f_{\text{sync}} = f_{\text{start}}
+\]
+where \( f_{\text{sync}} \) is the synchronization frequency detected by the software, and \( f_{\text{start}} \) is the predefined frequency that signals the start of a new line.
+
+This synchronization mechanism is crucial for maintaining the integrity of the transmitted image, as any misalignment in the line detection would result in a distorted picture.
+
+% Prompt for generating a diagram: 
+% Diagram showing the SSTV signal with specific tone frequencies marking the start of each new picture line. The diagram should illustrate how the receiving software detects these frequencies to synchronize the image reconstruction.

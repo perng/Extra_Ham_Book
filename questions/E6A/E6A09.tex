@@ -1,0 +1,33 @@
+\subsection{Discovering Depletion-Mode FETs: The Basics!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6A09]
+\textbf{E6A09} What is a depletion-mode field-effect transistor (FET)?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{An FET that exhibits a current flow between source and drain when no gate voltage is applied}
+    \item An FET that has no current flow between source and drain when no gate voltage is applied
+    \item An FET that exhibits very high electron mobility due to a lack of holes in the N-type material
+    \item An FET for which holes are the majority carriers
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine a depletion-mode FET like a water pipe with a valve. When the valve is fully open (no gate voltage applied), water (current) flows freely between the source and the drain. If you start closing the valve (applying a gate voltage), the water flow decreases. So, a depletion-mode FET is like a pipe that lets water flow naturally unless you do something to stop it.
+
+\subsubsection*{Advanced Explanation}
+A depletion-mode FET is a type of field-effect transistor where a conductive channel exists between the source and drain terminals even when no gate voltage is applied. This channel is formed by doping the semiconductor material in such a way that it naturally allows current to flow. When a negative gate voltage is applied, it depletes the channel of charge carriers, reducing the current flow. This is in contrast to an enhancement-mode FET, which requires a gate voltage to create the conductive channel.
+
+Mathematically, the current \( I_D \) in a depletion-mode FET can be described by the following equation when no gate voltage is applied:
+\[ I_D = \frac{W}{L} \mu_n C_{ox} (V_{GS} - V_{th})^2 \]
+where:
+\begin{itemize}
+    \item \( W \) is the width of the channel,
+    \item \( L \) is the length of the channel,
+    \item \( \mu_n \) is the electron mobility,
+    \item \( C_{ox} \) is the oxide capacitance per unit area,
+    \item \( V_{GS} \) is the gate-to-source voltage,
+    \item \( V_{th} \) is the threshold voltage.
+\end{itemize}
+
+In a depletion-mode FET, \( V_{th} \) is negative, meaning that even when \( V_{GS} = 0 \), the term \( (V_{GS} - V_{th}) \) is positive, allowing current to flow.
+
+% Diagram Prompt: Generate a diagram showing the structure of a depletion-mode FET with labeled source, drain, and gate terminals, and illustrate the conductive channel when no gate voltage is applied.

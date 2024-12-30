@@ -1,0 +1,23 @@
+\subsection{Unveiling the Magic of APRS Beacon Frames!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E2D08}]
+\textbf{What type of packet frame is used to transmit APRS beacon data?}
+\begin{enumerate}[label=\Alph*.]
+    \item Acknowledgement
+    \item Burst
+    \item \textbf{Unnumbered Information}
+    \item Connect
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending a postcard to a friend. You don't need a response or any special confirmation; you just want to share some information. APRS beacon data works similarly. It sends out information, like your location, without expecting any reply. The type of packet frame used for this is called Unnumbered Information. It's like a simple, one-way message that doesn't require any acknowledgment.
+
+\subsubsection{Advanced Explanation}
+In the context of packet radio communication, APRS (Automatic Packet Reporting System) beacon data is transmitted using Unnumbered Information (UI) frames. UI frames are part of the HDLC (High-Level Data Link Control) protocol, which is used for data transmission over radio links. 
+
+UI frames are specifically designed for unacknowledged, connectionless communication. This means that the sender does not expect any acknowledgment or response from the receiver. The frame structure of a UI frame includes a control field that identifies it as an unnumbered frame, allowing it to carry data without the overhead of establishing a connection or managing acknowledgments.
+
+The correct answer is \textbf{C: Unnumbered Information}, as it is the appropriate frame type for transmitting APRS beacon data, which is typically broadcasted without requiring any acknowledgment.
+
+% Diagram Prompt: Generate a diagram showing the structure of an Unnumbered Information (UI) frame in the context of APRS beacon data transmission.

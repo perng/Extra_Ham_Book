@@ -1,0 +1,24 @@
+\subsection{Exploring the Joy of Vertical Interval Signaling in SSTV!}
+\label{sec:E2B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2B11]
+\textbf{E2B11.} What is the function of the vertical interval signaling (VIS) code sent as part of an SSTV transmission?
+\begin{enumerate}[label=\Alph*.]
+    \item To lock the color burst oscillator in color SSTV images
+    \item \textbf{To identify the SSTV mode being used}
+    \item To provide vertical synchronization
+    \item To identify the call sign of the station transmitting
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending a picture over the radio using a special method called SSTV (Slow Scan Television). The VIS code is like a little note attached to the picture that tells the receiver how to properly display it. It’s like saying, Hey, this picture is in color and should be shown in this specific way! Without this note, the receiver might not know how to show the picture correctly, and it could look all wrong.
+
+\subsubsection{Advanced Explanation}
+The Vertical Interval Signaling (VIS) code is a digital code transmitted during the vertical blanking interval of an SSTV signal. This code is essential for identifying the specific SSTV mode being used, which includes parameters such as the number of lines, frame rate, and color encoding scheme. The VIS code is typically a series of binary digits that are decoded by the receiving SSTV software to configure the display settings appropriately.
+
+For example, a VIS code might indicate that the SSTV transmission is using the Martin M1 mode, which has specific characteristics like 320 lines per frame and a frame rate of 8 seconds. The receiver uses this information to correctly decode and display the image.
+
+Mathematically, the VIS code can be represented as a binary sequence, where each bit corresponds to a specific parameter of the SSTV mode. The decoding process involves converting this binary sequence into a set of display parameters that the SSTV software can use.
+
+% Diagram Prompt: Generate a diagram showing the structure of an SSTV signal with the VIS code highlighted in the vertical blanking interval.

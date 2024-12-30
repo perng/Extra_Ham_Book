@@ -1,0 +1,30 @@
+\subsection{Let’s Power Up: Identifying an On NPN Transistor!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6A07] Which of the following indicates that a silicon NPN junction transistor is biased on?
+    \begin{enumerate}[label=\Alph*]
+        \item Base-to-emitter resistance of approximately 6 ohms to 7 ohms
+        \item Base-to-emitter resistance of approximately 0.6 ohms to 0.7 ohms
+        \item Base-to-emitter voltage of approximately 6 volts to 7 volts
+        \item \textbf{Base-to-emitter voltage of approximately 0.6 volts to 0.7 volts}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a transistor as a tiny switch that controls the flow of electricity. When the transistor is on, it allows electricity to pass through. For a silicon NPN transistor, the key to turning it on is applying a small voltage between the base and the emitter. This voltage is like a gentle push that activates the transistor. If the voltage is around 0.6 to 0.7 volts, the transistor is biased on and ready to work. If the voltage is too high or too low, the transistor won’t function properly.
+
+\subsubsection{Advanced Explanation}
+A silicon NPN transistor operates in the active region when it is biased on. This is achieved by applying a forward bias voltage between the base and the emitter. For a silicon transistor, the base-to-emitter voltage (\(V_{BE}\)) required to turn it on is typically around 0.6 to 0.7 volts. This is due to the inherent properties of the PN junction in the transistor.
+
+The relationship between the base current (\(I_B\)) and the base-to-emitter voltage (\(V_{BE}\)) can be described by the Shockley diode equation:
+\[
+I_B = I_S \left( e^{\frac{V_{BE}}{V_T}} - 1 \right)
+\]
+where \(I_S\) is the saturation current and \(V_T\) is the thermal voltage (approximately 26 mV at room temperature). When \(V_{BE}\) is around 0.6 to 0.7 volts, the transistor enters the active region, allowing significant collector current (\(I_C\)) to flow.
+
+The other options are incorrect because:
+\begin{itemize}
+    \item The base-to-emitter resistance is not a reliable indicator of the transistor being biased on.
+    \item A base-to-emitter voltage of 6 to 7 volts is far too high and would likely damage the transistor.
+\end{itemize}
+
+% Prompt for diagram: A diagram showing the NPN transistor with labeled terminals (Base, Emitter, Collector) and the base-to-emitter voltage (\(V_{BE}\)) applied to bias the transistor on.

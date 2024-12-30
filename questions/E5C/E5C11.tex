@@ -1,0 +1,53 @@
+\subsection{Finding Fun with Impedance: E5-1 Adventure!}
+\label{sec:E5C11}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=E5C11]
+    \textbf{E5C11} Which point in Figure E5-1 best represents the impedance of a series circuit consisting of a 300-ohm resistor and an 18-microhenry inductor at 3.505 MHz?
+    \begin{enumerate}[label=\Alph*)]
+        \item Point 1
+        \item \textbf{Point 3}
+        \item Point 7
+        \item Point 8
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a simple circuit with a resistor and an inductor connected in series. The resistor resists the flow of electricity, while the inductor resists changes in the flow of electricity. When you apply a high-frequency signal (like 3.505 MHz) to this circuit, the inductor's resistance to changes becomes significant. The total resistance (or impedance) of the circuit is a combination of the resistor's value and the inductor's effect at that frequency. In Figure E5-1, Point 3 represents this combined impedance because it correctly accounts for both the resistor and the inductor's contribution at the given frequency.
+
+\subsubsection{Advanced Explanation}
+To determine the impedance of the series circuit, we need to calculate the total impedance \( Z \) which is given by:
+\[
+Z = \sqrt{R^2 + (X_L)^2}
+\]
+where \( R \) is the resistance and \( X_L \) is the inductive reactance. The inductive reactance \( X_L \) is calculated using the formula:
+\[
+X_L = 2\pi f L
+\]
+where \( f \) is the frequency and \( L \) is the inductance.
+
+Given:
+\[
+R = 300 \, \Omega, \quad L = 18 \, \mu H, \quad f = 3.505 \, MHz
+\]
+
+First, calculate \( X_L \):
+\[
+X_L = 2\pi \times 3.505 \times 10^6 \times 18 \times 10^{-6} \approx 396.5 \, \Omega
+\]
+
+Next, calculate the total impedance \( Z \):
+\[
+Z = \sqrt{300^2 + 396.5^2} \approx 497.5 \, \Omega
+\]
+
+In Figure E5-1, Point 3 corresponds to this impedance value, making it the correct answer.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{Impedance (Z)}: The total opposition a circuit offers to the flow of alternating current, combining resistance and reactance.
+    \item \textbf{Resistance (R)}: The opposition to the flow of electric current, measured in ohms (\(\Omega\)).
+    \item \textbf{Inductive Reactance (X\_L)}: The opposition to the change in current flow due to an inductor, calculated as \( X_L = 2\pi f L \).
+    \item \textbf{Series Circuit}: A circuit where components are connected end-to-end, so the same current flows through all components.
+\end{itemize}
+
+% Diagram Prompt: Generate a diagram showing a series circuit with a resistor and an inductor, labeled with their values, and the impedance plotted on a graph with points labeled as in Figure E5-1.

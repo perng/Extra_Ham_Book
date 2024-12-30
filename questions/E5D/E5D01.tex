@@ -1,0 +1,43 @@
+\subsection{Shining Bright: The Impact of Skin Effect in Conductors!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5D01] What is the result of conductor skin effect?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Resistance increases as frequency increases because RF current flows closer to the surface}
+        \item Resistance decreases as frequency increases because electron mobility increases
+        \item Resistance increases as temperature increases because of the change in thermal coefficient
+        \item Resistance decreases as temperature increases because of the change in thermal coefficient
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a pipe carrying water. If the water only flows near the walls of the pipe, the pipe can't carry as much water as it could if the water flowed through the entire pipe. Similarly, in a conductor, when the frequency of the electrical signal increases, the current tends to flow closer to the surface of the conductor. This means less of the conductor is being used to carry the current, making it harder for the current to flow. As a result, the resistance of the conductor increases.
+
+\subsubsection{Advanced Explanation}
+The skin effect is a phenomenon where alternating current (AC) tends to distribute itself within a conductor such that the current density is highest near the surface of the conductor and decreases exponentially with depth. This effect becomes more pronounced as the frequency of the AC increases. The skin depth (\(\delta\)) is given by:
+
+\[
+\delta = \sqrt{\frac{2\rho}{\omega\mu}}
+\]
+
+where:
+\begin{itemize}
+    \item \(\rho\) is the resistivity of the conductor,
+    \item \(\omega\) is the angular frequency of the AC signal,
+    \item \(\mu\) is the permeability of the conductor.
+\end{itemize}
+
+As the frequency (\(\omega\)) increases, the skin depth (\(\delta\)) decreases, meaning the current flows closer to the surface. This reduces the effective cross-sectional area of the conductor, leading to an increase in resistance. The resistance (\(R\)) of a conductor at high frequency can be approximated by:
+
+\[
+R \approx \frac{\rho l}{A_{\text{eff}}}
+\]
+
+where:
+\begin{itemize}
+    \item \(l\) is the length of the conductor,
+    \item \(A_{\text{eff}}\) is the effective cross-sectional area, which decreases with increasing frequency.
+\end{itemize}
+
+Thus, as frequency increases, the resistance of the conductor increases due to the skin effect.
+
+% Diagram Prompt: Generate a diagram showing the distribution of current density in a conductor at different frequencies, illustrating the skin effect.

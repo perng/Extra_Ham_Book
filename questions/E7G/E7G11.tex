@@ -1,0 +1,40 @@
+\subsection{Voltage Gain Delight: Let's Crunch the Numbers!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7G11] What absolute voltage gain can be expected from the circuit in Figure E7-3 when R1 is 3,300 ohms and RF is 47 kilohms?
+    \begin{enumerate}[label=\Alph*)]
+        \item 28
+        \item \textbf{14}
+        \item 7
+        \item 0.07
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a simple machine that takes a small amount of force and turns it into a larger amount of force. In this case, the machine is an electronic circuit, and the force is the voltage. The circuit takes a small input voltage and makes it bigger. The amount it increases the voltage is called the voltage gain. Here, we have two resistors, R1 and RF, which control how much the voltage is increased. By using the values of these resistors, we can calculate the voltage gain. The correct answer is 14, which means the circuit makes the input voltage 14 times larger.
+
+\subsubsection{Advanced Explanation}
+The circuit in question is an inverting operational amplifier (op-amp) configuration. The voltage gain \( A_v \) of an inverting op-amp is given by the formula:
+
+\[
+A_v = -\frac{R_F}{R_1}
+\]
+
+Where:
+- \( R_F \) is the feedback resistor (47 k$\Omega$)
+- \( R_1 \) is the input resistor (3.3 k$\Omega$)
+
+Substituting the given values:
+
+\[
+A_v = -\frac{47,000}{3,300} \approx -14.24
+\]
+
+The negative sign indicates that the output voltage is inverted with respect to the input voltage. However, the question asks for the absolute voltage gain, so we take the magnitude:
+
+\[
+|A_v| = 14
+\]
+
+Thus, the absolute voltage gain is 14.
+
+% Diagram Prompt: Generate a diagram of an inverting operational amplifier circuit with R1 = 3.3 k$\Omega$ and RF = 47 k$\Omega$.

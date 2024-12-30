@@ -1,0 +1,31 @@
+\subsection{Boosting High Frequencies in FM Speech: What's the Secret?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E7E05}]
+What is added to an FM speech channel to boost the higher audio frequencies?
+\begin{enumerate}[label=\Alph*)]
+    \item A de-emphasis network
+    \item A harmonic enhancer
+    \item A heterodyne enhancer
+    \item \textbf{A pre-emphasis network}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're listening to your favorite FM radio station. The music and voices sound clear, but sometimes the higher-pitched sounds, like a singer's high notes or the tinkling of a piano, might not come through as strongly. To fix this, radio engineers use something called a pre-emphasis network. Think of it like a volume booster specifically for those high-pitched sounds. Before the radio signal is sent out, the pre-emphasis network makes the high frequencies louder. Then, when you listen to the radio, another part called a de-emphasis network brings the volume back to normal. This way, all the sounds, high and low, come through clearly and evenly.
+
+\subsubsection*{Advanced Explanation}
+In FM (Frequency Modulation) broadcasting, the higher audio frequencies tend to have lower signal strength due to the nature of FM modulation and noise characteristics. To counteract this, a \textbf{pre-emphasis network} is used. This network is essentially a high-pass filter that amplifies the higher frequencies before the signal is transmitted. The pre-emphasis network increases the amplitude of frequencies above a certain cutoff point, typically around 2.1 kHz, according to the standard pre-emphasis curve.
+
+Mathematically, the pre-emphasis can be represented by a transfer function that boosts the high frequencies. For example, the transfer function \( H(f) \) of a simple RC high-pass filter used for pre-emphasis can be expressed as:
+
+\[
+H(f) = \frac{j2\pi fRC}{1 + j2\pi fRC}
+\]
+
+where \( f \) is the frequency, \( R \) is the resistance, and \( C \) is the capacitance. This filter increases the gain for frequencies above the cutoff frequency \( f_c = \frac{1}{2\pi RC} \).
+
+On the receiving end, a \textbf{de-emphasis network} is used to attenuate the high frequencies by the same amount they were boosted, restoring the original frequency balance. This process helps in reducing high-frequency noise and improving the overall signal-to-noise ratio (SNR) of the received audio.
+
+The use of pre-emphasis and de-emphasis networks is a standard practice in FM broadcasting to ensure that the audio signal is transmitted and received with minimal distortion and noise, particularly in the higher frequency ranges.
+
+% [Diagram Prompt: Generate a diagram showing the frequency response of a pre-emphasis network and a de-emphasis network, illustrating how the high frequencies are boosted and then attenuated.]

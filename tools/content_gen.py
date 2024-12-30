@@ -11,8 +11,9 @@ parser.add_argument('-r', action='store_true', help='Replace the existing file')
 parser.add_argument('prefixes', type=str, nargs='+', default=[], help='Question ID prefixes to filter questions')
 args = parser.parse_args()
 
-api_key = os.getenv("OPEN_AI_API_KEY")
-client = OpenAI(api_key=api_key)
+# api_key = os.getenv("OPEN_AI_API_KEY")
+api_key = os.getenv("DEEPSEEK_API_KEY")
+client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
 
 
 # Load questions from JSON file
@@ -65,8 +66,10 @@ for chapter in data:
 
             # Call OpenAI API to generate LaTeX content
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[{"role": "user", "content": prompt}]
+                # model="gpt-4o-mini",
+                model="deepseek-chat",
+                messages=[{"role": "system", "content": "You are an knowledgeable radio technology expert, you are able to generate LaTeX content for a book on radio technology."},
+                          {"role": "user", "content": prompt}]
             )
 
             # Save the generated LaTeX to a file

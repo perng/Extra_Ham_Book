@@ -1,0 +1,29 @@
+\subsection{Sampling Secrets: Capturing Analog Joy!}
+\label{sec:sampling_secrets}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+    \textbf{E7F05} How frequently must an analog signal be sampled to be accurately reproduced?
+    \begin{enumerate}[label=\Alph*)]
+        \item At least half the rate of the highest frequency component of the signal
+        \item \textbf{At least twice the rate of the highest frequency component of the signal}
+        \item At the same rate as the highest frequency component of the signal
+        \item At four times the rate of the highest frequency component of the signal
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to draw a picture of a fast-moving car. If you take a picture of the car only once every few seconds, you might miss some important details, like the position of the wheels or the shape of the car. To capture all the details, you need to take pictures more frequently. Similarly, when we want to capture an analog signal (like sound or video), we need to take samples of the signal at a fast enough rate to make sure we don't miss any important information. The rule is that we need to sample the signal at least twice as fast as the highest frequency in the signal. This way, we can accurately reproduce the original signal without losing any details.
+
+\subsubsection{Advanced Explanation}
+The concept described here is known as the Nyquist-Shannon Sampling Theorem. This theorem states that to accurately reconstruct an analog signal from its samples, the sampling rate must be at least twice the highest frequency present in the signal. This minimum sampling rate is called the Nyquist rate.
+
+Mathematically, if the highest frequency component of the signal is \( f_{\text{max}} \), then the sampling rate \( f_s \) must satisfy:
+\[
+f_s \geq 2f_{\text{max}}
+\]
+
+For example, if the highest frequency in an audio signal is 20 kHz, the signal must be sampled at least at 40 kHz to avoid aliasing and ensure accurate reproduction.
+
+The reason for this is that sampling at a lower rate can cause different frequencies to overlap, making it impossible to distinguish between them. This phenomenon is known as aliasing. By sampling at or above the Nyquist rate, we ensure that the original signal can be perfectly reconstructed from its samples.
+
+% Diagram Prompt: Generate a diagram showing an analog signal being sampled at different rates, illustrating the concept of aliasing when the sampling rate is below the Nyquist rate.

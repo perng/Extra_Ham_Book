@@ -1,0 +1,29 @@
+\subsection{Understanding De-Emphasis: The Secret to Clear FM Sound!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7E06] Why is de-emphasis used in FM communications receivers?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{For compatibility with transmitters using phase modulation}
+        \item To reduce impulse noise reception
+        \item For higher efficiency
+        \item To remove third-order distortion products
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are listening to your favorite FM radio station. The music sounds clear and crisp, but have you ever wondered how the radio makes sure the sound stays that way? De-emphasis is like a special filter that helps balance the sound. When the radio station sends out the music, it boosts the higher-pitched sounds to make them stronger. But when your radio receives the signal, it uses de-emphasis to bring those sounds back to their normal level. This way, the music sounds just right, without any weird distortions or imbalances.
+
+\subsubsection{Advanced Explanation}
+In FM (Frequency Modulation) communications, the transmitter often applies pre-emphasis to the higher frequency components of the audio signal. This is done to improve the signal-to-noise ratio (SNR) for these frequencies, which are more susceptible to noise. Pre-emphasis boosts the amplitude of higher frequencies before transmission.
+
+At the receiver end, de-emphasis is applied to restore the original frequency response of the audio signal. This is crucial for maintaining compatibility with transmitters that use phase modulation, as the pre-emphasis and de-emphasis processes are designed to work together. Mathematically, the de-emphasis network typically consists of a simple RC (resistor-capacitor) low-pass filter, which attenuates the higher frequencies that were previously boosted.
+
+The transfer function \( H(f) \) of the de-emphasis filter can be expressed as:
+\[
+H(f) = \frac{1}{1 + j2\pi fRC}
+\]
+where \( f \) is the frequency, \( R \) is the resistance, and \( C \) is the capacitance. This filter effectively reduces the amplitude of higher frequencies, counteracting the pre-emphasis applied at the transmitter.
+
+The correct answer is \textbf{A}, as de-emphasis is primarily used to ensure compatibility with transmitters that employ phase modulation, maintaining the integrity of the audio signal across the communication link.
+
+% Prompt for generating a diagram: 
+% Diagram showing the pre-emphasis and de-emphasis process in FM communication, with a graph illustrating the frequency response before and after each process.

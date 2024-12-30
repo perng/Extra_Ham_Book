@@ -1,0 +1,29 @@
+\subsection{Connecting the Dots: How APRS Stations Relay Data!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E2D11}]
+\textbf{How do APRS stations relay data?}
+\begin{enumerate}[label=\Alph*)]
+    \item By packet ACK/NAK relay
+    \item By C4FM repeaters
+    \item By DMR repeaters
+    \item \textbf{By packet digipeaters}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a message that you want to send to a friend who is far away, but your voice can't reach them directly. You ask someone in the middle to help pass the message along. In the world of APRS (Automatic Packet Reporting System), this helper is called a digipeater. It listens to your message and then repeats it to reach your friend. So, APRS stations relay data by using these helpful digipeaters to make sure the message gets to where it needs to go.
+
+\subsubsection{Advanced Explanation}
+APRS (Automatic Packet Reporting System) is a digital communication protocol used primarily in amateur radio to transmit real-time data such as position, weather, and messages. The relaying of data in APRS is facilitated by devices known as digipeaters (digital repeaters). These digipeaters receive APRS packets and retransmit them, effectively extending the range of the original transmission.
+
+The process works as follows:
+\begin{enumerate}
+    \item An APRS station transmits a data packet.
+    \item The packet is received by a digipeater within range.
+    \item The digipeater retransmits the packet, often with a modified path indicator to prevent infinite loops.
+    \item The packet continues to be relayed by subsequent digipeaters until it reaches its destination or the maximum number of hops is reached.
+\end{enumerate}
+
+This method of relaying data is efficient and ensures that APRS packets can traverse long distances, even in areas with limited direct radio coverage. The use of digipeaters is a fundamental aspect of the APRS network, enabling robust and widespread communication.
+
+% Prompt for diagram: A diagram showing the flow of an APRS packet from the originating station through multiple digipeaters to the destination station would be helpful here.

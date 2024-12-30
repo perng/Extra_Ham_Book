@@ -1,0 +1,69 @@
+\subsection{Finding the Fun Frequency: RLC Circuit Mystery!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5A10]
+\textbf{E5A10} What is the resonant frequency of an RLC circuit if R is 33 ohms, L is 50 microhenries, and C is 10 picofarads?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{7.12 MHz}
+    \item 23.5 kHz
+    \item 7.12 kHz
+    \item 23.5 MHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a swing. If you push the swing at just the right time, it goes higher and higher. This is called resonance. In an RLC circuit, resonance happens when the circuit swings at a special frequency called the resonant frequency. The values of the inductor (L) and capacitor (C) decide this frequency. In this question, we have L = 50 microhenries and C = 10 picofarads. Using a special formula, we find that the resonant frequency is 7.12 MHz. This means the circuit swings best at 7.12 million times per second!
+
+\subsubsection*{Advanced Explanation}
+The resonant frequency \( f_0 \) of an RLC circuit is given by the formula:
+
+\[
+f_0 = \frac{1}{2\pi\sqrt{LC}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( L \) is the inductance in henries (H)
+    \item \( C \) is the capacitance in farads (F)
+\end{itemize}
+
+Given:
+\begin{itemize}
+    \item \( L = 50 \, \mu\text{H} = 50 \times 10^{-6} \, \text{H} \)
+    \item \( C = 10 \, \text{pF} = 10 \times 10^{-12} \, \text{F} \)
+\end{itemize}
+
+Plugging these values into the formula:
+
+\[
+f_0 = \frac{1}{2\pi\sqrt{(50 \times 10^{-6})(10 \times 10^{-12})}}
+\]
+
+First, calculate the product inside the square root:
+
+\[
+LC = (50 \times 10^{-6})(10 \times 10^{-12}) = 500 \times 10^{-18} = 5 \times 10^{-16}
+\]
+
+Next, take the square root:
+
+\[
+\sqrt{5 \times 10^{-16}} = \sqrt{5} \times 10^{-8} \approx 2.236 \times 10^{-8}
+\]
+
+Now, calculate the resonant frequency:
+
+\[
+f_0 = \frac{1}{2\pi \times 2.236 \times 10^{-8}} \approx \frac{1}{1.405 \times 10^{-7}} \approx 7.12 \times 10^6 \, \text{Hz} = 7.12 \, \text{MHz}
+\]
+
+Thus, the resonant frequency of the RLC circuit is \textbf{7.12 MHz}.
+
+\subsubsection*{Related Concepts}
+\begin{itemize}
+    \item \textbf{Resonance in RLC Circuits}: Resonance occurs when the inductive reactance \( X_L \) and capacitive reactance \( X_C \) are equal, causing the impedance of the circuit to be minimized.
+    \item \textbf{Inductive Reactance}: \( X_L = 2\pi f L \)
+    \item \textbf{Capacitive Reactance}: \( X_C = \frac{1}{2\pi f C} \)
+    \item \textbf{Impedance}: \( Z = \sqrt{R^2 + (X_L - X_C)^2} \)
+\end{itemize}
+
+% Diagram Prompt: Generate a diagram showing an RLC circuit with labeled components (R, L, C) and the resonant frequency formula.

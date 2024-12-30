@@ -1,0 +1,51 @@
+\subsection{Finding Fun: Unraveling Impedance in a Series Circuit!} \label{sec:E5C10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E5C10}]
+Which point on Figure E5-1 best represents the impedance of a series circuit consisting of a 400-ohm resistor and a 38-picofarad capacitor at 14 MHz?
+\begin{enumerate}[label=\Alph*)]
+    \item Point 2
+    \item \textbf{Point 4}
+    \item Point 5
+    \item Point 6
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water pipe with a filter (the resistor) and a small tank (the capacitor). The filter resists the flow of water, and the tank stores some water before letting it pass. When water flows through this system, the filter and the tank together affect how easily the water can move. In this question, we’re trying to figure out where on a map (Figure E5-1) this combined effect is shown. The correct point is where the filter’s resistance and the tank’s storage effect are both considered.
+
+\subsubsection{Advanced Explanation}
+To solve this problem, we need to calculate the impedance of the series circuit consisting of a resistor and a capacitor. The impedance \( Z \) of a series RC circuit is given by:
+\[
+Z = \sqrt{R^2 + X_C^2}
+\]
+where \( R \) is the resistance and \( X_C \) is the capacitive reactance. The capacitive reactance \( X_C \) is calculated using:
+\[
+X_C = \frac{1}{2\pi f C}
+\]
+where \( f \) is the frequency and \( C \) is the capacitance.
+
+Given:
+\[
+R = 400 \, \Omega, \quad C = 38 \, \text{pF} = 38 \times 10^{-12} \, \text{F}, \quad f = 14 \, \text{MHz} = 14 \times 10^6 \, \text{Hz}
+\]
+
+First, calculate \( X_C \):
+\[
+X_C = \frac{1}{2\pi \times 14 \times 10^6 \times 38 \times 10^{-12}} \approx 300 \, \Omega
+\]
+
+Next, calculate the impedance \( Z \):
+\[
+Z = \sqrt{400^2 + 300^2} = \sqrt{160000 + 90000} = \sqrt{250000} = 500 \, \Omega
+\]
+
+On the impedance plot (Figure E5-1), this impedance corresponds to Point 4, which is the correct answer.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{Impedance}: The total opposition to the flow of alternating current in a circuit, combining resistance and reactance.
+    \item \textbf{Capacitive Reactance}: The opposition to the change of voltage across a capacitor in an AC circuit, inversely proportional to frequency and capacitance.
+    \item \textbf{Series Circuit}: A circuit where components are connected end-to-end, so the same current flows through all components.
+\end{itemize}
+
+% Diagram prompt: Generate a diagram showing the impedance plot (Figure E5-1) with points labeled, highlighting Point 4 as the correct answer.

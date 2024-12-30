@@ -653,12 +653,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E2 - OPERATING PROCEDURES",
-        "sections": [
+            },
             {
                 "section_title": "E1F Miscellaneous rules: external RF power amplifiers; prohibited communications; spread spectrum; auxiliary stations; Canadian amateurs operating in the US; special temporary authority",
                 "questions": [
@@ -784,7 +779,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E2 - OPERATING PROCEDURES",
+        "sections": [
             {
                 "section_title": "E2A Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes; satellite hardware; satellite operations",
                 "questions": [
@@ -1321,12 +1321,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E3 - RADIO WAVE PROPAGATION",
-        "sections": [
+            },
             {
                 "section_title": "E2E Operating methods: digital modes and procedures for HF",
                 "questions": [
@@ -1474,7 +1469,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E3 - RADIO WAVE PROPAGATION",
+        "sections": [
             {
                 "section_title": "E3A Electromagnetic Waves and Specialized Propagation: Earth-Moon-Earth (EME) communications; meteor scatter; microwave tropospheric and scatter propagation; auroral propagation; daily variation of ionospheric propagation; circular polarization",
                 "questions": [
@@ -1781,12 +1781,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E4 - AMATEUR PRACTICES",
-        "sections": [
+            },
             {
                 "section_title": "E3C Propagation prediction and reporting: radio horizon; effects of space-weather phenomena",
                 "questions": [
@@ -1923,7 +1918,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E4 - AMATEUR PRACTICES",
+        "sections": [
             {
                 "section_title": "E4A Test equipment: analog and digital instruments; spectrum analyzers; antenna analyzers; oscilloscopes; RF measurements",
                 "questions": [
@@ -2493,12 +2493,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E5 - ELECTRICAL PRINCIPLES",
-        "sections": [
+            },
             {
                 "section_title": "E4E Noise and interference: external RF interference; electrical and computer noise; line noise; DSP filtering and noise reduction; common-mode current; surge protectors; single point ground panel",
                 "questions": [
@@ -2657,7 +2652,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E5 - ELECTRICAL PRINCIPLES",
+        "sections": [
             {
                 "section_title": "E5A Resonance and Q: characteristics of resonant circuits; series and parallel resonance; definitions and effects of Q; half-power bandwidth",
                 "questions": [
@@ -3079,12 +3079,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E6 - CIRCUIT COMPONENTS",
-        "sections": [
+            },
             {
                 "section_title": "E5D RF effects in components and circuits: skin effect; real and reactive power; electrical length of conductors",
                 "questions": [
@@ -3221,7 +3216,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E6 - CIRCUIT COMPONENTS",
+        "sections": [
             {
                 "section_title": "E6A Semiconductor materials and devices: semiconductor materials; bipolar junction transistors; operation and types of field-effect transistors",
                 "questions": [
@@ -3884,12 +3884,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E7 - PRACTICAL CIRCUITS",
-        "sections": [
+            },
             {
                 "section_title": "E6F Electro-optical technology: photoconductivity; photovoltaic devices; optical sensors and encoders; optically isolated switching",
                 "questions": [
@@ -4015,7 +4010,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E7 - PRACTICAL CIRCUITS",
+        "sections": [
             {
                 "section_title": "E7A Digital circuits: digital circuit principles and logic circuits; classes of logic elements; positive and negative logic; frequency dividers; truth tables",
                 "questions": [
@@ -4996,12 +4996,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E8 - SIGNALS AND EMISSIONS",
-        "sections": [
+            },
             {
                 "section_title": "E7H Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators",
                 "questions": [
@@ -5149,7 +5144,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E8 - SIGNALS AND EMISSIONS",
+        "sections": [
             {
                 "section_title": "E8A Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion",
                 "questions": [
@@ -5571,12 +5571,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E9 - ANTENNAS AND TRANSMISSION LINES",
-        "sections": [
+            },
             {
                 "section_title": "E8D Keying defects and overmodulation of digital signals; digital codes; spread spectrum",
                 "questions": [
@@ -5702,7 +5697,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E9 - ANTENNAS AND TRANSMISSION LINES",
+        "sections": [
             {
                 "section_title": "E9A Basic antenna parameters: radiation resistance, gain, beamwidth, efficiency; effective radiated power (ERP) and effective isotropic radiated power (EIRP)",
                 "questions": [
@@ -6639,12 +6639,7 @@
                         }
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "chapter_title": "SUBELEMENT E0 - SAFETY -",
-        "sections": [
+            },
             {
                 "section_title": "E9H Receiving antennas: radio direction finding (RDF) techniques; Beverage antennas; single- and multiple-turn loops",
                 "questions": [
@@ -6770,7 +6765,12 @@
                         }
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "chapter_title": "SUBELEMENT E0 - SAFETY -",
+        "sections": [
             {
                 "section_title": "E0A Safety: RF radiation hazards; hazardous materials; grounding",
                 "questions": [

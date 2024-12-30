@@ -1,0 +1,29 @@
+\subsection{Unlocking the Magic of 2-Meter Band Duplexers!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7C10] Which of the following filters is used in a 2-meter band repeater duplexer?
+    \begin{enumerate}[label=\Alph*]
+        \item A crystal filter
+        \item \textbf{A cavity filter}
+        \item A DSP filter
+        \item An L-C filter
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a walkie-talkie that can both talk and listen at the same time. To make this work, the walkie-talkie uses a special device called a duplexer. The duplexer helps separate the signals so that the talking and listening don’t interfere with each other. In a 2-meter band repeater, which is like a super walkie-talkie for ham radio, a special type of filter called a cavity filter is used. This filter is like a gatekeeper that only lets the right signals through, keeping everything clear and organized.
+
+\subsubsection{Advanced Explanation}
+A 2-meter band repeater operates in the VHF (Very High Frequency) range, specifically around 144-148 MHz. The duplexer in such a repeater must effectively isolate the transmitter and receiver to prevent interference. A cavity filter is particularly suited for this purpose due to its high Q-factor, which allows it to provide sharp frequency selectivity and low insertion loss.
+
+The cavity filter consists of a resonant cavity that is tuned to the specific frequency of the 2-meter band. The resonant cavity acts as a high-Q resonator, which means it can store energy at a specific frequency and reject others. This is crucial for the duplexer to separate the transmit and receive frequencies effectively.
+
+Mathematically, the Q-factor (Quality factor) of a cavity filter is given by:
+\[
+Q = \frac{f_0}{\Delta f}
+\]
+where \( f_0 \) is the resonant frequency and \( \Delta f \) is the bandwidth. A high Q-factor indicates a narrow bandwidth and high selectivity, which is essential for the duplexer to function correctly.
+
+Other types of filters, such as crystal filters, DSP filters, and L-C filters, do not offer the same level of performance in terms of selectivity and insertion loss for VHF applications. Crystal filters are typically used in lower frequency applications, DSP filters are more common in digital signal processing, and L-C filters are generally used in lower power and lower frequency applications.
+
+% Prompt for generating a diagram:
+% Diagram showing the structure of a cavity filter and its placement in a 2-meter band repeater duplexer.

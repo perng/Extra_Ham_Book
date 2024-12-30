@@ -1,0 +1,31 @@
+\subsection{Boosting Q: The Magic of Series Resonance!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5A13]
+\textbf{E5A13} What is an effect of increasing Q in a series resonant circuit?
+\begin{enumerate}[label=\Alph*]
+    \item Fewer components are needed for the same performance
+    \item Parasitic effects are minimized
+    \item \textbf{Internal voltages increase}
+    \item Phase shift can become uncontrolled
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you are swinging on a swing. The harder you push, the higher you go. In a series resonant circuit, increasing the Q (quality factor) is like pushing harder on the swing. It makes the internal voltages go higher, just like you go higher on the swing. This happens because the circuit stores more energy and releases it more efficiently.
+
+\subsubsection*{Advanced Explanation}
+In a series resonant circuit, the quality factor \( Q \) is defined as the ratio of the reactance to the resistance:
+\[
+Q = \frac{X_L}{R} = \frac{X_C}{R}
+\]
+where \( X_L \) is the inductive reactance, \( X_C \) is the capacitive reactance, and \( R \) is the resistance. Increasing \( Q \) means either increasing the reactance or decreasing the resistance. 
+
+When \( Q \) increases, the voltage across the inductor and capacitor at resonance also increases. This is because the voltage across these components is given by:
+\[
+V_L = V_C = Q \times V_{\text{in}}
+\]
+where \( V_{\text{in}} \) is the input voltage. Therefore, as \( Q \) increases, the internal voltages \( V_L \) and \( V_C \) increase proportionally.
+
+Higher \( Q \) also implies a narrower bandwidth and a sharper resonance peak, which means the circuit is more selective in frequency. However, this does not directly relate to the number of components, parasitic effects, or phase shift control, making option C the correct answer.
+
+% Diagram Prompt: Generate a diagram showing a series resonant circuit with labeled components (R, L, C) and indicate the relationship between Q and internal voltages.
