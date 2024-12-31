@@ -1,61 +1,42 @@
-\subsection{Radiant Fun: Exploring Antenna Patterns!}
+\subsection{E9C02: Radiant Fun: Exploring Antenna Patterns!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9C02] What type of radiation pattern is created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase?
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9C02} What type of radiation pattern is created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Cardioid}
+        \item A figure-eight end-fire along the axis of the array
+        \item A figure-eight broadside to the axis of the array
+        \item Omni-directional
+    \end{enumerate}
+\end{tcolorbox}
 
-\begin{enumerate}[label=\Alph*.]
-    \item \textbf{Cardioid}
-    \item A figure-eight end-fire along the axis of the array
-    \item A figure-eight broadside to the axis of the array
-    \item Omni-directional
-\end{enumerate} \end{tcolorbox}
+\subsubsection{Intuitive Explanation}
+Imagine you have two antennas standing side by side, like two friends whispering secrets to each other. They are spaced just the right distance apart and are talking to each other with a slight delay (90 degrees out of phase). This setup makes them create a special pattern in the air, like a heart shape (cardioid). This heart shape means they send out signals mostly in one direction, like a flashlight beam, instead of all around like a light bulb. So, the answer is a cardioid pattern!
 
-\subsubsection{Related Concepts}
+\subsubsection{Advanced Explanation}
+When two 1/4-wavelength vertical antennas are spaced 1/4-wavelength apart and fed 90 degrees out of phase, the resulting radiation pattern is a cardioid. This pattern is characterized by a single main lobe and a null in the opposite direction.
 
-To answer this question, it is important to understand the principles of antenna arrays and phase differences. An antenna array consists of multiple antennas working together to enhance the signal directionality and pattern. Here, we have two vertical antennas, each with a length of 1/4 wavelength, which is a common length that allows antennas to radiate efficiently.
+The phase difference of 90 degrees causes constructive and destructive interference in specific directions. The constructive interference occurs in the direction of the phase lead, creating the main lobe, while the destructive interference creates the null in the opposite direction.
 
-The spacing of these antennas, which is also 1/4 wavelength, and the fact that they are fed out of phase by 90 degrees are crucial aspects of determining the resulting radiation pattern. The out-of-phase feeding implies that the signals from the two antennas will combine in such a way that they reinforce in certain directions and cancel in others.
-
-\subsubsection*{Calculation Steps:}
-
-The resulting pattern can be analyzed using the principles of superposition and phasor addition. The phasor representation of the two signals from the antennas can be denoted as:
-
-1. From Antenna 1: \( E_1 = E_0 e^{j(0)} \)
-2. From Antenna 2: \( E_2 = E_0 e^{j(\frac{\pi}{2})} \)  (90 degrees phase shift)
-
-When these two vectors are added, we can compute the resultant field strength \( E_{total} \):
-
+Mathematically, the radiation pattern \( E(\theta) \) can be expressed as:
 \[
-E_{total} = E_1 + E_2 = E_0(1 + j)
+E(\theta) = E_0 \left[ 1 + e^{j(\beta d \cos \theta + \phi)} \right]
 \]
+where:
+\begin{itemize}
+    \item \( E_0 \) is the amplitude of the electric field,
+    \item \( \beta = \frac{2\pi}{\lambda} \) is the phase constant,
+    \item \( d = \frac{\lambda}{4} \) is the spacing between the antennas,
+    \item \( \phi = 90^\circ \) is the phase difference,
+    \item \( \theta \) is the angle from the axis of the array.
+\end{itemize}
 
-In polar form, the magnitude of \( E_{total} \) can be computed as:
-
+Substituting the values:
 \[
-|E_{total}| = |E_0| \sqrt{1^2 + 1^2} = |E_0| \sqrt{2} 
+E(\theta) = E_0 \left[ 1 + e^{j\left(\frac{\pi}{2} \cos \theta + \frac{\pi}{2}\right)} \right]
 \]
+This equation results in a cardioid pattern, which is a unidirectional pattern with a single main lobe and a null in the opposite direction.
 
-The angle can be determined as:
+Related concepts include antenna array theory, phase difference, and radiation patterns. Understanding these concepts is crucial for designing and analyzing antenna systems.
 
-\[
-\theta = \tan^{-1}\left(\frac{1}{1}\right) = 45^\circ
-\]
-
-This indicates that the resultant direction of maximum radiation (constructive interference) will not only be in the direction of either antenna, but will form a pattern with a distinct shape.
-
-\subsubsection*{Radiation Pattern:}
-
-To represent this, we can visualize the radiation pattern using the drawing capability of \texttt{tikz}. A cardioid radiation pattern will be depicted, showing the directionality:
-
-\begin{tikzpicture}
-    \draw [->] (0,0) -- (3,0) node [right] {0°};
-    \draw [->] (0,0) -- (0,3) node [above] {90°};
-    \draw [->] (0,0) -- (-3,0) node [left] {180°};
-    \draw [->] (0,0) -- (0,-3) node [below] {270°};
-    
-    \draw [thick, red] plot [domain=0:360] (\x:2) node [right] {Cardioid Pattern};
-\end{tikzpicture}
-
-This diagram illustrates that the radiation pattern produced by this arrangement is a cardioid shape, peaking towards 0° and 180°, indicating the desired direction of maximum radiation while having nulls at the 90° and 270° directions.
-
-In conclusion, the correct answer to the question is:
-\textbf{A: Cardioid}
+% Prompt for generating a diagram: Illustrate the cardioid radiation pattern created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase.

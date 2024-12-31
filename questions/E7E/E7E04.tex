@@ -18,13 +18,13 @@ Imagine you have a radio signal, and you want to send only one part of it (eithe
 \subsubsection{Advanced Explanation}
 To produce a single-sideband (SSB) phone signal, the most common method involves two key components: a balanced modulator and a filter. 
 
-1. **Balanced Modulator:** A balanced modulator is used to suppress the carrier wave in a double-sideband (DSB) signal. The output of the balanced modulator contains both the upper and lower sidebands but no carrier. Mathematically, if the carrier signal is \( c(t) = A_c \cos(2\pi f_c t) \) and the modulating signal is \( m(t) \), the output of the balanced modulator can be represented as:
+1. \textbf(Balanced Modulator:) A balanced modulator is used to suppress the carrier wave in a double-sideband (DSB) signal. The output of the balanced modulator contains both the upper and lower sidebands but no carrier. Mathematically, if the carrier signal is \( c(t) = A_c \cos(2\pi f_c t) \) and the modulating signal is \( m(t) \), the output of the balanced modulator can be represented as:
    \[
    s(t) = m(t) \cdot A_c \cos(2\pi f_c t)
    \]
    This results in a DSB signal without the carrier.
 
-2. **Filter:** After the balanced modulator, a bandpass filter is used to select either the upper or lower sideband. The filter is designed to pass only the desired sideband while attenuating the other. For example, if the upper sideband is desired, the filter will be centered at \( f_c + f_m \), where \( f_m \) is the frequency of the modulating signal.
+2. \textbf(Filter:) After the balanced modulator, a bandpass filter is used to select either the upper or lower sideband. The filter is designed to pass only the desired sideband while attenuating the other. For example, if the upper sideband is desired, the filter will be centered at \( f_c + f_m \), where \( f_m \) is the frequency of the modulating signal.
 
 The combination of these two components effectively produces a single-sideband signal, which is more efficient in terms of bandwidth and power compared to a full DSB signal.
 

@@ -1,57 +1,30 @@
-\subsection{Spot the Straight Line on the Smith Chart!}
+\subsection{E9G07: Spot the Straight Line on the Smith Chart!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9G07] What is the only straight line shown on the Smith chart? 
-
-\begin{enumerate}[label=\Alph*.]
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E9G07}]
+\textbf{On the Smith chart shown in Figure E9-3, what is the only straight line shown?}
+\begin{enumerate}[label=\Alph*]
     \item The reactance axis
     \item The current axis
     \item The voltage axis
     \item \textbf{The resistance axis}
-\end{enumerate} \end{tcolorbox}
+\end{enumerate}
+\end{tcolorbox}
 
-\subsubsection{Understanding the Smith Chart}
+\subsubsection*{Intuitive Explanation}
+Imagine the Smith chart as a big, round pizza. Now, if you were to draw a straight line on this pizza, where would it be? The Smith chart is a special tool that helps us understand how radio waves behave when they travel through different materials. The only straight line on this pizza-like chart is the resistance axis. Think of it as the backbone of the chart, keeping everything in place. So, if someone asks you to find the straight line on the Smith chart, just remember it's the resistance axis, like the spine of the pizza!
 
-The Smith chart is a graphical representation used in electrical engineering, particularly for impedance matching in radio frequency applications. It is a polar plot that allows for visualization of complex impedances and their relationships in transmission lines.
+\subsubsection*{Advanced Explanation}
+The Smith chart is a graphical tool used in radio frequency (RF) engineering to represent complex impedance and reflection coefficients. It is a polar plot of the complex reflection coefficient $\Gamma$, which is related to the impedance $Z$ by the equation:
 
-One important feature of the Smith chart is the representation of various axes. The chart consists of a series of circles and lines that help in visualizing the resistive and reactive components of impedances. In particular, certain axes can be represented either as straight lines or curves on the Smith chart.
+\[
+\Gamma = \frac{Z - Z_0}{Z + Z_0}
+\]
 
-\subsubsection{Analysis of Given Choices}
+where $Z_0$ is the characteristic impedance of the transmission line. The Smith chart is normalized to $Z_0$, so all impedances are expressed as ratios relative to $Z_0$.
 
-To analyze the options provided in the question:
+The Smith chart consists of circles of constant resistance and arcs of constant reactance. The only straight line on the Smith chart is the horizontal line that represents the resistance axis. This line corresponds to zero reactance, meaning the impedance is purely resistive. The resistance axis is the real axis in the complex plane, and it is the only straight line because it represents the real part of the impedance, which does not vary with frequency.
 
-\begin{itemize}
-    \item \textbf{A: The reactance axis} - The reactance axis consists of curved lines that represent different values of reactance. Hence this is not the straight line.
-    \item \textbf{B: The current axis} - There is no specific current axis defined in conventional Smith chart terminology. This option is also not a straight line.
-    \item \textbf{C: The voltage axis} - Similar to the current axis, there is no designated voltage axis per Smith chart conventions.
-    \item \textbf{D: The resistance axis} - The resistance axis is the only line that remains straight across the Smith chart. 
-\end{itemize}
+In summary, the resistance axis is the only straight line on the Smith chart because it represents the real part of the impedance, which is constant and does not depend on the imaginary part (reactance).
 
-Thus, the correct choice is D: The resistance axis.
-
-\subsubsection{Related Concepts}
-
-In order to correctly interpret and utilize the Smith chart, one must have a basic understanding of the following concepts:
-
-1. \textbf{Impedance:} Impedance is the total opposition to the flow of electric current in a circuit, comprising resistive and reactive components.
-2. \textbf{Reactance:} Reactance refers to the imaginary part of impedance and can be capacitive or inductive.
-3. \textbf{Reflection Coefficient:} This parameter indicates how much of an incident wave is reflected back due to impedance mismatches.
-
-\subsubsection{Visual Representation}
-
-A representation of the Smith chart can be sketched using the TikZ package in LaTeX. Below is a simple outline of a Smith chart that can be drawn:
-
-\begin{tikzpicture}
-    \draw [very thin, gray] (0,0) circle(2cm);
-    \foreach \r in {0.2,0.4,0.6,0.8}
-        \draw [very thin, gray] (0,0) circle(\r*2cm);
-    \foreach \x in {1.0,1.5}
-        \draw [very thin, gray] (\x, -2) -- (\x,2);
-    
-    \draw[thick] (-2,0) -- (2,0); % Resistance axis
-    \draw[thick,->] (0,0) -- (1.5,1.5); % Example line
-    \node at (2.2,0) {Resistance Axis};
-\end{tikzpicture}
-
-This simple representation does not include all features of a complete Smith chart but indicates the important components discussed. 
-
-In conclusion, understanding the structure and the primary functions of different components within a Smith chart is crucial for successfully engaging with RF circuits and analyzing their behavior.
+% Prompt for generating the diagram:
+% [Insert a diagram of the Smith chart highlighting the resistance axis as the only straight line.]

@@ -20,19 +20,19 @@ In a Class A common emitter amplifier, the operating point, also known as the qu
 
 To determine the Q-point, we analyze the DC biasing circuit. The base-emitter junction is forward-biased, and the collector-emitter junction is reverse-biased. The Q-point is determined by the intersection of the DC load line and the transistor's characteristic curves. Mathematically, the Q-point can be calculated using the following steps:
 
-1. **Calculate the base current (\(I_B\))**:
+1. \textbf(Calculate the base current (\(I_B\))):
    \[
    I_B = \frac{V_{CC} - V_{BE}}{R_B}
    \]
    where \(V_{CC}\) is the supply voltage, \(V_{BE}\) is the base-emitter voltage (typically 0.7V for silicon transistors), and \(R_B\) is the base resistor.
 
-2. **Calculate the collector current (\(I_C\))**:
+2. \textbf(Calculate the collector current (\(I_C\))):
    \[
    I_C = \beta I_B
    \]
    where \(\beta\) is the current gain of the transistor.
 
-3. **Calculate the collector-emitter voltage (\(V_{CE}\))**:
+3. \textbf(Calculate the collector-emitter voltage (\(V_{CE}\))):
    \[
    V_{CE} = V_{CC} - I_C R_C
    \]
@@ -41,9 +41,9 @@ To determine the Q-point, we analyze the DC biasing circuit. The base-emitter ju
 The Q-point is then given by the coordinates \((V_{CE}, I_C)\) on the load line. Setting the Q-point halfway between saturation and cutoff ensures that the amplifier can handle the maximum possible signal swing without distortion.
 
 Related concepts include:
-- **Load Line Analysis**: A graphical method to determine the operating point of a transistor.
-- **Biasing Circuits**: Circuits designed to set the Q-point of a transistor.
-- **Amplifier Classes**: Different classes of amplifiers (A, B, AB, C) have different operating points and efficiencies.
+- \textbf(Load Line Analysis): A graphical method to determine the operating point of a transistor.
+- \textbf(Biasing Circuits): Circuits designed to set the Q-point of a transistor.
+- \textbf(Amplifier Classes): Different classes of amplifiers (A, B, AB, C) have different operating points and efficiencies.
 
 % Prompt for generating a diagram: 
 % Diagram showing the load line and the Q-point on the transistor's characteristic curves, with saturation and cutoff regions labeled.

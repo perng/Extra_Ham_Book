@@ -1,87 +1,45 @@
-\subsection{Doubling the Frequency: A Cheerful Boost for Your Antenna Gain!}
+\subsection{E9D01: Doubling the Frequency: A Cheerful Boost for Your Antenna Gain!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9D01]  
-How much does the gain of an ideal parabolic reflector antenna increase when the operating frequency is doubled?
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+\textbf{E9D01} How much does the gain of an ideal parabolic reflector antenna increase when the operating frequency is doubled?
 
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[label=\Alph*)]
     \item 2 dB
     \item 3 dB
     \item 4 dB
     \item \textbf{6 dB}
-\end{enumerate} \end{tcolorbox}
+\end{enumerate}
+\end{tcolorbox}
 
-\subsubsection{Concepts Involved}
+\subsubsection{Intuitive Explanation}
+Imagine your antenna is like a giant ear that listens to radio waves. When you double the frequency, it's like turning up the volume on your favorite song—your antenna becomes twice as good at picking up those waves! But here's the fun part: the gain doesn't just double; it actually increases by 6 dB. That's like going from a whisper to a shout! So, doubling the frequency gives your antenna a cheerful boost, making it much more powerful.
 
-To answer this question, we need to understand how the gain of a parabolic reflector antenna is influenced by the operating frequency. The gain of an ideal parabolic reflector antenna can be calculated using the following formula:
+\subsubsection{Advanced Explanation}
+The gain of an ideal parabolic reflector antenna is directly related to the operating frequency. The gain \( G \) of such an antenna can be expressed as:
 
 \[
-G = 10 \log_{10} \left( \frac{4 \pi A}{\lambda^2} \right)
+G = \left( \frac{4 \pi A}{\lambda^2} \right) \eta
 \]
 
-where 
+where:
 \begin{itemize}
-    \item \( G \) is the gain in dB,
-    \item \( A \) is the effective aperture area of the antenna, and 
-    \item \( \lambda \) is the wavelength of the signal.
+    \item \( A \) is the area of the parabolic reflector,
+    \item \( \lambda \) is the wavelength of the operating frequency,
+    \item \( \eta \) is the efficiency of the antenna.
 \end{itemize}
 
-The wavelength \( \lambda \) is related to the frequency \( f \) by the equation:
+When the operating frequency is doubled, the wavelength \( \lambda \) is halved. Substituting \( \lambda' = \frac{\lambda}{2} \) into the gain equation:
 
 \[
-\lambda = \frac{c}{f}
+G' = \left( \frac{4 \pi A}{\left( \frac{\lambda}{2} \right)^2} \right) \eta = \left( \frac{4 \pi A}{\frac{\lambda^2}{4}} \right) \eta = 4 \left( \frac{4 \pi A}{\lambda^2} \right) \eta = 4G
 \]
 
-where 
-\begin{itemize}
-    \item \( c \) is the speed of light (\( c \approx 3 \times 10^8 \) m/s).
-\end{itemize}
-
-Now, if the frequency is doubled (i.e., \( f' = 2f \)), the new wavelength will be:
+The gain increases by a factor of 4, which corresponds to a 6 dB increase in logarithmic scale:
 
 \[
-\lambda' = \frac{c}{f'} = \frac{c}{2f} = \frac{\lambda}{2}
+10 \log_{10}(4) \approx 6 \text{ dB}
 \]
 
-Substituting \( \lambda' \) back into the gain formula, we have:
+Thus, doubling the frequency results in a 6 dB increase in the gain of an ideal parabolic reflector antenna.
 
-\[
-G' = 10 \log_{10} \left( \frac{4 \pi A}{(\lambda/2)^2} \right)
-\]
-
-Calculating \( G' \):
-
-\[
-G' = 10 \log_{10} \left( \frac{4 \pi A}{\frac{\lambda^2}{4}} \right) 
-   = 10 \log_{10} \left( \frac{16 \pi A}{\lambda^2} \right) 
-   = 10 \log_{10}(16) + 10 \log_{10} \left( \frac{4 \pi A}{\lambda^2} \right)
-\]
-\[
-G' = 10 \times 1.204 + G 
-   = 12.04 + G
-\]
-
-The increase in gain when the frequency is doubled is:
-
-\[
-G' - G = 12.04 \, \text{dB}
-\]
-
-To find the increase from the original gain \( G \):
-
-\[
-G' - G = 12.04 \, \text{dB} - G
-\]
-
-Thus, we conclude that the gain increases by approximately \( 6 \, \text{dB} \) when the frequency is doubled.
-
-\subsubsection{Conclusion}
-
-Therefore, the correct answer to the question is D: 6 dB. This illustrates how the gain of an antenna can significantly increase with changes in frequency, which is a crucial concept in the field of radio communication.
-
-\begin{tikzpicture}
-    \draw[->] (0,0) -- (4,0) node[right] {$f$ (Frequency)};
-    \draw[->] (0,0) -- (0,3) node[above] {$G$ (Gain in dB)};
-    \draw[blue, thick] (1,0) -- (1,2) node[below, right] {Original Gain};
-    \draw[blue, thick, dashed] (3,0) -- (3,3) node[below, right] {New Gain at $2f$};
-    \draw[red, thick] (1,2) -- (3,3);
-\end{tikzpicture}
+% Diagram prompt: A diagram showing the relationship between frequency, wavelength, and antenna gain could be helpful here.

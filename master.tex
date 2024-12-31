@@ -1,45 +1,46 @@
 \documentclass[12pt]{book}
 
-% Packages for better formatting
-\usepackage{geometry} % Page layout
-\usepackage{titlesec} % Formatting headings
-\usepackage{fancyhdr} % Header/Footer
-\usepackage{hyperref} % Hyperlinks
-\usepackage{graphicx} % For images
-\usepackage{amsmath} % For math
-\usepackage{amssymb} % For math symbols
+
+% \usepackage{geometry} % Page layout
+% \usepackage{titlesec} % Formatting headings
+% \usepackage{fancyhdr} % Header/Footer
+% \usepackage{hyperref} % Hyperlinks
+% \usepackage{graphicx} % For images
+% \usepackage{amsmath} % For math
+% \usepackage{amssymb} % For math symbols
 \usepackage{enumitem} % Custom lists
 \usepackage[most]{tcolorbox}
 \usepackage{epstopdf} % For converting EPS to PDF
 \usepackage{pgfplots}
 \usepackage{tikz}
 \usepackage{svg}
-\usepackage{hyperref} 
 \usetikzlibrary{circuits.ee.IEC} % Include this if using electrical components
 \usepackage{circuitikz}
 \pgfplotsset{compat=1.18} % Important for log10
 
-% Page layout
-\geometry{a4paper, margin=1in}
+% % Page layout
+% \geometry{a4paper, margin=1in}
 
-% Header and footer
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{Extra HAM!}
-\fancyhead[R]{}
-\fancyfoot[C]{\thepage}
+% % Header and footer
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[L]{Extra HAM!}
+% \fancyhead[R]{}
+% \fancyfoot[C]{\thepage}
 
-% Title formatting
-\titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
-\titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+% % Title formatting
+% \titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
+% \titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
 
 \begin{document}
 
 % Table of Contents
-\tableofcontents
-\newpage
+% \tableofcontents
+% \newpage
 \chapter{SUBELEMENT E1 - COMMISSION RULES}
 \section{Radio Wave Realities}
+\end{document}
+
 \include{questions/E1A/E1A01}
 \include{questions/E1A/E1A02}
 \include{questions/E1A/E1A03}

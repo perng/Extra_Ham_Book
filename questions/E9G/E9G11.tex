@@ -1,49 +1,27 @@
-\subsection{Understanding Wavelength Units on a Smith Chart!}
+\subsection{E9G11: Understanding Wavelength Units on a Smith Chart!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9G11]
-In what units are the wavelength scales on a Smith chart calibrated? 
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9G11} In what units are the wavelength scales on a Smith chart calibrated?
+    \begin{enumerate}[label=\Alph*)]
+        \item In fractions of transmission line electrical frequency
+        \item \textbf{In fractions of transmission line electrical wavelength}
+        \item In fractions of antenna electrical wavelength
+        \item In fractions of antenna electrical frequency
+    \end{enumerate}
+\end{tcolorbox}
 
-\begin{enumerate}[label=\Alph*.]
-    \item In fractions of transmission line electrical frequency
-    \item \textbf{In fractions of transmission line electrical wavelength}
-    \item In fractions of antenna electrical wavelength
-    \item In fractions of antenna electrical frequency
-\end{enumerate} \end{tcolorbox}
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to measure how long a piece of string is, but instead of using a ruler, you use a special chart called a Smith chart. This chart helps you figure out how long the string is in terms of waves. But here's the catch: the chart doesn't measure the actual length of the string; it measures how long the string is compared to the wavelength of the waves traveling through it. So, the units on the Smith chart are in fractions of the wavelength of the waves in the transmission line, not the frequency or anything else. It's like saying, This string is half a wave long, instead of This string is 10 inches long.
 
-\subsubsection*{Related Concepts}
+\subsubsection*{Advanced Explanation}
+The Smith chart is a graphical tool used in radio frequency (RF) engineering to solve problems involving transmission lines and impedance matching. The wavelength scales on a Smith chart are calibrated in fractions of the electrical wavelength of the transmission line. This is because the Smith chart is designed to represent the impedance transformations that occur along a transmission line, which are periodic with respect to the wavelength of the signal.
 
-To answer this question, it is essential to understand what a Smith chart is and how it is used in radio communication and electronics. A Smith chart is a graphical representation used for calculating impedance, reflection coefficients, and for the design of matching networks in RF (radio frequency) circuits.
-
-The key aspect of the Smith chart is that it represents the relationships between the impedance and the wavelength along a transmission line. The scales of the Smith chart are calibrated in fractions of the electrical wavelength because these fractions directly relate to the behavior of signals travelling down transmission lines, specifically how the impedance changes with respect to the wavelength of the signal.
-
-\subsubsection*{Concepts Required to Answer the Question}
-
-1. \textbf{Transmission Line Theory:}: Understanding of how transmission lines work, including concepts like standing waves, impedance, and reflections.
-2. \textbf{Wavelength:}: A solid grasp of the definitions and implications of wavelength in electrical terms, particularly how it relates to frequency and the speed of light.
-
-To find these relationships, the following formula is helpful:
-
+The electrical wavelength (\(\lambda\)) of a signal in a transmission line is given by:
 \[
-\text{Wavelength} (\lambda) = \frac{v}{f}
+\lambda = \frac{v}{f}
 \]
+where \(v\) is the phase velocity of the signal in the transmission line, and \(f\) is the frequency of the signal. The Smith chart uses this wavelength to normalize distances along the transmission line, allowing engineers to easily determine the impedance at any point along the line.
 
-where \( v \) is the velocity of the signal in the medium (approximately the speed of light in vacuum for RF applications) and \( f \) is the frequency of the signal. 
+The correct answer is \textbf{B}, as the Smith chart's wavelength scales are calibrated in fractions of the transmission line's electrical wavelength, not the frequency or the antenna's wavelength.
 
-Because the Smith chart is primarily used for RF applications and not for antenna directivity or frequency calibration, its scales are focused on transmission line parameters.
-
-\subsubsection*{Illustration}
-
-Below is a diagram illustrating the relationship between frequency, wavelength, and the use of a Smith chart:
-
-\begin{center}
-\begin{tikzpicture}
-    \draw[->] (-1,0) -- (4,0) node[right] {Wavelength (\(\lambda\))};
-    \draw[->] (0,-1) -- (0,4) node[above] {Frequency (f)};
-    
-    \draw[dashed] (2,0) -- (2,3) node[above right] {Wavelength Scale};
-    \draw[dashed] (0,2) -- (3,2) node[below right] {Frequency Scale};
-    
-    \filldraw[gray!20] (0,0) rectangle (0.5,0.5);
-    \node at (0.25,0.25) {Smith Chart Region};
-\end{tikzpicture}
-\end{center}
+% Prompt for generating a diagram: A diagram showing a Smith chart with wavelength scales labeled in fractions of the transmission line's electrical wavelength would be helpful here.

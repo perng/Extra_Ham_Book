@@ -1,54 +1,29 @@
-\subsection{Rising Waves: The Cheerful Dance of Antenna Patterns!}
+\subsection{E9C13: Rising Waves: The Cheerful Dance of Antenna Patterns!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9C13]  
-How does the radiation pattern of a horizontally polarized antenna vary with increasing height above ground?
-
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Question E9C13]
+\textbf{E9C13} How does the radiation pattern of a horizontally polarized antenna vary with increasing height above ground?
 \begin{enumerate}[label=\Alph*]
     \item The takeoff angle of the lowest elevation lobe increases
     \item \textbf{The takeoff angle of the lowest elevation lobe decreases}
     \item The horizontal beamwidth increases
     \item The horizontal beamwidth decreases
-\end{enumerate} \end{tcolorbox}
+\end{enumerate}
+\end{tcolorbox}
 
-\subsubsection{Related Concepts}
+\subsubsection*{Intuitive Explanation}
+Imagine you're at a dance party, and the DJ is your antenna. The music (radio waves) is being blasted out in all directions, but the way it reaches the dancers (the ground) changes depending on how high the DJ is. If the DJ is on the ground, the music spreads out more horizontally, and the dancers close to the DJ get the most beats. But if the DJ climbs up on a stage, the music starts to shoot out more downward, and the dancers further away start to feel the rhythm more. Similarly, when a horizontally polarized antenna is raised higher above the ground, the radio waves it sends out tend to point more downward, making the lowest angle of the wave (the takeoff angle) smaller. So, the takeoff angle of the lowest elevation lobe decreases as the antenna goes higher!
 
-The behavior of a horizontally polarized antenna as its height above the ground increases is an essential concept in radio communication. The radiation pattern of the antenna is largely influenced by its height relative to the ground, which can affect the signals transmitted and received.
-
-The takeoff angle is defined as the angle at which the majority of the energy is radiated away from the antenna into space. For antennas situated close to the ground, such as dipole antennas, the radiation pattern will show a higher takeoff angle. However, as the height of the antenna increases, the takeoff angle will decrease. This phenomenon can be attributed to the improved clearance of ground effects, which allows the radio waves to propagate more freely.
-
-\subsubsection{Calculation Steps}
-
-To understand this concept mathematically, consider a scenario where the height \(h\) of the antenna above ground increases. The effective gain of the antenna can be correlated to its height. As the antenna rises:
-
-1. The effective radius of the ground wave increases.
-2. The takeoff angle can be approximated using the formula:
+\subsubsection*{Advanced Explanation}
+The radiation pattern of a horizontally polarized antenna is influenced by the height above the ground due to the interaction between the direct wave and the ground-reflected wave. When the antenna is placed at a height \( h \) above the ground, the phase difference between the direct and reflected waves changes, altering the radiation pattern. The takeoff angle \( \theta \) of the lowest elevation lobe can be approximated using the following relationship:
 
 \[
-\theta = \tan^{-1}\left(\frac{h}{d}\right)
+\theta \approx \arcsin\left(\frac{\lambda}{4h}\right)
 \]
 
-where \( \theta \) is the takeoff angle, \( h \) is the height of the antenna, and \( d \) is the distance from the antenna to the horizon.
+where \( \lambda \) is the wavelength of the transmitted signal. As the height \( h \) increases, the argument of the arcsine function decreases, leading to a smaller takeoff angle \( \theta \). This means that the lowest elevation lobe points more downward as the antenna is raised higher above the ground.
 
-As \(h\) increases, the distance \(d\) also increases, resulting in a reduction of the slope (and hence the angle \(\theta\)).
+Additionally, the horizontal beamwidth is primarily determined by the antenna's physical dimensions and design, and it is less affected by the height above the ground. Therefore, the horizontal beamwidth remains relatively unchanged as the antenna height increases.
 
-\subsubsection{Diagram}
+In summary, increasing the height of a horizontally polarized antenna above the ground decreases the takeoff angle of the lowest elevation lobe, while the horizontal beamwidth remains largely unaffected.
 
-The following diagram illustrates the relationship between the height of the antenna and the takeoff angle. 
-
-\begin{center}
-\begin{tikzpicture}
-    \draw[->] (0,0) -- (5,0) node[right] {Distance to Horizon};
-    \draw[->] (0,0) -- (0,5) node[above] {Height of Antenna};
-
-    \draw[thick] (1,0) -- (1,4) node[above right] {h};
-
-    \draw[dashed] (1,0) -- (5,0) node[right] {Ground};
-    \draw[dashed] (1,4) -- (5,4) node[right] {Takeoff Angle};
-
-    \draw[thick, ->] (1,4) -- (5,0);
-
-    \node at (3,2) {\(\theta\)};
-\end{tikzpicture}
-\end{center}
-
-As depicted in the diagram, increasing the height \(h\) leads to a decrease in the takeoff angle \(\theta\). Therefore, the correct answer to the question is that the takeoff angle of the lowest elevation lobe decreases as the height of a horizontally polarized antenna increases above ground.
+% [Prompt for diagram: A diagram showing the radiation pattern of a horizontally polarized antenna at different heights above the ground, illustrating the change in the takeoff angle of the lowest elevation lobe.]

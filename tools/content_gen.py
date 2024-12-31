@@ -48,7 +48,7 @@ for chapter in data:
             If there is other divisions, use subsubsection.
             then generate the multiple choice questions in a shaded box, first with the question id in bold, then the question text, then enumerate the choices. 
             Mark the correct answer with bold.
-            The next subsubsection is "Intuitive Explanation" this would explain the question with as if the reader is a middle school student, 
+            The next subsubsection is "Intuitive Explanation" this would explain the question with humor as if the reader is a middle school student, 
             simplify the question and explain the concept in a way that is easy to understand.
             The next subsubsection is "Advanced Explanation" this would explain the related concepts and concepts required to answer the question in more detail and more mathematically.
             If calculation is required, show the calculation step by step.
@@ -56,7 +56,8 @@ for chapter in data:
             
             If diagrams are better for explanation, a prompt for generating the diagram as comment in the end of the output.
 
-            Make sure the entire content is in LaTeX syntax, do not use Markdown or any other formatting. Do not use "**" for bold.
+            Make sure the entire content is in LaTeX syntax, do not use Markdown or any other formatting. Do not use "**" for bold. 
+            Make sure greek letters are in LaTeX syntax.
             Question:{question}"""
 
             print(prompt)

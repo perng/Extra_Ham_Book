@@ -7,7 +7,6 @@ with open('questions3.json', 'r') as f:
 # Start creating the LaTeX content
 latex_content = r"""\documentclass[12pt]{book}
 
-% Packages for better formatting
 \usepackage{geometry} % Page layout
 \usepackage{titlesec} % Formatting headings
 \usepackage{fancyhdr} % Header/Footer
@@ -21,7 +20,6 @@ latex_content = r"""\documentclass[12pt]{book}
 \usepackage{pgfplots}
 \usepackage{tikz}
 \usepackage{svg}
-\usepackage{hyperref} 
 \usetikzlibrary{circuits.ee.IEC} % Include this if using electrical components
 \usepackage{circuitikz}
 \pgfplotsset{compat=1.18} % Important for log10
@@ -36,13 +34,11 @@ latex_content = r"""\documentclass[12pt]{book}
 \fancyhead[R]{}
 \fancyfoot[C]{\thepage}
 
-% Title formatting
 \titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
 \titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
 
 \begin{document}
 
-% Table of Contents
 \tableofcontents
 \newpage
 """

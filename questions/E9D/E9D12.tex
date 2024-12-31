@@ -1,39 +1,30 @@
-\subsection{Unlocking Yagi Magic: Adjusting Parasitic Elements for Better Performance!}
+\subsection{E9D12: Unlocking Yagi Magic: Adjusting Parasitic Elements for Better Performance!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9D12] What is the purpose of making a Yagi’s parasitic elements either longer or shorter than resonance?
-\begin{enumerate}[label=\Alph*.]
-    \item Wind torque cancellation
-    \item Mechanical balance
-    \item \textbf{Control of phase shift}
-    \item Minimize losses
-\end{enumerate} \end{tcolorbox}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E9D12} What is the purpose of making a Yagi’s parasitic elements either longer or shorter than resonance?
+    \begin{enumerate}[label=\Alph*)]
+        \item Wind torque cancellation
+        \item Mechanical balance
+        \item \textbf{Control of phase shift}
+        \item Minimize losses
+    \end{enumerate}
+\end{tcolorbox}
 
-\subsubsection{Elaboration on Related Concepts}
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to get a group of friends to cheer in perfect unison at a football game. If one friend starts cheering too early or too late, the whole group sounds off. In a Yagi antenna, the parasitic elements are like those friends. By making them longer or shorter than the resonant length, we’re essentially telling them to cheer a little earlier or later. This helps control the timing (or phase) of the radio waves, making the antenna more directional and efficient. So, it’s all about getting everyone to cheer in sync for the best performance!
 
-A Yagi-Uda antenna, commonly referred to as a Yagi antenna, is a directional antenna consisting of multiple elements. The design includes a driven element, a reflector, and one or more parasitic elements, which can be either directors or reflectors. The lengths of these parasitic elements can be adjusted to optimize the performance of the antenna by manipulating the phase of the electromagnetic waves they re-radiate.
+\subsubsection{Advanced Explanation}
+In a Yagi-Uda antenna, the parasitic elements (reflectors and directors) are not directly connected to the feed line. Their lengths are adjusted to be either longer or shorter than the resonant length to control the phase of the induced currents. This phase control is crucial for achieving the desired radiation pattern.
 
-When adjusting the lengths of the parasitic elements, the primary goal is to control the phase shift of the signals produced by these elements. In essence, this adjustment allows the antenna to improve its gain and directivity. By making the elements longer than their resonant length, they will behave as if they have a lower resonant frequency, effectively delaying the phase of the signal they re-radiate. Conversely, shortening the elements will increase their resonant frequency and advance the phase of the re-radiated signal.
+- **Reflectors**: Typically longer than the resonant length, they introduce a phase lag, causing the reflected wave to reinforce the forward wave.
+- **Directors**: Typically shorter than the resonant length, they introduce a phase lead, causing the wave to be directed forward.
 
-To better illustrate this concept, we can consider the phase relationship between the driven element and a parasitic element:
+The phase shift \(\phi\) can be approximated by:
+\[
+\phi = \frac{2\pi}{\lambda} \Delta L
+\]
+where \(\lambda\) is the wavelength and \(\Delta L\) is the difference in length from the resonant length.
 
-\begin{align*}
-\text{Phase Shift} = \frac{360^\circ \times f \times L}{c} 
-\end{align*}
+By carefully adjusting these lengths, the antenna can achieve a highly directional beam, maximizing gain and minimizing interference from other directions.
 
-Where:
-- \( f \) is the frequency of operation (in Hz),
-- \( L \) is the length of the element (in meters),
-- \( c \) is the speed of light in vacuum (\( \approx 3 \times 10^8 \) m/s).
-
-This phase shift is critical for creating constructive interference in the desired direction of the radiation pattern and destructive interference in other directions. This concept becomes particularly relevant when optimizing the antenna's directivity and gain.
-
-% \begin{tikzpicture}
-%     \draw[->] (0,0) -- (5,0) node[right] {Distance};
-%     \draw[->] (0,0) -- (0,4) node[above] {Field Strength};
-%     \draw[scale=1,domain=0:5,smooth,variable=\x,blue]  plot ({\x},{sin(\x r) + 2}) node[right] {Original Element};
-%     \draw[scale=1,domain=0:5,smooth,variable=\x,red]  plot ({\x},{sin((\x - 0.5) r) + 2}) node[right] {Longer Element};
-%     \draw[scale=1,domain=0:5,smooth,variable=\x,green]  plot ({\x},{sin((\x + 0.5) r) + 2}) node[right] {Shorter Element};
-%     \legend{{\textcolor{blue}{Original}} , {\textcolor{red}{Longer}} , {\textcolor{green}{Shorter}}}
-% \end{tikzpicture}
-
-This graphic illustrates how adjusting the length of the parasitic elements can affect the phase relationship, and thereby the field strength of the radiation pattern in relation to the driven element. With correct adjustments, the antenna can be optimized for better directivity, making it a powerful tool for radio communication.
+% Prompt for diagram: A diagram showing a Yagi antenna with labeled elements (driven element, reflector, directors) and arrows indicating the direction of the radio waves would be helpful here.

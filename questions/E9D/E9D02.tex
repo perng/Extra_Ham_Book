@@ -1,45 +1,46 @@
-\subsection{Turning Waves: Crafting Circular Polarization with Yagi Antennas!}
+\subsection{E9D02: Turning Waves: Crafting Circular Polarization with Yagi Antennas!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9D02] How can two linearly polarized Yagi antennas be used to produce circular polarization?
-\begin{enumerate}[label=\Alph*.]
-    \item Stack two Yagis to form an array with the respective elements in parallel planes fed 90 degrees out of phase
-    \item Stack two Yagis to form an array with the respective elements in parallel planes fed in phase
-    \item \textbf{Arrange two Yagis on the same axis and perpendicular to each other with the driven elements at the same point on the boom and fed 90 degrees out of phase}
-    \item Arrange two Yagis collinear to each other with the driven elements fed 180 degrees out of phase
-\end{enumerate} \end{tcolorbox}
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E9D02} How can two linearly polarized Yagi antennas be used to produce circular polarization?
+    \begin{enumerate}[label=\Alph*)]
+        \item Stack two Yagis to form an array with the respective elements in parallel planes fed 90 degrees out of phase
+        \item Stack two Yagis to form an array with the respective elements in parallel planes fed in phase
+        \item \textbf{Arrange two Yagis on the same axis and perpendicular to each other with the driven elements at the same point on the boom and fed 90 degrees out of phase}
+        \item Arrange two Yagis collinear to each other with the driven elements fed 180 degrees out of phase
+    \end{enumerate}
+\end{tcolorbox}
 
-\subsubsection*{Concepts Involved}
+\subsubsection{Intuitive Explanation}
+Imagine you have two Yagi antennas, like the ones you see on rooftops for TV signals. Now, think of these antennas as two dancers. If both dancers move in the same direction at the same time, their movements are in sync, and you get a straight line dance. But if one dancer moves up while the other moves to the side, and they do this with a slight delay (like a quarter of a beat), their combined movements create a circle! This is exactly what happens when you arrange two Yagi antennas perpendicular to each other and feed them 90 degrees out of phase. The result is a beautiful circular dance of radio waves, known as circular polarization.
 
-To understand how two linearly polarized Yagi antennas can produce circular polarization, it is crucial to comprehend the concepts of polarization, phase difference, and antenna arrangement.
+\subsubsection{Advanced Explanation}
+To produce circular polarization using two linearly polarized Yagi antennas, the antennas must be arranged such that their electric fields are perpendicular to each other and fed with a 90-degree phase difference. This setup ensures that the combined electric field vector rotates in a circular pattern over time.
 
-1. \textbf{Linear Polarization:}: A Yagi antenna typically has a directional radiation pattern and is linearly polarized, meaning it radiates electromagnetic waves in a single plane.
+Mathematically, if the electric fields of the two antennas are represented as:
+\[
+E_1(t) = E_0 \cos(\omega t)
+\]
+\[
+E_2(t) = E_0 \cos\left(\omega t + \frac{\pi}{2}\right)
+\]
+where \(E_0\) is the amplitude, \(\omega\) is the angular frequency, and \(t\) is time. The combined electric field \(E(t)\) is:
+\[
+E(t) = E_1(t) \hat{x} + E_2(t) \hat{y}
+\]
+\[
+E(t) = E_0 \cos(\omega t) \hat{x} + E_0 \cos\left(\omega t + \frac{\pi}{2}\right) \hat{y}
+\]
+Using the trigonometric identity \(\cos\left(\omega t + \frac{\pi}{2}\right) = -\sin(\omega t)\), we get:
+\[
+E(t) = E_0 \cos(\omega t) \hat{x} - E_0 \sin(\omega t) \hat{y}
+\]
+This represents a vector that rotates in a circular pattern with angular frequency \(\omega\), thus producing circular polarization.
 
-2. \textbf{Circular Polarization:}: For an antenna system to produce circular polarization, the two components of the polarization must be 90 degrees out of phase. This means that one component must have a different phase than the other by exactly a quarter of a wavelength.
+The key concepts involved here are:
+\begin{itemize}
+    \item \textbf{Linear Polarization}: The electric field oscillates in a single plane.
+    \item \textbf{Circular Polarization}: The electric field vector rotates in a circular pattern.
+    \item \textbf{Phase Difference}: A 90-degree phase shift between the two antennas ensures the rotation of the combined electric field vector.
+\end{itemize}
 
-3. \textbf{Antenna Arrangement:}: By arranging two Yagi antennas such that they are perpendicular to each other (one oriented horizontally and the other vertically) and feeding them with a phase difference of 90 degrees, circular polarization is achieved. 
-
-    - In the correct option (C), the Yagis are arranged on the same axis and are fed 90 degrees out of phase. This ensures that as one antenna reaches its maximum in one plane, the other is at zero, thereby creating the conditions necessary for circular polarization.
-
-\subsubsection*{Calculations and Diagram Representation}
-
-While specific calculations relating to wave propagation and antenna gain are not directly involved in this question, we can outline the concept of phase difference.
-
-- \textbf{Phase Difference Calculation:}: 
-    - For creating circular polarization, we need a phase shift of \(90^\circ\). This can be achieved by using a phase shifter or a delay line in the feed system of the second antenna.
-
-\begin{center}
-\begin{tikzpicture}
-    % Draw the two Yagi antennas
-    \draw[->] (0,0) -- (2,0) node[anchor=north] {\footnotesize Horizontal Yagi};
-    \draw[->] (0,2) -- (0,4) node[anchor=east] {\footnotesize Vertical Yagi};
-    
-    % Draw a circular wave to represent circular polarization
-    \draw[blue, thick] (1,1) arc[start angle=0, end angle=360,radius=1cm];
-    
-    % Labels
-    \node at (0,-0.5) {Ground};
-    \node at (3,3) {Circular Polarization};
-\end{tikzpicture}
-\end{center}
-
-In summary, to produce circular polarization with two Yagi antennas, we arrange and feed them appropriately while ensuring they are perpendicular, which entails knowledge of antenna properties and the physics of electromagnetic wave propagation.
+% Diagram prompt: Generate a diagram showing two Yagi antennas arranged perpendicular to each other on the same axis, with the driven elements at the same point on the boom, and indicate the 90-degree phase difference in the feeding lines.

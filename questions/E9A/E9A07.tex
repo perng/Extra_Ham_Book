@@ -1,66 +1,68 @@
-\subsection{Calculating EIRP: Let's Amplify Your Knowledge!}
+\subsection{E9A07: Calculating EIRP: Let's Amplify Your Knowledge!}
 
-\begin{tcolorbox}[colback=gray!10, colframe=black, title=E9A07] What is the effective isotropic radiated power (EIRP) of a repeater station with 200 watts transmitter power output, 2 dB feed line loss, 2.8 dB duplexer loss, 1.2 dB circulator loss, and 7 dBi antenna gain?
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9A07} What is the effective isotropic radiated power (EIRP) of a repeater station with 200 watts transmitter power output, 2 dB feed line loss, 2.8 dB duplexer loss, 1.2 dB circulator loss, and 7 dBi antenna gain?
+    \begin{enumerate}[label=\Alph*)]
+        \item 159 watts
+        \item \textbf{252 watts}
+        \item 632 watts
+        \item 63.2 watts
+    \end{enumerate}
+\end{tcolorbox}
 
-\begin{enumerate}[label=\Alph*]
-    \item 159 watts
-    \item \textbf{252 watts}
-    \item 632 watts
-    \item 63.2 watts
-\end{enumerate} \end{tcolorbox}
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to shout across a big field, but you have a megaphone that makes your voice louder. However, before your voice reaches the megaphone, it has to go through a few obstacles that make it quieter. First, it goes through a long tube (feed line loss), then a fancy filter (duplexer loss), and finally a spinning device (circulator loss). After all that, your voice gets amplified by the megaphone (antenna gain). The question is asking how loud your voice is after all these changes. The answer is 252 watts, which is like shouting really loud with the megaphone!
 
-\subsubsection{Understanding EIRP}
-
-The Effective Isotropic Radiated Power (EIRP) is a measure of the power radiated by an antenna in a specific direction, taking into account any losses due to components in the transmission line as well as the gain of the antenna itself. The formula to calculate EIRP is given by:
-
-\[
-\text{EIRP} = P_t - L + G_a
-\]
-
-where:
-- \(P_t\) = transmitter power output (in dBW)
-- \(L\) = total losses in the system (in dB)
-- \(G_a\) = antenna gain (in dBi)
-
-To calculate the total losses, we will sum up the individual losses from the feed line, duplexer, and circulator:
+\subsubsection*{Advanced Explanation}
+To calculate the Effective Isotropic Radiated Power (EIRP), we need to account for the transmitter power output and all the gains and losses in the system. The formula for EIRP is:
 
 \[
-L = 2 \text{ dB} + 2.8 \text{ dB} + 1.2 \text{ dB} = 6 \text{ dB}
+\text{EIRP} = P_{\text{transmitter}} \times 10^{\frac{G_{\text{antenna}} - L_{\text{feed line}} - L_{\text{duplexer}} - L_{\text{circulator}}}{10}}
 \]
 
-Next, we need to convert the transmitter power output from watts to dBW:
+Where:
+\begin{itemize}
+    \item \( P_{\text{transmitter}} = 200 \) watts
+    \item \( G_{\text{antenna}} = 7 \) dBi
+    \item \( L_{\text{feed line}} = 2 \) dB
+    \item \( L_{\text{duplexer}} = 2.8 \) dB
+    \item \( L_{\text{circulator}} = 1.2 \) dB
+\end{itemize}
+
+First, calculate the total loss:
 
 \[
-P_t = 10 \cdot \log_{10}(200 \text{ watts}) \approx 23 \text{ dBW}
+L_{\text{total}} = L_{\text{feed line}} + L_{\text{duplexer}} + L_{\text{circulator}} = 2 + 2.8 + 1.2 = 6 \text{ dB}
 \]
 
-Now we can calculate the EIRP:
+Next, calculate the net gain:
 
 \[
-\text{EIRP} = 23 \text{ dBW} - 6 \text{ dB} + 7 \text{ dBi}
+G_{\text{net}} = G_{\text{antenna}} - L_{\text{total}} = 7 - 6 = 1 \text{ dB}
 \]
 
-Calculating this step by step:
-
-1. Subtracting losses from the transmitter power:
-   \[
-   23 \text{ dBW} - 6 \text{ dB} = 17 \text{ dBW}
-   \]
-2. Adding the antenna gain:
-   \[
-   17 \text{ dBW} + 7 \text{ dBi} = 24 \text{ dBW}
-   \]
-
-Finally, we convert the result from dBW back to watts:
+Now, convert the net gain from dB to a linear scale:
 
 \[
-\text{EIRP (in watts)} = 10^{\left(\frac{24}{10}\right)} \approx 251.2 \text{ watts}
+10^{\frac{G_{\text{net}}}{10}} = 10^{\frac{1}{10}} \approx 1.2589
 \]
 
-Since the closest choice is 252 watts, 
+Finally, calculate the EIRP:
 
-\subsubsection{Related Concepts}
+\[
+\text{EIRP} = 200 \times 1.2589 \approx 252 \text{ watts}
+\]
 
-Understanding EIRP is crucial in the design and analysis of radio communication systems. The concepts involved in this calculation highlight the complexity of real-world radio systems, requiring careful consideration of both gain and loss factors. In addition to EIRP, concepts such as path loss, link budget analysis, and antenna gain are vital knowledge for anyone working in the field of radio frequency (RF) engineering.
+Thus, the correct answer is \textbf{252 watts}.
 
-This calculation provides insight into how various components impact the overall performance of a communication system, emphasizing the importance of proper design and selection of components to ensure reliable and effective communication.
+\subsubsection*{Related Concepts}
+\begin{itemize}
+    \item \textbf{EIRP (Effective Isotropic Radiated Power)}: This is the power that a theoretical isotropic antenna (which radiates equally in all directions) would emit to produce the peak power density observed in the direction of maximum antenna gain.
+    \item \textbf{dB (Decibel)}: A logarithmic unit used to express the ratio of two values of a physical quantity, often power or intensity.
+    \item \textbf{Antenna Gain}: The measure of how much power is transmitted in the direction of peak radiation to that of an isotropic source.
+    \item \textbf{Feed Line Loss}: The loss of signal strength in the transmission line connecting the transmitter to the antenna.
+    \item \textbf{Duplexer Loss}: The loss introduced by the duplexer, which allows simultaneous transmission and reception.
+    \item \textbf{Circulator Loss}: The loss introduced by the circulator, which directs the flow of radio waves in a specific direction.
+\end{itemize}
+
+% Diagram Prompt: A diagram showing the signal path from the transmitter through the feed line, duplexer, circulator, and finally to the antenna with the respective gains and losses labeled.
