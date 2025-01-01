@@ -2,13 +2,22 @@ import json
 import os
 import re
 from openai import OpenAI
+import argparse
+
+
+# Set up argument parsing
+parser = argparse.ArgumentParser(description='Process questions and optionally print prompts.')
+parser.add_argument('-l', '--license', type=str, required=True, help='license class')
+args = parser.parse_args()
+
+base_dir = args.license + '/'
 
 # Load the OpenAI API key from environment variable
 api_key = os.getenv("OPEN_AI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 # Load questions from JSON file
-with open('questions.json', 'r') as f:
+with open(base_dir + 'questions.json', 'r') as f:
     questions_data = json.load(f)
 
 # Function to get a better title from OpenAI API
@@ -42,7 +51,7 @@ for chapter in questions_data:
 
 
 # Output the modified data to questions2.json
-with open('questions3.json', 'w') as f:
+with open(base_dir + 'questions2.json', 'w') as f:
     json.dump(questions_data, f, indent=4)
 
 print("questions3.json has been generated successfully.")

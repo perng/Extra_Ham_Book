@@ -1,7 +1,21 @@
 import json
 import os
+
+
+import argparse
+
+
+# Set up argument parsing
+parser = argparse.ArgumentParser(description='Process questions and optionally print prompts.')
+parser.add_argument('-l', '--license', type=str, required=True, help='license class')
+args = parser.parse_args()
+titles = {'tech':'Technical Ham', 'general':'General Ham', 'extra':'Extra HAM!'}
+assert args.license in ['tech', 'general', 'extra']
+
+base_dir = args.license + '/'
+
 # Load questions from JSON file
-with open('questions3.json', 'r') as f:
+with open(base_dir + 'questions2.json', 'r') as f:
     questions_data = json.load(f)
 
 # Start creating the LaTeX content
@@ -36,6 +50,7 @@ latex_content = r"""\documentclass[12pt]{book}
 
 \titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
 \titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}[hang]{\large\bfseries}{\thesubsection}{1em}{}
 
 \begin{document}
 
@@ -59,11 +74,11 @@ for chapter in questions_data:
             # if question_id == "E6A01":
             #     latex_content += "\\include{questions/transistors}\n"
 
-            section_path =  f"questions/{question_id[:3]}/{question_id}"
+            section_path =  f"{base_dir}questions/{question_id[:3]}/{question_id}"
             output_file = section_path + ".tex"
             # if the file does not exist, skip
             if os.path.exists(output_file):               
-                latex_content += f"\\include{{{section_path}}}\n"
+                latex_content += f"\\input{{{section_path}}}\n"
 
 # End the document
 latex_content += r"""
@@ -71,7 +86,7 @@ latex_content += r"""
 """
 
 # Write the LaTeX content to master.tex
-with open('master.tex', 'w') as f:
+with open(base_dir + args.license +'.tex', 'w') as f:
     f.write(latex_content)
 
 print("master.tex has been generated successfully.")

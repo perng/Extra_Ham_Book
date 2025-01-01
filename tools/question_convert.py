@@ -1,5 +1,12 @@
 import json
 import re
+import argparse
+
+parser = argparse.ArgumentParser(description='Process questions and optionally print prompts.')
+parser.add_argument('license', type=str, nargs='+', default='', help='license class')
+args = parser.parse_args()
+
+
 
 def parse_questions(file_path):
     data = []
@@ -27,7 +34,7 @@ def parse_questions(file_path):
                 "chapter_title": line,
                 "sections": []
             }
-        elif re.match(r"^E\d\w ", line):
+        elif re.match(r"^\w\d\w ", line):
             print('section', line)
             # New section
             if current_section is not None:
@@ -39,13 +46,17 @@ def parse_questions(file_path):
         elif line and current_section is not None:
             # Process question
             question_id = line.split()[0]  # Get the question ID (e.g., E1A01)
-            answer = line.split()[-1][1]  # Get the answer (e.g., (D))
+            # answer should be matched with regular expression as .*\((\w)\)
+            answer = re.search(r'\((\w)\)', line).group(1)
+            print(line)
+            assert answer in "ABCD"
             index += 1  # Move to the next line for the question text
             question_text = lines[index]  # Get the question text
             choices = {}
             for _ in range(4):
                 index += 1  # Move to the next line for each choice
                 option_line = lines[index]
+                print(option_line)
                 assert option_line[0] in "ABCD"
                 choices[option_line[0]] = option_line[3:]  # Get choice letter and text
 
@@ -70,14 +81,15 @@ def parse_questions(file_path):
     return data
 
 def main():
-    file_path = 'questions.txt'
+    print(args.license)
+    file_path = args.license[0] + '/questions.txt'
     questions = parse_questions(file_path)
 
     # Convert to JSON format
     json_output = json.dumps(questions, indent=4)
 
     # Save to a JSON file
-    with open('questions.json', 'w') as json_file:
+    with open(args.license[0] + '/questions.json', 'w') as json_file:
         json_file.write(json_output)
 
 if __name__ == "__main__":
