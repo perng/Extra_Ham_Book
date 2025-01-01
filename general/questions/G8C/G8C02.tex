@@ -1,0 +1,24 @@
+\subsection{Digital Mode for HF Propagation Beacon}
+\label{G8C02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C02]
+Which digital mode is used as a low-power beacon for assessing HF propagation?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{WSPR}
+    \item MFSK16
+    \item PSK31
+    \item SSB-SC
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a secret message across the ocean using a tiny flashlight. You want to know if your message can reach the other side without using too much energy. WSPR is like that tiny flashlight—it’s a digital mode that uses very little power to send signals over long distances. By using WSPR, you can figure out if your message can travel far without draining your battery. It’s like a sneak peek into how well your signal can travel through the air!
+
+\subsubsection{Advanced Explanation}
+WSPR (Weak Signal Propagation Reporter) is a digital mode specifically designed for low-power communication and propagation assessment. It operates in the HF (High Frequency) bands and uses a very narrow bandwidth of approximately 6 Hz. The mode employs a robust forward error correction (FEC) scheme, which allows it to decode signals even when they are very weak, often below the noise floor.
+
+The mathematical foundation of WSPR involves the use of phase-shift keying (PSK) modulation, where the phase of the carrier wave is altered to represent digital data. The signal is transmitted in a series of symbols, each lasting approximately 682 ms. The low power requirement (typically around 1-5 watts) makes WSPR an ideal choice for beacon operations, as it minimizes interference with other communications while still providing valuable data on propagation conditions.
+
+To assess HF propagation, WSPR beacons transmit their signals, which are then received and decoded by other stations around the world. The received signal reports are uploaded to a central database, allowing users to analyze propagation paths and conditions. This data is crucial for understanding how HF signals propagate through the ionosphere, which is influenced by factors such as solar activity, time of day, and frequency.
+
+% Diagram Prompt: Generate a diagram showing the WSPR signal transmission and reception process, including the ionospheric reflection and the role of the central database in collecting propagation data.

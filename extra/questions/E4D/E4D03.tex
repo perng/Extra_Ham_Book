@@ -1,0 +1,56 @@
+\subsection{Unraveling the Buzz: What Sparks Intermodulation Interference?}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4D03`]
+What creates intermodulation interference between two repeaters in close proximity? 
+
+\begin{enumerate}[label=\Alph*.]
+    \item The output signals cause feedback in the final amplifier of one or both transmitters
+    \item \textbf{The output signals mix in the final amplifier of one or both transmitters}
+    \item The input frequencies are harmonically related
+    \item The output frequencies are harmonically related
+\end{enumerate} \end{tcolorbox}
+
+\subsubsection{Concepts Related to Intermodulation Interference}
+
+Intermodulation interference is a phenomenon that occurs when two or more signals mix together, resulting in unwanted additional frequencies. This type of interference is particularly significant in radio communication and can degrade the quality of transmission. 
+
+The primary concept behind intermodulation interference is the mixing of signals. When two close frequencies are amplified by a non-linear device, such as a final amplifier in a transmitter, new frequencies can be generated which are not part of the original signal set. These newly created frequencies can interfere with other communication channels, leading to a degraded signal.
+
+In the context of the given multiple-choice question, 
+
+\subsubsection{Mathematical Explanation}
+
+To illustrate the mixing process, let's assume two frequencies:
+\[
+f_1 = 100 \text{ MHz}, \quad f_2 = 102 \text{ MHz}
+\]
+When these signals are mixed in a non-linear amplifier, they can produce frequencies such as:
+\[
+f_{mix} = f_1 \pm f_2 = 100 \text{ MHz} + 102 \text{ MHz} = 202 \text{ MHz}
+\]
+\[
+f_{mix} = |f_1 - f_2| = |100 \text{ MHz} - 102 \text{ MHz}| = 2 \text{ MHz}
+\]
+These frequencies (202 MHz and 2 MHz) can interfere with other active frequency channels, hence causing intermodulation interference.
+
+% \subsubsection{Diagram}
+% To better understand this, we can visualize the mixing process using TikZ:
+
+% \begin{center}
+% \begin{tikzpicture}
+%     % Draw the frequency lines
+%     \draw[->, thick] (0,0) -- (5,0) node[right] {Frequency (MHz)};
+    
+%     % Draw frequency signals
+%     \draw[thick, blue] (1,0.5) -- (1,0) node[below] {f1=100 MHz};
+%     \draw[thick, blue] (2,0.5) -- (2,0) node[below] {f2=102 MHz};
+    
+%     % Draw mixing result
+%     \draw[dashed, red] (4,0.5) -- (4,0) node[below] {f_{mix}=2 MHz};
+%     \draw[dashed, red] (3,0.5) -- (3,0) node[below] {f_{mix}=202 MHz};
+% \end{tikzpicture}
+% \end{center}
+
+The interconnected signals and the generated intermodulation products highlight the impact of signal mixing within transmitters operating in close proximity. 
+
+In conclusion, intermodulation interference arises from the non-linear mixing of output signals within amplifiers, leading to new frequencies that can disrupt communication channels.

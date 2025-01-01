@@ -1,0 +1,42 @@
+\subsection{E9C02: Radiant Fun: Exploring Antenna Patterns!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9C02} What type of radiation pattern is created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Cardioid}
+        \item A figure-eight end-fire along the axis of the array
+        \item A figure-eight broadside to the axis of the array
+        \item Omni-directional
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two antennas standing side by side, like two friends whispering secrets to each other. They are spaced just the right distance apart and are talking to each other with a slight delay (90 degrees out of phase). This setup makes them create a special pattern in the air, like a heart shape (cardioid). This heart shape means they send out signals mostly in one direction, like a flashlight beam, instead of all around like a light bulb. So, the answer is a cardioid pattern!
+
+\subsubsection{Advanced Explanation}
+When two 1/4-wavelength vertical antennas are spaced 1/4-wavelength apart and fed 90 degrees out of phase, the resulting radiation pattern is a cardioid. This pattern is characterized by a single main lobe and a null in the opposite direction.
+
+The phase difference of 90 degrees causes constructive and destructive interference in specific directions. The constructive interference occurs in the direction of the phase lead, creating the main lobe, while the destructive interference creates the null in the opposite direction.
+
+Mathematically, the radiation pattern \( E(\theta) \) can be expressed as:
+\[
+E(\theta) = E_0 \left[ 1 + e^{j(\beta d \cos \theta + \phi)} \right]
+\]
+where:
+\begin{itemize}
+    \item \( E_0 \) is the amplitude of the electric field,
+    \item \( \beta = \frac{2\pi}{\lambda} \) is the phase constant,
+    \item \( d = \frac{\lambda}{4} \) is the spacing between the antennas,
+    \item \( \phi = 90^\circ \) is the phase difference,
+    \item \( \theta \) is the angle from the axis of the array.
+\end{itemize}
+
+Substituting the values:
+\[
+E(\theta) = E_0 \left[ 1 + e^{j\left(\frac{\pi}{2} \cos \theta + \frac{\pi}{2}\right)} \right]
+\]
+This equation results in a cardioid pattern, which is a unidirectional pattern with a single main lobe and a null in the opposite direction.
+
+Related concepts include antenna array theory, phase difference, and radiation patterns. Understanding these concepts is crucial for designing and analyzing antenna systems.
+
+% Prompt for generating a diagram: Illustrate the cardioid radiation pattern created by two 1/4-wavelength vertical antennas spaced 1/4-wavelength apart and fed 90 degrees out of phase.

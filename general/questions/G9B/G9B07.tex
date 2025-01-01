@@ -1,0 +1,34 @@
+\subsection{Feed Point Impedance of a Horizontal Dipole Antenna}
+\label{G9B07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9B07]
+How does the feed point impedance of a horizontal 1/2 wave dipole antenna change as the antenna height is reduced to 1/10 wavelength above ground?
+\begin{enumerate}[label=\Alph*)]
+    \item It steadily increases
+    \item \textbf{It steadily decreases}
+    \item It peaks at about 1/8 wavelength above ground
+    \item It is unaffected by the height above ground
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a horizontal dipole antenna, like a tightrope walker's rope, stretched out above the ground. As you lower the rope closer to the ground, the ground starts to talk to the antenna more. This conversation changes how the antenna behaves. Specifically, the feed point impedance, which is like the antenna's resistance to the radio signal, starts to decrease as the antenna gets closer to the ground. So, the closer the antenna is to the ground, the less it resists the signal, and the impedance goes down.
+
+\subsubsection{Advanced Explanation}
+The feed point impedance of a horizontal dipole antenna is influenced by the proximity of the ground due to the interaction between the antenna and its image in the ground. As the height of the antenna above the ground decreases, the mutual coupling between the antenna and its image increases. This coupling affects the current distribution on the antenna, leading to a reduction in the feed point impedance.
+
+Mathematically, the impedance \( Z \) of the antenna can be expressed as:
+\[
+Z = R + jX
+\]
+where \( R \) is the resistance and \( X \) is the reactance. As the height \( h \) decreases, the resistance \( R \) decreases due to the increased coupling with the ground. The reactance \( X \) may also change, but the dominant effect is the reduction in resistance.
+
+For a horizontal dipole antenna at a height \( h \) above the ground, the impedance can be approximated using the following relationship:
+\[
+Z(h) \approx Z_0 \left(1 - \frac{\lambda}{4\pi h}\right)
+\]
+where \( Z_0 \) is the impedance of the antenna in free space, and \( \lambda \) is the wavelength of the operating frequency. As \( h \) decreases, the term \( \frac{\lambda}{4\pi h} \) increases, leading to a decrease in \( Z(h) \).
+
+This phenomenon is crucial in antenna design, especially for low-height installations, as it affects the matching of the antenna to the transmission line and the overall efficiency of the system.
+
+% Diagram prompt: Generate a diagram showing a horizontal dipole antenna at different heights above the ground, with arrows indicating the interaction between the antenna and its image in the ground.

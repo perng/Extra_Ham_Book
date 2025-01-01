@@ -1,0 +1,40 @@
+\subsection{Filter's Maximum Rejection Ability}
+\label{G7C13}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C13]
+What term specifies a filter’s maximum ability to reject signals outside its passband?
+\begin{enumerate}[label=\Alph*)]
+    \item Notch depth
+    \item Rolloff
+    \item Insertion loss
+    \item \textbf{Ultimate rejection}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical gatekeeper for your radio signals. This gatekeeper’s job is to let only the good signals (the ones you want) pass through and block the bad ones (the ones you don’t want). Now, how good is this gatekeeper at blocking the bad signals? The term Ultimate rejection is like a scorecard that tells you just how awesome your gatekeeper is at keeping those unwanted signals out. So, if you hear Ultimate rejection, think of it as the gatekeeper’s superpower level for blocking the bad guys!
+
+\subsubsection{Advanced Explanation}
+In filter design, the term Ultimate rejection refers to the filter's maximum ability to attenuate signals outside its passband. This is a critical parameter in evaluating the performance of a filter, especially in applications where strong out-of-band signals need to be suppressed.
+
+Mathematically, the ultimate rejection is often expressed in decibels (dB) and is calculated as the ratio of the input signal power to the output signal power at a specific frequency outside the passband:
+
+\[
+\text{Ultimate Rejection (dB)} = 10 \log_{10} \left( \frac{P_{\text{in}}}{P_{\text{out}}} \right)
+\]
+
+Where:
+- \( P_{\text{in}} \) is the input power at the specified frequency.
+- \( P_{\text{out}} \) is the output power at the same frequency.
+
+A higher ultimate rejection value indicates a better ability to reject unwanted signals. This parameter is particularly important in RF and microwave engineering, where filters are used to isolate desired signals from interference.
+
+Related concepts include:
+- \textbf{Passband}: The range of frequencies that the filter allows to pass through with minimal attenuation.
+- \textbf{Stopband}: The range of frequencies that the filter attenuates.
+- \textbf{Rolloff}: The rate at which the filter transitions from the passband to the stopband.
+- \textbf{Insertion Loss}: The loss of signal power resulting from the insertion of the filter in the transmission path.
+
+Understanding these concepts is essential for designing and selecting filters that meet specific performance requirements in various communication systems.
+
+% [Diagram Prompt: A graph showing the frequency response of a filter, highlighting the passband, stopband, and ultimate rejection point.]

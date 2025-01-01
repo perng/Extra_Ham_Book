@@ -1,0 +1,32 @@
+\subsection{Unlocking SSB Signals: The Detector Delight!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7E11] Which type of detector is used for demodulating SSB signals?
+    \begin{enumerate}[label=\Alph*]
+        \item Discriminator
+        \item Phase detector
+        \item \textbf{Product detector}
+        \item Phase comparator
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a secret message written in a special code, and you need a special tool to decode it. In the world of radio signals, Single Sideband (SSB) signals are like that secret message. To decode them, we use a special tool called a \textbf{Product Detector}. This tool works by mixing the SSB signal with another signal (called a carrier) to bring the message back to its original form. It's like using a key to unlock a treasure chest!
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a technique used in radio communications to transmit voice or data efficiently by removing one sideband and the carrier from the modulated signal. To demodulate SSB signals, a \textbf{Product Detector} is used. The product detector works by multiplying the incoming SSB signal with a locally generated carrier signal. This process is mathematically represented as:
+
+\[
+s(t) \cdot c(t) = \text{SSB signal} \cdot \text{Local carrier}
+\]
+
+The multiplication results in the original baseband signal being recovered. The product detector is essential because it effectively reverses the modulation process, allowing the original information to be extracted. Other detectors like discriminators, phase detectors, and phase comparators are not suitable for SSB demodulation because they do not perform the necessary multiplication operation.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{SSB Modulation}: A method of transmitting radio signals by suppressing one sideband and the carrier, resulting in efficient bandwidth usage.
+    \item \textbf{Carrier Signal}: A high-frequency signal that is modulated with the information signal for transmission.
+    \item \textbf{Demodulation}: The process of extracting the original information signal from the modulated carrier.
+\end{itemize}
+
+% Prompt for generating a diagram:
+% Diagram showing the process of SSB modulation and demodulation using a product detector. Include the SSB signal, local carrier, and the recovered baseband signal.

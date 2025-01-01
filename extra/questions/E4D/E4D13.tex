@@ -1,0 +1,57 @@
+\subsection{Calculating Signal Joy: What's Your Received Signal Level?}
+
+\begin{tcolorbox}[colback=blue!5, colframe=blue!80, title={Question ID: E4D13}]
+    What is the received signal level with a transmit power of 10 W (+40 dBm), a transmit antenna gain of 6 dBi, a receive antenna gain of 3 dBi, and a path loss of 100 dB?
+    \begin{enumerate}[label=\Alph*.]
+        \item -51 dBm
+        \item -54 dBm
+        \item -57 dBm
+        \item -60 dBm
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a powerful flashlight (our transmit power) shining light (the signal) through a long tunnel (the path loss). The further the light travels, the fainter it gets. Now, if you add a special lens (the transmit antenna gain) to your flashlight, it can focus the light better, making it brighter at the start. Then there's another lens at the end of the tunnel (the receive antenna gain) that collects some of the light that reaches the end, making it appear brighter to you. The question is asking how much light (or signal) reaches your eyes after it has traveled through the tunnel and gotten dimmer.
+
+\subsubsection{Advanced Explanation}
+To calculate the received signal level (RSL), we utilize the following formula:
+
+\[
+\text{RSL} = P_t + G_t + G_r - L
+\]
+
+Where:
+- \( P_t \) = Transmit Power in dBm
+- \( G_t \) = Transmit Gain in dBi
+- \( G_r \) = Receive Gain in dBi
+- \( L \) = Path Loss in dB
+
+Given:
+- \( P_t = 40 \, \text{dBm} \) (Convert 10 W to dBm using \( P_t = 10 \cdot \log_{10}(P) + 30 \) where \( P \) is the power in Watts)
+- \( G_t = 6 \, \text{dBi} \)
+- \( G_r = 3 \, \text{dBi} \)
+- \( L = 100 \, \text{dB} \)
+
+Now, substituting the values:
+
+\[
+\text{RSL} = 40 + 6 + 3 - 100
+\]
+
+Calculating step by step:
+
+1. Add the elements: \( 40 + 6 = 46 \)
+2. Add the receive gain: \( 46 + 3 = 49 \)
+3. Subtract the path loss: \( 49 - 100 = -51 \)
+
+Thus, the received signal level is:
+
+\[
+\text{RSL} = -51 \, \text{dBm}
+\]
+
+The correct answer is A: -51 dBm.
+
+In communications, understanding the gain of antennas and the impact of distance and obstacles (path loss) on signal strength is crucial. This calculation is used to determine if a signal can be successfully received and understood by the receiver in various applications, from cell phones to satellite communications.
+
+% Consider generating a diagram that illustrates the concept of signal transmission, showing the transmit power, gains, and path loss visually.

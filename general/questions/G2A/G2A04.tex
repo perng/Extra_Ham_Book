@@ -1,0 +1,38 @@
+\subsection{Common Mode for Voice Communications on 17- and 12-Meter Bands}
+\label{G2A04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A04]
+Which mode is most commonly used for voice communications on the 17- and 12-meter bands?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Upper sideband}
+    \item Lower sideband
+    \item Suppressed sideband
+    \item Double sideband
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're talking to your friend on a walkie-talkie, but instead of just one channel, there are two channels: one for the higher-pitched sounds and one for the lower-pitched sounds. On the 17- and 12-meter bands, people usually use the higher-pitched channel (called Upper Sideband) to talk. It's like choosing the treble setting on your stereo to make the voices sound clearer and easier to understand. So, when you're on these bands, you'll most likely be using the Upper Sideband mode to chat with others.
+
+\subsubsection{Advanced Explanation}
+In radio communications, voice signals are typically transmitted using Single Sideband (SSB) modulation to save bandwidth and increase efficiency. SSB modulation removes one of the sidebands and the carrier wave, leaving either the Upper Sideband (USB) or the Lower Sideband (LSB). 
+
+For the 17- and 12-meter bands, the convention is to use Upper Sideband (USB) for voice communications. This is because USB is generally preferred for frequencies above 9 MHz, as it provides better clarity and less interference from atmospheric noise. 
+
+Mathematically, the SSB signal can be represented as:
+
+\[
+s(t) = A_c \cdot m(t) \cdot \cos(2\pi f_c t) \mp A_c \cdot \hat{m}(t) \cdot \sin(2\pi f_c t)
+\]
+
+where:
+\begin{itemize}
+    \item \( A_c \) is the amplitude of the carrier,
+    \item \( m(t) \) is the message signal,
+    \item \( f_c \) is the carrier frequency,
+    \item \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \).
+\end{itemize}
+
+The upper sideband is obtained by using the minus sign in the equation, while the lower sideband uses the plus sign. The choice of USB for the 17- and 12-meter bands is based on international agreements and practical considerations, ensuring clear and efficient communication.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of an SSB signal, highlighting the Upper Sideband and Lower Sideband.

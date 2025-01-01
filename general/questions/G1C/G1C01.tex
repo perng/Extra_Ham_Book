@@ -1,0 +1,34 @@
+\subsection{Maximum Transmitter Power on 10.140 MHz}
+\label{G1C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G1C01]
+What is the maximum transmitter power an amateur station may use on 10.140 MHz?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{200 watts PEP output}
+    \item 1000 watts PEP output
+    \item 1500 watts PEP output
+    \item 2000 watts PEP output
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a concert, and the band is playing really loud. If they play too loud, the sound might start to distort, and people in the audience might get annoyed. Similarly, in radio communication, if you use too much power, it can cause interference with other stations and even damage your equipment. The rules for amateur radio operators are like the volume knob on a stereo—there's a limit to how high you can turn it up. On the frequency 10.140 MHz, the maximum power you're allowed to use is 200 watts PEP (Peak Envelope Power). Think of it as the safe volume for your radio station!
+
+\subsubsection{Advanced Explanation}
+In amateur radio, the Federal Communications Commission (FCC) sets limits on the maximum power output to prevent interference and ensure efficient use of the radio spectrum. The power limit is specified in terms of Peak Envelope Power (PEP), which is the maximum power level during one complete cycle of the transmitted signal. For the frequency band around 10.140 MHz, which falls within the 30-meter band, the FCC limits the maximum PEP output to 200 watts.
+
+The calculation of PEP is based on the peak voltage of the signal and the load impedance. The formula for PEP is:
+
+\[
+\text{PEP} = \frac{V_{\text{peak}}^2}{2R}
+\]
+
+where \( V_{\text{peak}} \) is the peak voltage and \( R \) is the load impedance (typically 50 ohms in radio systems). For a PEP of 200 watts, the peak voltage can be calculated as:
+
+\[
+V_{\text{peak}} = \sqrt{2 \times \text{PEP} \times R} = \sqrt{2 \times 200 \times 50} = \sqrt{20000} \approx 141.42 \text{ volts}
+\]
+
+This ensures that the transmitted signal remains within the legal limits and does not cause undue interference to other users of the radio spectrum.
+
+% Prompt for generating a diagram: A diagram showing the relationship between PEP, voltage, and impedance in a radio transmitter circuit would be helpful here.

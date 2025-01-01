@@ -1,0 +1,28 @@
+\subsection{Primary Function of Antenna Traps}
+\label{G9D04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9D04]
+What is the primary function of antenna traps?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{To enable multiband operation}
+    \item To notch spurious frequencies
+    \item To provide balanced feed point impedance
+    \item To prevent out-of-band operation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a radio that can listen to different stations, like your favorite music channel and the news. Now, think of an antenna trap as a magical switch that lets your antenna tune into different stations without needing to change the antenna itself. It’s like having a universal remote for your radio antenna, making it super versatile and easy to use!
+
+\subsubsection{Advanced Explanation}
+Antenna traps are essentially resonant circuits that are inserted into an antenna to allow it to operate efficiently on multiple frequency bands. The trap consists of an inductor (L) and a capacitor (C) connected in parallel, forming an LC circuit. At the resonant frequency of the trap, the impedance becomes very high, effectively isolating that part of the antenna. This allows the antenna to operate on different bands by effectively changing its electrical length.
+
+For example, consider a dipole antenna with a trap designed for 7 MHz and 14 MHz. At 7 MHz, the trap presents a high impedance, making the antenna behave as if it is cut for 7 MHz. At 14 MHz, the trap allows the current to flow through, making the antenna behave as if it is cut for 14 MHz. This dual-band operation is achieved without physically altering the antenna structure.
+
+The resonant frequency \( f_0 \) of the trap can be calculated using the formula:
+\[
+f_0 = \frac{1}{2\pi\sqrt{LC}}
+\]
+where \( L \) is the inductance and \( C \) is the capacitance of the trap.
+
+% Diagram Prompt: Generate a diagram showing a dipole antenna with an antenna trap, illustrating how the trap allows the antenna to operate on two different frequency bands.

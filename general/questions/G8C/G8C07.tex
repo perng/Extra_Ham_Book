@@ -1,0 +1,29 @@
+\subsection{Digital Modes for Low SNR Signals}
+\label{G8C07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C07]
+Which of the following narrow-band digital modes can receive signals with very low signal-to-noise ratios?
+\begin{enumerate}[label=\Alph*)]
+    \item MSK144
+    \item \textbf{FT8}
+    \item AMTOR
+    \item MFSK32
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to hear a whisper in a noisy room. Some people are better at picking up whispers even when there's a lot of noise. FT8 is like that person—it’s really good at hearing signals even when they’re super quiet compared to the noise. So, if you’re trying to communicate in a noisy environment, FT8 is your go-to mode!
+
+\subsubsection{Advanced Explanation}
+FT8 (Franke-Taylor design, 8-FSK modulation) is a digital mode specifically designed for weak signal communication. It uses a combination of forward error correction (FEC) and a highly optimized modulation scheme to achieve reliable communication at very low signal-to-noise ratios (SNR). The FEC allows the receiver to correct errors in the received signal, while the modulation scheme ensures that the signal can be detected even when it is buried in noise.
+
+Mathematically, the SNR threshold for FT8 is significantly lower than that of other modes like MSK144, AMTOR, or MFSK32. This is due to its efficient use of bandwidth and error correction algorithms. For example, FT8 can decode signals with an SNR as low as -20 dB, whereas other modes may require an SNR of -10 dB or higher.
+
+The key concepts here are:
+\begin{itemize}
+    \item \textbf{Signal-to-Noise Ratio (SNR)}: A measure of the signal strength relative to the background noise.
+    \item \textbf{Forward Error Correction (FEC)}: A technique used to correct errors in the received signal without requiring retransmission.
+    \item \textbf{Modulation Scheme}: The method used to encode information onto a carrier wave, which affects how well the signal can be detected in noise.
+\end{itemize}
+
+% Prompt for diagram: A diagram showing the SNR thresholds for different digital modes (FT8, MSK144, AMTOR, MFSK32) would be helpful here.

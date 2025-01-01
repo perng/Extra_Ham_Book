@@ -1,0 +1,51 @@
+\subsection{Plugging Into a Clear Connection: Understanding Electrical Interference!}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4E06`]
+What type of electrical interference can be caused by computer network equipment? 
+
+\begin{enumerate}[label=\Alph*)]
+    \item A loud AC hum in the audio output of your station’s receiver
+    \item A clicking noise at intervals of a few seconds
+    \item \textbf{The appearance of unstable modulated or unmodulated signals at specific frequencies}
+    \item A whining-type noise that continually pulses off and on
+\end{enumerate} \end{tcolorbox}
+
+In order to understand the interference caused by computer network equipment, we need to comprehend the principles of electrical interference itself. Electrical interference occurs when unwanted signals disrupt the normal operation of a circuit, often causing distortion or noise in the output. 
+
+Network equipment can generate electromagnetic interference (EMI) due to the high-speed switching processes and data transmission methods they utilize. Signals transmitted over network cables can introduce instability in the radio frequency (RF) spectrum, leading to the appearance of unstable signals at specific frequencies. This is particularly significant for operators of radio communication systems, who must ensure they avoid frequencies that could interfere with their operations.
+
+\textbf{Concepts Required to Answer the Question:}
+
+1. \textbf{Electromagnetic Interference (EMI):} A phenomenon where the operation of an electronic device is disrupted by external electromagnetic fields.
+   
+2. \textbf{Radio Frequency Interference (RFI):} A specific type of EMI occurring in the radio frequency spectrum that can lead to the degradation of radio communication.
+
+3. \textbf{Modulation:} In communication, modulation is the process of varying the properties of a carrier signal in relation to the information signal.
+
+4. \textbf{Signal Stability:} Understanding how well signals hold their intended frequency and amplitude is crucial when measuring interference.
+
+If a calculation is necessary to illustrate the impact of EMI, consider determining the frequency using the formula for the speed of signal propagation and the wavelength formula:
+
+\[
+f = \frac{v}{\lambda}
+\]
+
+where \( f \) is the frequency in hertz (Hz), \( v \) is the speed of light in vacuum (approximately \( 3 \times 10^8 \) m/s), and \( \lambda \) is the wavelength in meters (m). 
+
+For example, if we were to analyze interference at a wavelength of 1 meter:
+
+\[
+f = \frac{3 \times 10^8 \text{ m/s}}{1 \text{ m}} = 3 \times 10^8 \text{ Hz} = 300 \text{ MHz}
+\]
+
+Thus, signals in the range of 300 MHz could be susceptible to interference from network equipment operating in close proximity.
+
+% Additionally, a diagram showing the relationship between different frequencies and types of interference could help visualize the situation:
+
+% \begin{tikzpicture}
+% \draw[->] (0,0) -- (10,0) node[right] {Frequency (Hz)};
+% \foreach \x in {1,2,...,10}
+%     \draw[\x*0.5 cm, thick] (\x cm, 0.1 cm) -- (\x cm, -0.1 cm);
+% \foreach \x in {1,3,5,7,9}
+%     \node[above] at (\x cm, 0.2 cm) {Interference};
+% \end{tikzpicture}

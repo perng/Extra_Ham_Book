@@ -1,0 +1,30 @@
+\subsection{Purpose of Neutralizing an Amplifier}
+\label{G7B01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B01]
+What is the purpose of neutralizing an amplifier?
+\begin{enumerate}[label=\Alph*)]
+    \item To limit the modulation index
+    \item \textbf{To eliminate self-oscillations}
+    \item To cut off the final amplifier during standby periods
+    \item To keep the carrier on frequency
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your amplifier is like a microphone and speaker setup. If the microphone picks up the sound from the speaker, it creates a loop where the sound keeps getting louder and louder—this is called feedback. In amplifiers, a similar thing can happen, but with electrical signals instead of sound. Neutralizing the amplifier is like putting a shield between the microphone and the speaker to stop that annoying feedback loop. It keeps the amplifier from going crazy and making weird noises (or in technical terms, self-oscillating).
+
+\subsubsection{Advanced Explanation}
+Neutralization in amplifiers is a technique used to counteract the effects of internal feedback, particularly in high-frequency amplifiers like those used in radio transmitters. This internal feedback can cause the amplifier to oscillate at undesired frequencies, leading to self-oscillations. 
+
+The process involves introducing a compensating signal that cancels out the unwanted feedback. This is typically achieved by using a neutralizing capacitor that feeds a portion of the output signal back to the input in a phase that opposes the internal feedback. The mathematical relationship can be expressed as:
+
+\[
+V_{\text{neutralize}} = -k \cdot V_{\text{feedback}}
+\]
+
+where \( V_{\text{neutralize}} \) is the neutralizing voltage, \( V_{\text{feedback}} \) is the feedback voltage, and \( k \) is a constant that determines the amount of neutralization required.
+
+By carefully adjusting the neutralizing capacitor, the amplifier can be stabilized, ensuring it operates only at the desired frequency without self-oscillations. This is crucial in maintaining the integrity of the transmitted signal in radio communications.
+
+% Diagram prompt: Generate a diagram showing the feedback loop in an amplifier and how neutralizing capacitor cancels out the unwanted feedback.

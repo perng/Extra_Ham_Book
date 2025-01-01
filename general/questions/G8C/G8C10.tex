@@ -1,0 +1,26 @@
+\subsection{Forward Error Correction (FEC) Mechanism}
+\label{G8C10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C10]
+How does forward error correction (FEC) allow the receiver to correct data errors?
+\begin{enumerate}[label=\Alph*)]
+    \item By controlling transmitter output power for optimum signal strength
+    \item By using the Varicode character set
+    \item \textbf{By transmitting redundant information with the data}
+    \item By using a parity bit with each character
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're sending a secret message to your friend, but you know that sometimes the message might get a little messed up on the way. To make sure your friend can still understand it, you send extra clues along with the message. These clues help your friend figure out what the original message was, even if some parts got scrambled. That's exactly what Forward Error Correction (FEC) does! It sends extra information (like those clues) with the data so the receiver can fix any mistakes without asking you to send the message again.
+
+\subsubsection*{Advanced Explanation}
+Forward Error Correction (FEC) is a technique used in digital communication to improve the reliability of data transmission. It works by adding redundant information (also known as error-correcting codes) to the original data before transmission. This redundant information allows the receiver to detect and correct errors without requiring retransmission of the data.
+
+Mathematically, FEC can be represented using coding theory. For example, in a simple block code, the original data is divided into blocks of \( k \) bits, and each block is encoded into a larger block of \( n \) bits, where \( n > k \). The additional \( n - k \) bits are the redundant information. The receiver uses these redundant bits to detect and correct errors in the received data.
+
+One common FEC method is the Hamming code, which can correct single-bit errors and detect double-bit errors. The Hamming code adds parity bits at specific positions in the data block, allowing the receiver to identify and correct errors based on the parity check results.
+
+In summary, FEC enhances data integrity by transmitting redundant information, enabling the receiver to correct errors autonomously. This is particularly useful in environments where retransmission is costly or impractical, such as in satellite communications or deep-space communication.
+
+% Prompt for diagram: Generate a diagram showing the process of adding redundant information to the original data block and how the receiver uses this information to correct errors.

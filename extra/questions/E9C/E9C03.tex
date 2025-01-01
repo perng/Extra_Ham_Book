@@ -1,0 +1,31 @@
+\subsection{E9C03: Unleashing Waves: Exploring Antenna Patterns!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Question E9C03]
+\textbf{E9C03} What type of radiation pattern is created by two 1/4-wavelength vertical antennas spaced 1/2-wavelength apart and fed in phase?
+\begin{enumerate}[label=\Alph*.]
+    \item Omni-directional
+    \item Cardioid
+    \item \textbf{A figure-eight broadside to the axis of the array}
+    \item A figure-eight end-fire along the axis of the array
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two antennas standing side by side, like two friends waving their arms in sync. These antennas are spaced half a wavelength apart and are fed with the same signal at the same time. When they send out their signals, they create a pattern that looks like a figure-eight, but this figure-eight is broadside to the line connecting the two antennas. This means the strongest signals are sent out to the sides, not along the line of the antennas. It's like the antennas are saying, Hey, we're here! to the sides, but not so much along the line they're standing on.
+
+\subsubsection{Advanced Explanation}
+When two 1/4-wavelength vertical antennas are spaced 1/2-wavelength apart and fed in phase, the resulting radiation pattern is determined by the constructive and destructive interference of the electromagnetic waves they emit. 
+
+The key concept here is the phase relationship and the spacing between the antennas. Since the antennas are fed in phase and spaced 1/2-wavelength apart, the waves emitted by each antenna will interfere constructively in the directions perpendicular to the line connecting the antennas (broadside) and destructively along the line connecting them (end-fire). This results in a figure-eight pattern, with the lobes of the pattern oriented broadside to the axis of the array.
+
+Mathematically, the radiation pattern \( E(\theta) \) can be described by the array factor \( AF(\theta) \):
+
+\[
+AF(\theta) = \cos\left(\frac{\pi}{2} \cos(\theta)\right)
+\]
+
+where \( \theta \) is the angle relative to the axis of the array. This function shows that the maximum radiation occurs at \( \theta = 90^\circ \) and \( \theta = 270^\circ \), which are the broadside directions.
+
+The correct answer is \textbf{C: A figure-eight broadside to the axis of the array}.
+
+% Diagram prompt: Generate a diagram showing two vertical antennas spaced 1/2-wavelength apart, with the resulting figure-eight radiation pattern broadside to the axis of the array.

@@ -1,0 +1,28 @@
+\subsection{High Voltages and RF Burns}
+\label{G4C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C05]
+What is a possible cause of high voltages that produce RF burns?
+\begin{enumerate}[label=\Alph*)]
+    \item Flat braid rather than round wire has been used for the ground wire
+    \item Insulated wire has been used for the ground wire
+    \item The ground rod is resonant
+    \item \textbf{The ground wire has high impedance on that frequency}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to push water through a narrow pipe. If the pipe is too skinny, the water can't flow easily, and pressure builds up. In the same way, when the ground wire has high impedance (like a skinny pipe), the RF energy can't flow smoothly, and voltage builds up. This high voltage can give you a nasty RF burn, just like the pressure in the pipe can cause it to burst!
+
+\subsubsection{Advanced Explanation}
+In RF systems, the ground wire is crucial for providing a low-impedance path for RF currents to return to the source. Impedance, denoted by \( Z \), is a complex quantity that includes resistance \( R \) and reactance \( X \), given by:
+\[
+Z = R + jX
+\]
+where \( j \) is the imaginary unit. High impedance in the ground wire means that the wire does not effectively conduct RF currents at the operating frequency. This can be due to inductive or capacitive reactance, or simply high resistance. When the impedance is high, the voltage \( V \) across the wire increases according to Ohm's Law:
+\[
+V = I \cdot Z
+\]
+where \( I \) is the RF current. This elevated voltage can lead to RF burns when the system is touched. Therefore, ensuring a low-impedance ground connection is essential for safety in RF systems.
+
+% Prompt for diagram: A diagram showing a simple RF circuit with a ground wire, illustrating the flow of RF current and the effect of high impedance on voltage buildup.

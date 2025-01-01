@@ -1,0 +1,35 @@
+\subsection{Adjusting Feed Point Impedance of a Quarter-Wave Antenna}
+\label{G9B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9B02]
+Which of the following is a common way to adjust the feed point impedance of an elevated quarter-wave ground-plane vertical antenna to be approximately 50 ohms?
+\begin{enumerate}[label=\Alph*)]
+    \item Slope the radials upward
+    \item \textbf{Slope the radials downward}
+    \item Lengthen the radials beyond one wavelength
+    \item Coil the radials
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your antenna is like a tree with branches (the radials) sticking out. If you want the tree to talk nicely to your radio (which likes 50 ohms), you need to adjust the branches. If you slope the branches downward, it’s like giving the tree a little umbrella. This helps the tree and the radio get along better, making the impedance just right. So, the trick is to tilt the branches down, not up or make them super long or curly!
+
+\subsubsection{Advanced Explanation}
+The feed point impedance of an elevated quarter-wave ground-plane vertical antenna is influenced by the angle of the radials relative to the vertical element. When the radials are sloped downward, the impedance decreases, approaching the desired 50 ohms. This is because the downward slope reduces the capacitive reactance and increases the inductive reactance, balancing the impedance.
+
+The impedance \( Z \) of the antenna can be approximated using the following relationship:
+
+\[
+Z \approx \frac{138 \log_{10}\left(\frac{4h}{\lambda}\right)}{\sin(\theta)}
+\]
+
+where:
+\begin{itemize}
+    \item \( h \) is the height of the antenna,
+    \item \( \lambda \) is the wavelength,
+    \item \( \theta \) is the angle of the radials relative to the horizontal plane.
+\end{itemize}
+
+By sloping the radials downward, \( \theta \) increases, which reduces the impedance \( Z \). This adjustment helps match the antenna's impedance to the 50-ohm feed line, minimizing reflections and maximizing power transfer.
+
+% Diagram Prompt: Generate a diagram showing a quarter-wave ground-plane vertical antenna with radials sloped downward at different angles, illustrating the effect on feed point impedance.

@@ -1,0 +1,38 @@
+\subsection{QPSK31 Characteristics}
+\label{G8A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A06]
+Which of the following is characteristic of QPSK31?
+\begin{enumerate}[label=\Alph*]
+    \item It is sideband sensitive
+    \item Its encoding provides error correction
+    \item Its bandwidth is approximately the same as BPSK31
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine QPSK31 as a super-efficient delivery truck that can carry twice as many packages as a regular truck (BPSK31) without needing a bigger road (bandwidth). Not only that, but it also has a special system to make sure none of the packages get lost (error correction) and it’s really good at avoiding traffic jams (sideband sensitivity). So, QPSK31 is like the ultimate delivery truck for data!
+
+\subsubsection{Advanced Explanation}
+QPSK31, or Quadrature Phase Shift Keying 31, is a digital modulation technique used in amateur radio. It is characterized by the following:
+
+1. \textbf{Sideband Sensitivity}: QPSK31 is designed to be efficient in terms of bandwidth usage, making it sensitive to sideband interference but still effective in crowded frequency bands.
+
+2. \textbf{Error Correction}: The encoding scheme of QPSK31 includes error correction capabilities, which help in reducing the error rate during data transmission.
+
+3. \textbf{Bandwidth Efficiency}: Despite being a more complex modulation scheme than BPSK31, QPSK31 maintains a similar bandwidth. This is achieved by transmitting two bits per symbol, effectively doubling the data rate without increasing the bandwidth.
+
+Mathematically, QPSK31 can be represented as:
+\[
+s(t) = A \cos(2\pi f_c t + \phi_i)
+\]
+where \( \phi_i \) can take on one of four possible values (0, \(\frac{\pi}{2}\), \(\pi\), \(\frac{3\pi}{2}\)), each representing a unique pair of bits.
+
+The bandwidth \( B \) of QPSK31 is given by:
+\[
+B = \frac{R_s}{2}
+\]
+where \( R_s \) is the symbol rate. Since QPSK31 transmits two bits per symbol, its bandwidth is approximately the same as BPSK31, which transmits one bit per symbol.
+
+% Prompt for generating a diagram: A diagram showing the phase states of QPSK31 in a constellation plot would be helpful to visualize the four possible phase shifts.

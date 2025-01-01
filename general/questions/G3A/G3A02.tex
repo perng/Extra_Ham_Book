@@ -1,0 +1,40 @@
+\subsection{Sudden Ionospheric Disturbance Effects}
+\label{G3A02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3A02]
+What effect does a sudden ionospheric disturbance have on the daytime ionospheric propagation?
+\begin{enumerate}[label=\Alph*]
+    \item It enhances propagation on all HF frequencies
+    \item \textbf{It disrupts signals on lower frequencies more than those on higher frequencies}
+    \item It disrupts communications via satellite more than direct communications
+    \item None, because only areas on the night side of the Earth are affected
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine the ionosphere as a giant mirror in the sky that helps bounce radio signals around the Earth. Now, think of a sudden ionospheric disturbance (SID) as someone shaking that mirror really hard. When this happens, the mirror gets all wobbly and doesn't reflect signals as well, especially the lower frequency signals. It's like trying to bounce a basketball on a trampoline that's being shaken—lower bounces (lower frequencies) get messed up more than higher bounces (higher frequencies). So, during a SID, your radio signals on lower frequencies are more likely to get disrupted.
+
+\subsubsection{Advanced Explanation}
+A sudden ionospheric disturbance (SID) is typically caused by a solar flare, which increases the ionization in the D-layer of the ionosphere. The D-layer is primarily responsible for absorbing lower frequency radio waves (below about 10 MHz). When the D-layer becomes more ionized, it absorbs more of these lower frequency signals, effectively disrupting their propagation. Higher frequency signals (above 10 MHz) are less affected because they tend to pass through the D-layer and are reflected by the higher F-layer.
+
+Mathematically, the absorption of radio waves in the ionosphere can be described by the following equation:
+
+\[
+\alpha = \frac{e^2}{2 \epsilon_0 m c} \frac{N \nu}{\nu^2 + \omega^2}
+\]
+
+where:
+\begin{itemize}
+    \item \(\alpha\) is the absorption coefficient,
+    \item \(e\) is the electron charge,
+    \item \(\epsilon_0\) is the permittivity of free space,
+    \item \(m\) is the electron mass,
+    \item \(c\) is the speed of light,
+    \item \(N\) is the electron density,
+    \item \(\nu\) is the collision frequency,
+    \item \(\omega\) is the angular frequency of the radio wave.
+\end{itemize}
+
+During a SID, \(N\) increases significantly, leading to higher absorption (\(\alpha\)) for lower frequencies (\(\omega\)). This explains why lower frequency signals are more disrupted than higher frequency signals during a SID.
+
+% Diagram prompt: Generate a diagram showing the ionospheric layers (D, E, F) and how radio waves of different frequencies interact with these layers during a sudden ionospheric disturbance.

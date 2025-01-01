@@ -1,0 +1,33 @@
+\subsection{Threshold Triumph: What Happens When Input Signals Cross the Line?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+\textbf{E6C02} What happens when the level of a comparator’s input signal crosses the threshold voltage?
+\begin{enumerate}[label=\Alph*]
+    \item The IC input can be damaged
+    \item \textbf{The comparator changes its output state}
+    \item The reference level appears at the output
+    \item The feedback loop becomes unstable
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a seesaw. On one side, you have a heavy weight, and on the other side, you have a lighter weight. The seesaw is balanced when both weights are equal. Now, if you add a little more weight to one side, the seesaw will tip over to that side. 
+
+A comparator works in a similar way. It has two inputs: one is the signal you want to compare, and the other is a reference voltage (like the heavy weight). When the signal voltage crosses the reference voltage, the comparator tips over and changes its output state. This is like the seesaw tipping to one side when the weights change.
+
+\subsubsection{Advanced Explanation}
+A comparator is an electronic device that compares two voltage levels and outputs a digital signal based on which input is higher. The two inputs are typically labeled as the non-inverting input (+) and the inverting input (-). The output of the comparator is high (usually close to the supply voltage) if the voltage at the non-inverting input is higher than the voltage at the inverting input. Conversely, the output is low (usually close to ground) if the voltage at the inverting input is higher.
+
+When the input signal crosses the threshold voltage (the reference voltage), the comparator changes its output state. This is because the relationship between the two input voltages changes, causing the comparator to switch its output. Mathematically, if \( V_{in} \) is the input signal and \( V_{ref} \) is the reference voltage, the output \( V_{out} \) can be described as:
+
+\[
+V_{out} = 
+\begin{cases}
+V_{high} & \text{if } V_{in} > V_{ref} \\
+V_{low} & \text{if } V_{in} < V_{ref}
+\end{cases}
+\]
+
+This behavior is fundamental in many applications, such as analog-to-digital converters, level detectors, and waveform generators. The comparator's ability to quickly switch states based on input voltage differences makes it a versatile component in electronic circuits.
+
+% Prompt for diagram: A diagram showing a comparator with two input signals (one being the reference voltage) and the output switching states as the input signal crosses the threshold voltage.

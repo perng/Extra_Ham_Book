@@ -1,0 +1,31 @@
+\subsection{Exploring the Wonders of FIR Filters!}
+\label{sec:E7F12}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=E7F12]
+\textbf{E7F12} Which of the following is generally true of Finite Impulse Response (FIR) filters?
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{FIR filters can delay all frequency components of the signal by the same amount}
+    \item FIR filters are easier to implement for a given set of passband rolloff requirements
+    \item FIR filters can respond faster to impulses
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a filter that processes a sound signal. A Finite Impulse Response (FIR) filter is like a very fair filter—it treats all parts of the sound equally. If the sound has different pitches (high or low), the FIR filter will delay each pitch by the same amount of time. This means that the sound doesn’t get distorted in a weird way; it just gets delayed a bit. Think of it like a group of friends walking together—everyone moves at the same speed, so no one gets left behind or runs ahead.
+
+\subsubsection{Advanced Explanation}
+Finite Impulse Response (FIR) filters are characterized by their impulse response, which is finite in duration. One of the key properties of FIR filters is their linear phase response. This means that the phase shift introduced by the filter is a linear function of frequency. Mathematically, the phase response \(\phi(\omega)\) can be expressed as:
+
+\[
+\phi(\omega) = -\tau \omega
+\]
+
+where \(\tau\) is the group delay, and \(\omega\) is the angular frequency. This linear phase property ensures that all frequency components of the input signal are delayed by the same amount \(\tau\), which is crucial for applications where phase distortion must be minimized, such as in audio processing.
+
+In contrast, FIR filters are not necessarily easier to implement for a given set of passband rolloff requirements compared to Infinite Impulse Response (IIR) filters. Additionally, FIR filters do not inherently respond faster to impulses; their response time is determined by the filter's length and design.
+
+Therefore, the correct answer is \textbf{A}, as FIR filters can indeed delay all frequency components of the signal by the same amount due to their linear phase characteristic.
+
+% Prompt for generating a diagram:
+% Diagram showing the phase response of an FIR filter, illustrating the linear phase shift across different frequencies.

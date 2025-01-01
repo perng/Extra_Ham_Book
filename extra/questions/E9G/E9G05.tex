@@ -1,0 +1,30 @@
+\subsection{E9G05: Discover the Fun Uses of a Smith Chart!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9G05} Which of the following is a common use for a Smith chart?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Determine the length and position of an impedance matching stub}
+        \item Determine the impedance of a transmission line, given the physical dimensions
+        \item Determine the gain of an antenna given the physical and electrical parameters
+        \item Determine the loss/100 feet of a transmission line, given the velocity factor and conductor materials
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to match two puzzle pieces together, but they don’t quite fit. A Smith chart is like a magical puzzle-solving tool that helps you figure out how to adjust the pieces so they fit perfectly. In radio terms, it helps you match the impedance (a fancy word for how much the signal resists flowing) of your antenna to your transmitter. Think of it as a cheat sheet for making sure your radio signals don’t bounce back and cause trouble. The correct answer, \textbf{A}, is all about using the Smith chart to figure out how to tweak your setup so everything works smoothly.
+
+\subsubsection{Advanced Explanation}
+A Smith chart is a graphical tool used in radio frequency (RF) engineering to solve problems related to transmission lines and impedance matching. It is particularly useful for determining the length and position of an impedance matching stub, which is essential for minimizing signal reflection and maximizing power transfer.
+
+To understand this, consider the following steps:
+1. \textbf{Impedance Matching}: The goal is to match the load impedance \( Z_L \) to the characteristic impedance \( Z_0 \) of the transmission line. This is achieved by adding a stub (a short section of transmission line) at a specific position along the main line.
+2. \textbf{Smith Chart Usage}: The Smith chart allows engineers to visualize the impedance transformation along the transmission line. By plotting the normalized impedance \( z = Z_L / Z_0 \) on the chart, one can determine the necessary stub length and position to achieve a match.
+3. \textbf{Mathematical Representation}: The Smith chart is based on the reflection coefficient \( \Gamma \), which is related to the impedance by:
+   \[
+   \Gamma = \frac{Z_L - Z_0}{Z_L + Z_0}
+   \]
+   The chart provides a way to convert between \( \Gamma \) and \( z \), simplifying the design process.
+
+The correct answer, \textbf{A}, highlights the primary use of the Smith chart in determining the length and position of an impedance matching stub, a critical task in RF engineering.
+
+% Prompt for diagram: Generate a diagram showing a Smith chart with an example of impedance matching using a stub.

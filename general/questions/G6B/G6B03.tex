@@ -1,0 +1,28 @@
+\subsection{Advantages of CMOS over TTL}
+\label{G6B03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G6B03]
+Which of the following is an advantage of CMOS integrated circuits compared to TTL integrated circuits?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Low power consumption}
+    \item High power handling capability
+    \item Better suited for RF amplification
+    \item Better suited for power supply regulation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two types of light bulbs: one that uses a lot of electricity (TTL) and one that uses very little (CMOS). If you want to save on your electricity bill, which one would you choose? Obviously, the one that uses less power! CMOS integrated circuits are like the energy-efficient light bulbs—they consume much less power than TTL circuits, making them ideal for devices that need to run for a long time on batteries, like your smartphone or a digital watch.
+
+\subsubsection{Advanced Explanation}
+CMOS (Complementary Metal-Oxide-Semiconductor) and TTL (Transistor-Transistor Logic) are two different technologies used in integrated circuits. The primary advantage of CMOS over TTL is its significantly lower power consumption. This is due to the way CMOS circuits are designed: they only draw significant current during the switching process, whereas TTL circuits draw current continuously. 
+
+Mathematically, the power consumption \( P \) of a CMOS circuit can be approximated by:
+\[
+P = C \cdot V^2 \cdot f
+\]
+where \( C \) is the load capacitance, \( V \) is the supply voltage, and \( f \) is the switching frequency. In contrast, TTL circuits have a higher static power consumption because they rely on bipolar transistors that draw current even when not switching.
+
+Additionally, CMOS circuits can operate over a wider range of supply voltages, typically from 3V to 15V, compared to TTL circuits, which usually require a 5V supply. This flexibility makes CMOS more versatile in various applications, especially in portable and battery-operated devices.
+
+% Diagram prompt: Generate a diagram comparing the power consumption of CMOS and TTL circuits over time.

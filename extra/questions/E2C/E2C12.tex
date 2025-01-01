@@ -1,0 +1,28 @@
+\subsection{Signal Delay Decoded: Understanding Control Responses!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2C12] What indicates the delay between a control operator action and the corresponding change in the transmitted signal?
+    \begin{enumerate}[label=\Alph*)]
+        \item Jitter
+        \item Hang time
+        \item \textbf{Latency}
+        \item Anti-VOX
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you are playing a video game, and when you press a button on your controller, there is a tiny delay before your character on the screen actually moves. This delay is called \textit{latency}. In radio technology, latency is the time it takes for a signal to go from the control operator (like pressing a button) to the actual change in the transmitted signal. It’s like the time it takes for your voice to travel through a walkie-talkie and be heard on the other end. Latency is the word we use to describe this waiting time.
+
+\subsubsection*{Advanced Explanation}
+Latency, in the context of radio communication, refers to the time delay between the initiation of a control action by the operator and the corresponding change in the transmitted signal. This delay can be influenced by several factors, including signal processing time, propagation delay, and the efficiency of the transmission medium.
+
+Mathematically, latency (\(L\)) can be expressed as:
+\[
+L = t_{\text{response}} - t_{\text{action}}
+\]
+where \(t_{\text{action}}\) is the time when the control action is initiated, and \(t_{\text{response}}\) is the time when the change in the transmitted signal is observed.
+
+Latency is a critical parameter in real-time communication systems, as excessive latency can lead to noticeable delays, affecting the quality of communication. For example, in digital radio systems, latency can be introduced by encoding and decoding processes, as well as by the transmission path itself.
+
+Understanding latency is essential for optimizing communication systems to ensure minimal delay and efficient signal transmission. Other terms like \textit{jitter} (variation in delay), \textit{hang time} (duration a signal remains active), and \textit{anti-VOX} (circuit to prevent unintended transmission) are related but distinct concepts in radio technology.
+
+% Diagram Prompt: Generate a diagram showing the timeline of a control action, signal processing, and the resulting change in the transmitted signal, highlighting the latency period.

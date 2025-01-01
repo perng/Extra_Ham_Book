@@ -1,0 +1,28 @@
+\subsection{FT8 Signal Report Interpretation}
+\label{G8C15}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C15]
+What does an FT8 signal report of +3 mean?
+\begin{enumerate}[label=\Alph*)]
+    \item The signal is 3 times the noise level of an equivalent SSB signal
+    \item The signal is S3 (weak signals)
+    \item \textbf{The signal-to-noise ratio is equivalent to +3dB in a 2.5 kHz bandwidth}
+    \item The signal is 3 dB over S9
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're listening to your favorite radio station, but there's some static noise in the background. An FT8 signal report of +3 is like saying, Hey, the music is just a little bit louder than the static! It means the signal you're receiving is 3 decibels (dB) stronger than the noise in a specific frequency range (2.5 kHz). So, it's a way to tell how clear and strong the signal is compared to the background noise.
+
+\subsubsection{Advanced Explanation}
+In radio communication, the signal-to-noise ratio (SNR) is a critical parameter that measures the strength of the desired signal relative to the background noise. The FT8 signal report of +3 indicates that the SNR is +3 dB in a 2.5 kHz bandwidth. 
+
+Mathematically, SNR in decibels is calculated as:
+\[
+\text{SNR (dB)} = 10 \log_{10} \left( \frac{P_{\text{signal}}}{P_{\text{noise}}} \right)
+\]
+where \( P_{\text{signal}} \) is the power of the signal and \( P_{\text{noise}} \) is the power of the noise. A positive SNR value means the signal power is greater than the noise power.
+
+In the context of FT8, a +3 dB SNR means the signal power is approximately twice the noise power within the 2.5 kHz bandwidth. This is a relatively good signal quality, indicating that the communication is likely to be clear and reliable.
+
+% Diagram prompt: A diagram showing the comparison of signal power and noise power in a 2.5 kHz bandwidth, with the SNR marked as +3 dB.

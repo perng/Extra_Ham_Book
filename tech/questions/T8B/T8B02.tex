@@ -1,0 +1,43 @@
+\subsection{Impact of Excessive ERP on Satellite Uplink}
+\label{T8B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B02]
+What is the impact of using excessive effective radiated power on a satellite uplink?
+\begin{enumerate}[label=\Alph*)]
+    \item Possibility of commanding the satellite to an improper mode
+    \item \textbf{Blocking access by other users}
+    \item Overloading the satellite batteries
+    \item Possibility of rebooting the satellite control computer
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're at a party, and everyone is trying to talk at the same time. If one person starts shouting really loudly, no one else can be heard. That's kind of what happens with a satellite uplink. If you use too much power, your signal becomes the shouter, and it blocks everyone else from using the satellite. So, the satellite can't hear anyone else, and they can't get their messages through. It's like being a bad party guest!
+
+\subsubsection*{Advanced Explanation}
+Effective Radiated Power (ERP) is a measure of the power that is actually radiated by an antenna in a specific direction. When transmitting to a satellite, the ERP must be carefully controlled to ensure that the signal is strong enough to be received by the satellite but not so strong that it interferes with other users.
+
+Excessive ERP can lead to several issues:
+\begin{itemize}
+    \item \textbf{Interference}: The high-power signal can overwhelm the satellite's receiver, making it difficult or impossible for the satellite to receive signals from other users. This is known as blocking.
+    \item \textbf{Spectral Pollution}: The strong signal can spill over into adjacent frequency bands, causing interference with other communications systems.
+    \item \textbf{Satellite Health}: While excessive ERP is unlikely to directly damage the satellite's batteries or control systems, it can cause the satellite to operate in a less efficient manner, potentially leading to increased wear and tear over time.
+\end{itemize}
+
+Mathematically, the power received by the satellite can be expressed as:
+\[
+P_r = \frac{P_t G_t G_r \lambda^2}{(4 \pi d)^2}
+\]
+where:
+\begin{itemize}
+    \item \( P_r \) is the received power,
+    \item \( P_t \) is the transmitted power,
+    \item \( G_t \) is the gain of the transmitting antenna,
+    \item \( G_r \) is the gain of the receiving antenna,
+    \item \( \lambda \) is the wavelength of the signal,
+    \item \( d \) is the distance between the transmitter and the satellite.
+\end{itemize}
+
+If \( P_t \) is too high, \( P_r \) will also be excessively high, leading to the issues described above. Therefore, it is crucial to manage ERP to ensure efficient and fair use of satellite resources.
+
+% Prompt for generating a diagram: A diagram showing the relationship between transmitted power, antenna gain, and received power at the satellite, with labels for each component.

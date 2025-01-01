@@ -1,0 +1,28 @@
+\subsection{Noise Blanker Operation}
+\label{G4A03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4A03]
+How does a noise blanker work?
+\begin{enumerate}[label=\Alph*)]
+    \item By temporarily increasing received bandwidth
+    \item By redirecting noise pulses into a filter capacitor
+    \item \textbf{By reducing receiver gain during a noise pulse}
+    \item By clipping noise peaks
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're listening to your favorite radio station, but suddenly, someone starts popping bubble wrap right next to your ear. Annoying, right? A noise blanker is like a smart friend who quickly turns down the volume every time they hear a pop, so you can keep enjoying your music without the annoying interruptions. It doesn’t stop the pops from happening, but it makes sure they don’t ruin your listening experience.
+
+\subsubsection*{Advanced Explanation}
+A noise blanker is a circuit designed to mitigate the impact of impulsive noise, such as electrical spikes or interference, on a radio receiver. When a noise pulse is detected, the noise blanker temporarily reduces the receiver's gain, effectively attenuating the noise signal. This is achieved by using a fast-acting control loop that detects the noise pulse and adjusts the gain of the receiver's amplifier accordingly.
+
+Mathematically, the gain reduction can be expressed as:
+\[
+G_{\text{reduced}} = G_{\text{normal}} - \Delta G
+\]
+where \( G_{\text{normal}} \) is the normal gain of the receiver, and \( \Delta G \) is the amount of gain reduction applied during the noise pulse.
+
+The noise blanker operates by monitoring the signal for sudden increases in amplitude, which are characteristic of noise pulses. When such an increase is detected, the gain is reduced for a short duration, typically a few microseconds, to minimize the impact of the noise on the received signal. This process helps to maintain the clarity of the desired signal while suppressing unwanted noise.
+
+% Diagram Prompt: Generate a diagram showing the operation of a noise blanker, including the normal signal, noise pulse, and the gain reduction applied by the noise blanker.

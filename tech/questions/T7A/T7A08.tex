@@ -1,0 +1,43 @@
+\subsection{Combining Speech with an RF Carrier Signal}
+\label{T7A08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7A08]
+Which of the following describes combining speech with an RF carrier signal?
+\begin{enumerate}[label=\Alph*)]
+    \item Impedance matching
+    \item Oscillation
+    \item \textbf{Modulation}
+    \item Low-pass filtering
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a super cool walkie-talkie, and you want to send your voice to your friend who’s on the other side of the playground. But here’s the thing: your voice can’t just fly through the air by itself. It needs a ride! That’s where the RF carrier signal comes in. Think of it like a magic carpet that carries your voice across the playground. The process of putting your voice onto this magic carpet is called \textit{modulation}. It’s like strapping your voice onto the carpet so it can zoom over to your friend. So, when you’re talking into the walkie-talkie, you’re actually modulating your voice onto the RF carrier signal. Cool, right?
+
+\subsubsection{Advanced Explanation}
+In radio communication, the process of combining an information signal (such as speech) with a radio frequency (RF) carrier signal is known as \textit{modulation}. Modulation is essential because the information signal, which typically has a low frequency, cannot be transmitted efficiently over long distances without a carrier signal. The carrier signal is a high-frequency wave that acts as a medium for the information signal.
+
+There are several types of modulation techniques, including:
+\begin{itemize}
+    \item \textbf{Amplitude Modulation (AM)}: The amplitude of the carrier signal is varied in proportion to the information signal.
+    \item \textbf{Frequency Modulation (FM)}: The frequency of the carrier signal is varied in proportion to the information signal.
+    \item \textbf{Phase Modulation (PM)}: The phase of the carrier signal is varied in proportion to the information signal.
+\end{itemize}
+
+Mathematically, for a simple AM signal, the modulated signal \( s(t) \) can be represented as:
+\[
+s(t) = A_c \left[1 + m \cdot x(t)\right] \cos(2\pi f_c t)
+\]
+where:
+\begin{itemize}
+    \item \( A_c \) is the amplitude of the carrier signal,
+    \item \( m \) is the modulation index,
+    \item \( x(t) \) is the information signal,
+    \item \( f_c \) is the frequency of the carrier signal.
+\end{itemize}
+
+This equation shows how the information signal \( x(t) \) is combined with the carrier signal to produce the modulated signal \( s(t) \). The modulation index \( m \) determines the extent to which the carrier signal is modulated by the information signal.
+
+In summary, modulation is the key process that allows us to transmit information over radio waves by combining it with a carrier signal. This is why the correct answer to the question is \textit{Modulation}.
+
+% Prompt for diagram: Generate a diagram showing the process of modulation, with an information signal (e.g., a sine wave) being combined with a carrier signal to produce a modulated signal.

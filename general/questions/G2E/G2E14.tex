@@ -1,0 +1,41 @@
+\subsection{Decoding Issues with RTTY and FSK Signals}
+\label{G2E14}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E14]
+What could be wrong if you cannot decode an RTTY or other FSK signal even though it is apparently tuned in properly?
+\begin{enumerate}[label=\Alph*)]
+    \item The mark and space frequencies may be reversed
+    \item You may have selected the wrong baud rate
+    \item You may be listening on the wrong sideband
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to listen to a secret message on your walkie-talkie, but no matter how much you twist the dial, it just sounds like gibberish. This could be because:
+
+1. The message is written in reverse (like reading a book from the back).
+2. You're trying to read it too fast or too slow.
+3. You're listening to the wrong channel altogether.
+
+In the world of radio, these problems are similar to having the mark and space frequencies reversed, selecting the wrong baud rate, or listening on the wrong sideband. So, if your radio isn't decoding the message, it could be any of these reasons—or even all of them!
+
+\subsubsection{Advanced Explanation}
+In Frequency Shift Keying (FSK) signals like RTTY, the information is encoded by shifting between two frequencies: the mark and space frequencies. If you cannot decode the signal despite proper tuning, several issues could be at play:
+
+1. \textbf{Reversed Mark and Space Frequencies}: If the mark and space frequencies are reversed, the decoder will interpret the signal incorrectly. For example, if the mark frequency is supposed to be 2125 Hz and the space frequency is 2295 Hz, but they are swapped, the decoder will produce garbled output.
+
+2. \textbf{Incorrect Baud Rate}: The baud rate determines how quickly the signal changes between the mark and space frequencies. If the baud rate is set incorrectly, the decoder will not be able to synchronize with the signal, leading to decoding errors. For instance, if the signal is transmitted at 45.45 baud but the decoder is set to 50 baud, the timing will be off.
+
+3. \textbf{Wrong Sideband}: FSK signals are often transmitted on a specific sideband (upper or lower). If you are listening on the wrong sideband, the frequencies will be inverted, making it impossible to decode the signal correctly. For example, if the signal is transmitted on the upper sideband but you are listening on the lower sideband, the mark and space frequencies will be reversed.
+
+Mathematically, the relationship between the mark and space frequencies can be represented as:
+\[
+f_{\text{mark}} = f_{\text{carrier}} + \Delta f
+\]
+\[
+f_{\text{space}} = f_{\text{carrier}} - \Delta f
+\]
+where \( f_{\text{carrier}} \) is the carrier frequency and \( \Delta f \) is the frequency deviation. If any of these parameters are incorrect or misinterpreted, the signal cannot be decoded properly.
+
+% Diagram prompt: Generate a diagram showing the relationship between mark and space frequencies in an FSK signal, with examples of correct and incorrect decoding scenarios.

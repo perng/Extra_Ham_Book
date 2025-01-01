@@ -1,0 +1,30 @@
+\subsection{Transformer Voltage Output}
+\label{G5C02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5C02]
+What is the output voltage if an input signal is applied to the secondary winding of a 4:1 voltage step-down transformer instead of the primary winding?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{The input voltage is multiplied by 4}
+    \item The input voltage is divided by 4
+    \item Additional resistance must be added in series with the primary to prevent overload
+    \item Additional resistance must be added in parallel with the secondary to prevent overload
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical shrinking machine (the transformer) that usually makes things smaller. Normally, you put something big into it, and it spits out a smaller version. But what if you put something small into the output side instead? The machine would do the opposite and make it bigger! In this case, the transformer usually steps down the voltage by 4 times, but if you put the input on the secondary side, it will step up the voltage by 4 times instead. So, the output voltage is 4 times the input voltage.
+
+\subsubsection{Advanced Explanation}
+A transformer operates based on the principle of electromagnetic induction, where the voltage ratio between the primary and secondary windings is determined by the turns ratio. For a step-down transformer with a turns ratio of 4:1, the voltage on the secondary winding is one-fourth of the voltage on the primary winding when the input is applied to the primary. However, if the input is applied to the secondary winding, the transformer effectively becomes a step-up transformer. The voltage ratio is inverted, and the output voltage on the primary winding is four times the input voltage on the secondary winding.
+
+Mathematically, the voltage transformation can be expressed as:
+\[
+\frac{V_p}{V_s} = \frac{N_p}{N_s}
+\]
+where \( V_p \) and \( V_s \) are the voltages on the primary and secondary windings, respectively, and \( N_p \) and \( N_s \) are the number of turns on the primary and secondary windings, respectively. For a 4:1 step-down transformer, \( N_p = 4N_s \). If the input is applied to the secondary winding, the equation becomes:
+\[
+V_p = V_s \times \frac{N_p}{N_s} = V_s \times 4
+\]
+Thus, the output voltage on the primary winding is four times the input voltage on the secondary winding.
+
+% Diagram prompt: Generate a diagram showing a 4:1 step-down transformer with the input applied to the secondary winding and the output on the primary winding, illustrating the voltage transformation.

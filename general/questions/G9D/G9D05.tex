@@ -1,0 +1,26 @@
+\subsection{Advantage of Vertically Stacking Horizontally Polarized Yagi Antennas}
+\label{G9D05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9D05]
+What is an advantage of vertically stacking horizontally polarized Yagi antennas?
+\begin{enumerate}[label=\Alph*)]
+    \item It allows quick selection of vertical or horizontal polarization
+    \item It allows simultaneous vertical and horizontal polarization
+    \item It narrows the main lobe in azimuth
+    \item \textbf{It narrows the main lobe in elevation}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a flashlight that shines a wide beam of light. If you stack two flashlights vertically, the beam becomes taller but narrower. Similarly, when you stack Yagi antennas vertically, the signal beam becomes narrower in the up-and-down direction (elevation). This helps in focusing the signal more precisely where you want it to go, like aiming a laser pointer instead of a floodlight.
+
+\subsubsection{Advanced Explanation}
+Vertically stacking horizontally polarized Yagi antennas affects the radiation pattern by reducing the beamwidth in the elevation plane. The vertical stacking increases the effective aperture in the vertical dimension, which results in a narrower main lobe in elevation. This can be mathematically understood by considering the array factor of the stacked antennas. The array factor \( AF(\theta) \) for two vertically stacked antennas separated by a distance \( d \) is given by:
+
+\[
+AF(\theta) = 2 \cos\left(\frac{\pi d \sin(\theta)}{\lambda}\right)
+\]
+
+where \( \theta \) is the elevation angle, \( d \) is the separation distance, and \( \lambda \) is the wavelength. The narrower main lobe in elevation improves the directivity and gain in the vertical plane, making the antenna system more efficient for long-distance communication.
+
+% Diagram Prompt: Generate a diagram showing two horizontally polarized Yagi antennas stacked vertically, with the resulting radiation pattern showing a narrower main lobe in elevation.

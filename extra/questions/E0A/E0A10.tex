@@ -1,0 +1,36 @@
+\subsection{RF Exposure Evaluations: Timing for 80-Meter Amateurs}
+\label{sec:E0A10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{Question E0A10:} When must an RF exposure evaluation be performed on an amateur station operating on 80 meters?
+    
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{An evaluation must always be performed}
+        \item When the ERP of the station is less than 10 watts
+        \item When the station’s operating mode is CW
+        \item When the output power from the transmitter is less than 100 watts
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a radio station that operates on the 80-meter band. Just like how you need to check if the sun is too strong before going outside to avoid sunburn, you need to check if the radio waves from your station are safe for people around it. This check is called an RF exposure evaluation. For 80-meter stations, this check is always necessary, no matter how much power your station is using or what mode it’s operating in. It’s like a safety rule that you always follow to make sure everyone is safe.
+
+\subsubsection{Advanced Explanation}
+An RF exposure evaluation is a critical safety assessment to ensure that the electromagnetic fields (EMF) emitted by an amateur radio station do not exceed the permissible exposure limits set by regulatory bodies such as the FCC. For amateur stations operating on the 80-meter band (3.5–4.0 MHz), the evaluation must always be performed, regardless of the station’s effective radiated power (ERP), operating mode, or transmitter output power. This is because the 80-meter band falls within the frequency range where human exposure to RF energy can have significant biological effects, and thus, continuous monitoring is essential.
+
+The evaluation involves calculating the power density of the RF fields at various distances from the antenna and comparing these values to the maximum permissible exposure (MPE) limits. The calculation typically considers factors such as the antenna gain, transmitter power, and the duty cycle of the transmission. For example, the power density \( S \) at a distance \( d \) from the antenna can be estimated using the formula:
+
+\[
+S = \frac{P \cdot G}{4 \pi d^2}
+\]
+
+where:
+\begin{itemize}
+    \item \( P \) is the transmitter power in watts,
+    \item \( G \) is the antenna gain relative to an isotropic radiator,
+    \item \( d \) is the distance from the antenna in meters.
+\end{itemize}
+
+This calculation ensures that the RF exposure remains within safe limits, protecting both the operator and the public from potential health risks associated with prolonged exposure to RF energy.
+
+% Prompt for diagram: A diagram showing the relationship between transmitter power, antenna gain, and power density at various distances from the antenna could help visualize the RF exposure evaluation process.

@@ -1,0 +1,24 @@
+\subsection{Selecting a Sideband in a Balanced Modulator}
+\label{G7C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C01]
+What circuit is used to select one of the sidebands from a balanced modulator?
+\begin{enumerate}[label=\Alph*)]
+    \item Carrier oscillator
+    \item \textbf{Filter}
+    \item IF amplifier
+    \item RF amplifier
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re at a pizza party, and the chef has made a giant pizza with all the toppings mixed together. But you only want the pepperoni slices. What do you do? You use a filter (like a strainer) to pick out just the pepperoni! In radio terms, the balanced modulator creates a pizza with two sidebands (like two toppings), and the filter helps you pick out just the one you want. Easy, right?
+
+\subsubsection{Advanced Explanation}
+A balanced modulator generates a double-sideband suppressed carrier (DSB-SC) signal, which contains both the upper and lower sidebands. To isolate a single sideband, a filter is employed. The filter is designed to pass the desired sideband while attenuating the other. Mathematically, if the modulated signal is represented as:
+
+\[ s(t) = m(t) \cdot \cos(2\pi f_c t) \]
+
+where \( m(t) \) is the message signal and \( f_c \) is the carrier frequency, the upper and lower sidebands are located at \( f_c + f_m \) and \( f_c - f_m \), respectively. A bandpass filter centered at \( f_c + f_m \) or \( f_c - f_m \) can be used to select the desired sideband. The filter's transfer function \( H(f) \) is designed to have a passband that includes the desired sideband and a stopband that suppresses the other sideband and any residual carrier.
+
+% Diagram prompt: Generate a diagram showing a balanced modulator followed by a filter, with the input signal, modulated signal, and filtered signal labeled.

@@ -1,0 +1,29 @@
+\subsection{Bistable Bliss: Unraveling the Circuit!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E7A01}]
+\textbf{Which circuit is bistable?}
+\begin{enumerate}[label=\Alph*)]
+    \item An AND gate
+    \item An OR gate
+    \item \textbf{A flip-flop}
+    \item A bipolar amplifier
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a light switch in your room. When you flip it up, the light turns on, and when you flip it down, the light turns off. The switch stays in the position you left it until you change it again. A bistable circuit works similarly—it has two stable states, just like the on and off positions of a switch. Among the options, a flip-flop is a circuit that can stay in one of two states until something changes it, making it bistable.
+
+\subsubsection{Advanced Explanation}
+A bistable circuit is one that has two stable states and can remain in either state indefinitely until an external trigger causes it to switch to the other state. This behavior is characteristic of a flip-flop, which is a fundamental building block in digital electronics. Flip-flops are used in memory circuits, counters, and registers because they can store a single bit of information (0 or 1).
+
+Mathematically, a flip-flop can be represented by its state transition equations. For example, in a basic SR (Set-Reset) flip-flop, the next state \( Q_{n+1} \) is determined by the current state \( Q_n \) and the inputs \( S \) (Set) and \( R \) (Reset):
+
+\[
+Q_{n+1} = S + \overline{R} \cdot Q_n
+\]
+
+Here, \( S \) and \( R \) are the inputs, and \( Q_n \) is the current state. The flip-flop will change its state based on these inputs, but it will remain in that state until the inputs change again.
+
+In contrast, an AND gate, OR gate, and bipolar amplifier do not have this bistable property. An AND gate outputs true only if all its inputs are true, an OR gate outputs true if at least one of its inputs is true, and a bipolar amplifier is an analog device that amplifies signals. None of these circuits have the ability to store a state like a flip-flop does.
+
+% Prompt for diagram: A diagram showing the basic structure of an SR flip-flop with labeled inputs (S and R) and outputs (Q and Q') would be helpful here.

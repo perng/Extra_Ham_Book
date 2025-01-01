@@ -1,0 +1,29 @@
+\subsection{Boosting Antenna Quality: The Exciting Effects of Higher Q!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E9D08}]
+\textbf{What happens as the Q of an antenna increases?}
+\begin{enumerate}[label=\Alph*)]
+    \item SWR bandwidth increases
+    \item \textbf{SWR bandwidth decreases}
+    \item Gain is reduced
+    \item More common-mode current is present on the feed line
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your antenna is like a guitar string. When you pluck it, it vibrates at a certain frequency. The Q of the antenna is like how tight or focused that vibration is. If you increase the Q, it's like tightening the string even more—it vibrates at a very specific frequency, but it doesn't handle other frequencies as well. So, the bandwidth (the range of frequencies it can handle) gets smaller. Think of it like a picky eater who only likes one type of food—the higher the Q, the pickier the antenna gets!
+
+\subsubsection{Advanced Explanation}
+The quality factor (Q) of an antenna is a measure of its efficiency in terms of energy storage and dissipation. Mathematically, Q is defined as:
+
+\[
+Q = \frac{f_0}{\Delta f}
+\]
+
+where \( f_0 \) is the resonant frequency and \( \Delta f \) is the bandwidth. As Q increases, the bandwidth \( \Delta f \) decreases, which means the antenna becomes more selective in the frequencies it can effectively transmit or receive. This is because a higher Q indicates lower energy loss relative to the energy stored in the antenna's near field.
+
+The relationship between Q and bandwidth is inversely proportional. Therefore, as Q increases, the SWR (Standing Wave Ratio) bandwidth decreases. This is because the antenna's impedance matching becomes more critical at higher Q values, leading to a narrower range of frequencies where the SWR is acceptable.
+
+In practical terms, a high-Q antenna is more efficient at its resonant frequency but less capable of handling a wide range of frequencies. This is why high-Q antennas are often used in applications where frequency selectivity is crucial, such as in narrowband communication systems.
+
+% [Prompt for diagram: A graph showing the relationship between Q and bandwidth, with Q on the x-axis and bandwidth on the y-axis, illustrating the inverse proportionality.]

@@ -1,0 +1,30 @@
+\subsection{SWR Reading of 4:1}
+\label{T7C06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C06]
+What does an SWR reading of 4:1 indicate?
+\begin{enumerate}[label=\Alph*)]
+    \item Loss of -4 dB
+    \item Good impedance match
+    \item Gain of +4 dB
+    \item \textbf{Impedance mismatch}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to pour water from a big jug into a small cup. If the jug is too big or the cup is too small, you'll end up spilling a lot of water. This is kind of like what happens with an SWR (Standing Wave Ratio) reading of 4:1. It tells us that the radio waves are not flowing smoothly from the transmitter to the antenna because there's a mismatch in their sizes (or in technical terms, their impedances). So, instead of all the energy going out as a nice signal, some of it bounces back, causing a mess. That's why an SWR of 4:1 means there's an impedance mismatch.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of how well the impedance of the transmitter matches the impedance of the antenna. When the impedances match perfectly, the SWR is 1:1, indicating that all the power is transferred from the transmitter to the antenna without any reflection. However, when there is a mismatch, some of the power is reflected back towards the transmitter, creating standing waves.
+
+The SWR is calculated as:
+\[
+\text{SWR} = \frac{V_{\text{max}}}{V_{\text{min}}}
+\]
+where \(V_{\text{max}}\) is the maximum voltage of the standing wave and \(V_{\text{min}}\) is the minimum voltage.
+
+An SWR of 4:1 indicates a significant impedance mismatch. This means that the impedance of the antenna is either much higher or much lower than the impedance of the transmission line. As a result, a substantial portion of the transmitted power is reflected back, reducing the efficiency of the transmission.
+
+In practical terms, an SWR of 4:1 suggests that the system is not operating optimally, and adjustments may be needed to improve the impedance match, such as using an antenna tuner or adjusting the antenna length.
+
+% Diagram prompt: Generate a diagram showing the relationship between SWR, impedance mismatch, and reflected power.

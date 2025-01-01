@@ -1,0 +1,28 @@
+\subsection{NVIS Antenna Effectiveness on 40 Meters}
+\label{G9D01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9D01]
+Which of the following antenna types will be most effective as a near vertical incidence skywave (NVIS) antenna for short-skip communications on 40 meters during the day?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{A horizontal dipole placed between 1/10 and 1/4 wavelength above the ground}
+    \item A vertical antenna placed between 1/4 and 1/2 wavelength above the ground
+    \item A horizontal dipole placed at approximately 1/2 wavelength above the ground
+    \item A vertical dipole placed at approximately 1/2 wavelength above the ground
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to throw a ball straight up into the sky so it comes back down close to where you are. If you throw it too high, it might go too far and land somewhere else. If you throw it just right, it will come back down near you. An NVIS antenna works like this—it sends radio waves almost straight up so they bounce off the ionosphere and come back down close to the transmitter. For this to work best on the 40-meter band during the day, you need a horizontal dipole antenna placed not too high above the ground—just like throwing the ball at the right height.
+
+\subsubsection{Advanced Explanation}
+Near Vertical Incidence Skywave (NVIS) propagation is a technique used for short-range communications, typically within 0-300 miles. The key to effective NVIS operation is to ensure that the radiation pattern of the antenna is directed almost vertically. For the 40-meter band (7 MHz), the optimal height for a horizontal dipole antenna is between 1/10 and 1/4 wavelength above the ground. This height ensures that the antenna's radiation pattern is maximized for near-vertical incidence.
+
+The wavelength (\(\lambda\)) for 40 meters is calculated as:
+\[
+\lambda = \frac{c}{f} = \frac{3 \times 10^8 \text{ m/s}}{7 \times 10^6 \text{ Hz}} \approx 42.86 \text{ meters}
+\]
+Thus, 1/10 of the wavelength is approximately 4.29 meters, and 1/4 of the wavelength is approximately 10.71 meters. Placing the horizontal dipole within this range ensures that the antenna's radiation pattern is optimized for NVIS propagation.
+
+A vertical antenna, on the other hand, tends to have a radiation pattern that is more horizontal, which is not ideal for NVIS. Similarly, placing the dipole at 1/2 wavelength above the ground (approximately 21.43 meters) would result in a radiation pattern that is more suitable for long-distance communication rather than short-skip NVIS.
+
+% Diagram prompt: Generate a diagram showing the radiation patterns of a horizontal dipole at different heights above the ground, highlighting the optimal height range for NVIS on the 40-meter band.

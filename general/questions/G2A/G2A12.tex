@@ -1,0 +1,34 @@
+\subsection{Proper ALC Setting Control on a Single Sideband Transceiver}\label{G2A12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A12]
+What control is typically adjusted for proper ALC setting on a single sideband transceiver?
+\begin{enumerate}[label=\Alph*]
+    \item RF clipping level
+    \item \textbf{Transmit audio or microphone gain}
+    \item Antenna inductance or capacitance
+    \item Attenuator level
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're talking into a walkie-talkie. If you speak too softly, no one can hear you. If you shout, it might sound distorted. The ALC (Automatic Level Control) is like a volume knob that keeps your voice just right—not too loud, not too soft. To set it properly, you adjust the microphone gain, which is like telling the walkie-talkie how sensitive it should be to your voice. If you set it too high, it’s like shouting; too low, and it’s like whispering. So, the correct control to adjust is the Transmit audio or microphone gain.
+
+\subsubsection{Advanced Explanation}
+The ALC (Automatic Level Control) in a single sideband (SSB) transceiver is a feedback mechanism that ensures the transmitted signal remains within optimal levels to avoid distortion or over-modulation. The ALC circuit monitors the output signal and adjusts the gain of the transmitter's audio stages accordingly. 
+
+The primary control for setting the ALC is the Transmit audio or microphone gain. This control adjusts the input level of the audio signal before it is modulated onto the carrier wave. Proper adjustment ensures that the signal remains within the linear range of the transmitter, preventing distortion and ensuring clear communication.
+
+Mathematically, the ALC can be represented as a feedback loop where the output signal \( V_{\text{out}} \) is compared to a reference level \( V_{\text{ref}} \). The error signal \( e(t) \) is then used to adjust the gain \( G \) of the audio amplifier:
+
+\[
+e(t) = V_{\text{ref}} - V_{\text{out}}
+\]
+\[
+G(t) = G_0 + k \cdot e(t)
+\]
+
+where \( G_0 \) is the initial gain and \( k \) is the feedback gain constant. By adjusting the microphone gain, you effectively control \( G_0 \), ensuring that the ALC can maintain the output signal within the desired range.
+
+Other controls, such as RF clipping level, antenna inductance or capacitance, and attenuator level, do not directly influence the ALC setting. RF clipping level affects the peak power output, antenna inductance or capacitance tunes the antenna resonance, and attenuator level reduces the signal strength, but none of these directly adjust the audio input level that the ALC monitors.
+
+% Diagram prompt: A block diagram showing the ALC feedback loop in a single sideband transceiver, including the microphone gain control, audio amplifier, modulator, and feedback path.

@@ -1,0 +1,26 @@
+\subsection{Radiation Pattern of a Dipole Antenna}
+\label{G9B04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9B04]
+What is the radiation pattern of a dipole antenna in free space in a plane containing the conductor?
+\begin{enumerate}[label=\Alph*]
+    \item \textbf{It is a figure-eight at right angles to the antenna}
+    \item It is a figure-eight off both ends of the antenna
+    \item It is a circle (equal radiation in all directions)
+    \item It has a pair of lobes on one side of the antenna and a single lobe on the other side
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a straight piece of wire, like a jump rope, stretched out in front of you. Now, if you shake it up and down, the energy you put into the rope spreads out in a pattern that looks like a figure-eight. This is similar to how a dipole antenna works! The antenna sends out radio waves in a figure-eight shape, with the strongest signal going out to the sides, not the ends. So, if you're standing to the side of the antenna, you'll get a strong signal, but if you're at the ends, it will be much weaker.
+
+\subsubsection{Advanced Explanation}
+The radiation pattern of a dipole antenna in free space is determined by the distribution of current along the antenna and the resulting electromagnetic fields. In a plane containing the conductor, the radiation pattern is a figure-eight, also known as a doughnut shape in three dimensions. This pattern arises because the current distribution along the dipole is sinusoidal, with maximum current at the center and zero current at the ends. The electric field is strongest perpendicular to the antenna, leading to the figure-eight pattern.
+
+Mathematically, the radiation intensity \( U(\theta, \phi) \) of a dipole antenna is given by:
+\[
+U(\theta, \phi) = \frac{\eta}{2} \left| \frac{I_0 l}{2 \lambda} \right|^2 \sin^2 \theta
+\]
+where \( \eta \) is the intrinsic impedance of free space, \( I_0 \) is the peak current, \( l \) is the length of the dipole, \( \lambda \) is the wavelength, and \( \theta \) is the angle from the axis of the dipole. The \( \sin^2 \theta \) term indicates that the radiation is maximum at \( \theta = 90^\circ \) and zero at \( \theta = 0^\circ \) and \( 180^\circ \), confirming the figure-eight pattern.
+
+% Diagram prompt: Generate a diagram showing the radiation pattern of a dipole antenna in a plane containing the conductor, illustrating the figure-eight shape.

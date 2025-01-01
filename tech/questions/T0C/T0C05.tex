@@ -1,0 +1,30 @@
+\subsection{Exposure Limits and Frequency}
+\label{T0C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T0C05]
+Why do exposure limits vary with frequency?
+\begin{enumerate}[label=\Alph*)]
+    \item Lower frequency RF fields have more energy than higher frequency fields
+    \item Lower frequency RF fields do not penetrate the human body
+    \item Higher frequency RF fields are transient in nature
+    \item \textbf{The human body absorbs more RF energy at some frequencies than at others}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your body is like a sponge, and radio waves are like water. Just like a sponge absorbs water differently depending on how wet it already is, your body absorbs radio waves differently depending on their frequency. Some frequencies are like a light drizzle that the sponge barely notices, while others are like a heavy downpour that the sponge soaks up quickly. This is why exposure limits vary with frequency—your body is more sensitive to certain downpours of radio waves.
+
+\subsubsection{Advanced Explanation}
+The human body's absorption of RF energy is frequency-dependent due to the interaction between electromagnetic fields and biological tissues. This phenomenon is quantified by the Specific Absorption Rate (SAR), which measures the rate at which energy is absorbed by the body when exposed to an RF electromagnetic field. The SAR is given by:
+
+\[
+\text{SAR} = \frac{\sigma |E|^2}{\rho}
+\]
+
+where \(\sigma\) is the conductivity of the tissue, \(E\) is the electric field strength, and \(\rho\) is the mass density of the tissue.
+
+At certain frequencies, the body's tissues resonate, leading to higher absorption rates. For example, the resonance frequency for the human body is around 70 MHz, where the absorption is maximized. This is why exposure limits are stricter at frequencies where the body absorbs more energy, to prevent excessive heating and potential tissue damage.
+
+Additionally, the penetration depth of RF fields into the body also varies with frequency. Lower frequencies tend to penetrate deeper, while higher frequencies are absorbed more superficially. This further influences the exposure limits, as deeper penetration can affect internal organs more significantly.
+
+% Diagram prompt: A graph showing SAR vs. frequency, highlighting the resonance frequency of the human body.

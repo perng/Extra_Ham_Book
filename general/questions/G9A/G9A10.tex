@@ -1,0 +1,32 @@
+\subsection{Standing Wave Ratio Calculation}
+\label{G9A10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A10]
+What standing wave ratio results from connecting a 50-ohm feed line to a 10-ohm resistive load?
+\begin{enumerate}[label=\Alph*]
+    \item 2:1
+    \item 1:2
+    \item 1:5
+    \item \textbf{5:1}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to push a swing. If the swing is too light, your push doesn't do much, and if it's too heavy, you can't move it at all. Now, think of the 50-ohm feed line as your push and the 10-ohm load as the swing. The mismatch between the push and the swing creates a standing wave, which is like the swing moving back and forth unevenly. The ratio of this unevenness is 5:1, meaning the swing moves five times more in one direction than the other. So, the standing wave ratio is 5:1!
+
+\subsubsection{Advanced Explanation}
+The standing wave ratio (SWR) is a measure of impedance mismatch between a transmission line and its load. It is calculated using the formula:
+
+\[
+\text{SWR} = \frac{Z_0}{Z_L} \quad \text{if} \quad Z_0 > Z_L
+\]
+
+where \( Z_0 \) is the characteristic impedance of the feed line (50 ohms) and \( Z_L \) is the load impedance (10 ohms). Plugging in the values:
+
+\[
+\text{SWR} = \frac{50}{10} = 5
+\]
+
+Thus, the SWR is 5:1. This indicates a significant mismatch, which can lead to power loss and potential damage to the transmitter. Understanding SWR is crucial for optimizing radio frequency (RF) systems and ensuring efficient power transfer.
+
+% Diagram prompt: A diagram showing a 50-ohm feed line connected to a 10-ohm resistive load, with arrows indicating the direction of the standing wave and labels for SWR calculation.

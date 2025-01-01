@@ -1,0 +1,45 @@
+\subsection{Understanding Impedance: The Mystery of a Shorted 1/2-Wavelength Line!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{Question E9F04}]
+What impedance does a 1/2-wavelength transmission line present to an RF generator when the line is shorted at the far end?
+\begin{enumerate}[label=\Alph*)]
+    \item Very high impedance
+    \item \textbf{Very low impedance}
+    \item The same as the characteristic impedance of the line
+    \item The same as the output impedance of the RF generator
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a jump rope that’s exactly the right length so that when you shake it, it makes one big wave from your hand to the other end and back. Now, if you tie the other end of the rope to a pole (shorting it), what happens? The rope can’t move much at the tied end, so it’s like the rope is really stiff there. In the world of radio waves, this stiffness is called impedance. When the rope (or transmission line) is exactly half a wavelength long and shorted at the end, it’s like the rope is super stiff at your end too. So, the impedance is very low—it’s like the rope is saying, “I can’t move much here either!”
+
+\subsubsection{Advanced Explanation}
+To understand this concept mathematically, we need to delve into the behavior of transmission lines. A transmission line can be modeled using the telegrapher's equations, which describe how voltage and current propagate along the line. The impedance \( Z_{\text{in}} \) at the input of a transmission line of length \( l \), characteristic impedance \( Z_0 \), and terminated with a load impedance \( Z_L \) is given by:
+
+\[
+Z_{\text{in}} = Z_0 \frac{Z_L + j Z_0 \tan(\beta l)}{Z_0 + j Z_L \tan(\beta l)}
+\]
+
+where \( \beta = \frac{2\pi}{\lambda} \) is the phase constant, and \( \lambda \) is the wavelength.
+
+For a 1/2-wavelength transmission line (\( l = \frac{\lambda}{2} \)), the tangent term becomes:
+
+\[
+\tan(\beta l) = \tan\left(\frac{2\pi}{\lambda} \cdot \frac{\lambda}{2}\right) = \tan(\pi) = 0
+\]
+
+Substituting this into the impedance equation:
+
+\[
+Z_{\text{in}} = Z_0 \frac{Z_L + j Z_0 \cdot 0}{Z_0 + j Z_L \cdot 0} = Z_0 \frac{Z_L}{Z_0} = Z_L
+\]
+
+If the line is shorted at the far end, \( Z_L = 0 \). Therefore:
+
+\[
+Z_{\text{in}} = 0
+\]
+
+This means the input impedance of a 1/2-wavelength transmission line that is shorted at the far end is very low. This result is consistent with the intuitive explanation, where the transmission line behaves like a stiff rope, presenting minimal opposition to the RF generator.
+
+% Diagram prompt: A diagram showing a 1/2-wavelength transmission line shorted at the far end, with arrows indicating the wave propagation and the resulting low impedance at the input end.

@@ -1,0 +1,36 @@
+\subsection{E9F05: Discovering Microstrip Magic!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9F05} What is microstrip?  
+    \begin{enumerate}[label=\Alph*)]
+        \item Special shielding material designed for microwave frequencies
+        \item Miniature coax used for low power applications
+        \item Short lengths of coax mounted on printed circuit boards to minimize time delay between microwave circuits
+        \item \textbf{Precision printed circuit conductors above a ground plane that provide constant impedance interconnects at microwave frequencies}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re building a tiny highway for electricity to travel on, but this highway needs to be super precise because it’s carrying super-fast signals (like the ones in your Wi-Fi). Microstrip is like that highway! It’s a special kind of road made on a circuit board, with a flat conductor (the road) and a ground plane (the ground below the road) to keep everything stable. It’s designed to make sure the signals don’t get lost or messed up, even when they’re zooming around at microwave speeds. Think of it as the Formula 1 track for electricity!
+
+\subsubsection{Advanced Explanation}
+Microstrip is a type of transmission line used in microwave engineering. It consists of a conducting strip separated from a ground plane by a dielectric substrate. The key advantage of microstrip is its ability to provide constant impedance interconnects, which is crucial for minimizing signal reflections and ensuring efficient power transfer at microwave frequencies.
+
+The characteristic impedance \( Z_0 \) of a microstrip line can be calculated using the following formula:
+
+\[
+Z_0 = \frac{87}{\sqrt{\epsilon_r + 1.41}} \ln \left( \frac{5.98h}{0.8w + t} \right)
+\]
+
+where:
+\begin{itemize}
+    \item \( \epsilon_r \) is the relative permittivity of the dielectric substrate,
+    \item \( h \) is the thickness of the substrate,
+    \item \( w \) is the width of the conducting strip,
+    \item \( t \) is the thickness of the conducting strip.
+\end{itemize}
+
+Microstrip lines are widely used in RF and microwave circuits due to their compact size, ease of fabrication, and compatibility with printed circuit board (PCB) technology. They are essential in applications such as antennas, filters, and couplers, where precise control of impedance and signal integrity is required.
+
+% Prompt for generating a diagram: 
+% Diagram showing a cross-section of a microstrip line with labels for the conducting strip, dielectric substrate, and ground plane.

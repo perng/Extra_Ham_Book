@@ -1,0 +1,41 @@
+\subsection{Finding the Joyful Phase Angle in an RLC Circuit!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5B08] What is the phase angle between the voltage across and the current through a series RLC circuit if \( X_C \) is 300 ohms, \( R \) is 100 ohms, and \( X_L \) is 100 ohms?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{63 degrees with the voltage lagging the current}
+        \item 63 degrees with the voltage leading the current
+        \item 27 degrees with the voltage leading the current
+        \item 27 degrees with the voltage lagging the current
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a series RLC circuit, which is like a team of three players: a resistor (R), an inductor (L), and a capacitor (C). Each player has a different effect on the flow of current. The resistor resists the flow, the inductor tries to slow down changes in current, and the capacitor tries to store and release energy. 
+
+The phase angle tells us how much the voltage and current are out of sync. In this case, the capacitor is stronger than the inductor, so the voltage lags behind the current. The angle between them is 63 degrees, which means they are quite a bit out of sync.
+
+\subsubsection{Advanced Explanation}
+In a series RLC circuit, the phase angle \( \phi \) between the voltage and current can be calculated using the formula:
+
+\[
+\phi = \arctan\left(\frac{X_L - X_C}{R}\right)
+\]
+
+Given:
+\[
+X_C = 300 \, \Omega, \quad R = 100 \, \Omega, \quad X_L = 100 \, \Omega
+\]
+
+Substitute the values into the formula:
+
+\[
+\phi = \arctan\left(\frac{100 - 300}{100}\right) = \arctan\left(\frac{-200}{100}\right) = \arctan(-2)
+\]
+
+The arctangent of -2 is approximately -63 degrees. The negative sign indicates that the voltage lags behind the current. Therefore, the phase angle is 63 degrees with the voltage lagging the current.
+
+\subsubsection{Related Concepts}
+The phase angle in an RLC circuit is determined by the difference between the inductive reactance \( X_L \) and the capacitive reactance \( X_C \). The resistor \( R \) affects the magnitude of the phase angle but not its direction. The phase angle is crucial in understanding the behavior of AC circuits, especially in resonance conditions where \( X_L = X_C \), resulting in a phase angle of zero degrees.
+
+% Prompt for generating a diagram: 
+% A diagram showing a series RLC circuit with labeled components (R, L, C) and arrows indicating the direction of current and voltage phase difference.

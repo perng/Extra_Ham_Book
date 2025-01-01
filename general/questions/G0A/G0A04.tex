@@ -1,0 +1,30 @@
+\subsection{Time Averaging in RF Radiation Exposure}
+\label{G0A04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G0A04]
+What does “time averaging” mean when evaluating RF radiation exposure?
+\begin{enumerate}[label=\Alph*)]
+    \item The average amount of power developed by the transmitter over a specific 24-hour period
+    \item The average time it takes RF radiation to have any long-term effect on the body
+    \item The total time of the exposure
+    \item \textbf{The total RF exposure averaged over a certain period}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re baking cookies, and you need to know the average temperature of the oven over an hour. You don’t just look at the temperature at one moment; you check it several times and average it out. Similarly, “time averaging” in RF radiation exposure means we’re looking at the total amount of radiation you’re exposed to over a certain time and then averaging it out. This helps us understand the overall impact rather than just a single moment of exposure. Think of it like taking a bunch of snapshots of your exposure and then blending them into one picture!
+
+\subsubsection{Advanced Explanation}
+Time averaging in the context of RF radiation exposure refers to the process of calculating the total exposure to RF energy over a specified period and then determining the average exposure rate. This is crucial because RF exposure limits are often defined in terms of average power density over time, rather than instantaneous values. 
+
+Mathematically, if \( P(t) \) represents the power density at time \( t \), the time-averaged power density \( \langle P \rangle \) over a period \( T \) is given by:
+
+\[
+\langle P \rangle = \frac{1}{T} \int_{0}^{T} P(t) \, dt
+\]
+
+This integral sums up the total exposure over the time period \( T \) and then divides by \( T \) to find the average. This method ensures that short bursts of high exposure are balanced by periods of low exposure, providing a more accurate measure of the overall risk.
+
+Understanding this concept is essential for compliance with safety standards, which often specify maximum permissible exposure (MPE) limits based on time-averaged values. This approach helps in assessing the cumulative effect of RF radiation, which is particularly important for long-term exposure scenarios.
+
+% Prompt for diagram: A graph showing power density \( P(t) \) over time \( t \), with a horizontal line indicating the time-averaged power density \( \langle P \rangle \).

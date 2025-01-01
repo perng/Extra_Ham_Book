@@ -1,0 +1,26 @@
+\subsection{Minimum Separation for SSB Transmitting Frequency}
+\label{G2B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2B05]
+When selecting an SSB transmitting frequency, what minimum separation should be used to minimize interference to stations on adjacent frequencies?
+\begin{enumerate}[label=\Alph*]
+    \item 5 Hz to 50 Hz
+    \item 150 Hz to 500 Hz
+    \item \textbf{2 kHz to 3 kHz}
+    \item Approximately 6 kHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and your friends are talking in a room. If everyone stands too close together, it’s hard to hear what each person is saying because the voices overlap. To avoid this, you need to stand a certain distance apart. Similarly, when using Single Sideband (SSB) radio, if the frequencies are too close, the signals will interfere with each other. To prevent this, you need to keep the frequencies at least 2 to 3 kHz apart. This way, everyone’s voice (signal) can be heard clearly without stepping on each other’s toes!
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a technique used in radio communications to efficiently transmit voice signals. The bandwidth of an SSB signal is typically around 2.4 kHz, which includes the essential components of the voice signal. To minimize interference between adjacent channels, a minimum frequency separation equal to the bandwidth of the SSB signal is required. 
+
+Mathematically, the bandwidth \( B \) of an SSB signal is given by:
+\[ B = f_{\text{max}} - f_{\text{min}} \]
+where \( f_{\text{max}} \) and \( f_{\text{min}} \) are the highest and lowest frequencies in the signal, respectively. For voice signals, \( B \) is approximately 2.4 kHz. Therefore, to avoid overlap and interference, the transmitting frequencies should be separated by at least this bandwidth. 
+
+In practice, a separation of 2 to 3 kHz is recommended to ensure clear communication and minimize the risk of adjacent channel interference. This separation allows each signal to occupy its own frequency space without overlapping with neighboring signals, thus maintaining the integrity of the transmitted information.
+
+% Diagram Prompt: Generate a diagram showing the frequency spectrum of SSB signals with adjacent channels separated by 2 to 3 kHz.

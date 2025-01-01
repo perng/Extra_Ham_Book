@@ -1,0 +1,26 @@
+\subsection{Phase Difference in SDR I and Q Signals}
+\label{G7C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C09]
+What is the phase difference between the I and Q RF signals that software-defined radio (SDR) equipment uses for modulation and demodulation?
+\begin{enumerate}[label=\Alph*)]
+    \item Zero
+    \item \textbf{90 degrees}
+    \item 180 degrees
+    \item 45 degrees
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you and your friend are on a merry-go-round. You’re sitting on opposite sides, so when one of you is at the top, the other is at the side. This is like the I and Q signals in SDR—they’re always 90 degrees apart, just like you and your friend on the merry-go-round. This 90-degree difference helps the radio figure out what’s being sent and received.
+
+\subsubsection*{Advanced Explanation}
+In software-defined radio (SDR), the I (In-phase) and Q (Quadrature) signals are used to represent the modulated signal in a way that simplifies both transmission and reception. The I and Q signals are orthogonal to each other, meaning they are separated by a phase difference of \(90^\circ\). This orthogonality is crucial because it allows the receiver to separate the two signals without interference, enabling the reconstruction of the original signal.
+
+Mathematically, if the I signal is represented as \(I(t) = A \cos(\omega t)\), then the Q signal is \(Q(t) = A \sin(\omega t)\). The phase difference between these two signals is:
+\[
+\Delta \phi = \phi_Q - \phi_I = 90^\circ - 0^\circ = 90^\circ
+\]
+This \(90^\circ\) phase difference ensures that the I and Q signals are independent and can be processed separately in the SDR system.
+
+% Diagram Prompt: Generate a diagram showing the I and Q signals with a 90-degree phase difference, labeled with their respective waveforms and phase angles.

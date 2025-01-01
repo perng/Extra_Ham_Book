@@ -1,0 +1,26 @@
+\subsection{Characteristics of a Direct Digital Synthesizer (DDS)}
+\label{G7C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C05]
+Which of the following is characteristic of a direct digital synthesizer (DDS)?
+\begin{enumerate}[label=\Alph*)]
+    \item Extremely narrow tuning range
+    \item Relatively high-power output
+    \item Pure sine wave output
+    \item \textbf{Variable output frequency with the stability of a crystal oscillator}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical music box that can play any note you want, but it always stays perfectly in tune, like a super precise piano. That's what a Direct Digital Synthesizer (DDS) does, but with radio waves instead of music. It can change the frequency (the note) of the radio wave, but it stays super stable, just like a crystal oscillator, which is like the metronome that keeps everything in perfect time. So, the DDS is like a DJ who can mix different beats but always keeps the rhythm spot on!
+
+\subsubsection{Advanced Explanation}
+A Direct Digital Synthesizer (DDS) is a type of frequency synthesizer that generates waveforms digitally and then converts them to analog signals using a digital-to-analog converter (DAC). The key characteristic of a DDS is its ability to produce a variable output frequency while maintaining the stability of a crystal oscillator. This is achieved through the use of a phase accumulator, which increments a phase value at each clock cycle based on a frequency control word. The phase value is then used to address a lookup table that contains the waveform data, typically a sine wave. The output frequency \( f_{\text{out}} \) can be calculated using the formula:
+
+\[
+f_{\text{out}} = \frac{f_{\text{clk}} \cdot \text{Frequency Control Word}}{2^N}
+\]
+
+where \( f_{\text{clk}} \) is the clock frequency, and \( N \) is the number of bits in the phase accumulator. The stability of the output frequency is directly tied to the stability of the crystal oscillator used for the clock, which is typically very high. This makes DDS systems ideal for applications requiring precise and stable frequency generation, such as in communications and signal processing.
+
+% Diagram prompt: A diagram showing the block diagram of a DDS system, including the phase accumulator, lookup table, and DAC, would be helpful here.

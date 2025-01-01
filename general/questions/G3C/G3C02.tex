@@ -1,0 +1,42 @@
+\subsection{Critical Frequency at a Given Incidence Angle}
+\label{G3C02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3C02]
+What is meant by the term “critical frequency” at a given incidence angle?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{The highest frequency which is refracted back to Earth}
+    \item The lowest frequency which is refracted back to Earth
+    \item The frequency at which the signal-to-noise ratio approaches unity
+    \item The frequency at which the signal-to-noise ratio is 6 dB
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're throwing a ball against a wall. If you throw it too hard, it might just go over the wall and never come back. But if you throw it just right, it bounces back to you. The critical frequency is like the perfect throw—it's the highest frequency that can bounce back to Earth instead of going straight through the atmosphere. If the frequency is higher than this, it’s like throwing the ball too hard—it just keeps going!
+
+\subsubsection{Advanced Explanation}
+The critical frequency, denoted as \( f_c \), is the maximum frequency at which a radio wave can be refracted back to Earth when it is incident on the ionosphere at a given angle. This phenomenon is governed by the Snell's law of refraction:
+
+\[
+n_1 \sin \theta_1 = n_2 \sin \theta_2
+\]
+
+where \( n_1 \) and \( n_2 \) are the refractive indices of the two media, and \( \theta_1 \) and \( \theta_2 \) are the angles of incidence and refraction, respectively. In the context of the ionosphere, the refractive index depends on the electron density, which varies with altitude.
+
+The critical frequency can be calculated using the formula:
+
+\[
+f_c = \sqrt{\frac{N_e e^2}{\pi m_e \epsilon_0}}
+\]
+
+where:
+\begin{itemize}
+    \item \( N_e \) is the electron density,
+    \item \( e \) is the electron charge,
+    \item \( m_e \) is the electron mass,
+    \item \( \epsilon_0 \) is the permittivity of free space.
+\end{itemize}
+
+This frequency is crucial for determining the maximum usable frequency (MUF) for radio communication, as frequencies above \( f_c \) will not be refracted back to Earth but will instead penetrate the ionosphere.
+
+% Diagram prompt: Generate a diagram showing the refraction of radio waves at different frequencies, with the critical frequency marked as the highest frequency that is refracted back to Earth.

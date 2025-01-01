@@ -1,0 +1,32 @@
+\subsection{Low-Pass Filter Output Power Frequency}
+\label{G7C12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C12]
+What is the frequency above which a low-pass filter’s output power is less than half the input power?
+\begin{enumerate}[label=\Alph*)]
+    \item Notch frequency
+    \item Neper frequency
+    \item \textbf{Cutoff frequency}
+    \item Rolloff frequency
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a water hose with a filter that only lets through a certain amount of water. If you turn up the water pressure (which is like increasing the frequency), the filter starts to block more and more water. The cutoff frequency is like the point where the filter is only letting through half the water it used to. So, if you go above this point, the filter is really doing its job and blocking most of the water!
+
+\subsubsection*{Advanced Explanation}
+A low-pass filter allows signals with a frequency lower than a certain cutoff frequency to pass through, while attenuating signals with frequencies higher than the cutoff frequency. The cutoff frequency, denoted as \( f_c \), is the frequency at which the output power of the filter is reduced to half the input power. This is also known as the -3 dB point because the power is reduced by 3 decibels at this frequency.
+
+Mathematically, the power ratio in decibels is given by:
+\[
+\text{dB} = 10 \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
+\]
+At the cutoff frequency, the power ratio is:
+\[
+10 \log_{10}\left(\frac{1}{2}\right) \approx -3 \text{ dB}
+\]
+Thus, the cutoff frequency is the frequency at which the filter's output power is half the input power.
+
+Related concepts include the transfer function of the filter, which describes how the filter affects different frequencies, and the rolloff rate, which indicates how quickly the filter attenuates frequencies above the cutoff frequency.
+
+% Diagram Prompt: Generate a diagram showing the frequency response of a low-pass filter, highlighting the cutoff frequency where the output power drops to half the input power.

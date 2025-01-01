@@ -1,0 +1,24 @@
+\subsection{Output of a Balanced Modulator}
+\label{G7C02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C02]
+What output is produced by a balanced modulator?
+\begin{enumerate}[label=\Alph*]
+    \item Frequency modulated RF
+    \item Audio with equalized frequency response
+    \item Audio extracted from the modulation signal
+    \item \textbf{Double-sideband modulated RF}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magic blender that takes two ingredients: a carrier wave (like a radio signal) and an audio signal (like your voice). A balanced modulator is like this blender. Instead of making a smoothie, it mixes these two signals in a special way. The result? A new signal that has two sidebands — one above and one below the original carrier frequency. This is called double-sideband modulated RF. It’s like the carrier wave got a twin on each side!
+
+\subsubsection{Advanced Explanation}
+A balanced modulator is a circuit that combines a carrier wave \( c(t) = A_c \cos(2\pi f_c t) \) with a modulating signal \( m(t) \) to produce a double-sideband suppressed carrier (DSB-SC) signal. The output \( s(t) \) can be expressed as:
+
+\[ s(t) = m(t) \cdot A_c \cos(2\pi f_c t) \]
+
+This results in a signal that contains two sidebands: one at \( f_c + f_m \) and another at \( f_c - f_m \), where \( f_m \) is the frequency of the modulating signal. The carrier itself is suppressed, hence the term suppressed carrier. This type of modulation is efficient in terms of power usage and bandwidth, making it a popular choice in communication systems.
+
+% Prompt for diagram: Generate a diagram showing the frequency spectrum of a double-sideband modulated signal, with the carrier frequency \( f_c \) and the two sidebands \( f_c + f_m \) and \( f_c - f_m \).

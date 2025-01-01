@@ -1,0 +1,37 @@
+\subsection{Brightening Up Your Circuit: What’s the Output Voltage?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7G09] What will be the output voltage of the circuit shown in Figure E7-3 if R1 is 1,000 ohms, RF is 10,000 ohms, and 0.23 volts DC is applied to the input?
+    \begin{enumerate}[label=\Alph*)]
+        \item 0.23 volts
+        \item 2.3 volts
+        \item -0.23 volts
+        \item \textbf{-2.3 volts}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a simple machine that takes a small amount of energy and makes it bigger, but also flips it around. In this case, the machine is a special kind of circuit called an inverting amplifier. It takes a small voltage (0.23 volts) and makes it 10 times bigger, but also changes its direction. So, if you put in 0.23 volts, the output will be -2.3 volts. The negative sign means the voltage is flipped.
+
+\subsubsection{Advanced Explanation}
+The circuit in question is an inverting operational amplifier (op-amp) configuration. The output voltage \( V_{\text{out}} \) of an inverting op-amp is given by the formula:
+
+\[
+V_{\text{out}} = -\left( \frac{R_F}{R_1} \right) V_{\text{in}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( R_F \) is the feedback resistor (10,000 ohms)
+    \item \( R_1 \) is the input resistor (1,000 ohms)
+    \item \( V_{\text{in}} \) is the input voltage (0.23 volts)
+\end{itemize}
+
+Substituting the given values into the formula:
+
+\[
+V_{\text{out}} = -\left( \frac{10,000}{1,000} \right) \times 0.23 = -10 \times 0.23 = -2.3 \text{ volts}
+\]
+
+The negative sign indicates that the output voltage is inverted relative to the input voltage. This is a fundamental characteristic of the inverting amplifier configuration.
+
+% [Prompt for generating diagram: A diagram showing an inverting operational amplifier circuit with R1, RF, and the input voltage labeled.]

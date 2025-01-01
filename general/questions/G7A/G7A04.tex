@@ -1,0 +1,28 @@
+\subsection{Half-Wave Rectifier Characteristics}
+\label{G7A04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A04]
+What is characteristic of a half-wave rectifier in a power supply?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Only one diode is required}
+    \item The ripple frequency is twice that of a full-wave rectifier
+    \item More current can be drawn from the half-wave rectifier
+    \item The output voltage is two times the peak input voltage
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water hose that only lets water flow in one direction. A half-wave rectifier is like that hose—it only lets the positive part of the electricity (the water) flow through. You only need one valve (a diode) to make this happen. It’s simple, but it’s not as efficient as using two valves (like in a full-wave rectifier) because it only uses half of the electricity available.
+
+\subsubsection{Advanced Explanation}
+A half-wave rectifier is a type of rectifier that converts only one half-cycle of the AC input signal into DC. The key component in a half-wave rectifier is a single diode, which allows current to flow only during the positive half-cycle of the AC input. Mathematically, the output voltage \( V_{\text{out}} \) can be expressed as:
+
+\[
+V_{\text{out}} = V_{\text{peak}} \cdot \sin(\omega t) \quad \text{for} \quad 0 \leq \omega t \leq \pi
+\]
+
+where \( V_{\text{peak}} \) is the peak voltage of the AC input, and \( \omega \) is the angular frequency. The ripple frequency of a half-wave rectifier is equal to the input frequency, unlike a full-wave rectifier where the ripple frequency is twice the input frequency. This is because the half-wave rectifier only processes one half of the AC cycle.
+
+The primary advantage of a half-wave rectifier is its simplicity, requiring only one diode. However, it is less efficient than a full-wave rectifier, as it utilizes only half of the input AC cycle. The output voltage is not twice the peak input voltage; instead, it is approximately equal to the peak input voltage minus the diode's forward voltage drop.
+
+% Diagram Prompt: Generate a diagram showing the input AC waveform and the output DC waveform of a half-wave rectifier.

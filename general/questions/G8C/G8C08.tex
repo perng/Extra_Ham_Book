@@ -1,0 +1,26 @@
+\subsection{PSK31 Characteristics}
+\label{G8C08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C08]
+Which of the following statements is true about PSK31?
+\begin{enumerate}[label=\Alph*]
+    \item Upper case letters are sent with more power
+    \item \textbf{Upper case letters use longer Varicode bit sequences and thus slow down transmission}
+    \item Error correction is used to ensure accurate message reception
+    \item Higher power is needed as compared to RTTY for similar error rates
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a text message using PSK31, which is like a secret code for radios. Now, think of uppercase letters as wearing big, heavy boots—they take up more space and move slower. That's why sending uppercase letters in PSK31 can slow things down. It's not about power or error correction; it's just that uppercase letters have longer codes, making the transmission a bit sluggish.
+
+\subsubsection{Advanced Explanation}
+PSK31 (Phase Shift Keying, 31 Baud) is a digital communication mode that uses phase modulation to transmit data. The Varicode used in PSK31 assigns shorter bit sequences to more frequently used characters and longer sequences to less frequently used ones. Uppercase letters, being less common, are assigned longer Varicode sequences. This increases the time required to transmit these characters, effectively slowing down the transmission rate. 
+
+Mathematically, the transmission time \( T \) for a character can be expressed as:
+\[ T = \frac{n}{B} \]
+where \( n \) is the number of bits in the Varicode sequence and \( B \) is the baud rate (31 baud for PSK31). For uppercase letters, \( n \) is larger, leading to a longer \( T \).
+
+PSK31 does not inherently use error correction, and its power efficiency is comparable to other modes like RTTY, making options C and D incorrect. The key takeaway is that the Varicode's design prioritizes efficiency by assigning shorter sequences to more common characters, which inherently affects transmission speed based on the character set used.
+
+% Prompt for diagram: A diagram showing the Varicode bit sequences for lowercase and uppercase letters, with a comparison of their lengths, would be helpful here.

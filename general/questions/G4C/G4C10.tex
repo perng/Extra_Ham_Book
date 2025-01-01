@@ -1,0 +1,26 @@
+\subsection{Symptoms of Ground Loop in Audio Connections}
+\label{G4C10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C10]
+What could be a symptom caused by a ground loop in your station’s audio connections?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{You receive reports of “hum” on your station’s transmitted signal}
+    \item The SWR reading for one or more antennas is suddenly very high
+    \item An item of station equipment starts to draw excessive amounts of current
+    \item You receive reports of harmonic interference from your station
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to listen to your favorite song on the radio, but instead of clear music, you hear a constant annoying “hum” sound. This is like when you’re trying to talk to a friend, but someone keeps making a buzzing noise in the background. In radio stations, this “hum” can happen because of something called a ground loop. It’s like when two different paths for electricity don’t agree on where the ground is, and they start arguing, creating that annoying hum in your audio.
+
+\subsubsection{Advanced Explanation}
+A ground loop occurs when there are multiple grounding paths in an electrical system, leading to a difference in ground potential between different pieces of equipment. This potential difference can cause a small current to flow through the ground connections, which can introduce noise into the audio signal. The noise typically manifests as a low-frequency hum, often at 50 Hz or 60 Hz, depending on the local power grid frequency.
+
+Mathematically, the noise voltage \( V_{\text{noise}} \) can be expressed as:
+\[ V_{\text{noise}} = I_{\text{loop}} \times R_{\text{ground}} \]
+where \( I_{\text{loop}} \) is the current flowing through the ground loop and \( R_{\text{ground}} \) is the resistance of the ground path.
+
+To mitigate ground loops, it is essential to ensure that all equipment is grounded at a single point, reducing the potential for multiple ground paths. Additionally, using isolation transformers or balanced audio connections can help eliminate the noise introduced by ground loops.
+
+% Prompt for diagram: A diagram showing a typical ground loop scenario in a radio station's audio connections, illustrating multiple grounding paths and the resulting noise.

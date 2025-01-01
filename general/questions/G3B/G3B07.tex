@@ -1,0 +1,31 @@
+\subsection{LUF Definition}
+\label{G3B07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3B07]
+What does LUF stand for?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{The Lowest Usable Frequency for communications between two specific points}
+    \item Lowest Usable Frequency for communications to any point outside a 100-mile radius
+    \item The Lowest Usable Frequency during a 24-hour period
+    \item Lowest Usable Frequency during the past 60 minutes
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and your friend are trying to talk to each other using walkie-talkies. The LUF is like the lowest note you can sing that your friend can still hear clearly. If you go lower than that, your friend won't understand you. So, LUF is the lowest frequency that works for your specific chat!
+
+\subsubsection{Advanced Explanation}
+The Lowest Usable Frequency (LUF) is a critical parameter in radio communications, particularly in High Frequency (HF) bands. It represents the minimum frequency at which a signal can be effectively transmitted between two specific points, considering factors like ionospheric conditions, distance, and transmitter power. 
+
+Mathematically, the LUF can be influenced by the MUF (Maximum Usable Frequency) and the required signal-to-noise ratio (SNR). The relationship can be expressed as:
+
+\[ \text{LUF} = \text{MUF} \times \frac{\text{SNR}_{\text{required}}}{\text{SNR}_{\text{actual}}} \]
+
+Where:
+- \( \text{MUF} \) is the Maximum Usable Frequency.
+- \( \text{SNR}_{\text{required}} \) is the Signal-to-Noise Ratio needed for clear communication.
+- \( \text{SNR}_{\text{actual}} \) is the actual Signal-to-Noise Ratio at the receiver.
+
+Understanding LUF is essential for optimizing radio communication, especially in long-distance HF communications where ionospheric reflection plays a significant role.
+
+% Diagram prompt: Generate a diagram showing the relationship between LUF, MUF, and SNR in HF radio communication.

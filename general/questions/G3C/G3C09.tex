@@ -1,0 +1,38 @@
+\subsection{Signal Propagation in Skip Zones}
+\label{G3C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3C09]
+What type of propagation allows signals to be heard in the transmitting station’s skip zone?
+\begin{enumerate}[label=\Alph*)]
+    \item Faraday rotation
+    \item \textbf{Scatter}
+    \item Chordal hop
+    \item Short-path
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing a game of catch with a friend, but there's a big wall between you. You can't throw the ball directly to your friend because the wall is in the way. But what if you throw the ball really high, and it bounces off the sky? That's kind of like scatter propagation! The signal bounces off the atmosphere and lands in the skip zone, which is like the area behind the wall where your friend can still catch the ball. So, scatter propagation is like throwing the ball high enough to get around the wall.
+
+\subsubsection{Advanced Explanation}
+Scatter propagation is a phenomenon where radio signals are scattered by irregularities in the Earth's ionosphere or troposphere, allowing them to reach areas that would otherwise be in the skip zone. The skip zone is a region where direct ground wave and sky wave signals cannot be received due to the curvature of the Earth and the angle of reflection.
+
+Mathematically, scatter propagation can be described using the scattering cross-section \(\sigma\), which quantifies the efficiency of the scattering process. The received power \(P_r\) at a distance \(d\) from the transmitter can be approximated by:
+
+\[
+P_r = \frac{P_t G_t G_r \lambda^2 \sigma}{(4\pi)^3 d^4}
+\]
+
+where:
+\begin{itemize}
+    \item \(P_t\) is the transmitted power,
+    \item \(G_t\) and \(G_r\) are the gains of the transmitting and receiving antennas, respectively,
+    \item \(\lambda\) is the wavelength of the signal,
+    \item \(\sigma\) is the scattering cross-section,
+    \item \(d\) is the distance between the transmitter and receiver.
+\end{itemize}
+
+Scatter propagation is particularly useful in VHF and UHF communications, where traditional sky wave propagation is less effective. It allows signals to reach areas that are otherwise unreachable due to the Earth's curvature and the limitations of direct line-of-sight communication.
+
+% Prompt for generating a diagram: 
+% Diagram showing a transmitter, the Earth's curvature, the skip zone, and the scattered signal path reaching the skip zone.

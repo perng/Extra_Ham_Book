@@ -1,0 +1,38 @@
+\subsection{Transformer Turns Ratio for Impedance Matching}
+\label{G5C07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5C07]
+What transformer turns ratio matches an antenna’s 600-ohm feed point impedance to a 50-ohm coaxial cable?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{3.5 to 1}
+    \item 12 to 1
+    \item 24 to 1
+    \item 144 to 1
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a big water pipe (the antenna) that needs to connect to a smaller hose (the coaxial cable). The water pressure (impedance) is different in each, so you need a special adapter (transformer) to make them work together without spilling water everywhere. The adapter needs to reduce the pressure from 600 to 50, and the right adapter for this job is the one with a 3.5 to 1 ratio. It’s like using a funnel to pour a big bottle of soda into a small cup without making a mess!
+
+\subsubsection{Advanced Explanation}
+To match the impedance of the antenna (600 ohms) to the coaxial cable (50 ohms), we use a transformer with a specific turns ratio. The turns ratio \( N \) of a transformer is related to the impedance ratio by the following formula:
+
+\[
+N = \sqrt{\frac{Z_{\text{primary}}}{Z_{\text{secondary}}}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( Z_{\text{primary}} \) is the primary impedance (600 ohms).
+    \item \( Z_{\text{secondary}} \) is the secondary impedance (50 ohms).
+\end{itemize}
+
+Plugging in the values:
+
+\[
+N = \sqrt{\frac{600}{50}} = \sqrt{12} \approx 3.46
+\]
+
+Thus, the transformer turns ratio required is approximately 3.5 to 1. This ensures that the impedance is matched, allowing maximum power transfer from the antenna to the coaxial cable.
+
+% Diagram Prompt: Generate a diagram showing a transformer with a 3.5 to 1 turns ratio connecting a 600-ohm antenna to a 50-ohm coaxial cable.

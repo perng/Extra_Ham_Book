@@ -1,0 +1,26 @@
+\subsection{Number of States in a 3-bit Binary Counter}
+\label{G7B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B05]
+How many states does a 3-bit binary counter have?
+\begin{enumerate}[label=\Alph*)]
+    \item 3
+    \item 6
+    \item \textbf{8}
+    \item 16
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a tiny robot that can count using only 3 light bulbs. Each bulb can be either on (1) or off (0). Now, think about all the different ways you can arrange these bulbs. For example, all bulbs off (000), the first bulb on (001), the second bulb on (010), and so on. If you list all the possible combinations, you'll find there are 8 different ways to arrange these 3 bulbs. So, a 3-bit binary counter has 8 states, just like your robot has 8 different ways to show its count!
+
+\subsubsection{Advanced Explanation}
+A binary counter is a digital circuit that counts in binary. Each bit in the counter can be either 0 or 1. For a 3-bit binary counter, there are 3 bits, so the total number of possible states is given by \(2^n\), where \(n\) is the number of bits. 
+
+\[
+\text{Number of states} = 2^n = 2^3 = 8
+\]
+
+Thus, a 3-bit binary counter can represent 8 different states, ranging from 000 (0 in decimal) to 111 (7 in decimal). This is because each bit doubles the number of possible states. For example, 1 bit has 2 states (0 and 1), 2 bits have 4 states (00, 01, 10, 11), and 3 bits have 8 states.
+
+% Diagram prompt: Generate a diagram showing a 3-bit binary counter with all 8 states (000 to 111) represented as combinations of 3 bulbs (on/off).

@@ -1,0 +1,36 @@
+\subsection{Exploring Impedances in Polar Coordinates!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+\textbf{E5C02} How are impedances described in polar coordinates?
+
+\begin{enumerate}[label=\Alph*)]
+    \item By X and R values
+    \item By real and imaginary parts
+    \item \textbf{By magnitude and phase angle}
+    \item By Y and G values
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to describe where a treasure is buried on a map. You could say it's 10 steps north and 5 steps east, which is like using X and Y coordinates. But another way is to say it's 11.2 steps away at an angle of 26.6 degrees from north. This second way is like using polar coordinates, where you describe the distance (magnitude) and the direction (angle). In the case of impedances, we use magnitude and phase angle to describe them in polar coordinates.
+
+\subsubsection{Advanced Explanation}
+Impedance in electrical engineering is a complex quantity that combines resistance (R) and reactance (X). In rectangular coordinates, impedance \( Z \) is represented as:
+\[
+Z = R + jX
+\]
+where \( R \) is the real part (resistance) and \( X \) is the imaginary part (reactance). However, in polar coordinates, impedance is described by its magnitude \( |Z| \) and phase angle \( \theta \). The magnitude is calculated using the Pythagorean theorem:
+\[
+|Z| = \sqrt{R^2 + X^2}
+\]
+The phase angle \( \theta \) is the angle between the impedance vector and the real axis, calculated as:
+\[
+\theta = \arctan\left(\frac{X}{R}\right)
+\]
+Thus, the polar form of impedance is:
+\[
+Z = |Z| \angle \theta
+\]
+This representation is particularly useful in AC circuit analysis, where the phase relationship between voltage and current is crucial.
+
+% Diagram prompt: Generate a diagram showing the impedance vector in the complex plane, with R on the real axis, X on the imaginary axis, and the magnitude |Z| and phase angle θ labeled.

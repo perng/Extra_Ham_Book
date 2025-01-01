@@ -1,0 +1,39 @@
+\subsection{Frequency Deviation in Reactance Modulated Oscillator}
+\label{G8B07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B07]
+What is the frequency deviation for a 12.21 MHz reactance modulated oscillator in a 5 kHz deviation, 146.52 MHz FM phone transmitter?
+\begin{enumerate}[label=\Alph*)]
+    \item 101.75 Hz
+    \item \textbf{416.7 Hz}
+    \item 5 kHz
+    \item 60 kHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a radio transmitter that’s like a DJ spinning records. The DJ can speed up or slow down the record slightly to create a cool effect—this is like frequency modulation (FM). Now, inside the transmitter, there’s a special oscillator that helps control this speed change. If the DJ’s main record player (the transmitter) changes speed by 5 kHz, the little oscillator inside changes speed by a smaller amount. In this case, it’s 416.7 Hz. So, the oscillator is like a mini DJ inside the big DJ’s setup, making sure everything sounds just right!
+
+\subsubsection*{Advanced Explanation}
+Frequency deviation in an FM transmitter refers to the maximum change in frequency from the carrier frequency. In this question, the carrier frequency is 146.52 MHz, and the total frequency deviation is 5 kHz. The reactance modulated oscillator operates at 12.21 MHz. The frequency deviation of the oscillator is proportional to the ratio of its frequency to the carrier frequency.
+
+The formula to calculate the frequency deviation of the oscillator is:
+\[
+\Delta f_{\text{osc}} = \Delta f_{\text{total}} \times \frac{f_{\text{osc}}}{f_{\text{carrier}}}
+\]
+Where:
+\begin{itemize}
+    \item \(\Delta f_{\text{osc}}\) is the frequency deviation of the oscillator,
+    \item \(\Delta f_{\text{total}}\) is the total frequency deviation (5 kHz),
+    \item \(f_{\text{osc}}\) is the frequency of the oscillator (12.21 MHz),
+    \item \(f_{\text{carrier}}\) is the carrier frequency (146.52 MHz).
+\end{itemize}
+
+Plugging in the values:
+\[
+\Delta f_{\text{osc}} = 5 \text{ kHz} \times \frac{12.21 \text{ MHz}}{146.52 \text{ MHz}} = 5 \times 10^3 \times \frac{12.21 \times 10^6}{146.52 \times 10^6} = 5 \times 10^3 \times 0.0833 = 416.7 \text{ Hz}
+\]
+
+Thus, the frequency deviation of the oscillator is 416.7 Hz.
+
+% Diagram Prompt: A diagram showing the relationship between the carrier frequency, oscillator frequency, and frequency deviation could help visualize the concept.

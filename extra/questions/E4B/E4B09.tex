@@ -1,0 +1,29 @@
+\subsection{Exploring the Wonders of Two-Port Vector Network Analyzers!}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E4B09} Which of the following can be measured by a two-port vector network analyzer?
+    \begin{enumerate}[label=\Alph*)]
+        \item Phase noise
+        \item \textbf{Filter frequency response}
+        \item Pulse rise time
+        \item Forward power
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a special tool called a two-port vector network analyzer (VNA). This tool is like a super-smart detective that can figure out how well a filter works. A filter is something that lets certain frequencies pass through while blocking others. The VNA sends signals into the filter and listens to what comes out. By comparing the input and output signals, it can tell you how the filter behaves at different frequencies. This is called the frequency response. So, the VNA can measure the filter's frequency response, but it can't measure things like how noisy a signal is (phase noise), how fast a pulse rises (pulse rise time), or how much power is going forward (forward power).
+
+\subsubsection{Advanced Explanation}
+A two-port vector network analyzer (VNA) is an instrument used to measure the scattering parameters (S-parameters) of a two-port network. S-parameters describe how electrical signals propagate through a network, providing insights into the network's behavior across different frequencies. 
+
+For a filter, the S-parameters, particularly \( S_{21} \) (the transmission coefficient), are crucial. \( S_{21} \) indicates how much of the input signal at one port is transmitted to the other port. By measuring \( S_{21} \) across a range of frequencies, the VNA can determine the filter's frequency response, which shows how the filter attenuates or passes signals at different frequencies.
+
+Mathematically, the frequency response \( H(f) \) of a filter can be expressed as:
+\[
+H(f) = \frac{V_{\text{out}}(f)}{V_{\text{in}}(f)}
+\]
+where \( V_{\text{in}}(f) \) and \( V_{\text{out}}(f) \) are the input and output voltages at frequency \( f \), respectively. The VNA measures these voltages and computes the frequency response.
+
+Other measurements like phase noise, pulse rise time, and forward power require different instruments. Phase noise is typically measured using a spectrum analyzer, pulse rise time with an oscilloscope, and forward power with a power meter.
+
+% Diagram prompt: Generate a diagram showing a two-port network with input and output signals, labeled with S-parameters \( S_{11} \), \( S_{12} \), \( S_{21} \), and \( S_{22} \).

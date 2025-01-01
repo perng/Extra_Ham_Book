@@ -1,0 +1,60 @@
+\subsection{E9A02: Boosting Signals: Calculating ERP of a Repeater Station!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E9A02}]
+\textbf{What is the effective radiated power (ERP) of a repeater station with 150 watts transmitter power output, 2 dB feed line loss, 2.2 dB duplexer loss, and 7 dBd antenna gain?}
+\begin{enumerate}[label=\Alph*)]
+    \item 469 watts
+    \item 78.7 watts
+    \item 420 watts
+    \item \textbf{286 watts}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a super cool walkie-talkie that sends out a signal. But before the signal reaches your friend, it has to go through a few obstacles: a long cable, a special filter, and finally, a super antenna that makes the signal stronger. The cable and the filter make the signal a bit weaker, but the antenna gives it a big boost! Now, the question is asking: after all this, how strong is the signal that actually reaches your friend? The answer is 286 watts, which is like the signal getting a superhero cape and flying out stronger than before!
+
+\subsubsection{Advanced Explanation}
+To calculate the Effective Radiated Power (ERP), we need to account for the transmitter power output, the losses in the feed line and duplexer, and the gain of the antenna. The formula for ERP is:
+
+\[
+\text{ERP} = P_{\text{tx}} \times 10^{\frac{G_{\text{ant}} - L_{\text{feed}} - L_{\text{duplex}}}{10}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( P_{\text{tx}} \) = Transmitter power output = 150 watts
+    \item \( G_{\text{ant}} \) = Antenna gain = 7 dBd
+    \item \( L_{\text{feed}} \) = Feed line loss = 2 dB
+    \item \( L_{\text{duplex}} \) = Duplexer loss = 2.2 dB
+\end{itemize}
+
+Plugging in the values:
+
+\[
+\text{ERP} = 150 \times 10^{\frac{7 - 2 - 2.2}{10}} = 150 \times 10^{\frac{2.8}{10}} = 150 \times 10^{0.28}
+\]
+
+Calculating \( 10^{0.28} \):
+
+\[
+10^{0.28} \approx 1.905
+\]
+
+Thus:
+
+\[
+\text{ERP} = 150 \times 1.905 \approx 286 \text{ watts}
+\]
+
+The effective radiated power (ERP) of the repeater station is approximately 286 watts.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{Transmitter Power Output (P\textsubscript{tx})}: The power output of the transmitter before any losses.
+    \item \textbf{Feed Line Loss (L\textsubscript{feed})}: The loss of signal strength as it travels through the feed line.
+    \item \textbf{Duplexer Loss (L\textsubscript{duplex})}: The loss of signal strength as it passes through the duplexer.
+    \item \textbf{Antenna Gain (G\textsubscript{ant})}: The increase in signal strength provided by the antenna, measured in dBd (decibels relative to a dipole antenna).
+    \item \textbf{Effective Radiated Power (ERP)}: The actual power radiated by the antenna, taking into account all losses and gains.
+\end{itemize}
+
+% Diagram Prompt: A diagram showing the signal path from the transmitter, through the feed line and duplexer, to the antenna, with labels indicating the power at each stage.

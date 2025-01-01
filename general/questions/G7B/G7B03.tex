@@ -1,0 +1,39 @@
+\subsection{Function of a Two-Input AND Gate}
+\label{G7B03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B03]
+Which of the following describes the function of a two-input AND gate?
+\begin{enumerate}[label=\Alph*]
+    \item Output is high when either or both inputs are low
+    \item \textbf{Output is high only when both inputs are high}
+    \item Output is low when either or both inputs are high
+    \item Output is low only when both inputs are high
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical gate that only lets you pass if both of your friends are with you. If one or both of your friends are missing, the gate stays closed. This is exactly how a two-input AND gate works! It only gives a high signal (lets you pass) if both inputs are high (both friends are with you). Otherwise, it stays low (the gate stays closed).
+
+\subsubsection{Advanced Explanation}
+A two-input AND gate is a fundamental digital logic gate that performs the logical AND operation. The AND operation is a binary operation that outputs true or high (1) only if all its inputs are true or high (1). Mathematically, the output \( Y \) of a two-input AND gate with inputs \( A \) and \( B \) can be expressed as:
+\[
+Y = A \cdot B
+\]
+Here, \( \cdot \) denotes the logical AND operation. The truth table for a two-input AND gate is as follows:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\( A \) & \( B \) & \( Y \) \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+From the truth table, it is clear that the output \( Y \) is high (1) only when both inputs \( A \) and \( B \) are high (1). This aligns with the correct answer choice B.
+
+% Diagram prompt: Generate a diagram showing a two-input AND gate with inputs A and B, and output Y.

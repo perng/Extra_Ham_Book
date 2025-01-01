@@ -1,0 +1,27 @@
+\subsection{Carrier Frequency Placement in LSB}\label{G4D10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D10]
+How close to the lower edge of a band’s phone segment should your displayed carrier frequency be when using 3 kHz wide LSB?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{At least 3 kHz above the edge of the segment}
+    \item At least 3 kHz below the edge of the segment
+    \item At least 1 kHz below the edge of the segment
+    \item At least 1 kHz above the edge of the segment
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re trying to fit a big box (your signal) into a small space (the band’s phone segment). If you put the box too close to the edge, it might fall out! In radio terms, if your carrier frequency is too close to the lower edge of the band, your signal might spill over into the wrong area. To avoid this, you need to keep your carrier frequency at least 3 kHz above the edge. Think of it like leaving a little buffer zone so your signal stays where it’s supposed to be.
+
+\subsubsection*{Advanced Explanation}
+When using Lower Sideband (LSB) modulation, the carrier frequency is suppressed, and the signal is transmitted on the lower side of the carrier frequency. The bandwidth of the signal is determined by the modulation, which in this case is 3 kHz. To ensure that the entire signal fits within the allocated band segment, the carrier frequency must be placed such that the lower edge of the signal does not extend below the lower edge of the band segment.
+
+Mathematically, if the lower edge of the band segment is at frequency \( f_{\text{edge}} \), the carrier frequency \( f_{\text{carrier}} \) must satisfy:
+\[
+f_{\text{carrier}} \geq f_{\text{edge}} + 3 \text{ kHz}
+\]
+This ensures that the lower sideband, which extends from \( f_{\text{carrier}} - 3 \text{ kHz} \) to \( f_{\text{carrier}} \), does not overlap with frequencies below \( f_{\text{edge}} \).
+
+Related concepts include the nature of sideband modulation, the importance of frequency allocation, and the practical considerations of signal bandwidth in radio communication.
+
+% Diagram prompt: A diagram showing the placement of the carrier frequency relative to the lower edge of the band segment, with the 3 kHz bandwidth indicated.

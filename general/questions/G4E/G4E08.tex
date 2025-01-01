@@ -1,0 +1,26 @@
+\subsection{Solar Panel Cell Configuration}
+\label{G4E08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4E08]
+In what configuration are the individual cells in a solar panel connected together?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Series-parallel}
+    \item Shunt
+    \item Bypass
+    \item Full-wave bridge
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a bunch of tiny batteries (solar cells) that need to work together to power your house. If you connect them all in a single line (series), it’s like a long train—if one car breaks, the whole train stops. But if you connect them in groups (parallel), it’s like having multiple trains—if one train stops, the others keep going. Solar panels use a mix of both (series-parallel) to make sure they keep working even if one cell isn’t doing its job. It’s like having a backup plan for your backup plan!
+
+\subsubsection{Advanced Explanation}
+Solar panels are typically composed of multiple solar cells connected in a series-parallel configuration. This arrangement ensures both optimal voltage and current output. 
+
+- \textbf{Series Connection}: Cells connected in series increase the total voltage. If each cell provides a voltage \( V \), then \( n \) cells in series will provide a total voltage of \( nV \). However, the current remains the same as that of a single cell.
+
+- \textbf{Parallel Connection}: Cells connected in parallel increase the total current. If each cell provides a current \( I \), then \( m \) cells in parallel will provide a total current of \( mI \). The voltage remains the same as that of a single cell.
+
+By combining these two configurations, a series-parallel arrangement allows for both higher voltage and higher current, optimizing the power output of the solar panel. This configuration also provides redundancy; if one cell fails, the overall system can still function, albeit at a reduced capacity.
+
+% Diagram prompt: Generate a diagram showing a series-parallel connection of solar cells in a solar panel.

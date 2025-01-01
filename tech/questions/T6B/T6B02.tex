@@ -1,0 +1,33 @@
+\subsection{Electronic Component for One-Way Current Flow}
+\label{T6B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T6B02]
+What electronic component allows current to flow in only one direction?
+\begin{enumerate}[label=\Alph*]
+    \item Resistor
+    \item Fuse
+    \item \textbf{Diode}
+    \item Driven element
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a one-way street where cars can only go in one direction. A diode is like that street for electricity! It lets the electric current flow in one direction but blocks it from going the other way. So, if you try to send electricity backward through a diode, it’s like hitting a No Entry sign—it just won’t go!
+
+\subsubsection{Advanced Explanation}
+A diode is a semiconductor device that exhibits unidirectional current flow due to its PN junction structure. When a forward bias is applied (positive voltage to the P-side and negative to the N-side), the diode allows current to flow. Conversely, under reverse bias, the diode acts as an insulator, preventing current flow. The mathematical relationship between the current \( I \) and the voltage \( V \) across a diode is given by the Shockley diode equation:
+
+\[
+I = I_S \left( e^{\frac{V}{nV_T}} - 1 \right)
+\]
+
+where:
+\begin{itemize}
+    \item \( I_S \) is the reverse saturation current,
+    \item \( n \) is the ideality factor (typically between 1 and 2),
+    \item \( V_T \) is the thermal voltage (\( \approx 26 \) mV at room temperature).
+\end{itemize}
+
+This equation demonstrates the exponential relationship between current and voltage in a forward-biased diode, highlighting its ability to conduct current in one direction while blocking it in the opposite direction.
+
+% Diagram Prompt: Generate a diagram showing the PN junction of a diode with forward and reverse bias conditions.

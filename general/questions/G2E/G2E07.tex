@@ -1,0 +1,22 @@
+\subsection{Requirements for Using FT8}
+\label{G2E07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E07]
+Which of the following is required when using FT8?
+\begin{enumerate}[label=\Alph*)]
+    \item A special hardware modem
+    \item \textbf{Computer time accurate to within approximately 1 second}
+    \item Receiver attenuator set to -12 dB
+    \item A vertically polarized antenna
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing a game of catch with a friend, but you both have to throw the ball at the exact same time. If your timing is off by even a little bit, the ball might not reach your friend. FT8 is like that game of catch, but instead of a ball, it's sending messages over the radio. If your computer's clock isn't accurate, the messages might not get through. So, you need your computer's time to be really precise, like within 1 second, to make sure everything works smoothly.
+
+\subsubsection{Advanced Explanation}
+FT8 is a digital mode used in amateur radio that relies on precise timing for successful communication. The protocol operates in 15-second intervals, and both the transmitting and receiving stations must be synchronized to these intervals. If the computer's clock is not accurate to within approximately 1 second, the transmitted signal may not align with the receiver's decoding window, leading to failed communication. This synchronization is crucial because FT8 uses a time-division multiple access (TDMA) scheme, where each transmission slot is precisely timed.
+
+To ensure accurate timing, most operators use Network Time Protocol (NTP) to synchronize their computer clocks with a reliable time source. This ensures that the computer's clock is accurate to within milliseconds, which is well within the required 1-second tolerance for FT8 operation.
+
+% Diagram prompt: A diagram showing the timing intervals of FT8 transmissions and how synchronization is crucial for successful communication.

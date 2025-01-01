@@ -1,0 +1,26 @@
+\subsection{Boosting Bliss: Positive Feedback in Pierce Oscillators!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7H05] How is positive feedback supplied in a Pierce oscillator?
+    \begin{enumerate}[label=\Alph*]
+        \item Through a tapped coil
+        \item Through link coupling
+        \item Through a neutralizing capacitor
+        \item \textbf{Through a quartz crystal}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a swing, and every time you swing back, someone gives you a little push to keep you going. This is like positive feedback in an oscillator. In a Pierce oscillator, the push that keeps the circuit oscillating comes from a quartz crystal. The quartz crystal is like a tiny tuning fork that vibrates at a very specific frequency. This vibration helps the circuit keep oscillating smoothly and steadily.
+
+\subsubsection{Advanced Explanation}
+The Pierce oscillator is a type of electronic oscillator circuit that uses a quartz crystal to provide positive feedback. The quartz crystal acts as a highly stable resonant element, ensuring that the oscillator operates at a precise frequency. The crystal is connected in a feedback loop with an amplifier, typically an inverting amplifier. The crystal's mechanical resonance creates a phase shift of 180 degrees, which, when combined with the 180-degree phase shift of the inverting amplifier, results in a total phase shift of 360 degrees. This satisfies the Barkhausen criterion for oscillation, which states that the loop gain must be unity and the total phase shift around the loop must be a multiple of 360 degrees.
+
+Mathematically, the frequency of oscillation \( f \) is determined by the resonant frequency of the quartz crystal, which can be approximated by:
+
+\[
+f = \frac{1}{2\pi \sqrt{L C}}
+\]
+
+where \( L \) is the inductance and \( C \) is the capacitance of the crystal. The quartz crystal's high Q-factor ensures minimal frequency drift and high stability, making the Pierce oscillator a popular choice for clock generation in microcontrollers and other digital systems.
+
+% Prompt for generating a diagram: A diagram showing the basic circuit of a Pierce oscillator with a quartz crystal connected in the feedback loop of an inverting amplifier.

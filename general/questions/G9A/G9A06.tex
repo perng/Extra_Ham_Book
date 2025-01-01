@@ -1,0 +1,33 @@
+\subsection{RF Feed Line Loss Units}
+\label{G9A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A06]
+In what units is RF feed line loss usually expressed?
+\begin{enumerate}[label=\Alph*)]
+    \item Ohms per 1,000 feet
+    \item Decibels per 1,000 feet
+    \item Ohms per 100 feet
+    \item \textbf{Decibels per 100 feet}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message through a really long tube. As the message travels, it gets weaker because the tube isn't perfect. Now, we need a way to measure how much weaker the message gets as it travels. Instead of saying Oh, it's a bit weaker, we use a unit called decibels (dB) to measure the loss. And because we're talking about how much loss happens over a certain distance, we say it's per 100 feet. So, RF feed line loss is usually expressed in decibels per 100 feet. Easy, right?
+
+\subsubsection{Advanced Explanation}
+RF feed line loss is a measure of how much signal power is lost as it travels through a transmission line. This loss is typically expressed in decibels (dB), a logarithmic unit that quantifies the ratio of power levels. The loss is often specified per unit length, and in the context of RF feed lines, it is commonly given per 100 feet.
+
+The decibel is defined as:
+\[
+\text{dB} = 10 \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
+\]
+where \(P_{\text{in}}\) is the input power and \(P_{\text{out}}\) is the output power.
+
+For example, if a feed line has a loss of 3 dB per 100 feet, it means that the signal power is halved every 100 feet. This is because a 3 dB loss corresponds to a power ratio of approximately 0.5:
+\[
+10 \log_{10}(0.5) \approx -3 \text{ dB}
+\]
+
+Understanding this concept is crucial for designing and optimizing RF communication systems, as it helps in selecting the appropriate feed line to minimize signal loss over the required distance.
+
+% Diagram Prompt: Generate a diagram showing signal attenuation over distance in an RF feed line, with labels for input power, output power, and loss in dB per 100 feet.

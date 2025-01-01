@@ -1,0 +1,32 @@
+\subsection{Purpose of a Squelch Function}
+\label{T2B13}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B13]
+What is the purpose of a squelch function?
+\begin{enumerate}[label=\Alph*)]
+    \item Reduce a CW transmitter's key clicks
+    \item \textbf{Mute the receiver audio when a signal is not present}
+    \item Eliminate parasitic oscillations in an RF amplifier
+    \item Reduce interference from impulse noise
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're listening to a walkie-talkie, and all you hear is static when no one is talking. Annoying, right? The squelch function is like a magical mute button that shuts off the static when there's no real signal. It’s like telling the walkie-talkie, Hey, if no one’s talking, just be quiet! This way, you don’t have to listen to that annoying noise all the time.
+
+\subsubsection{Advanced Explanation}
+The squelch function in a radio receiver is designed to mute the audio output when the received signal strength falls below a certain threshold. This threshold is often adjustable by the user and is referred to as the squelch level. When the signal strength is below this level, the receiver assumes that no valid signal is present and mutes the audio to eliminate background noise, such as static or white noise.
+
+Mathematically, the squelch function can be represented as:
+\[
+\text{Audio Output} = 
+\begin{cases}
+\text{Received Signal} & \text{if } S \geq T \\
+0 & \text{if } S < T
+\end{cases}
+\]
+where \( S \) is the signal strength and \( T \) is the squelch threshold.
+
+This function is particularly useful in environments with varying signal strengths, ensuring that the listener only hears meaningful transmissions and not the noise in between. It is a crucial feature in communication systems to enhance the clarity and usability of the received audio.
+
+% Prompt for diagram: A diagram showing a radio receiver with a squelch function, illustrating the signal strength threshold and the muting of audio when the signal is below the threshold.

@@ -1,0 +1,24 @@
+\subsection{Standard Sideband for JT65, JT9, FT4, or FT8 Signals}
+\label{G2E05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E05]
+What is the standard sideband for JT65, JT9, FT4, or FT8 digital signal when using AFSK?
+\begin{enumerate}[label=\Alph*)]
+    \item LSB
+    \item \textbf{USB}
+    \item DSB
+    \item SSB
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're at a party, and you want to send a secret message to your friend across the room. You could whisper it (that's like using the lower sideband, LSB), or you could shout it (that's like using the upper sideband, USB). For digital signals like JT65, JT9, FT4, or FT8, we always shout our message using the upper sideband (USB). It's just the standard way these signals are sent, so everyone knows how to listen for them.
+
+\subsubsection*{Advanced Explanation}
+In radio communication, sidebands are the frequency components that are generated when a carrier wave is modulated by a signal. For digital modes like JT65, JT9, FT4, and FT8, the standard sideband used is the Upper Sideband (USB). This is because USB is more efficient for these types of signals, especially when using Audio Frequency Shift Keying (AFSK).
+
+When a signal is modulated, it produces two sidebands: the Upper Sideband (USB) and the Lower Sideband (LSB). The USB contains the frequencies above the carrier frequency, while the LSB contains the frequencies below the carrier frequency. For digital modes, USB is preferred because it allows for better signal clarity and less interference.
+
+Mathematically, if the carrier frequency is \( f_c \) and the modulating signal has a frequency \( f_m \), the USB will be at \( f_c + f_m \), and the LSB will be at \( f_c - f_m \). For JT65, JT9, FT4, and FT8, the standard practice is to use the USB, which is why the correct answer is \textbf{B}.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of a modulated signal with USB and LSB labeled.

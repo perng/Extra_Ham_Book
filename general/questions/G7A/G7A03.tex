@@ -1,0 +1,28 @@
+\subsection{Rectifier Circuit with Two Diodes and Center-Tapped Transformer}
+\label{G7A03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A03]
+Which type of rectifier circuit uses two diodes and a center-tapped transformer?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Full-wave}
+    \item Full-wave bridge
+    \item Half-wave
+    \item Synchronous
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a transformer that’s like a sandwich with a special middle layer (the center tap). Now, you have two diodes, which are like one-way doors for electricity. When you connect these diodes to the transformer, they take turns letting electricity through, but only in one direction. This setup is called a full-wave rectifier because it uses both halves of the electricity wave, making it more efficient than just using one half. So, the answer is the full-wave rectifier!
+
+\subsubsection{Advanced Explanation}
+A full-wave rectifier circuit with a center-tapped transformer utilizes two diodes and a transformer with a center tap on the secondary winding. The center tap divides the secondary winding into two equal parts, each providing half of the total secondary voltage. During the positive half-cycle of the input AC signal, one diode conducts, and during the negative half-cycle, the other diode conducts. This results in both halves of the AC waveform being rectified, hence the term full-wave.
+
+Mathematically, if the secondary voltage is \( V_s \), each half of the secondary winding provides \( \frac{V_s}{2} \). The output voltage across the load resistor \( R_L \) is given by:
+\[
+V_{out} = \frac{V_s}{2} - V_d
+\]
+where \( V_d \) is the forward voltage drop across the diode.
+
+This configuration is more efficient than a half-wave rectifier because it utilizes both halves of the AC cycle, reducing ripple and improving the DC output quality. The full-wave bridge rectifier, on the other hand, uses four diodes and does not require a center-tapped transformer, making it different from the circuit described in the question.
+
+% Diagram prompt: Generate a diagram showing a full-wave rectifier circuit with a center-tapped transformer, two diodes, and a load resistor.

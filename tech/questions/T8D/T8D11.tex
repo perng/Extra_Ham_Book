@@ -1,0 +1,24 @@
+\subsection{ARQ Transmission System}
+\label{T8D11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8D11]
+What is an ARQ transmission system?
+\begin{enumerate}[label=\Alph*)]
+    \item A special transmission format limited to video signals
+    \item A system used to encrypt command signals to an amateur radio satellite
+    \item \textbf{An error correction method in which the receiving station detects errors and sends a request for retransmission}
+    \item A method of compressing data using autonomous reiterative Q codes prior to final encoding
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a text message to your friend, but sometimes the message gets messed up because of bad signal. ARQ is like your friend saying, Hey, I didn't get that, can you send it again? It’s a way to make sure the message gets through correctly by asking for a retransmission if something goes wrong. Simple, right?
+
+\subsubsection{Advanced Explanation}
+ARQ, or Automatic Repeat reQuest, is a protocol used in data communication to ensure error-free transmission. When data is transmitted, the receiving station checks for errors using techniques like cyclic redundancy check (CRC). If an error is detected, the receiver sends a request (NACK - Negative Acknowledgment) back to the sender to retransmit the data. This process continues until the data is received correctly or a maximum number of retries is reached.
+
+Mathematically, the probability of successful transmission \( P_s \) can be expressed as:
+\[ P_s = (1 - P_e)^n \]
+where \( P_e \) is the probability of error in a single transmission and \( n \) is the number of retransmissions. ARQ systems are widely used in various communication protocols, including TCP/IP, to ensure data integrity.
+
+% Diagram Prompt: Generate a diagram showing the flow of data and ARQ requests between a sender and receiver.

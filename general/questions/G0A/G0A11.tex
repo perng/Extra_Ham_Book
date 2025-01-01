@@ -1,0 +1,37 @@
+\subsection{Precautions for Indoor Transmitting Antennas}
+\label{G0A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G0A11]
+What precaution should be taken if you install an indoor transmitting antenna?
+\begin{enumerate}[label=\Alph*)]
+    \item Locate the antenna close to your operating position to minimize feed-line radiation
+    \item Position the antenna along the edge of a wall to reduce parasitic radiation
+    \item \textbf{Make sure that MPE limits are not exceeded in occupied areas}
+    \item Make sure the antenna is properly shielded
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a super loud speaker in your room. If you turn it up too loud, it could hurt your ears, right? Well, an indoor transmitting antenna is like that speaker, but instead of sound, it sends out radio waves. If these waves are too strong, they can be harmful to people in the room. So, the big rule is to make sure the antenna isn't sending out waves that are too strong for people to be around safely. That's why we check the MPE (Maximum Permissible Exposure) limits to keep everyone safe.
+
+\subsubsection{Advanced Explanation}
+When installing an indoor transmitting antenna, it is crucial to ensure that the radiation levels do not exceed the Maximum Permissible Exposure (MPE) limits as defined by regulatory bodies such as the FCC. The MPE limits are established to protect human health from the potential adverse effects of radiofrequency (RF) radiation. 
+
+To calculate whether the MPE limits are being exceeded, you can use the following formula for power density \( S \):
+
+\[
+S = \frac{P \cdot G}{4 \pi r^2}
+\]
+
+where:
+\begin{itemize}
+    \item \( P \) is the power transmitted by the antenna,
+    \item \( G \) is the antenna gain,
+    \item \( r \) is the distance from the antenna.
+\end{itemize}
+
+The calculated power density \( S \) should be compared to the MPE limits for the specific frequency band in use. If \( S \) exceeds the MPE limit, adjustments must be made, such as reducing the transmitted power, increasing the distance from the antenna, or using shielding.
+
+Additionally, understanding the concepts of antenna gain, radiation patterns, and the inverse square law is essential for ensuring compliance with safety standards. Antenna gain indicates how effectively the antenna directs RF energy, while the inverse square law describes how the power density decreases with distance from the antenna.
+
+% Prompt for diagram: A diagram showing the radiation pattern of an indoor antenna and the safe distance zones based on MPE limits would be beneficial here.

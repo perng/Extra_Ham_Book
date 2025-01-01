@@ -1,0 +1,30 @@
+\subsection{Reducing VHF Transceiver Overload}
+\label{T7B07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7B07]
+Which of the following can reduce overload of a VHF transceiver by a nearby commercial FM station?
+\begin{enumerate}[label=\Alph*)]
+    \item Installing an RF preamplifier
+    \item Using double-shielded coaxial cable
+    \item Installing bypass capacitors on the microphone cable
+    \item \textbf{Installing a band-reject filter}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine your VHF transceiver is trying to have a conversation, but a loud FM radio station is shouting right next to it. It’s hard to hear anything else, right? To fix this, you need something that can block out the loud FM station’s voice. That’s where a band-reject filter comes in—it’s like a pair of noise-canceling headphones for your transceiver, specifically tuned to block out the FM station’s frequency. The other options, like adding a preamplifier or better cables, won’t help because they either make the problem worse or don’t address the issue at all.
+
+\subsubsection*{Advanced Explanation}
+Overload in a VHF transceiver occurs when a strong signal from a nearby commercial FM station (typically around 88-108 MHz) interferes with the desired VHF signals. This is due to the receiver’s front-end being saturated by the strong FM signal, causing distortion or loss of the desired signal.
+
+A band-reject filter (also known as a notch filter) is designed to attenuate signals within a specific frequency range while allowing other frequencies to pass through. In this case, the filter would be tuned to the FM broadcast band (88-108 MHz), effectively reducing the strength of the interfering FM signal before it reaches the transceiver’s front-end.
+
+Mathematically, the filter’s transfer function \( H(f) \) can be represented as:
+\[
+H(f) = \frac{1}{1 + j \frac{f - f_0}{B}}
+\]
+where \( f_0 \) is the center frequency of the FM band, and \( B \) is the bandwidth of the filter. This function ensures that signals around \( f_0 \) are significantly attenuated.
+
+Other options like installing an RF preamplifier (A) would amplify the FM signal along with the desired signal, worsening the overload. Using double-shielded coaxial cable (B) reduces external interference but does not address strong signals already within the cable. Installing bypass capacitors on the microphone cable (C) is unrelated to RF interference and would not mitigate the overload issue.
+
+% Diagram Prompt: Generate a diagram showing a VHF transceiver with a band-reject filter connected to its input, blocking the FM broadcast band while allowing VHF signals to pass through.

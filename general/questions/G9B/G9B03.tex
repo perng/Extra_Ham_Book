@@ -1,0 +1,30 @@
+\subsection{Radiation Pattern of a Quarter-Wave Ground-Plane Antenna}
+\label{G9B03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9B03]
+Which of the following best describes the radiation pattern of a quarter-wave ground-plane vertical antenna?
+\begin{enumerate}[label=\Alph*)]
+    \item Bi-directional in azimuth
+    \item Isotropic
+    \item Hemispherical
+    \item \textbf{Omnidirectional in azimuth}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a stick standing straight up in the middle of a field. If you could see the radio waves coming out of this stick, they would spread out evenly in all directions around it, like ripples in a pond when you drop a pebble. This means no matter where you stand around the stick, you’ll get the same signal strength. That’s what omnidirectional in azimuth means—it sends signals equally in all horizontal directions.
+
+\subsubsection{Advanced Explanation}
+A quarter-wave ground-plane vertical antenna is designed to radiate electromagnetic waves uniformly in the horizontal plane, which is referred to as the azimuthal plane. The radiation pattern of such an antenna is omnidirectional in azimuth, meaning that the signal strength is consistent in all horizontal directions. This is achieved by the vertical orientation of the antenna element and the presence of a ground plane, which acts as a reflector to enhance the radiation in the horizontal direction.
+
+Mathematically, the radiation pattern can be described using the following equation for the electric field \( E(\theta, \phi) \) in spherical coordinates:
+
+\[
+E(\theta, \phi) = E_0 \cdot \sin(\theta)
+\]
+
+where \( \theta \) is the elevation angle, \( \phi \) is the azimuthal angle, and \( E_0 \) is the maximum electric field strength. For a quarter-wave ground-plane antenna, the radiation is maximum at \( \theta = 90^\circ \) (horizontal plane) and decreases as \( \theta \) approaches \( 0^\circ \) or \( 180^\circ \) (vertical directions).
+
+The ground plane effectively cancels out any radiation below the horizontal plane, resulting in a hemispherical radiation pattern in the vertical plane. However, in the horizontal plane, the radiation is uniform, making the antenna omnidirectional in azimuth.
+
+% Diagram prompt: Generate a diagram showing the radiation pattern of a quarter-wave ground-plane vertical antenna in both the horizontal and vertical planes.

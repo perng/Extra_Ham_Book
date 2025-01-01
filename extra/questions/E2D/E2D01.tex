@@ -1,0 +1,29 @@
+\subsection{Catch the Clouds: Digging into Meteor Scatter Modes!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2D01] Which of the following digital modes is designed for meteor scatter communications?
+    \begin{enumerate}[label=\Alph*]
+        \item WSPR
+        \item \textbf{MSK144}
+        \item Hellschreiber
+        \item APRS
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message using tiny bits of space dust that burn up in the Earth's atmosphere. These bits of dust create a temporary mirror in the sky that can bounce your radio signal back to Earth. To make this work, you need a special way of sending your message that's really fast and can take advantage of these short-lived mirrors. MSK144 is like a super-speedy messenger that's perfect for this job, while the other options are either too slow or not designed for this kind of communication.
+
+\subsubsection{Advanced Explanation}
+Meteor scatter communication relies on the ionization trails left by meteors entering the Earth's atmosphere. These trails can reflect radio signals, but they are very short-lived, typically lasting only a few seconds. Therefore, the digital mode used must be capable of transmitting data quickly and efficiently within this brief window.
+
+MSK144 (Minimum Shift Keying 144) is specifically designed for meteor scatter communications. It uses a modulation technique that allows for rapid data transmission, making it ideal for the fleeting nature of meteor trails. MSK144 operates at a high baud rate, typically 144 baud, which enables it to send a complete message in a very short time frame.
+
+In contrast:
+\begin{itemize}
+    \item WSPR (Weak Signal Propagation Reporter) is designed for very low-power, long-distance communication and is not optimized for the rapid transmission required by meteor scatter.
+    \item Hellschreiber is a facsimile-based mode that is too slow for meteor scatter.
+    \item APRS (Automatic Packet Reporting System) is primarily used for real-time data communication and tracking, not for exploiting meteor trails.
+\end{itemize}
+
+Thus, MSK144 is the correct choice for meteor scatter communications due to its high-speed data transmission capabilities.
+
+% [Prompt for diagram: A diagram showing the process of meteor scatter communication, with a meteor trail reflecting radio signals between two stations.]

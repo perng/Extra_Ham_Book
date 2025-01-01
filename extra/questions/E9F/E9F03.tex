@@ -1,0 +1,37 @@
+\subsection{Exploring the Curious Case of Coaxial Cable Lengths!}
+\label{sec:E9F03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{Question ID: E9F03} \\
+    Why is the electrical length of a coaxial cable longer than its physical length?
+    \begin{enumerate}[label=\Alph*)]
+        \item Skin effect is less pronounced in the coaxial cable
+        \item Skin effect is more pronounced in the coaxial cable
+        \item Electromagnetic waves move faster in coaxial cable than in air
+        \item \textbf{Electromagnetic waves move more slowly in a coaxial cable than in air}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're running through a crowded hallway versus an open field. In the hallway, you have to dodge people and obstacles, so you move slower. In the open field, you can run freely and quickly. Now, think of the coaxial cable as the crowded hallway and air as the open field. The electromagnetic waves (like you) move slower in the coaxial cable because they have to navigate through the materials inside the cable, making the electrical length seem longer than the physical length. It's like saying, Wow, that hallway felt longer because I had to move so slowly!
+
+\subsubsection{Advanced Explanation}
+The electrical length of a coaxial cable is determined by the propagation speed of electromagnetic waves within the cable. This speed is given by:
+
+\[
+v = \frac{c}{\sqrt{\epsilon_r}}
+\]
+
+where \( v \) is the propagation speed in the cable, \( c \) is the speed of light in a vacuum, and \( \epsilon_r \) is the relative permittivity of the dielectric material inside the cable. Since \( \epsilon_r > 1 \) for most dielectric materials, \( v < c \). This means that electromagnetic waves travel more slowly in the coaxial cable than in air.
+
+The electrical length \( L_e \) is related to the physical length \( L_p \) by:
+
+\[
+L_e = \frac{L_p}{\sqrt{\epsilon_r}}
+\]
+
+Because \( \sqrt{\epsilon_r} > 1 \), \( L_e > L_p \). This explains why the electrical length of the coaxial cable is longer than its physical length.
+
+Related concepts include the propagation of electromagnetic waves, the role of dielectric materials in wave propagation, and the relationship between wave speed and medium properties. Understanding these principles is crucial for designing and analyzing transmission lines in radio frequency systems.
+
+% Prompt for diagram: A diagram showing the comparison of wave propagation in air versus in a coaxial cable, highlighting the slower speed in the cable due to the dielectric material.

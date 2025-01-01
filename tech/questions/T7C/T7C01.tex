@@ -1,0 +1,30 @@
+\subsection{Primary Purpose of a Dummy Load}
+\label{T7C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C01]
+What is the primary purpose of a dummy load?  
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{To prevent transmitting signals over the air when making tests}
+    \item To prevent over-modulation of a transmitter
+    \item To improve the efficiency of an antenna
+    \item To improve the signal-to-noise ratio of a receiver
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re testing a super loudspeaker, but you don’t want to annoy your neighbors with the noise. A dummy load is like a giant earplug for your radio transmitter! Instead of sending signals out into the air (where they might interfere with others), the dummy load absorbs all the energy, letting you test your equipment quietly and safely. It’s like practicing your guitar with headphones on—no one else hears it, but you still know how it sounds.
+
+\subsubsection{Advanced Explanation}
+A dummy load is a device used in radio frequency (RF) engineering to simulate an antenna without radiating electromagnetic waves. It is typically a resistor with a specific impedance (usually 50 ohms) that matches the transmitter’s output impedance. When connected to a transmitter, the dummy load absorbs the RF energy and converts it into heat, ensuring that no signal is transmitted into the surrounding environment. This is particularly useful for testing and tuning transmitters without causing interference or violating regulatory requirements.
+
+The power dissipated by the dummy load can be calculated using the formula:
+\[
+P = V^2 / R
+\]
+where \(P\) is the power in watts, \(V\) is the voltage across the load, and \(R\) is the resistance of the dummy load. For example, if a transmitter outputs 100 volts across a 50-ohm dummy load, the power dissipated is:
+\[
+P = 100^2 / 50 = 200 \text{ watts}
+\]
+This ensures the transmitter operates safely and efficiently during testing.
+
+% Diagram prompt: Generate a diagram showing a transmitter connected to a dummy load, with arrows indicating the flow of RF energy being absorbed by the load.

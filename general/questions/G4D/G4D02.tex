@@ -1,0 +1,28 @@
+\subsection{Effect of a Speech Processor on SSB Signal}
+\label{G4D02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D02]
+How does a speech processor affect a single sideband phone signal?
+\begin{enumerate}[label=\Alph*]
+    \item It increases peak power
+    \item \textbf{It increases average power}
+    \item It reduces harmonic distortion
+    \item It reduces intermodulation distortion
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're talking into a microphone, but your voice is like a whisper. A speech processor is like a magical volume booster that makes your whisper sound louder and clearer. It doesn't make your loudest shout even louder (that's peak power), but it makes your average talking volume stronger. So, when you're using a single sideband (SSB) phone signal, the speech processor helps by making your voice more powerful overall, so it can travel farther and be heard better.
+
+\subsubsection{Advanced Explanation}
+A speech processor in the context of single sideband (SSB) communication is designed to enhance the intelligibility and effective radiated power of the transmitted signal. It achieves this by compressing the dynamic range of the audio signal, which means it reduces the difference between the loudest and softest parts of the speech. This compression increases the average power of the signal without significantly increasing the peak power.
+
+Mathematically, the average power \( P_{\text{avg}} \) of a signal can be expressed as:
+\[
+P_{\text{avg}} = \frac{1}{T} \int_{0}^{T} |x(t)|^2 \, dt
+\]
+where \( x(t) \) is the signal and \( T \) is the time period over which the average is calculated. By compressing the dynamic range, the speech processor ensures that the signal \( x(t) \) has a higher average value, thus increasing \( P_{\text{avg}} \).
+
+This increase in average power is particularly beneficial in SSB communication because SSB signals are more sensitive to variations in signal strength. By boosting the average power, the speech processor ensures that the signal remains strong and clear over long distances, improving the overall communication quality.
+
+% Diagram prompt: A diagram showing the effect of a speech processor on an SSB signal, illustrating the compression of dynamic range and the increase in average power.

@@ -1,0 +1,28 @@
+\subsection{FM Receiver Tuning Effects}
+\label{T4B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B12]
+What is the result of tuning an FM receiver above or below a signal’s frequency?
+\begin{enumerate}[label=\Alph*)]
+    \item Change in audio pitch
+    \item Sideband inversion
+    \item Generation of a heterodyne tone
+    \item \textbf{Distortion of the signal’s audio}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to listen to your favorite radio station, but instead of tuning directly to it, you accidentally turn the dial a little too far. What happens? The music or talk starts to sound weird—like it’s all jumbled up or distorted. That’s because the FM receiver is trying to pick up the signal, but it’s not quite on the right frequency. It’s like trying to watch a TV channel that’s slightly out of focus—you can still see the picture, but it’s not clear and everything looks a bit off.
+
+\subsubsection{Advanced Explanation}
+When an FM receiver is tuned above or below the signal’s frequency, it results in a phenomenon known as frequency deviation. FM (Frequency Modulation) works by varying the frequency of the carrier wave in proportion to the audio signal. The receiver is designed to demodulate this frequency variation to recover the original audio signal. 
+
+If the receiver is not precisely tuned to the carrier frequency, the demodulation process will not accurately reflect the original frequency variations. This leads to distortion in the audio signal. Mathematically, the demodulated signal \( y(t) \) can be represented as:
+
+\[ y(t) = k \cdot \Delta f(t) \]
+
+where \( k \) is a constant and \( \Delta f(t) \) is the frequency deviation. If the receiver is not tuned correctly, \( \Delta f(t) \) will not match the original modulation, causing \( y(t) \) to be distorted.
+
+This distortion occurs because the receiver’s local oscillator is not aligned with the carrier frequency, leading to incorrect demodulation. The result is that the audio signal does not faithfully reproduce the original sound, leading to the distortion observed.
+
+% Diagram prompt: A diagram showing the frequency spectrum of an FM signal and how tuning above or below the carrier frequency affects the demodulated audio signal.

@@ -1,0 +1,20 @@
+\subsection{Unwanted Spurious Outputs in Non-linear Circuits}
+\label{G8B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B12]
+What process combines two signals in a non-linear circuit to produce unwanted spurious outputs?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Intermodulation}
+    \item Heterodyning
+    \item Detection
+    \item Rolloff
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two friends talking at the same time, and instead of hearing both voices clearly, you hear a weird mix of sounds that don’t make sense. This is similar to what happens in a non-linear circuit when two signals combine and create unwanted noise. This noise is called intermodulation, and it’s like the circuit is having a bad conversation with itself!
+
+\subsubsection{Advanced Explanation}
+In a non-linear circuit, the output is not directly proportional to the input. When two signals at frequencies \( f_1 \) and \( f_2 \) are combined in such a circuit, they can produce spurious outputs at frequencies that are sums and differences of the original frequencies, such as \( f_1 + f_2 \) and \( f_1 - f_2 \). This phenomenon is known as intermodulation. Mathematically, if the input signals are \( V_1 \sin(2\pi f_1 t) \) and \( V_2 \sin(2\pi f_2 t) \), the non-linear circuit can produce outputs like \( V_1 V_2 \sin(2\pi (f_1 + f_2) t) \) and \( V_1 V_2 \sin(2\pi (f_1 - f_2) t) \). These unwanted signals can interfere with the desired signals, leading to distortion and noise.
+
+% Diagram prompt: Generate a diagram showing two input signals entering a non-linear circuit and producing intermodulation products as output.

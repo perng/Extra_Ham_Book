@@ -1,0 +1,26 @@
+\subsection{Carrier Frequency Placement in USB}\label{G4D11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D11]
+How close to the upper edge of a band’s phone segment should your displayed carrier frequency be when using 3 kHz wide USB?
+\begin{enumerate}[label=\Alph*)]
+    \item At least 3 kHz above the edge of the band
+    \item \textbf{At least 3 kHz below the edge of the band}
+    \item At least 1 kHz above the edge of the segment
+    \item At least 1 kHz below the edge of the segment
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to park a car in a tight parking spot. If you go too close to the edge, you might scratch the car next to you. Similarly, when using USB (Upper Side Band) communication, your carrier frequency is like your car. If you place it too close to the upper edge of the band, you might interfere with other signals. So, you need to keep it at least 3 kHz below the edge to avoid any scratches or interference.
+
+\subsubsection{Advanced Explanation}
+In USB communication, the carrier frequency is the central frequency around which the signal is modulated. The bandwidth of the signal is 3 kHz, meaning the signal extends 1.5 kHz above and below the carrier frequency. To ensure that the entire signal remains within the allocated band, the carrier frequency must be placed at least 1.5 kHz below the upper edge of the band. However, to provide a safety margin and avoid any potential interference, it is recommended to place the carrier frequency at least 3 kHz below the upper edge. This ensures that the upper sideband of the signal does not spill over into the adjacent band.
+
+Mathematically, if the upper edge of the band is at frequency \( f_{\text{edge}} \), the carrier frequency \( f_{\text{carrier}} \) should satisfy:
+\[
+f_{\text{carrier}} \leq f_{\text{edge}} - 3 \text{ kHz}
+\]
+
+This placement ensures that the entire 3 kHz bandwidth of the USB signal remains within the allocated frequency range, preventing interference with other signals.
+
+% Diagram prompt: Generate a diagram showing the placement of the carrier frequency relative to the upper edge of the band, with the 3 kHz bandwidth extending below the carrier frequency.

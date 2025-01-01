@@ -1,0 +1,30 @@
+\subsection{Ground Fault Circuit Interrupter (GFCI) Conditions}
+\label{G0B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G0B05]
+Which of the following conditions will cause a ground fault circuit interrupter (GFCI) to disconnect AC power?
+\begin{enumerate}[label=\Alph*)]
+    \item Current flowing from one or more of the hot wires to the neutral wire
+    \item \textbf{Current flowing from one or more of the hot wires directly to ground}
+    \item Overvoltage on the hot wires
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a water pipe system in your house. The GFCI is like a smart valve that keeps an eye on the water flow. Normally, water flows from the main pipe (hot wire) to the drain (neutral wire). But if water starts leaking directly into the ground (ground wire), the smart valve (GFCI) will shut off the water (disconnect the power) to prevent a flood (electric shock). So, the GFCI only cares about leaks to the ground, not about how much water is flowing or if the pipe is under too much pressure.
+
+\subsubsection*{Advanced Explanation}
+A Ground Fault Circuit Interrupter (GFCI) is designed to protect against electric shock by detecting imbalances in the current between the hot and neutral wires. Under normal conditions, the current flowing through the hot wire should equal the current returning through the neutral wire. If there is a difference, it indicates that some current is leaking to ground, which could be dangerous.
+
+The GFCI monitors this balance using a differential current transformer. If the current difference exceeds a certain threshold (typically 4-6 mA), the GFCI will trip and disconnect the power. Mathematically, this can be expressed as:
+
+\[
+I_{\text{hot}} - I_{\text{neutral}} > I_{\text{threshold}}
+\]
+
+where \( I_{\text{hot}} \) is the current in the hot wire, \( I_{\text{neutral}} \) is the current in the neutral wire, and \( I_{\text{threshold}} \) is the trip threshold of the GFCI.
+
+In the context of the question, the correct condition that will cause a GFCI to disconnect AC power is when current flows from one or more of the hot wires directly to ground (Option B). This creates an imbalance that the GFCI detects and responds to by tripping the circuit.
+
+% Diagram prompt: Generate a diagram showing the flow of current in a normal circuit and a circuit with a ground fault, highlighting the role of the GFCI in detecting the imbalance.

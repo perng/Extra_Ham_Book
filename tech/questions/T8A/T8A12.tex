@@ -1,0 +1,28 @@
+\subsection{Disadvantages of FM Compared to Single Sideband}
+\label{T8A12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A12]
+Which of the following is a disadvantage of FM compared with single sideband?
+\begin{enumerate}[label=\Alph*)]
+    \item Voice quality is poorer
+    \item \textbf{Only one signal can be received at a time}
+    \item FM signals are harder to tune
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a party with two DJs. One DJ (FM) plays music on a single channel, and everyone has to listen to the same song. The other DJ (single sideband) can play different songs on different channels, so people can choose what they want to hear. FM is like the first DJ—only one signal at a time. Single sideband is like the second DJ—multiple signals can be received. So, FM's disadvantage is that it can't handle multiple signals simultaneously like single sideband can.
+
+\subsubsection{Advanced Explanation}
+Frequency Modulation (FM) and Single Sideband (SSB) are two different modulation techniques used in radio communication. FM modulates the frequency of the carrier wave to encode the information, while SSB suppresses one sideband and the carrier, transmitting only one sideband. 
+
+One key disadvantage of FM is its bandwidth efficiency. FM requires a wider bandwidth compared to SSB, which limits the number of signals that can be transmitted simultaneously. In FM, only one signal can be received at a time because the receiver must lock onto the specific frequency of the FM signal. In contrast, SSB allows multiple signals to be received simultaneously by using different sidebands, making it more efficient in terms of bandwidth usage.
+
+Mathematically, the bandwidth \( B \) of an FM signal can be approximated by Carson's rule:
+\[
+B \approx 2(\Delta f + f_m)
+\]
+where \( \Delta f \) is the peak frequency deviation and \( f_m \) is the highest frequency in the modulating signal. This wider bandwidth requirement is a significant drawback when compared to the narrow bandwidth of SSB signals.
+
+% Diagram prompt: Generate a diagram comparing the bandwidth of FM and SSB signals.

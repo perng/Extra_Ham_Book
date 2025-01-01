@@ -1,0 +1,39 @@
+\subsection{E9A03: Unraveling Total Radiated Power: Gains \& Losses Explained!}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E9A03} What term describing total radiated power takes into account all gains and losses?
+    \begin{enumerate}[label=\Alph*)]
+        \item Power factor
+        \item Half-power bandwidth
+        \item \textbf{Effective radiated power}
+        \item Apparent power
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to shout across a football field. If you’re standing on a hill, your voice carries farther because of the height (that’s a gain). But if there’s a strong wind blowing against you, your voice doesn’t go as far (that’s a loss). The term Effective Radiated Power (ERP) is like figuring out how loud your voice actually is after considering the hill and the wind. It’s the total power your shout has, taking into account all the things that make it louder or quieter. So, ERP is the real deal when it comes to understanding how powerful your signal is!
+
+\subsubsection{Advanced Explanation}
+Effective Radiated Power (ERP) is a key concept in radio communications that quantifies the total power radiated by an antenna, considering both the transmitter’s output power and the antenna’s gain or loss. Mathematically, ERP can be expressed as:
+
+\[
+\text{ERP} = P_t \times G_a
+\]
+
+where:
+\begin{itemize}
+    \item \( P_t \) is the transmitter’s output power.
+    \item \( G_a \) is the antenna gain relative to an isotropic radiator (dBi).
+\end{itemize}
+
+ERP accounts for all gains and losses in the system, including antenna efficiency, feedline losses, and any other factors that affect the radiated power. It is a more accurate measure of the actual power being radiated compared to simply considering the transmitter’s output power alone.
+
+For example, if a transmitter outputs 100 watts and the antenna has a gain of 3 dBi, the ERP would be:
+
+\[
+\text{ERP} = 100 \, \text{W} \times 10^{3/10} \approx 200 \, \text{W}
+\]
+
+This calculation shows that the effective radiated power is higher than the transmitter’s output power due to the antenna’s gain. Understanding ERP is crucial for designing and optimizing radio communication systems, ensuring that the signal reaches the intended destination with sufficient strength.
+
+% Prompt for diagram: A diagram showing a transmitter connected to an antenna, with labels indicating transmitter power (P_t), antenna gain (G_a), and effective radiated power (ERP).

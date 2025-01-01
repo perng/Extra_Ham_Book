@@ -1,0 +1,26 @@
+\subsection{Characteristics of Single Sideband (SSB) Compared to FM}
+\label{T8A07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A07]
+What is a characteristic of single sideband (SSB) compared to FM?
+\begin{enumerate}[label=\Alph*)]
+    \item SSB signals are easier to tune in correctly
+    \item SSB signals are less susceptible to interference
+    \item \textbf{SSB signals have narrower bandwidth}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message through a crowded hallway. FM is like shouting loudly to make sure everyone hears you, but it takes up a lot of space. SSB, on the other hand, is like whispering just enough so the person right in front of you can hear. It doesn't take up much space, so more people can send messages at the same time without bumping into each other. That's why SSB has a narrower bandwidth—it's more efficient!
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a technique that transmits only one sideband of the modulated signal, either the upper or lower sideband, while suppressing the carrier and the other sideband. This results in a significant reduction in bandwidth compared to Frequency Modulation (FM), which transmits both sidebands and the carrier. 
+
+Mathematically, the bandwidth of an SSB signal is approximately equal to the bandwidth of the modulating signal, \( B_{\text{SSB}} \approx B_m \). In contrast, the bandwidth of an FM signal is given by Carson's rule:
+\[ B_{\text{FM}} \approx 2(\Delta f + B_m) \]
+where \( \Delta f \) is the frequency deviation and \( B_m \) is the bandwidth of the modulating signal. Since \( \Delta f \) is typically much larger than \( B_m \), FM signals generally have a much wider bandwidth than SSB signals.
+
+This narrower bandwidth of SSB makes it more efficient in terms of spectrum usage, allowing more channels to coexist within the same frequency range. Additionally, SSB is less susceptible to certain types of interference, although this is not the primary characteristic highlighted in the question.
+
+% Prompt for generating a diagram: A comparison of the bandwidths of SSB and FM signals, showing the narrower bandwidth of SSB.

@@ -1,0 +1,31 @@
+\subsection{Intermodulation Products Proximity}
+\label{G8B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B05]
+Which intermodulation products are closest to the original signal frequencies?
+\begin{enumerate}[label=\Alph*)]
+    \item Second harmonics
+    \item Even-order
+    \item \textbf{Odd-order}
+    \item Intercept point
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re at a concert, and two musicians are playing different notes. Sometimes, their notes mix together and create new sounds. These new sounds are like the intermodulation products. Now, some of these new sounds are closer to the original notes the musicians are playing. The ones that are closest are the odd-order intermodulation products. Think of them as the neighbors of the original notes, hanging out right next to them!
+
+\subsubsection{Advanced Explanation}
+Intermodulation products arise when two or more signals mix in a nonlinear system, generating new frequencies. These products can be categorized into odd-order and even-order based on their mathematical relationship to the original frequencies. 
+
+The frequencies of the intermodulation products are given by:
+\[ f_{IM} = mf_1 \pm nf_2 \]
+where \( f_1 \) and \( f_2 \) are the original frequencies, and \( m \) and \( n \) are integers. 
+
+Odd-order intermodulation products (where \( m + n \) is odd) are typically closer to the original frequencies than even-order products. For example, the third-order intermodulation products (where \( m + n = 3 \)) are given by:
+\[ f_{IM3} = 2f_1 - f_2 \quad \text{and} \quad f_{IM3} = 2f_2 - f_1 \]
+These frequencies are closer to \( f_1 \) and \( f_2 \) compared to second-order products (where \( m + n = 2 \)), which are:
+\[ f_{IM2} = f_1 + f_2 \quad \text{and} \quad f_{IM2} = |f_1 - f_2| \]
+
+Understanding these concepts is crucial in radio frequency (RF) engineering to minimize interference and optimize signal quality.
+
+% Diagram prompt: Generate a frequency spectrum diagram showing original signals and their odd-order intermodulation products.

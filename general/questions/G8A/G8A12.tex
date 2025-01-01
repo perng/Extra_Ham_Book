@@ -1,0 +1,43 @@
+\subsection{QPSK Modulation}
+\label{G8A12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A12]
+What is QPSK modulation?
+\begin{enumerate}[label=\Alph*)]
+    \item Modulation using quasi-parallel to serial conversion to reduce bandwidth
+    \item Modulation using quadra-pole sideband keying to generate spread spectrum signals
+    \item Modulation using Fast Fourier Transforms to generate frequencies at the first, second, third, and fourth harmonics of the carrier frequency to improve noise immunity
+    \item \textbf{Modulation in which digital data is transmitted using 0-, 90-, 180- and 270-degrees phase shift to represent pairs of bits}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to send a secret message to your friend using a flashlight. Instead of just turning the light on and off (which would be like basic binary), you decide to get fancy. You agree that different angles of the flashlight will mean different things. For example, pointing it straight ahead (0 degrees) means 00, pointing it to the right (90 degrees) means 01, pointing it backward (180 degrees) means 10, and pointing it to the left (270 degrees) means 11. This way, you can send more information with each flash! QPSK (Quadrature Phase Shift Keying) is like this flashlight trick but with radio waves. Instead of angles, it uses different phase shifts to send pairs of bits.
+
+\subsubsection{Advanced Explanation}
+QPSK (Quadrature Phase Shift Keying) is a digital modulation scheme that transmits data by changing the phase of the carrier wave. In QPSK, the carrier wave can take on one of four distinct phase shifts: 0°, 90°, 180°, and 270°. Each phase shift represents a unique pair of bits (called a symbol). Mathematically, the QPSK signal can be represented as:
+
+\[
+s(t) = A \cos(2\pi f_c t + \phi_i)
+\]
+
+where \( A \) is the amplitude, \( f_c \) is the carrier frequency, and \( \phi_i \) is the phase shift corresponding to the symbol being transmitted. The four possible phase shifts are:
+
+\[
+\phi_i \in \{0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}\}
+\]
+
+Each phase shift represents a different pair of bits:
+
+\[
+\begin{cases}
+0^\circ & \text{represents } 00 \\
+90^\circ & \text{represents } 01 \\
+180^\circ & \text{represents } 10 \\
+270^\circ & \text{represents } 11 \\
+\end{cases}
+\]
+
+QPSK is efficient because it allows two bits to be transmitted per symbol, effectively doubling the data rate compared to BPSK (Binary Phase Shift Keying), which transmits only one bit per symbol. The bandwidth efficiency of QPSK makes it a popular choice in digital communication systems, including satellite communications and wireless networks.
+
+% Diagram prompt: Generate a diagram showing the four phase shifts (0°, 90°, 180°, 270°) on a polar plot, with each phase shift labeled with its corresponding bit pair (00, 01, 10, 11).

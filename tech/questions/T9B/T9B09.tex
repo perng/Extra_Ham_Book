@@ -1,0 +1,30 @@
+\subsection{Erratic Changes in SWR}
+\label{T9B09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9B09]
+What can cause erratic changes in SWR?
+\begin{enumerate}[label=\Alph*]
+    \item Local thunderstorm
+    \item \textbf{Loose connection in the antenna or feed line}
+    \item Over-modulation
+    \item Overload from a strong local station
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your radio antenna is like a straw you're using to drink a milkshake. If the straw has a hole or isn't connected properly, you'll get weird slurping sounds and the milkshake won't flow smoothly. Similarly, if there's a loose connection in your antenna or the cable that connects it to your radio, the signal can get all jumbled up, causing the SWR (which measures how well the antenna and radio are working together) to go haywire. So, a loose connection is like a hole in your straw—it messes everything up!
+
+\subsubsection{Advanced Explanation}
+Standing Wave Ratio (SWR) is a measure of how efficiently radio frequency (RF) power is transmitted from the transmitter to the antenna. An ideal SWR is 1:1, indicating perfect impedance matching between the transmitter, feed line, and antenna. Erratic changes in SWR can be caused by impedance mismatches, which often result from physical issues such as loose connections in the antenna or feed line.
+
+When a connection is loose, it introduces an impedance discontinuity. This discontinuity causes reflections of the RF signal back towards the transmitter, leading to an increase in SWR. The mathematical relationship can be described by the reflection coefficient \(\Gamma\), which is given by:
+
+\[
+\Gamma = \frac{Z_L - Z_0}{Z_L + Z_0}
+\]
+
+where \(Z_L\) is the load impedance (antenna) and \(Z_0\) is the characteristic impedance of the feed line. A loose connection can cause \(Z_L\) to fluctuate, leading to variations in \(\Gamma\) and consequently in SWR.
+
+Other factors like local thunderstorms, over-modulation, or strong local stations can affect the radio signal but do not directly cause erratic changes in SWR. Therefore, the most likely cause of erratic SWR changes is a loose connection in the antenna or feed line.
+
+% Prompt for diagram: A diagram showing the relationship between impedance mismatch, reflection coefficient, and SWR would be helpful here.

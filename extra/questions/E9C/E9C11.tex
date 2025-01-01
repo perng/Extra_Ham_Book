@@ -1,0 +1,30 @@
+\subsection{E9C11: Seas vs. Soil: Unveiling Antenna Elevation Patterns!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9C11} How is the far-field elevation pattern of a vertically polarized antenna affected by being mounted over seawater versus soil?
+
+    \begin{enumerate}[label=\Alph*)]
+        \item Radiation at low angles decreases
+        \item Additional lobes appear at higher elevation angles
+        \item Separate elevation lobes will combine into a single lobe
+        \item \textbf{Radiation at low angles increases}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to throw a ball over a field. If the field is made of soft soil, the ball might not go very far because the ground absorbs some of the energy. But if you're throwing the ball over a smooth, hard surface like a frozen lake, the ball will bounce and travel much farther. Similarly, when a vertically polarized antenna is mounted over seawater, which is a better conductor than soil, it helps the radio waves bounce more effectively at low angles. This means the antenna can send signals farther at low angles compared to when it's mounted over soil.
+
+\subsubsection{Advanced Explanation}
+The far-field elevation pattern of an antenna is influenced by the ground's conductivity and permittivity. Seawater has a much higher conductivity (\(\sigma \approx 4 \, \text{S/m}\)) compared to soil (\(\sigma \approx 0.01 \, \text{S/m}\)). This higher conductivity reduces the ground's impedance, leading to better reflection of radio waves at low elevation angles. 
+
+Mathematically, the reflection coefficient \(\Gamma\) for a vertically polarized wave is given by:
+
+\[
+\Gamma = \frac{\eta_2 - \eta_1}{\eta_2 + \eta_1}
+\]
+
+where \(\eta_1\) and \(\eta_2\) are the intrinsic impedances of air and the ground, respectively. For seawater, \(\eta_2\) is much lower due to its high conductivity, resulting in a higher reflection coefficient at low angles. This enhances the radiation at low elevation angles, making option D the correct answer.
+
+Additionally, the ground's permittivity affects the wave's phase and amplitude upon reflection. Seawater's high permittivity (\(\epsilon_r \approx 80\)) further supports the propagation of low-angle radiation. In contrast, soil's lower permittivity and conductivity lead to more absorption and less effective reflection, reducing low-angle radiation.
+
+% Diagram Prompt: Generate a diagram showing the elevation patterns of a vertically polarized antenna over seawater and soil, highlighting the differences in low-angle radiation.

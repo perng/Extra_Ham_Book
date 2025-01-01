@@ -1,0 +1,24 @@
+\subsection{Scanning Function of an FM Transceiver}
+\label{T4B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B05]
+What does the scanning function of an FM transceiver do?
+\begin{enumerate}[label=\Alph*]
+    \item Checks incoming signal deviation
+    \item Prevents interference to nearby repeaters
+    \item \textbf{Tunes through a range of frequencies to check for activity}
+    \item Checks for messages left on a digital bulletin board
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your FM transceiver is like a curious cat that loves to explore. The scanning function is like the cat wandering around the neighborhood, checking out different spots to see if anything interesting is happening. In this case, the neighborhood is a range of frequencies, and the interesting things are signals or activity. So, the scanning function tunes through different frequencies to see if anyone is talking or if there’s any action going on.
+
+\subsubsection{Advanced Explanation}
+The scanning function in an FM transceiver is a feature that allows the device to automatically tune through a predefined range of frequencies to detect any active signals. This is particularly useful in scenarios where the user wants to monitor multiple channels or frequencies without manually switching between them. 
+
+Mathematically, the scanning function can be represented as a process where the transceiver sequentially checks frequencies \( f_1, f_2, \dots, f_n \) within a specified range \( [f_{\text{min}}, f_{\text{max}}] \). For each frequency \( f_i \), the transceiver checks for the presence of a signal by measuring the received signal strength (RSS). If the RSS exceeds a certain threshold, the transceiver stops scanning and locks onto that frequency, allowing the user to listen to the transmission.
+
+This function is essential for efficient frequency monitoring and is widely used in various applications, including amateur radio, public safety communications, and commercial broadcasting.
+
+% Prompt for diagram: A diagram showing an FM transceiver scanning through a range of frequencies, with arrows indicating the sequential tuning process and a signal strength meter displaying the RSS at each frequency.

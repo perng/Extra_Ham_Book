@@ -1,0 +1,28 @@
+\subsection{Flat-Topping in AM Signals}
+\label{G8A10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A10]
+What is meant by the term “flat-topping,” when referring to an amplitude-modulated phone signal?
+\begin{enumerate}[label=\Alph*)]
+    \item Signal distortion caused by insufficient collector current
+    \item The transmitter’s automatic level control (ALC) is properly adjusted
+    \item \textbf{Signal distortion caused by excessive drive or speech levels}
+    \item The transmitter’s carrier is properly suppressed
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to shout a message to your friend across the playground, but you’re so excited that you scream at the top of your lungs. Your voice gets so loud that it starts to sound weird and distorted—like it’s hitting a ceiling and can’t go any higher. That’s kind of what happens with flat-topping in AM signals. When the signal gets too strong, it hits a limit and starts to flatten out, making the sound all messed up. So, flat-topping is like your voice getting too loud and losing its clarity!
+
+\subsubsection{Advanced Explanation}
+Flat-topping in amplitude-modulated (AM) signals occurs when the modulation index exceeds 1, leading to overmodulation. This happens when the input signal (either the drive level or speech level) is too high, causing the peaks of the modulated waveform to be clipped or flattened. Mathematically, the modulation index \( m \) is given by:
+
+\[
+m = \frac{A_m}{A_c}
+\]
+
+where \( A_m \) is the amplitude of the modulating signal and \( A_c \) is the amplitude of the carrier signal. When \( m > 1 \), the signal exceeds the linear range of the transmitter, resulting in distortion. This distortion manifests as flat-topping, where the peaks of the waveform are clipped, leading to a loss of information and poor signal quality.
+
+To avoid flat-topping, it is crucial to ensure that the modulation index remains within the linear range of the transmitter, typically \( m \leq 1 \). This can be achieved by properly adjusting the drive or speech levels to prevent overmodulation.
+
+% Diagram prompt: Generate a diagram showing an AM waveform with flat-topping distortion compared to a properly modulated AM waveform.

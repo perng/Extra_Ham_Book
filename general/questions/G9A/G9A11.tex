@@ -1,0 +1,28 @@
+\subsection{Effect of Transmission Line Loss on SWR}
+\label{G9A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A11]
+What is the effect of transmission line loss on SWR measured at the input to the line?
+\begin{enumerate}[label=\Alph*]
+    \item \textbf{Higher loss reduces SWR measured at the input to the line}
+    \item Higher loss increases SWR measured at the input to the line
+    \item Higher loss increases the accuracy of SWR measured at the input to the line
+    \item Transmission line loss does not affect the SWR measurement
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to measure how much water is splashing back in a hose. If the hose has a lot of leaks (loss), less water will make it back to the start, so the splashing (SWR) will seem smaller. In radio terms, if the transmission line has more loss, the reflected signal (which causes SWR) will be weaker when it gets back to the start, making the SWR appear lower.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of how well the impedance of the transmission line matches the load impedance. When there is a mismatch, some of the signal is reflected back towards the source. The SWR is given by:
+
+\[
+\text{SWR} = \frac{1 + |\Gamma|}{1 - |\Gamma|}
+\]
+
+where \(\Gamma\) is the reflection coefficient. The reflection coefficient depends on the impedance mismatch and the attenuation (loss) in the transmission line. Higher loss in the transmission line reduces the amplitude of the reflected wave, effectively decreasing the reflection coefficient \(\Gamma\). As a result, the SWR measured at the input to the line is reduced.
+
+In mathematical terms, if the transmission line has an attenuation factor \(\alpha\), the reflected wave amplitude is reduced by a factor of \(e^{-2\alpha L}\), where \(L\) is the length of the transmission line. This reduction in the reflected wave amplitude leads to a lower SWR at the input.
+
+% Diagram prompt: Generate a diagram showing a transmission line with a source, load, and the effect of attenuation on the reflected wave.

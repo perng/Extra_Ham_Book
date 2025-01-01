@@ -1,0 +1,32 @@
+\subsection{Symbol Rate and Bandwidth Relationship}
+\label{G8B10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B10]
+What is the relationship between transmitted symbol rate and bandwidth?
+\begin{enumerate}[label=\Alph*]
+    \item Symbol rate and bandwidth are not related
+    \item \textbf{Higher symbol rates require wider bandwidth}
+    \item Lower symbol rates require wider bandwidth
+    \item Bandwidth is half the symbol rate
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send messages using a bunch of different colored flags. If you want to send more messages in the same amount of time, you'll need more flags, right? Similarly, in radio communication, if you want to send more symbols (which are like your messages) in the same amount of time, you need more space or bandwidth to fit them all in. So, higher symbol rates mean you need wider bandwidth to carry all those symbols without them getting mixed up.
+
+\subsubsection{Advanced Explanation}
+In digital communication, the symbol rate (also known as the baud rate) is the number of symbol changes (waveform changes or signaling events) made to the transmission medium per second. The bandwidth required for a signal is directly related to the symbol rate. According to the Nyquist theorem, the minimum bandwidth \( B \) required to transmit a signal with a symbol rate \( R_s \) is given by:
+
+\[
+B = \frac{R_s}{2}
+\]
+
+However, in practical systems, additional bandwidth is often required to accommodate filtering and other factors, so the relationship is generally expressed as:
+
+\[
+B \propto R_s
+\]
+
+This means that as the symbol rate increases, the required bandwidth also increases. This is because higher symbol rates involve more rapid changes in the signal, which require a wider frequency range to be accurately represented.
+
+% [Prompt for generating a diagram: A graph showing the relationship between symbol rate (x-axis) and bandwidth (y-axis), with a line indicating the proportional increase.]

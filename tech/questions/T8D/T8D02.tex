@@ -1,0 +1,26 @@
+\subsection{Talkgroups on DMR Repeaters}
+\label{T8D02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8D02]
+What is a “talkgroup” on a DMR repeater?
+\begin{enumerate}[label=\Alph*]
+    \item A group of operators sharing common interests
+    \item \textbf{A way for groups of users to share a channel at different times without hearing other users on the channel}
+    \item A protocol that increases the signal-to-noise ratio when multiple repeaters are linked together
+    \item A net that meets at a specified time
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and your friends are at a big party, but instead of everyone talking at the same time, you have different groups chatting in their own little corners. A talkgroup on a DMR repeater is like one of those corners. It lets a group of people share the same radio channel without hearing other groups. So, if you're in the Pizza Lovers talkgroup, you only hear other pizza lovers, not the Cat Enthusiasts group. It's like having a private chat room on the radio!
+
+\subsubsection{Advanced Explanation}
+In Digital Mobile Radio (DMR), a talkgroup is a logical grouping of users that allows them to share a single channel without interference from other users on the same frequency. This is achieved through Time Division Multiple Access (TDMA), which divides the channel into time slots. Each talkgroup is assigned a specific time slot, ensuring that only the intended group can communicate during that slot.
+
+Mathematically, if we consider a DMR channel with two time slots, the total capacity \( C \) of the channel can be expressed as:
+\[ C = 2 \times B \]
+where \( B \) is the bandwidth of the channel. Each talkgroup operates within its assigned time slot, effectively doubling the number of simultaneous conversations that can occur on a single frequency.
+
+Talkgroups are essential for efficient spectrum utilization and are widely used in both amateur and professional radio systems. They enable multiple groups to share the same frequency without mutual interference, enhancing the overall capacity and flexibility of the radio network.
+
+% Diagram Prompt: Generate a diagram showing a DMR repeater with two time slots and different talkgroups operating in each slot.

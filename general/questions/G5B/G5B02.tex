@@ -1,0 +1,37 @@
+\subsection{Total Current in Parallel Resistors}
+\label{G5B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5B02]
+How does the total current relate to the individual currents in a circuit of parallel resistors?
+\begin{enumerate}[label=\Alph*)]
+    \item It equals the average of the branch currents
+    \item It decreases as more parallel branches are added to the circuit
+    \item \textbf{It equals the sum of the currents through each branch}
+    \item It is the sum of the reciprocal of each individual voltage drop
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a bunch of water pipes connected to the same water source. Each pipe represents a resistor, and the water flowing through each pipe is like the current. If you have multiple pipes, the total amount of water coming out is just the sum of the water from each pipe. Similarly, in a parallel circuit, the total current is just the sum of the currents through each resistor. It's like adding up all the water from each pipe to get the total flow!
+
+\subsubsection{Advanced Explanation}
+In a parallel circuit, the voltage across each resistor is the same, but the current through each resistor can be different. According to Ohm's Law, the current through each resistor \( I_n \) is given by:
+\[
+I_n = \frac{V}{R_n}
+\]
+where \( V \) is the voltage across the resistor and \( R_n \) is the resistance of the \( n \)-th resistor.
+
+The total current \( I_{\text{total}} \) in the circuit is the sum of the currents through each resistor:
+\[
+I_{\text{total}} = I_1 + I_2 + \dots + I_n
+\]
+This is because the total current is the sum of all the individual branch currents in a parallel circuit.
+
+For example, if you have three resistors \( R_1 \), \( R_2 \), and \( R_3 \) in parallel with a voltage \( V \), the total current would be:
+\[
+I_{\text{total}} = \frac{V}{R_1} + \frac{V}{R_2} + \frac{V}{R_3}
+\]
+
+This principle is fundamental in understanding how current behaves in parallel circuits and is crucial for designing and analyzing electrical circuits.
+
+% Diagram Prompt: Generate a diagram showing a parallel circuit with three resistors and the current flowing through each resistor.

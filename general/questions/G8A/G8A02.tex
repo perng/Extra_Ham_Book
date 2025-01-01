@@ -1,0 +1,39 @@
+\subsection{Phase Angle Modulation in RF Signals}
+\label{G8A02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A02]
+What is the name of the process that changes the phase angle of an RF signal to convey information?
+\begin{enumerate}[label=\Alph*)]
+    \item Phase convolution
+    \item \textbf{Phase modulation}
+    \item Phase transformation
+    \item Phase inversion
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re sending a secret message using a flashlight. Instead of turning the light on and off (which is like amplitude modulation), you decide to twist the flashlight slightly to change the direction of the beam. This twisting is like changing the phase angle of the signal. The process of twisting the flashlight to send your message is called \textbf{phase modulation}. It’s a fancy way of saying you’re changing the angle of the signal to carry information.
+
+\subsubsection{Advanced Explanation}
+Phase modulation (PM) is a method of encoding information onto a carrier wave by varying its phase angle. Mathematically, the modulated signal can be represented as:
+
+\[
+s(t) = A_c \cos(2\pi f_c t + \phi(t))
+\]
+
+where:
+\begin{itemize}
+    \item \( A_c \) is the amplitude of the carrier wave,
+    \item \( f_c \) is the frequency of the carrier wave,
+    \item \( \phi(t) \) is the time-varying phase angle that carries the information.
+\end{itemize}
+
+In PM, the phase angle \( \phi(t) \) is directly proportional to the modulating signal \( m(t) \):
+
+\[
+\phi(t) = k_p m(t)
+\]
+
+where \( k_p \) is the phase sensitivity of the modulator. This modulation technique is widely used in communication systems, including digital modulation schemes like QPSK (Quadrature Phase Shift Keying).
+
+% Diagram prompt: Generate a diagram showing a carrier wave and its phase-modulated version with a modulating signal.

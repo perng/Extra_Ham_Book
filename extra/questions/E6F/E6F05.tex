@@ -1,0 +1,30 @@
+\subsection{Shining a Light on Optical Shaft Encoders!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6F05] Which of the following describes an optical shaft encoder?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{A device that detects rotation by interrupting a light source with a patterned wheel}
+        \item A device that measures the strength of a beam of light using analog-to-digital conversion
+        \item An optical computing device in which light is coupled between devices by fiber optics
+        \item A device for generating RTTY signals by means of a rotating light source
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a wheel with some patterns on it, like stripes or holes. Now, think of a flashlight shining on this wheel. As the wheel spins, the patterns interrupt the light, creating a kind of light flicker. An optical shaft encoder is like a special sensor that watches this flickering light. By counting how many times the light is interrupted, it can tell how much the wheel has turned. It's like a detective that uses light to figure out how fast or how far something is spinning!
+
+\subsubsection{Advanced Explanation}
+An optical shaft encoder is a device used to measure the angular position or velocity of a rotating shaft. It typically consists of a light source (such as an LED), a patterned wheel (often called an encoder disk), and a photodetector. The encoder disk has alternating transparent and opaque segments. As the shaft rotates, the disk interrupts the light beam, causing the photodetector to generate a series of pulses. The number of pulses corresponds to the angle of rotation, and the frequency of the pulses indicates the rotational speed.
+
+Mathematically, if the encoder disk has \( N \) segments, the angular resolution \( \theta \) of the encoder can be calculated as:
+\[
+\theta = \frac{360^\circ}{N}
+\]
+For example, if the disk has 100 segments, the resolution is:
+\[
+\theta = \frac{360^\circ}{100} = 3.6^\circ
+\]
+This means the encoder can detect changes in the shaft's position as small as 3.6 degrees.
+
+Optical shaft encoders are widely used in robotics, CNC machines, and other applications where precise control of rotational motion is required. They offer high accuracy and reliability, making them essential components in many modern mechanical systems.
+
+% Prompt for diagram: Generate a diagram showing a light source, a patterned wheel, and a photodetector, illustrating how the light is interrupted as the wheel rotates.

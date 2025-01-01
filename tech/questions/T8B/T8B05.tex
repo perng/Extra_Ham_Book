@@ -1,0 +1,33 @@
+\subsection{Satellite Beacon}
+\label{T8B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B05]
+What is a satellite beacon?  
+\begin{enumerate}[label=\Alph*)]
+    \item The primary transmit antenna on the satellite
+    \item An indicator light that shows where to point your antenna
+    \item A reflective surface on the satellite
+    \item \textbf{A transmission from a satellite that contains status information}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a friend in space who sends you a text message every now and then to let you know how they're doing. A satellite beacon is like that text message! It’s a special signal sent by the satellite to tell us on Earth important stuff, like Hey, I’m still working! or Here’s my location! It’s not an antenna, a light, or a mirror—it’s just a helpful message from space.
+
+\subsubsection{Advanced Explanation}
+A satellite beacon is a continuous or periodic transmission emitted by a satellite, typically at a fixed frequency. This signal carries essential telemetry data, such as the satellite's health status, position, and operational parameters. The beacon is crucial for ground stations to monitor and track the satellite, ensuring its proper functioning and alignment. 
+
+Mathematically, the beacon signal can be represented as:
+\[
+s(t) = A \cos(2\pi f_c t + \phi(t))
+\]
+where \(A\) is the amplitude, \(f_c\) is the carrier frequency, and \(\phi(t)\) represents the phase modulation that encodes the telemetry data. The beacon's frequency is often chosen to minimize interference and maximize signal clarity for ground-based receivers.
+
+Related concepts include:
+\begin{itemize}
+    \item \textbf{Telemetry}: The process of collecting and transmitting data from remote sources.
+    \item \textbf{Carrier Frequency}: The central frequency of the transmitted signal.
+    \item \textbf{Phase Modulation}: A method of encoding information by varying the phase of the carrier wave.
+\end{itemize}
+
+% Prompt for diagram: A diagram showing a satellite emitting a beacon signal towards a ground station, with labels for the satellite, beacon signal, and ground station.

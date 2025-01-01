@@ -1,0 +1,30 @@
+\subsection{G1A06: FCC Rules for Secondary Users in the Amateur Service}
+\label{G1A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G1A06]
+Which of the following applies when the FCC rules designate the amateur service as a secondary user on a band?
+\begin{enumerate}[label=\Alph*)]
+    \item Amateur stations must record the call sign of the primary service station before operating on a frequency assigned to that station
+    \item Amateur stations may use the band only during emergencies
+    \item \textbf{Amateur stations must not cause harmful interference to primary users and must accept interference from primary users}
+    \item Amateur stations may only operate during specific hours of the day, while primary users are permitted 24-hour use of the band
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a playground, and there's a big kid who gets to use the swing first because they’re older. You’re allowed to use the swing too, but only if you don’t bother the big kid. If the big kid wants to swing, you have to step aside and let them have it. That’s kind of how it works when the FCC says amateur radio operators are “secondary users” on a band. You can use the frequency, but you can’t mess with the “primary users” (the big kids), and if they’re using it, you have to deal with it and not complain.
+
+\subsubsection{Advanced Explanation}
+In radio frequency allocation, the FCC designates certain bands for specific services, and sometimes amateur radio is assigned as a secondary user. This means that amateur operators must operate under strict conditions to avoid causing harmful interference to primary users, who have priority. The key principle here is \textit{non-interference} and \textit{acceptance of interference}. 
+
+Mathematically, this can be understood in terms of signal-to-noise ratio (SNR). If a primary user is transmitting with a power level \( P_p \) and an amateur station transmits with a power level \( P_a \), the interference caused by the amateur station must be negligible, i.e., \( P_a \ll P_p \). Additionally, the amateur station must be capable of filtering out or tolerating interference from the primary user, which can be represented as:
+
+\[
+\text{SNR}_{\text{amateur}} = \frac{P_a}{P_p + N} \geq \text{Threshold}
+\]
+
+where \( N \) is the noise power. If the SNR falls below a certain threshold, the amateur station must cease operation or adjust its parameters to comply with the rules.
+
+This regulation ensures efficient use of the radio spectrum and minimizes conflicts between different services. It is a fundamental aspect of spectrum management and is crucial for maintaining order in shared frequency bands.
+
+% Diagram prompt: A diagram showing primary and secondary users sharing a frequency band, with arrows indicating interference and compliance with FCC rules.

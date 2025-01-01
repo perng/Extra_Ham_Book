@@ -1,0 +1,29 @@
+\subsection{Half-Wave Rectifier AC Cycle Conversion}
+\label{G7A05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A05]
+What portion of the AC cycle is converted to DC by a half-wave rectifier?
+\begin{enumerate}[label=\Alph*)]
+    \item 90 degrees
+    \item \textbf{180 degrees}
+    \item 270 degrees
+    \item 360 degrees
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re on a swing, going back and forth. A half-wave rectifier is like only pushing the swing when it’s moving in one direction (let’s say forward) and ignoring it when it’s moving backward. So, out of the entire swing cycle (which is like 360 degrees), you’re only using half of it (180 degrees) to make the swing go forward. That’s exactly what a half-wave rectifier does with an AC cycle—it only uses half of it to create DC!
+
+\subsubsection{Advanced Explanation}
+A half-wave rectifier is a circuit that converts an alternating current (AC) signal into a direct current (DC) signal by allowing only one half of the AC cycle to pass through. The AC cycle is a sinusoidal waveform that completes a full cycle of 360 degrees. The half-wave rectifier effectively blocks the negative half of the cycle (180 to 360 degrees) and only allows the positive half (0 to 180 degrees) to pass. 
+
+Mathematically, the input AC voltage can be represented as:
+\[ V(t) = V_m \sin(\omega t) \]
+where \( V_m \) is the peak voltage, \( \omega \) is the angular frequency, and \( t \) is time. The half-wave rectifier output voltage \( V_{out}(t) \) is given by:
+\[ V_{out}(t) = \begin{cases} 
+V_m \sin(\omega t) & \text{if } 0 \leq \omega t \leq \pi \\
+0 & \text{if } \pi < \omega t < 2\pi 
+\end{cases} \]
+This means that the rectifier only converts the portion of the AC cycle from 0 to 180 degrees (or 0 to \(\pi\) radians) into DC, effectively utilizing half of the AC cycle.
+
+% Diagram prompt: Generate a diagram showing an AC sine wave with the positive half highlighted to represent the portion converted by a half-wave rectifier.

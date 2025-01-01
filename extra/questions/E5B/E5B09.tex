@@ -1,0 +1,38 @@
+\subsection{Capacitor Capers: Unraveling AC Current and Voltage Dance!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5B09]
+\textbf{E5B09} What is the relationship between the AC current through a capacitor and the voltage across a capacitor?
+\begin{enumerate}[label=\Alph*)]
+    \item Voltage and current are in phase
+    \item Voltage and current are 180 degrees out of phase
+    \item Voltage leads current by 90 degrees
+    \item \textbf{Current leads voltage by 90 degrees}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a capacitor as a tiny bucket that stores electrical energy. When you pour water (current) into the bucket, it takes a little time for the water level (voltage) to rise. Similarly, when you stop pouring, the water level doesn't drop instantly. In an AC circuit, the current (the pouring) happens before the voltage (the water level) changes. So, the current leads the voltage by 90 degrees. It's like the current is always one step ahead of the voltage!
+
+\subsubsection{Advanced Explanation}
+In an AC circuit with a capacitor, the relationship between the current \( I(t) \) and the voltage \( V(t) \) can be described using the following equations:
+
+\[
+I(t) = C \frac{dV(t)}{dt}
+\]
+
+Where \( C \) is the capacitance. For a sinusoidal voltage \( V(t) = V_0 \sin(\omega t) \), the current can be derived as:
+
+\[
+I(t) = C \frac{d}{dt} \left( V_0 \sin(\omega t) \right) = C V_0 \omega \cos(\omega t) = I_0 \cos(\omega t)
+\]
+
+Here, \( I_0 = C V_0 \omega \) is the peak current. Notice that \( \cos(\omega t) = \sin(\omega t + 90^\circ) \), which means the current leads the voltage by 90 degrees. This phase difference is a fundamental property of capacitors in AC circuits.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{Capacitance (C)}: The ability of a capacitor to store charge per unit voltage.
+    \item \textbf{Impedance (Z)}: In AC circuits, the impedance of a capacitor is given by \( Z_C = \frac{1}{j\omega C} \), where \( \omega \) is the angular frequency.
+    \item \textbf{Phase Difference}: The time difference between the peaks of the voltage and current waveforms, measured in degrees or radians.
+\end{itemize}
+
+% Diagram Prompt: Generate a diagram showing the sinusoidal waveforms of voltage and current across a capacitor, highlighting the 90-degree phase difference.

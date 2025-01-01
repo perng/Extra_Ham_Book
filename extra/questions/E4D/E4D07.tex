@@ -1,0 +1,49 @@
+\subsection*{Boosting Receiver Sensitivity: What Works Best?}
+
+\begin{tcolorbox}[colback=gray!10, colframe=black, title=E4D07`]
+Which of the following reduces the likelihood of receiver desensitization? 
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Insert attenuation before the first RF stage}
+    \item Raise the receiver’s IF frequency
+    \item Increase the receiver’s front-end gain
+    \item Switch from fast AGC to slow AGC
+\end{enumerate} \end{tcolorbox}
+
+The correct answer is: \textbf{A. Insert attenuation before the first RF stage}.
+
+Receiver desensitization occurs when the performance of a radio receiver is degraded due to excessively strong signals at the input, preventing weaker signals from being detected properly. To combat this issue, it is essential to control the signal levels entering the receiver.
+
+\subsubsection*{ Related Concepts}
+
+1. \textbf{Receiver Stages}: A typical radio receiver consists of multiple stages, including the radio frequency (RF) stage and the intermediate frequency (IF) stage. The first RF stage is crucial as it sets the initial gain for incoming signals.
+
+2. \textbf{Attenuation}: Attenuation refers to the reduction of signal strength. By introducing attenuation before the first RF stage, we can ensure that the incoming signals are at a manageable level that prevents overload and, consequently, desensitization.
+
+3. \textbf{AGC (Automatic Gain Control)}: AGC circuits adjust the gain of the receiver automatically based on the input signal strength. Fast AGC responds quickly to changes in signal levels, while slow AGC responds more gradually.
+
+4. \textbf{IF Frequency}: Increasing the receiver's IF frequency can help in some cases but may not specifically address desensitization caused by strong signals at the RF stage.
+
+5. \textbf{Front-End Gain}: Increasing the gain too much at the front-end can exacerbate desensitization issues.
+
+\subsubsection*{ Calculation Example}
+
+If you had a signal with a certain level, you may want to calculate the necessary attenuation to prevent desensitization. 
+
+1. Consider an incoming signal power of \( P_{\text{incoming}} = 10 \, \text{mW} \).
+2. Suppose the receiver's maximum input level before desensitization occurs is \( P_{\text{max}} = 1 \, \text{mW} \).
+
+To calculate the required attenuation \( A \) in decibels (dB), we can use the formula:
+
+\[
+A = 10 \cdot \log_{10}\left(\frac{P_{\text{incoming}}}{P_{\text{max}}}\right)
+\]
+
+Substituting the values:
+
+\[
+A = 10 \cdot \log_{10}\left(\frac{10}{1}\right) = 10 \cdot 1 = 10 \, \text{dB}
+\]
+
+Thus, an attenuation of 10 dB is necessary before the first RF stage to reduce the incoming signal to a safe level.
+
+This understanding of signal management through attenuation helps ensure that the receiver remains sensitive enough to detect weak signals without being adversely affected by stronger ones.

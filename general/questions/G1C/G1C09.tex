@@ -1,0 +1,35 @@
+\subsection{Maximum Power Limit on the 60-Meter Band}
+\label{G1C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G1C09]
+What is the maximum power limit on the 60-meter band?
+\begin{enumerate}[label=\Alph*)]
+    \item 1500 watts PEP
+    \item 10 watts RMS
+    \item \textbf{ERP of 100 watts PEP with respect to a dipole}
+    \item ERP of 100 watts PEP with respect to an isotropic antenna
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing with a walkie-talkie, and you want to make sure you don't shout too loudly so that everyone can hear you without causing a disturbance. On the 60-meter band, the rules say you can't use more than 100 watts of power, but it's not just any 100 watts—it's 100 watts compared to a specific type of antenna called a dipole. Think of it like saying, You can use a megaphone, but only if it's as loud as this specific megaphone we've chosen as the standard. This way, everyone is on the same page, and no one is overpowering the conversation.
+
+\subsubsection{Advanced Explanation}
+The 60-meter band is a specific frequency range allocated for amateur radio use, and it has strict power limits to prevent interference with other services. The maximum power limit is defined in terms of Effective Radiated Power (ERP) with respect to a dipole antenna. ERP is a measure of how much power is actually radiated by the antenna in a specific direction, taking into account the antenna's gain.
+
+The correct answer is \textbf{C}, which states that the maximum ERP is 100 watts PEP (Peak Envelope Power) with respect to a dipole. This means that the power output of your transmitter, when combined with the gain of your antenna, should not exceed the equivalent of 100 watts if you were using a dipole antenna. 
+
+To calculate ERP, you can use the following formula:
+\[
+\text{ERP} = P_{\text{transmitter}} \times G_{\text{antenna}}
+\]
+where \( P_{\text{transmitter}} \) is the power output of your transmitter, and \( G_{\text{antenna}} \) is the gain of your antenna relative to a dipole. The gain of a dipole is typically considered to be 1 (0 dB), so if your antenna has a gain of 2 (3 dB), your transmitter power should be adjusted so that the ERP does not exceed 100 watts.
+
+For example, if your antenna has a gain of 2, the maximum transmitter power \( P_{\text{transmitter}} \) you can use is:
+\[
+P_{\text{transmitter}} = \frac{\text{ERP}}{G_{\text{antenna}}} = \frac{100 \text{ watts}}{2} = 50 \text{ watts}
+\]
+
+This ensures that the effective radiated power does not exceed the regulatory limit.
+
+% Diagram prompt: A diagram showing a dipole antenna with power levels and ERP calculation could be helpful here.

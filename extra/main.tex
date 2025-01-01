@@ -1,0 +1,79 @@
+\documentclass[12pt]{book}
+
+% Packages for better formatting
+\usepackage{geometry} % Page layout
+\usepackage{titlesec} % Formatting headings
+\usepackage{fancyhdr} % Header/Footer
+\usepackage{hyperref} % Hyperlinks
+\usepackage{graphicx} % For images
+\usepackage{amsmath} % For math
+\usepackage{amssymb} % For math symbols
+\usepackage{enumitem} % Custom lists
+\usepackage[most]{tcolorbox}
+\usepackage{epstopdf} % For converting EPS to PDF
+
+% Page layout
+\geometry{a4paper, margin=1in}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Extra HAM!}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+
+% Title formatting
+\titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
+\titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Extra HAM!},
+    pdfauthor={Charles Perng},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    {\Huge\bfseries Extra HAM! \\
+    \vspace{0.5cm}
+    A Test Preparation Guide \\
+    \vspace{1cm}
+    \large By Charles Perng}
+    
+    \vspace{4cm}
+    \includegraphics[width=\textwidth]{extra-ham.png} % Specify width
+    % or use \includegraphics[width=\textwidth]{extra-ham.pdf} if converted
+    
+    \vfill
+    {\large \today}
+\end{titlepage}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Preface
+\chapter*{Preface}
+This book, \textit{Extra HAM!}, is designed to help you prepare for the HAM radio licensing exams. With a mix of theoretical explanations and practical exercises, you will develop the skills and confidence to ace your test. Let’s dive in!
+
+\newpage
+
+% Chapter 1
+\include{e1}
+\include{e2}
+
+\newpage
+
+% Appendices
+\appendix
+
+\end{document}

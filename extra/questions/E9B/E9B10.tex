@@ -1,0 +1,35 @@
+\subsection{Unraveling the Magic of Method of Moments!}
+\label{sec:E9B10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black]
+    \textbf{E9B10} What is the principle of a Method of Moments analysis?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{A wire is modeled as a series of segments, each having a uniform value of current}
+        \item A wire is modeled as a single sine-wave current generator
+        \item A wire is modeled as a single sine-wave voltage source
+        \item A wire is modeled as a series of segments, each having a distinct value of voltage across it
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a long piece of wire, and you want to figure out how electricity flows through it. Instead of trying to understand the whole wire at once, you can break it down into smaller, easier-to-handle pieces, like cutting a long spaghetti noodle into smaller bits. Each of these smaller pieces has the same amount of electricity flowing through it. This way, you can study each piece one by one and then put all the information together to understand the whole wire. It's like solving a big puzzle by looking at each small piece first!
+
+\subsubsection{Advanced Explanation}
+The Method of Moments (MoM) is a numerical technique used to solve electromagnetic problems, particularly in antenna theory and scattering analysis. The principle involves discretizing a continuous structure, such as a wire, into smaller segments. Each segment is assumed to carry a uniform current, simplifying the problem into a system of linear equations.
+
+Mathematically, the wire is divided into \( N \) segments, and the current \( I_n \) on each segment is assumed to be constant. The integral equation governing the electromagnetic behavior is then transformed into a matrix equation:
+
+\[
+\mathbf{Z} \cdot \mathbf{I} = \mathbf{V}
+\]
+
+where:
+\begin{itemize}
+    \item \( \mathbf{Z} \) is the impedance matrix,
+    \item \( \mathbf{I} \) is the vector of unknown currents on each segment,
+    \item \( \mathbf{V} \) is the excitation vector.
+\end{itemize}
+
+By solving this matrix equation, the current distribution on the wire can be determined. This method is particularly useful for analyzing complex structures where analytical solutions are not feasible.
+
+% Diagram Prompt: Generate a diagram showing a wire divided into segments with uniform current flow in each segment.

@@ -1,0 +1,33 @@
+\subsection{Understanding ERP Limits for Linear Transponders!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2A08] Why should effective radiated power (ERP) be limited to a satellite that uses a linear transponder?
+    \begin{enumerate}[label=\Alph*)]
+        \item To prevent creating errors in the satellite telemetry
+        \item \textbf{To avoid reducing the downlink power to all other users}
+        \item To prevent the satellite from emitting out-of-band signals
+        \item To avoid interfering with terrestrial QSOs
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a satellite as a big speaker in space that helps people on Earth talk to each other. If one person talks too loudly into the speaker, it might make it harder for everyone else to hear their own conversations. Similarly, if a satellite uses too much power (ERP), it can make it difficult for other users to receive their signals clearly. That's why we need to limit the power to make sure everyone can use the satellite fairly.
+
+\subsubsection{Advanced Explanation}
+A linear transponder in a satellite amplifies and retransmits signals received from Earth. The effective radiated power (ERP) is a measure of the power output of the satellite's transmitter as it is radiated from the antenna. If the ERP is too high, it can saturate the transponder, causing it to operate non-linearly. This non-linear operation can lead to intermodulation distortion, which reduces the quality of the downlink signal for all users.
+
+Mathematically, the power received by a user on Earth can be expressed as:
+\[
+P_r = \frac{P_t G_t G_r \lambda^2}{(4 \pi d)^2}
+\]
+where:
+\begin{itemize}
+    \item \( P_r \) is the received power,
+    \item \( P_t \) is the transmitted power,
+    \item \( G_t \) and \( G_r \) are the gains of the transmitting and receiving antennas, respectively,
+    \item \( \lambda \) is the wavelength of the signal,
+    \item \( d \) is the distance between the satellite and the receiver.
+\end{itemize}
+
+If \( P_t \) (related to ERP) is too high, it can cause the transponder to operate in a non-linear region, leading to reduced \( P_r \) for other users. Therefore, limiting ERP ensures that the transponder operates within its linear range, maintaining signal quality for all users.
+
+% Diagram prompt: Generate a diagram showing a satellite with a linear transponder, illustrating the relationship between ERP, transponder saturation, and downlink signal quality for multiple users.

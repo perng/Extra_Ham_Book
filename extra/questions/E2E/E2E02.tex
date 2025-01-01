@@ -1,0 +1,28 @@
+\subsection{Mastering Timing in WSJT-X: What Keeps You in Sync?}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E2E02] Which of the following synchronizes WSJT-X digital mode transmit/receive timing?
+    \begin{enumerate}[label=\Alph*]
+        \item Alignment of frequency shifts
+        \item \textbf{Synchronization of computer clocks}
+        \item Sync-field transmission
+        \item Sync-pulse timing
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and a friend are trying to send messages back and forth using a special code. To make sure you both understand each other, you need to agree on when to send and when to listen. In WSJT-X, a digital mode used by radio enthusiasts, this agreement is made possible by synchronizing the clocks on your computers. Just like you and your friend agreeing on a specific time to start, the computers need to have their clocks perfectly aligned to ensure the messages are sent and received at the right moments.
+
+\subsubsection{Advanced Explanation}
+WSJT-X is a software suite designed for weak-signal radio communication, often used in amateur radio. One of the critical aspects of digital communication is timing synchronization. In WSJT-X, the timing of transmit and receive operations is synchronized through the alignment of computer clocks. This synchronization ensures that both the transmitting and receiving stations are operating on the same time frame, which is essential for decoding the digital signals accurately.
+
+The synchronization process involves the use of Network Time Protocol (NTP) or similar methods to ensure that the computer clocks are aligned with a high degree of precision. This alignment allows the software to accurately predict when to start transmitting and when to start listening for incoming signals. Without this synchronization, the timing of the signals would be off, leading to errors in decoding and potentially missed communications.
+
+Mathematically, the synchronization can be represented as:
+
+\[
+\Delta t = t_{\text{transmit}} - t_{\text{receive}}
+\]
+
+where \(\Delta t\) is the time difference between the transmit and receive operations. For successful communication, \(\Delta t\) must be minimized, ideally approaching zero. This is achieved by ensuring that both computers have their clocks synchronized to a common reference time.
+
+% Prompt for diagram: A diagram showing two computers with synchronized clocks, one transmitting and one receiving signals, with arrows indicating the timing alignment.

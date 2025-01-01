@@ -1,0 +1,35 @@
+\subsection{Capacitance in Series}\label{G5C12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5C12]
+What is the capacitance of a 20-microfarad capacitor connected in series with a 50-microfarad capacitor?
+\begin{enumerate}[label=\Alph*)]
+    \item 0.07 microfarads
+    \item \textbf{14.3 microfarads}
+    \item 70 microfarads
+    \item 1,000 microfarads
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two water tanks connected by a pipe. The first tank can hold 20 liters, and the second can hold 50 liters. If you connect them in series, the total amount of water they can hold together isn't just 20 + 50 = 70 liters. Instead, it's like they’re sharing the water, so the total capacity is less than the smallest tank. In this case, the combined capacity is about 14.3 liters. Capacitors work similarly when connected in series—their total capacitance is less than the smallest capacitor.
+
+\subsubsection{Advanced Explanation}
+When capacitors are connected in series, the reciprocal of the total capacitance \( C_{\text{total}} \) is the sum of the reciprocals of the individual capacitances. Mathematically, this is expressed as:
+
+\[
+\frac{1}{C_{\text{total}}} = \frac{1}{C_1} + \frac{1}{C_2}
+\]
+
+Given \( C_1 = 20 \, \mu\text{F} \) and \( C_2 = 50 \, \mu\text{F} \), we can calculate the total capacitance as follows:
+
+\[
+\frac{1}{C_{\text{total}}} = \frac{1}{20} + \frac{1}{50} = \frac{5}{100} + \frac{2}{100} = \frac{7}{100}
+\]
+
+\[
+C_{\text{total}} = \frac{100}{7} \approx 14.3 \, \mu\text{F}
+\]
+
+This formula is derived from the fact that the voltage across each capacitor in series adds up, while the charge remains the same. The total capacitance is always less than the smallest capacitor in the series.
+
+% Diagram prompt: Generate a diagram showing two capacitors connected in series with their respective capacitance values labeled.

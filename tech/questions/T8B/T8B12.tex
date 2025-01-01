@@ -1,0 +1,28 @@
+\subsection{Determining Satellite Uplink Power}
+\label{T8B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B12]
+Which of the following is a way to determine whether your satellite uplink power is neither too low nor too high?
+\begin{enumerate}[label=\Alph*.]
+    \item Check your signal strength report in the telemetry data
+    \item Listen for distortion on your downlink signal
+    \item \textbf{Your signal strength on the downlink should be about the same as the beacon}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to talk to your friend on a walkie-talkie. If you shout too loudly, your friend will hear you, but it might be distorted and annoying. If you whisper, your friend might not hear you at all. The perfect volume is when your voice is just right—clear and easy to understand. Similarly, when sending a signal to a satellite, you want your uplink power to be just right. If it's too high, it can cause distortion, and if it's too low, the satellite might not receive it. The best way to check is to see if the signal strength on the downlink (the signal coming back from the satellite) is about the same as the beacon (a reference signal). This way, you know your uplink power is just right!
+
+\subsubsection{Advanced Explanation}
+In satellite communication, the uplink power must be optimized to ensure reliable communication without causing interference or signal degradation. The beacon signal is a reference signal transmitted by the satellite, and its strength is known and stable. By comparing the downlink signal strength to the beacon, you can determine if the uplink power is appropriate. 
+
+Mathematically, if \( P_{\text{beacon}} \) is the power of the beacon signal and \( P_{\text{downlink}} \) is the power of the downlink signal, the condition for optimal uplink power can be expressed as:
+
+\[ P_{\text{downlink}} \approx P_{\text{beacon}} \]
+
+This ensures that the uplink power is neither too low (which would result in \( P_{\text{downlink}} < P_{\text{beacon}} \)) nor too high (which would result in \( P_{\text{downlink}} > P_{\text{beacon}} \)). 
+
+Additionally, monitoring the signal-to-noise ratio (SNR) and bit error rate (BER) can provide further insights into the quality of the communication link. However, the simplest and most effective method is to compare the downlink signal strength to the beacon.
+
+% Diagram prompt: A diagram showing the uplink and downlink paths with the beacon signal and downlink signal strengths labeled.

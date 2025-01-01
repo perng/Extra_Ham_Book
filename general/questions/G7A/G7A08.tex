@@ -1,0 +1,28 @@
+\subsection{Characteristics of Switchmode vs. Linear Power Supplies}
+\label{G7A08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A08]
+Which of the following is characteristic of a switchmode power supply as compared to a linear power supply?
+\begin{enumerate}[label=\Alph*)]
+    \item Faster switching time makes higher output voltage possible
+    \item Fewer circuit components are required
+    \item \textbf{High-frequency operation allows the use of smaller components}
+    \item Inherently more stable
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have two types of backpacks: one is a regular backpack, and the other is a magical shrinking backpack. The regular backpack (linear power supply) is big and bulky, and it doesn’t change size no matter what you put in it. The magical shrinking backpack (switchmode power supply), on the other hand, can shrink itself to fit whatever you put inside, making it much more compact and efficient. The magic here is the high-frequency operation, which allows the switchmode power supply to use smaller components, just like the shrinking backpack uses less space.
+
+\subsubsection*{Advanced Explanation}
+A switchmode power supply (SMPS) operates by rapidly switching the input voltage on and off at a high frequency, typically in the range of tens to hundreds of kilohertz. This high-frequency switching allows the use of smaller transformers, inductors, and capacitors compared to a linear power supply, which operates at the mains frequency (50 or 60 Hz). The size of these components is inversely proportional to the frequency of operation, as given by the equation:
+
+\[
+L = \frac{V \cdot \Delta t}{\Delta I}
+\]
+
+where \( L \) is the inductance, \( V \) is the voltage, \( \Delta t \) is the time interval, and \( \Delta I \) is the change in current. For a given inductance, higher frequency (smaller \( \Delta t \)) allows for smaller components. This is why SMPS can be made much smaller and lighter than linear power supplies, which require larger components to handle the lower frequency.
+
+Additionally, SMPS are more efficient because they dissipate less power as heat, unlike linear power supplies that regulate voltage by dissipating excess energy as heat. This efficiency is another key advantage of SMPS over linear power supplies.
+
+% Prompt for diagram: A diagram comparing the size of components in a switchmode power supply versus a linear power supply would be helpful here.

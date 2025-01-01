@@ -1,0 +1,27 @@
+\subsection{Understanding the Use of Sub-Audible Tones in Radio Communication}\label{T2B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B02]
+What term describes the use of a sub-audible tone transmitted along with normal voice audio to open the squelch of a receiver?
+\begin{enumerate}[label=\Alph*]
+    \item Carrier squelch
+    \item Tone burst
+    \item DTMF
+    \item \textbf{CTCSS}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re at a party where everyone is talking at the same time. It’s chaos! But what if you and your friend had a secret handshake? Only when you see that handshake do you start listening to each other. In radio communication, CTCSS (Continuous Tone-Coded Squelch System) is like that secret handshake. It’s a quiet tone that your radio sends out along with your voice. Only radios that know this tone will “open their ears” and let the voice through. This way, you don’t hear everyone else’s chatter—just the messages meant for you!
+
+\subsubsection{Advanced Explanation}
+CTCSS is a method used in radio communication to manage the squelch function of a receiver. The squelch is a circuit that mutes the receiver when no signal is present, preventing noise from being heard. CTCSS works by embedding a sub-audible tone (typically between 67 Hz and 254.1 Hz) within the transmitted audio signal. This tone is not heard by the user but is detected by the receiver. When the receiver detects the correct CTCSS tone, it opens the squelch, allowing the audio to pass through.
+
+Mathematically, the CTCSS tone can be represented as a sinusoidal wave:
+\[
+f(t) = A \sin(2\pi f_c t)
+\]
+where \( A \) is the amplitude, \( f_c \) is the frequency of the CTCSS tone, and \( t \) is time. The receiver uses a filter to isolate this tone and compare it to a predefined threshold. If the tone matches, the squelch is opened.
+
+CTCSS is particularly useful in shared frequency environments, where multiple users or groups may be operating on the same frequency. By assigning different CTCSS tones to different groups, interference is minimized, and only the intended communications are heard.
+
+% Diagram Prompt: Generate a diagram showing the transmission of a CTCSS tone along with voice audio, and how the receiver detects and processes the tone to open the squelch.

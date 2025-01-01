@@ -1,0 +1,36 @@
+\subsection{Modulation Envelope of an AM Signal}
+\label{G8A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A11]
+What is the modulation envelope of an AM signal?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{The waveform created by connecting the peak values of the modulated signal}
+    \item The carrier frequency that contains the signal
+    \item Spurious signals that envelop nearby frequencies
+    \item The bandwidth of the modulated signal
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re drawing a wiggly line on a piece of paper, but instead of just drawing it randomly, you’re following the peaks of a wave that’s going up and down. That wiggly line you’re drawing? That’s the modulation envelope! It’s like the outline of the wave’s highest points. In AM (Amplitude Modulation), the modulation envelope is what carries the actual information, like someone’s voice, by changing the height of the wave. So, if you connect the dots of the wave’s peaks, you’ve got the modulation envelope!
+
+\subsubsection*{Advanced Explanation}
+In Amplitude Modulation (AM), the modulation envelope is the waveform that results from the variation in the amplitude of the carrier signal due to the modulating signal. Mathematically, an AM signal can be represented as:
+
+\[
+s(t) = A_c \left[1 + m(t)\right] \cos(2\pi f_c t)
+\]
+
+where:
+\begin{itemize}
+    \item \( s(t) \) is the modulated signal,
+    \item \( A_c \) is the amplitude of the carrier signal,
+    \item \( m(t) \) is the modulating signal (e.g., voice or music),
+    \item \( f_c \) is the carrier frequency.
+\end{itemize}
+
+The modulation envelope is the term \( A_c \left[1 + m(t)\right] \), which represents the amplitude variations of the carrier signal. By connecting the peak values of the modulated signal, we obtain the modulation envelope, which directly corresponds to the original modulating signal \( m(t) \).
+
+The modulation envelope is crucial because it carries the information being transmitted. In AM radio, for example, the modulation envelope corresponds to the audio signal that is being broadcast. Understanding the modulation envelope helps in demodulating the signal to retrieve the original information.
+
+% Prompt for diagram: Generate a diagram showing an AM signal with its modulation envelope highlighted, illustrating how the envelope follows the peaks of the modulated signal.

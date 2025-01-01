@@ -1,0 +1,30 @@
+\subsection{RMS Value and Power Dissipation}
+\label{G5B07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5B07]
+What value of an AC signal produces the same power dissipation in a resistor as a DC voltage of the same value?
+\begin{enumerate}[label=\Alph*)]
+    \item The peak-to-peak value
+    \item The peak value
+    \item \textbf{The RMS value}
+    \item The reciprocal of the RMS value
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a light bulb connected to a battery (DC) and another identical light bulb connected to an AC source. You want both bulbs to shine equally bright. The AC signal is constantly changing, so how do we compare it to the steady DC voltage? The answer is the RMS (Root Mean Square) value! It’s like finding the average power of the AC signal that matches the power from the DC voltage. So, the RMS value of the AC signal is the one that makes the bulb shine just as brightly as the DC voltage.
+
+\subsubsection{Advanced Explanation}
+The power dissipated in a resistor is given by \( P = \frac{V^2}{R} \), where \( V \) is the voltage and \( R \) is the resistance. For a DC voltage, this is straightforward. However, for an AC signal, the voltage varies with time, so we need to find an equivalent value that produces the same average power.
+
+The RMS value of an AC signal is defined as:
+\[
+V_{\text{RMS}} = \sqrt{\frac{1}{T} \int_0^T V(t)^2 \, dt}
+\]
+where \( V(t) \) is the instantaneous voltage and \( T \) is the period of the AC signal. For a sinusoidal voltage \( V(t) = V_{\text{peak}} \sin(\omega t) \), the RMS value is:
+\[
+V_{\text{RMS}} = \frac{V_{\text{peak}}}{\sqrt{2}}
+\]
+This RMS value ensures that the power dissipated in the resistor is the same as if a DC voltage of the same magnitude were applied. Therefore, the RMS value of an AC signal is the correct answer.
+
+% Diagram prompt: Generate a diagram showing a resistor connected to a DC source and an AC source, with labels indicating the RMS value and the equivalent power dissipation.

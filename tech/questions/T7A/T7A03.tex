@@ -1,0 +1,30 @@
+\subsection{Frequency Conversion Devices}
+\label{T7A03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7A03]
+Which of the following is used to convert a signal from one frequency to another?
+\begin{enumerate}[label=\Alph*)]
+    \item Phase splitter
+    \item \textbf{Mixer}
+    \item Inverter
+    \item Amplifier
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a radio that can only play music at one station, but you want to listen to another station. A mixer is like a magical tool that helps you change the station by mixing the signals together. It takes the signal from one frequency and shifts it to another, so you can tune into your favorite music. Think of it as a DJ who blends different songs to create a new track!
+
+\subsubsection{Advanced Explanation}
+A mixer is a nonlinear device used in radio frequency (RF) systems to convert a signal from one frequency to another. This process is known as frequency conversion or heterodyning. The mixer combines two input signals: the original signal (at frequency \( f_1 \)) and a local oscillator signal (at frequency \( f_2 \)). The output of the mixer contains signals at the sum (\( f_1 + f_2 \)) and difference (\( |f_1 - f_2| \)) frequencies. The desired frequency is then filtered out for further processing.
+
+Mathematically, if the input signals are \( V_1(t) = A_1 \cos(2\pi f_1 t) \) and \( V_2(t) = A_2 \cos(2\pi f_2 t) \), the output of the mixer can be expressed as:
+\[
+V_{\text{out}}(t) = k \cdot V_1(t) \cdot V_2(t) = k \cdot A_1 A_2 \cos(2\pi f_1 t) \cos(2\pi f_2 t)
+\]
+Using the trigonometric identity \( \cos(A)\cos(B) = \frac{1}{2}[\cos(A+B) + \cos(A-B)] \), the output becomes:
+\[
+V_{\text{out}}(t) = \frac{k A_1 A_2}{2} [\cos(2\pi (f_1 + f_2) t) + \cos(2\pi |f_1 - f_2| t)]
+\]
+This shows that the mixer generates signals at both the sum and difference frequencies, allowing for frequency conversion.
+
+% Diagram prompt: Generate a diagram showing the input signals \( f_1 \) and \( f_2 \), the mixer, and the output signals at \( f_1 + f_2 \) and \( |f_1 - f_2| \).

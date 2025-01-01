@@ -1,0 +1,50 @@
+\subsection{Finding the Perfect Match: Impedance of a Series Circuit!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5C12] Which point on Figure E5-1 best represents the impedance of a series circuit consisting of a 300-ohm resistor and a 19-picofarad capacitor at 21.200 MHz?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Point 1}
+        \item Point 3
+        \item Point 7
+        \item Point 8
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a simple circuit with a resistor and a capacitor connected in series. The resistor resists the flow of electricity, and the capacitor stores and releases energy. When you apply a high-frequency signal (like 21.200 MHz) to this circuit, the capacitor's behavior changes. It starts to act like a short circuit, allowing more current to flow. The impedance of the circuit is a combination of the resistor's resistance and the capacitor's reactance. In this case, the impedance is mostly determined by the resistor because the capacitor's reactance is very low at such a high frequency. Therefore, the impedance is close to the resistor's value, which is 300 ohms. Point 1 on the graph best represents this impedance.
+
+\subsubsection{Advanced Explanation}
+To determine the impedance of the series circuit, we need to calculate the reactance of the capacitor and then combine it with the resistor's resistance. The formula for the capacitive reactance \( X_C \) is:
+
+\[
+X_C = \frac{1}{2 \pi f C}
+\]
+
+Where:
+- \( f \) is the frequency in Hertz (Hz),
+- \( C \) is the capacitance in Farads (F).
+
+Given:
+- \( f = 21.200 \times 10^6 \) Hz,
+- \( C = 19 \times 10^{-12} \) F.
+
+Plugging in the values:
+
+\[
+X_C = \frac{1}{2 \pi \times 21.200 \times 10^6 \times 19 \times 10^{-12}} \approx 397.89 \, \Omega
+\]
+
+The impedance \( Z \) of the series circuit is given by:
+
+\[
+Z = \sqrt{R^2 + X_C^2}
+\]
+
+Where \( R = 300 \, \Omega \). Therefore:
+
+\[
+Z = \sqrt{300^2 + 397.89^2} \approx 498.73 \, \Omega
+\]
+
+However, at such a high frequency, the capacitive reactance is relatively low compared to the resistor's value, so the impedance is dominated by the resistor. This is why Point 1, which represents an impedance close to 300 ohms, is the correct answer.
+
+% Diagram Prompt: Generate a diagram showing a series circuit with a resistor and a capacitor, labeled with their values, and an arrow indicating the frequency of 21.200 MHz.

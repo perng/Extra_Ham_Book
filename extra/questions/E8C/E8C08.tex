@@ -1,0 +1,27 @@
+\subsection{ARQ: Your Cheerful Guide to Error Correction!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8C08} 
+
+How does ARQ accomplish error correction?
+\begin{enumerate}[label=\Alph*.]
+    \item Special binary codes provide automatic correction
+    \item Special polynomial codes provide automatic correction
+    \item If errors are detected, redundant data is substituted
+    \item \textbf{If errors are detected, a retransmission is requested}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are sending a message to a friend, but sometimes the letters get mixed up or lost along the way. ARQ, which stands for Automatic Repeat reQuest, is like saying, Hey friend, if you don't get my message right, just ask me to send it again! So, when ARQ notices that something went wrong with the message (like if your friend hears garbled words), it simply requests that the whole message be sent again correctly. This way, both you and your friend can be sure that the message is received clearly and accurately!
+
+\subsubsection{Advanced Explanation}
+To understand how ARQ mechanisms function, we need to delve into concepts such as data transmission, error detection, and communication protocols. ARQ protocols utilize feedback mechanisms to ensure that data sent over a network is received accurately. 
+
+When data is transmitted, it may encounter various types of interference, causing errors. Error detection methods (e.g., Checksums, Cyclic Redundancy Check (CRC)) are employed to identify any discrepancies in the received data. If an error is detected, the ARQ protocol will trigger a retransmission of the affected data packets to ensure the integrity of the transmission.
+
+The retransmission, which is a key feature of ARQ, means that once an error is acknowledged, the sender is prompted to resend the particular data that is needed. This method contrasts with other techniques that may attempt to correct errors without retransmitting the whole dataset.
+
+The process can be mathematically represented by using concepts from probability, where the likelihood of a successful transmission is evaluated. By calculating the bit error rate (BER), the efficiency and the performance of the ARQ protocol can be assessed.
+
+% Generate a diagram illustrating the ARQ process, showing data transmission, error detection, and retransmission.

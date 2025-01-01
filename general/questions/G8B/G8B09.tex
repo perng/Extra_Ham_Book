@@ -1,0 +1,28 @@
+\subsection{Receiver Bandwidth Matching}
+\label{G8B09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B09]
+Why is it good to match receiver bandwidth to the bandwidth of the operating mode?
+\begin{enumerate}[label=\Alph*)]
+    \item It is required by FCC rules
+    \item It minimizes power consumption in the receiver
+    \item It improves impedance matching of the antenna
+    \item \textbf{It results in the best signal-to-noise ratio}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to listen to your favorite radio station, but there's a lot of static noise. If you adjust the radio to only pick up the exact frequency range of the station, you'll hear the music more clearly and the static will be reduced. This is similar to matching the receiver bandwidth to the operating mode—it helps you get the clearest signal by filtering out unnecessary noise.
+
+\subsubsection{Advanced Explanation}
+The signal-to-noise ratio (SNR) is a critical parameter in communication systems, defined as the ratio of the power of the desired signal to the power of the background noise. Mathematically, it is expressed as:
+
+\[
+\text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
+\]
+
+When the receiver bandwidth is matched to the bandwidth of the operating mode, the receiver filters out frequencies outside the desired range, thereby reducing the noise power \(P_{\text{noise}}\). This optimization maximizes the SNR, leading to better signal quality. 
+
+Mismatched bandwidths can allow additional noise into the receiver, degrading the SNR. Therefore, aligning the receiver bandwidth with the operating mode bandwidth is essential for achieving optimal performance in communication systems.
+
+% Prompt for generating a diagram: A diagram showing the frequency spectrum with a narrow band representing the desired signal and a wider band representing the noise, illustrating how matching the receiver bandwidth filters out the noise.

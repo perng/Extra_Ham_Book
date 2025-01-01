@@ -1,0 +1,28 @@
+\subsection{Conduction Time in Class A Amplifiers}
+\label{G7B04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B04]
+In a Class A amplifier, what percentage of the time does the amplifying device conduct?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{100\%}
+    \item More than 50\% but less than 100\%
+    \item 50\%
+    \item Less than 50\%
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water faucet that is always turned on, no matter what. It doesn’t matter if you’re filling a glass or just letting the water run—it’s always flowing. A Class A amplifier is like that faucet. The amplifying device (like a transistor) is always on and conducting electricity, 100\% of the time. This means it’s always ready to amplify the signal, even when there’s no signal to amplify. It’s like having a friend who’s always ready to help, even when you don’t need it!
+
+\subsubsection{Advanced Explanation}
+In a Class A amplifier, the amplifying device (such as a transistor) is biased such that it operates in its linear region for the entire input signal cycle. This means that the device is always conducting current, regardless of the input signal. Mathematically, the conduction angle $\theta$ of the device is $360^\circ$, which corresponds to 100\% of the time.
+
+The key advantage of Class A amplifiers is their low distortion, as the device operates in its linear region throughout the entire signal cycle. However, this comes at the cost of low efficiency, since the device is always consuming power, even when there is no input signal. The efficiency $\eta$ of a Class A amplifier is given by:
+
+\[
+\eta = \frac{P_{\text{out}}}{P_{\text{in}}} \times 100\%
+\]
+
+where $P_{\text{out}}$ is the output power and $P_{\text{in}}$ is the input power. Due to the continuous conduction, the maximum theoretical efficiency of a Class A amplifier is 25\% for a resistive load and 50\% for a transformer-coupled load.
+
+% Diagram Prompt: Generate a diagram showing the conduction angle of a Class A amplifier compared to other classes (e.g., Class B, Class AB).

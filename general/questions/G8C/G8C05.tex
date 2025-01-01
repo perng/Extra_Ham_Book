@@ -1,0 +1,26 @@
+\subsection{ARQ Mode NAK Response}
+\label{G8C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C05]
+In an ARQ mode, what is meant by a NAK response to a transmitted packet?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Request retransmission of the packet}
+    \item Packet was received without error
+    \item Receiving station connected and ready for transmissions
+    \item Entire file received correctly
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing a game of Telephone with your friends. You whisper a message to the person next to you, and they pass it along. But what if the message gets messed up along the way? In ARQ mode, if the message (or packet) gets messed up, the receiver sends a NAK signal, which is like saying, Hey, I didn't get that right, can you say it again? This ensures that the message is received correctly, just like you'd ask your friend to repeat the message in the game.
+
+\subsubsection{Advanced Explanation}
+In Automatic Repeat reQuest (ARQ) protocols, error detection is crucial for reliable data transmission. When a packet is transmitted, the receiver checks for errors using methods like cyclic redundancy check (CRC). If an error is detected, the receiver sends a Negative Acknowledgment (NAK) to the sender, requesting retransmission of the packet. This process ensures data integrity by retransmitting only the corrupted packets, rather than the entire data stream.
+
+Mathematically, the error detection can be represented as follows:
+\[ \text{Error} = \text{Received Packet} \oplus \text{Expected Packet} \]
+If the result is non-zero, an error is detected, and a NAK is sent.
+
+ARQ protocols are essential in communication systems to handle noisy channels and ensure that data is transmitted accurately. They are widely used in various applications, including wireless communication, satellite communication, and internet protocols.
+
+% Prompt for diagram: Generate a diagram illustrating the ARQ process, showing the sender, receiver, and the flow of packets with NAK and ACK signals.

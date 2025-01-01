@@ -1,0 +1,28 @@
+\subsection{Class C Power Stage for Modulated Signals}
+\label{G7B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B11]
+For which of the following modes is a Class C power stage appropriate for amplifying a modulated signal?
+\begin{enumerate}[label=\Alph*]
+    \item SSB
+    \item \textbf{FM}
+    \item AM
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a toy car that only goes fast or slow, nothing in between. That's like a Class C amplifier—it’s either on or off, no middle ground. Now, think of FM (Frequency Modulation) as a radio signal that changes its speed (frequency) but keeps its volume (amplitude) the same. Since the Class C amplifier doesn’t care about the volume, it’s perfect for FM! But for AM (Amplitude Modulation), where the volume changes, the Class C amplifier would mess it up because it can’t handle those changes smoothly.
+
+\subsubsection{Advanced Explanation}
+A Class C power amplifier is characterized by its high efficiency, achieved by biasing the transistor such that it conducts for less than half of the input signal cycle. This results in significant distortion of the output signal, making it unsuitable for amplifying signals that require linear amplification, such as AM (Amplitude Modulation) and SSB (Single Sideband). 
+
+However, FM (Frequency Modulation) is a non-linear modulation technique where the information is encoded in the frequency variations of the carrier wave, not in its amplitude. Since the amplitude of the FM signal remains constant, the distortion introduced by the Class C amplifier does not affect the information content of the signal. Therefore, Class C amplifiers are appropriate for FM signals.
+
+Mathematically, the output of a Class C amplifier can be represented as:
+\[
+V_{\text{out}}(t) = V_{\text{max}} \cdot \text{rect}\left(\frac{t}{T}\right) \cdot \cos(2\pi f_c t)
+\]
+where \( V_{\text{max}} \) is the maximum output voltage, \( T \) is the conduction period, and \( f_c \) is the carrier frequency. For FM signals, the amplitude \( V_{\text{max}} \) remains constant, making Class C amplification suitable.
+
+% Diagram prompt: Generate a diagram showing the input and output waveforms of a Class C amplifier for FM and AM signals, highlighting the distortion in AM and the preserved frequency in FM.

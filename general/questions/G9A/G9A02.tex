@@ -1,0 +1,30 @@
+\subsection{High SWR and Transmission Line Loss}
+\label{G9A02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A02]
+What is the relationship between high standing wave ratio (SWR) and transmission line loss?
+\begin{enumerate}[label=\Alph*)]
+    \item There is no relationship between transmission line loss and SWR
+    \item \textbf{High SWR increases loss in a lossy transmission line}
+    \item High SWR makes it difficult to measure transmission line loss
+    \item High SWR reduces the relative effect of transmission line loss
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to push a swing. If you push it at just the right time, it swings smoothly. But if you push it at the wrong time, it gets all wobbly and doesn't go as high. This is kind of like what happens with radio waves in a transmission line. When the SWR is high, it's like pushing the swing at the wrong time—it causes more energy to be lost as heat, especially if the transmission line isn't perfect (lossy). So, high SWR makes the line lose more energy, just like pushing the swing at the wrong time makes it lose height.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of how well the impedance of the transmission line matches the impedance of the load. When the SWR is high, it indicates a significant mismatch, causing reflections of the transmitted signal. These reflections lead to standing waves, which can increase the current and voltage at certain points along the transmission line.
+
+In a lossy transmission line, the power loss is proportional to the square of the current (\(P_{\text{loss}} = I^2 R\)). When the SWR is high, the current at the antinodes of the standing wave increases, leading to higher power loss. Mathematically, if the SWR is \(S\), the power loss can be expressed as:
+
+\[
+P_{\text{loss}} = I_0^2 R \left(1 + \frac{S - 1}{S + 1}\right)^2
+\]
+
+where \(I_0\) is the current in a matched line, and \(R\) is the resistance per unit length of the transmission line. As \(S\) increases, the term \(\left(1 + \frac{S - 1}{S + 1}\right)^2\) also increases, leading to higher power loss.
+
+Therefore, high SWR increases the loss in a lossy transmission line, as the increased current at the antinodes results in greater resistive heating.
+
+% Diagram prompt: Generate a diagram showing a transmission line with high SWR, indicating the standing wave pattern and points of increased current and voltage.

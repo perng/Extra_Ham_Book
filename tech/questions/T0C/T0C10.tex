@@ -1,0 +1,34 @@
+\subsection{Duty Cycle and RF Radiation Exposure}
+\label{T0C10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T0C10]
+Why is duty cycle one of the factors used to determine safe RF radiation exposure levels?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{It affects the average exposure to radiation}
+    \item It affects the peak exposure to radiation
+    \item It takes into account the antenna feed line loss
+    \item It takes into account the thermal effects of the final amplifier
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're standing in the sun. If you're out there all day, you'll get a lot more sunburned than if you just pop out for a few minutes. The duty cycle is like that—it tells us how much time you're actually being exposed to the RF radiation. If the duty cycle is high, you're getting more exposure on average, just like spending more time in the sun. So, to keep things safe, we need to consider how often and how long the radiation is hitting you.
+
+\subsubsection{Advanced Explanation}
+The duty cycle is defined as the ratio of the time the signal is active to the total time period. Mathematically, it is expressed as:
+
+\[
+\text{Duty Cycle} = \frac{T_{\text{on}}}{T_{\text{total}}}
+\]
+
+where \( T_{\text{on}} \) is the time the signal is active, and \( T_{\text{total}} \) is the total time period. 
+
+When determining safe RF radiation exposure levels, the average power density is a critical factor. The average power density \( P_{\text{avg}} \) is related to the peak power density \( P_{\text{peak}} \) and the duty cycle \( D \) by the following equation:
+
+\[
+P_{\text{avg}} = P_{\text{peak}} \times D
+\]
+
+Thus, the duty cycle directly influences the average exposure to radiation. A higher duty cycle means a higher average power density, which can lead to greater biological effects over time. Therefore, understanding and controlling the duty cycle is essential for ensuring that RF radiation exposure remains within safe limits.
+
+% Diagram prompt: A graph showing the relationship between duty cycle and average power density, with time on the x-axis and power density on the y-axis.

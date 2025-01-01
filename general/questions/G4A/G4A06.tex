@@ -1,0 +1,28 @@
+\subsection{Purpose of an Antenna Tuner}
+\label{G4A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4A06]
+What is the purpose of an antenna tuner?
+\begin{enumerate}[label=\Alph*)]
+    \item Reduce the SWR in the feed line to the antenna
+    \item Reduce the power dissipation in the feedline to the antenna
+    \item \textbf{Increase power transfer from the transmitter to the feed line}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to pour water from a big jug into a small bottle. If the jug and the bottle don't match well, you'll spill a lot of water. An antenna tuner is like a magical funnel that helps you pour the water (or in this case, radio signals) from the transmitter (the jug) into the antenna (the bottle) without spilling. It makes sure the transmitter and the antenna are best friends, so they can share the signals perfectly!
+
+\subsubsection{Advanced Explanation}
+An antenna tuner, also known as an impedance matching network, is used to match the impedance of the transmitter to the impedance of the antenna system. When the impedances are matched, the maximum power is transferred from the transmitter to the antenna. The impedance \( Z \) is a complex quantity given by:
+
+\[ Z = R + jX \]
+
+where \( R \) is the resistance and \( X \) is the reactance. The goal of the antenna tuner is to adjust \( Z \) so that it matches the characteristic impedance of the transmission line, typically 50 ohms. This minimizes the standing wave ratio (SWR) and ensures efficient power transfer. The power transfer efficiency \( \eta \) can be expressed as:
+
+\[ \eta = \frac{P_{\text{transferred}}}{P_{\text{available}}} \]
+
+where \( P_{\text{transferred}} \) is the power transferred to the antenna and \( P_{\text{available}} \) is the power available from the transmitter. By optimizing \( \eta \), the antenna tuner ensures that the transmitter's power is effectively utilized.
+
+% Diagram prompt: Generate a diagram showing the transmitter, antenna tuner, and antenna with impedance matching.

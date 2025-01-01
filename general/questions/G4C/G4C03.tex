@@ -1,0 +1,28 @@
+\subsection{Single Sideband Phone Transmitter Interference}
+\label{G4C03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C03]
+What sound is heard from an audio device experiencing RF interference from a single sideband phone transmitter?
+\begin{enumerate}[label=\Alph*]
+    \item A steady hum whenever the transmitter is on the air
+    \item On-and-off humming or clicking
+    \item \textbf{Distorted speech}
+    \item Clearly audible speech
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to listen to your favorite song, but someone nearby is talking on a walkie-talkie. Instead of hearing clear words, you hear a jumbled mess that sounds like a robot trying to speak. That's what happens when your audio device picks up interference from a single sideband phone transmitter. The speech gets all twisted and distorted, making it hard to understand.
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a technique used in radio communications to transmit voice signals more efficiently. Unlike AM (Amplitude Modulation), which transmits both the carrier and two sidebands, SSB suppresses the carrier and one of the sidebands, leaving only a single sideband. This reduces bandwidth and power consumption but can lead to interference issues.
+
+When an audio device experiences RF interference from an SSB transmitter, the demodulation process is affected. The audio device attempts to demodulate the SSB signal, but since it is not designed for SSB, the result is distorted speech. This distortion occurs because the device cannot correctly reconstruct the original signal due to the absence of the carrier and one sideband.
+
+Mathematically, the SSB signal can be represented as:
+\[
+s(t) = A_c \cdot m(t) \cdot \cos(2\pi f_c t) \mp A_c \cdot \hat{m}(t) \cdot \sin(2\pi f_c t)
+\]
+where \( A_c \) is the carrier amplitude, \( m(t) \) is the message signal, \( f_c \) is the carrier frequency, and \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \). The audio device, expecting a full AM signal, cannot correctly process this SSB signal, leading to the distorted output.
+
+% Diagram prompt: Generate a diagram showing the spectrum of an AM signal and an SSB signal, highlighting the differences in sidebands and carrier presence.

@@ -1,0 +1,30 @@
+\subsection{Reactance Modulator Emission}
+\label{G8A04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A04]
+What emission is produced by a reactance modulator connected to a transmitter RF amplifier stage?
+\begin{enumerate}[label=\Alph*)]
+    \item Multiplex modulation
+    \item \textbf{Phase modulation}
+    \item Amplitude modulation
+    \item Pulse modulation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re playing with a slinky. If you wiggle one end, the waves travel down the slinky. Now, think of a reactance modulator as a special tool that changes how fast you wiggle the slinky. Instead of making the wiggles bigger or smaller (that’s amplitude modulation), it changes the timing of the wiggles. This timing change is called phase modulation. So, when you connect a reactance modulator to a transmitter, it’s like changing the timing of the radio waves, which is phase modulation!
+
+\subsubsection*{Advanced Explanation}
+A reactance modulator works by varying the reactance (either inductive or capacitive) in the circuit of an RF amplifier. This variation in reactance causes a shift in the phase of the RF signal. Mathematically, if the RF signal is represented as \( V(t) = V_0 \cos(\omega t + \phi(t)) \), where \( \phi(t) \) is the phase, the reactance modulator alters \( \phi(t) \). This results in phase modulation (PM), where the phase of the carrier signal is varied in accordance with the modulating signal.
+
+Phase modulation is a type of angle modulation, where the phase of the carrier wave is varied to encode information. The relationship between the modulating signal \( m(t) \) and the phase deviation \( \Delta\phi \) is given by:
+\[
+\phi(t) = k_p m(t)
+\]
+where \( k_p \) is the phase sensitivity of the modulator. The resulting modulated signal can be expressed as:
+\[
+V_{PM}(t) = V_0 \cos\left(\omega t + k_p m(t)\right)
+\]
+This contrasts with amplitude modulation (AM), where the amplitude of the carrier is varied, and frequency modulation (FM), where the frequency is varied. In the context of the question, the reactance modulator specifically produces phase modulation.
+
+% Diagram prompt: Generate a diagram showing a reactance modulator connected to an RF amplifier, with arrows indicating the phase shift in the output signal.

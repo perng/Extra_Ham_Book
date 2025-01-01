@@ -1,0 +1,36 @@
+\subsection{LC Circuit at Resonance}
+\label{G5A12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5A12]
+What occurs in an LC circuit at resonance?
+\begin{enumerate}[label=\Alph*]
+    \item Current and voltage are equal
+    \item Resistance is cancelled
+    \item The circuit radiates all its energy in the form of radio waves
+    \item \textbf{Inductive reactance and capacitive reactance cancel}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a swing. When you push the swing at just the right time, it goes higher and higher with very little effort. This is like resonance in an LC circuit. At resonance, the circuit swings back and forth between storing energy in the inductor (like the swing going up) and the capacitor (like the swing coming down). The magic happens when the inductive reactance (the push from the inductor) and the capacitive reactance (the pull from the capacitor) cancel each other out. This means the circuit can oscillate freely without any extra energy loss.
+
+\subsubsection{Advanced Explanation}
+In an LC circuit, resonance occurs when the inductive reactance \(X_L\) and the capacitive reactance \(X_C\) are equal in magnitude but opposite in phase. The inductive reactance is given by:
+\[
+X_L = \omega L
+\]
+where \(\omega\) is the angular frequency and \(L\) is the inductance. The capacitive reactance is given by:
+\[
+X_C = \frac{1}{\omega C}
+\]
+where \(C\) is the capacitance. At resonance, \(X_L = X_C\), which implies:
+\[
+\omega L = \frac{1}{\omega C}
+\]
+Solving for \(\omega\), we get the resonant frequency:
+\[
+\omega_0 = \frac{1}{\sqrt{LC}}
+\]
+At this frequency, the net reactance of the circuit is zero, and the circuit behaves as if it is purely resistive. This allows the circuit to oscillate with maximum efficiency, as the energy stored in the inductor and capacitor is exchanged without any net loss.
+
+% Prompt for generating a diagram: A diagram showing an LC circuit with an inductor and capacitor connected in series, with arrows indicating the flow of energy between the two components at resonance.

@@ -1,0 +1,32 @@
+\subsection{Unlocking the Secrets of Low-Frequency Modulation!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+    \textbf{E2E01} Which of the following types of modulation is used for data emissions below 30 MHz?
+    \begin{enumerate}[label=\Alph*.]
+        \item DTMF tones modulating an FM signal
+        \item \textbf{FSK}
+        \item Pulse modulation
+        \item Spread spectrum
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to send a secret message to a friend using a flashlight. You can turn the flashlight on and off quickly to send a code. In radio terms, this is similar to changing the frequency of the signal to represent different pieces of information. This method is called Frequency Shift Keying (FSK). When we are dealing with radio signals below 30 MHz, FSK is a common way to send data because it works well over long distances and through various obstacles.
+
+\subsubsection{Advanced Explanation}
+Frequency Shift Keying (FSK) is a digital modulation technique where the frequency of the carrier signal is varied in accordance with the digital signal being transmitted. For data emissions below 30 MHz, FSK is particularly effective due to its robustness against noise and interference, which are common in lower frequency bands.
+
+Mathematically, FSK can be represented as:
+\[ s(t) = A \cos(2\pi f_c t + 2\pi \Delta f \int_{-\infty}^{t} m(\tau) d\tau) \]
+where:
+\begin{itemize}
+    \item \( s(t) \) is the modulated signal,
+    \item \( A \) is the amplitude of the carrier,
+    \item \( f_c \) is the carrier frequency,
+    \item \( \Delta f \) is the frequency deviation,
+    \item \( m(t) \) is the digital message signal.
+\end{itemize}
+
+FSK is widely used in applications such as radio teletype (RTTY) and amateur radio communications. It is preferred for its simplicity and reliability in low-frequency transmissions.
+
+% Diagram prompt: Generate a diagram showing the frequency shift in FSK modulation over time.

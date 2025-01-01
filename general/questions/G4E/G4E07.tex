@@ -1,0 +1,28 @@
+\subsection{Receive Interference in HF Transceivers}
+\label{G4E07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4E07]
+Which of the following may cause receive interference to an HF transceiver installed in a vehicle?
+\begin{enumerate}[label=\Alph*)]
+    \item The battery charging system
+    \item The fuel delivery system
+    \item The control computers
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your HF transceiver is like a super-sensitive microphone that can pick up whispers from across the globe. Now, if you're in a car, there are a bunch of noisy gadgets around—like the battery charger, the fuel pump, and the car's computer. These gadgets can be like loud kids in a library, making it hard for your transceiver to hear those distant whispers. So, all these systems can cause interference, making it tough for your transceiver to do its job.
+
+\subsubsection{Advanced Explanation}
+In a vehicle, various electronic systems can generate electromagnetic interference (EMI) that affects the performance of an HF transceiver. The battery charging system, fuel delivery system, and control computers all operate at frequencies that can overlap with the HF band (3-30 MHz). 
+
+1. \textbf{Battery Charging System}: The alternator in the charging system can produce electrical noise, especially if it is not properly filtered. This noise can manifest as broadband interference across the HF spectrum.
+
+2. \textbf{Fuel Delivery System}: The fuel pump and injectors can generate electrical noise due to the switching of high currents. This noise can also propagate through the vehicle's electrical system and interfere with the HF transceiver.
+
+3. \textbf{Control Computers}: Modern vehicles have multiple control units that manage various functions. These computers can emit EMI, particularly if they are not adequately shielded. The digital signals from these computers can create harmonics that fall within the HF band.
+
+To mitigate this interference, proper shielding, filtering, and grounding of both the transceiver and the vehicle's electronic systems are essential. Additionally, using ferrite beads and chokes can help suppress high-frequency noise.
+
+% Diagram prompt: Generate a diagram showing the sources of interference in a vehicle and how they affect the HF transceiver.

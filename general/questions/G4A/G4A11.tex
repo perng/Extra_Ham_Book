@@ -1,0 +1,26 @@
+\subsection{ALC System and AFSK Data Signals}
+\label{G4A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4A11]
+Why should the ALC system be inactive when transmitting AFSK data signals?
+\begin{enumerate}[label=\Alph*)]
+    \item ALC will invert the modulation of the AFSK mode
+    \item \textbf{The ALC action distorts the signal}
+    \item When using digital modes, too much ALC activity can cause the transmitter to overheat
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to draw a perfect circle, but someone keeps nudging your hand. The circle ends up looking more like a squiggly line! That's what happens when the ALC (Automatic Level Control) system is active while transmitting AFSK (Audio Frequency Shift Keying) data signals. The ALC keeps adjusting the signal, making it wobbly and distorted. So, to keep your signal nice and smooth, you need to turn off the ALC.
+
+\subsubsection{Advanced Explanation}
+The ALC system is designed to maintain a consistent output level by adjusting the gain of the transmitter. However, when transmitting AFSK data signals, the ALC can introduce distortion by altering the amplitude of the signal. AFSK relies on precise frequency shifts to encode data, and any amplitude modulation caused by the ALC can degrade the signal integrity. 
+
+Mathematically, the ALC adjusts the gain \( G \) based on the input signal level \( V_{in} \):
+\[
+V_{out} = G \cdot V_{in}
+\]
+If \( G \) varies due to ALC action, the output signal \( V_{out} \) will have unwanted amplitude variations, leading to distortion. Therefore, to maintain the purity of the AFSK signal, the ALC should be inactive during transmission.
+
+% Diagram prompt: Generate a diagram showing the effect of ALC on an AFSK signal, illustrating the distortion introduced by ALC action.

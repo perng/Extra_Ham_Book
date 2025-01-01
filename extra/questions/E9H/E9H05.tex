@@ -1,0 +1,27 @@
+\subsection{E9H05: Navigating the Wires: Direction Finding Dilemmas!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Question E9H05]
+\textbf{E9H05} What challenge is presented by a small wire-loop antenna for direction finding?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{It has a bidirectional null pattern}
+    \item It does not have a clearly defined null
+    \item It is practical for use only on VHF and higher bands
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to find your friend in a crowded room. You close your eyes and listen carefully. If you hear their voice equally from two opposite directions, you might get confused about where they actually are. That's kind of what happens with a small wire-loop antenna! It has a bidirectional null pattern, which means it can't tell if the signal is coming from one direction or the exact opposite direction. So, it's like having two possible answers instead of one, making it a bit tricky to pinpoint the exact location of the signal.
+
+\subsubsection{Advanced Explanation}
+A small wire-loop antenna is often used in direction finding due to its compact size and simplicity. However, it presents a unique challenge: it has a bidirectional null pattern. This means that the antenna's response to a signal is identical in two opposite directions, creating a null (a point of minimum signal strength) in both directions. Mathematically, the radiation pattern of a small loop antenna can be described by:
+
+\[
+E(\theta) = E_0 \sin(\theta)
+\]
+
+where \( E(\theta) \) is the electric field strength at angle \( \theta \), and \( E_0 \) is the maximum field strength. The nulls occur at \( \theta = 0^\circ \) and \( \theta = 180^\circ \), indicating that the antenna cannot distinguish between signals coming from these two directions.
+
+This bidirectional null pattern complicates direction finding because it requires additional techniques or antennas to resolve the ambiguity. For example, a second antenna or a more complex array might be used to determine the true direction of the signal.
+
+% Prompt for diagram: A diagram showing the radiation pattern of a small wire-loop antenna, highlighting the bidirectional nulls at 0° and 180°.

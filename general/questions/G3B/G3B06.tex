@@ -1,0 +1,38 @@
+\subsection{Radio Waves Below the LUF}
+\label{G3B06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3B06]
+What usually happens to radio waves with frequencies below the LUF?
+\begin{enumerate}[label=\Alph*)]
+    \item They are refracted back to Earth
+    \item They pass through the ionosphere
+    \item \textbf{They are attenuated before reaching the destination}
+    \item They are refracted and trapped in the ionosphere to circle Earth
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to throw a ball through a thick fog. If you throw it too softly, the fog will slow it down so much that it won't reach the other side. Similarly, radio waves with frequencies below the LUF (Lowest Usable Frequency) are like that soft throw—they get weakened (attenuated) by the ionosphere before they can reach their destination. So, they don't make it through!
+
+\subsubsection{Advanced Explanation}
+The Lowest Usable Frequency (LUF) is the minimum frequency at which a radio wave can be effectively transmitted between two points via the ionosphere. Below the LUF, the ionosphere's absorption of radio waves becomes significant. The ionosphere consists of layers of ionized particles that can absorb or reflect radio waves depending on their frequency.
+
+For frequencies below the LUF, the absorption coefficient \(\alpha\) is high, leading to significant attenuation of the radio wave. The attenuation can be described by the equation:
+
+\[
+P_r = P_t e^{-\alpha d}
+\]
+
+where:
+\begin{itemize}
+    \item \(P_r\) is the received power,
+    \item \(P_t\) is the transmitted power,
+    \item \(\alpha\) is the absorption coefficient,
+    \item \(d\) is the distance traveled through the ionosphere.
+\end{itemize}
+
+As \(\alpha\) increases, the exponential term \(e^{-\alpha d}\) decreases rapidly, causing \(P_r\) to drop significantly. This means that the radio wave loses much of its energy before reaching the destination, resulting in poor or no communication.
+
+Related concepts include the critical frequency, which is the highest frequency at which a radio wave can be reflected back to Earth by the ionosphere, and the Maximum Usable Frequency (MUF), which is the highest frequency that can be used for reliable communication between two points via the ionosphere.
+
+% Diagram prompt: A diagram showing the path of radio waves with frequencies below the LUF being attenuated by the ionosphere, compared to waves above the LUF being reflected or passing through.

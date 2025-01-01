@@ -1,0 +1,32 @@
+\subsection{Receiver Sensitivity Parameters}
+\label{G7C08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C08]
+Which parameter affects receiver sensitivity?
+\begin{enumerate}[label=\Alph*)]
+    \item Input amplifier gain
+    \item Demodulator stage bandwidth
+    \item Input amplifier noise figure
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to listen to a very faint whisper in a noisy room. To hear it better, you might turn up the volume (that's like the input amplifier gain), focus your ears on the whisper (that's like the demodulator stage bandwidth), and try to reduce the noise around you (that's like the input amplifier noise figure). All these things help you hear the whisper better, just like all the parameters in the question help the receiver pick up weak signals better.
+
+\subsubsection*{Advanced Explanation}
+Receiver sensitivity is the ability of a receiver to detect weak signals. It is influenced by several key parameters:
+
+1. \textbf{Input Amplifier Gain}: This is the amplification factor of the first stage of the receiver. Higher gain means the weak signal is amplified more, making it easier to detect. The gain \( G \) is given by:
+\[ G = \frac{V_{\text{out}}}{V_{\text{in}}} \]
+where \( V_{\text{out}} \) is the output voltage and \( V_{\text{in}} \) is the input voltage.
+
+2. \textbf{Demodulator Stage Bandwidth}: This is the range of frequencies the demodulator can process. A narrower bandwidth can reduce noise, improving sensitivity. The bandwidth \( B \) is related to the signal-to-noise ratio (SNR) by:
+\[ \text{SNR} \propto \frac{1}{B} \]
+
+3. \textbf{Input Amplifier Noise Figure}: This is a measure of how much noise the amplifier adds to the signal. A lower noise figure means less noise, which improves sensitivity. The noise figure \( F \) is given by:
+\[ F = \frac{\text{SNR}_{\text{in}}}{\text{SNR}_{\text{out}}} \]
+
+All these parameters work together to determine the overall sensitivity of the receiver. Therefore, the correct answer is that all these choices are correct.
+
+% Diagram Prompt: Generate a diagram showing the relationship between input amplifier gain, demodulator stage bandwidth, and input amplifier noise figure in affecting receiver sensitivity.

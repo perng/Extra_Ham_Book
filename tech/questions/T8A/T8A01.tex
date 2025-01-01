@@ -1,0 +1,32 @@
+\subsection{Forms of Amplitude Modulation}
+\label{T8A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A01]
+Which of the following is a form of amplitude modulation?
+\begin{enumerate}[label=\Alph*)]
+    \item Spread spectrum
+    \item Packet radio
+    \item \textbf{Single sideband}
+    \item Phase shift keying (PSK)
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re at a concert, and the band is playing really loud. Now, think of amplitude modulation (AM) as a way to change how loud the music is. Single sideband (SSB) is like a special trick where you only send part of the music—just the loud parts or just the quiet parts—to save energy and space. So, SSB is a type of AM because it’s all about changing the loudness of the signal!
+
+\subsubsection{Advanced Explanation}
+Amplitude modulation (AM) is a technique where the amplitude (strength) of a carrier wave is varied in proportion to the waveform being transmitted. Single sideband (SSB) is a specific form of AM where one of the sidebands and the carrier are suppressed, leaving only one sideband. This results in a more efficient use of bandwidth and power.
+
+Mathematically, a standard AM signal can be represented as:
+\[
+s(t) = A_c [1 + m(t)] \cos(2\pi f_c t)
+\]
+where \( A_c \) is the amplitude of the carrier, \( m(t) \) is the modulating signal, and \( f_c \) is the carrier frequency. In SSB, only one sideband is transmitted, which can be represented as:
+\[
+s_{\text{SSB}}(t) = A_c m(t) \cos(2\pi f_c t) \mp A_c \hat{m}(t) \sin(2\pi f_c t)
+\]
+where \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \), and the sign depends on whether the upper or lower sideband is transmitted.
+
+SSB is particularly useful in radio communications because it reduces bandwidth and power consumption, making it more efficient than full AM.
+
+% Diagram prompt: Generate a diagram showing the spectrum of a standard AM signal and an SSB signal, highlighting the suppression of the carrier and one sideband in SSB.

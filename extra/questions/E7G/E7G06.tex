@@ -1,0 +1,37 @@
+\subsection{Exploring Gain-Bandwidth Magic in Op-Amps!}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E7G06} What is the gain-bandwidth of an operational amplifier?
+    \begin{enumerate}[label=\Alph*)]
+        \item The maximum frequency for a filter circuit using that type of amplifier
+        \item \textbf{The frequency at which the open-loop gain of the amplifier equals one}
+        \item The gain of the amplifier at a filter’s cutoff frequency
+        \item The frequency at which the amplifier’s offset voltage is zero
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical music player that can make your favorite songs louder and louder. But there's a catch: as you try to make the music louder, the player starts to struggle and can't handle very high-pitched sounds anymore. The gain-bandwidth of an operational amplifier (op-amp) is like the point where the music player can no longer make the high-pitched sounds louder. It's the frequency where the amplifier's ability to amplify (its gain) drops to one, meaning it can't amplify the signal anymore. This is important because it tells us the limits of how well the amplifier can work with different frequencies.
+
+\subsubsection{Advanced Explanation}
+The gain-bandwidth product (GBW) of an operational amplifier is a key parameter that defines the frequency at which the open-loop gain of the amplifier equals one. Mathematically, the open-loop gain \( A_{OL} \) of an op-amp decreases with frequency \( f \) according to the relationship:
+
+\[
+A_{OL}(f) = \frac{A_{OL}(0)}{1 + j\frac{f}{f_c}}
+\]
+
+where \( A_{OL}(0) \) is the DC open-loop gain, \( f \) is the frequency, and \( f_c \) is the cutoff frequency. The gain-bandwidth product is defined as:
+
+\[
+GBW = A_{OL}(0) \times f_c
+\]
+
+At the frequency where \( A_{OL}(f) = 1 \), the gain-bandwidth product is equal to the frequency itself. This frequency is often referred to as the unity-gain bandwidth. For example, if an op-amp has a DC gain of 100,000 and a cutoff frequency of 10 Hz, the gain-bandwidth product would be:
+
+\[
+GBW = 100,000 \times 10 = 1,000,000 \text{ Hz} = 1 \text{ MHz}
+\]
+
+This means that at 1 MHz, the open-loop gain of the amplifier will be one. Understanding the gain-bandwidth product is crucial for designing circuits that operate at specific frequencies, as it helps determine the maximum usable frequency range of the amplifier.
+
+% Diagram Prompt: Generate a Bode plot showing the open-loop gain of an operational amplifier versus frequency, highlighting the unity-gain bandwidth point.

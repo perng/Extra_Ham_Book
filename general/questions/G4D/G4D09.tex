@@ -1,0 +1,39 @@
+\subsection{Frequency Range of a 3 kHz USB Signal}
+\label{G4D09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D09]
+What frequency range is occupied by a 3 kHz USB signal with the displayed carrier frequency set to 14.347 MHz?
+\begin{enumerate}[label=\Alph*)]
+    \item 14.347 MHz to 14.647 MHz
+    \item \textbf{14.347 MHz to 14.350 MHz}
+    \item 14.344 MHz to 14.347 MHz
+    \item 14.3455 MHz to 14.3485 MHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're tuning into a radio station that’s broadcasting at 14.347 MHz. Now, this station is using a special kind of signal called USB (Upper Sideband). Think of USB as a way to send a message by only using the upper part of the frequency range around the main frequency. The message itself is 3 kHz wide. So, if the main frequency is 14.347 MHz, the USB signal will occupy the frequencies just above it, from 14.347 MHz to 14.350 MHz. It's like adding a tiny extra slice of frequency to the main one to carry the message!
+
+\subsubsection*{Advanced Explanation}
+In radio communications, a USB (Upper Sideband) signal is a type of amplitude modulation where only the upper sideband is transmitted, and the carrier and lower sideband are suppressed. The bandwidth of the USB signal is determined by the modulating signal, which in this case is 3 kHz.
+
+Given:
+- Carrier frequency, \( f_c = 14.347 \) MHz
+- Bandwidth, \( B = 3 \) kHz = 0.003 MHz
+
+For a USB signal, the frequency range occupied is from the carrier frequency to the carrier frequency plus the bandwidth:
+\[
+f_{\text{lower}} = f_c = 14.347 \text{ MHz}
+\]
+\[
+f_{\text{upper}} = f_c + B = 14.347 \text{ MHz} + 0.003 \text{ MHz} = 14.350 \text{ MHz}
+\]
+
+Therefore, the frequency range occupied by the 3 kHz USB signal is from 14.347 MHz to 14.350 MHz.
+
+Related concepts include:
+- \textbf{Amplitude Modulation (AM):} A modulation technique where the amplitude of the carrier wave is varied in proportion to the waveform being transmitted.
+- \textbf{Sidebands:} The frequency bands on either side of the carrier frequency that are produced by modulation.
+- \textbf{Bandwidth:} The range of frequencies occupied by a signal.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of a USB signal with a carrier frequency of 14.347 MHz and a bandwidth of 3 kHz.

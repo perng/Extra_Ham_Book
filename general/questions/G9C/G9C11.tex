@@ -1,0 +1,28 @@
+\subsection{Beta or Hairpin Match}
+\label{G9C11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9C11]
+What is a beta or hairpin match?
+\begin{enumerate}[label=\Alph*]
+    \item \textbf{A shorted transmission line stub placed at the feed point of a Yagi antenna to provide impedance matching}
+    \item A 1/4 wavelength section of 75-ohm coax in series with the feed point of a Yagi to provide impedance matching
+    \item A series capacitor selected to cancel the inductive reactance of a folded dipole antenna
+    \item A section of 300-ohm twin-lead transmission line used to match a folded dipole antenna
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a Yagi antenna, which is like a fancy TV antenna that helps you catch signals from far away. Now, sometimes the antenna and the cable that connects it to your TV don't get along because they have different impedance (think of it like they speak different languages). A beta or hairpin match is like a translator that helps them understand each other. It's a special little piece of wire that you put at the feed point of the antenna to make sure everything works smoothly.
+
+\subsubsection{Advanced Explanation}
+A beta or hairpin match is a type of impedance matching technique used in Yagi antennas. It consists of a shorted transmission line stub placed at the feed point of the antenna. The stub is typically a quarter-wavelength long and is shorted at one end. This configuration creates a parallel resonant circuit that can be used to match the impedance of the antenna to the feed line.
+
+The impedance \( Z \) of the stub can be calculated using the formula:
+\[
+Z = \frac{Z_0}{\tan(\beta l)}
+\]
+where \( Z_0 \) is the characteristic impedance of the transmission line, \( \beta \) is the phase constant, and \( l \) is the length of the stub. By adjusting the length and position of the stub, the impedance can be matched to the desired value, ensuring maximum power transfer from the antenna to the feed line.
+
+This technique is particularly useful in Yagi antennas, where the impedance at the feed point can vary significantly depending on the design and operating frequency. The beta or hairpin match provides a simple and effective way to achieve impedance matching without the need for additional components.
+
+% Diagram prompt: A diagram showing a Yagi antenna with a beta or hairpin match at the feed point, illustrating the shorted transmission line stub and its connection to the antenna elements.

@@ -1,0 +1,32 @@
+\subsection{Frequency Modulation}
+\label{G8A03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A03]
+What is the name of the process that changes the instantaneous frequency of an RF wave to convey information?
+\begin{enumerate}[label=\Alph*)]
+    \item Frequency convolution
+    \item Frequency transformation
+    \item Frequency conversion
+    \item \textbf{Frequency modulation}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to send a secret message to your friend using a flashlight. Instead of just turning it on and off (which would be boring), you decide to change how fast you flicker the light to represent different letters. In radio terms, this is like changing the frequency of the wave to carry your message. This cool trick is called \textbf{Frequency Modulation} (FM). It’s like giving your radio wave a little dance to make it more interesting and informative!
+
+\subsubsection{Advanced Explanation}
+Frequency Modulation (FM) is a method of encoding information in a carrier wave by varying its instantaneous frequency. Mathematically, the modulated signal can be represented as:
+
+\[ s(t) = A_c \cos\left(2\pi f_c t + 2\pi k_f \int_0^t m(\tau) \, d\tau\right) \]
+
+where:
+\begin{itemize}
+    \item \( A_c \) is the amplitude of the carrier wave,
+    \item \( f_c \) is the carrier frequency,
+    \item \( k_f \) is the frequency deviation constant,
+    \item \( m(t) \) is the message signal.
+\end{itemize}
+
+The key concept here is that the frequency of the carrier wave \( f_c \) is altered in proportion to the message signal \( m(t) \). This variation in frequency allows the transmission of information. FM is widely used in radio broadcasting due to its resilience to noise and signal strength variations.
+
+% Diagram prompt: Generate a diagram showing a carrier wave, a message signal, and the resulting FM signal.

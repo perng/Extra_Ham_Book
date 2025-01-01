@@ -1,0 +1,33 @@
+\subsection{Directional Antenna Pointing for Long-Path Contact}
+\label{G2D06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2D06]
+How is a directional antenna pointed when making a “long-path” contact with another station?
+\begin{enumerate}[label=\Alph*]
+    \item Toward the rising sun
+    \item Along the gray line
+    \item \textbf{180 degrees from the station’s short-path heading}
+    \item Toward the north
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to talk to your friend on the other side of the world. If you shout directly at them, that’s the short-path. But if you shout in the exact opposite direction, your voice might bounce all the way around the Earth and reach them from behind! That’s the long-path. So, to make a long-path contact, you point your antenna 180 degrees away from where you’d normally point it for the short-path. It’s like turning your back to your friend and yelling—your voice might still reach them, just in a roundabout way!
+
+\subsubsection{Advanced Explanation}
+In radio communication, the short-path is the direct route between two stations, typically the shortest distance around the Earth. The long-path is the exact opposite direction, which is 180 degrees from the short-path heading. When making a long-path contact, the directional antenna is pointed 180 degrees from the short-path heading to take advantage of the Earth’s curvature and atmospheric conditions that can propagate the signal around the globe.
+
+Mathematically, if the short-path heading is given by an angle \(\theta\), the long-path heading \(\theta_{\text{long}}\) is calculated as:
+\[
+\theta_{\text{long}} = \theta + 180^\circ
+\]
+This ensures the antenna is oriented in the opposite direction, allowing the signal to travel the longer route around the Earth.
+
+Related concepts include:
+\begin{itemize}
+    \item \textbf{Great Circle Path}: The shortest path between two points on a sphere, which is the basis for short-path communication.
+    \item \textbf{Propagation Modes}: Different ways radio waves can travel, including ground wave, sky wave, and line-of-sight.
+    \item \textbf{Atmospheric Refraction}: The bending of radio waves as they pass through different layers of the atmosphere, which can affect long-path communication.
+\end{itemize}
+
+% Diagram prompt: Generate a diagram showing the Earth with two stations, one labeled Station A and the other Station B. Show the short-path as a direct line between them and the long-path as a line going around the Earth in the opposite direction. Label the angles for short-path and long-path headings.

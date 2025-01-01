@@ -1,0 +1,28 @@
+\subsection{Output Power Reduction in Solid-State Transmitters}
+\label{T7C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C05]
+Why do most solid-state transmitters reduce output power as SWR increases beyond a certain level?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{To protect the output amplifier transistors}
+    \item To comply with FCC rules on spectral purity
+    \item Because power supplies cannot supply enough current at high SWR
+    \item To lower the SWR on the transmission line
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your transmitter is like a car engine. If you push the engine too hard, it might overheat and break down. Similarly, when the SWR (which is like the resistance the transmitter feels) gets too high, the transmitter reduces its power to avoid overheating and damaging its internal parts, especially the transistors. It’s like the car slowing down to protect the engine!
+
+\subsubsection{Advanced Explanation}
+In solid-state transmitters, the output amplifier transistors are designed to operate within specific power and impedance ranges. When the Standing Wave Ratio (SWR) increases beyond a certain threshold, it indicates a mismatch between the transmitter and the antenna system. This mismatch causes reflected power to return to the transmitter, which can lead to excessive heat dissipation in the transistors. 
+
+To prevent thermal damage, modern transmitters incorporate protection circuits that monitor the SWR. When the SWR exceeds a safe limit, these circuits automatically reduce the output power. This reduction minimizes the reflected power and ensures that the transistors operate within their safe thermal limits. 
+
+The relationship between SWR and reflected power can be expressed as:
+\[
+\text{Reflected Power} = \left( \frac{\text{SWR} - 1}{\text{SWR} + 1} \right)^2 \times \text{Forward Power}
+\]
+As SWR increases, the reflected power also increases, potentially damaging the transistors. By reducing the output power, the transmitter ensures that the reflected power remains within safe limits, protecting the transistors from overheating and failure.
+
+% Diagram prompt: A diagram showing the relationship between SWR, forward power, and reflected power in a transmitter system would be helpful here.

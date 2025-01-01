@@ -1,0 +1,34 @@
+\subsection{Common Voice Communication Mode on 160-, 75-, and 40-meter Bands}
+\label{G2A02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A02]
+Which mode is most commonly used for voice communications on the 160-, 75-, and 40-meter bands?
+\begin{enumerate}[label=\Alph*]
+    \item Upper sideband
+    \item \textbf{Lower sideband}
+    \item Suppressed sideband
+    \item Double sideband
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re at a concert, and the band is playing music. The music has two parts: the high notes (upper sideband) and the low notes (lower sideband). On the 160-, 75-, and 40-meter bands, it’s like the band decided to focus more on the low notes because they travel better and are easier to hear over long distances. So, when you’re talking on these bands, you’re using the lower sideband, which is like the bass guitar in the band—it’s the star of the show!
+
+\subsubsection{Advanced Explanation}
+In radio communications, sidebands are the frequency components that are generated during the modulation process. For amplitude modulation (AM), the signal consists of a carrier wave and two sidebands: the upper sideband (USB) and the lower sideband (LSB). However, in single sideband (SSB) modulation, only one sideband is transmitted, which conserves bandwidth and power.
+
+The choice between USB and LSB depends on the frequency band. For the 160-, 75-, and 40-meter bands, which are in the High Frequency (HF) range, the lower sideband (LSB) is traditionally used for voice communications. This is because LSB is more effective in these lower frequency ranges, providing better signal clarity and range.
+
+Mathematically, the sidebands are generated as follows:
+\[
+s(t) = A_c \cos(2\pi f_c t) + \frac{A_m}{2} \cos(2\pi (f_c + f_m) t) + \frac{A_m}{2} \cos(2\pi (f_c - f_m) t)
+\]
+where \( s(t) \) is the modulated signal, \( A_c \) is the amplitude of the carrier wave, \( f_c \) is the carrier frequency, \( A_m \) is the amplitude of the modulating signal, and \( f_m \) is the frequency of the modulating signal.
+
+In SSB, only one of the sidebands is transmitted. For LSB, the transmitted signal is:
+\[
+s_{\text{LSB}}(t) = \frac{A_m}{2} \cos(2\pi (f_c - f_m) t)
+\]
+This simplification reduces the bandwidth required for transmission and increases the efficiency of the communication system.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of an AM signal with USB and LSB, and highlight the LSB for the 160-, 75-, and 40-meter bands.

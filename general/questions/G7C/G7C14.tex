@@ -1,0 +1,26 @@
+\subsection{Bandwidth Measurement of a Band-Pass Filter}
+\label{G7C14}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C14]
+The bandwidth of a band-pass filter is measured between what two frequencies?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Upper and lower half-power}
+    \item Cutoff and rolloff
+    \item Pole and zero
+    \item Image and harmonic
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a band-pass filter as a gatekeeper for a concert. It only lets in the music notes (frequencies) that are within a certain range. The bandwidth is like the width of the gate. Now, the gate isn't just open from the very bottom to the very top; it's open from a point where the music is half as loud as the loudest part (lower half-power) to another point where it's again half as loud (upper half-power). So, the bandwidth is measured between these two points where the music is half as loud.
+
+\subsubsection{Advanced Explanation}
+The bandwidth of a band-pass filter is defined as the difference between the upper and lower half-power frequencies, also known as the -3 dB points. These frequencies are where the power of the signal is reduced to half of its maximum value. Mathematically, if \( f_1 \) is the lower half-power frequency and \( f_2 \) is the upper half-power frequency, the bandwidth \( B \) is given by:
+
+\[
+B = f_2 - f_1
+\]
+
+The half-power frequencies are crucial because they define the range over which the filter effectively passes the signal. Beyond these frequencies, the signal is attenuated significantly. Understanding these points helps in designing filters for specific applications, ensuring that only the desired frequency range is passed while others are filtered out.
+
+% Diagram Prompt: Generate a diagram showing a band-pass filter's frequency response with the upper and lower half-power frequencies marked.

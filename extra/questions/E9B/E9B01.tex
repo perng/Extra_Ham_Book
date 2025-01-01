@@ -1,0 +1,28 @@
+\subsection{E9B01: Unlocking Antenna Magic: Finding the 3 dB Beamwidth!}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+    \textbf{E9B01} What is the 3 dB beamwidth of the antenna radiation pattern shown in Figure E9-1?
+    \begin{enumerate}[label=\Alph*]
+        \item 75 degrees
+        \item \textbf{50 degrees}
+        \item 25 degrees
+        \item 30 degrees
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're holding a flashlight in a dark room. The beam of light spreads out, right? The 3 dB beamwidth is like measuring how wide that beam is when it’s still pretty bright. In this case, the beam is 50 degrees wide. So, if you’re shining your flashlight, the light would cover a 50-degree angle before it starts to get dim. That’s your 3 dB beamwidth! It’s like saying, “Hey, this is where the light is still strong enough to see clearly.”
+
+\subsubsection{Advanced Explanation}
+The 3 dB beamwidth is a measure of the angular width of the antenna's main lobe where the power is at least half of its maximum value. In decibel terms, 3 dB corresponds to a power ratio of 0.5. Mathematically, this can be expressed as:
+
+\[
+\text{Power Ratio} = 10^{\frac{-3}{10}} \approx 0.5
+\]
+
+To determine the 3 dB beamwidth from the radiation pattern, you locate the points on the pattern where the power drops to half of the maximum value. The angular distance between these two points is the 3 dB beamwidth. In this specific question, the 3 dB beamwidth is given as 50 degrees.
+
+The radiation pattern of an antenna is typically plotted in polar coordinates, showing the relative power radiated in different directions. The main lobe is the region where the antenna radiates most of its power. Understanding the beamwidth is crucial for applications like directional communication, where you want to focus the signal in a specific direction.
+
+% Prompt for generating the diagram:
+% Create a polar plot showing the radiation pattern of an antenna with a main lobe. Highlight the 3 dB points and indicate the 50-degree beamwidth.

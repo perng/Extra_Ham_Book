@@ -1,0 +1,24 @@
+\subsection{Two-Tone Test Analysis}
+\label{G4B08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4B08]
+What transmitter performance parameter does a two-tone test analyze?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Linearity}
+    \item Percentage of suppression of the carrier and undesired sideband for SSB
+    \item Percentage of frequency modulation
+    \item Percentage of carrier phase shift
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a radio transmitter, and you want to make sure it’s not distorting the sound like a bad karaoke machine. A two-tone test is like playing two different notes on a piano at the same time and checking if the transmitter can handle both without messing them up. If the transmitter is linear, it means it’s not adding any weird distortions or making one note louder than the other. So, the two-tone test is all about checking if the transmitter is playing fair with both tones!
+
+\subsubsection{Advanced Explanation}
+The two-tone test is a method used to evaluate the linearity of a transmitter. Linearity refers to the ability of the transmitter to amplify signals without introducing distortion. In this test, two sinusoidal signals of different frequencies (tones) are combined and fed into the transmitter. The output is then analyzed to detect any intermodulation products, which are unwanted signals generated due to nonlinearities in the transmitter.
+
+Mathematically, if the input signals are \( f_1(t) = A \cos(\omega_1 t) \) and \( f_2(t) = A \cos(\omega_2 t) \), a perfectly linear transmitter would output \( f_{\text{out}}(t) = G \cdot (f_1(t) + f_2(t)) \), where \( G \) is the gain. However, in a nonlinear system, the output may include additional terms like \( \cos((2\omega_1 - \omega_2)t) \) and \( \cos((2\omega_2 - \omega_1)t) \), which are intermodulation products. The presence of these products indicates nonlinearity.
+
+The two-tone test is particularly important in ensuring that the transmitter does not introduce distortion that could interfere with other signals or degrade the quality of the transmitted signal. This test is widely used in the design and testing of communication systems, especially in SSB (Single Sideband) and other linear modulation schemes.
+
+% Diagram prompt: Generate a diagram showing the input and output signals of a transmitter during a two-tone test, highlighting the intermodulation products in the output spectrum.

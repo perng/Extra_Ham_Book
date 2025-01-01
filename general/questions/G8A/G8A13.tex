@@ -1,0 +1,34 @@
+\subsection{Link Budget}
+\label{G8A13}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A13]
+What is a link budget?  
+\begin{enumerate}[label=\Alph*)]
+    \item The financial costs associated with operating a radio link
+    \item The sum of antenna gains minus system losses
+    \item \textbf{The sum of transmit power and antenna gains minus system losses as seen at the receiver}
+    \item The difference between transmit power and receiver sensitivity
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message to your friend across a noisy playground. You shout as loud as you can (transmit power), and your friend has a really good ear (antenna gain). But there are kids playing and making noise (system losses). The link budget is like figuring out if your friend will hear you despite all the noise. It’s the total of your shout plus your friend’s good ear minus the noise. If the result is strong enough, your friend will hear you!
+
+\subsubsection{Advanced Explanation}
+A link budget is a detailed calculation used to determine the overall performance of a communication link. It accounts for all the gains and losses in the system to ensure the signal reaches the receiver with sufficient strength. The formula for a link budget is:
+
+\[
+\text{Link Budget} = P_{\text{tx}} + G_{\text{tx}} + G_{\text{rx}} - L_{\text{system}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( P_{\text{tx}} \) is the transmit power (in dBm or dBW),
+    \item \( G_{\text{tx}} \) is the transmit antenna gain (in dBi),
+    \item \( G_{\text{rx}} \) is the receive antenna gain (in dBi),
+    \item \( L_{\text{system}} \) represents the system losses (in dB), including free-space path loss, cable losses, and other impairments.
+\end{itemize}
+
+The link budget ensures that the received signal power is above the receiver's sensitivity threshold, allowing for reliable communication. This concept is crucial in designing and optimizing wireless communication systems.
+
+% Diagram prompt: Generate a diagram showing the components of a link budget, including transmit power, antenna gains, and system losses, with arrows indicating the flow of signal strength.

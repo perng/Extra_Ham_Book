@@ -1,0 +1,30 @@
+\subsection{Antenna Analyzer SWR Measurements}
+\label{G4B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4B11]
+Which of the following must be connected to an antenna analyzer when it is being used for SWR measurements?
+\begin{enumerate}[label=\Alph*)]
+    \item Receiver
+    \item Transmitter
+    \item \textbf{Antenna and feed line}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a garden hose, and you want to check if water is flowing smoothly through it. You wouldn’t check the faucet or the sprinkler; you’d check the hose itself, right? Similarly, when you’re using an antenna analyzer to measure SWR (Standing Wave Ratio), you’re checking how well the signal is traveling through the antenna and the feed line. So, you need to connect the antenna and the feed line to the analyzer, not the transmitter or receiver. It’s like checking the hose, not the faucet or sprinkler!
+
+\subsubsection{Advanced Explanation}
+An antenna analyzer is a device used to measure various parameters of an antenna system, including the Standing Wave Ratio (SWR). SWR is a measure of how well the antenna is matched to the transmission line (feed line). A perfect match would have an SWR of 1:1, indicating no reflection of the signal back towards the transmitter.
+
+To measure SWR, the antenna analyzer must be connected directly to the antenna and the feed line. This is because the SWR is a function of the impedance mismatch between the antenna and the feed line. The analyzer sends a signal through the feed line to the antenna and measures the reflected signal. The ratio of the reflected signal to the transmitted signal gives the SWR.
+
+Mathematically, SWR is given by:
+\[
+\text{SWR} = \frac{1 + \Gamma}{1 - \Gamma}
+\]
+where \(\Gamma\) is the reflection coefficient, which depends on the impedance mismatch between the antenna and the feed line.
+
+Connecting the receiver or transmitter to the analyzer would not provide accurate SWR measurements because these devices are not part of the impedance matching system between the antenna and the feed line. Therefore, the correct answer is to connect the antenna and feed line to the analyzer.
+
+% Diagram Prompt: Generate a diagram showing the connection of an antenna analyzer to an antenna and feed line, with labels indicating the flow of the signal and the measurement of SWR.

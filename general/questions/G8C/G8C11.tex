@@ -1,0 +1,31 @@
+\subsection{Identifying FSK Signal Frequencies}
+\label{G8C11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C11]
+How are the two separate frequencies of a Frequency Shift Keyed (FSK) signal identified?
+\begin{enumerate}[label=\Alph*)]
+    \item Dot and dash
+    \item On and off
+    \item High and low
+    \item \textbf{Mark and space}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re sending secret messages using two different whistles—one for yes and another for no. In FSK, instead of whistles, we use two different frequencies. The mark frequency is like the yes whistle, and the space frequency is like the no whistle. So, when you hear the mark frequency, it’s like getting a yes, and the space frequency is a no. Easy, right?
+
+\subsubsection{Advanced Explanation}
+Frequency Shift Keying (FSK) is a modulation technique where digital data is transmitted through discrete frequency changes of a carrier wave. The two frequencies used in FSK are referred to as the mark and space frequencies. The mark frequency typically represents a binary '1', while the space frequency represents a binary '0'. 
+
+Mathematically, the FSK signal can be represented as:
+\[
+s(t) = A \cos(2\pi f_1 t) \quad \text{for binary '1'}
+\]
+\[
+s(t) = A \cos(2\pi f_2 t) \quad \text{for binary '0'}
+\]
+where \( f_1 \) is the mark frequency and \( f_2 \) is the space frequency.
+
+The identification of these frequencies is crucial for the demodulation process, where the receiver distinguishes between the two frequencies to decode the original binary data. This method is widely used in telecommunications due to its simplicity and robustness against noise.
+
+% Diagram prompt: Generate a diagram showing the waveform of an FSK signal with mark and space frequencies labeled.

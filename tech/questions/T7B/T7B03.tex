@@ -1,0 +1,46 @@
+\subsection{Causes of Radio Frequency Interference}
+\label{T7B03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7B03]
+Which of the following can cause radio frequency interference?
+\begin{enumerate}[label=\Alph*]
+    \item Fundamental overload
+    \item Harmonics
+    \item Spurious emissions
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to listen to your favorite radio station, but suddenly, you hear weird noises or other stations interfering. This is called radio frequency interference (RFI). It's like when you're trying to talk to your friend, but someone else is shouting in the background. There are a few troublemakers that can cause this interference:
+
+1. \textbf{Fundamental overload}: This is like when your ears can't handle too much noise at once. The radio receiver gets overwhelmed by a strong signal.
+2. \textbf{Harmonics}: These are like echoes of the original signal that bounce around and cause confusion.
+3. \textbf{Spurious emissions}: These are random, unwanted signals that pop up and mess with the radio waves.
+
+So, all of these can cause interference, making it hard to hear your favorite station clearly!
+
+\subsubsection{Advanced Explanation}
+Radio frequency interference (RFI) occurs when unwanted signals disrupt the reception of desired radio signals. The primary causes of RFI include:
+
+1. \textbf{Fundamental Overload}: This happens when a strong signal overwhelms the receiver's front-end circuitry, causing distortion or blocking of weaker signals. Mathematically, if the input signal power \( P_{\text{in}} \) exceeds the receiver's dynamic range, the output signal \( P_{\text{out}} \) becomes distorted:
+   \[
+   P_{\text{out}} = f(P_{\text{in}})
+   \]
+   where \( f \) is a non-linear function due to the overload.
+
+2. \textbf{Harmonics}: Harmonics are integer multiples of the fundamental frequency. If a transmitter emits a signal at frequency \( f \), harmonics at \( 2f, 3f, \dots \) can interfere with other signals. The power of the \( n \)-th harmonic \( P_n \) is given by:
+   \[
+   P_n = P_0 \cdot \left( \frac{1}{n} \right)^2
+   \]
+   where \( P_0 \) is the power of the fundamental frequency.
+
+3. \textbf{Spurious Emissions}: These are unwanted emissions at frequencies other than the intended one. They can be caused by non-linearities in the transmitter or receiver circuits. The spurious emission level \( P_{\text{spur}} \) can be modeled as:
+   \[
+   P_{\text{spur}} = P_{\text{carrier}} - \text{Spurious Emission Mask}
+   \]
+   where \( P_{\text{carrier}} \) is the carrier power and the mask defines the allowable spurious levels.
+
+Understanding these concepts is crucial for designing and operating radio systems to minimize interference and ensure clear communication.
+
+% Diagram prompt: Generate a diagram showing the relationship between fundamental frequency, harmonics, and spurious emissions in a radio signal spectrum.

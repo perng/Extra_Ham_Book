@@ -1,0 +1,34 @@
+\subsection{Link Margin}
+\label{G8A14}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A14]
+What is link margin?  
+\begin{enumerate}[label=\Alph*)]
+    \item The opposite of fade margin
+    \item \textbf{The difference between received power level and minimum required signal level at the input to the receiver}
+    \item Transmit power minus receiver sensitivity
+    \item Receiver sensitivity plus 3 dB
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re trying to talk to your friend across a noisy playground. The link margin is like how much louder you can shout compared to the minimum volume your friend needs to hear you. If you’re shouting just loud enough for them to hear, your link margin is zero. But if you’re shouting way louder than needed, you’ve got a big link margin! This extra “shouting power” helps ensure your message gets through even if the playground gets noisier.
+
+\subsubsection*{Advanced Explanation}
+Link margin is a critical parameter in radio communication systems, defined as the difference between the received power level (\(P_r\)) and the minimum required signal level (\(P_{min}\)) at the receiver input. Mathematically, it is expressed as:
+
+\[
+\text{Link Margin (dB)} = P_r - P_{min}
+\]
+
+Here, \(P_r\) is the power received at the antenna, and \(P_{min}\) is the receiver sensitivity, which is the minimum signal level required for the receiver to decode the signal correctly. A positive link margin ensures reliable communication, even in the presence of signal fading or interference. 
+
+For example, if the received power is \(-80 \, \text{dBm}\) and the receiver sensitivity is \(-90 \, \text{dBm}\), the link margin is:
+
+\[
+\text{Link Margin} = -80 \, \text{dBm} - (-90 \, \text{dBm}) = 10 \, \text{dB}
+\]
+
+This 10 dB margin provides a buffer against signal degradation. Understanding link margin is essential for designing robust communication systems, as it accounts for factors like path loss, antenna gain, and environmental conditions.
+
+% Diagram prompt: Generate a diagram showing the relationship between received power, receiver sensitivity, and link margin in a radio communication system.

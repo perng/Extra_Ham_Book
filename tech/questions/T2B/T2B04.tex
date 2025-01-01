@@ -1,0 +1,25 @@
+\subsection{Which of the Following Could Be the Reason You Are Unable to Access a Repeater Whose Output You Can Hear?}\label{T2B04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B04]
+Which of the following could be the reason you are unable to access a repeater whose output you can hear?
+\begin{enumerate}[label=\Alph*)]
+    \item Improper transceiver offset
+    \item You are using the wrong CTCSS tone
+    \item You are using the wrong DCS code
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to talk to your friend through a walkie-talkie, but you can hear them just fine while they can’t hear you. What’s going on? Well, it’s like trying to open a door with the wrong key. Maybe you’re not turning the key the right way (improper offset), or maybe you’re using the wrong key altogether (wrong CTCSS tone or DCS code). All these little mistakes can stop you from getting through. So, if you’re hearing the repeater but can’t talk back, it’s probably one (or all) of these issues!
+
+\subsubsection{Advanced Explanation}
+To access a repeater, several parameters must be correctly configured:
+\begin{itemize}
+    \item \textbf{Transceiver Offset}: The repeater operates on two frequencies: one for receiving (input) and one for transmitting (output). The difference between these frequencies is called the offset. If your transceiver is not set to the correct offset, your signal will not be received by the repeater.
+    \item \textbf{CTCSS Tone}: Continuous Tone-Coded Squelch System (CTCSS) is a sub-audible tone used to access the repeater. If the wrong CTCSS tone is used, the repeater will not recognize your signal.
+    \item \textbf{DCS Code}: Digital-Coded Squelch (DCS) is a digital version of CTCSS. Similar to CTCSS, if the wrong DCS code is used, the repeater will not respond to your transmission.
+\end{itemize}
+All these factors are crucial for successful communication through a repeater. If any one of them is incorrect, you will be unable to access the repeater, even if you can hear its output.
+
+% Diagram prompt: Generate a diagram showing the relationship between a transceiver, repeater, and the necessary configurations (offset, CTCSS tone, DCS code) for successful communication.

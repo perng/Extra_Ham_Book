@@ -1,0 +1,46 @@
+\subsection{“Zesty Phase Angle Puzzle in an RLC Circuit!”}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+\textbf{E5B07} What is the phase angle between the voltage across and the current through a series RLC circuit if \(X_C\) is 500 ohms, \(R\) is 1 kilohm, and \(X_L\) is 250 ohms?
+
+\begin{enumerate}[label=\Alph*.]
+    \item 68.2 degrees with the voltage leading the current
+    \item 14.0 degrees with the voltage leading the current
+    \item \textbf{14.0 degrees with the voltage lagging the current}
+    \item 68.2 degrees with the voltage lagging the current
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a circuit with a resistor (R), an inductor (L), and a capacitor (C) all connected in series. The resistor resists the flow of current, the inductor resists changes in current, and the capacitor resists changes in voltage. When you apply a voltage to this circuit, the current that flows through it can either lead or lag behind the voltage, depending on the values of \(X_L\) (inductive reactance) and \(X_C\) (capacitive reactance). 
+
+In this case, \(X_C\) is larger than \(X_L\), which means the capacitor has a stronger effect than the inductor. This causes the voltage to lag behind the current by a small angle, specifically 14.0 degrees. So, the correct answer is that the voltage lags the current by 14.0 degrees.
+
+\subsubsection{Advanced Explanation}
+In a series RLC circuit, the phase angle \(\phi\) between the voltage and the current is given by the formula:
+
+\[
+\phi = \arctan\left(\frac{X_L - X_C}{R}\right)
+\]
+
+Given:
+\[
+X_C = 500 \, \Omega, \quad R = 1000 \, \Omega, \quad X_L = 250 \, \Omega
+\]
+
+Substitute these values into the formula:
+
+\[
+\phi = \arctan\left(\frac{250 - 500}{1000}\right) = \arctan\left(\frac{-250}{1000}\right) = \arctan(-0.25)
+\]
+
+The arctangent of -0.25 is approximately -14.0 degrees. The negative sign indicates that the voltage lags the current. Therefore, the phase angle is 14.0 degrees with the voltage lagging the current.
+
+\subsubsection{Related Concepts}
+\begin{itemize}
+    \item \textbf{Reactance (\(X_L\) and \(X_C\))}: Reactance is the opposition that inductors and capacitors offer to alternating current. Inductive reactance (\(X_L\)) increases with frequency, while capacitive reactance (\(X_C\)) decreases with frequency.
+    \item \textbf{Impedance (Z)}: Impedance is the total opposition to current in an AC circuit, combining resistance and reactance. It is a complex quantity with both magnitude and phase.
+    \item \textbf{Phase Angle (\(\phi\))}: The phase angle describes the difference in phase between the voltage and current in an AC circuit. It is determined by the relative values of resistance, inductive reactance, and capacitive reactance.
+\end{itemize}
+
+% Diagram Prompt: Generate a diagram showing a series RLC circuit with labeled components (R, L, C) and arrows indicating the phase relationship between voltage and current.

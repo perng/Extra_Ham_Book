@@ -1,0 +1,38 @@
+\subsection{Standing Wave Ratio (SWR)}
+\label{T9B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9B12]
+What is standing wave ratio (SWR)?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{A measure of how well a load is matched to a transmission line}
+    \item The ratio of amplifier power output to input
+    \item The transmitter efficiency ratio
+    \item An indication of the quality of your station’s ground connection
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to pour water from a jug into a glass. If the glass is the right size, the water flows smoothly without spilling. But if the glass is too big or too small, water splashes everywhere! In radio terms, the jug is the transmitter, the glass is the antenna, and the water is the radio signal. The Standing Wave Ratio (SWR) tells us how well the glass (antenna) matches the jug (transmitter). A low SWR means a good match, and the signal flows smoothly. A high SWR means a bad match, and the signal bounces around, causing problems.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a dimensionless quantity that describes the impedance matching between a transmission line and its load. It is defined as the ratio of the maximum voltage to the minimum voltage along the transmission line:
+
+\[
+\text{SWR} = \frac{V_{\text{max}}}{V_{\text{min}}}
+\]
+
+When the load impedance \( Z_L \) matches the characteristic impedance \( Z_0 \) of the transmission line, the SWR is 1, indicating perfect matching. If there is a mismatch, the SWR increases, indicating that some of the signal is being reflected back towards the source. The SWR can also be expressed in terms of the reflection coefficient \( \Gamma \):
+
+\[
+\text{SWR} = \frac{1 + |\Gamma|}{1 - |\Gamma|}
+\]
+
+where \( \Gamma \) is given by:
+
+\[
+\Gamma = \frac{Z_L - Z_0}{Z_L + Z_0}
+\]
+
+Understanding SWR is crucial in radio communications because a high SWR can lead to power loss, equipment damage, and inefficient signal transmission. Proper impedance matching ensures maximum power transfer and minimizes signal reflection.
+
+% Diagram Prompt: Generate a diagram showing a transmission line with a load, illustrating the voltage maxima and minima along the line to visually explain SWR.

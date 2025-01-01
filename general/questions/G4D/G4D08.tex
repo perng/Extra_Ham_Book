@@ -1,0 +1,34 @@
+\subsection{Frequency Range of a 3 kHz LSB Signal}
+\label{G4D08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D08]
+What frequency range is occupied by a 3 kHz LSB signal when the displayed carrier frequency is set to 7.178 MHz?
+\begin{enumerate}[label=\Alph*)]
+    \item 7.178 MHz to 7.181 MHz
+    \item 7.178 MHz to 7.184 MHz
+    \item \textbf{7.175 MHz to 7.178 MHz}
+    \item 7.1765 MHz to 7.1795 MHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re tuning your radio to a station that’s broadcasting at 7.178 MHz. Now, this station is using a special trick called Lower Sideband (LSB) to send its signal. Think of LSB as a way to pack the signal into a smaller space, like folding a big piece of paper to fit into a tiny envelope. The signal is 3 kHz wide, which means it’s like a small slice of the radio spectrum. Since it’s LSB, the signal is packed just below the carrier frequency. So, if the carrier is at 7.178 MHz, the signal will be from 7.175 MHz to 7.178 MHz. It’s like the station is whispering just below the main frequency!
+
+\subsubsection*{Advanced Explanation}
+In radio communications, a Lower Sideband (LSB) signal is a type of amplitude modulation where the lower sideband is transmitted, and the upper sideband is suppressed. The carrier frequency is the central frequency around which the signal is modulated. For a 3 kHz LSB signal, the bandwidth is 3 kHz, meaning the signal occupies a range of frequencies 3 kHz below the carrier frequency.
+
+Given:
+- Carrier frequency (\( f_c \)) = 7.178 MHz
+- Bandwidth (\( B \)) = 3 kHz = 0.003 MHz
+
+The frequency range for an LSB signal is calculated as:
+\[
+f_{\text{lower}} = f_c - B = 7.178\,\text{MHz} - 0.003\,\text{MHz} = 7.175\,\text{MHz}
+\]
+\[
+f_{\text{upper}} = f_c = 7.178\,\text{MHz}
+\]
+
+Thus, the frequency range occupied by the 3 kHz LSB signal is from 7.175 MHz to 7.178 MHz. This is why the correct answer is \textbf{C}.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum with the carrier frequency at 7.178 MHz and the LSB signal occupying the range from 7.175 MHz to 7.178 MHz.

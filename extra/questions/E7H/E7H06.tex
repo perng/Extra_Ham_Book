@@ -1,0 +1,39 @@
+\subsection{Unlocking the Magic of Phase-Locked Loops!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7H06] Which of these functions can be performed by a phase-locked loop?
+    \begin{enumerate}[label=\Alph*]
+        \item Wide-band AF and RF power amplification
+        \item \textbf{Frequency synthesis and FM demodulation}
+        \item Photovoltaic conversion and optical coupling
+        \item Comparison of two digital input signals and digital pulse counting
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a phase-locked loop (PLL) as a smart system that can lock onto a specific frequency and keep track of it. It’s like a radio that can tune itself to the exact station you want and stay there, even if the station’s signal drifts a little. A PLL can also help in creating new frequencies (frequency synthesis) and decoding FM radio signals (FM demodulation). So, it’s like a multitasking tool for managing and understanding frequencies.
+
+\subsubsection{Advanced Explanation}
+A phase-locked loop (PLL) is an electronic circuit that synchronizes an output oscillator signal with a reference input signal in both frequency and phase. The primary components of a PLL include a phase detector, a low-pass filter, and a voltage-controlled oscillator (VCO). The phase detector compares the phase of the input signal with the output signal and generates an error signal. This error signal is filtered and then used to adjust the VCO, which in turn adjusts the output frequency to match the input frequency.
+
+\paragraph{Frequency Synthesis:}
+Frequency synthesis is the process of generating a range of frequencies from a single reference frequency. In a PLL, the VCO can be controlled to produce a precise frequency that is a multiple of the reference frequency. This is achieved by incorporating a frequency divider in the feedback loop.
+
+\paragraph{FM Demodulation:}
+FM demodulation involves extracting the original information signal from a frequency-modulated carrier wave. A PLL can be used for FM demodulation by locking onto the FM signal and then using the VCO control voltage, which is proportional to the frequency deviation, to recover the modulating signal.
+
+\paragraph{Mathematical Representation:}
+The phase detector output \( \phi_e \) is given by:
+\[
+\phi_e = \phi_{in} - \phi_{out}
+\]
+where \( \phi_{in} \) is the phase of the input signal and \( \phi_{out} \) is the phase of the output signal. The filtered error signal \( V_{ctrl} \) is:
+\[
+V_{ctrl} = K_p \cdot \phi_e
+\]
+where \( K_p \) is the phase detector gain. The VCO frequency \( f_{out} \) is:
+\[
+f_{out} = f_0 + K_v \cdot V_{ctrl}
+\]
+where \( f_0 \) is the center frequency and \( K_v \) is the VCO gain.
+
+% Diagram prompt: Generate a block diagram of a phase-locked loop showing the phase detector, low-pass filter, and voltage-controlled oscillator.

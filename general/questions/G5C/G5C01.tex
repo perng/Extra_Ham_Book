@@ -1,0 +1,32 @@
+\subsection{Voltage in Transformer Secondary Winding}
+\label{G5C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5C01]
+What causes a voltage to appear across the secondary winding of a transformer when an AC voltage source is connected across its primary winding?
+\begin{enumerate}[label=\Alph*]
+    \item Capacitive coupling
+    \item Displacement current coupling
+    \item \textbf{Mutual inductance}
+    \item Mutual capacitance
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine the transformer as a magical energy transfer machine. When you plug in the primary winding (the input side) to an AC power source, it’s like giving the machine a push. This push creates a magnetic field that jumps over to the secondary winding (the output side) and says, Hey, let’s make some voltage here! This magical jump is called \textit{mutual inductance}. It’s like a secret handshake between the two windings that makes the voltage appear on the other side. No capacitors or weird currents are involved—just good old magnetic teamwork!
+
+\subsubsection*{Advanced Explanation}
+When an AC voltage is applied to the primary winding of a transformer, it generates an alternating current, which in turn produces a time-varying magnetic flux. This magnetic flux links both the primary and secondary windings due to their physical proximity and the core material. According to Faraday’s Law of Electromagnetic Induction, the time-varying magnetic flux induces an electromotive force (EMF) in the secondary winding. The relationship is given by:
+
+\[
+\mathcal{E} = -N \frac{d\Phi}{dt}
+\]
+
+where \(\mathcal{E}\) is the induced EMF, \(N\) is the number of turns in the winding, and \(\frac{d\Phi}{dt}\) is the rate of change of magnetic flux. The mutual inductance \(M\) quantifies the coupling between the two windings and is defined as:
+
+\[
+M = k \sqrt{L_1 L_2}
+\]
+
+where \(k\) is the coupling coefficient, and \(L_1\) and \(L_2\) are the inductances of the primary and secondary windings, respectively. The induced voltage in the secondary winding is directly proportional to the mutual inductance and the rate of change of current in the primary winding.
+
+% Diagram prompt: A diagram showing a transformer with primary and secondary windings, magnetic flux lines, and labeled mutual inductance would be helpful here.

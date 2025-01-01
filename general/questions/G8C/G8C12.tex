@@ -1,0 +1,30 @@
+\subsection{PSK31 Signal Character Encoding}
+\label{G8C12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C12]
+Which type of code is used for sending characters in a PSK31 signal?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Varicode}
+    \item Viterbi
+    \item Volumetric
+    \item Binary
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a secret message to your friend using a flashlight. You can't just shine the light on and off randomly; you need a special way to blink the light so your friend can understand the message. In PSK31, a type of radio signal, we use something called \textbf{Varicode} to blink the signal in a way that represents letters and numbers. It's like a secret blinking language that only your radio and your friend's radio understand!
+
+\subsubsection{Advanced Explanation}
+PSK31 (Phase Shift Keying, 31 Baud) is a digital modulation technique used in amateur radio for efficient communication. The characters in a PSK31 signal are encoded using \textbf{Varicode}, a variable-length code that assigns shorter codes to more frequently used characters and longer codes to less frequently used ones. This optimizes the transmission speed and efficiency.
+
+Varicode is designed to minimize the number of bits transmitted for common characters, such as letters and numbers, while still allowing for the representation of less common characters. For example, the letter 'E' might be represented by a shorter code than the letter 'Z'. This is similar to Morse code, where common letters like 'E' and 'T' have shorter codes.
+
+Mathematically, Varicode can be represented as a mapping from characters to binary sequences:
+\[
+\text{Varicode}(c) = b_1b_2\dots b_n
+\]
+where \( c \) is a character and \( b_1b_2\dots b_n \) is the corresponding binary sequence. The length of the sequence \( n \) varies depending on the character \( c \).
+
+In PSK31, the Varicode is used in conjunction with phase modulation to transmit the binary sequences efficiently over the radio frequency spectrum. The phase of the carrier signal is shifted to represent the binary '1's and '0's, allowing for the transmission of characters at a rate of 31 baud.
+
+% Diagram Prompt: Generate a diagram showing the mapping of characters to Varicode sequences and how they are transmitted using PSK31 phase modulation.

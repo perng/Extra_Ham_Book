@@ -1,0 +1,30 @@
+\subsection{Preventing Standing Waves on a Feed Line}
+\label{G9A07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A07]
+What must be done to prevent standing waves on a feed line connected to an antenna?
+\begin{enumerate}[label=\Alph*]
+    \item The antenna feed point must be at DC ground potential
+    \item The feed line must be an odd number of electrical quarter wavelengths long
+    \item The feed line must be an even number of physical half wavelengths long
+    \item \textbf{The antenna feed point impedance must be matched to the characteristic impedance of the feed line}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to pour water from one cup to another. If the cups are the same size, the water flows smoothly without spilling. But if one cup is much bigger or smaller, the water sloshes around and makes a mess. Similarly, when the antenna and the feed line are matched in their electrical size (impedance), the signal flows smoothly without creating standing waves. If they don't match, the signal bounces back and forth, causing standing waves, which is like the sloshing water.
+
+\subsubsection{Advanced Explanation}
+Standing waves on a feed line occur when there is an impedance mismatch between the antenna and the feed line. This mismatch causes a portion of the transmitted signal to be reflected back towards the source, creating interference patterns known as standing waves. To prevent this, the antenna feed point impedance \( Z_{\text{antenna}} \) must be matched to the characteristic impedance \( Z_0 \) of the feed line. 
+
+The characteristic impedance of a transmission line is given by:
+\[
+Z_0 = \sqrt{\frac{R + j\omega L}{G + j\omega C}}
+\]
+where \( R \) is the resistance, \( L \) is the inductance, \( G \) is the conductance, and \( C \) is the capacitance per unit length of the line. When \( Z_{\text{antenna}} = Z_0 \), the reflection coefficient \( \Gamma \) is zero:
+\[
+\Gamma = \frac{Z_{\text{antenna}} - Z_0}{Z_{\text{antenna}} + Z_0} = 0
+\]
+This ensures that all the power is transferred to the antenna without any reflections, thus preventing standing waves.
+
+% Diagram prompt: Generate a diagram showing the impedance matching between the antenna and the feed line, illustrating the flow of the signal without reflections.

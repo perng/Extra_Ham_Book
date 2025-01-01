@@ -1,0 +1,26 @@
+\subsection{Op-Amp Output Impedance Unveiled!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7G01] What is the typical output impedance of an op-amp?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Very low}
+        \item Very high
+        \item 100 ohms
+        \item 10,000 ohms
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine an op-amp as a super-efficient helper that can deliver a lot of power to a device without losing much energy. The output impedance is like how much resistance the helper has when trying to give power. A very low output impedance means the helper can give power easily, like a strong person pushing a light object. This is why op-amps typically have a very low output impedance—they are designed to deliver power efficiently without much resistance.
+
+\subsubsection{Advanced Explanation}
+An operational amplifier (op-amp) is designed to have a very low output impedance, typically in the range of a few ohms or even less. This low output impedance ensures that the op-amp can drive a load with minimal voltage drop, maintaining signal integrity. The output impedance \( Z_{\text{out}} \) of an op-amp can be approximated by the following formula:
+
+\[
+Z_{\text{out}} = \frac{V_{\text{out}}}{I_{\text{out}}}
+\]
+
+where \( V_{\text{out}} \) is the output voltage and \( I_{\text{out}} \) is the output current. In practical op-amps, \( Z_{\text{out}} \) is kept very low to ensure that the output voltage remains stable even when the load changes. This is crucial in applications like audio amplifiers, where maintaining a consistent signal level is important.
+
+The low output impedance is achieved through careful design of the output stage of the op-amp, often using transistors configured in a way that minimizes resistance. This design allows the op-amp to act as a near-ideal voltage source, capable of driving a wide range of loads without significant signal degradation.
+
+% Diagram prompt: Generate a diagram showing the internal structure of an op-amp, highlighting the output stage and its low impedance characteristics.

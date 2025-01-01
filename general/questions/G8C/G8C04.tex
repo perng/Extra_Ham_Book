@@ -1,0 +1,38 @@
+\subsection{Baudot Code Description}
+\label{G8C04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C04]
+Which of the following describes Baudot code?
+\begin{enumerate}[label=\Alph*)]
+    \item A 7-bit code with start, stop, and parity bits
+    \item A code using error detection and correction
+    \item \textbf{A 5-bit code with additional start and stop bits}
+    \item A code using SELCAL and LISTEN
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a secret message to your friend using only 5 different colored lights. Each color represents a different letter or number. To make sure your friend knows when the message starts and ends, you add a special start light and a stop light. That's basically what Baudot code does! It uses 5 bits (like the 5 colored lights) to represent characters, and it adds extra bits to signal the beginning and end of each character. It's like a simple, old-school way of texting!
+
+\subsubsection{Advanced Explanation}
+Baudot code, developed by Émile Baudot in the 1870s, is a character encoding scheme used primarily in telegraphy. It is a 5-bit code, meaning each character is represented by a combination of 5 binary digits (bits). This allows for a total of \(2^5 = 32\) possible characters, which is sufficient for the alphabet, numbers, and some punctuation marks.
+
+To ensure proper synchronization between the sender and receiver, Baudot code includes additional start and stop bits. The start bit signals the beginning of a character, while the stop bit indicates its end. This is crucial in asynchronous communication, where the timing of each character transmission may vary.
+
+Mathematically, the structure of a Baudot code character can be represented as:
+
+\[
+\text{Start Bit} + \text{5 Data Bits} + \text{Stop Bit}
+\]
+
+For example, if we represent the start bit as 0 and the stop bit as 1, a character might look like this:
+
+\[
+0 \quad 1 \quad 0 \quad 1 \quad 0 \quad 1 \quad 1
+\]
+
+Here, the first 0 is the start bit, the next 5 bits (1, 0, 1, 0, 1) represent the character, and the last 1 is the stop bit.
+
+Baudot code does not include error detection or correction mechanisms, which are more common in modern communication protocols. It also does not use SELCAL (Selective Calling) or LISTEN, which are features found in aviation communication systems.
+
+% Diagram Prompt: Generate a diagram showing the structure of a Baudot code character with start, 5 data bits, and stop bits.

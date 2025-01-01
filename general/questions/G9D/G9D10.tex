@@ -1,0 +1,26 @@
+\subsection{Radiation Pattern Nulls of Electrically Small Loops}
+\label{G9D10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9D10]
+In which direction or directions does an electrically small loop (less than 1/10 wavelength in circumference) have nulls in its radiation pattern?
+\begin{enumerate}[label=\Alph*]
+    \item In the plane of the loop
+    \item \textbf{Broadside to the loop}
+    \item Broadside and in the plane of the loop
+    \item Electrically small loops are omnidirectional
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a tiny hula hoop that’s way smaller than the length of the waves it’s trying to send out. Now, if you hold this hoop flat on a table, the waves it sends out are strongest when they go straight up and down from the table (broadside to the hoop). But if you try to send waves along the table (in the plane of the hoop), the hoop is like, “Nope, not happening!” So, the nulls (the directions where no waves are sent) are straight up and down from the hoop.
+
+\subsubsection{Advanced Explanation}
+An electrically small loop antenna, defined as having a circumference less than \( \frac{1}{10} \) of the wavelength (\( \lambda \)), exhibits a radiation pattern with nulls in specific directions. The radiation pattern of such a loop is characterized by a toroidal (doughnut-shaped) pattern, where the maximum radiation occurs in the plane of the loop, and the minimum radiation (nulls) occurs broadside to the loop.
+
+Mathematically, the radiation pattern \( E(\theta, \phi) \) of a small loop antenna can be approximated as:
+\[ E(\theta, \phi) \propto \sin(\theta) \]
+where \( \theta \) is the angle from the axis perpendicular to the plane of the loop. At \( \theta = 0^\circ \) and \( \theta = 180^\circ \) (broadside to the loop), \( \sin(\theta) = 0 \), indicating nulls in these directions.
+
+This behavior arises because the current distribution in the loop is uniform, and the far-field radiation is primarily due to the magnetic dipole moment. The nulls broadside to the loop are a direct consequence of the symmetry and the nature of the magnetic dipole radiation.
+
+% Diagram prompt: Generate a diagram showing the radiation pattern of an electrically small loop antenna, highlighting the nulls broadside to the loop and the maximum radiation in the plane of the loop.

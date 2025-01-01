@@ -1,0 +1,32 @@
+\subsection{Which of the following statements is true of single sideband (SSB)?}
+\label{G2A07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A07]
+Which of the following statements is true of single sideband (SSB)?
+\begin{enumerate}[label=\Alph*]
+    \item Only one sideband and the carrier are transmitted; the other sideband is suppressed
+    \item \textbf{Only one sideband is transmitted; the other sideband and carrier are suppressed}
+    \item SSB is the only voice mode authorized on the 20-, 15-, and 10-meter amateur bands
+    \item SSB is the only voice mode authorized on the 160-, 75-, and 40-meter amateur bands
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a pizza party, and you have a whole pizza (the carrier) and two slices (the sidebands). Now, instead of carrying the whole pizza and both slices, you decide to take only one slice and leave the rest behind. That's what SSB does! It sends only one slice (one sideband) and leaves the whole pizza (the carrier) and the other slice (the other sideband) at home. This makes the transmission more efficient and saves space, just like taking only one slice saves you from carrying a heavy pizza box.
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a technique used in radio communications to transmit information more efficiently. In traditional Amplitude Modulation (AM), both sidebands and the carrier are transmitted, which consumes more bandwidth and power. SSB improves this by suppressing one sideband and the carrier, transmitting only one sideband. This reduces the required bandwidth by half and increases power efficiency.
+
+Mathematically, an AM signal can be represented as:
+\[
+s(t) = A_c \left[1 + m(t)\right] \cos(2\pi f_c t)
+\]
+where \(A_c\) is the carrier amplitude, \(m(t)\) is the message signal, and \(f_c\) is the carrier frequency. In SSB, one of the sidebands is removed, resulting in:
+\[
+s_{\text{SSB}}(t) = A_c m(t) \cos(2\pi f_c t) \mp A_c \hat{m}(t) \sin(2\pi f_c t)
+\]
+where \(\hat{m}(t)\) is the Hilbert transform of \(m(t)\), and the sign depends on which sideband is transmitted.
+
+SSB is particularly useful in voice communications on amateur radio bands, where bandwidth and power efficiency are crucial. It is not the only authorized voice mode on the specified bands, but it is one of the most commonly used due to its efficiency.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of AM and SSB signals, highlighting the suppressed carrier and sideband in SSB.

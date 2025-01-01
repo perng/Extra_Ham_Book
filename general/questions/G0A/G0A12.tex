@@ -1,0 +1,32 @@
+\subsection{RF Exposure Rules and Applicable Stations}
+\label{G0A12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G0A12]
+What stations are subject to the FCC rules on RF exposure?
+\begin{enumerate}[label=\Alph*]
+    \item All commercial stations; amateur radio stations are exempt
+    \item Only stations with antennas lower than one wavelength above the ground
+    \item Only stations transmitting more than 500 watts PEP
+    \item \textbf{All stations with a time-averaged transmission of more than one milliwatt}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re playing with a flashlight. If you shine it for a second, it’s no big deal. But if you keep it on for hours, it might get hot or bother someone. The FCC is like the flashlight police for radio waves. They say, Hey, if you’re using radio waves for more than a tiny bit of time, you need to be careful so you don’t accidentally zap anyone! So, it’s not about how fancy your radio is or how high your antenna is—it’s about how much energy you’re sending out over time. Even a small radio can be a problem if it’s on too long!
+
+\subsubsection{Advanced Explanation}
+The FCC (Federal Communications Commission) regulates RF (Radio Frequency) exposure to ensure public safety. RF exposure is measured in terms of power density, which is the amount of power per unit area. The FCC rules apply to all stations that transmit with a time-averaged power of more than one milliwatt (1 mW). This is because even low-power transmissions can pose a risk if they are continuous or prolonged.
+
+The key concept here is \textit{time-averaged transmission power}. This is calculated by averaging the power over a specific time period, typically 6 minutes for occupational exposure and 30 minutes for the general public. The formula for time-averaged power is:
+
+\[
+P_{\text{avg}} = \frac{1}{T} \int_{0}^{T} P(t) \, dt
+\]
+
+where \( P(t) \) is the instantaneous power at time \( t \), and \( T \) is the averaging period.
+
+The FCC rules are designed to limit the Specific Absorption Rate (SAR), which is the rate at which energy is absorbed by the human body. The SAR limit is set to ensure that the RF exposure does not cause harmful thermal effects.
+
+In summary, the FCC rules on RF exposure apply to all stations, regardless of their type or antenna height, as long as their time-averaged transmission power exceeds one milliwatt. This ensures that all potential sources of RF exposure are regulated to protect public health.
+
+% Prompt for diagram: A diagram showing the relationship between transmission power, time-averaged power, and RF exposure limits would be helpful here.

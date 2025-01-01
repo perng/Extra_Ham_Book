@@ -1,0 +1,30 @@
+\subsection{Purpose of a Power Supply Interlock}
+\label{G0B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G0B12]
+What is the purpose of a power supply interlock?
+\begin{enumerate}[label=\Alph*)]
+    \item To prevent unauthorized changes to the circuit that would void the manufacturer’s warranty
+    \item To shut down the unit if it becomes too hot
+    \item \textbf{To ensure that dangerous voltages are removed if the cabinet is opened}
+    \item To shut off the power supply if too much voltage is produced
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a toy robot that runs on batteries. Now, what if you accidentally opened the robot while it was still on? You might get a little shock, right? A power supply interlock is like a safety switch that makes sure the robot turns off as soon as you open it. This way, you don’t get zapped by any dangerous electricity. It’s like having a guardian angel for your electronics!
+
+\subsubsection{Advanced Explanation}
+A power supply interlock is a safety mechanism designed to disconnect the power supply when the cabinet or enclosure of an electronic device is opened. This is crucial in high-voltage systems where exposure to live circuits can be hazardous. The interlock typically consists of a switch or sensor that detects when the cabinet is opened and immediately cuts off the power supply, thereby removing any dangerous voltages.
+
+In mathematical terms, the interlock can be modeled as a switch \( S \) in series with the power supply \( V \). When the cabinet is opened, the switch \( S \) opens, breaking the circuit:
+
+\[
+V_{\text{output}} = V \times S
+\]
+
+where \( S = 0 \) when the cabinet is open, ensuring \( V_{\text{output}} = 0 \).
+
+This mechanism is essential in ensuring the safety of technicians and users who might need to access the internal components of the device. It is a fundamental aspect of electrical safety protocols and is often mandated by regulatory standards.
+
+% Diagram prompt: Generate a diagram showing a power supply circuit with an interlock switch that opens when the cabinet is opened.

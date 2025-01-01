@@ -1,0 +1,50 @@
+\subsection{Power Loss Equivalent to 1 dB}
+\label{G5B10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5B10]
+What percentage of power loss is equivalent to a loss of 1 dB?
+\begin{enumerate}[label=\Alph*)]
+    \item 10.9 percent
+    \item 12.2 percent
+    \item \textbf{20.6 percent}
+    \item 25.9 percent
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a bag of candy, and you lose some of it. If you lose 1 dB of your candy, it’s like losing about 20.6\% of your candy. So, if you started with 100 pieces, you’d have about 79.4 pieces left. It’s not a huge loss, but it’s enough to notice that your candy stash is smaller!
+
+\subsubsection{Advanced Explanation}
+The decibel (dB) is a logarithmic unit used to express the ratio of two values of a physical quantity, often power or intensity. The relationship between power loss in decibels and percentage can be derived using the following formula:
+
+\[
+\text{Power Loss (dB)} = 10 \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
+\]
+
+Where \( P_{\text{in}} \) is the input power and \( P_{\text{out}} \) is the output power. To find the percentage of power loss equivalent to 1 dB, we rearrange the formula:
+
+\[
+1 = 10 \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
+\]
+
+\[
+\frac{1}{10} = \log_{10}\left(\frac{P_{\text{out}}}{P_{\text{in}}}\right)
+\]
+
+\[
+10^{0.1} = \frac{P_{\text{out}}}{P_{\text{in}}}
+\]
+
+\[
+\frac{P_{\text{out}}}{P_{\text{in}}} \approx 0.794
+\]
+
+Thus, the power loss is:
+
+\[
+1 - 0.794 = 0.206 \text{ or } 20.6\%
+\]
+
+This calculation shows that a 1 dB loss corresponds to approximately a 20.6\% reduction in power.
+
+% Diagram prompt: A simple diagram showing the relationship between input power, output power, and the 1 dB loss could be helpful here.

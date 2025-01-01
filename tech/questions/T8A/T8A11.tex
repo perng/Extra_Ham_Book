@@ -1,0 +1,28 @@
+\subsection{Bandwidth for CW Signal Transmission}
+\label{T8A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A11]
+What is the approximate bandwidth required to transmit a CW signal?
+\begin{enumerate}[label=\Alph*]
+    \item 2.4 kHz
+    \item \textbf{150 Hz}
+    \item 1000 Hz
+    \item 15 kHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a message using a flashlight. If you're just turning it on and off quickly (like Morse code), you don't need a lot of light space to do it. Similarly, a CW (Continuous Wave) signal is like a simple on-off flashlight signal. It doesn't need much radio space (bandwidth) to send its message. That's why the bandwidth required is very small, just 150 Hz. It's like using a tiny flashlight instead of a big floodlight!
+
+\subsubsection{Advanced Explanation}
+A CW signal is essentially a single-frequency tone that is turned on and off to convey information, typically in Morse code. The bandwidth of a signal is the range of frequencies it occupies. For a CW signal, the bandwidth is determined by the rate at which the signal is turned on and off, known as the keying rate. 
+
+Mathematically, the bandwidth \( B \) of a CW signal can be approximated by:
+\[
+B \approx \frac{1}{T}
+\]
+where \( T \) is the duration of the shortest element in the Morse code (e.g., a dot). For typical Morse code keying rates, \( T \) is on the order of milliseconds, leading to a bandwidth of around 150 Hz. This is why the correct answer is \textbf{B: 150 Hz}.
+
+CW signals are very efficient in terms of bandwidth usage because they occupy a very narrow frequency range. This makes them ideal for long-distance communication, especially in environments where bandwidth is limited.
+
+% Diagram Prompt: Generate a diagram showing a CW signal waveform with on-off keying and its corresponding frequency spectrum, highlighting the narrow bandwidth.

@@ -1,0 +1,33 @@
+\subsection{Frequency Determination in LC Oscillators}
+\label{G7B09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B09]
+What determines the frequency of an LC oscillator?
+\begin{enumerate}[label=\Alph*.]
+    \item The number of stages in the counter
+    \item The number of stages in the divider
+    \item \textbf{The inductance and capacitance in the tank circuit}
+    \item The time delay of the lag circuit
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a swing. The speed at which you swing back and forth depends on how long the ropes are and how heavy the seat is. In an LC oscillator, the swing is the electrical signal, and the ropes and seat are the inductance (L) and capacitance (C). The frequency of the oscillator is like how fast you swing, and it’s determined by these two components. So, the bigger the inductance or capacitance, the slower the swing, and vice versa. It’s all about the balance between L and C!
+
+\subsubsection{Advanced Explanation}
+The frequency of an LC oscillator is determined by the resonant frequency of the LC tank circuit, which is given by the formula:
+
+\[
+f = \frac{1}{2\pi\sqrt{LC}}
+\]
+
+where:
+\begin{itemize}
+    \item \( f \) is the frequency in hertz (Hz),
+    \item \( L \) is the inductance in henries (H),
+    \item \( C \) is the capacitance in farads (F).
+\end{itemize}
+
+This formula shows that the frequency is inversely proportional to the square root of the product of inductance and capacitance. Therefore, increasing either \( L \) or \( C \) will decrease the frequency, while decreasing either will increase the frequency. The LC tank circuit stores energy alternately in the magnetic field of the inductor and the electric field of the capacitor, creating oscillations at this resonant frequency.
+
+% Diagram Prompt: Generate a diagram showing an LC tank circuit with labeled components (inductor L and capacitor C) and the oscillating waveform.

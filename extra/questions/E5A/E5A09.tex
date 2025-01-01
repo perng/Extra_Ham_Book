@@ -1,0 +1,42 @@
+\subsection{Unlocking the Q Factor: Calculating RLC Parallel Resonance!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E5A09] How is the Q of an RLC parallel resonant circuit calculated?
+    \begin{enumerate}[label=\Alph*)]
+        \item Reactance of either the inductance or capacitance divided by the resistance
+        \item Reactance of either the inductance or capacitance multiplied by the resistance
+        \item \textbf{Resistance divided by the reactance of either the inductance or capacitance}
+        \item Reactance of the inductance multiplied by the reactance of the capacitance
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a swing. The Q factor is like how long the swing keeps moving after you stop pushing it. In an RLC parallel circuit, the Q factor tells us how sharp or narrow the resonance is. To find the Q factor, we look at the resistance (how much the swing slows down) and the reactance (how much the swing wants to keep moving). The Q factor is calculated by dividing the resistance by the reactance. This gives us a number that tells us how good the circuit is at resonating at a specific frequency.
+
+\subsubsection{Advanced Explanation}
+In an RLC parallel resonant circuit, the quality factor (Q) is a measure of the sharpness of the resonance peak. It is defined as the ratio of the energy stored in the circuit to the energy dissipated per cycle. Mathematically, the Q factor is given by:
+
+\[
+Q = \frac{R}{X}
+\]
+
+where \( R \) is the resistance and \( X \) is the reactance of either the inductor (L) or the capacitor (C) at the resonant frequency. The reactance of the inductor is given by:
+
+\[
+X_L = 2\pi f L
+\]
+
+and the reactance of the capacitor is given by:
+
+\[
+X_C = \frac{1}{2\pi f C}
+\]
+
+At resonance, the reactances of the inductor and capacitor are equal, so we can use either \( X_L \) or \( X_C \) in the formula for Q. Therefore, the correct calculation for the Q factor in a parallel RLC circuit is:
+
+\[
+Q = \frac{R}{X_L} = \frac{R}{X_C}
+\]
+
+This formula shows that the Q factor is inversely proportional to the reactance, meaning that higher reactance results in a lower Q factor, and vice versa. The Q factor is crucial in determining the bandwidth and selectivity of the resonant circuit.
+
+% Diagram Prompt: Generate a diagram showing an RLC parallel circuit with labeled components (R, L, C) and indicate the resonant frequency and Q factor.

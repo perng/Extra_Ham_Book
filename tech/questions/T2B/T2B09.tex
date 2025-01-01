@@ -1,0 +1,39 @@
+\subsection{Why are Simplex Channels Designated in the VHF/UHF Band Plans?}
+\label{T2B09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B09]
+Why are simplex channels designated in the VHF/UHF band plans?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{So stations within range of each other can communicate without tying up a repeater}
+    \item For contest operation
+    \item For working DX only
+    \item So stations with simple transmitters can access the repeater without automated offset
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and your friend are in the same neighborhood and want to talk to each other. Instead of using a walkie-talkie that goes through a big, fancy tower (which is like a repeater), you can just talk directly to each other. This is what simplex channels are for! They let you chat with someone nearby without needing to use the repeater, which is like not needing to call a friend through a busy operator. It’s simpler and faster!
+
+\subsubsection{Advanced Explanation}
+Simplex communication refers to a mode where transmission and reception occur on the same frequency, allowing direct communication between two stations without the need for a repeater. In the VHF (Very High Frequency) and UHF (Ultra High Frequency) bands, simplex channels are specifically designated to facilitate direct communication between stations that are within line-of-sight range of each other. 
+
+The primary advantage of using simplex channels is that they do not require the use of a repeater, which is a device that receives a signal on one frequency and retransmits it on another. Repeaters are often used to extend the range of communication, but they can become congested if too many stations attempt to use them simultaneously. By using simplex channels, stations can communicate directly, thereby reducing the load on repeaters and ensuring more efficient use of the frequency spectrum.
+
+Mathematically, the range of simplex communication can be approximated using the Friis transmission equation:
+
+\[
+P_r = P_t \cdot G_t \cdot G_r \cdot \left( \frac{\lambda}{4 \pi d} \right)^2
+\]
+
+where:
+\begin{itemize}
+    \item \( P_r \) is the received power,
+    \item \( P_t \) is the transmitted power,
+    \item \( G_t \) and \( G_r \) are the gains of the transmitting and receiving antennas, respectively,
+    \item \( \lambda \) is the wavelength of the signal,
+    \item \( d \) is the distance between the two antennas.
+\end{itemize}
+
+This equation shows that the received power decreases with the square of the distance, which is why simplex communication is typically limited to line-of-sight ranges in the VHF/UHF bands.
+
+% Prompt for generating a diagram: A diagram showing two stations communicating directly on a simplex channel, with a repeater tower in the background but not in use.

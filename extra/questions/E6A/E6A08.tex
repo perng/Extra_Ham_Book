@@ -1,0 +1,35 @@
+\subsection{Transistor Gains: Decoding the 0.7 Frequency Fun!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6A08] What is the term for the frequency at which the grounded-base current gain of a bipolar junction transistor has decreased to 0.7 of the gain obtainable at 1 kHz?
+
+    \begin{enumerate}[label=\Alph*)]
+        \item Corner frequency
+        \item Alpha rejection frequency
+        \item Beta cutoff frequency
+        \item \textbf{Alpha cutoff frequency}
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a transistor, which is like a tiny switch that controls the flow of electricity. At low frequencies, like 1 kHz, it works really well. But as you increase the frequency, it starts to struggle a bit. The Alpha cutoff frequency is the point where the transistor's ability to amplify the current drops to 70\% of what it was at 1 kHz. Think of it like a runner who slows down after a certain speed because it’s just too hard to keep up.
+
+\subsubsection{Advanced Explanation}
+In a bipolar junction transistor (BJT), the grounded-base current gain (\(\alpha\)) is a measure of how well the transistor amplifies the current from the emitter to the collector. As the frequency of the input signal increases, the gain \(\alpha\) decreases due to the inherent capacitance and other parasitic effects within the transistor.
+
+The \textbf{Alpha cutoff frequency} (\(f_{\alpha}\)) is defined as the frequency at which the current gain \(\alpha\) drops to \(0.7\) of its low-frequency value. This is mathematically represented as:
+
+\[
+\alpha(f_{\alpha}) = 0.7 \cdot \alpha(0)
+\]
+
+where \(\alpha(0)\) is the low-frequency current gain. The Alpha cutoff frequency is a critical parameter in high-frequency applications, as it indicates the upper limit of the transistor's effective operating range.
+
+The relationship between the Alpha cutoff frequency and the transistor's internal parameters can be derived from the small-signal model of the BJT. The cutoff frequency is influenced by the base transit time (\(\tau_b\)) and the collector-base junction capacitance (\(C_{cb}\)). The formula for the Alpha cutoff frequency is:
+
+\[
+f_{\alpha} = \frac{1}{2\pi \tau_b}
+\]
+
+where \(\tau_b\) is the time it takes for the minority carriers to traverse the base region. This frequency is crucial for designing amplifiers and other circuits that operate at high frequencies.
+
+% Diagram Prompt: Generate a diagram showing the frequency response of a BJT's current gain, highlighting the Alpha cutoff frequency.

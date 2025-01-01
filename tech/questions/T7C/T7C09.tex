@@ -1,0 +1,30 @@
+\subsection{Causes of Coaxial Cable Failure}
+\label{T7C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C09]
+Which of the following causes failure of coaxial cables?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Moisture contamination}
+    \item Solder flux contamination
+    \item Rapid fluctuation in transmitter output power
+    \item Operation at 100\% duty cycle for an extended period
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine your coaxial cable is like a straw you use to drink your favorite soda. Now, what happens if you accidentally get water in your soda? It doesn’t taste as good, right? Similarly, if moisture gets into your coaxial cable, it messes up the signal, just like water messes up your soda. So, moisture contamination is the bad guy here, making your cable fail.
+
+\subsubsection*{Advanced Explanation}
+Coaxial cables are designed to transmit electrical signals with minimal loss. The dielectric material inside the cable is crucial for maintaining the signal integrity. When moisture contaminates the dielectric, it alters its electrical properties, increasing the loss and potentially causing signal degradation or complete failure. 
+
+The dielectric constant (\(\epsilon_r\)) of the material changes with moisture absorption, which affects the characteristic impedance (\(Z_0\)) of the cable. The characteristic impedance is given by:
+
+\[
+Z_0 = \frac{138 \log_{10}(\frac{D}{d})}{\sqrt{\epsilon_r}}
+\]
+
+where \(D\) is the outer diameter of the inner conductor, and \(d\) is the inner diameter of the outer conductor. Moisture increases \(\epsilon_r\), leading to a mismatch in impedance and signal reflection.
+
+Other factors like solder flux contamination, rapid power fluctuations, or extended high-duty cycle operation can affect the cable, but they are less likely to cause immediate failure compared to moisture contamination.
+
+% Diagram prompt: A cross-sectional view of a coaxial cable showing the inner conductor, dielectric, and outer conductor, with moisture ingress indicated.

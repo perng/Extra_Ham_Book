@@ -1,0 +1,30 @@
+\subsection{Reflected Power at Antenna Feed Point}
+\label{G9A04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A04]
+What causes reflected power at an antenna’s feed point?
+\begin{enumerate}[label=\Alph*)]
+    \item Operating an antenna at its resonant frequency
+    \item Using more transmitter power than the antenna can handle
+    \item \textbf{A difference between feed line impedance and antenna feed point impedance}
+    \item Feeding the antenna with unbalanced feed line
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to pour water from a big jug into a small cup. If the jug and the cup don't match in size, some water will spill out, right? Similarly, when the feed line (the jug) and the antenna (the cup) don't match in their size (impedance), some of the power gets spilled back as reflected power. This mismatch is what causes the power to bounce back instead of being fully absorbed by the antenna.
+
+\subsubsection*{Advanced Explanation}
+Reflected power at an antenna’s feed point occurs due to an impedance mismatch between the feed line and the antenna. Impedance, denoted as \( Z \), is a complex quantity that combines resistance \( R \) and reactance \( X \), expressed as \( Z = R + jX \). When the feed line impedance \( Z_{\text{line}} \) does not match the antenna feed point impedance \( Z_{\text{antenna}} \), a portion of the transmitted power is reflected back towards the source.
+
+The reflection coefficient \( \Gamma \) quantifies this mismatch and is given by:
+\[
+\Gamma = \frac{Z_{\text{antenna}} - Z_{\text{line}}}{Z_{\text{antenna}} + Z_{\text{line}}}
+\]
+The power reflected \( P_{\text{reflected}} \) can be calculated using:
+\[
+P_{\text{reflected}} = |\Gamma|^2 \times P_{\text{incident}}
+\]
+where \( P_{\text{incident}} \) is the incident power. To minimize reflected power, it is crucial to match the impedances as closely as possible, typically using impedance matching techniques such as baluns or matching networks.
+
+% Diagram prompt: Generate a diagram showing the feed line connected to the antenna with arrows indicating the direction of incident and reflected power.

@@ -1,0 +1,31 @@
+\subsection{Minimum Frequency Separation for CW Transmission to Minimize Interference}
+\label{G2B04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2B04]
+When selecting a CW transmitting frequency, what minimum separation from other stations should be used to minimize interference to stations on adjacent frequencies?
+\begin{enumerate}[label=\Alph*)]
+    \item 5 Hz to 50 Hz
+    \item \textbf{150 Hz to 500 Hz}
+    \item 1 kHz to 3 kHz
+    \item 3 kHz to 6 kHz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you and your friends are talking in a room. If everyone talks at the same time, it’s hard to hear anyone clearly. Now, think of radio frequencies like different voices in that room. If two radio stations are too close in frequency, their signals will overlap and cause interference, just like overlapping voices. To avoid this, we need to keep a certain distance between the frequencies. For CW (Continuous Wave) transmissions, this distance is like keeping a personal space of 150 Hz to 500 Hz. This way, each station can send its message without stepping on someone else’s toes!
+
+\subsubsection{Advanced Explanation}
+In radio communication, particularly in CW (Morse code) transmissions, the bandwidth of the signal is very narrow, typically just a few Hertz. However, to avoid interference with adjacent frequencies, a minimum frequency separation is required. This separation ensures that the sidebands of one transmission do not overlap with those of another.
+
+The minimum separation needed depends on the bandwidth of the signal and the filtering capabilities of the receiver. For CW signals, a separation of 150 Hz to 500 Hz is generally sufficient to minimize interference. This range allows for the natural spread of the signal due to modulation and ensures that the receiver can effectively filter out adjacent signals.
+
+Mathematically, the required separation can be derived from the bandwidth \( B \) of the signal and the filter characteristics of the receiver. If the filter has a roll-off rate of \( R \) dB per octave, the minimum separation \( \Delta f \) can be approximated by:
+
+\[
+\Delta f \geq B \times 10^{\frac{R}{20}}
+\]
+
+For typical CW signals and receivers, this calculation leads to the recommended separation of 150 Hz to 500 Hz.
+
+% Prompt for generating a diagram: 
+% A diagram showing the frequency spectrum of two CW signals with a separation of 150 Hz to 500 Hz, illustrating how the sidebands do not overlap and thus minimize interference.

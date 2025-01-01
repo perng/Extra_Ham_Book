@@ -1,0 +1,43 @@
+\subsection{Resonance Revelations: Impedance Unplugged!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+    \textbf{E5A04} What is the magnitude of the impedance of a parallel RLC circuit at resonance?
+    \begin{enumerate}[label=\Alph*)]
+        \item \textbf{Approximately equal to circuit resistance}
+        \item Approximately equal to inductive reactance
+        \item Low compared to the circuit resistance
+        \item High compared to the circuit resistance
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a parallel RLC circuit, which is like a team of three players: a resistor (R), an inductor (L), and a capacitor (C). At resonance, the inductor and capacitor are perfectly balanced, like two players canceling each other out. This leaves the resistor as the main player determining the overall behavior of the circuit. So, the impedance (which is like the team's overall resistance) is mostly determined by the resistor. That's why the impedance is approximately equal to the circuit resistance at resonance.
+
+\subsubsection{Advanced Explanation}
+In a parallel RLC circuit, the impedance \( Z \) at resonance can be derived from the following relationships:
+
+1. The impedance of the inductor \( Z_L = j\omega L \).
+2. The impedance of the capacitor \( Z_C = \frac{1}{j\omega C} \).
+3. The impedance of the resistor \( Z_R = R \).
+
+At resonance, the inductive reactance \( X_L \) and capacitive reactance \( X_C \) are equal in magnitude but opposite in phase, effectively canceling each other out:
+
+\[
+X_L = X_C \implies \omega L = \frac{1}{\omega C}
+\]
+
+The total impedance \( Z \) of the parallel RLC circuit at resonance is given by:
+
+\[
+\frac{1}{Z} = \frac{1}{R} + \frac{1}{j\omega L} + j\omega C
+\]
+
+Since \( \omega L = \frac{1}{\omega C} \) at resonance, the terms involving \( L \) and \( C \) cancel out, leaving:
+
+\[
+\frac{1}{Z} = \frac{1}{R} \implies Z = R
+\]
+
+Thus, the magnitude of the impedance of a parallel RLC circuit at resonance is approximately equal to the circuit resistance \( R \).
+
+% Diagram Prompt: Generate a diagram showing a parallel RLC circuit with labeled components (R, L, C) and indicate the point of resonance where \( X_L = X_C \).

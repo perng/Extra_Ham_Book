@@ -1,0 +1,24 @@
+\subsection{Disadvantages of Multiband Antennas}
+\label{G9D11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9D11]
+Which of the following is a disadvantage of multiband antennas?
+\begin{enumerate}[label=\Alph*]
+    \item They present low impedance on all design frequencies
+    \item They must be used with an antenna tuner
+    \item They must be fed with open wire line
+    \item \textbf{They have poor harmonic rejection}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a Swiss Army knife. It’s great because it has many tools in one, but sometimes it’s not the best at any single task. Multiband antennas are like that Swiss Army knife—they can work on multiple frequencies, but they’re not perfect. One big downside is that they don’t do a great job at keeping out unwanted signals, like a filter that lets through too much junk. This is called poor harmonic rejection. So, while they’re versatile, they can let in some “noise” you don’t want.
+
+\subsubsection{Advanced Explanation}
+Multiband antennas are designed to operate efficiently across multiple frequency bands. However, this versatility often comes at the cost of performance in specific areas. One significant disadvantage is their poor harmonic rejection. Harmonics are integer multiples of the fundamental frequency, and in radio communications, they can cause interference with other signals. 
+
+Mathematically, if the fundamental frequency is \( f \), the harmonics are \( 2f, 3f, 4f, \) etc. A well-designed single-band antenna can be tuned to reject these harmonics effectively. However, a multiband antenna, due to its broad frequency coverage, may not have the necessary filtering characteristics to suppress these harmonics adequately. This can lead to increased interference and reduced signal clarity.
+
+In summary, while multiband antennas offer the convenience of operating on multiple frequencies, their inability to effectively reject harmonics is a notable drawback. This can be particularly problematic in environments with high levels of electromagnetic interference.
+
+% Prompt for diagram: A diagram showing the frequency response of a multiband antenna compared to a single-band antenna, highlighting the harmonic rejection capabilities.

@@ -1,0 +1,28 @@
+\subsection{Product Detector Usage}
+\label{G7C04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C04]
+How is a product detector used?
+\begin{enumerate}[label=\Alph*)]
+    \item Used in test gear to detect spurious mixing products
+    \item Used in transmitter to perform frequency multiplication
+    \item Used in an FM receiver to filter out unwanted sidebands
+    \item \textbf{Used in a single sideband receiver to extract the modulated signal}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a secret message written in invisible ink, and you need a special light to reveal it. A product detector is like that special light for radio signals. In a single sideband (SSB) receiver, the product detector helps to reveal the original message by extracting the modulated signal from the radio waves. It’s like turning the invisible ink into visible words so you can read the message clearly.
+
+\subsubsection{Advanced Explanation}
+A product detector is a crucial component in single sideband (SSB) receivers. It operates by mixing the incoming SSB signal with a locally generated carrier signal. This process is mathematically represented as:
+
+\[
+V_{out}(t) = V_{in}(t) \cdot \cos(\omega_c t)
+\]
+
+where \( V_{in}(t) \) is the incoming SSB signal, \( \cos(\omega_c t) \) is the local oscillator signal, and \( V_{out}(t) \) is the resulting output signal. The product detector effectively demodulates the SSB signal, extracting the original modulating signal. This is essential because SSB signals suppress the carrier and one sideband, making direct demodulation impossible without reintroducing the carrier frequency.
+
+The product detector ensures that the demodulated signal retains the original information without distortion, which is critical for clear communication in SSB systems.
+
+% Prompt for diagram: A diagram showing the block diagram of a product detector in an SSB receiver, illustrating the mixing process and the extraction of the modulated signal.

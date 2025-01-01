@@ -1,0 +1,24 @@
+\subsection{Shift Register}
+\label{G7B06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B06]
+What is a shift register?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{A clocked array of circuits that passes data in steps along the array}
+    \item An array of operational amplifiers used for tri-state arithmetic operations
+    \item A digital mixer
+    \item An analog mixer
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a line of people passing a ball from one person to the next. Each person can only hold the ball for a moment before passing it to the next person in line. A shift register works similarly, but instead of people and a ball, it's a line of circuits passing data. Each circuit holds a piece of data for a short time before passing it to the next circuit. This happens in sync with a clock, like a metronome keeping everyone in rhythm. So, a shift register is like a well-organized game of pass the data!
+
+\subsubsection{Advanced Explanation}
+A shift register is a sequential logic circuit that stores and transfers data in a linear fashion. It consists of a series of flip-flops connected in a chain, where each flip-flop holds one bit of data. The data is shifted from one flip-flop to the next with each clock pulse. Mathematically, if we denote the state of the $i$-th flip-flop at time $t$ as $Q_i(t)$, then the state at time $t+1$ is given by:
+\[ Q_i(t+1) = Q_{i-1}(t) \]
+for $i = 1, 2, \dots, n-1$, where $n$ is the number of flip-flops in the register. The first flip-flop receives new data from an external input.
+
+Shift registers are fundamental in digital electronics and are used in various applications, including data storage, data transfer, and serial-to-parallel or parallel-to-serial conversion. They are essential components in devices like microcontrollers, communication systems, and signal processing units.
+
+% Diagram Prompt: Generate a diagram showing a series of flip-flops connected in a chain, with a clock signal and data input labeled.

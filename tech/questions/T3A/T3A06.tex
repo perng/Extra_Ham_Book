@@ -1,0 +1,26 @@
+\subsection{Picket Fencing in Radio Signals}
+\label{T3A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3A06]
+What is the meaning of the term “picket fencing”?
+\begin{enumerate}[label=\Alph*]
+    \item Alternating transmissions during a net operation
+    \item \textbf{Rapid flutter on mobile signals due to multipath propagation}
+    \item A type of ground system used with vertical antennas
+    \item Local vs long-distance communications
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're driving in a car and listening to the radio. Suddenly, the signal starts to flutter, like someone is rapidly turning the volume up and down. This annoying effect is called picket fencing. It happens because the radio waves bounce off buildings, hills, and other objects, creating multiple paths to your car. These bouncing waves interfere with each other, causing the signal to flutter. It's like trying to listen to a friend while standing between two mirrors—you hear echoes that mess up the original sound!
+
+\subsubsection{Advanced Explanation}
+Picket fencing, also known as multipath fading, occurs when a radio signal reaches the receiver via multiple paths due to reflections, diffractions, or scattering. These multiple paths cause constructive and destructive interference, leading to rapid fluctuations in signal strength. Mathematically, the received signal \( R(t) \) can be expressed as:
+
+\[
+R(t) = \sum_{i=1}^{N} A_i \cos(2\pi f_c t + \phi_i)
+\]
+
+where \( A_i \) is the amplitude, \( f_c \) is the carrier frequency, and \( \phi_i \) is the phase of the \( i \)-th path. The interference between these paths results in a time-varying signal strength, which manifests as the flutter effect known as picket fencing. This phenomenon is particularly noticeable in mobile communications, where the receiver is in motion, causing the path lengths and phases to change rapidly.
+
+% Diagram Prompt: Generate a diagram showing multipath propagation with a car receiving signals from direct and reflected paths.

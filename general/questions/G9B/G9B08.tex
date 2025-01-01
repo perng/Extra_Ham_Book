@@ -1,0 +1,28 @@
+\subsection{Feed Point Impedance of a 1/2 Wave Dipole}
+\label{G9B08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9B08]
+How does the feed point impedance of a 1/2 wave dipole change as the feed point is moved from the center toward the ends?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{It steadily increases}
+    \item It steadily decreases
+    \item It peaks at about 1/8 wavelength from the end
+    \item It is unaffected by the location of the feed point
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing on a see-saw with a friend. When you both sit right in the middle, it's easy to balance. But if one of you moves closer to the end, it gets harder to balance because the weight isn't evenly distributed anymore. Similarly, in a 1/2 wave dipole antenna, the feed point is like the middle of the see-saw. When you move the feed point away from the center toward the ends, the impedance (which is like the balance of the antenna) steadily increases. It's like the antenna is saying, Hey, this isn't as easy as it was in the middle!
+
+\subsubsection{Advanced Explanation}
+The feed point impedance of a 1/2 wave dipole is primarily determined by the distribution of current and voltage along the antenna. At the center of the dipole, the current is at its maximum, and the voltage is at its minimum, resulting in a relatively low impedance, typically around 73 ohms in free space. As the feed point is moved toward the ends, the current decreases, and the voltage increases. This change in the current and voltage distribution causes the impedance to steadily increase. 
+
+Mathematically, the impedance \( Z \) at any point along the dipole can be approximated by considering the standing wave pattern of the current \( I(z) \) and voltage \( V(z) \):
+
+\[
+Z(z) = \frac{V(z)}{I(z)}
+\]
+
+As \( z \) moves from the center (\( z = 0 \)) toward the ends (\( z = \pm \lambda/4 \)), \( I(z) \) decreases, and \( V(z) \) increases, leading to an increase in \( Z(z) \). This relationship is consistent with the behavior of standing waves on a transmission line, where the impedance varies with position due to the superposition of forward and reflected waves.
+
+% Diagram Prompt: Generate a diagram showing the current and voltage distribution along a 1/2 wave dipole, with the feed point moving from the center to the end, illustrating the increase in impedance.

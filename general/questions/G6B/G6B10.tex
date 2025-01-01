@@ -1,0 +1,26 @@
+\subsection{Ferrite Bead and Common-Mode RF Current}
+\label{G6B10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G6B10]
+How does a ferrite bead or core reduce common-mode RF current on the shield of a coaxial cable?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{By creating an impedance in the current’s path}
+    \item It converts common-mode current to differential mode current
+    \item By creating an out-of-phase current to cancel the common-mode current
+    \item Ferrites expel magnetic fields
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to stop a group of ants from marching along a path. You could put a sticky barrier in their way, right? A ferrite bead is like that sticky barrier for unwanted RF currents on a coaxial cable. It doesn't change the ants into something else or make them go away magically; it just makes it really hard for them to keep moving along the same path. So, the ferrite bead creates a sticky impedance that slows down or stops the common-mode RF current.
+
+\subsubsection{Advanced Explanation}
+A ferrite bead is a passive device that introduces impedance to high-frequency signals, particularly common-mode currents. Common-mode currents are those that flow in the same direction on both the inner conductor and the shield of a coaxial cable. The ferrite bead acts as a choke, increasing the impedance for these currents without affecting the differential-mode signals (the desired signals that flow in opposite directions on the inner conductor and shield).
+
+The impedance \( Z \) introduced by the ferrite bead can be approximated by the formula:
+\[ Z = j\omega L \]
+where \( j \) is the imaginary unit, \( \omega \) is the angular frequency of the signal, and \( L \) is the inductance of the ferrite bead. The higher the frequency, the greater the impedance, which effectively reduces the common-mode current.
+
+Ferrite materials are chosen for their high permeability, which enhances the inductance \( L \). This property allows ferrite beads to be effective at RF frequencies, where common-mode noise is often a problem. The bead does not convert or cancel the current; it simply impedes its flow, making it less likely to cause interference.
+
+% Diagram prompt: A diagram showing a coaxial cable with a ferrite bead around it, illustrating the common-mode current path and the impedance introduced by the ferrite bead.

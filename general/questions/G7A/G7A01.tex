@@ -1,0 +1,20 @@
+\subsection{Function of a Power Supply Bleeder Resistor}
+\label{G7A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A01]
+What is the function of a power supply bleeder resistor?
+\begin{enumerate}[label=\Alph*)]
+    \item It acts as a fuse for excess voltage
+    \item \textbf{It discharges the filter capacitors when power is removed}
+    \item It removes shock hazards from the induction coils
+    \item It eliminates ground loop current
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water balloon (the capacitor) filled with water (electric charge). When you're done playing with it, you don't want to leave it full because it might pop unexpectedly. A bleeder resistor is like a tiny hole in the balloon that lets the water (charge) slowly drain out, so it's safe to handle. In electronics, this resistor helps safely discharge the stored energy in capacitors when you turn off the power, preventing any nasty surprises!
+
+\subsubsection{Advanced Explanation}
+In a power supply circuit, capacitors are used to smooth out the voltage by storing electrical energy. When the power is turned off, these capacitors can retain a significant charge, posing a safety hazard. A bleeder resistor is connected in parallel with these capacitors to provide a discharge path for the stored energy. The resistor's value is chosen such that it allows the capacitor to discharge safely over a short period, typically a few seconds, according to the time constant $\tau = RC$, where $R$ is the resistance and $C$ is the capacitance. This ensures that the voltage across the capacitor drops to a safe level quickly after power is removed.
+
+% Diagram Prompt: Generate a diagram showing a simple power supply circuit with a capacitor and a bleeder resistor connected in parallel.

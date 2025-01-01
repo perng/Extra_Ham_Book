@@ -1,0 +1,26 @@
+\subsection{SWR on Feed Line with Matching Network}
+\label{G9A08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A08]
+If the SWR on an antenna feed line is 5:1, and a matching network at the transmitter end of the feed line is adjusted to present a 1:1 SWR to the transmitter, what is the resulting SWR on the feed line?
+\begin{enumerate}[label=\Alph*]
+    \item 1:1
+    \item \textbf{5:1}
+    \item Between 1:1 and 5:1 depending on the characteristic impedance of the line
+    \item Between 1:1 and 5:1 depending on the reflected power at the transmitter
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water hose with a kink in it. The kink causes the water to flow unevenly, creating a sort of water pressure mismatch. Now, if you add a fancy gadget at the start of the hose to make the water flow smoothly into the hose, the kink in the middle of the hose doesn't magically disappear! The gadget only fixes the flow at the start, but the kink (or mismatch) in the middle remains the same. Similarly, the matching network at the transmitter end makes the transmitter happy by showing it a smooth flow (1:1 SWR), but the mismatch (5:1 SWR) in the feed line stays unchanged.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of impedance mismatch between the transmission line and the load. In this scenario, the SWR on the antenna feed line is 5:1, indicating a significant mismatch. The matching network at the transmitter end is designed to present a 1:1 SWR to the transmitter, effectively matching the transmitter's impedance to the feed line. However, this matching network does not alter the impedance mismatch between the feed line and the antenna. Therefore, the SWR on the feed line remains 5:1.
+
+Mathematically, the SWR is given by:
+\[
+\text{SWR} = \frac{1 + |\Gamma|}{1 - |\Gamma|}
+\]
+where \(\Gamma\) is the reflection coefficient. The matching network adjusts \(\Gamma\) at the transmitter end to zero, but the reflection coefficient at the antenna end remains unchanged. Thus, the SWR on the feed line is unaffected by the matching network at the transmitter end.
+
+% Prompt for generating a diagram: A diagram showing a transmitter connected to a feed line with a matching network, and the feed line connected to an antenna. The SWR values at different points should be labeled.

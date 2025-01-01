@@ -1,0 +1,32 @@
+\subsection{Symptoms of Interference in PACTOR or VARA Transmission}
+\label{G2E03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E03]
+What symptoms may result from other signals interfering with a PACTOR or VARA transmission?
+\begin{enumerate}[label=\Alph*)]
+    \item Frequent retries or timeouts
+    \item Long pauses in message transmission
+    \item Failure to establish a connection between stations
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to have a conversation with your friend in a noisy cafeteria. The noise makes it hard for you to hear each other, so you might have to repeat yourself a lot (frequent retries), pause for long periods to figure out what was said (long pauses), or even give up trying to talk altogether (failure to establish a connection). Similarly, when other signals interfere with a PACTOR or VARA transmission, it can cause all these problems, making it difficult for the communication to go smoothly.
+
+\subsubsection{Advanced Explanation}
+PACTOR and VARA are digital communication protocols used in amateur radio. They rely on precise timing and signal integrity to transmit data efficiently. When interference occurs, it disrupts the signal, leading to various symptoms:
+
+1. \textbf{Frequent Retries or Timeouts}: Interference can corrupt the data packets, causing the receiving station to request retransmission. This results in frequent retries or timeouts as the system attempts to recover the lost data.
+
+2. \textbf{Long Pauses in Message Transmission}: Interference can cause delays in the acknowledgment of received packets. The transmitting station may pause to wait for confirmation, leading to long pauses in message transmission.
+
+3. \textbf{Failure to Establish a Connection Between Stations}: Severe interference can prevent the initial handshake process, which is crucial for establishing a connection. Without a successful handshake, the stations cannot communicate.
+
+Mathematically, the Signal-to-Noise Ratio (SNR) plays a critical role in these protocols. The SNR is given by:
+\[
+\text{SNR} = \frac{P_{\text{signal}}}{P_{\text{noise}}}
+\]
+where \(P_{\text{signal}}\) is the power of the desired signal and \(P_{\text{noise}}\) is the power of the interfering noise. A low SNR increases the likelihood of data corruption, leading to the symptoms described above.
+
+% Diagram prompt: A diagram showing the effect of interference on PACTOR or VARA transmission, illustrating the relationship between SNR and data integrity.

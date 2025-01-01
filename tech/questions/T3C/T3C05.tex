@@ -1,0 +1,28 @@
+\subsection{Radio Signal Propagation Beyond Obstructions}
+\label{T3C05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3C05]
+Which of the following effects may allow radio signals to travel beyond obstructions between the transmitting and receiving stations?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Knife-edge diffraction}
+    \item Faraday rotation
+    \item Quantum tunneling
+    \item Doppler shift
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to throw a ball over a tall wall. If you throw it straight, it might not make it over. But if you throw it at an angle, the ball can kind of bend around the edge of the wall and still reach the other side. This is similar to what happens with radio signals when they encounter an obstruction like a hill or a building. The signal can bend around the edge of the obstruction, thanks to a phenomenon called knife-edge diffraction. It's like the radio waves are sneaking around the corner to get to the receiver!
+
+\subsubsection{Advanced Explanation}
+Knife-edge diffraction is a wave phenomenon that occurs when a wave encounters an obstacle with a sharp edge. According to Huygens' principle, every point on a wavefront acts as a source of secondary wavelets. When a wavefront encounters a sharp edge, these secondary wavelets can propagate around the edge, allowing the wave to bend and continue beyond the obstruction. Mathematically, the diffraction pattern can be described using the Fresnel diffraction integral:
+
+\[
+E(x, y, z) = \frac{E_0}{i\lambda z} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{ik\sqrt{(x-x')^2 + (y-y')^2 + z^2}} \, dx' \, dy'
+\]
+
+where \( E(x, y, z) \) is the electric field at a point \((x, y, z)\), \( E_0 \) is the initial electric field, \( \lambda \) is the wavelength, and \( k \) is the wave number. This integral accounts for the phase and amplitude changes as the wave propagates around the edge.
+
+Faraday rotation, on the other hand, involves the rotation of the plane of polarization of a radio wave as it passes through a magnetized medium, such as the Earth's ionosphere. Quantum tunneling is a quantum mechanical effect where particles pass through a potential barrier that they classically shouldn't be able to pass. Doppler shift refers to the change in frequency of a wave due to the relative motion between the source and the observer. None of these effects directly allow radio signals to travel beyond obstructions in the same way that knife-edge diffraction does.
+
+% Diagram prompt: Generate a diagram showing a radio wave encountering a sharp-edged obstruction and bending around it, illustrating knife-edge diffraction.

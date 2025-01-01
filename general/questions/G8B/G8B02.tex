@@ -1,0 +1,34 @@
+\subsection{Interference at Twice the IF Frequency}
+\label{G8B02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B02]
+What is the term for interference from a signal at twice the IF frequency from the desired signal?
+\begin{enumerate}[label=\Alph*)]
+    \item Quadrature response
+    \item \textbf{Image response}
+    \item Mixer interference
+    \item Intermediate interference
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're tuning your radio to your favorite station, but suddenly you hear another station playing over it. This annoying station is like a ghost that appears because it’s at a frequency that’s exactly twice the IF (Intermediate Frequency) away from your desired station. This ghost is called the \textbf{Image Response}. It’s like when you’re trying to listen to your friend, but someone else keeps repeating everything they say, but in a weird, echoey way. That’s what image response does to your radio signal!
+
+\subsubsection{Advanced Explanation}
+In radio receivers, the Intermediate Frequency (IF) is a fixed frequency to which the incoming signal is converted for easier processing. However, a phenomenon known as \textbf{Image Response} can occur when a signal at a frequency that is twice the IF away from the desired frequency also gets mixed down to the same IF. This happens due to the nonlinearity of the mixer in the receiver.
+
+Mathematically, if the desired signal is at frequency \( f_{\text{desired}} \), and the IF is \( f_{\text{IF}} \), then the local oscillator (LO) frequency \( f_{\text{LO}} \) is typically set to \( f_{\text{desired}} + f_{\text{IF}} \) or \( f_{\text{desired}} - f_{\text{IF}} \). The image frequency \( f_{\text{image}} \) is then given by:
+
+\[
+f_{\text{image}} = f_{\text{LO}} \pm f_{\text{IF}}
+\]
+
+For example, if \( f_{\text{desired}} = 1000 \) kHz and \( f_{\text{IF}} = 455 \) kHz, then \( f_{\text{LO}} = 1455 \) kHz. The image frequency would be:
+
+\[
+f_{\text{image}} = 1455 \text{ kHz} + 455 \text{ kHz} = 1910 \text{ kHz}
+\]
+
+This image frequency can also be mixed down to the IF, causing interference. To mitigate this, radio receivers often use image-reject filters to attenuate signals at the image frequency before they reach the mixer.
+
+% Prompt for diagram: A diagram showing the relationship between the desired frequency, the local oscillator frequency, the IF, and the image frequency would be helpful here.

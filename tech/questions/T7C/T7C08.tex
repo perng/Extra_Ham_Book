@@ -1,0 +1,34 @@
+\subsection{Determining SWR}
+\label{T7C08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C08]
+Which instrument can be used to determine SWR?
+\begin{enumerate}[label=\Alph*)]
+    \item Voltmeter
+    \item Ohmmeter
+    \item Iambic pentameter
+    \item \textbf{Directional wattmeter}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to figure out how well your radio signal is traveling through the air. You need a special tool to measure this, kind of like how you use a thermometer to check if you have a fever. The directional wattmeter is like that special thermometer for your radio signal. It tells you if your signal is strong and healthy or if it's bouncing back and causing trouble. The other tools, like a voltmeter or ohmmeter, are more like checking the battery or the wires—they don't tell you about the signal itself. And iambic pentameter? That's just a fancy way of writing poetry, not measuring radio signals!
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of how efficiently radio frequency power is transmitted from a source (like a transmitter) through a transmission line (like a coaxial cable) into a load (like an antenna). A perfect match would have an SWR of 1:1, meaning all the power is transmitted without any reflection. 
+
+A directional wattmeter is specifically designed to measure both forward and reflected power in a transmission line. By comparing these two values, the SWR can be calculated using the formula:
+
+\[
+\text{SWR} = \frac{1 + \sqrt{\frac{P_{\text{reflected}}}{P_{\text{forward}}}}}{1 - \sqrt{\frac{P_{\text{reflected}}}{P_{\text{forward}}}}}
+\]
+
+Where:
+\begin{itemize}
+    \item \( P_{\text{forward}} \) is the power traveling towards the antenna.
+    \item \( P_{\text{reflected}} \) is the power reflected back from the antenna.
+\end{itemize}
+
+A directional wattmeter can directly measure these two values, making it the ideal instrument for determining SWR. Voltmeters and ohmmeters measure voltage and resistance, respectively, and are not designed to measure power flow in a transmission line. Iambic pentameter is unrelated to radio technology and is a term from poetry.
+
+% Diagram Prompt: Generate a diagram showing a radio transmitter connected to an antenna via a transmission line, with a directional wattmeter measuring both forward and reflected power.

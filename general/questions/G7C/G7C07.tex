@@ -1,0 +1,28 @@
+\subsection{Filter Attenuation in Passband}
+\label{G7C07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C07]
+What term specifies a filter’s attenuation inside its passband?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Insertion loss}
+    \item Return loss
+    \item Q
+    \item Ultimate rejection
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to send a message through a tunnel, but the tunnel has some bumps and obstacles that slow down your message. In the world of radio, a filter is like that tunnel, and the bumps are called insertion loss. This term tells us how much the signal gets weaker as it passes through the filter. So, if someone asks about the filter’s bumps inside its passband, they’re talking about insertion loss!
+
+\subsubsection{Advanced Explanation}
+In filter theory, the passband is the range of frequencies that the filter allows to pass through with minimal attenuation. However, even within this range, there is some loss of signal strength, which is quantified as \textit{insertion loss}. Mathematically, insertion loss \( L_i \) is defined as:
+
+\[
+L_i = 10 \log_{10} \left( \frac{P_{\text{in}}}{P_{\text{out}}} \right)
+\]
+
+where \( P_{\text{in}} \) is the power of the signal at the input of the filter, and \( P_{\text{out}} \) is the power of the signal at the output of the filter. Insertion loss is typically measured in decibels (dB).
+
+Other terms like \textit{return loss} refer to the reflection of the signal at the input port, \textit{Q} (quality factor) relates to the bandwidth and center frequency of the filter, and \textit{ultimate rejection} describes the filter’s ability to attenuate signals outside the passband. However, none of these terms describe the attenuation within the passband itself, which is uniquely characterized by insertion loss.
+
+% Diagram prompt: A diagram showing a filter's frequency response with the passband and insertion loss marked could be helpful here.

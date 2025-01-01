@@ -1,0 +1,28 @@
+\subsection{Corona Ball on HF Mobile Antenna}
+\label{G4E02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4E02]
+What is the purpose of a corona ball on an HF mobile antenna?
+\begin{enumerate}[label=\Alph*)]
+    \item To narrow the operating bandwidth of the antenna
+    \item To increase the “Q” of the antenna
+    \item To reduce the chance of damage if the antenna should strike an object
+    \item \textbf{To reduce RF voltage discharge from the tip of the antenna while transmitting}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re holding a balloon and rubbing it against your hair. The balloon builds up static electricity, and if you touch it to something metal, you might see a tiny spark. Now, think of an HF mobile antenna as a giant balloon that’s constantly rubbing against the air when it’s transmitting. The tip of the antenna can build up a lot of electrical charge, which can cause sparks (called corona discharge). A corona ball is like a big, smooth, round cushion at the tip of the antenna. It spreads out the electrical charge so it doesn’t build up in one spot and cause sparks. It’s like putting a soft cap on the balloon to prevent it from popping!
+
+\subsubsection{Advanced Explanation}
+In high-frequency (HF) mobile antennas, the tip of the antenna can experience high RF voltages during transmission. This can lead to corona discharge, a phenomenon where the electric field at the tip ionizes the surrounding air, causing a visible glow and potentially damaging the antenna. The corona ball, typically a spherical metal object attached to the tip of the antenna, serves to reduce the electric field intensity at the tip by increasing the surface area over which the charge is distributed. This reduction in electric field intensity minimizes the likelihood of corona discharge.
+
+The electric field \( E \) at the surface of a conductor is given by:
+\[
+E = \frac{V}{r}
+\]
+where \( V \) is the voltage and \( r \) is the radius of curvature of the conductor. By increasing \( r \) with a corona ball, the electric field \( E \) is reduced, thereby lowering the risk of corona discharge.
+
+Additionally, the corona ball does not significantly affect the antenna's impedance or bandwidth, as its primary function is to manage the electric field at the tip. This makes it an effective solution for reducing RF voltage discharge without compromising the antenna's performance.
+
+% Diagram prompt: A diagram showing an HF mobile antenna with a corona ball at the tip, illustrating the distribution of the electric field around the corona ball compared to a sharp tip.

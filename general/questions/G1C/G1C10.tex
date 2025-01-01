@@ -1,0 +1,34 @@
+\subsection{Maximum Symbol Rate for RTTY or Data Emission on the 10-Meter Band}
+\label{G1C10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G1C10]
+What is the maximum symbol rate permitted for RTTY or data emission transmissions on the 10-meter band?
+\begin{enumerate}[label=\Alph*)]
+    \item 56 kilobaud
+    \item 19.6 kilobaud
+    \item \textbf{1200 baud}
+    \item 300 baud
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a message using Morse code, but instead of dots and dashes, you're using a computer to send data. The 10-meter band is like a specific lane on a highway where you can send these messages. Now, there's a speed limit on this lane—you can't send data too fast or it might cause problems. The maximum speed allowed is 1200 baud. Think of baud as the number of symbols you can send per second. So, just like you can't drive 100 mph in a 30 mph zone, you can't send data faster than 1200 baud on the 10-meter band.
+
+\subsubsection{Advanced Explanation}
+The 10-meter band (28.000–29.700 MHz) is a portion of the HF spectrum allocated for amateur radio use. For RTTY (Radio Teletype) and data emissions, the Federal Communications Commission (FCC) in the United States specifies a maximum symbol rate of 1200 baud. This regulation ensures that transmissions remain within the bandwidth limits and do not cause excessive interference to other users of the band.
+
+The symbol rate, measured in baud, refers to the number of signal changes (symbols) per second. In digital communications, each symbol can represent one or more bits of data. The formula for calculating the bandwidth required for a transmission is:
+
+\[
+\text{Bandwidth} = \text{Symbol Rate} \times (1 + \alpha)
+\]
+
+where \(\alpha\) is the roll-off factor, a parameter that affects the shape of the signal spectrum. For a typical RTTY transmission, \(\alpha\) is often set to 0.5, leading to a bandwidth of:
+
+\[
+\text{Bandwidth} = 1200 \times (1 + 0.5) = 1800 \text{ Hz}
+\]
+
+This bandwidth is well within the limits of the 10-meter band, ensuring efficient use of the spectrum while minimizing interference.
+
+% Prompt for diagram: A diagram showing the 10-meter band frequency range and the bandwidth occupied by a 1200 baud RTTY transmission could be helpful here.

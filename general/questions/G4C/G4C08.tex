@@ -1,0 +1,26 @@
+\subsection{Reducing RF Interference on Audio Cables}
+\label{G4C08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C08]
+Which of the following would reduce RF interference caused by common-mode current on an audio cable?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Place a ferrite choke on the cable}
+    \item Connect the center conductor to the shield of all cables to short circuit the RFI signal
+    \item Ground the center conductor of the audio cable causing the interference
+    \item Add an additional insulating jacket to the cable
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your audio cable is like a garden hose, and the RF interference is like water leaking out where it shouldn't. A ferrite choke is like a clamp that tightens around the hose, stopping the leaks. It doesn't change the water flow (your audio signal) but keeps the leaks (RF interference) from messing things up. So, placing a ferrite choke on the cable is like putting a clamp on the hose to stop the leaks!
+
+\subsubsection{Advanced Explanation}
+Common-mode current occurs when RF signals induce a current that flows along the outer surface of the cable shield, causing interference. A ferrite choke, also known as a ferrite bead, is a passive device that suppresses high-frequency noise by increasing the impedance of the cable at RF frequencies. This impedance increase reduces the common-mode current, thereby minimizing RF interference.
+
+Mathematically, the impedance \( Z \) of the ferrite choke at a given frequency \( f \) can be expressed as:
+\[ Z = j2\pi fL \]
+where \( L \) is the inductance of the ferrite choke. By increasing \( Z \), the ferrite choke effectively attenuates the RF signal.
+
+Other methods, such as short-circuiting the RFI signal or grounding the center conductor, can introduce additional issues like signal distortion or grounding loops. Adding an insulating jacket does not address the root cause of RF interference, which is the common-mode current.
+
+% Prompt for diagram: A diagram showing an audio cable with a ferrite choke attached, illustrating the reduction of RF interference.

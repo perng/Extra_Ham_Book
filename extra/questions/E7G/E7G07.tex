@@ -1,0 +1,28 @@
+\subsection{Voltage Gain Delight: Discover the Circuit's Potential!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7G07] What voltage gain can be expected from the circuit in Figure E7‑3 when R1 is 10 ohms and RF is 470 ohms?
+    \begin{enumerate}[label=\Alph*)]
+        \item 0.21
+        \item 4700
+        \item \textbf{47}
+        \item 24
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a simple circuit with two resistors, R1 and RF. R1 is like a small door that lets a little bit of electricity through, while RF is a much bigger door that lets a lot more electricity through. The voltage gain tells us how much the voltage increases as it passes through this circuit. In this case, because RF is 47 times bigger than R1, the voltage gain is 47. This means the voltage increases by 47 times as it goes through the circuit.
+
+\subsubsection{Advanced Explanation}
+The voltage gain \( A_v \) of an inverting operational amplifier (op-amp) circuit is given by the formula:
+\[
+A_v = -\frac{R_F}{R_1}
+\]
+where \( R_F \) is the feedback resistor and \( R_1 \) is the input resistor. In this problem, \( R_1 = 10 \, \Omega \) and \( R_F = 470 \, \Omega \). Plugging these values into the formula:
+\[
+A_v = -\frac{470 \, \Omega}{10 \, \Omega} = -47
+\]
+The negative sign indicates that the output voltage is inverted relative to the input voltage. However, since the question asks for the magnitude of the voltage gain, the answer is 47.
+
+This concept is fundamental in understanding how op-amp circuits amplify signals. The ratio of the feedback resistor to the input resistor directly determines the gain of the circuit. This principle is widely used in various electronic devices to control signal amplification.
+
+% Diagram Prompt: Generate a diagram of an inverting operational amplifier circuit with R1 and RF labeled, showing the input and output voltages.

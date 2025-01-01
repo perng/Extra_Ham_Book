@@ -1,0 +1,30 @@
+\subsection{Determining Battery-Powered Equipment Duration}
+\label{T4A09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4A09]
+How can you determine the length of time that equipment can be powered from a battery?
+\begin{enumerate}[label=\Alph*)]
+    \item Divide the watt-hour rating of the battery by the peak power consumption of the equipment
+    \item \textbf{Divide the battery ampere-hour rating by the average current draw of the equipment}
+    \item Multiply the watts per hour consumed by the equipment by the battery power rating
+    \item Multiply the square of the current rating of the battery by the input resistance of the equipment
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your battery is like a big water tank, and your equipment is a thirsty plant. The ampere-hour (Ah) rating of the battery tells you how much water is in the tank. The average current draw of the equipment is like how fast the plant drinks the water. To find out how long the plant can drink, you just divide the total water by the drinking speed. Easy peasy!
+
+\subsubsection{Advanced Explanation}
+To determine the duration \( t \) that equipment can be powered from a battery, you can use the formula:
+\[
+t = \frac{\text{Battery Ampere-Hour (Ah)}}{\text{Average Current Draw (A)}}
+\]
+Here’s why this works:
+\begin{itemize}
+    \item The ampere-hour (Ah) rating of a battery indicates the total charge it can deliver. For example, a 10 Ah battery can deliver 10 amperes for 1 hour, or 1 ampere for 10 hours.
+    \item The average current draw of the equipment is the steady current it consumes during operation.
+    \item By dividing the total charge (Ah) by the current draw (A), you get the time in hours that the battery can power the equipment.
+\end{itemize}
+This method assumes a constant current draw and does not account for factors like battery efficiency or temperature effects, which can slightly alter the actual duration.
+
+% Prompt for diagram: A diagram showing a battery connected to a device with labels indicating the ampere-hour rating of the battery and the average current draw of the device.

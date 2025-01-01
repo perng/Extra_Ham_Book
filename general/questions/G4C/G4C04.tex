@@ -1,0 +1,28 @@
+\subsection{RF Interference from a CW Transmitter}
+\label{G4C04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C04]
+What sound is heard from an audio device experiencing RF interference from a CW transmitter?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{On-and-off humming or clicking}
+    \item A CW signal at a nearly pure audio frequency
+    \item A chirpy CW signal
+    \item Severely distorted audio
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're listening to your favorite song on the radio, and suddenly, you hear a weird humming or clicking noise that keeps turning on and off. This is like someone turning a light switch on and off really fast, but instead of light, it's sound! This happens because a CW transmitter (which sends out a steady radio signal) is interfering with your audio device. The on-and-off humming or clicking is the result of this interference, making your music sound like it's being interrupted by a pesky ghost!
+
+\subsubsection{Advanced Explanation}
+RF (Radio Frequency) interference occurs when a CW (Continuous Wave) transmitter's signal is picked up by an audio device. A CW transmitter emits a steady, unmodulated radio signal at a specific frequency. When this signal interferes with an audio device, it can cause the device's circuitry to demodulate the RF signal, converting it into an audible sound.
+
+The demodulation process often results in an on-and-off humming or clicking sound because the CW signal is essentially a pure tone that is being turned on and off at a rate that the audio device can interpret. This is different from other types of interference, such as a chirpy CW signal or severely distorted audio, which would result from different modulation or interference patterns.
+
+Mathematically, the CW signal can be represented as:
+\[
+s(t) = A \cos(2\pi f_c t)
+\]
+where \( A \) is the amplitude and \( f_c \) is the carrier frequency. When this signal is demodulated by the audio device, it can produce an audible signal that corresponds to the on-and-off pattern of the CW transmission.
+
+% Diagram prompt: Generate a diagram showing a CW signal interfering with an audio device, illustrating the on-and-off humming or clicking sound.

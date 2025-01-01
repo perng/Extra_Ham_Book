@@ -1,0 +1,32 @@
+\subsection{Powering Up: The Heart of MMICs!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E6E08] How is power supplied to the most common type of MMIC?
+    \begin{enumerate}[label=\Alph*)]
+        \item Through a capacitor and RF choke connected to the amplifier input lead
+        \item MMICs require no operating bias
+        \item \textbf{Through a resistor and/or RF choke connected to the amplifier output lead}
+        \item Directly to the bias voltage (Vcc) lead
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a tiny, super-efficient amplifier (called an MMIC) that needs power to work. Just like how you need to plug in your phone to charge it, the MMIC needs to be plugged in to get its power. But instead of plugging it directly into a power source, we use a special setup with a resistor and/or an RF choke connected to the amplifier's output lead. This setup ensures that the MMIC gets the right amount of power without causing any interference with the signals it's amplifying.
+
+\subsubsection{Advanced Explanation}
+Monolithic Microwave Integrated Circuits (MMICs) are compact amplifiers used in high-frequency applications. To supply power to an MMIC, a resistor and/or an RF choke is typically connected to the amplifier's output lead. This configuration allows the DC bias voltage to be applied while blocking the RF signal from entering the power supply. The resistor helps in setting the correct bias current, and the RF choke acts as a high-impedance element at RF frequencies, preventing the RF signal from leaking into the DC supply.
+
+\noindent\textbf{Calculation Example:}
+Suppose we have an MMIC with a required bias voltage of 5V and a bias current of 10mA. The resistor value can be calculated using Ohm's Law:
+\[
+R = \frac{V}{I} = \frac{5V}{10mA} = 500\Omega
+\]
+This resistor ensures that the MMIC receives the correct bias current.
+
+\noindent\textbf{Related Concepts:}
+\begin{itemize}
+    \item \textbf{DC Bias:} The steady voltage or current applied to an electronic device to establish its operating point.
+    \item \textbf{RF Choke:} An inductor used to block high-frequency signals while allowing DC to pass.
+    \item \textbf{Impedance Matching:} Ensuring that the impedance of the source matches the load to maximize power transfer.
+\end{itemize}
+
+% Diagram Prompt: Generate a diagram showing the connection of a resistor and RF choke to the output lead of an MMIC, with the DC bias voltage applied.

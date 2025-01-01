@@ -1,0 +1,30 @@
+\subsection{Power Output and S Meter Reading}
+\label{G4D07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D07]
+How much must the power output of a transmitter be raised to change the S meter reading on a distant receiver from S8 to S9?
+\begin{enumerate}[label=\Alph*)]
+    \item Approximately 1.5 times
+    \item Approximately 2 times
+    \item \textbf{Approximately 4 times}
+    \item Approximately 8 times
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to make your voice louder so your friend can hear you better from across the room. If you're already shouting (S8), you need to shout even louder (S9) to make a noticeable difference. But how much louder? It turns out, you need to shout about four times as loud to go from S8 to S9. It's like turning up the volume on your stereo—you need to crank it up quite a bit to hear a big change!
+
+\subsubsection{Advanced Explanation}
+The S meter on a receiver measures signal strength, and each S unit corresponds to a specific increase in signal power. Specifically, an increase of one S unit (from S8 to S9) requires a fourfold increase in power. This is because the S meter scale is logarithmic, and each S unit represents a 6 dB increase in signal strength. 
+
+The relationship between power and signal strength can be expressed as:
+\[
+P_2 = P_1 \times 10^{\frac{\Delta S}{10}}
+\]
+where \(P_1\) is the initial power, \(P_2\) is the new power, and \(\Delta S\) is the change in signal strength in dB. For a change of one S unit (\(\Delta S = 6\) dB):
+\[
+P_2 = P_1 \times 10^{\frac{6}{10}} = P_1 \times 10^{0.6} \approx P_1 \times 4
+\]
+Thus, the power must be increased by approximately four times to change the S meter reading from S8 to S9.
+
+% Diagram prompt: A graph showing the logarithmic relationship between power output and S meter reading, with S8 and S9 marked on the scale.

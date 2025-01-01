@@ -1,0 +1,28 @@
+\subsection{Reducing RF Interference in Audio Circuits}
+\label{G4C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4C01]
+Which of the following might be useful in reducing RF interference to audio frequency circuits?
+\begin{enumerate}[label=\Alph*)]
+    \item Bypass inductor
+    \item \textbf{Bypass capacitor}
+    \item Forward-biased diode
+    \item Reverse-biased diode
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine your audio circuit is like a quiet library, and RF interference is like a bunch of noisy kids running around. To keep the library quiet, you need something that can block the noise. A bypass capacitor is like a librarian who shushes the noisy kids, letting only the quiet whispers (audio signals) through. It acts as a filter, blocking the high-frequency RF noise while allowing the low-frequency audio signals to pass undisturbed.
+
+\subsubsection{Advanced Explanation}
+RF interference can couple into audio circuits through various means, such as capacitive or inductive coupling. A bypass capacitor is used to shunt high-frequency RF signals to ground, effectively filtering them out. The capacitor's impedance \( Z \) is given by:
+
+\[
+Z = \frac{1}{j\omega C}
+\]
+
+where \( \omega \) is the angular frequency of the RF signal, and \( C \) is the capacitance. For high frequencies, \( Z \) is very low, allowing the RF signals to be bypassed to ground. This prevents the RF interference from affecting the audio signals, which operate at much lower frequencies.
+
+In contrast, a bypass inductor would block low-frequency signals, which is not desirable in this context. Diodes, whether forward-biased or reverse-biased, do not serve the purpose of filtering RF interference in audio circuits. Therefore, the bypass capacitor is the most effective solution for reducing RF interference in audio frequency circuits.
+
+% Diagram Prompt: Generate a diagram showing an audio circuit with a bypass capacitor connected to ground, illustrating how RF interference is shunted away from the audio signal path.

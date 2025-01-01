@@ -1,0 +1,25 @@
+\subsection{Boost Your Filter: Secrets to Sharper Responses!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{E7F14}]
+Which of the following would allow a digital signal processing filter to create a sharper filter response?
+\begin{enumerate}[label=\Alph*.]
+    \item Higher data rate
+    \item \textbf{More taps}
+    \item Lower Q
+    \item Double-precision math routines
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you are trying to filter out noise from a song to make it sound clearer. The more tools you have to work with, the better you can remove the unwanted noise. In digital signal processing, these tools are called taps. The more taps you have, the more precise you can be in filtering out the noise, making the filter response sharper. So, having more taps is like having more tools to clean up the sound.
+
+\subsubsection{Advanced Explanation}
+In digital signal processing, a filter's response is determined by its impulse response, which is often represented by a finite number of coefficients known as taps. The number of taps directly influences the filter's ability to distinguish between different frequencies. More taps allow for a more detailed and precise frequency response, leading to a sharper filter. Mathematically, the filter's frequency response \( H(f) \) is given by the Discrete Fourier Transform (DFT) of its impulse response \( h[n] \):
+
+\[
+H(f) = \sum_{n=0}^{N-1} h[n] e^{-j2\pi fn}
+\]
+
+where \( N \) is the number of taps. Increasing \( N \) allows for a more accurate representation of the desired frequency response, thus creating a sharper filter. Other options like higher data rate, lower Q, or double-precision math routines do not directly contribute to the sharpness of the filter response in the same way that increasing the number of taps does.
+
+% Prompt for diagram: Generate a diagram showing the frequency response of a filter with different numbers of taps to illustrate the effect of increasing taps on filter sharpness.

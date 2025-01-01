@@ -1,0 +1,28 @@
+\subsection{FT8 Modulation Type}
+\label{G8A09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A09]
+What type of modulation is used by FT8?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{8-tone frequency shift keying}
+    \item Vestigial sideband
+    \item Amplitude compressed AM
+    \item 8-bit direct sequence spread spectrum
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re sending a secret message to your friend using a walkie-talkie, but instead of just talking, you’re using different musical notes to represent your message. FT8 is like that—it uses 8 different notes (or tones) to send information. Each tone is like a different frequency, and by shifting between these frequencies, it can send data quickly and efficiently. So, FT8 uses a method called 8-tone frequency shift keying to communicate. Think of it as a musical Morse code!
+
+\subsubsection{Advanced Explanation}
+FT8 employs a modulation technique known as 8-tone frequency shift keying (8-FSK). In this method, the carrier signal is modulated by shifting its frequency among 8 distinct tones, each representing a different symbol. The frequency shift keying (FSK) is a form of digital modulation where the frequency of the carrier signal is varied in accordance with the digital data being transmitted. 
+
+Mathematically, the modulated signal can be represented as:
+\[
+s(t) = A \cos(2\pi f_i t + \phi)
+\]
+where \( A \) is the amplitude, \( f_i \) is the frequency of the \( i \)-th tone, and \( \phi \) is the phase. In FT8, the frequency shifts are carefully chosen to minimize interference and maximize the efficiency of data transmission.
+
+This method is particularly effective in weak signal conditions, making it popular among amateur radio operators for digital communication. The use of multiple tones allows for a higher data rate compared to traditional binary FSK, where only two frequencies are used.
+
+% Diagram prompt: Generate a diagram showing the frequency spectrum of an 8-FSK signal, highlighting the 8 distinct tones used in FT8 modulation.

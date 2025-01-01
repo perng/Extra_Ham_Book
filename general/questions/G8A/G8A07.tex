@@ -1,0 +1,26 @@
+\subsection{Phone Emissions Bandwidth Comparison}
+\label{G8A07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A07]
+Which of the following phone emissions uses the narrowest bandwidth?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Single sideband}
+    \item Vestigial sideband
+    \item Phase modulation
+    \item Frequency modulation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message through a narrow pipe. The narrower the pipe, the less space you have to send your message. In the world of radio, bandwidth is like the width of that pipe. Single sideband (SSB) is like the skinniest pipe—it only sends one side of the message, so it uses the least amount of space. Other methods like vestigial sideband, phase modulation, and frequency modulation use wider pipes because they send more parts of the message. So, SSB is the winner for using the narrowest bandwidth!
+
+\subsubsection{Advanced Explanation}
+Bandwidth in radio communications refers to the range of frequencies occupied by a signal. Single sideband (SSB) modulation is a technique that transmits only one sideband (either the upper or lower) and suppresses the carrier wave. This results in a significant reduction in bandwidth compared to other modulation techniques.
+
+Mathematically, the bandwidth of an SSB signal is approximately equal to the bandwidth of the modulating signal itself, denoted as \( B \). In contrast, vestigial sideband (VSB) modulation retains a portion of the other sideband, resulting in a slightly larger bandwidth. Phase modulation (PM) and frequency modulation (FM) both produce signals with bandwidths that are dependent on the modulation index \( \beta \). For FM, the bandwidth \( B_{FM} \) can be approximated by Carson's rule:
+\[ B_{FM} \approx 2(\Delta f + f_m) \]
+where \( \Delta f \) is the maximum frequency deviation and \( f_m \) is the highest frequency in the modulating signal. This typically results in a much larger bandwidth compared to SSB.
+
+Therefore, SSB uses the narrowest bandwidth among the given options, making it the most efficient for narrowband communication.
+
+% Diagram Prompt: Generate a diagram comparing the bandwidth of SSB, VSB, PM, and FM signals.

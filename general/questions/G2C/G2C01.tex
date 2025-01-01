@@ -1,0 +1,26 @@
+\subsection{Full Break-In CW Operation (QSK)}
+\label{G2C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2C01]
+Which of the following describes full break-in CW operation (QSK)?
+\begin{enumerate}[label=\Alph*]
+    \item Breaking stations send the Morse code prosign “BK”
+    \item Automatic keyers, instead of hand keys, are used to send Morse code
+    \item An operator must activate a manual send/receive switch before and after every transmission
+    \item \textbf{Transmitting stations can receive between code characters and elements}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing a game of tag, but instead of running around, you're sending Morse code messages. In full break-in CW operation (QSK), it's like you can listen for a split second between each tag (Morse code character) to see if someone else is trying to tag you back. This way, you don't miss any important messages while you're sending your own. It's like having super-fast reflexes in the game of tag!
+
+\subsubsection{Advanced Explanation}
+Full break-in CW operation, also known as QSK (from the German Quellen Schaltungs Kontakt), allows a transmitting station to receive signals between the individual Morse code characters and even between the elements (dots and dashes) of each character. This is achieved by rapidly switching between transmit and receive modes, often facilitated by a fast-acting relay or solid-state switching circuit.
+
+The key advantage of QSK is that it enables the operator to monitor the frequency for other transmissions or interference while still actively sending Morse code. This is particularly useful in crowded band conditions or during contests, where quick responses are essential.
+
+Mathematically, the switching speed is crucial. If the switching time is too slow, the receiver might miss incoming signals. The switching time \( t_s \) must be significantly shorter than the duration of the shortest Morse code element (a dot). For example, if the dot duration is \( t_d \), then \( t_s \ll t_d \).
+
+In practice, QSK systems are designed to switch in microseconds, ensuring seamless operation. This rapid switching allows the operator to maintain continuous communication without the need for manual intervention, as opposed to manual send/receive switches which require the operator to physically toggle between modes.
+
+% Diagram prompt: Generate a diagram showing the timing of Morse code elements and the switching between transmit and receive modes in QSK operation.

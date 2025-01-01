@@ -1,0 +1,29 @@
+\subsection{Mixer's Local Oscillator and RF Input Frequencies}
+\label{G8B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8B11]
+What combination of a mixer’s Local Oscillator (LO) and RF input frequencies is found in the output?
+\begin{enumerate}[label=\Alph*]
+    \item The ratio
+    \item The average
+    \item \textbf{The sum and difference}
+    \item The arithmetic product
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have two friends, one named LO (Local Oscillator) and the other named RF (Radio Frequency). They both have their own favorite numbers, which are their frequencies. When they meet at a mixer party, they decide to combine their numbers in two ways: by adding them together and by subtracting one from the other. So, the output of the mixer is like a new set of numbers that are the sum and difference of LO and RF's favorite numbers. It's like mixing two colors to get a new one, but with numbers!
+
+\subsubsection{Advanced Explanation}
+In radio frequency (RF) systems, a mixer is a nonlinear device used to combine two input signals, typically the Local Oscillator (LO) signal and the RF signal. The output of the mixer contains the sum and difference of the input frequencies due to the nonlinear mixing process. Mathematically, if the LO frequency is \( f_{LO} \) and the RF frequency is \( f_{RF} \), the output frequencies are given by:
+
+\[
+f_{\text{sum}} = f_{LO} + f_{RF}
+\]
+\[
+f_{\text{difference}} = |f_{LO} - f_{RF}|
+\]
+
+These frequencies are generated because the mixer multiplies the two input signals, and the product of two sinusoidal signals results in sum and difference frequencies. This principle is fundamental in frequency conversion processes, such as in superheterodyne receivers, where the RF signal is converted to an intermediate frequency (IF) for easier processing.
+
+% Diagram prompt: Generate a diagram showing the input frequencies (LO and RF) entering a mixer, and the output frequencies (sum and difference) exiting the mixer.

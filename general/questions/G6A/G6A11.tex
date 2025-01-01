@@ -1,0 +1,26 @@
+\subsection{Inductor Operation Above Self-Resonant Frequency}
+\label{G6A11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G6A11]
+What happens when an inductor is operated above its self-resonant frequency?
+\begin{enumerate}[label=\Alph*]
+    \item Its reactance increases
+    \item Harmonics are generated
+    \item \textbf{It becomes capacitive}
+    \item Catastrophic failure is likely
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a spring that you can stretch and compress. When you push and pull it at just the right speed, it bounces back perfectly. This is like the inductor at its self-resonant frequency. But if you start shaking it really fast (above its natural speed), it doesn't bounce back the same way—it starts acting more like a squishy cushion. Similarly, when an inductor is used above its self-resonant frequency, it stops acting like an inductor and starts behaving like a capacitor. It’s like the spring forgot how to spring!
+
+\subsubsection*{Advanced Explanation}
+An inductor has a self-resonant frequency (SRF) determined by its inductance \(L\) and parasitic capacitance \(C_p\). Below the SRF, the inductor behaves as expected, with its reactance \(X_L = 2\pi f L\) increasing with frequency. However, above the SRF, the parasitic capacitance dominates, and the reactance becomes negative, indicating capacitive behavior. The impedance \(Z\) of the inductor can be modeled as:
+
+\[
+Z = j\omega L + \frac{1}{j\omega C_p}
+\]
+
+At frequencies above the SRF, the term \(\frac{1}{j\omega C_p}\) dominates, making the impedance negative and the inductor effectively capacitive. This transition is critical in RF circuits, where operating above the SRF can lead to unintended circuit behavior.
+
+% Diagram prompt: A graph showing the impedance of an inductor vs. frequency, with the self-resonant frequency marked and the transition from inductive to capacitive behavior clearly indicated.

@@ -1,0 +1,26 @@
+\subsection{Ohmmeter Reading Across a Discharged Capacitor}
+\label{T7D10}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7D10]
+What reading indicates that an ohmmeter is connected across a large, discharged capacitor?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Increasing resistance with time}
+    \item Decreasing resistance with time
+    \item Steady full-scale reading
+    \item Alternating between open and short circuit
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a big, empty water tank (the capacitor) and you’re trying to measure how hard it is to fill it up (the resistance). At first, it’s easy to pour water in because the tank is empty, but as it starts to fill up, it gets harder and harder to add more water. Similarly, when you connect an ohmmeter to a large, discharged capacitor, the resistance starts low but increases over time as the capacitor charges up. So, the correct answer is that the resistance increases with time.
+
+\subsubsection{Advanced Explanation}
+When an ohmmeter is connected across a large, discharged capacitor, it applies a small voltage to the capacitor, causing it to start charging. The charging process of a capacitor can be described by the equation:
+
+\[
+V(t) = V_0 \left(1 - e^{-\frac{t}{RC}}\right)
+\]
+
+where \( V(t) \) is the voltage across the capacitor at time \( t \), \( V_0 \) is the applied voltage, \( R \) is the resistance, and \( C \) is the capacitance. As the capacitor charges, the current flowing through it decreases, which in turn causes the apparent resistance measured by the ohmmeter to increase. This is because the ohmmeter measures resistance by applying a voltage and measuring the resulting current. As the capacitor charges, the current decreases, leading to an increasing resistance reading over time.
+
+% Diagram prompt: Generate a diagram showing the charging curve of a capacitor with time, illustrating the increasing resistance as the capacitor charges.

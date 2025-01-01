@@ -1,0 +1,28 @@
+\subsection{DC Power Supply for HF Transceiver}
+\label{G4E04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4E04]
+Why should DC power for a 100-watt HF transceiver not be supplied by a vehicle’s auxiliary power socket?
+\begin{enumerate}[label=\Alph*)]
+    \item The socket is not wired with an RF-shielded power cable
+    \item \textbf{The socket’s wiring may be inadequate for the current drawn by the transceiver}
+    \item The DC polarity of the socket is reversed from the polarity of modern HF transceivers
+    \item Drawing more than 50 watts from this socket could cause the engine to overheat
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you’re trying to power a giant robot with a tiny battery pack from your toy car. The robot needs a lot of energy, but the battery pack just can’t handle it. Similarly, a 100-watt HF transceiver needs a lot of power, and the vehicle’s auxiliary power socket might not have the right wiring to supply that much current. It’s like trying to fill a swimming pool with a garden hose—it’s just not going to work well!
+
+\subsubsection*{Advanced Explanation}
+The power \( P \) drawn by the transceiver can be calculated using the formula:
+\[
+P = V \times I
+\]
+where \( V \) is the voltage and \( I \) is the current. For a 100-watt transceiver operating at 12 volts, the current \( I \) would be:
+\[
+I = \frac{P}{V} = \frac{100\,\text{W}}{12\,\text{V}} \approx 8.33\,\text{A}
+\]
+Most vehicle auxiliary power sockets are designed to handle currents up to 10-15 amps, but the wiring and connectors may not be rated for continuous high-current draw. Inadequate wiring can lead to voltage drops, overheating, and potential failure of the power socket or wiring. Therefore, it is crucial to ensure that the power supply can handle the current requirements of the transceiver to avoid these issues.
+
+% Diagram Prompt: Generate a diagram showing the wiring of a vehicle's auxiliary power socket and the current flow to an HF transceiver.

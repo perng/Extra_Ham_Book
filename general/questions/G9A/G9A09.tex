@@ -1,0 +1,44 @@
+\subsection{Standing Wave Ratio with 50-Ohm Feed Line and 200-Ohm Load}
+\label{G9A09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A09]
+What standing wave ratio results from connecting a 50-ohm feed line to a 200-ohm resistive load?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{4:1}
+    \item 1:4
+    \item 2:1
+    \item 1:2
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to push a swing. If the swing is too heavy, your push doesn’t work well, and the swing doesn’t go very high. This is like connecting a 50-ohm feed line to a 200-ohm load. The mismatch makes the energy bounce back, creating a standing wave. The ratio of how much energy bounces back compared to how much goes forward is called the Standing Wave Ratio (SWR). In this case, the mismatch is big, so the SWR is 4:1, meaning the reflected wave is four times as strong as the forward wave.
+
+\subsubsection{Advanced Explanation}
+The Standing Wave Ratio (SWR) is a measure of impedance mismatch between a transmission line and its load. It is calculated using the formula:
+
+\[
+\text{SWR} = \frac{Z_{\text{load}}}{Z_{\text{line}}} \quad \text{if} \quad Z_{\text{load}} > Z_{\text{line}}
+\]
+
+or
+
+\[
+\text{SWR} = \frac{Z_{\text{line}}}{Z_{\text{load}}} \quad \text{if} \quad Z_{\text{line}} > Z_{\text{load}}
+\]
+
+In this case, \( Z_{\text{load}} = 200 \, \Omega \) and \( Z_{\text{line}} = 50 \, \Omega \). Since \( Z_{\text{load}} > Z_{\text{line}} \), we use the first formula:
+
+\[
+\text{SWR} = \frac{200}{50} = 4
+\]
+
+Thus, the SWR is 4:1. This indicates a significant mismatch, leading to a large amount of reflected power. The reflection coefficient \( \Gamma \) can also be calculated as:
+
+\[
+\Gamma = \frac{Z_{\text{load}} - Z_{\text{line}}}{Z_{\text{load}} + Z_{\text{line}}} = \frac{200 - 50}{200 + 50} = \frac{150}{250} = 0.6
+\]
+
+This shows that 60\% of the power is reflected back, which is consistent with the high SWR.
+
+% Diagram Prompt: Generate a diagram showing a 50-ohm feed line connected to a 200-ohm resistive load, with arrows indicating the forward and reflected waves.

@@ -1,0 +1,28 @@
+\subsection{Long-Distance Voice Mode on VHF and UHF Bands}
+\label{T8A03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A03]
+Which type of voice mode is often used for long-distance (weak signal) contacts on the VHF and UHF bands?
+\begin{enumerate}[label=\Alph*)]
+    \item FM
+    \item DRM
+    \item \textbf{SSB}
+    \item PM
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to shout across a huge football field. If you shout normally (like FM), your voice might not reach the other side because it gets lost in the noise. But if you use a special technique where you only send the important parts of your voice (like SSB), it’s like using a megaphone that focuses your shout, making it easier for someone far away to hear you. That’s why SSB is great for long-distance chats on VHF and UHF bands!
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is often used for long-distance communication on VHF and UHF bands due to its efficiency in bandwidth and power usage. Unlike Frequency Modulation (FM), which transmits both the carrier and two sidebands, SSB suppresses the carrier and one sideband, transmitting only the remaining sideband. This results in a narrower bandwidth and more efficient use of power, which is crucial for weak signal conditions.
+
+Mathematically, the SSB signal can be represented as:
+\[
+s_{\text{SSB}}(t) = A_c \cdot m(t) \cos(2\pi f_c t) \mp A_c \cdot \hat{m}(t) \sin(2\pi f_c t)
+\]
+where \( A_c \) is the carrier amplitude, \( m(t) \) is the message signal, \( f_c \) is the carrier frequency, and \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \). The upper sideband is represented by the minus sign, and the lower sideband by the plus sign.
+
+SSB’s efficiency in both bandwidth and power makes it ideal for long-distance communication, especially when signal strength is weak. This is why it is preferred over FM, DRM, or PM for such scenarios.
+
+% Diagram prompt: Generate a diagram comparing the bandwidth of FM and SSB signals.

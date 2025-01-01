@@ -1,0 +1,25 @@
+\subsection{Mesh Network Microwave Nodes}\label{G8C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C09]
+Which is true of mesh network microwave nodes?
+\begin{enumerate}[label=\Alph*)]
+    \item Having more nodes increases signal strengths
+    \item \textbf{If one node fails, a packet may still reach its target station via an alternate node}
+    \item Links between two nodes in a network may have different frequencies and bandwidths
+    \item More nodes reduce overall microwave out of band interference
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine a mesh network like a spider web. If one part of the web gets damaged, the spider can still find another path to get where it needs to go. Similarly, in a mesh network, if one node (like a little computer) stops working, the data (or packet) can still find another way to reach its destination. This makes the network super reliable, just like a spider's web!
+
+\subsubsection{Advanced Explanation}
+A mesh network is a type of network topology where each node is connected to multiple other nodes, creating multiple paths for data to travel. This redundancy ensures that if one node fails, the network can reroute data through alternative paths, maintaining communication. Mathematically, this can be represented using graph theory, where nodes are vertices and connections are edges. The robustness of the network can be quantified by its connectivity, which is the minimum number of nodes that need to be removed to disconnect the network.
+
+For example, consider a network with \( n \) nodes. The probability of a packet reaching its destination even if one node fails can be calculated using the formula for network reliability. If the network is fully connected, the reliability \( R \) can be approximated by:
+\[ R = 1 - \left( \frac{1}{n} \right)^k \]
+where \( k \) is the number of alternative paths available.
+
+This concept is crucial in designing resilient communication systems, especially in environments where node failure is a possibility, such as in wireless sensor networks or disaster recovery scenarios.
+
+% Prompt for diagram: A diagram showing a mesh network with multiple nodes and alternative paths for data transmission would be helpful here.

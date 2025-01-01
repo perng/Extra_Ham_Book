@@ -1,0 +1,24 @@
+\subsection{Instantaneous Power Level Modulation}
+\label{G8A05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A05]
+What type of modulation varies the instantaneous power level of the RF signal?
+\begin{enumerate}[label=\Alph*)]
+    \item Power modulation
+    \item Phase modulation
+    \item Frequency modulation
+    \item \textbf{Amplitude modulation}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're at a concert, and the band is playing really loud. Suddenly, the sound guy turns the volume knob up and down. That's like changing the power level of the music. In radio signals, when we talk about changing the power level instantly, we're talking about Amplitude Modulation (AM). It's like turning the volume knob on your radio signal up and down to send information.
+
+\subsubsection{Advanced Explanation}
+Amplitude Modulation (AM) is a technique where the amplitude (or strength) of the carrier wave is varied in proportion to the waveform being transmitted. Mathematically, if the carrier wave is represented as \( c(t) = A_c \cos(2\pi f_c t) \), and the modulating signal is \( m(t) \), the AM signal can be expressed as:
+\[ s(t) = A_c [1 + m(t)] \cos(2\pi f_c t) \]
+Here, \( A_c \) is the amplitude of the carrier wave, \( f_c \) is the carrier frequency, and \( m(t) \) is the modulating signal. The instantaneous power of the AM signal is proportional to the square of its amplitude, which varies with \( m(t) \). This variation in amplitude directly affects the instantaneous power level of the RF signal.
+
+Other modulation techniques like Phase Modulation (PM) and Frequency Modulation (FM) alter the phase or frequency of the carrier wave, respectively, but do not directly change the instantaneous power level. Power modulation is not a standard term in modulation theory.
+
+% Diagram Prompt: Generate a diagram showing the comparison of AM, FM, and PM signals, highlighting how AM varies the amplitude while FM and PM vary frequency and phase, respectively.

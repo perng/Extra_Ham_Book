@@ -1,0 +1,40 @@
+\subsection{Critical Angle in Radio Wave Propagation}
+\label{G3C04}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3C04]
+What does the term “critical angle” mean, as applied to radio wave propagation?
+\begin{enumerate}[label=\Alph*)]
+    \item The long path azimuth of a distant station
+    \item The short path azimuth of a distant station
+    \item The lowest takeoff angle that will return a radio wave to Earth under specific ionospheric conditions
+    \item \textbf{The highest takeoff angle that will return a radio wave to Earth under specific ionospheric conditions}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're playing a game of catch with a friend, but instead of a ball, you're throwing a radio wave. The critical angle is like the highest angle you can throw the wave so that it still comes back to you after bouncing off the ionosphere (which is like a giant trampoline in the sky). If you throw it too high, it just keeps going into space and never comes back. So, the critical angle is the just right angle for your radio wave to bounce back to Earth.
+
+\subsubsection*{Advanced Explanation}
+The critical angle in radio wave propagation is a fundamental concept in ionospheric physics. It is defined as the highest angle of incidence at which a radio wave can be transmitted and still be refracted back to Earth by the ionosphere. This angle depends on the frequency of the radio wave and the electron density of the ionosphere.
+
+Mathematically, the critical angle \(\theta_c\) can be derived from Snell's law of refraction. For a wave incident on the ionosphere, the relationship is given by:
+
+\[
+\sin(\theta_c) = \frac{n_2}{n_1}
+\]
+
+where \(n_1\) is the refractive index of the lower atmosphere (approximately 1) and \(n_2\) is the refractive index of the ionosphere. The refractive index of the ionosphere is influenced by the electron density \(N_e\) and the frequency \(f\) of the radio wave:
+
+\[
+n_2 = \sqrt{1 - \frac{81N_e}{f^2}}
+\]
+
+Thus, the critical angle is:
+
+\[
+\theta_c = \arcsin\left(\sqrt{1 - \frac{81N_e}{f^2}}\right)
+\]
+
+This equation shows that as the frequency increases or the electron density decreases, the critical angle becomes smaller. Understanding this relationship is crucial for optimizing radio communication, especially in long-distance transmissions where ionospheric reflection is utilized.
+
+% Diagram Prompt: Generate a diagram showing the critical angle of a radio wave incident on the ionosphere, with labels for the incident wave, the ionosphere, and the critical angle.

@@ -1,0 +1,28 @@
+\subsection{Effects of Strong Signals on Antenna Analyzers}
+\label{G4B12}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4B12]
+What effect can strong signals from nearby transmitters have on an antenna analyzer?
+\begin{enumerate}[label=\Alph*]
+    \item Desensitization which can cause intermodulation products which interfere with impedance readings
+    \item \textbf{Received power that interferes with SWR readings}
+    \item Generation of harmonics which interfere with frequency readings
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to listen to your favorite song on the radio, but your neighbor is blasting their music so loud that it drowns out your tune. Similarly, when a nearby transmitter sends out a super strong signal, it can overwhelm your antenna analyzer. This strong signal can mess up the readings, especially the SWR (Standing Wave Ratio), which tells you how well your antenna is working. So, just like your neighbor's loud music, strong signals can cause interference and make it hard to get accurate measurements.
+
+\subsubsection{Advanced Explanation}
+Strong signals from nearby transmitters can induce a significant amount of received power in the antenna analyzer's circuitry. This received power can saturate the front-end components, leading to inaccurate SWR readings. SWR is a measure of how well the antenna is matched to the transmission line, and it is crucial for efficient power transfer. When the analyzer is overwhelmed by external signals, it cannot accurately measure the reflected and forward power, which are essential for calculating SWR.
+
+Mathematically, SWR is given by:
+\[
+\text{SWR} = \frac{1 + \Gamma}{1 - \Gamma}
+\]
+where \(\Gamma\) is the reflection coefficient. If the received power from nearby transmitters is too high, it can distort the measurement of \(\Gamma\), leading to incorrect SWR values.
+
+Additionally, strong signals can cause desensitization and intermodulation products, but these effects are more related to impedance readings rather than SWR. Harmonics generation can interfere with frequency readings, but again, this is not the primary concern for SWR measurements. Therefore, the most direct effect of strong signals on an antenna analyzer is the interference with SWR readings.
+
+% Prompt for diagram: A diagram showing the interaction between a strong nearby transmitter and an antenna analyzer, illustrating how the received power affects the SWR measurement.

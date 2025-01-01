@@ -1,0 +1,34 @@
+\subsection{Power Supply Filter Network Components}
+\label{G7A02}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A02]
+Which of the following components are used in a power supply filter network?
+\begin{enumerate}[label=\Alph*]
+    \item Diodes
+    \item Transformers and transducers
+    \item \textbf{Capacitors and inductors}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to clean up a messy room. You have a vacuum cleaner (capacitor) and a broom (inductor). The vacuum cleaner sucks up the dust (high-frequency noise), and the broom sweeps away the larger debris (low-frequency noise). Together, they make the room (your power supply) nice and clean. So, in a power supply filter network, capacitors and inductors are the cleaning crew that keeps the power smooth and steady.
+
+\subsubsection{Advanced Explanation}
+A power supply filter network is designed to remove unwanted AC components (ripple) from the DC output of a power supply. This is achieved using a combination of capacitors and inductors. 
+
+Capacitors store electrical energy and can smooth out voltage fluctuations by charging and discharging. The impedance of a capacitor is given by:
+\[
+Z_C = \frac{1}{j\omega C}
+\]
+where \( \omega \) is the angular frequency and \( C \) is the capacitance. At high frequencies, the impedance is low, allowing the capacitor to short out high-frequency noise.
+
+Inductors, on the other hand, store energy in a magnetic field and resist changes in current. The impedance of an inductor is:
+\[
+Z_L = j\omega L
+\]
+where \( L \) is the inductance. At high frequencies, the impedance is high, blocking high-frequency noise.
+
+Together, capacitors and inductors form a low-pass filter that allows DC to pass while attenuating AC components. This is essential for providing a stable DC voltage to electronic circuits.
+
+% Diagram prompt: Generate a diagram showing a simple LC filter circuit with an input, capacitor, inductor, and output.

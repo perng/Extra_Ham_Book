@@ -1,0 +1,26 @@
+\subsection{HF Scatter Characteristics}
+\label{G3C06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G3C06]
+What is a characteristic of HF scatter?
+\begin{enumerate}[label=\Alph*)]
+    \item Phone signals have high intelligibility
+    \item \textbf{Signals have a fluttering sound}
+    \item There are very large, sudden swings in signal strength
+    \item Scatter propagation occurs only at night
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to talk to your friend using a walkie-talkie, but instead of a clear voice, you hear something that sounds like a bird fluttering its wings. That's what happens with HF scatter! The signals bounce around in the atmosphere and create this fluttering sound. It's like the radio waves are playing a game of tag with the air, and the result is a funny, fluttering noise.
+
+\subsubsection*{Advanced Explanation}
+HF scatter, or High-Frequency scatter, occurs when radio waves in the HF band (3 to 30 MHz) are scattered by irregularities in the Earth's ionosphere. This scattering causes the signal to take multiple paths to the receiver, resulting in a phenomenon known as multipath propagation. The fluttering sound, or flutter fading, is due to the constructive and destructive interference of these multiple signal paths. Mathematically, this can be represented as:
+
+\[
+E(t) = \sum_{i=1}^{N} A_i \cos(2\pi f t + \phi_i)
+\]
+
+where \( E(t) \) is the received signal, \( A_i \) is the amplitude of the \( i \)-th path, \( f \) is the frequency, and \( \phi_i \) is the phase of the \( i \)-th path. The interference of these paths causes the signal strength to vary rapidly, producing the characteristic fluttering sound.
+
+% Diagram Prompt: Generate a diagram showing multipath propagation in the ionosphere causing HF scatter.

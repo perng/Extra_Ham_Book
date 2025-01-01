@@ -1,0 +1,26 @@
+\subsection{Effects of Overmodulation}
+\label{G8A08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A08]
+Which of the following is an effect of overmodulation?
+\begin{enumerate}[label=\Alph*)]
+    \item Insufficient audio
+    \item Insufficient bandwidth
+    \item Frequency drift
+    \item \textbf{Excessive bandwidth}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to send a message using a walkie-talkie, but you shout so loudly that your voice starts to crackle and distort. That's kind of what happens with overmodulation in radio signals. Instead of your voice, it's the signal that gets shouted too loudly, causing it to spread out too much and take up more space than it should. This extra space is called excessive bandwidth, and it can mess up the signal for everyone else trying to use the same frequency.
+
+\subsubsection*{Advanced Explanation}
+Overmodulation occurs when the amplitude of the modulating signal exceeds the maximum allowed by the carrier wave, leading to distortion and the generation of unwanted sidebands. Mathematically, if the modulating signal \( m(t) \) has an amplitude \( A_m \) and the carrier wave has an amplitude \( A_c \), overmodulation happens when \( A_m > A_c \). This results in the modulation index \( \mu = \frac{A_m}{A_c} \) exceeding 1, causing the signal to occupy more bandwidth than necessary. The bandwidth \( B \) of an AM signal is given by:
+
+\[
+B = 2f_m
+\]
+
+where \( f_m \) is the highest frequency component of the modulating signal. Overmodulation can cause \( B \) to increase beyond this, leading to interference with adjacent channels. This is why excessive bandwidth is a direct effect of overmodulation.
+
+% Diagram Prompt: Generate a diagram showing a normal modulated signal and an overmodulated signal, highlighting the increased bandwidth in the overmodulated case.

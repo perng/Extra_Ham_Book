@@ -1,0 +1,28 @@
+\subsection{Series LC Circuit Resonance}
+\label{G5A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5A01]
+What happens when inductive and capacitive reactance are equal in a series LC circuit?
+\begin{enumerate}[label=\Alph*)]
+    \item Resonance causes impedance to be very high
+    \item Impedance is equal to the geometric mean of the inductance and capacitance
+    \item \textbf{Resonance causes impedance to be very low}
+    \item Impedance is equal to the arithmetic mean of the inductance and capacitance
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a swing. If you push the swing at just the right time, it goes really high with very little effort. This is like resonance in a series LC circuit. When the inductive reactance (the push from the inductor) and the capacitive reactance (the pull from the capacitor) are equal, they cancel each other out. This makes the impedance (the resistance to the current) very low, just like how the swing goes high with little effort.
+
+\subsubsection*{Advanced Explanation}
+In a series LC circuit, the impedance \( Z \) is given by:
+\[
+Z = \sqrt{R^2 + (X_L - X_C)^2}
+\]
+where \( R \) is the resistance, \( X_L \) is the inductive reactance, and \( X_C \) is the capacitive reactance. At resonance, \( X_L = X_C \), so the equation simplifies to:
+\[
+Z = \sqrt{R^2 + 0} = R
+\]
+Since the resistance \( R \) is typically very small in an ideal LC circuit, the impedance \( Z \) becomes very low. This is why resonance causes the impedance to be very low in a series LC circuit.
+
+% Diagram prompt: Generate a diagram showing a series LC circuit with inductive reactance \( X_L \) and capacitive reactance \( X_C \) equal at resonance.

@@ -1,0 +1,32 @@
+\subsection{Lowest Loss Feed Line at VHF and UHF}
+\label{T9B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9B11]
+Which of the following types of feed line has the lowest loss at VHF and UHF?
+\begin{enumerate}[label=\Alph*)]
+    \item 50-ohm flexible coax
+    \item Multi-conductor unbalanced cable
+    \item \textbf{Air-insulated hardline}
+    \item 75-ohm flexible coax
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message through a pipe. If the pipe is filled with stuff like foam or rubber, it’s harder for the message to get through because it bounces around and loses energy. But if the pipe is mostly empty (just air), the message can zip through with less trouble. That’s why air-insulated hardline is the best choice for sending signals at VHF and UHF frequencies—it’s like the empty pipe that lets the message travel with the least loss.
+
+\subsubsection{Advanced Explanation}
+At VHF (Very High Frequency) and UHF (Ultra High Frequency), signal loss in transmission lines is primarily due to the dielectric material used in the line. The loss is quantified by the attenuation constant \(\alpha\), which depends on the dielectric properties of the material. Air has a very low dielectric constant (\(\epsilon_r \approx 1\)), resulting in minimal signal loss. 
+
+Air-insulated hardline uses air as the primary dielectric, which significantly reduces attenuation compared to other types of feed lines that use solid dielectrics like polyethylene or foam. The attenuation \(\alpha\) can be approximated by:
+
+\[
+\alpha = \frac{R}{2Z_0} + \frac{G Z_0}{2}
+\]
+
+where \(R\) is the resistance per unit length, \(G\) is the conductance per unit length, and \(Z_0\) is the characteristic impedance. For air-insulated hardline, both \(R\) and \(G\) are minimized, leading to the lowest \(\alpha\).
+
+In contrast, flexible coax lines (both 50-ohm and 75-ohm) use solid dielectrics, which have higher dielectric constants and thus higher losses. Multi-conductor unbalanced cables also suffer from higher losses due to their complex structure and multiple conductors.
+
+Therefore, air-insulated hardline is the optimal choice for minimizing loss at VHF and UHF frequencies.
+
+% Diagram prompt: A comparison diagram showing the structure of air-insulated hardline versus flexible coax, highlighting the dielectric material and its impact on signal loss.

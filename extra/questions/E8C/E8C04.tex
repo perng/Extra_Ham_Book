@@ -1,0 +1,38 @@
+\subsection{Boost Your Signal: Techniques to Minimize PSK31 Bandwidth!}
+
+\begin{tcolorbox}
+\textbf{Question ID: E8C04} \\
+What technique minimizes the bandwidth of a PSK31 signal? 
+\begin{enumerate}[label=\Alph*.]
+    \item Zero-sum character encoding
+    \item Reed-Solomon character encoding
+    \item \textbf{Use of sinusoidal data pulses}
+    \item Use of linear data pulses
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you want to send a message to a friend using a walkie-talkie. Sometimes when you speak, your voice can get mixed with background noise, making it hard for your friend to hear you clearly. The goal is to send your message in such a way that it takes up less space or bandwidth so your friend can hear you without that noise. 
+
+When we use something called PSK31, we are sending data in a special way. The choice we make, such as using sinusoidal data pulses, helps make our message clearer by ensuring it takes up less room when we send it. This way, our signal is not only clearer but also can fit into the narrow space of airwaves better, just like finding a smaller pathway to communicate with less interference!
+
+\subsubsection{Advanced Explanation}
+To minimize the bandwidth of a PSK31 (Phase Shift Keying, 31 baud) signal, the correct technique is the use of sinusoidal data pulses. In digital communication, especially in PSK, the modulation involves changing the phase of the carrier wave to represent digital data. 
+
+The bandwidth of a signal relates to the range of frequencies it occupies. When we employ \textbf(sinusoidal data pulses), these pulses are smooth and continuous. This smoothness allows for better control of the spectral properties of the signal, helping to confine it within a narrower frequency band. 
+
+To understand this mathematically, let’s consider the bandwidth of a PSK signal given by Carson’s rule:
+\[
+BW \approx 2(\Delta f + f_m)
+\]
+where:
+- \(\Delta f\) is the peak frequency deviation,
+- \(f_m\) is the maximum baseband frequency.
+
+By designing the system to utilize sinusoidal pulses, we minimize both \(\Delta f\) and \(f_m\), thereby effectively minimizing the overall bandwidth of our PSK31 signal.
+
+In contrast, techniques like zero-sum or linear data pulses can lead to broader frequency spreads due to abrupt changes in the signal characteristics, which increase the bandwidth unnecessarily. 
+
+Thus, using sinusoidal data pulses serves to optimize the transmission by ensuring we utilize our allocated frequencies more efficiently, akin to using a smaller pathway to avoid bottlenecks, allowing for greater clarity and less noise interference in our communication.
+
+% Comment: Generate a diagram illustrating the concept of PSK31 signal modulation with sinusoidal pulses versus other techniques.

@@ -1,0 +1,29 @@
+\subsection{Locating Noise Interference Sources}\label{T8C01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8C01]
+Which of the following methods is used to locate sources of noise interference or jamming?
+\begin{enumerate}[label=\Alph*)]
+    \item Echolocation
+    \item Doppler radar
+    \item \textbf{Radio direction finding}
+    \item Phase locking
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're playing a game of Marco Polo in a swimming pool. You close your eyes and shout Marco! and listen for the Polo! response to figure out where your friends are. Now, think of radio direction finding as the high-tech version of this game. Instead of shouting, you use a special radio receiver to listen for the noise or jamming signals. By turning the receiver in different directions, you can figure out where the annoying noise is coming from. It's like being a radio detective!
+
+\subsubsection{Advanced Explanation}
+Radio direction finding (RDF) is a technique used to determine the direction of a radio signal source. This is achieved by using a directional antenna, which has a higher sensitivity in one direction compared to others. The basic principle involves measuring the signal strength from different directions and using triangulation to pinpoint the source.
+
+Mathematically, if you have two or more receivers at different locations, you can determine the angle of arrival (AoA) of the signal. The intersection of these angles will give you the location of the noise source. The formula for the angle of arrival can be expressed as:
+
+\[
+\theta = \arctan\left(\frac{y_2 - y_1}{x_2 - x_1}\right)
+\]
+
+where \((x_1, y_1)\) and \((x_2, y_2)\) are the coordinates of the two receivers.
+
+RDF is widely used in various applications, including tracking down illegal radio transmissions, locating emergency beacons, and even in wildlife tracking. The accuracy of RDF depends on factors such as the frequency of the signal, the distance between the receivers, and the environment.
+
+% Diagram prompt: Generate a diagram showing two receivers and the angle of arrival (AoA) of a signal from a noise source.

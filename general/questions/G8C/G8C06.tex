@@ -1,0 +1,28 @@
+\subsection{ARQ Mode Transmission Failure}
+\label{G8C06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8C06]
+What action results from a failure to exchange information due to excessive transmission attempts when using an ARQ mode?
+\begin{enumerate}[label=\Alph*)]
+    \item The checksum overflows
+    \item \textbf{The connection is dropped}
+    \item Packets will be routed incorrectly
+    \item Encoding reverts to the default character set
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a text message to your friend, but their phone is off. You keep hitting send over and over, but nothing happens. Eventually, your phone gives up and says, Sorry, couldn't send the message. That's kind of what happens in ARQ mode. If the system tries too many times to send data and fails, it just gives up and drops the connection. It's like saying, I tried my best, but it's not working, so I'm out!
+
+\subsubsection{Advanced Explanation}
+ARQ (Automatic Repeat reQuest) is a protocol used in data communication to ensure reliable transmission of data. When a sender transmits data, it waits for an acknowledgment (ACK) from the receiver. If the sender does not receive an ACK within a specified time, it retransmits the data. This process continues until either an ACK is received or a maximum number of retransmission attempts is reached.
+
+In the case of excessive transmission attempts, the ARQ protocol will eventually determine that the connection is no longer viable. This could be due to persistent network issues, severe interference, or the receiver being unavailable. When the maximum number of retransmissions is reached without success, the protocol will drop the connection to prevent further wasted resources and to allow the system to attempt a new connection or handle the error appropriately.
+
+Mathematically, if \( N \) is the maximum number of retransmission attempts and \( T \) is the timeout period for each attempt, the total time \( T_{\text{total}} \) before the connection is dropped can be expressed as:
+\[
+T_{\text{total}} = N \times T
+\]
+Once \( T_{\text{total}} \) is exceeded without receiving an ACK, the connection is terminated.
+
+% Diagram Prompt: Generate a diagram showing the ARQ protocol process, including transmission, acknowledgment, retransmission, and connection drop.

@@ -1,0 +1,28 @@
+\subsection{Voltmeter Input Impedance}
+\label{G4B05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4B05]
+Why do voltmeters have high input impedance?
+\begin{enumerate}[label=\Alph*)]
+    \item It improves the frequency response
+    \item It allows for higher voltages to be safely measured
+    \item It improves the resolution of the readings
+    \item \textbf{It decreases the loading on circuits being measured}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to measure how much water is flowing through a hose. If you use a giant bucket to catch the water, you might end up slowing down the flow because the bucket is so big. Now, think of the voltmeter as the bucket and the circuit as the hose. A voltmeter with high input impedance is like using a tiny cup to measure the water flow—it doesn't slow down the flow much, so you get a more accurate measurement of how much water is really flowing. In the same way, a voltmeter with high input impedance doesn't slow down the circuit, so it gives you a more accurate reading of the voltage.
+
+\subsubsection{Advanced Explanation}
+The input impedance of a voltmeter is essentially the resistance it presents to the circuit it is measuring. When a voltmeter is connected to a circuit, it forms a parallel connection with the circuit's components. According to Ohm's Law, \( V = IR \), the voltage across a resistor is directly proportional to the current flowing through it. If the voltmeter has a low input impedance, it will draw more current from the circuit, which can alter the voltage being measured—this is known as loading the circuit.
+
+Mathematically, the effect of loading can be understood by considering the equivalent resistance of the parallel combination of the circuit's resistance \( R_{\text{circuit}} \) and the voltmeter's input impedance \( R_{\text{input}} \):
+
+\[
+R_{\text{equivalent}} = \frac{R_{\text{circuit}} \cdot R_{\text{input}}}{R_{\text{circuit}} + R_{\text{input}}}
+\]
+
+If \( R_{\text{input}} \) is much larger than \( R_{\text{circuit}} \), the equivalent resistance \( R_{\text{equivalent}} \) will be very close to \( R_{\text{circuit}} \), minimizing the loading effect. Therefore, a high input impedance ensures that the voltmeter does not significantly alter the circuit's behavior, leading to more accurate voltage measurements.
+
+% Prompt for diagram: A diagram showing a voltmeter connected in parallel to a resistor in a circuit, with labels for the circuit resistance and the voltmeter's input impedance.

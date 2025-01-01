@@ -1,0 +1,36 @@
+\subsection{Ratio of PEP to Average Power for an Unmodulated Carrier}
+\label{G5B11}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5B11]
+What is the ratio of PEP to average power for an unmodulated carrier?
+\begin{enumerate}[label=\Alph*)]
+    \item 0.707
+    \item \textbf{1.00}
+    \item 1.414
+    \item 2.00
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a flashlight that shines with a steady, unchanging light. The brightest it can ever be (PEP) is the same as how bright it usually is (average power). So, the ratio is just 1.00! It's like saying, Hey, the flashlight is always at its brightest, so there's no difference between the peak and the average.
+
+\subsubsection{Advanced Explanation}
+For an unmodulated carrier, the signal is a pure sine wave with constant amplitude. The Peak Envelope Power (PEP) is the maximum power that the signal can achieve, which for a sine wave is given by:
+\[
+P_{\text{PEP}} = \frac{V_{\text{peak}}^2}{R}
+\]
+where \( V_{\text{peak}} \) is the peak voltage and \( R \) is the resistance. The average power \( P_{\text{avg}} \) of a sine wave is:
+\[
+P_{\text{avg}} = \frac{V_{\text{rms}}^2}{R}
+\]
+Since \( V_{\text{rms}} = \frac{V_{\text{peak}}}{\sqrt{2}} \), we can rewrite the average power as:
+\[
+P_{\text{avg}} = \frac{\left(\frac{V_{\text{peak}}}{\sqrt{2}}\right)^2}{R} = \frac{V_{\text{peak}}^2}{2R}
+\]
+The ratio of PEP to average power is then:
+\[
+\frac{P_{\text{PEP}}}{P_{\text{avg}}} = \frac{\frac{V_{\text{peak}}^2}{R}}{\frac{V_{\text{peak}}^2}{2R}} = 2
+\]
+However, for an unmodulated carrier, the signal is continuous and unchanging, so the PEP and average power are the same, making the ratio 1.00.
+
+% Diagram Prompt: Generate a diagram showing a pure sine wave with labeled peak voltage and RMS voltage.

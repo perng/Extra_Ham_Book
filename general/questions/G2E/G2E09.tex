@@ -1,0 +1,22 @@
+\subsection{Joining a Contact with PACTOR Protocol}
+\label{G2E09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E09]
+How do you join a contact between two stations using the PACTOR protocol?
+\begin{enumerate}[label=\Alph*)]
+    \item Send broadcast packets containing your call sign while in MONITOR mode
+    \item Transmit a steady carrier until the PACTOR protocol times out and disconnects
+    \item \textbf{Joining an existing contact is not possible, PACTOR connections are limited to two stations}
+    \item Send a NAK code
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you’re trying to join a conversation between two people who are already talking on a walkie-talkie. But here’s the catch: their walkie-talkies only allow two people to talk at a time. No matter how much you shout or try to join, you can’t interrupt their conversation. That’s exactly how the PACTOR protocol works! It’s like a private chat room for two stations, and no one else can join in. So, the correct answer is that you can’t join an existing PACTOR contact—it’s just for two stations.
+
+\subsubsection{Advanced Explanation}
+The PACTOR protocol is a digital communication protocol designed for robust data transmission over radio frequencies. It operates using a half-duplex communication model, meaning only one station can transmit at a time while the other receives. PACTOR connections are strictly point-to-point, meaning they are limited to two stations. This design ensures efficient and error-free data transfer by maintaining a clear and uninterrupted communication channel between the two stations.
+
+To elaborate, PACTOR uses a combination of error detection and correction techniques, such as cyclic redundancy checks (CRC) and automatic repeat request (ARQ), to ensure data integrity. The protocol does not support multicasting or broadcasting, which means it cannot handle more than two stations in a single connection. Therefore, attempting to join an existing PACTOR contact is not possible, as the protocol inherently restricts the connection to two stations.
+
+% Diagram Prompt: Generate a diagram showing two stations communicating via PACTOR protocol, with a third station attempting to join but being blocked.

@@ -1,0 +1,26 @@
+\subsection{Characteristic Impedance of Parallel Conductor Feed Line}
+\label{G9A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9A01]
+Which of the following factors determine the characteristic impedance of a parallel conductor feed line?
+\begin{enumerate}[label=\Alph*)]
+    \item The distance between the centers of the conductors and the radius of the conductors
+    \item The distance between the centers of the conductors and the length of the line
+    \item The radius of the conductors and the frequency of the signal
+    \item The frequency of the signal and the length of the line
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have two parallel wires, like the strings on a guitar. The characteristic impedance is like the tightness of these strings. If you move the strings closer together or make them thicker, the tightness changes. Similarly, the distance between the centers of the conductors and their thickness (radius) affects the characteristic impedance of the feed line. The length of the line or the frequency of the signal doesn't change this tightness.
+
+\subsubsection*{Advanced Explanation}
+The characteristic impedance \( Z_0 \) of a parallel conductor feed line is determined by the geometric configuration of the conductors. Specifically, it depends on the distance \( d \) between the centers of the conductors and the radius \( r \) of the conductors. The formula for the characteristic impedance is given by:
+
+\[
+Z_0 = \frac{120}{\sqrt{\epsilon_r}} \ln\left(\frac{d}{r}\right)
+\]
+
+where \( \epsilon_r \) is the relative permittivity of the medium surrounding the conductors. This equation shows that \( Z_0 \) is directly influenced by the ratio of the distance between the conductors to their radius. The length of the line and the frequency of the signal do not appear in this formula, indicating they do not affect the characteristic impedance.
+
+% Diagram Prompt: Generate a diagram showing two parallel conductors with labeled distance \( d \) and radius \( r \).

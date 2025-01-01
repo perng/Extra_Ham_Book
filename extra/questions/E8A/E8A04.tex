@@ -1,0 +1,33 @@
+\subsection{Diving into Dither: A Bright Look at ADCs!}
+
+\begin{tcolorbox}
+    \textbf{Question ID: E8A04} \\
+    What is “dither” with respect to analog-to-digital converters? \\
+
+    \begin{enumerate}[label=\Alph*.]
+        \item An abnormal condition where the converter cannot settle on a value to represent the signal
+        \item \textbf{A small amount of noise added to the input signal to reduce quantization noise}
+        \item An error caused by irregular quantization step size
+        \item A method of decimation by randomly skipping samples
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Dither is a technique used in converting an analog signal, like music, into a digital format that computers can understand. Imagine you are trying to measure the height of a plant with a ruler, but sometimes the ruler is not perfectly positioned, causing small errors. Dither is like adding a little bit of randomness or noise to help improve the measuring accuracy by making it easier for the converter to decide on a value, even when things aren't perfect. This small addition helps to smooth out the errors in the measurement, just like how a little extra bit of fun can make a game more enjoyable!
+
+\subsubsection{Advanced Explanation}
+In analog-to-digital converters (ADCs), dither serves to improve the performance of the quantization process. When an analog signal is sampled, it is represented by discrete values, which can lead to quantization noise. This noise occurs due to the finite resolution of the ADC, causing distortion in the digital representation of the signal.
+
+Dither is a controlled amount of noise added to the input signal before quantization. The purpose of this added noise is to make the quantization error more uniformly distributed over a range of values. This method effectively reduces the harmonic distortion and increases the signal-to-noise ratio (SNR) of the output.
+
+Mathematically, if \( x(t) \) is the original analog signal, and \( q(x) \) is the quantization function of the ADC, then with dither \( d \) added, we have:
+
+\[
+\hat{x}(t) = q(x(t) + d)
+\]
+
+Where \( \hat{x}(t) \) is the quantized output. This process enables the ADC to better handle the inevitable discrepancies in the quantization process by dispersing the errors that would otherwise be concentrated at specific frequencies.
+
+In summary, dither plays a critical role in enhancing the fidelity of the digital representation of analog signals, and understanding this concept involves grasping the principles of signal processing, quantization theory, and noise management.
+
+% Diagram prompt: Create a diagram showing the analog signal, the effects of quantization noise, and how dither improves the output signal.

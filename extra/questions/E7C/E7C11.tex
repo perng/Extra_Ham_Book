@@ -1,0 +1,33 @@
+\subsection{Channel Rejection: Measuring Filter Performance!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7C11] Which of the following measures a filter’s ability to reject signals in adjacent channels?
+    \begin{enumerate}[label=\Alph*)]
+        \item Passband ripple
+        \item Phase response
+        \item \textbf{Shape factor}
+        \item Noise factor
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a radio that can tune into different stations. Sometimes, you might hear a bit of another station even when you’re tuned to your favorite one. This happens because the filter in your radio isn’t perfect at blocking out signals from nearby stations. The shape factor is like a score that tells us how good the filter is at keeping those unwanted signals out. A lower shape factor means the filter is better at rejecting signals from adjacent channels, so you hear less interference.
+
+\subsubsection*{Advanced Explanation}
+The shape factor of a filter is a quantitative measure of its selectivity, which is its ability to reject signals in adjacent channels. It is defined as the ratio of the filter's bandwidth at a certain attenuation level (e.g., 60 dB) to its bandwidth at a lower attenuation level (e.g., 3 dB). Mathematically, it can be expressed as:
+
+\[
+\text{Shape Factor} = \frac{BW_{\text{60 dB}}}{BW_{\text{3 dB}}}
+\]
+
+Where:
+- \( BW_{\text{60 dB}} \) is the bandwidth at 60 dB attenuation.
+- \( BW_{\text{3 dB}} \) is the bandwidth at 3 dB attenuation.
+
+A lower shape factor indicates a steeper roll-off in the filter's frequency response, meaning it can more effectively reject signals in adjacent channels. This is crucial in communication systems to minimize interference and ensure signal clarity.
+
+\subsubsection*{Related Concepts}
+- \textbf{Passband Ripple}: Variations in the amplitude of signals within the passband of a filter.
+- \textbf{Phase Response}: The phase shift introduced by the filter as a function of frequency.
+- \textbf{Noise Factor}: A measure of the degradation of the signal-to-noise ratio (SNR) by the filter.
+
+% Prompt for generating a diagram: A frequency response graph showing the passband, stopband, and the shape factor of a filter.

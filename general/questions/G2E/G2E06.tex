@@ -1,0 +1,32 @@
+\subsection{Frequency Shift for RTTY Emissions}\label{G2E06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2E06]
+What is the most common frequency shift for RTTY emissions in the amateur HF bands?
+\begin{enumerate}[label=\Alph*)]
+    \item 85 Hz
+    \item \textbf{170 Hz}
+    \item 425 Hz
+    \item 850 Hz
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're sending a secret message to your friend using a walkie-talkie, but instead of talking, you're using beeps. RTTY (Radio Teletype) is like that, but for computers. The frequency shift is how much the beep changes its pitch to send different letters or numbers. In the amateur HF bands, the most common pitch change is 170 Hz. Think of it like changing the note on a piano by just a little bit to send your message.
+
+\subsubsection{Advanced Explanation}
+RTTY (Radio Teletype) is a form of digital communication used in amateur radio. It typically uses Frequency Shift Keying (FSK), where the carrier frequency is shifted between two distinct frequencies to represent binary data (e.g., mark and space). The frequency shift is the difference between these two frequencies.
+
+In the amateur HF bands, the most common frequency shift for RTTY emissions is 170 Hz. This value is standardized to ensure compatibility between different RTTY systems and to minimize interference. The choice of 170 Hz is a balance between being large enough to be easily distinguishable by receivers and small enough to fit within the bandwidth constraints of the HF bands.
+
+Mathematically, the frequency shift \(\Delta f\) is given by:
+\[
+\Delta f = f_{\text{mark}} - f_{\text{space}}
+\]
+where \(f_{\text{mark}}\) and \(f_{\text{space}}\) are the frequencies representing the mark and space states, respectively. For a 170 Hz shift:
+\[
+\Delta f = 170 \, \text{Hz}
+\]
+
+This shift is widely adopted in amateur radio because it provides a good compromise between signal robustness and bandwidth efficiency. Larger shifts (e.g., 425 Hz or 850 Hz) would require more bandwidth, while smaller shifts (e.g., 85 Hz) might be more susceptible to noise and interference.
+
+% Diagram prompt: A diagram showing the frequency shift between mark and space states in FSK modulation, with the 170 Hz shift labeled.

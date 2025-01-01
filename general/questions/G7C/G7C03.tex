@@ -1,0 +1,30 @@
+\subsection{Impedance Matching Transformer at Transmitter Output}
+\label{G7C03}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7C03]
+What is one reason to use an impedance matching transformer at a transmitter output?
+\begin{enumerate}[label=\Alph*]
+    \item To minimize transmitter power output
+    \item \textbf{To present the desired impedance to the transmitter and feed line}
+    \item To reduce power supply ripple
+    \item To minimize radiation resistance
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to pour water from a big jug into a small bottle. If the jug and the bottle don't match, you'll spill water everywhere! Similarly, in radio transmitters, the transmitter and the antenna need to match so that the signal (like the water) flows smoothly without any loss. An impedance matching transformer is like a special funnel that helps the transmitter and antenna work together perfectly, making sure the signal gets where it needs to go without any hiccups.
+
+\subsubsection{Advanced Explanation}
+In radio frequency (RF) systems, impedance matching is crucial for maximizing power transfer and minimizing signal reflection. The transmitter output and the feed line (which connects the transmitter to the antenna) must have matching impedances to ensure efficient power transfer. The impedance matching transformer adjusts the impedance of the feed line to match the transmitter's output impedance. 
+
+The power transfer efficiency \( \eta \) can be expressed as:
+\[
+\eta = \frac{P_{\text{transferred}}}{P_{\text{available}}}
+\]
+where \( P_{\text{transferred}} \) is the power transferred to the load (antenna) and \( P_{\text{available}} \) is the power available from the transmitter. When the impedances are matched, \( \eta \) is maximized, and the reflected power \( P_{\text{reflected}} \) is minimized:
+\[
+P_{\text{reflected}} = \left| \frac{Z_L - Z_0}{Z_L + Z_0} \right|^2 P_{\text{incident}}
+\]
+where \( Z_L \) is the load impedance, \( Z_0 \) is the characteristic impedance of the feed line, and \( P_{\text{incident}} \) is the incident power. By using an impedance matching transformer, we ensure \( Z_L = Z_0 \), thus \( P_{\text{reflected}} = 0 \), and all the power is efficiently transferred to the antenna.
+
+% Diagram prompt: Generate a diagram showing a transmitter connected to an antenna via a feed line with an impedance matching transformer in between. Label the impedances and show the direction of power flow.

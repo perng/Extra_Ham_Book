@@ -1,0 +1,32 @@
+\subsection{Direct Binary FSK Modulation}
+\label{G8A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G8A01]
+How is direct binary FSK modulation generated?
+\begin{enumerate}[label=\Alph*)]
+    \item By keying an FM transmitter with a sub-audible tone
+    \item \textbf{By changing an oscillator’s frequency directly with a digital control signal}
+    \item By using a transceiver’s computer data interface protocol to change frequencies
+    \item By reconfiguring the CW keying input to act as a tone generator
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a radio that can play two different notes: a high note and a low note. Now, think of these notes as representing the binary digits 1 and 0. Direct binary FSK modulation is like switching between these two notes really quickly to send a message. Instead of using a button to switch the notes, you use a digital signal that directly tells the radio which note to play. So, if the digital signal says 1, the radio plays the high note, and if it says 0, it plays the low note. This is how you send binary data using FSK modulation!
+
+\subsubsection{Advanced Explanation}
+Frequency Shift Keying (FSK) is a modulation technique where the frequency of the carrier signal is varied in accordance with the digital signal. In direct binary FSK, the oscillator's frequency is directly controlled by the digital input signal. Mathematically, the modulated signal can be represented as:
+
+\[ s(t) = A \cos(2\pi f_c t + 2\pi \Delta f \int_{-\infty}^{t} m(\tau) d\tau) \]
+
+where:
+\begin{itemize}
+    \item \( A \) is the amplitude of the carrier signal,
+    \item \( f_c \) is the carrier frequency,
+    \item \( \Delta f \) is the frequency deviation,
+    \item \( m(t) \) is the digital message signal.
+\end{itemize}
+
+In direct binary FSK, the digital control signal \( m(t) \) directly changes the oscillator's frequency, causing it to shift between two distinct frequencies representing binary 1 and 0. This method is efficient and straightforward for digital communication systems.
+
+% Diagram Prompt: Generate a diagram showing the frequency shift between two distinct frequencies representing binary 1 and 0 in FSK modulation.

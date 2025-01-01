@@ -1,0 +1,28 @@
+\subsection{What is FT8?}
+\label{T8D13}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8D13]
+What is FT8?
+\begin{enumerate}[label=\Alph*)]
+    \item A wideband FM voice mode
+    \item \textbf{A digital mode capable of low signal-to-noise operation}
+    \item An eight channel multiplex mode for FM repeaters
+    \item A digital slow-scan TV mode with forward error correction and automatic color compensation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a secret message to your friend across a noisy playground. FT8 is like a super-smart way to send that message so that even if there's a lot of noise (like kids shouting), your friend can still understand it. It's a digital mode that works really well even when the signal is very weak or there's a lot of interference. Think of it as a whisper that can still be heard clearly in a loud room!
+
+\subsubsection{Advanced Explanation}
+FT8 is a digital communication mode designed for weak signal communication, particularly in amateur radio. It operates in a very narrow bandwidth (approximately 50 Hz) and uses a transmission cycle of 15 seconds. The mode employs forward error correction (FEC) and other advanced techniques to ensure reliable communication even when the signal-to-noise ratio (SNR) is very low. 
+
+Mathematically, FT8 uses a combination of frequency-shift keying (FSK) and phase-shift keying (PSK) to encode data. The signal can be represented as:
+
+\[ s(t) = A \cos(2\pi f_c t + \phi(t)) \]
+
+where \( A \) is the amplitude, \( f_c \) is the carrier frequency, and \( \phi(t) \) is the phase modulation that encodes the data. The use of FEC allows the receiver to correct errors without requiring retransmission, making FT8 highly efficient for weak signal conditions.
+
+FT8 is particularly useful for long-distance communication (DXing) and for making contacts under challenging propagation conditions. Its ability to decode signals well below the noise floor makes it a popular choice among amateur radio operators.
+
+% Prompt for diagram: A diagram showing the frequency spectrum of an FT8 signal, highlighting its narrow bandwidth and low signal-to-noise operation.

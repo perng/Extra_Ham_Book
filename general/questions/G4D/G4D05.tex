@@ -1,0 +1,42 @@
+\subsection{Comparison of Signal Strengths on an S Meter}
+\label{G4D05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G4D05]
+How does a signal that reads 20 dB over S9 compare to one that reads S9 on a receiver, assuming a properly calibrated S meter?
+\begin{enumerate}[label=\Alph*)]
+    \item It is 10 times less powerful
+    \item It is 20 times less powerful
+    \item It is 20 times more powerful
+    \item \textbf{It is 100 times more powerful}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're listening to your favorite radio station, and the volume knob is set to a level called S9. Now, someone tells you that another station is coming in at 20 dB over S9. That means the second station is way louder! But how much louder? Well, in the world of radio signals, every 10 dB increase means the signal is 10 times stronger. So, 20 dB means the signal is 10 times 10, which is 100 times stronger! It's like comparing a whisper to a shout.
+
+\subsubsection{Advanced Explanation}
+The decibel (dB) is a logarithmic unit used to express the ratio of two power levels. The relationship between power levels \( P_1 \) and \( P_2 \) in decibels is given by:
+
+\[
+\text{dB} = 10 \log_{10}\left(\frac{P_1}{P_2}\right)
+\]
+
+Given that the signal is 20 dB over S9, we can set up the equation as:
+
+\[
+20 = 10 \log_{10}\left(\frac{P_1}{P_2}\right)
+\]
+
+Solving for the power ratio:
+
+\[
+\log_{10}\left(\frac{P_1}{P_2}\right) = 2
+\]
+
+\[
+\frac{P_1}{P_2} = 10^2 = 100
+\]
+
+Thus, a signal that reads 20 dB over S9 is 100 times more powerful than a signal that reads S9. This logarithmic scale is used because it can represent a wide range of power levels in a compact form, which is particularly useful in radio communications where signal strengths can vary dramatically.
+
+% Diagram prompt: A diagram showing the comparison of signal strengths on an S meter, with S9 and 20 dB over S9 marked clearly.

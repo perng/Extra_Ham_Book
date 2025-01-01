@@ -1,0 +1,27 @@
+\subsection{Output Waveform of Unfiltered Full-Wave Rectifier}
+\label{G7A07}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7A07]
+What is the output waveform of an unfiltered full-wave rectifier connected to a resistive load?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{A series of DC pulses at twice the frequency of the AC input}
+    \item A series of DC pulses at the same frequency as the AC input
+    \item A sine wave at half the frequency of the AC input
+    \item A steady DC voltage
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a water wheel that spins every time water flows, but you want it to spin in the same direction no matter which way the water is flowing. A full-wave rectifier is like a clever mechanism that flips the water flow direction so the wheel always spins the same way. Now, if you look at the wheel, it’s spinning twice as fast because it’s catching both the forward and backward flows of water. Similarly, the rectifier takes the AC input (which goes back and forth) and turns it into a series of DC pulses that happen twice as often as the original AC frequency.
+
+\subsubsection{Advanced Explanation}
+A full-wave rectifier converts the entire input AC waveform into a pulsating DC waveform. This is achieved by using a bridge rectifier configuration, which consists of four diodes arranged in such a way that both the positive and negative halves of the AC cycle are converted to positive DC pulses. 
+
+Mathematically, if the input AC voltage is given by \( V_{\text{in}}(t) = V_{\text{peak}} \sin(\omega t) \), the output voltage \( V_{\text{out}}(t) \) after rectification can be expressed as:
+\[ V_{\text{out}}(t) = |V_{\text{peak}} \sin(\omega t)| \]
+
+This results in a waveform that has a frequency of \( 2\omega \), which is twice the frequency of the input AC signal. The output is a series of DC pulses because the rectifier only allows current to flow in one direction, effectively flipping the negative half of the AC cycle to positive.
+
+The key concept here is that the full-wave rectifier doubles the frequency of the input AC signal while converting it to DC. This is why the correct answer is a series of DC pulses at twice the frequency of the AC input.
+
+% Diagram prompt: Generate a diagram showing the input AC waveform and the output DC pulses after full-wave rectification.

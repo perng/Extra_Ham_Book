@@ -1,0 +1,27 @@
+\subsection{E9D06: Boosting Bandwidth: The Magic of Loading Coils!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Question E9D06]
+\textbf{E9D06} What happens to SWR bandwidth when one or more loading coils are used to resonate an electrically short antenna?
+\begin{enumerate}[label=\Alph*.]
+    \item It is increased
+    \item \textbf{It is decreased}
+    \item It is unchanged if the loading coil is located at the feed point
+    \item It is unchanged if the loading coil is located at a voltage maximum point
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a short antenna that’s like a tiny rubber band. It’s too short to stretch very far, so you add a loading coil, which is like adding a spring to the rubber band. The spring helps the rubber band stretch, but it also makes it harder to wiggle back and forth quickly. In the same way, the loading coil helps the antenna resonate at the right frequency, but it narrows the range of frequencies where the antenna works well. So, the bandwidth (the range of frequencies) gets smaller, or decreased.
+
+\subsubsection*{Advanced Explanation}
+When an antenna is electrically short, its impedance is highly reactive, and it does not resonate at the desired frequency. To achieve resonance, a loading coil is added to cancel out the capacitive reactance. The loading coil introduces inductive reactance \(X_L = 2\pi f L\), where \(L\) is the inductance of the coil and \(f\) is the frequency. 
+
+The quality factor \(Q\) of the antenna system is given by:
+\[
+Q = \frac{f_0}{\Delta f}
+\]
+where \(f_0\) is the resonant frequency and \(\Delta f\) is the bandwidth. Adding a loading coil increases the \(Q\) factor, which in turn decreases the bandwidth \(\Delta f\). This is because the loading coil narrows the range of frequencies over which the antenna can effectively operate.
+
+The SWR (Standing Wave Ratio) bandwidth is inversely proportional to the \(Q\) factor. Therefore, as \(Q\) increases, the SWR bandwidth decreases. This is why the correct answer is \textbf{B}: It is decreased.
+
+% Diagram Prompt: Generate a diagram showing an electrically short antenna with a loading coil, illustrating the change in bandwidth before and after adding the coil.

@@ -1,0 +1,38 @@
+\subsection{Understanding dB Change for Power Factor}
+\label{G5B01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G5B01]
+What dB change represents a factor of two increase or decrease in power?
+\begin{enumerate}[label=\Alph*)]
+    \item Approximately 2 dB
+    \item \textbf{Approximately 3 dB}
+    \item Approximately 6 dB
+    \item Approximately 9 dB
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a flashlight. If you double the power of the flashlight, it doesn't mean the light will be twice as bright in a way you can easily see. Instead, the brightness increases by about 3 dB. Similarly, if you halve the power, the brightness decreases by about 3 dB. Think of dB as a special way to measure how much something changes, and 3 dB is the magic number for doubling or halving power.
+
+\subsubsection{Advanced Explanation}
+The decibel (dB) is a logarithmic unit used to express the ratio of two values of a physical quantity, often power or intensity. The formula to calculate the change in dB when the power changes is:
+
+\[
+\text{dB} = 10 \log_{10}\left(\frac{P_2}{P_1}\right)
+\]
+
+Where \( P_1 \) is the initial power and \( P_2 \) is the final power. For a factor of two increase in power (\( P_2 = 2P_1 \)):
+
+\[
+\text{dB} = 10 \log_{10}(2) \approx 10 \times 0.301 = 3.01 \text{ dB}
+\]
+
+Similarly, for a factor of two decrease in power (\( P_2 = \frac{P_1}{2} \)):
+
+\[
+\text{dB} = 10 \log_{10}\left(\frac{1}{2}\right) \approx 10 \times (-0.301) = -3.01 \text{ dB}
+\]
+
+Thus, a factor of two increase or decrease in power corresponds to approximately 3 dB change. This logarithmic scale is useful because it compresses large ranges of values into a more manageable scale, making it easier to compare very large or very small quantities.
+
+% Diagram Prompt: A graph showing the relationship between power ratio and dB change, highlighting the 3 dB point for a factor of two change.

@@ -1,0 +1,31 @@
+\subsection{E9D11: Reflecting on Yagis: The Magic of Two-Element Designs!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=\textbf{Question E9D11}]
+Why do most two-element Yagis with normal spacing have a reflector instead of a director?
+\begin{enumerate}[label=\Alph*)]
+    \item Lower SWR
+    \item Higher receiving directivity factor
+    \item Greater front-to-side
+    \item \textbf{Higher gain}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to catch a ball in a game of catch. If you have a friend standing behind you with a big net, they can help catch the ball even if you miss it a little. In a Yagi antenna, the reflector is like that friend with the net. It helps catch more of the radio waves coming from the front, making the antenna stronger and better at picking up signals. That's why most two-element Yagis use a reflector—it gives them a boost in performance, just like having a net helps you catch more balls!
+
+\subsubsection*{Advanced Explanation}
+In a two-element Yagi antenna, the reflector is placed behind the driven element (the part that actually sends or receives the signal). The reflector's primary function is to increase the antenna's gain by reflecting more of the incoming radio waves towards the driven element. This reflection enhances the antenna's ability to focus energy in the desired direction, thereby increasing its gain.
+
+The gain \( G \) of an antenna is a measure of its ability to direct energy in a particular direction. For a Yagi antenna, the gain can be approximated by the following formula:
+
+\[
+G = 10 \log_{10} \left( \frac{4 \pi A_e}{\lambda^2} \right)
+\]
+
+where \( A_e \) is the effective aperture of the antenna and \( \lambda \) is the wavelength of the signal. By adding a reflector, the effective aperture \( A_e \) increases, leading to a higher gain.
+
+Additionally, the reflector helps in reducing the back lobe radiation, which improves the front-to-back ratio of the antenna. This means that the antenna is more sensitive to signals coming from the front and less sensitive to signals coming from the back, which is crucial for directional communication.
+
+In summary, the reflector in a two-element Yagi antenna is essential for achieving higher gain and better directional performance, making it a preferred choice over a director in most designs.
+
+% [Prompt for diagram: A diagram showing a two-element Yagi antenna with a driven element and a reflector, illustrating the direction of incoming radio waves and how the reflector enhances the gain.]

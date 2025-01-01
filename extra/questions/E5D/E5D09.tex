@@ -1,0 +1,40 @@
+\subsection{Unraveling Reactive Power in Ideal Inductors and Capacitors!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=Multiple Choice Question]
+\textbf{E5D09} What happens to reactive power in ideal inductors and capacitors?
+
+\begin{enumerate}[label=\Alph*)]
+    \item It is dissipated as heat in the circuit
+    \item \textbf{Energy is stored in magnetic or electric fields, but power is not dissipated}
+    \item It is canceled by Coulomb forces in the capacitor and inductor
+    \item It is dissipated in the formation of inductive and capacitive fields
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a spring and a rubber band. When you stretch the spring or pull the rubber band, you are storing energy in them. When you let go, they return to their original shape, releasing the stored energy. Ideal inductors and capacitors work similarly. In an inductor, energy is stored in a magnetic field when current flows through it. In a capacitor, energy is stored in an electric field when voltage is applied across it. However, unlike a resistor that turns electrical energy into heat, inductors and capacitors do not dissipate energy as heat. Instead, they store and release energy back into the circuit.
+
+\subsubsection{Advanced Explanation}
+In an ideal inductor, the reactive power \( Q_L \) is given by:
+\[
+Q_L = V_L I_L \sin(\phi)
+\]
+where \( V_L \) is the voltage across the inductor, \( I_L \) is the current through the inductor, and \( \phi \) is the phase angle between voltage and current. For an ideal inductor, the phase angle \( \phi \) is \( 90^\circ \), so \( \sin(90^\circ) = 1 \). The energy stored in the magnetic field of the inductor is:
+\[
+W_L = \frac{1}{2} L I_L^2
+\]
+where \( L \) is the inductance.
+
+Similarly, in an ideal capacitor, the reactive power \( Q_C \) is:
+\[
+Q_C = V_C I_C \sin(\phi)
+\]
+where \( V_C \) is the voltage across the capacitor, \( I_C \) is the current through the capacitor, and \( \phi \) is the phase angle between voltage and current. For an ideal capacitor, the phase angle \( \phi \) is \( -90^\circ \), so \( \sin(-90^\circ) = -1 \). The energy stored in the electric field of the capacitor is:
+\[
+W_C = \frac{1}{2} C V_C^2
+\]
+where \( C \) is the capacitance.
+
+In both cases, the reactive power represents the energy that is stored and returned to the circuit, not dissipated as heat. This is why the correct answer is \textbf{B}.
+
+% Diagram prompt: Generate a diagram showing the energy storage in an inductor and capacitor, illustrating the magnetic and electric fields respectively.

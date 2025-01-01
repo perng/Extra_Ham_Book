@@ -1,0 +1,32 @@
+\subsection{Gain Comparison of Yagi Antennas}
+\label{G9C09}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G9C09]
+In free space, how does the gain of two three-element, horizontally polarized Yagi antennas spaced vertically 1/2 wavelength apart typically compare to the gain of a single three-element Yagi?
+\begin{enumerate}[label=\Alph*]
+    \item Approximately 1.5 dB higher
+    \item \textbf{Approximately 3 dB higher}
+    \item Approximately 6 dB higher
+    \item Approximately 9 dB higher
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have one flashlight shining in a dark room. Now, if you add another flashlight right next to it, pointing in the same direction, the room will be brighter, right? The same idea applies to antennas. When you have two Yagi antennas spaced properly, they work together to make the signal stronger. In this case, the signal is about twice as strong, which we measure as a 3 dB increase. So, two antennas are better than one, but not four times better—just twice as good!
+
+\subsubsection{Advanced Explanation}
+The gain of an antenna array can be understood through the concept of constructive interference. When two identical antennas are spaced at a distance of \(\lambda/2\) (half the wavelength), the signals from both antennas add up in phase, leading to an increase in the overall gain. The gain increase can be calculated using the formula:
+
+\[
+G_{\text{total}} = G_{\text{single}} + 10 \log_{10}(N)
+\]
+
+where \(G_{\text{total}}\) is the total gain, \(G_{\text{single}}\) is the gain of a single antenna, and \(N\) is the number of antennas. For two antennas (\(N = 2\)):
+
+\[
+G_{\text{total}} = G_{\text{single}} + 10 \log_{10}(2) \approx G_{\text{single}} + 3 \text{ dB}
+\]
+
+This calculation shows that the gain of two antennas is approximately 3 dB higher than that of a single antenna. This is due to the coherent addition of the electromagnetic fields from both antennas, which results in a doubling of the power density in the direction of maximum radiation.
+
+% Diagram Prompt: Generate a diagram showing two Yagi antennas spaced vertically at \(\lambda/2\) and the resulting radiation pattern.

@@ -1,0 +1,31 @@
+\subsection{Common Mode for Voice Communications on Frequencies of 14 MHz or Higher}
+\label{G2A01}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A01]
+Which mode is most commonly used for voice communications on frequencies of 14 MHz or higher?
+\begin{enumerate}[label=\Alph*)]
+    \item \textbf{Upper sideband}
+    \item Lower sideband
+    \item Suppressed sideband
+    \item Double sideband
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to talk to your friend on a walkie-talkie, but instead of just one channel, there are two channels: one for higher-pitched sounds and one for lower-pitched sounds. On frequencies of 14 MHz or higher, people usually use the upper sideband mode, which is like choosing the higher-pitched channel. It's like picking the treble setting on your stereo to make your voice sound clearer and more distinct. So, when you're talking on these high frequencies, you want to use the upper sideband to make sure your voice comes through loud and clear!
+
+\subsubsection{Advanced Explanation}
+In radio communications, voice signals are typically transmitted using single sideband (SSB) modulation to save bandwidth and improve efficiency. SSB modulation removes one of the sidebands and the carrier wave, leaving either the upper sideband (USB) or the lower sideband (LSB). 
+
+For frequencies of 14 MHz and higher, the upper sideband is the standard mode for voice communications. This is because the upper sideband is less susceptible to certain types of interference and provides better signal clarity at these higher frequencies. 
+
+Mathematically, the SSB signal can be represented as:
+\[
+s(t) = A_c \cdot m(t) \cdot \cos(2\pi f_c t) \mp A_c \cdot \hat{m}(t) \cdot \sin(2\pi f_c t)
+\]
+where \( A_c \) is the amplitude of the carrier, \( m(t) \) is the message signal, \( f_c \) is the carrier frequency, and \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \). The upper sideband corresponds to the minus sign in the equation.
+
+Using the upper sideband for frequencies above 14 MHz is a convention established by the International Telecommunication Union (ITU) to ensure consistency and minimize interference in global communications.
+
+% Prompt for generating a diagram: 
+% Diagram showing the frequency spectrum of an SSB signal, highlighting the upper sideband and lower sideband, with the carrier frequency marked.

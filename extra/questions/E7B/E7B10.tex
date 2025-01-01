@@ -1,0 +1,31 @@
+\subsection{Discovering the Role of R1 and R2 in Figure E7-1!}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=E7B10] In Figure E7-1, what is the purpose of R1 and R2?
+    \begin{enumerate}[label=\Alph*)]
+        \item Load resistors
+        \item \textbf{Voltage divider bias}
+        \item Self bias
+        \item Feedback
+    \end{enumerate}
+\end{tcolorbox}
+
+\subsubsection*{Intuitive Explanation}
+Imagine you have a water pipe system where you want to control the flow of water to a specific level. R1 and R2 are like two valves that work together to adjust the water pressure (voltage) to just the right amount needed for the system to function properly. In Figure E7-1, R1 and R2 are used to create a voltage divider, which helps set the correct voltage level for the circuit to operate efficiently.
+
+\subsubsection*{Advanced Explanation}
+In the context of transistor biasing, R1 and R2 form a voltage divider network. The purpose of this network is to provide a stable DC bias voltage to the base of the transistor. The voltage at the base (\(V_B\)) can be calculated using the voltage divider formula:
+
+\[
+V_B = V_{CC} \times \frac{R2}{R1 + R2}
+\]
+
+Where:
+\begin{itemize}
+    \item \(V_{CC}\) is the supply voltage.
+    \item \(R1\) and \(R2\) are the resistances of the resistors.
+\end{itemize}
+
+This biasing method ensures that the transistor operates in the active region, providing a stable operating point. The voltage divider bias is preferred because it is less dependent on the transistor's parameters, making the circuit more predictable and stable.
+
+% Prompt for generating the diagram:
+% Include a diagram showing a transistor circuit with R1 and R2 connected in a voltage divider configuration, with labels for \(V_{CC}\), \(R1\), \(R2\), and the base of the transistor.

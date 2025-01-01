@@ -1,0 +1,32 @@
+\subsection{Which Mode of Voice Communication is Most Commonly Used on the HF Amateur Bands?}
+\label{G2A05}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A05]
+Which mode of voice communication is most commonly used on the HF amateur bands?
+\begin{enumerate}[label=\Alph*]
+    \item Frequency modulation
+    \item Double sideband
+    \item \textbf{Single sideband}
+    \item Single phase modulation
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to talk to your friend on a walkie-talkie, but you only have a limited amount of space to send your message. Single sideband (SSB) is like packing your voice into a smaller suitcase so it takes up less room. This way, more people can talk at the same time without their messages getting mixed up. It's the most popular way to chat on the HF bands because it's efficient and works well over long distances.
+
+\subsubsection{Advanced Explanation}
+Single sideband (SSB) modulation is a form of amplitude modulation (AM) where one sideband and the carrier are suppressed. This results in a more efficient use of bandwidth and power. The mathematical representation of an AM signal is:
+
+\[
+s(t) = A_c \left[1 + m(t)\right] \cos(2\pi f_c t)
+\]
+
+where \( A_c \) is the carrier amplitude, \( m(t) \) is the modulating signal, and \( f_c \) is the carrier frequency. In SSB, only one sideband is transmitted, which can be represented as:
+
+\[
+s_{\text{SSB}}(t) = \frac{A_c}{2} m(t) \cos(2\pi f_c t) \mp \frac{A_c}{2} \hat{m}(t) \sin(2\pi f_c t)
+\]
+
+where \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \). The choice of the upper or lower sideband depends on the application. SSB is preferred in HF amateur bands due to its bandwidth efficiency and better signal-to-noise ratio over long distances.
+
+% Prompt for generating a diagram: A diagram showing the frequency spectrum of AM and SSB signals would be helpful to visualize the difference in bandwidth usage.

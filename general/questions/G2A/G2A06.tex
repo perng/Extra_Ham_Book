@@ -1,0 +1,31 @@
+\subsection{Advantages of Single Sideband in HF Amateur Bands}
+\label{G2A06}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G2A06]
+Which of the following is an advantage of using single sideband, as compared to other analog voice modes on the HF amateur bands?
+\begin{enumerate}[label=\Alph*)]
+    \item Very high-fidelity voice modulation
+    \item Less subject to interference from atmospheric static crashes
+    \item Ease of tuning on receive and immunity to impulse noise
+    \item \textbf{Less bandwidth used and greater power efficiency}
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you're trying to send a message across a crowded room. If you shout the entire message, it takes up a lot of space and energy, and everyone gets annoyed. But if you whisper just the important parts, you save energy and space, and your message still gets through. Single Sideband (SSB) is like that whisper—it uses less bandwidth (space) and less power (energy) compared to other voice modes, making it more efficient for communication on the HF amateur bands.
+
+\subsubsection{Advanced Explanation}
+Single Sideband (SSB) modulation is a form of amplitude modulation (AM) where only one sideband (either the upper or lower) is transmitted, and the carrier wave is suppressed. This results in a significant reduction in bandwidth usage. For example, a typical AM signal occupies a bandwidth of twice the highest modulating frequency, whereas an SSB signal occupies only the bandwidth of the modulating signal itself.
+
+Mathematically, the bandwidth \( B \) of an AM signal is given by:
+\[ B_{\text{AM}} = 2f_m \]
+where \( f_m \) is the highest frequency of the modulating signal. For SSB, the bandwidth is:
+\[ B_{\text{SSB}} = f_m \]
+
+Additionally, SSB is more power-efficient because it does not transmit the carrier wave, which carries no information but consumes a significant portion of the transmitted power. The power efficiency \( \eta \) of SSB can be expressed as:
+\[ \eta_{\text{SSB}} = \frac{P_{\text{sideband}}}{P_{\text{total}}} \]
+where \( P_{\text{sideband}} \) is the power in the sideband and \( P_{\text{total}} \) is the total transmitted power. Since the carrier is suppressed, \( P_{\text{total}} \) is minimized, leading to higher efficiency.
+
+These advantages make SSB a preferred mode for voice communication in the HF amateur bands, where bandwidth and power are often limited resources.
+
+% Diagram Prompt: Generate a diagram comparing the bandwidth of AM and SSB signals, showing the carrier and sidebands.

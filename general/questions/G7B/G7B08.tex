@@ -1,0 +1,41 @@
+\subsection{Efficiency of an RF Power Amplifier}
+\label{G7B08}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=G7B08]
+How is the efficiency of an RF power amplifier determined?
+\begin{enumerate}[label=\Alph*)]
+    \item Divide the DC input power by the DC output power
+    \item \textbf{Divide the RF output power by the DC input power}
+    \item Multiply the RF input power by the reciprocal of the RF output power
+    \item Add the RF input power to the DC output power
+\end{enumerate}
+\end{tcolorbox}
+
+\subsubsection{Intuitive Explanation}
+Imagine you have a magical box that takes in some energy (let's call it DC input power) and spits out a different kind of energy (let's call it RF output power). The efficiency of this magical box is how much of the energy you put in actually comes out as useful energy. To find out how efficient your box is, you simply take the useful energy that comes out (RF output power) and divide it by the energy you put in (DC input power). The higher the number, the more efficient your box is!
+
+\subsubsection{Advanced Explanation}
+The efficiency (\(\eta\)) of an RF power amplifier is a measure of how effectively it converts DC input power (\(P_{\text{DC}}\)) into RF output power (\(P_{\text{RF}}\)). Mathematically, it is expressed as:
+
+\[
+\eta = \frac{P_{\text{RF}}}{P_{\text{DC}}}
+\]
+
+Where:
+\begin{itemize}
+    \item \(P_{\text{RF}}\) is the RF output power, typically measured in watts (W).
+    \item \(P_{\text{DC}}\) is the DC input power, also measured in watts (W).
+\end{itemize}
+
+The efficiency is a dimensionless number, often expressed as a percentage. For example, if an amplifier has an RF output power of 50 W and a DC input power of 100 W, the efficiency would be:
+
+\[
+\eta = \frac{50}{100} = 0.5 \quad \text{or} \quad 50\%
+\]
+
+This means that 50\% of the input power is converted into useful RF output power, while the remaining 50\% is lost as heat or other forms of energy.
+
+Understanding the efficiency of an RF power amplifier is crucial in designing systems where power consumption and heat dissipation are critical factors. High efficiency amplifiers are desirable in applications such as wireless communication, radar, and broadcasting, where minimizing power loss is essential.
+
+% Prompt for generating a diagram: 
+% Diagram showing the input and output power of an RF amplifier, with arrows indicating the flow of DC input power and RF output power, and a box labeled Efficiency showing the formula \(\eta = \frac{P_{\text{RF}}}{P_{\text{DC}}}\).
