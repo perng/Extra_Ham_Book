@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9A05]
 Which of the following increases the resonant frequency of a dipole antenna?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Lengthening it
     \item Inserting coils in series with radiating wires
     \item \textbf{Shortening it}
@@ -11,24 +11,12 @@ Which of the following increases the resonant frequency of a dipole antenna?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine a dipole antenna as a jump rope. The longer the rope, the slower it swings back and forth. Similarly, a longer antenna has a lower resonant frequency. If you want the rope to swing faster (higher frequency), you need to make it shorter. So, shortening the dipole antenna increases its resonant frequency. It's like cutting the jump rope to make it swing faster!
+\subsubsection*{Intuitive Explanation}
+Think of a dipole antenna like a swing. The longer the swing, the slower it moves back and forth (lower frequency). If you make the swing shorter, it moves faster (higher frequency). Similarly, shortening a dipole antenna increases its resonant frequency.
 
-\subsubsection{Advanced Explanation}
-The resonant frequency \( f \) of a dipole antenna is inversely proportional to its length \( L \). The relationship can be expressed as:
+\subsubsection*{Advanced Explanation}
+The resonant frequency of a dipole antenna is inversely proportional to its length. This relationship is derived from the fundamental principles of antenna theory, where the antenna's length is typically half the wavelength of the operating frequency. Mathematically, the resonant frequency \( f \) can be expressed as:
 
-\[
-f \propto \frac{1}{L}
-\]
+\[ f = \frac{c}{2L} \]
 
-This means that as the length of the antenna decreases, the resonant frequency increases. The exact resonant frequency can be calculated using the formula:
-
-\[
-f = \frac{c}{2L}
-\]
-
-where \( c \) is the speed of light (\( 3 \times 10^8 \) m/s). For example, if the length of the antenna is halved, the resonant frequency doubles. 
-
-Adding coils in series with the radiating wires (choice B) increases the inductance, which lowers the resonant frequency. Adding capacitive loading to the ends of the radiating wires (choice D) increases the capacitance, which also lowers the resonant frequency. Therefore, the only way to increase the resonant frequency is to shorten the antenna (choice C).
-
-% Diagram prompt: Generate a diagram showing the relationship between the length of a dipole antenna and its resonant frequency, with a shorter antenna labeled as having a higher frequency and a longer antenna labeled as having a lower frequency.
+where \( c \) is the speed of light and \( L \) is the length of the antenna. Therefore, shortening the antenna \( L \) increases the resonant frequency \( f \). Adding coils or capacitive loading generally lowers the resonant frequency, as these components increase the effective electrical length of the antenna.

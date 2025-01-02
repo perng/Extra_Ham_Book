@@ -1,8 +1,9 @@
-\subsection{Bandwidth of a Single Sideband (SSB) Voice Signal}\label{T8A08}
+\subsection{Bandwidth of a Single Sideband (SSB) Voice Signal}
+\label{T8A08}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A08]
 What is the approximate bandwidth of a typical single sideband (SSB) voice signal?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item 1 kHz
     \item \textbf{3 kHz}
     \item 6 kHz
@@ -11,19 +12,9 @@ What is the approximate bandwidth of a typical single sideband (SSB) voice signa
 \end{tcolorbox}
 
 \subsubsection*{Intuitive Explanation}
-Imagine you're talking to your friend on a walkie-talkie. The sound of your voice doesn't take up a lot of space in the airwaves. In fact, it only needs about 3 kHz of room to travel through. This is like saying your voice fits into a small lane on a highway, while other signals might need a bigger lane. Single Sideband (SSB) is a clever way to make sure your voice gets through clearly without taking up too much space.
+Imagine you're talking on a walkie-talkie. The sound of your voice gets converted into a radio signal, but instead of sending the entire signal, which would take up a lot of space, we only send one side of it. This is called Single Sideband (SSB). The bandwidth is like the width of the signal, and for a typical SSB voice signal, it's about 3 kHz. This is enough to carry the important parts of your voice without wasting space.
 
 \subsubsection*{Advanced Explanation}
-The bandwidth of a signal is the range of frequencies it occupies. For a typical human voice, the frequency range is approximately 300 Hz to 3 kHz. In Single Sideband (SSB) modulation, only one sideband (either the upper or lower) is transmitted, along with the carrier frequency suppressed. This reduces the bandwidth required compared to other modulation techniques like AM (Amplitude Modulation).
+Single Sideband (SSB) modulation is a technique used in radio communications to transmit voice signals efficiently. In SSB, only one sideband (either the upper or lower) is transmitted, along with the carrier signal suppressed. This reduces the bandwidth required for transmission. The bandwidth of a typical SSB voice signal is approximately 3 kHz. This is because the human voice contains frequencies primarily in the range of 300 Hz to 3 kHz. By transmitting only one sideband, the bandwidth is effectively halved compared to double sideband (DSB) transmission, making SSB a more efficient use of the radio spectrum.
 
-The bandwidth of an SSB signal is approximately equal to the highest frequency component of the modulating signal. For a typical voice signal, this is around 3 kHz. Mathematically, if the voice signal has a frequency range from \( f_{\text{min}} \) to \( f_{\text{max}} \), the bandwidth \( B \) is given by:
-\[
-B = f_{\text{max}} - f_{\text{min}}
-\]
-For a typical voice signal:
-\[
-B = 3\, \text{kHz} - 300\, \text{Hz} = 2.7\, \text{kHz} \approx 3\, \text{kHz}
-\]
-Thus, the approximate bandwidth of a typical SSB voice signal is 3 kHz.
-
-% Diagram prompt: Generate a diagram showing the frequency spectrum of an SSB signal compared to an AM signal, highlighting the bandwidth difference.
+% Diagram prompt: Generate a frequency spectrum diagram showing the bandwidth of a typical SSB voice signal. Use Python with Matplotlib to plot the frequency range from 0 Hz to 4 kHz, highlighting the 3 kHz bandwidth of the SSB signal.

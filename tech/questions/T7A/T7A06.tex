@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7A06]
 What device converts the RF input and output of a transceiver to another band?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item High-pass filter
     \item Low-pass filter
     \item \textbf{Transverter}
@@ -11,20 +11,8 @@ What device converts the RF input and output of a transceiver to another band?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a radio that only plays music from one station, but you want to listen to another station that’s on a different frequency. You need a magical box that can take the signal from your radio and change it to the frequency of the station you want to hear. That magical box is called a \textbf{transverter}. It’s like a translator for radio waves, helping your radio talk to different stations!
+\subsubsection*{Intuitive Explanation}
+Imagine you have a radio that only works on one frequency band, but you want to talk on a different band. A transverter is like a magical translator that takes the signals from your radio and converts them to the new band you want to use. It’s like changing the channel on your TV to watch a different show!
 
-\subsubsection{Advanced Explanation}
-A \textbf{transverter} is a device used in radio communication to convert the frequency of a signal from one band to another. It typically consists of a mixer, local oscillator, and filters. The mixer combines the input signal with the local oscillator signal to produce sum and difference frequencies. The desired frequency is then selected using filters.
-
-For example, if a transceiver operates at 144 MHz (2-meter band) and you want to convert it to 432 MHz (70-centimeter band), the transverter will use a local oscillator to shift the frequency. The mathematical operation can be represented as:
-
-\[
-f_{\text{output}} = f_{\text{input}} \pm f_{\text{LO}}
-\]
-
-where \( f_{\text{input}} \) is the input frequency, \( f_{\text{LO}} \) is the local oscillator frequency, and \( f_{\text{output}} \) is the desired output frequency. The choice of addition or subtraction depends on the specific design of the transverter.
-
-Transverters are essential in amateur radio for operating on bands that are not directly supported by the transceiver. They allow for greater flexibility and access to a wider range of frequencies.
-
-% Diagram Prompt: Generate a diagram showing the block diagram of a transverter, including the mixer, local oscillator, and filters.
+\subsubsection*{Advanced Explanation}
+A transverter is a device used in radio communications to convert the frequency of a transceiver's RF input and output to another band. This is particularly useful when a transceiver is designed to operate on a specific frequency range, but the operator wishes to communicate on a different band. The transverter typically consists of a mixer, local oscillator, and filters to achieve the frequency conversion. For example, if a transceiver operates on the 2-meter band (144-148 MHz) and the operator wants to communicate on the 70-centimeter band (420-450 MHz), the transverter will shift the frequency accordingly. This allows for greater flexibility in communication without needing multiple transceivers.

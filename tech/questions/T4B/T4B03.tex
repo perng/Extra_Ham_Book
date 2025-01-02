@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B03]
 How is squelch adjusted so that a weak FM signal can be heard?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Set the squelch threshold so that receiver output audio is on all the time}
     \item Turn up the audio level until it overcomes the squelch threshold
     \item Turn on the anti-squelch function
@@ -11,16 +11,4 @@ How is squelch adjusted so that a weak FM signal can be heard?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine squelch as a bouncer at a club. If the bouncer is too strict (high squelch threshold), only the loudest and strongest signals (people) get in. But if you want to hear even the quiet whispers (weak signals), you need to tell the bouncer to let everyone in, no matter how soft they speak. That’s what setting the squelch threshold low does—it keeps the audio on all the time, so even the faintest signals can be heard.
-
-\subsubsection{Advanced Explanation}
-Squelch is a circuit in FM receivers that mutes the audio output when the received signal strength falls below a certain threshold. This prevents the listener from hearing noise when no signal is present. To hear a weak FM signal, the squelch threshold must be set low enough so that the receiver’s audio output remains active even when the signal is weak. 
-
-Mathematically, the squelch threshold \( S_{\text{th}} \) is compared to the received signal strength \( S_{\text{rx}} \). If \( S_{\text{rx}} \geq S_{\text{th}} \), the audio is unmuted. For weak signals, \( S_{\text{th}} \) must be reduced to ensure \( S_{\text{rx}} \geq S_{\text{th}} \). This can be expressed as:
-
-\[ S_{\text{th}} \leq S_{\text{rx}} \]
-
-By setting \( S_{\text{th}} \) to a very low value, the receiver’s audio output remains on, allowing weak signals to be heard. This is particularly useful in scenarios where the signal strength fluctuates or is inherently weak.
-
-% Prompt for diagram: A diagram showing the relationship between signal strength and squelch threshold, with a visual representation of how lowering the squelch threshold allows weak signals to be heard.
+To hear a weak FM signal, the squelch threshold should be set so that the receiver's output audio is always on. This ensures that even weak signals are not muted by the squelch circuit.

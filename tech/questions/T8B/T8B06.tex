@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B06]
 Which of the following are inputs to a satellite tracking program?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item The satellite transmitted power
     \item \textbf{The Keplerian elements}
     \item The last observed time of zero Doppler shift
@@ -11,19 +11,8 @@ Which of the following are inputs to a satellite tracking program?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re trying to find your friend in a huge park. You need to know where they are, right? Well, satellites are like your friends in space, and to find them, we need some special information. The Keplerian elements are like a treasure map that tells us exactly where the satellite is and where it’s going. Without this map, we’d be lost in space! So, when a satellite tracking program wants to find a satellite, it needs the Keplerian elements as its main input. The other options, like the satellite’s power or the last time it was seen, aren’t as helpful for tracking.
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to track a friend's car using a GPS app. To know where the car is, you need some key information like its current location, speed, and direction. Similarly, a satellite tracking program needs specific data to predict where a satellite will be at any given time. The Keplerian elements are like the GPS coordinates for satellites—they provide the necessary orbital information to track them accurately.
 
-\subsubsection{Advanced Explanation}
-Satellite tracking programs rely on precise orbital data to predict the position of a satellite at any given time. The Keplerian elements, also known as orbital elements, are a set of six parameters that define the orbit of a satellite around a celestial body. These elements include:
-
-1. Semi-major axis ($a$): Defines the size of the orbit.
-2. Eccentricity ($e$): Describes the shape of the orbit.
-3. Inclination ($i$): The tilt of the orbit relative to the reference plane.
-4. Right ascension of the ascending node ($\Omega$): The orientation of the orbit in space.
-5. Argument of periapsis ($\omega$): The orientation of the orbit’s closest point to the body.
-6. Mean anomaly ($M$): The position of the satellite along the orbit at a specific time.
-
-These elements are derived from observations and are essential for calculating the satellite’s position using Kepler’s laws of planetary motion. The other options, such as the satellite’s transmitted power or the last observed time of zero Doppler shift, do not provide the necessary information for accurate tracking.
-
-% Diagram prompt: Generate a diagram showing the six Keplerian elements in a satellite orbit.
+\subsubsection*{Advanced Explanation}
+The Keplerian elements are a set of six parameters that define the orbit of a satellite. These elements include the semi-major axis, eccentricity, inclination, right ascension of the ascending node, argument of periapsis, and mean anomaly. These parameters allow the tracking program to calculate the satellite's position and velocity at any point in time. The satellite's transmitted power and the last observed time of zero Doppler shift are not used as inputs for tracking; instead, they are related to signal reception and Doppler effect analysis, respectively. Therefore, the correct input for a satellite tracking program is the Keplerian elements.

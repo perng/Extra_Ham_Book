@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3A07]
 What weather condition might decrease range at microwave frequencies?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item High winds
     \item Low barometric pressure
     \item \textbf{Precipitation}
@@ -11,32 +11,8 @@ What weather condition might decrease range at microwave frequencies?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to throw a ball through a rainstorm. The rain makes it harder for the ball to go far, right? Similarly, when microwaves (which are like invisible balls of energy) travel through rain, snow, or any kind of precipitation, they get slowed down or scattered. This makes it harder for them to reach as far as they would on a clear day. So, precipitation is like the rainstorm for microwaves, reducing their range.
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to shout across a field. If it starts raining heavily, your voice won't carry as far because the rain absorbs and scatters the sound waves. Similarly, at microwave frequencies, precipitation like rain or snow can absorb and scatter the radio waves, reducing their range.
 
-\subsubsection{Advanced Explanation}
-Microwave frequencies are typically in the range of 1 GHz to 300 GHz. When microwaves propagate through the atmosphere, they can be attenuated by various factors, including precipitation. Precipitation, such as rain, snow, or fog, consists of water droplets or ice particles that can absorb and scatter microwave signals. The attenuation caused by precipitation is primarily due to the absorption of microwave energy by the water molecules and the scattering of the waves by the particles.
-
-The attenuation \( A \) in dB/km due to rain can be approximated by the following empirical formula:
-
-\[
-A = aR^b
-\]
-
-where:
-\begin{itemize}
-    \item \( R \) is the rainfall rate in mm/h,
-    \item \( a \) and \( b \) are coefficients that depend on the frequency and polarization of the microwave signal.
-\end{itemize}
-
-For example, at a frequency of 10 GHz, typical values might be \( a = 0.03 \) and \( b = 1.2 \). If the rainfall rate \( R \) is 10 mm/h, the attenuation \( A \) would be:
-
-\[
-A = 0.03 \times 10^{1.2} \approx 0.03 \times 15.85 \approx 0.475 \text{ dB/km}
-\]
-
-This means that for every kilometer the microwave signal travels through this rain, it loses approximately 0.475 dB of power. Over long distances, this attenuation can significantly reduce the effective range of the microwave communication link.
-
-Other weather conditions like high winds, low barometric pressure, or colder temperatures generally have a much smaller impact on microwave propagation compared to precipitation. Therefore, precipitation is the most significant weather condition that decreases the range at microwave frequencies.
-
-% Diagram Prompt: Generate a diagram showing the attenuation of microwave signals as they pass through different types of precipitation (rain, snow, fog) compared to clear weather.
+\subsubsection*{Advanced Explanation}
+Microwave frequencies are particularly susceptible to attenuation caused by precipitation. When radio waves encounter rain, snow, or other forms of precipitation, the water droplets or ice particles absorb and scatter the energy of the waves. This phenomenon is known as rain fade and is a significant factor in the degradation of signal strength over distance. The higher the frequency, the more pronounced this effect becomes. Therefore, precipitation is the weather condition most likely to decrease the range at microwave frequencies.

@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A02]
 What type of modulation is commonly used for VHF packet radio transmissions?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{FM or PM}
     \item SSB
     \item AM
@@ -12,19 +12,7 @@ What type of modulation is commonly used for VHF packet radio transmissions?
 \end{tcolorbox}
 
 \subsubsection*{Intuitive Explanation}
-Imagine you're trying to send a secret message to your friend using a flashlight. You could flick the light on and off really fast (that's like AM), or you could change how bright the light is (that's like FM or PM). For VHF packet radio, we usually change how bright the light is, because it works better over long distances and through obstacles like buildings. So, FM or PM is the way to go!
+Think of VHF packet radio like a conversation between two people. To make sure the message gets through clearly, you need a reliable way to send it. FM (Frequency Modulation) and PM (Phase Modulation) are like speaking in a steady, clear voice—they’re great for keeping the message intact over short to medium distances. That’s why they’re commonly used for VHF packet radio transmissions.
 
 \subsubsection*{Advanced Explanation}
-VHF (Very High Frequency) packet radio transmissions typically use Frequency Modulation (FM) or Phase Modulation (PM) because these modulation techniques are more resistant to noise and interference compared to Amplitude Modulation (AM). FM and PM work by varying the frequency or phase of the carrier wave, respectively, in response to the information signal. This makes them more suitable for the VHF band, where signal integrity is crucial.
-
-Mathematically, for FM, the instantaneous frequency \( f(t) \) of the carrier wave is given by:
-\[ f(t) = f_c + k_f \cdot m(t) \]
-where \( f_c \) is the carrier frequency, \( k_f \) is the frequency deviation constant, and \( m(t) \) is the modulating signal.
-
-For PM, the instantaneous phase \( \phi(t) \) of the carrier wave is:
-\[ \phi(t) = \phi_c + k_p \cdot m(t) \]
-where \( \phi_c \) is the initial phase, \( k_p \) is the phase deviation constant, and \( m(t) \) is the modulating signal.
-
-These modulation techniques ensure that the transmitted signal remains robust even in the presence of noise, making them ideal for VHF packet radio communications.
-
-% Diagram prompt: Generate a diagram showing the difference between FM, PM, and AM signals.
+VHF (Very High Frequency) packet radio typically operates in the 144-148 MHz range. FM and PM are preferred for VHF packet radio because they are robust against noise and interference, which is crucial for maintaining data integrity over these frequencies. FM modulates the frequency of the carrier wave, while PM modulates the phase. Both methods are effective for digital data transmission, ensuring that the signal remains clear and stable even in less-than-ideal conditions.

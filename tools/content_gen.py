@@ -55,15 +55,17 @@ for chapter in data:
             then add a label to the subsection, it should be the question id.
             then generate the multiple choice questions in a shaded box using
             '\\begin{{tcolorbox}}[colback=gray!10!white,colframe=black!75!black,title={question_id}]'
-            then the question text, then enumerate the choices. 
+            then the question text, then enumerate (with noitemsep) the choices. 
             Mark the correct answer with bold. End with '\\end{{tcolorbox}}'.
-            The next subsubsection is "Intuitive Explanation" this would explain the question with humor as if the reader is a middle school student, 
-            simplify the question and explain the concept in a way that is easy to understand.
-            The next subsubsection is "Advanced Explanation" this would explain the related concepts and concepts required to answer the question in more detail and more mathematically.
-            If calculation is required, show the calculation step by step. If math would not help much in explaining the question, don't show it.
-            Then elaborate on the related concepts and concepts required to answer the question. 
             
-            If diagrams are better for explanation, a prompt for generating the diagram as comment in the end of the output.
+            If the question is easy to understand with simple explanation, just explain it briefly, most regulation questions are easy to understand.
+            If the question requires more technical explanation, then first add a subsubsection "Intuitive Explanation" this would explain the question with humor as if the reader is a high school student, 
+            simplify the question and explain the concept in a way that is easy to understand, then follow by a 
+            subsubsection  "Advanced Explanation" this would explain the related concepts and concepts required to answer the question in more detail. In this section 
+            if calculation is required, show the calculation step by step. If math would not help much in explaining the question, don't show it. It's ok to keep the text short but do elaborate on the related concepts and concepts required to answer the question. 
+            
+            If diagrams are better for explanation, a detailed prompt for generating the diagram as comment in the 
+            end of the output. The prompt should include the instructions on what format to use (gnuplot, octave, matlab, Graphviz, python, SVG, etc.)
 
             Make sure the entire content is in LaTeX syntax, do not use Markdown or any other formatting. Do not use "**" for bold. 
             Make sure greek letters are in LaTeX syntax.

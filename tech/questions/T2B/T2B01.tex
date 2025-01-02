@@ -1,9 +1,9 @@
-\subsection{Understanding the VHF/UHF Transceiver’s “Reverse” Function}
+\subsection{Using a VHF/UHF Transceiver's Reverse Function}
 \label{T2B01}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B01]
 How is a VHF/UHF transceiver’s “reverse” function used?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item To reduce power output
     \item To increase power output
     \item \textbf{To listen on a repeater’s input frequency}
@@ -11,16 +11,5 @@ How is a VHF/UHF transceiver’s “reverse” function used?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re at a party, and there’s a loudspeaker (the repeater) that’s repeating everything someone says into a microphone (the input frequency). Now, you want to hear what the person is saying directly, not just the loudspeaker’s version. The “reverse” function on your radio is like turning your ear towards the microphone instead of the loudspeaker. It lets you listen to the original message before it gets repeated. Cool, right?
-
-\subsubsection{Advanced Explanation}
-In VHF/UHF communication, repeaters are used to extend the range of communication by receiving signals on one frequency (the input frequency) and retransmitting them on another frequency (the output frequency). The “reverse” function on a transceiver allows the operator to switch from listening to the repeater’s output frequency to listening to the repeater’s input frequency. This is particularly useful for monitoring the direct transmission from another station without the repeater’s interference or for checking the quality of the signal being sent to the repeater.
-
-Mathematically, if the repeater’s input frequency is \( f_{\text{in}} \) and the output frequency is \( f_{\text{out}} \), the “reverse” function shifts the receiver’s tuning from \( f_{\text{out}} \) to \( f_{\text{in}} \). This can be represented as:
-\[
-f_{\text{receive}} = f_{\text{in}}
-\]
-This function is essential for troubleshooting and ensuring that the signal being sent to the repeater is clear and strong.
-
-% Prompt for generating a diagram: A diagram showing a repeater system with input and output frequencies, and a transceiver switching between them using the reverse function.
+\subsubsection*{Explanation}
+The reverse function on a VHF/UHF transceiver is used to switch the listening frequency from the repeater's output frequency to its input frequency. This allows the operator to hear the signals being transmitted directly to the repeater, rather than the signals being retransmitted by the repeater. This can be useful for monitoring the quality of the signal being sent to the repeater or for troubleshooting communication issues.

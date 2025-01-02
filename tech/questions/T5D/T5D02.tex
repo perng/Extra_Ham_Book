@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5D02]
 What formula is used to calculate voltage in a circuit?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{E = I x R}
     \item E = I / R
     \item E = I + R
@@ -12,23 +12,20 @@ What formula is used to calculate voltage in a circuit?
 \end{tcolorbox}
 
 \subsubsection{Intuitive Explanation}
-Imagine you're trying to push a toy car across the floor. The harder you push (that's the current, I), and the more friction there is (that's the resistance, R), the more effort you need to use (that's the voltage, E). So, the voltage is like the effort you need to push the car, and it’s calculated by multiplying how hard you push by how much friction there is. That’s why the formula is E = I x R!
+Imagine you have a water hose. The water flow (current, I) is like the amount of water coming out of the hose. The resistance (R) is like the narrowness of the hose. The voltage (E) is the pressure pushing the water through the hose. To find out how much pressure is needed to push a certain amount of water through a hose of a certain narrowness, you multiply the water flow by the narrowness. That's why the formula is E = I x R.
 
 \subsubsection{Advanced Explanation}
-In electrical circuits, voltage (E) is the potential difference that drives the flow of electric current (I) through a conductor. The relationship between voltage, current, and resistance (R) is described by Ohm's Law, which states:
+In electrical circuits, voltage (E) is the potential difference that drives the current (I) through a resistance (R). Ohm's Law, which is fundamental in electrical engineering, states that the voltage across a conductor is directly proportional to the current flowing through it, provided the temperature remains constant. The mathematical representation of Ohm's Law is:
 
 \[
 E = I \times R
 \]
 
-Here, \(E\) is the voltage in volts (V), \(I\) is the current in amperes (A), and \(R\) is the resistance in ohms (\(\Omega\)). This formula is fundamental in circuit analysis and is used to determine the voltage across a component when the current and resistance are known.
+Where:
+\begin{itemize}
+    \item \( E \) is the voltage in volts (V),
+    \item \( I \) is the current in amperes (A),
+    \item \( R \) is the resistance in ohms ($\Omega$).
+\end{itemize}
 
-For example, if a circuit has a current of 2 A and a resistance of 3 \(\Omega\), the voltage can be calculated as:
-
-\[
-E = 2 \, \text{A} \times 3 \, \Omega = 6 \, \text{V}
-\]
-
-Ohm's Law is essential for understanding how electrical circuits behave and is widely used in designing and analyzing electronic systems.
-
-% Prompt for generating a diagram: A simple circuit diagram showing a voltage source, a resistor, and the current flow, labeled with E, I, and R.
+This formula is essential for calculating the voltage in a circuit when the current and resistance are known. It is widely used in designing and analyzing electrical circuits.

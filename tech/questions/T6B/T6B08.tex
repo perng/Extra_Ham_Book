@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T6B08]
 What does the abbreviation FET stand for?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Frequency Emission Transmitter
     \item Fast Electron Transistor
     \item Free Electron Transmitter
@@ -11,25 +11,4 @@ What does the abbreviation FET stand for?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a magical gatekeeper that controls the flow of tiny electric particles (electrons) through a path. This gatekeeper doesn’t need to touch the particles directly; instead, it uses an invisible force field to manage the flow. That’s what a Field Effect Transistor (FET) does! It’s like a traffic cop for electrons, using an electric field to decide how many electrons can pass through. So, FET stands for Field Effect Transistor—a fancy name for this electron traffic controller.
-
-\subsubsection{Advanced Explanation}
-A Field Effect Transistor (FET) is a type of transistor that relies on an electric field to control the flow of current. It has three terminals: the source, the drain, and the gate. The gate terminal creates an electric field that modulates the conductivity of a channel between the source and the drain. FETs are widely used in electronic devices due to their high input impedance and low power consumption. 
-
-The operation of an FET can be described by the following key equations:
-
-1. \textbf{Drain Current (\(I_D\))}: The current flowing from the drain to the source is given by:
-   \[
-   I_D = \mu_n C_{ox} \frac{W}{L} \left( (V_{GS} - V_{th})V_{DS} - \frac{V_{DS}^2}{2} \right)
-   \]
-   where \(\mu_n\) is the electron mobility, \(C_{ox}\) is the oxide capacitance per unit area, \(W\) and \(L\) are the width and length of the channel, \(V_{GS}\) is the gate-to-source voltage, \(V_{th}\) is the threshold voltage, and \(V_{DS}\) is the drain-to-source voltage.
-
-2. \textbf{Transconductance (\(g_m\))}: The transconductance, which measures the change in drain current with respect to the gate-to-source voltage, is given by:
-   \[
-   g_m = \mu_n C_{ox} \frac{W}{L} V_{DS}
-   \]
-
-FETs are essential components in amplifiers, switches, and other electronic circuits due to their ability to control current with minimal input power. Understanding the principles behind FETs is crucial for designing and analyzing modern electronic systems.
-
-% Prompt for generating a diagram: Illustrate the structure of an FET showing the source, drain, and gate terminals, along with the electric field controlling the channel.
+The abbreviation FET stands for \textbf{Field Effect Transistor}. This is a type of transistor that uses an electric field to control the flow of current. It is widely used in electronic devices for amplification and switching purposes.

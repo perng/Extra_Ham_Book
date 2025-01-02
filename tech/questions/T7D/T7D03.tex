@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7D03]
 When configured to measure current, how is a multimeter connected to a component?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{In series}
     \item In parallel
     \item In quadrature
@@ -11,22 +11,4 @@ When configured to measure current, how is a multimeter connected to a component
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to count how many cars are passing through a single-lane road. To get an accurate count, you’d need to be right in the middle of the road, counting each car as it goes by. Similarly, when you want to measure the current flowing through a component, you need to place the multimeter directly in the path of the current, like a toll booth on a highway. This is called connecting the multimeter in series. If you tried to count cars from the side of the road (in parallel), you’d miss some cars, and your count would be wrong!
-
-\subsubsection{Advanced Explanation}
-When measuring current, a multimeter must be connected in series with the component to ensure that the same current flows through both the component and the meter. This is because current is the flow of electric charge, and in a series circuit, the current is constant throughout. 
-
-Mathematically, the current \( I \) in a circuit is given by Ohm's Law:
-\[
-I = \frac{V}{R}
-\]
-where \( V \) is the voltage and \( R \) is the resistance. When the multimeter is connected in series, it introduces a small additional resistance \( R_m \) into the circuit. The total resistance becomes \( R + R_m \), and the current through the circuit is:
-\[
-I = \frac{V}{R + R_m}
-\]
-Since \( R_m \) is typically very small, the current remains approximately the same as it would be without the multimeter.
-
-Connecting the multimeter in parallel would create a separate path for the current, effectively bypassing the component and leading to an incorrect measurement. The concepts of quadrature and phase are related to alternating current (AC) and are not relevant to the basic configuration of a multimeter for current measurement.
-
-% Diagram Prompt: Generate a diagram showing a simple circuit with a component and a multimeter connected in series to measure current.
+To measure current, a multimeter must be connected in series with the component. This allows the current to flow through the multimeter, enabling it to measure the current accurately. Connecting it in parallel would measure voltage instead, and the other options are not relevant to current measurement.

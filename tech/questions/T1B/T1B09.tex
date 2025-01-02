@@ -1,9 +1,9 @@
-\subsection{Why Not Set Transmit Frequency at the Edge of an Amateur Band or Sub-Band?}
+\subsection{Transmit Frequency Placement}
 \label{T1B09}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T1B09]
 Why should you not set your transmit frequency to be exactly at the edge of an amateur band or sub-band?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[label=\Alph*,noitemsep]
     \item To allow for calibration error in the transmitter frequency display
     \item So that modulation sidebands do not extend beyond the band edge
     \item To allow for transmitter frequency drift
@@ -11,23 +11,14 @@ Why should you not set your transmit frequency to be exactly at the edge of an a
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're playing a game where you have to stay inside a circle. If you stand right on the edge, even a tiny step could make you step out of the circle. Similarly, if you set your radio transmitter right at the edge of a frequency band, even a small error or drift could make your signal go outside the allowed range. This could cause interference with other signals or even get you in trouble with the rules. So, it's better to stay a little inside the circle to avoid any mishaps!
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to park your car right at the edge of a parking spot. If you're even a tiny bit off, you might end up in the next spot or even outside the parking area. Similarly, setting your transmit frequency exactly at the edge of a band is risky because small errors or changes can push your signal outside the allowed range, causing interference or violating regulations.
 
-\subsubsection{Advanced Explanation}
-When transmitting radio signals, several factors can cause the actual frequency to deviate from the set frequency:
-
-1. \textbf{Calibration Error}: The frequency display on your transmitter might not be perfectly accurate. If you set the frequency exactly at the band edge, a calibration error could push your signal outside the allowed range.
-
-2. \textbf{Modulation Sidebands}: When you modulate a signal (e.g., AM or FM), sidebands are created around the carrier frequency. If the carrier is at the band edge, these sidebands can extend beyond the band, causing interference with adjacent bands.
-
-3. \textbf{Frequency Drift}: Transmitters can experience frequency drift due to temperature changes or component aging. Setting the frequency slightly inside the band ensures that drift does not push the signal out of the allowed range.
-
-Mathematically, if \( f_c \) is the carrier frequency and \( \Delta f \) is the maximum possible deviation due to any of the above factors, the transmitted frequency \( f_t \) can be expressed as:
-\[ f_t = f_c \pm \Delta f \]
-To ensure \( f_t \) remains within the band, \( f_c \) should be set such that:
-\[ f_c - \Delta f \geq f_{\text{lower}} \]
-\[ f_c + \Delta f \leq f_{\text{upper}} \]
-where \( f_{\text{lower}} \) and \( f_{\text{upper}} \) are the lower and upper limits of the band, respectively.
-
-% Diagram prompt: A diagram showing a frequency band with the carrier frequency set slightly inside the band, and the potential deviations due to calibration error, modulation sidebands, and frequency drift.
+\subsubsection*{Advanced Explanation}
+When transmitting, several factors can affect the exact frequency of your signal:
+\begin{itemize}
+    \item \textbf{Calibration Error}: The frequency display on your transmitter might not be perfectly accurate. Even a small error can push your signal out of the allowed band.
+    \item \textbf{Modulation Sidebands}: When you modulate your signal (e.g., with voice or data), sidebands are created. These sidebands extend beyond your carrier frequency, and if your carrier is at the edge, the sidebands can spill over into adjacent bands.
+    \item \textbf{Frequency Drift}: Transmitters can experience frequency drift due to temperature changes or component aging. This drift can move your signal out of the allowed band if it's initially set too close to the edge.
+\end{itemize}
+Therefore, it's prudent to set your transmit frequency slightly inside the band edge to account for these potential issues.

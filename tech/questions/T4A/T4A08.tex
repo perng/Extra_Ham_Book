@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4A08]
 Which of the following conductors is preferred for bonding at RF?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Copper braid removed from coaxial cable
     \item Steel wire
     \item Twisted-pair cable
@@ -11,22 +11,8 @@ Which of the following conductors is preferred for bonding at RF?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to connect two pieces of metal together so that electricity can flow smoothly between them, especially when dealing with radio waves. You wouldn't use a flimsy piece of string or a rusty nail, right? Instead, you'd want something sturdy and efficient, like a flat, wide strip of copper. This is because copper is an excellent conductor of electricity, and the flat shape helps spread the current evenly, reducing resistance and making the connection more reliable. So, when it comes to bonding at RF (radio frequencies), the flat copper strap is your best bet!
+\subsubsection*{Intuitive Explanation}
+When dealing with RF (Radio Frequency) bonding, you want a conductor that can handle high frequencies efficiently. Think of it like choosing the right hose for watering your garden. A flat, wide hose (like a flat copper strap) will allow water (or in this case, RF signals) to flow smoothly without any kinks or resistance. On the other hand, a twisted hose (like twisted-pair cable) or a rusty hose (like steel wire) would cause problems. Copper braid might seem like a good option, but it’s not as effective as a flat copper strap for RF bonding.
 
-\subsubsection{Advanced Explanation}
-In RF bonding, the goal is to minimize impedance and ensure a low-resistance path for the RF current. The choice of conductor is crucial because different materials and shapes affect the electrical properties differently.
-
-1. \textbf{Material Conductivity}: Copper is highly conductive, with a conductivity of approximately \(5.96 \times 10^7 \, \text{S/m}\). Steel, on the other hand, has a much lower conductivity, around \(1.45 \times 10^7 \, \text{S/m}\). This makes copper a superior choice for RF bonding.
-
-2. \textbf{Shape and Surface Area}: The flat copper strap provides a large surface area, which reduces the skin effect at high frequencies. The skin effect causes the RF current to flow predominantly on the surface of the conductor. A flat strap minimizes this effect compared to a round wire or braid.
-
-3. \textbf{Inductance}: The inductance of a conductor is lower for a flat strap than for a round wire or braid. Lower inductance is desirable in RF circuits to prevent unwanted impedance and signal loss.
-
-Mathematically, the resistance \(R\) of a conductor can be approximated by:
-\[ R = \frac{\rho \cdot l}{A} \]
-where \(\rho\) is the resistivity, \(l\) is the length, and \(A\) is the cross-sectional area. For a flat strap, \(A\) is larger, leading to lower resistance.
-
-In summary, the flat copper strap is preferred for RF bonding due to its high conductivity, large surface area, and low inductance, all of which contribute to efficient RF current flow.
-
-% Prompt for generating a diagram: Create a diagram comparing the cross-sectional areas of a flat copper strap, copper braid, steel wire, and twisted-pair cable to illustrate their effectiveness in RF bonding.
+\subsubsection*{Advanced Explanation}
+In RF systems, bonding conductors are used to ensure a low-impedance path for RF currents. The choice of conductor is critical to minimize losses and avoid interference. A flat copper strap is preferred because it provides a large surface area, which reduces skin effect—a phenomenon where RF currents tend to flow on the surface of the conductor. This large surface area also helps in reducing inductance, which is crucial for maintaining a low impedance at high frequencies. Copper braid, while conductive, does not offer the same surface area and can introduce additional inductance. Steel wire is not ideal due to its higher resistance and lower conductivity compared to copper. Twisted-pair cable is designed for differential signaling and is not suitable for RF bonding. Therefore, the flat copper strap is the best choice for effective RF bonding.

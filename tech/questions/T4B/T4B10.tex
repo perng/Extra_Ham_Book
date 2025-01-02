@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B10]
 Which of the following receiver filter bandwidths provides the best signal-to-noise ratio for SSB reception?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item 500 Hz
     \item 1000 Hz
     \item \textbf{2400 Hz}
@@ -11,16 +11,8 @@ Which of the following receiver filter bandwidths provides the best signal-to-no
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to listen to your favorite radio station, but there's a lot of static noise. The filter bandwidth is like the size of the window you use to listen to the station. If the window is too small (like 500 Hz), you might miss parts of the music or speech. If it's too big (like 5000 Hz), you let in too much noise. The best size (2400 Hz) lets you hear the station clearly without too much static. It's like finding the perfect window size to enjoy your music without the annoying noise!
+\subsubsection*{Intuitive Explanation}
+Think of the receiver filter bandwidth as a gatekeeper that decides which signals get through to your radio. If the gate is too narrow (like 500 Hz), it might block some parts of the SSB signal, making it harder to hear clearly. If the gate is too wide (like 5000 Hz), it lets in a lot of noise along with the signal, which also makes it harder to hear clearly. The best gate size (2400 Hz) is just right—it lets through the entire SSB signal without letting in too much noise.
 
-\subsubsection{Advanced Explanation}
-In Single Sideband (SSB) reception, the signal-to-noise ratio (SNR) is crucial for clear communication. The filter bandwidth directly affects the SNR. A narrower bandwidth (e.g., 500 Hz) reduces the noise but may also cut off parts of the signal, leading to distortion. Conversely, a wider bandwidth (e.g., 5000 Hz) allows more noise into the receiver, degrading the SNR.
-
-The optimal bandwidth for SSB reception is typically around 2400 Hz. This bandwidth is wide enough to capture the entire SSB signal without significant distortion but narrow enough to exclude excessive noise. The relationship between bandwidth \( B \) and noise power \( N \) is given by:
-
-\[ N = kTB \]
-
-where \( k \) is Boltzmann's constant, \( T \) is the temperature in Kelvin, and \( B \) is the bandwidth. By choosing a bandwidth of 2400 Hz, we balance the trade-off between signal fidelity and noise reduction, maximizing the SNR.
-
-% Diagram Prompt: Generate a diagram showing the relationship between filter bandwidth and signal-to-noise ratio for SSB reception.
+\subsubsection*{Advanced Explanation}
+The signal-to-noise ratio (SNR) is a measure of how much desired signal is present compared to unwanted noise. For SSB (Single Sideband) reception, the optimal filter bandwidth should be wide enough to pass the entire SSB signal but narrow enough to exclude as much noise as possible. The typical bandwidth of an SSB signal is around 2400 Hz, which includes the voice frequencies and some guard bands. A filter bandwidth of 2400 Hz is therefore ideal because it matches the signal bandwidth, maximizing the SNR. A narrower bandwidth would attenuate parts of the signal, reducing the SNR, while a wider bandwidth would include more noise, also reducing the SNR.

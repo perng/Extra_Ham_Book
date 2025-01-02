@@ -1,9 +1,9 @@
-\subsection{What Causes FM Transmission Audio Distortion on Voice Peaks?}
+\subsection{Distortion in FM Transmission Audio}
 \label{T2B05}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B05]
 What would cause your FM transmission audio to be distorted on voice peaks?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Your repeater offset is inverted
     \item You need to talk louder
     \item \textbf{You are talking too loudly}
@@ -11,18 +11,8 @@ What would cause your FM transmission audio to be distorted on voice peaks?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to shout into a microphone at a concert. If you shout too loudly, the sound gets all garbled and distorted, right? The same thing happens with FM radio transmissions. When you talk too loudly into the microphone, the signal gets overloaded, and the audio comes out all messed up. So, the key is to keep your voice at a nice, steady level—not too soft, not too loud. Think of it like Goldilocks and the Three Bears: you want your voice to be just right!
+\subsubsection*{Intuitive Explanation}
+Imagine you're shouting into a microphone. If you shout too loudly, the microphone can't handle the volume, and the sound gets all garbled. Similarly, in FM (Frequency Modulation) transmission, if you speak too loudly into the microphone, the audio signal can get distorted, especially during the loudest parts (peaks) of your speech. This is because the FM system has a limit to how much it can handle before it starts to distort the sound.
 
-\subsubsection{Advanced Explanation}
-In FM (Frequency Modulation) transmission, the audio signal modulates the carrier wave by varying its frequency. When the input audio signal is too strong (i.e., you are talking too loudly), it can cause overmodulation. Overmodulation occurs when the modulation index exceeds the maximum allowable value, leading to distortion in the transmitted signal. This distortion is particularly noticeable on voice peaks, where the amplitude of the audio signal is highest.
-
-Mathematically, the modulation index \( \beta \) is given by:
-\[
-\beta = \frac{\Delta f}{f_m}
-\]
-where \( \Delta f \) is the frequency deviation and \( f_m \) is the frequency of the modulating signal. If \( \beta \) becomes too large, the signal will be distorted.
-
-To avoid this, it is crucial to maintain the input audio signal within the optimal range, ensuring that the modulation index stays within acceptable limits. This can be achieved by using proper microphone techniques and, if necessary, employing automatic gain control (AGC) circuits to regulate the audio signal level.
-
-% Diagram Prompt: Generate a diagram showing the relationship between audio signal amplitude, frequency deviation, and modulation index in FM transmission.
+\subsubsection*{Advanced Explanation}
+In FM transmission, the audio signal modulates the frequency of the carrier wave. The modulation index, which is the ratio of the frequency deviation to the modulating frequency, plays a crucial role in determining the quality of the transmitted signal. When the audio signal is too strong (i.e., you are talking too loudly), it causes excessive frequency deviation. This can lead to overmodulation, where the signal exceeds the maximum allowable deviation, resulting in distortion. The distortion is most noticeable during voice peaks because that's when the signal is at its strongest. Therefore, speaking too loudly into the microphone is the primary cause of audio distortion in FM transmission.

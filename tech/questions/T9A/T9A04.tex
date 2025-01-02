@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9A04]
 What is a disadvantage of the short, flexible antenna supplied with most handheld radio transceivers, compared to a full-sized quarter-wave antenna?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{It has low efficiency}
     \item It transmits only circularly polarized signals
     \item It is mechanically fragile
@@ -11,20 +11,8 @@ What is a disadvantage of the short, flexible antenna supplied with most handhel
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a tiny, bendy straw compared to a long, sturdy one. The tiny straw might be easier to carry around, but it doesn't work as well when you're trying to drink a thick milkshake. Similarly, a short, flexible antenna is convenient for handheld radios, but it doesn't send or receive signals as effectively as a full-sized antenna. It's like trying to shout through a pillow—some of your voice gets lost!
+\subsubsection*{Intuitive Explanation}
+Imagine you have a tiny, bendy antenna on your walkie-talkie. It's convenient because it doesn't get in the way, but it's not as good at sending and receiving signals as a bigger, full-sized antenna. This is because the short antenna isn't as efficient—it doesn't convert as much of the radio's power into actual radio waves that can travel far.
 
-\subsubsection{Advanced Explanation}
-The efficiency of an antenna is closely related to its size relative to the wavelength of the signal it is designed to transmit or receive. A full-sized quarter-wave antenna is typically $\lambda/4$ in length, where $\lambda$ is the wavelength of the signal. This length allows the antenna to resonate efficiently at the desired frequency, maximizing the transfer of energy between the radio and the surrounding space.
-
-In contrast, a short, flexible antenna is often much smaller than $\lambda/4$. This reduced size leads to a lower radiation resistance and higher losses, resulting in lower efficiency. The efficiency $\eta$ of an antenna can be expressed as:
-
-\[
-\eta = \frac{P_{\text{radiated}}}{P_{\text{input}}}
-\]
-
-where $P_{\text{radiated}}$ is the power radiated by the antenna and $P_{\text{input}}$ is the power supplied to the antenna. For a short antenna, $P_{\text{radiated}}$ is significantly lower than that of a full-sized antenna, leading to a lower $\eta$.
-
-Additionally, the impedance mismatch between the short antenna and the transmission line can cause further losses, reducing the overall efficiency. This is why a full-sized quarter-wave antenna is generally more effective than a short, flexible one.
-
-% Diagram prompt: Generate a diagram comparing the radiation patterns of a short, flexible antenna and a full-sized quarter-wave antenna.
+\subsubsection*{Advanced Explanation}
+A full-sized quarter-wave antenna is designed to be resonant at the operating frequency, which means it efficiently radiates the signal. In contrast, the short, flexible antenna is often much shorter than a quarter-wavelength, leading to a mismatch in impedance and lower radiation efficiency. This inefficiency results in more of the transmitter's power being lost as heat rather than being radiated as useful signal. While the short antenna is convenient and durable, its reduced efficiency is a significant drawback compared to a full-sized antenna.

@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5D13]
 In which type of circuit is DC current the same through all components?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Series}
     \item Parallel
     \item Resonant
@@ -11,18 +11,8 @@ In which type of circuit is DC current the same through all components?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're in a line of people passing a ball. In a series circuit, the ball (which represents the current) has to go through each person (component) one by one. So, everyone gets the same ball, and no one can skip ahead. That's why the current is the same through all components in a series circuit. In a parallel circuit, it's like having multiple lines of people passing balls at the same time, so the current can split and take different paths.
+\subsubsection*{Intuitive Explanation}
+Imagine a group of friends walking in a single file line. Each friend represents a component in a circuit, and the line represents the path of the current. In a series circuit, the same current flows through each friend because there's only one path for the current to take. If one friend stops, the whole line stops, just like how a break in a series circuit stops the current flow.
 
-\subsubsection{Advanced Explanation}
-In a series circuit, components are connected end-to-end, forming a single path for the current to flow. According to Kirchhoff's Current Law (KCL), the current entering a junction must equal the current leaving it. Since there are no junctions in a series circuit, the current remains constant throughout. Mathematically, if \( I \) is the current, then for a series circuit:
-
-\[ I_{\text{total}} = I_1 = I_2 = \dots = I_n \]
-
-where \( I_1, I_2, \dots, I_n \) are the currents through each component.
-
-In contrast, in a parallel circuit, components are connected across the same voltage source, creating multiple paths for the current. The total current is the sum of the currents through each branch, which can be different.
-
-Understanding these principles is crucial for analyzing and designing electrical circuits, especially when dealing with DC (Direct Current) systems.
-
-% Diagram Prompt: Generate a diagram showing a simple series circuit with three resistors and a battery, illustrating the same current flowing through each resistor.
+\subsubsection*{Advanced Explanation}
+In a series circuit, components are connected end-to-end, forming a single path for the current to flow. According to Kirchhoff's Current Law (KCL), the current entering a node must equal the current leaving the node. Since there are no branches in a series circuit, the current remains constant throughout all components. This is why the DC current is the same through all components in a series circuit. In contrast, parallel circuits have multiple paths for current to flow, resulting in different currents through each branch. Resonant circuits and branch circuits involve more complex behaviors and are not characterized by a constant current through all components.

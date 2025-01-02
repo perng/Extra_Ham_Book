@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T6B05]
 What type of transistor has a gate, drain, and source?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Varistor
     \item \textbf{Field-effect}
     \item Tesla-effect
@@ -11,27 +11,8 @@ What type of transistor has a gate, drain, and source?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine a transistor as a tiny switch that controls the flow of electricity. Now, think of a field-effect transistor (FET) as a special kind of switch that has three main parts: a gate, a drain, and a source. The gate is like the boss that decides when to let electricity flow from the source to the drain. It’s like a water faucet where the gate is the handle, the source is the water supply, and the drain is where the water goes. When you turn the handle (gate), you control the flow of water (electricity). So, the FET is the transistor that has these three parts!
+\subsubsection*{Intuitive Explanation}
+Think of a transistor as a tiny switch that controls the flow of electricity. In a Field-Effect Transistor (FET), the gate is like the handle of the switch. When you turn the handle (apply voltage to the gate), it opens or closes the path for electricity to flow between the drain and the source. It's like turning a faucet to control water flow!
 
-\subsubsection{Advanced Explanation}
-A Field-Effect Transistor (FET) is a type of transistor that relies on an electric field to control the flow of current. It has three terminals: the gate, the drain, and the source. The gate is the control terminal, which modulates the conductivity between the source and the drain by applying a voltage. The source is where the charge carriers enter the transistor, and the drain is where they exit.
-
-FETs are categorized into two main types: Junction FETs (JFETs) and Metal-Oxide-Semiconductor FETs (MOSFETs). In both types, the gate voltage controls the current flow between the source and the drain. The key difference lies in the construction and the way the gate is insulated from the channel.
-
-Mathematically, the current \( I_D \) in a FET can be described by the following equation for a MOSFET in the saturation region:
-\[
-I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_{th})^2
-\]
-where:
-\begin{itemize}
-    \item \( \mu_n \) is the electron mobility,
-    \item \( C_{ox} \) is the oxide capacitance per unit area,
-    \item \( W \) and \( L \) are the width and length of the channel,
-    \item \( V_{GS} \) is the gate-to-source voltage,
-    \item \( V_{th} \) is the threshold voltage.
-\end{itemize}
-
-This equation shows how the gate voltage \( V_{GS} \) controls the drain current \( I_D \). FETs are widely used in electronic circuits due to their high input impedance and low power consumption.
-
-% Diagram Prompt: Generate a diagram showing the structure of a MOSFET with labeled gate, drain, and source terminals.
+\subsubsection*{Advanced Explanation}
+A Field-Effect Transistor (FET) is a type of transistor that uses an electric field to control the flow of current. It has three terminals: the gate, drain, and source. The gate controls the conductivity between the drain and source by modulating the electric field within the device. FETs are widely used in electronics due to their high input impedance and low power consumption. Unlike Bipolar Junction Transistors (BJTs), which use both electrons and holes for conduction, FETs primarily use one type of charge carrier, making them more efficient in certain applications.

@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B01]
 What is the effect of excessive microphone gain on SSB transmissions?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Frequency instability
     \item \textbf{Distorted transmitted audio}
     \item Increased SWR
@@ -11,18 +11,8 @@ What is the effect of excessive microphone gain on SSB transmissions?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to talk to your friend on a walkie-talkie, but you accidentally turn up the volume on your microphone too high. What happens? Your voice gets all crackly and weird, right? That's because the microphone is picking up too much sound and making it distorted. In SSB (Single Sideband) transmissions, the same thing happens if you set the microphone gain too high. Your voice gets all messed up, and it’s harder for the person on the other end to understand you. So, keep that microphone gain just right—not too high, not too low!
+\subsubsection*{Intuitive Explanation}
+Think of your microphone gain like the volume knob on a stereo. If you turn it up too high, the sound gets distorted and unpleasant to listen to. Similarly, in SSB (Single Sideband) transmissions, if the microphone gain is set too high, the audio signal becomes distorted, making it harder for the receiver to understand the transmission.
 
-\subsubsection{Advanced Explanation}
-In SSB (Single Sideband) transmissions, the microphone gain controls the amplitude of the audio signal that modulates the carrier wave. When the microphone gain is set too high, the audio signal can exceed the linear range of the modulator, leading to overmodulation. Overmodulation causes the transmitted audio to become distorted, as the peaks of the audio signal are clipped or compressed. This distortion manifests as a harsh, unnatural sound at the receiver, making it difficult to understand the transmitted message.
-
-Mathematically, the modulation index \( m \) is given by:
-\[
-m = \frac{A_m}{A_c}
-\]
-where \( A_m \) is the amplitude of the modulating signal (audio) and \( A_c \) is the amplitude of the carrier signal. When \( A_m \) becomes too large due to excessive microphone gain, \( m \) exceeds 1, leading to overmodulation and distortion.
-
-Additionally, excessive microphone gain does not cause frequency instability or increased SWR (Standing Wave Ratio). These issues are typically related to other factors such as oscillator stability or antenna matching, respectively. Therefore, the correct answer is \textbf{B: Distorted transmitted audio}.
-
-% Diagram prompt: A diagram showing the relationship between microphone gain, modulation index, and the resulting waveform distortion in SSB transmissions would be helpful here.
+\subsubsection*{Advanced Explanation}
+In SSB transmissions, the microphone gain controls the amplitude of the audio signal that modulates the carrier wave. Excessive gain can cause the audio signal to exceed the linear range of the modulator, leading to clipping and distortion. This distortion manifests as a garbled or unintelligible audio signal at the receiver's end. Unlike frequency instability or increased SWR, which are not directly caused by microphone gain, distorted audio is a direct consequence of overdriving the microphone input. Therefore, the correct answer is \textbf{B: Distorted transmitted audio}.

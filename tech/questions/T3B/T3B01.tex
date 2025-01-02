@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3B01]
 What is the relationship between the electric and magnetic fields of an electromagnetic wave?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item They travel at different speeds
     \item They are in parallel
     \item They revolve in opposite directions
@@ -11,19 +11,10 @@ What is the relationship between the electric and magnetic fields of an electrom
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re at a dance party, and the electric field and magnetic field are two dancers. They don’t just move randomly—they have a special move where they always stay perpendicular to each other, like forming a T shape. This is how they groove together in an electromagnetic wave. So, they’re not parallel, not spinning in opposite directions, and definitely not moving at different speeds. They’re always at right angles, making sure the wave keeps moving smoothly through space.
+\subsubsection*{Intuitive Explanation}
+Imagine you're holding a jump rope and shaking it up and down. The up-and-down motion creates waves that travel along the rope. Now, think of the electric field as the up-and-down motion and the magnetic field as a side-to-side motion. In an electromagnetic wave, these two motions are perpendicular to each other, just like the up-and-down and side-to-side motions of the jump rope. This means the electric and magnetic fields are at right angles to each other.
 
-\subsubsection{Advanced Explanation}
-In an electromagnetic wave, the electric field \(\mathbf{E}\) and the magnetic field \(\mathbf{B}\) are perpendicular to each other and to the direction of wave propagation. This is described by Maxwell's equations, which govern the behavior of electromagnetic fields. Specifically, Faraday's law of induction and Ampère's law with Maxwell's correction show that a changing electric field generates a magnetic field, and vice versa. Mathematically, this relationship can be expressed as:
+\subsubsection*{Advanced Explanation}
+In an electromagnetic wave, the electric field (\(\mathbf{E}\)) and the magnetic field (\(\mathbf{B}\)) are perpendicular to each other and to the direction of wave propagation. This is a fundamental property of electromagnetic waves, as described by Maxwell's equations. The electric field generates the magnetic field, and vice versa, creating a self-sustaining wave that propagates through space. The relationship between these fields is such that they oscillate in phase but are oriented at 90 degrees to each other, ensuring the wave's energy is conserved and propagated efficiently.
 
-\[
-\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
-\]
-\[
-\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
-\]
-
-Here, \(\mu_0\) is the permeability of free space, \(\epsilon_0\) is the permittivity of free space, and \(\mathbf{J}\) is the current density. In a vacuum, where \(\mathbf{J} = 0\), these equations simplify to show that \(\mathbf{E}\) and \(\mathbf{B}\) are always perpendicular to each other and to the direction of wave propagation. This perpendicular relationship ensures that the electromagnetic wave can propagate through space at the speed of light, \(c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}\).
-
-% Diagram prompt: A diagram showing the electric field (E) and magnetic field (B) vectors perpendicular to each other and to the direction of wave propagation (k) in an electromagnetic wave.
+% Diagram Prompt: Generate a 3D vector diagram showing the electric field (E) and magnetic field (B) vectors perpendicular to each other and to the direction of wave propagation (k). Use Python with Matplotlib for the 3D plot.

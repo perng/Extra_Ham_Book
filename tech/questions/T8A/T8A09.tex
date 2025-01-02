@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A09]
 What is the approximate bandwidth of a VHF repeater FM voice signal?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Less than 500 Hz
     \item About 150 kHz
     \item \textbf{Between 10 and 15 kHz}
@@ -11,29 +11,4 @@ What is the approximate bandwidth of a VHF repeater FM voice signal?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're talking to your friend on a walkie-talkie. The sound of your voice is like a wave that travels through the air. Now, the walkie-talkie needs to send this wave over a certain space on the radio frequency. This space is called bandwidth. For a VHF repeater FM voice signal, this space is not too big and not too small—it's just right, like Goldilocks' porridge! Specifically, it's between 10 and 15 kHz. This means the walkie-talkie can send your voice clearly without taking up too much room on the radio frequency.
-
-\subsubsection{Advanced Explanation}
-The bandwidth of a Frequency Modulation (FM) signal is determined by the modulation index and the highest frequency component of the modulating signal. For a VHF repeater FM voice signal, the typical bandwidth can be approximated using Carson's rule:
-
-\[
-B \approx 2(\Delta f + f_m)
-\]
-
-where:
-\begin{itemize}
-    \item \( B \) is the bandwidth,
-    \item \( \Delta f \) is the peak frequency deviation,
-    \item \( f_m \) is the highest frequency component of the modulating signal.
-\end{itemize}
-
-For a typical FM voice signal, the peak frequency deviation \( \Delta f \) is around 5 kHz, and the highest frequency component \( f_m \) is around 3 kHz. Plugging these values into Carson's rule:
-
-\[
-B \approx 2(5 \text{ kHz} + 3 \text{ kHz}) = 16 \text{ kHz}
-\]
-
-This result is consistent with the approximate bandwidth of a VHF repeater FM voice signal being between 10 and 15 kHz. The bandwidth is crucial because it determines how much of the frequency spectrum the signal occupies, affecting the clarity and range of the communication.
-
-% Diagram prompt: Generate a diagram showing the frequency spectrum of a VHF repeater FM voice signal, highlighting the bandwidth between 10 and 15 kHz.
+The bandwidth of a VHF repeater FM voice signal is typically between 10 and 15 kHz. This range is sufficient to carry the voice signal with good fidelity while efficiently using the available spectrum.

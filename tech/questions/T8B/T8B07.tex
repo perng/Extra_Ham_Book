@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B07]
 What is Doppler shift in reference to satellite communications?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item A change in the satellite orbit
     \item A mode where the satellite receives signals on one band and transmits on another
     \item \textbf{An observed change in signal frequency caused by relative motion between the satellite and Earth station}
@@ -11,24 +11,10 @@ What is Doppler shift in reference to satellite communications?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're standing on the ground, and a friend is riding a bike towards you while ringing a bell. As your friend gets closer, the bell sounds higher-pitched. But as they ride away, the bell sounds lower-pitched. This change in pitch is similar to what happens with radio signals in satellite communications. When a satellite is moving towards or away from an Earth station, the frequency of the signal changes slightly. This is called the Doppler shift. It's like the satellite is ringing a bell with its radio signals, and the pitch changes depending on whether it's coming closer or moving away.
+\subsubsection*{Intuitive Explanation}
+Imagine you're standing by the side of a road, and a car is speeding towards you while honking its horn. As the car gets closer, the sound of the horn seems to get higher in pitch. Once the car passes you and moves away, the pitch of the horn seems to drop. This change in pitch is similar to what happens with radio signals in satellite communications due to the Doppler shift. When a satellite is moving towards or away from an Earth station, the frequency of the signal changes slightly, just like the pitch of the car's horn.
 
-\subsubsection{Advanced Explanation}
-The Doppler shift, or Doppler effect, is a phenomenon where the frequency of a wave changes due to the relative motion between the source and the observer. In satellite communications, the satellite and the Earth station are in relative motion, which causes a shift in the frequency of the transmitted signal. Mathematically, the observed frequency \( f' \) can be calculated using the formula:
+\subsubsection*{Advanced Explanation}
+The Doppler shift, or Doppler effect, is a phenomenon where the frequency of a wave changes for an observer moving relative to the wave source. In satellite communications, the relative motion between the satellite and the Earth station causes a shift in the frequency of the transmitted signal. If the satellite is moving towards the Earth station, the frequency increases (blue shift). Conversely, if the satellite is moving away, the frequency decreases (red shift). This effect is crucial for accurately receiving and interpreting signals in satellite communication systems, as it can impact the tuning and synchronization of the receiving equipment.
 
-\[
-f' = f \left( \frac{c + v_r}{c + v_s} \right)
-\]
-
-where:
-\begin{itemize}
-    \item \( f \) is the original frequency of the signal,
-    \item \( c \) is the speed of light,
-    \item \( v_r \) is the velocity of the receiver (Earth station) relative to the medium,
-    \item \( v_s \) is the velocity of the source (satellite) relative to the medium.
-\end{itemize}
-
-If the satellite is moving towards the Earth station, \( v_s \) is positive, and the observed frequency increases. If the satellite is moving away, \( v_s \) is negative, and the observed frequency decreases. This shift must be accounted for in satellite communication systems to ensure accurate signal reception.
-
-% Diagram Prompt: Generate a diagram showing a satellite moving towards and away from an Earth station, with arrows indicating the direction of motion and the corresponding frequency shifts.
+% Diagram Prompt: Generate a diagram showing a satellite moving towards and away from an Earth station, with arrows indicating the direction of motion and the corresponding frequency shifts (blue shift for approaching, red shift for receding). Use Python with Matplotlib for the diagram.

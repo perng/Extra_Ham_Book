@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C04]
 What reading on an SWR meter indicates a perfect impedance match between the antenna and the feed line?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item 50:50
     \item Zero
     \item \textbf{1:1}
@@ -11,28 +11,8 @@ What reading on an SWR meter indicates a perfect impedance match between the ant
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to pour water from one bottle to another. If the bottles are the same size, the water flows smoothly without any spills. This is like a perfect match between the antenna and the feed line. The SWR meter is like a referee that checks if the bottles are the same size. When it shows 1:1, it means everything is perfectly matched, and the signal flows smoothly without any loss or reflection.
+\subsubsection*{Intuitive Explanation}
+An SWR (Standing Wave Ratio) meter measures how well the antenna and the feed line are matched in terms of impedance. Think of it like a dance between the antenna and the feed line. If they are perfectly in sync, the SWR meter will show a 1:1 ratio. This means there’s no mismatch, and the signal is being transmitted efficiently without any reflections.
 
-\subsubsection{Advanced Explanation}
-The Standing Wave Ratio (SWR) is a measure of how well the impedance of the antenna matches the impedance of the feed line. Impedance is a complex quantity that combines resistance and reactance, and it is measured in ohms ($\Omega$). When the impedance of the antenna ($Z_{\text{antenna}}$) matches the impedance of the feed line ($Z_{\text{feed line}}$), the SWR is given by:
-
-\[
-\text{SWR} = \frac{1 + \Gamma}{1 - \Gamma}
-\]
-
-where $\Gamma$ is the reflection coefficient, defined as:
-
-\[
-\Gamma = \frac{Z_{\text{antenna}} - Z_{\text{feed line}}}{Z_{\text{antenna}} + Z_{\text{feed line}}}
-\]
-
-When $Z_{\text{antenna}} = Z_{\text{feed line}}$, $\Gamma = 0$, and thus:
-
-\[
-\text{SWR} = \frac{1 + 0}{1 - 0} = 1
-\]
-
-This is why a reading of 1:1 on the SWR meter indicates a perfect impedance match. Any deviation from this ratio indicates a mismatch, which can lead to signal loss and potential damage to the transmitter.
-
-% Diagram Prompt: Generate a diagram showing the relationship between impedance matching, SWR, and signal reflection.
+\subsubsection*{Advanced Explanation}
+The SWR is a measure of the impedance match between the antenna and the feed line. When the impedance of the antenna matches the impedance of the feed line, there is no reflection of the signal, and the SWR is 1:1. This is the ideal condition for maximum power transfer. If the SWR is higher than 1:1, it indicates a mismatch, which can lead to signal loss and potential damage to the transmitter. The correct answer, therefore, is \textbf{1:1}, as it signifies a perfect impedance match.

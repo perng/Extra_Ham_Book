@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T6D05]
 What type of circuit controls the amount of voltage from a power supply?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Regulator}
     \item Oscillator
     \item Filter
@@ -11,24 +11,4 @@ What type of circuit controls the amount of voltage from a power supply?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a water hose, and you want to control how much water comes out. You might use a valve to adjust the flow. In electronics, a \textbf{regulator} is like that valve, but for electricity. It makes sure the voltage (the pressure of electricity) stays just right, not too high or too low. So, if you want to control the voltage from a power supply, you use a regulator. Easy peasy!
-
-\subsubsection{Advanced Explanation}
-A voltage regulator is an electronic circuit designed to maintain a constant output voltage level regardless of changes in input voltage or load conditions. It achieves this by using feedback mechanisms to adjust the output voltage. The most common types of voltage regulators are linear regulators and switching regulators.
-
-\paragraph{Linear Regulators} work by using a variable resistance to drop the excess voltage. The basic equation for a linear regulator is:
-\[
-V_{\text{out}} = V_{\text{in}} - V_{\text{drop}}
-\]
-where \( V_{\text{in}} \) is the input voltage, \( V_{\text{out}} \) is the output voltage, and \( V_{\text{drop}} \) is the voltage dropped across the regulator.
-
-\paragraph{Switching Regulators} use a different approach by rapidly switching the input voltage on and off and then smoothing the output with capacitors and inductors. The output voltage is controlled by the duty cycle of the switching signal. The relationship can be expressed as:
-\[
-V_{\text{out}} = D \cdot V_{\text{in}}
-\]
-where \( D \) is the duty cycle (a value between 0 and 1).
-
-Both types of regulators are essential in ensuring that electronic devices receive a stable voltage, which is crucial for their proper operation.
-
-% Prompt for diagram: A diagram showing a simple linear regulator circuit with input, output, and ground connections, along with a feedback loop.
+A voltage regulator is a circuit designed to automatically maintain a constant voltage level. It ensures that the output voltage remains stable regardless of changes in input voltage or load conditions. This is essential for protecting electronic devices from voltage fluctuations.

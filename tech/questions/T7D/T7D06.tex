@@ -1,9 +1,9 @@
-\subsection{Multimeter Damage Risks}
+\subsection{Damage to a Multimeter}
 \label{T7D06}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7D06]
 Which of the following can damage a multimeter?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Attempting to measure resistance using the voltage setting
     \item Failing to connect one of the probes to ground
     \item \textbf{Attempting to measure voltage when using the resistance setting}
@@ -11,16 +11,8 @@ Which of the following can damage a multimeter?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine your multimeter is like a superhero with different powers for different tasks. If you ask it to lift a car (measure voltage) while it’s in its count grains of sand mode (resistance setting), it’s going to get really confused and might even break! So, always make sure your multimeter is in the right mode for the job you’re asking it to do.
+\subsubsection*{Intuitive Explanation}
+Think of a multimeter like a Swiss Army knife for electrical measurements. Each setting is like a different tool on the knife. If you try to use the wrong tool for the job, you might break it. For example, using the resistance setting to measure voltage is like trying to cut a steak with a screwdriver—it’s not going to end well for the screwdriver!
 
-\subsubsection{Advanced Explanation}
-A multimeter is designed to measure different electrical properties such as voltage, current, and resistance. Each measurement function requires a specific internal circuit configuration. When measuring resistance, the multimeter sends a small current through the component and measures the voltage drop. If you attempt to measure voltage while in the resistance setting, the internal circuitry is not designed to handle the higher voltage levels, which can lead to damage. 
-
-For example, if you apply a voltage \( V \) across the multimeter in resistance mode, the current \( I \) through the internal circuit can exceed its design limits, causing overheating or component failure. The relationship is given by Ohm's Law:
-\[
-V = I \times R
-\]
-where \( R \) is the internal resistance of the multimeter in resistance mode. Exceeding the maximum current \( I_{\text{max}} \) can damage the device.
-
-% Diagram Prompt: Generate a diagram showing the internal circuit of a multimeter in resistance mode and how applying voltage can damage it.
+\subsubsection*{Advanced Explanation}
+Multimeters are designed to handle specific types of measurements within certain ranges. The resistance setting on a multimeter typically applies a small voltage to the circuit to measure resistance. If you attempt to measure voltage while in the resistance setting, the multimeter may be exposed to a much higher voltage than it is designed to handle, potentially damaging the internal components. This is why it is crucial to ensure the multimeter is set to the correct measurement type before taking any readings.

@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B06]
 Which of the following controls could be used if the voice pitch of a single-sideband signal returning to your CQ call seems too high or low?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item The AGC or limiter
     \item The bandwidth selection
     \item The tone squelch
@@ -11,14 +11,5 @@ Which of the following controls could be used if the voice pitch of a single-sid
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re tuning a guitar, but instead of strings, you’re tuning a radio signal. If the voice on the other end sounds like a chipmunk or a giant, you need to adjust the pitch to make it sound normal. The RIT (Receiver Incremental Tuning) or Clarifier is like the tuning knob on your guitar—it helps you fine-tune the signal so the voice sounds just right. The other options, like AGC or bandwidth selection, are more about volume or how wide the signal is, not the pitch.
-
-\subsubsection{Advanced Explanation}
-In single-sideband (SSB) communication, the voice pitch can appear distorted if the transmitter and receiver are not precisely tuned to the same frequency. This discrepancy is often due to slight differences in the local oscillator frequencies of the transmitter and receiver. The RIT (Receiver Incremental Tuning) or Clarifier allows the receiver to adjust its frequency slightly to match the transmitter's frequency, thereby correcting the pitch of the received signal.
-
-Mathematically, if the transmitted signal is at frequency \( f_t \) and the receiver is tuned to \( f_r \), the pitch distortion occurs when \( f_t \neq f_r \). The RIT or Clarifier adjusts \( f_r \) such that \( f_r \approx f_t \), minimizing the pitch distortion. This adjustment is typically in the range of a few hundred Hertz, depending on the specific equipment.
-
-The other options, such as AGC (Automatic Gain Control) or bandwidth selection, do not affect the pitch. AGC adjusts the signal strength, while bandwidth selection determines the range of frequencies that the receiver processes. Tone squelch is used to mute the receiver unless a specific tone is detected, which is unrelated to pitch correction.
-
-% Prompt for diagram: A diagram showing the relationship between transmitter frequency, receiver frequency, and the role of RIT/Clarifier in adjusting the receiver frequency to match the transmitter frequency would be helpful here.
+\subsubsection*{Explanation}
+When receiving a single-sideband (SSB) signal, the voice pitch may appear too high or low due to a slight frequency mismatch between the transmitter and receiver. The RIT (Receiver Incremental Tuning) or Clarifier is specifically designed to fine-tune the receiver's frequency to match the incoming signal, thereby correcting the voice pitch. The other options (AGC, bandwidth selection, and tone squelch) do not directly affect the frequency tuning and thus are not suitable for this purpose.

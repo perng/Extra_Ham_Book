@@ -1,8 +1,8 @@
-\subsection{Meaning of PSK}\label{T8D06}
+\subsection{Understanding PSK}\label{T8D06}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8D06]
 What does the abbreviation PSK mean?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Pulse Shift Keying
     \item \textbf{Phase Shift Keying}
     \item Packet Short Keying
@@ -10,16 +10,8 @@ What does the abbreviation PSK mean?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're sending secret messages using a flashlight. Instead of turning the light on and off (which is like Morse code), you decide to twist the flashlight slightly to change the angle of the light beam. This twisting is like changing the phase of the light. In radio terms, PSK stands for Phase Shift Keying, which is a fancy way of saying we change the angle (or phase) of the radio wave to send information. It's like twisting the flashlight to send different messages!
+\subsubsection*{Intuitive Explanation}
+Imagine you're sending a secret message to your friend using a flashlight. Instead of turning the light on and off (which is like Morse code), you decide to twist the flashlight slightly to change the angle of the light beam. Each twist represents a different letter or symbol. This twisting of the light beam is similar to what happens in Phase Shift Keying (PSK), where the phase of the signal is changed to encode information.
 
-\subsubsection{Advanced Explanation}
-Phase Shift Keying (PSK) is a digital modulation technique used in communication systems to transmit data by varying the phase of the carrier wave. The phase of the wave is altered to represent different binary states (e.g., 0 and 1). For example, in Binary Phase Shift Keying (BPSK), a phase shift of 0 degrees represents a binary 0, and a phase shift of 180 degrees represents a binary 1. Mathematically, the modulated signal can be represented as:
-
-\[
-s(t) = A \cos(2\pi f_c t + \phi)
-\]
-
-where \( A \) is the amplitude, \( f_c \) is the carrier frequency, and \( \phi \) is the phase shift. PSK is widely used in various communication systems due to its efficiency and robustness against noise.
-
-% Diagram Prompt: Generate a diagram showing a carrier wave with different phase shifts representing binary data.
+\subsubsection*{Advanced Explanation}
+Phase Shift Keying (PSK) is a digital modulation technique used in radio communications. In PSK, the phase of the carrier signal is varied to represent different data symbols. For example, in Binary Phase Shift Keying (BPSK), two phases (0 and 180 degrees) are used to represent binary 0 and 1. More complex forms of PSK, such as Quadrature Phase Shift Keying (QPSK), use four different phases to encode more bits per symbol. PSK is widely used in various communication systems due to its efficiency and robustness against noise.

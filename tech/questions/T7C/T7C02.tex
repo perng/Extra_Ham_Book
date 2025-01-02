@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7C02]
 Which of the following is used to determine if an antenna is resonant at the desired operating frequency?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item A VTVM
     \item \textbf{An antenna analyzer}
     \item A Q meter
@@ -11,26 +11,8 @@ Which of the following is used to determine if an antenna is resonant at the des
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine your antenna is like a guitar string. When you pluck it, it vibrates at a certain frequency, and if it’s tuned just right, it sounds perfect. Now, how do you know if your antenna is tuned to the right frequency? You use a special tool called an antenna analyzer. It’s like a tuner for your guitar, but for your antenna. It tells you if your antenna is vibrating (or resonating) at the frequency you want. So, if you want to make sure your antenna is singing the right note, you grab an antenna analyzer!
+\subsubsection*{Intuitive Explanation}
+Think of an antenna like a musical instrument. Just as a guitar string needs to be tuned to the right pitch to sound good, an antenna needs to be tuned to the right frequency to work efficiently. An antenna analyzer is like a tuner for your antenna, helping you check if it's resonating at the desired frequency.
 
-\subsubsection{Advanced Explanation}
-An antenna analyzer is a device used to measure the impedance and resonance of an antenna. Resonance occurs when the inductive and capacitive reactances of the antenna cancel each other out, resulting in a purely resistive impedance at the desired frequency. The antenna analyzer typically measures the standing wave ratio (SWR) and impedance, providing a clear indication of whether the antenna is resonant at the target frequency.
-
-The mathematical relationship for resonance in an antenna is given by:
-
-\[
-X_L = X_C
-\]
-
-where \(X_L\) is the inductive reactance and \(X_C\) is the capacitive reactance. When these two are equal, the antenna is said to be resonant. The antenna analyzer helps in determining this condition by measuring the impedance \(Z\) of the antenna:
-
-\[
-Z = R + j(X_L - X_C)
-\]
-
-At resonance, \(X_L - X_C = 0\), so \(Z = R\), where \(R\) is the resistive component of the impedance. This is the ideal condition for efficient transmission and reception of radio signals.
-
-Other devices like VTVMs, Q meters, and frequency counters do not provide the necessary measurements to determine antenna resonance. A VTVM measures voltage, a Q meter measures the quality factor of a circuit, and a frequency counter measures the frequency of a signal, but none of these can directly assess the resonance of an antenna.
-
-% Diagram Prompt: Generate a diagram showing an antenna connected to an antenna analyzer, with labels indicating the measurement of impedance and SWR.
+\subsubsection*{Advanced Explanation}
+An antenna analyzer is a specialized tool used to measure the impedance and resonance of an antenna. Resonance occurs when the antenna's inductive and capacitive reactances cancel each other out, resulting in a purely resistive impedance. This is crucial for efficient power transfer from the transmitter to the antenna. The analyzer provides real-time feedback on the antenna's performance, allowing adjustments to be made to achieve optimal resonance at the desired operating frequency. Other tools like VTVMs, Q meters, and frequency counters do not provide the specific measurements needed to determine antenna resonance.

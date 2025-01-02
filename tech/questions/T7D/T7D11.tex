@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7D11]
 Which of the following precautions should be taken when measuring in-circuit resistance with an ohmmeter?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Ensure that the applied voltages are correct
     \item \textbf{Ensure that the circuit is not powered}
     \item Ensure that the circuit is grounded
@@ -11,14 +11,8 @@ Which of the following precautions should be taken when measuring in-circuit res
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to measure how much a door resists being pushed open. If someone is already pushing the door while you're measuring, your measurement will be all wrong! Similarly, when you're using an ohmmeter to measure resistance in a circuit, you need to make sure the circuit isn't pushing or pulling any electricity. That means the circuit should be turned off. If it's powered on, the ohmmeter will get confused and give you a wrong reading. So, always remember: no power, proper measurement!
+\subsubsection*{Intuitive Explanation}
+When using an ohmmeter to measure resistance in a circuit, it's crucial to ensure that the circuit is not powered. This is because an ohmmeter works by sending a small current through the circuit to measure resistance. If the circuit is powered, the external voltage can interfere with the ohmmeter's readings, leading to inaccurate results or even damaging the ohmmeter. Think of it like trying to measure the weight of a balloon while someone is blowing air into it—you won't get the correct measurement!
 
-\subsubsection{Advanced Explanation}
-When measuring resistance with an ohmmeter, the device sends a small known current through the circuit and measures the voltage drop to calculate the resistance using Ohm's Law:
-\[
-R = \frac{V}{I}
-\]
-where \( R \) is the resistance, \( V \) is the voltage, and \( I \) is the current. If the circuit is powered, external voltages and currents can interfere with the ohmmeter's measurements, leading to inaccurate results. Additionally, the internal components of the ohmmeter are designed to handle only the small current it generates, and external power sources could damage the device. Therefore, it is crucial to ensure that the circuit is not powered when measuring resistance in-circuit.
-
-% Diagram prompt: Generate a diagram showing an ohmmeter connected to a circuit with a power source turned off.
+\subsubsection*{Advanced Explanation}
+An ohmmeter measures resistance by applying a known voltage and measuring the resulting current through the circuit using Ohm's Law (\( R = \frac{V}{I} \)). If the circuit is powered, the external voltage can alter the current flowing through the circuit, leading to incorrect resistance readings. Additionally, the external voltage can cause excessive current to flow through the ohmmeter, potentially damaging its internal components. Therefore, it is essential to ensure that the circuit is not powered when measuring in-circuit resistance with an ohmmeter. This precaution helps maintain the accuracy of the measurement and protects the ohmmeter from damage.

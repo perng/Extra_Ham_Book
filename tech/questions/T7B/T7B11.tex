@@ -1,8 +1,9 @@
-\subsection{RF Feedback Symptoms in Transmitters}\label{T7B11}
+\subsection{RF Feedback Symptoms}
+\label{T7B11}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7B11]
 What is a symptom of RF feedback in a transmitter or transceiver?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Excessive SWR at the antenna connection
     \item The transmitter will not stay on the desired frequency
     \item \textbf{Reports of garbled, distorted, or unintelligible voice transmissions}
@@ -10,22 +11,5 @@ What is a symptom of RF feedback in a transmitter or transceiver?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to talk to your friend on a walkie-talkie, but instead of hearing your voice clearly, they hear a bunch of weird noises that don't make any sense. This is like RF feedback in a transmitter. It's as if the radio is getting confused and mixing up the signals, making your voice sound all jumbled and hard to understand. So, if someone says your transmissions sound like a robot having a bad day, it might be RF feedback!
-
-\subsubsection{Advanced Explanation}
-RF feedback occurs when a portion of the transmitted signal is inadvertently fed back into the transmitter's input stage. This can happen due to poor isolation between the transmitter's output and input circuits, or due to reflections caused by impedance mismatches. When this feedback occurs, it can modulate the transmitted signal, causing distortion. Mathematically, this can be represented as:
-
-\[
-V_{\text{out}} = V_{\text{in}} + \beta V_{\text{out}}
-\]
-
-where \( V_{\text{in}} \) is the input signal, \( V_{\text{out}} \) is the output signal, and \( \beta \) is the feedback factor. Solving for \( V_{\text{out}} \):
-
-\[
-V_{\text{out}} = \frac{V_{\text{in}}}{1 - \beta}
-\]
-
-If \( \beta \) is not zero, the feedback can cause the signal to become distorted, leading to garbled or unintelligible transmissions. This is why option C is the correct answer. Excessive SWR (option A) and frequency instability (option B) are related to antenna and oscillator issues, respectively, while frequent blowing of fuses (option D) is typically a power supply problem.
-
-% Prompt for diagram: A diagram showing the feedback loop in a transmitter, illustrating how the output signal is fed back into the input, causing distortion.
+\subsubsection*{Explanation}
+RF feedback in a transmitter or transceiver can cause interference with the transmitted signal, leading to garbled, distorted, or unintelligible voice transmissions. This occurs because the feedback loop causes the signal to interfere with itself, degrading the quality of the transmission. The other options listed are not directly related to RF feedback.

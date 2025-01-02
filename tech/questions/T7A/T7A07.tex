@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7A07]
 What is the function of a transceiver’s PTT input?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item Input for a key used to send CW
     \item \textbf{Switches transceiver from receive to transmit when grounded}
     \item Provides a transmit tuning tone when grounded
@@ -11,14 +11,4 @@ What is the function of a transceiver’s PTT input?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a walkie-talkie. When you want to talk, you press a button, and when you want to listen, you release it. The PTT (Push-To-Talk) input is like that button. When you press it (or ground it), it tells the transceiver, Hey, it’s time to talk! and switches it from listening mode to talking mode. When you release it, the transceiver goes back to listening. Simple, right?
-
-\subsubsection{Advanced Explanation}
-The PTT (Push-To-Talk) input in a transceiver is a control signal that manages the transition between receive and transmit modes. When the PTT input is grounded (i.e., connected to the ground potential), it triggers the transceiver to switch from receive mode to transmit mode. This is typically achieved through a simple electrical circuit where grounding the PTT input completes a circuit, sending a signal to the transceiver’s control logic to activate the transmitter.
-
-In more technical terms, the PTT input is often connected to a microcontroller or a relay within the transceiver. When the PTT input is grounded, it changes the state of the microcontroller or relay, which in turn activates the transmitter circuitry and deactivates the receiver circuitry. This ensures that the transceiver does not simultaneously transmit and receive, which could cause interference or damage to the equipment.
-
-The PTT input is crucial for half-duplex communication systems, where only one party can transmit at a time. It ensures that the transceiver operates efficiently and safely by preventing simultaneous transmission and reception.
-
-% Diagram Prompt: Generate a simple circuit diagram showing the PTT input connected to a microcontroller or relay, with labels indicating the receive and transmit modes.
+The PTT (Push-To-Talk) input on a transceiver is a simple yet crucial feature. When grounded, it switches the transceiver from receive mode to transmit mode, allowing the operator to communicate. This is a fundamental function in radio communication, ensuring that the transceiver only transmits when the operator intends to do so.

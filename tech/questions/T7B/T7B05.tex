@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7B05]
 How can fundamental overload of a non-amateur radio or TV receiver by an amateur signal be reduced or eliminated?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Block the amateur signal with a filter at the antenna input of the affected receiver}
     \item Block the interfering signal with a filter on the amateur transmitter
     \item Switch the transmitter from FM to SSB
@@ -11,28 +11,5 @@ How can fundamental overload of a non-amateur radio or TV receiver by an amateur
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to listen to your favorite radio station, but your neighbor's super-loud karaoke machine is drowning it out. What do you do? You don’t go and turn off their karaoke machine (that would be rude!), instead, you put on some noise-canceling headphones. Similarly, when an amateur radio signal is too strong for your TV or radio, you don’t mess with the amateur radio transmitter. Instead, you block the strong signal right at the antenna of your TV or radio using a filter. This way, you can enjoy your shows without any interference!
-
-\subsubsection{Advanced Explanation}
-Fundamental overload occurs when a strong amateur radio signal overwhelms the front-end of a non-amateur receiver, such as a TV or radio. This happens because the receiver's circuitry is not designed to handle such high signal levels, leading to distortion or complete loss of the desired signal.
-
-To mitigate this, a band-reject or notch filter can be installed at the antenna input of the affected receiver. This filter is designed to attenuate the specific frequency range of the amateur signal while allowing other frequencies to pass through unaffected. Mathematically, the filter's transfer function \( H(f) \) can be expressed as:
-
-\[
-H(f) = \begin{cases}
-0 & \text{if } f \text{ is within the amateur signal's frequency range} \\
-1 & \text{otherwise}
-\end{cases}
-\]
-
-By applying this filter, the amplitude of the amateur signal \( A_{\text{amateur}} \) is reduced to a level that the receiver can handle, thus eliminating the overload.
-
-Related concepts include:
-\begin{itemize}
-    \item \textbf{Front-end Overload}: When the input stage of a receiver is saturated by a strong signal.
-    \item \textbf{Filters}: Devices that selectively attenuate certain frequencies while allowing others to pass.
-    \item \textbf{Signal-to-Noise Ratio (SNR)}: The ratio of the desired signal power to the noise power, which is improved by reducing interference.
-\end{itemize}
-
-% Prompt for diagram: A diagram showing a non-amateur receiver with a filter at the antenna input, blocking the amateur signal while allowing the desired signal to pass through.
+\subsubsection*{Explanation}
+Fundamental overload occurs when a strong amateur radio signal overwhelms a non-amateur receiver, causing interference. The most effective way to mitigate this is by placing a filter at the antenna input of the affected receiver. This filter blocks the amateur signal before it enters the receiver, preventing overload. Options B, C, and D involve modifying the transmitter, which does not directly address the issue at the receiver.

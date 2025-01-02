@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2A01]
 What is a common repeater frequency offset in the 2 meter band?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item Plus or minus 5 MHz
     \item \textbf{Plus or minus 600 kHz}
     \item Plus or minus 500 kHz
@@ -11,14 +11,4 @@ What is a common repeater frequency offset in the 2 meter band?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you and your friend are trying to talk to each other, but you’re both using walkie-talkies. If you both talk at the same time, it’s just a big mess! So, you decide that one of you will talk on one channel, and the other will listen on a slightly different channel. This way, you can both talk without stepping on each other’s words. In the 2 meter band, this slightly different channel is usually 600 kHz away. That’s like moving just a tiny bit to the side so you can both chat without any confusion!
-
-\subsubsection{Advanced Explanation}
-In radio communication, repeaters are used to extend the range of communication by receiving a signal on one frequency and retransmitting it on another. The difference between these two frequencies is known as the frequency offset. In the 2 meter band (144-148 MHz), a common frequency offset is $\pm 600$ kHz. This offset ensures that the transmitted and received signals do not interfere with each other.
-
-The choice of 600 kHz is based on practical considerations such as avoiding interference and ensuring compatibility with existing equipment. Mathematically, if the repeater receives a signal at frequency $f_r$, it will transmit the signal at frequency $f_t = f_r \pm 600$ kHz. This offset is standardized to maintain consistency across different repeater systems.
-
-For example, if a repeater receives a signal at 145.000 MHz, it will transmit the signal at 145.600 MHz (for a $+600$ kHz offset) or at 144.400 MHz (for a $-600$ kHz offset). This ensures clear communication without overlapping frequencies.
-
-% Diagram prompt: Generate a diagram showing the frequency offset in the 2 meter band, illustrating the input and output frequencies of a repeater with a 600 kHz offset.
+In the 2 meter band, repeaters typically use a frequency offset to separate the transmit and receive frequencies. This offset helps prevent interference and allows for simultaneous transmission and reception. The most common offset in this band is \textbf{plus or minus 600 kHz}. This means that if a repeater is receiving on a certain frequency, it will transmit on a frequency that is 600 kHz higher or lower than the receive frequency.

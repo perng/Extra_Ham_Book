@@ -1,9 +1,9 @@
-\subsection{Transmission Protocols Without Radio Initiation}
+\subsection{EchoLink Protocol for Repeater Transmission}
 \label{T8C09}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8C09]
 Which of the following protocols enables an amateur station to transmit through a repeater without using a radio to initiate the transmission?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item IRLP
     \item D-STAR
     \item DMR
@@ -11,22 +11,8 @@ Which of the following protocols enables an amateur station to transmit through 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you want to talk to your friend through a walkie-talkie, but instead of pressing the button on the walkie-talkie, you use your computer to send the message. That's what EchoLink does! It lets you use the internet to send your voice through a repeater (a special device that helps your signal go further) without needing to use a radio to start the conversation. It's like sending a text message instead of making a phone call!
+\subsubsection*{Intuitive Explanation}
+Imagine you want to talk to your friend through a loudspeaker system, but you don't have a microphone. Instead, you use your computer to send your voice directly to the loudspeaker. EchoLink works similarly—it allows you to connect to a repeater (the loudspeaker) using the internet, so you don't need a radio to start the conversation.
 
-\subsubsection{Advanced Explanation}
-EchoLink is a VoIP (Voice over Internet Protocol) system designed for amateur radio operators. It allows users to connect to repeaters or other stations via the internet, bypassing the need for a traditional radio to initiate the transmission. This is particularly useful for operators who may not have immediate access to a radio but can connect through a computer or smartphone.
-
-The protocol works by digitizing the voice signal and transmitting it over the internet to a repeater, which then broadcasts the signal on the designated frequency. This method leverages the internet's infrastructure to extend the reach of amateur radio communications without the direct use of a radio transmitter.
-
-Mathematically, the process can be described as follows:
-\begin{enumerate}
-    \item The voice signal \( v(t) \) is sampled at a rate \( f_s \) to create a digital signal \( v[n] \).
-    \item The digital signal is encoded using a codec (e.g., AMBE) to reduce bandwidth usage.
-    \item The encoded signal is packetized and transmitted over the internet using IP (Internet Protocol).
-    \item The repeater receives the packets, decodes the signal, and broadcasts it on the radio frequency.
-\end{enumerate}
-
-This approach allows for seamless integration of internet and radio technologies, expanding the capabilities of amateur radio operators.
-
-% Diagram Prompt: Generate a diagram showing the flow of a voice signal from a computer through the internet to a repeater and then broadcasted on a radio frequency.
+\subsubsection*{Advanced Explanation}
+EchoLink is a VoIP (Voice over Internet Protocol) system designed for amateur radio operators. It allows users to connect to repeaters or other stations via the internet, bypassing the need for a physical radio to initiate the transmission. This is particularly useful for operators who may not have access to a radio but still want to participate in repeater communications. EchoLink uses a combination of software and internet connectivity to facilitate these transmissions, making it a versatile tool in the amateur radio community.

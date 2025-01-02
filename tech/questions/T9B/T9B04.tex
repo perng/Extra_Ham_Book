@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9B04]
 What is the major function of an antenna tuner (antenna coupler)?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{It matches the antenna system impedance to the transceiver's output impedance}
     \item It helps a receiver automatically tune in weak stations
     \item It allows an antenna to be used on both transmit and receive
@@ -11,18 +11,4 @@ What is the major function of an antenna tuner (antenna coupler)?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to pour water from a big jug into a tiny cup. If the jug is too big, the water spills everywhere, and you don't get much in the cup. An antenna tuner is like a funnel that helps the water (or in this case, the radio signal) flow smoothly from the jug (the transceiver) into the cup (the antenna). It makes sure the signal doesn't get lost or wasted, so your radio works better.
-
-\subsubsection{Advanced Explanation}
-An antenna tuner, also known as an antenna coupler, is a device used to match the impedance of the antenna system to the output impedance of the transceiver. Impedance matching is crucial for maximizing power transfer and minimizing signal reflection. The impedance of an antenna system can vary with frequency, and the tuner adjusts the impedance to ensure that the transceiver sees a matched load.
-
-The impedance \( Z \) is a complex quantity given by:
-\[ Z = R + jX \]
-where \( R \) is the resistance and \( X \) is the reactance. The antenna tuner adjusts the reactance \( X \) to match the impedance of the transceiver, typically 50 ohms. This is achieved using variable capacitors and inductors that can be adjusted to cancel out the reactance of the antenna system.
-
-When the impedance is matched, the standing wave ratio (SWR) is minimized, which reduces power loss and prevents damage to the transceiver. The SWR is given by:
-\[ \text{SWR} = \frac{1 + |\Gamma|}{1 - |\Gamma|} \]
-where \( \Gamma \) is the reflection coefficient, which is minimized when the impedance is matched.
-
-% Diagram prompt: Generate a diagram showing the impedance matching process between the transceiver and the antenna system using an antenna tuner.
+The primary function of an antenna tuner is to ensure that the impedance of the antenna system matches the output impedance of the transceiver. This matching is crucial for efficient power transfer and minimizing signal reflection, which can lead to poor performance and potential damage to the equipment.

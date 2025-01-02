@@ -1,9 +1,9 @@
-\subsection{Voltage in Circuit Types}
+\subsection{Voltage Across Circuit Components}
 \label{T5D14}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5D14]
 In which type of circuit is voltage the same across all components?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item Series
     \item \textbf{Parallel}
     \item Resonant
@@ -11,18 +11,8 @@ In which type of circuit is voltage the same across all components?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a bunch of light bulbs connected to a battery. If you connect them in parallel, it's like giving each bulb its own direct connection to the battery. So, each bulb gets the same amount of push (voltage) from the battery, just like how each kid in a group gets their own slice of pizza. In a series circuit, it's more like passing the pizza around, and each kid gets a smaller piece. So, in parallel circuits, the voltage is the same across all components because everyone gets their own full slice!
+\subsubsection*{Intuitive Explanation}
+Imagine you have a bunch of light bulbs connected in a circuit. If they are all connected side by side (like in a parallel circuit), each bulb gets the same amount of voltage from the power source. It's like giving each bulb its own direct line to the battery. In a series circuit, the bulbs are connected one after the other, so the voltage gets divided among them. So, in a parallel circuit, the voltage is the same across all components.
 
-\subsubsection{Advanced Explanation}
-In a parallel circuit, all components are connected across the same two points, effectively creating multiple paths for the current to flow. According to Kirchhoff's Voltage Law (KVL), the voltage across each branch of a parallel circuit must be equal. This is because the potential difference between the two common points is the same for all branches.
-
-Mathematically, if \( V \) is the voltage across the entire parallel circuit, then for each component \( i \), the voltage \( V_i \) is:
-\[
-V_i = V
-\]
-This equality holds true regardless of the resistance or impedance of each component. In contrast, in a series circuit, the voltage is divided among the components based on their resistances, leading to different voltages across each component.
-
-Understanding this concept is crucial for designing circuits where consistent voltage across components is necessary, such as in household wiring or electronic devices.
-
-% Diagram prompt: Generate a diagram showing a simple parallel circuit with a battery and three resistors, labeling the voltage across each resistor as equal.
+\subsubsection*{Advanced Explanation}
+In a parallel circuit, all components are connected across the same two points, effectively creating multiple paths for the current to flow. This means that each component experiences the same potential difference (voltage) as the power source. The total current in the circuit is the sum of the currents through each component, but the voltage remains constant across all of them. This is in contrast to a series circuit, where the voltage is divided among the components. Therefore, the correct answer is \textbf{Parallel}.

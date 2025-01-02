@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5B09]
 Which decibel value most closely represents a power increase from 5 watts to 10 watts?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item 2 dB
     \item \textbf{3 dB}
     \item 5 dB
@@ -11,30 +11,20 @@ Which decibel value most closely represents a power increase from 5 watts to 10 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a flashlight that uses 5 watts of power. If you upgrade to a flashlight that uses 10 watts, it’s like doubling the brightness! In the world of decibels, doubling the power is like adding 3 dB. So, the answer is 3 dB. It’s like saying, “Hey, my flashlight is now twice as bright, and that’s a 3 dB increase!”
+\subsubsection*{Intuitive Explanation}
+Imagine you have a light bulb that uses 5 watts of power. If you double the power to 10 watts, the bulb will be brighter. In the world of decibels (dB), which measure changes in power, doubling the power corresponds to an increase of approximately 3 dB. So, going from 5 watts to 10 watts is like turning up the brightness by 3 dB.
 
-\subsubsection{Advanced Explanation}
-To calculate the power increase in decibels (dB), we use the formula:
+\subsubsection*{Advanced Explanation}
+The decibel (dB) is a logarithmic unit used to express the ratio of two power levels. The formula to calculate the power increase in decibels is:
+
 \[
 \text{dB} = 10 \log_{10}\left(\frac{P_2}{P_1}\right)
 \]
-where \(P_1\) is the initial power and \(P_2\) is the final power. 
 
-Given:
-\[
-P_1 = 5 \text{ watts}, \quad P_2 = 10 \text{ watts}
-\]
-Substitute these values into the formula:
-\[
-\text{dB} = 10 \log_{10}\left(\frac{10}{5}\right) = 10 \log_{10}(2)
-\]
-We know that \(\log_{10}(2) \approx 0.3010\), so:
-\[
-\text{dB} = 10 \times 0.3010 = 3.01 \text{ dB}
-\]
-Rounding to the nearest whole number, the power increase is approximately 3 dB.
+Where \( P_1 \) is the initial power and \( P_2 \) is the final power. In this case, \( P_1 = 5 \) watts and \( P_2 = 10 \) watts. Plugging these values into the formula:
 
-This calculation shows that a doubling of power results in a 3 dB increase, which is a fundamental concept in radio technology and signal processing.
+\[
+\text{dB} = 10 \log_{10}\left(\frac{10}{5}\right) = 10 \log_{10}(2) \approx 10 \times 0.301 = 3.01 \text{ dB}
+\]
 
-% Diagram Prompt: Generate a diagram showing the relationship between power levels in watts and their corresponding decibel values, highlighting the 5W to 10W increase.
+Thus, the power increase from 5 watts to 10 watts is approximately 3 dB.

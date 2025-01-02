@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3B02]
 What property of a radio wave defines its polarization?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{The orientation of the electric field}
     \item The orientation of the magnetic field
     \item The ratio of the energy in the magnetic field to the energy in the electric field
@@ -11,18 +11,10 @@ What property of a radio wave defines its polarization?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine a radio wave as a wiggly rope that you’re shaking up and down. The way you shake the rope—whether it’s up and down, side to side, or in a circle—determines its polarization. In radio waves, it’s the electric field that does the wiggling, and the direction it wiggles is what we call polarization. So, if you’re asked what defines the polarization of a radio wave, it’s all about which way the electric field is pointing as it travels through space.
+\subsubsection*{Intuitive Explanation}
+Imagine a radio wave as a wiggling rope. The way the rope wiggles up and down or side to side is similar to how the electric field of a radio wave oscillates. The direction of this wiggle is what we call the polarization of the wave. So, if the electric field is moving up and down, the wave is vertically polarized. If it's moving side to side, it's horizontally polarized.
 
-\subsubsection{Advanced Explanation}
-Polarization of a radio wave is determined by the orientation of the electric field vector \(\mathbf{E}\) in the plane perpendicular to the direction of wave propagation. The electric field \(\mathbf{E}\) and the magnetic field \(\mathbf{B}\) are both perpendicular to each other and to the direction of propagation. However, it is the electric field that defines the polarization. 
+\subsubsection*{Advanced Explanation}
+Polarization refers to the orientation of the electric field vector of an electromagnetic wave as it propagates through space. In a radio wave, the electric field and magnetic field are perpendicular to each other and to the direction of propagation. The polarization is determined by the direction of the electric field vector. For example, if the electric field oscillates in a vertical plane, the wave is said to be vertically polarized. Conversely, if it oscillates in a horizontal plane, the wave is horizontally polarized. The magnetic field, while always perpendicular to the electric field, does not define the polarization. The other options, such as the ratio of energies or the ratio of velocity to wavelength, are not related to the concept of polarization.
 
-Mathematically, the electric field of a plane wave can be expressed as:
-\[
-\mathbf{E}(z, t) = \mathbf{E}_0 \cos(kz - \omega t + \phi)
-\]
-where \(\mathbf{E}_0\) is the amplitude vector, \(k\) is the wave number, \(\omega\) is the angular frequency, \(z\) is the direction of propagation, \(t\) is time, and \(\phi\) is the phase. The orientation of \(\mathbf{E}_0\) in the \(xy\)-plane (assuming propagation along the \(z\)-axis) determines the polarization. For example, if \(\mathbf{E}_0\) is aligned along the \(x\)-axis, the wave is said to be linearly polarized in the \(x\)-direction.
-
-The magnetic field \(\mathbf{B}\) is related to the electric field by Maxwell's equations, but it does not define the polarization. The energy ratios or velocity-to-wavelength ratios are not relevant to the concept of polarization.
-
-% Diagram prompt: A diagram showing the electric and magnetic fields of a radio wave, with the electric field vector highlighted to indicate polarization.
+% Diagram prompt: Generate a diagram showing the electric and magnetic fields of a radio wave propagating in space. Use Python with Matplotlib to create a 3D plot where the electric field is oscillating vertically and the magnetic field is oscillating horizontally, both perpendicular to the direction of propagation.

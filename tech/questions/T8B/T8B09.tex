@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B09]
 What causes spin fading of satellite signals?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Circular polarized noise interference radiated from the sun
     \item \textbf{Rotation of the satellite and its antennas}
     \item Doppler shift of the received signal
@@ -11,16 +11,8 @@ What causes spin fading of satellite signals?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to catch a ball that’s spinning really fast. Sometimes you catch it, and sometimes you miss because it’s spinning so much. Spin fading is kind of like that! Satellites spin around to stay stable, and their antennas spin with them. This spinning can make the signal from the satellite get stronger and weaker, just like how you sometimes catch the ball and sometimes miss it. So, the spinning of the satellite and its antennas is what causes spin fading.
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to catch a ball while spinning around in a chair. Sometimes the ball is easy to catch, and other times it's not because your hands are moving in and out of position. Similarly, when a satellite spins, its antennas rotate, causing the signal strength to fluctuate—this is called spin fading.
 
-\subsubsection{Advanced Explanation}
-Spin fading occurs due to the rotation of the satellite and its antennas, which affects the polarization of the transmitted signal. As the satellite spins, the orientation of its antennas changes relative to the ground station. This rotation can cause the polarization of the signal to mismatch with the receiving antenna's polarization, leading to signal fading. 
-
-Mathematically, the received signal strength \( S \) can be modeled as:
-\[ S = S_0 \cos(\theta) \]
-where \( S_0 \) is the maximum signal strength and \( \theta \) is the angle between the satellite antenna's polarization and the ground station's antenna polarization. As the satellite rotates, \( \theta \) changes, causing \( S \) to vary, resulting in spin fading.
-
-This phenomenon is particularly significant in low Earth orbit (LEO) satellites, which often spin to maintain stability. Understanding spin fading is crucial for designing communication systems that can compensate for these variations, ensuring consistent signal reception.
-
-% [Prompt for generating a diagram: A diagram showing a satellite spinning with its antenna, and the changing angle of polarization relative to a ground station.]
+\subsubsection*{Advanced Explanation}
+Spin fading occurs due to the rotation of the satellite and its antennas. As the satellite spins, the orientation of its antennas changes relative to the ground station. This rotation causes variations in the signal strength received on Earth, leading to periodic fading. The phenomenon is particularly noticeable in satellites that use linearly polarized antennas, as the polarization alignment between the satellite and the ground station changes continuously. Doppler shift and interference are not the primary causes of spin fading, although they can affect signal quality in other ways.

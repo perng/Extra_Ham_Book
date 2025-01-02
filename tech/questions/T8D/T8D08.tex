@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8D08]
 Which of the following is included in packet radio transmissions?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item A check sum that permits error detection
     \item A header that contains the call sign of the station to which the information is being sent
     \item Automatic repeat request in case of error
@@ -11,18 +11,10 @@ Which of the following is included in packet radio transmissions?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're sending a secret message to your friend using walkie-talkies. You want to make sure they get it perfectly, right? So, you do a few things: First, you add a special code (checksum) to check if the message got messed up. Then, you write your friend's name (call sign) on the message so it goes to the right person. And if something goes wrong, you have a magic button (automatic repeat request) to send it again. Packet radio does all these cool things to make sure your message gets through safely!
+Packet radio transmissions are designed to ensure reliable communication over radio frequencies. They incorporate several mechanisms to achieve this, including error detection, addressing, and error correction. 
 
-\subsubsection{Advanced Explanation}
-Packet radio transmissions incorporate several mechanisms to ensure reliable communication. 
+\subsubsection*{Intuitive Explanation}
+Think of packet radio like sending a letter. You need the address (header) to make sure it gets to the right person, a way to check if the letter got messed up in the mail (checksum), and a way to ask for a new letter if the first one was damaged (automatic repeat request). All these parts work together to make sure your message gets through correctly.
 
-1. \textbf{Checksum for Error Detection}: A checksum is a value calculated from the data being transmitted. It is appended to the packet and used by the receiver to verify the integrity of the data. If the checksum does not match, the receiver knows that the data has been corrupted during transmission.
-
-2. \textbf{Header with Call Sign}: The header of a packet contains essential information, including the call sign of the destination station. This ensures that the packet is routed correctly to the intended recipient.
-
-3. \textbf{Automatic Repeat Request (ARQ)}: ARQ is a protocol used for error control in data transmission. If the receiver detects an error (via the checksum), it requests the sender to retransmit the packet. This ensures that the data is received correctly, even in the presence of transmission errors.
-
-All these components—checksum, header, and ARQ—are integral to packet radio transmissions, making option D the correct answer.
-
-% Diagram prompt: Generate a diagram showing the structure of a packet radio transmission, including the header, data, checksum, and ARQ mechanism.
+\subsubsection*{Advanced Explanation}
+Packet radio transmissions use a structured format to ensure data integrity and correct delivery. The header contains essential information such as the destination call sign, which is crucial for routing the packet to the correct station. The checksum is a mathematical value used to detect errors in the transmitted data. If an error is detected, the automatic repeat request (ARQ) mechanism ensures that the packet is retransmitted, thereby maintaining the reliability of the communication. All these components are integral to the packet radio protocol, making option D the correct choice.

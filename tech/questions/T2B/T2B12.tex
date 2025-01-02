@@ -1,9 +1,9 @@
-\subsection{Understanding the Color Code in DMR Repeater Systems}
+\subsection{Color Code in DMR Repeater Systems}
 \label{T2B12}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B12]
 What is the purpose of the color code used on DMR repeater systems?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Must match the repeater color code for access}
     \item Defines the frequency pair to use
     \item Identifies the codec used
@@ -11,18 +11,4 @@ What is the purpose of the color code used on DMR repeater systems?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re trying to get into a super-secret club, and the bouncer at the door has a special color-coded wristband. If your wristband doesn’t match the bouncer’s, you’re not getting in! The color code in DMR repeater systems works the same way. It’s like a secret handshake between your radio and the repeater. If your radio’s color code doesn’t match the repeater’s, no communication for you! It’s a simple way to make sure only the right radios can talk to the repeater.
-
-\subsubsection{Advanced Explanation}
-In Digital Mobile Radio (DMR) systems, the color code is a 4-bit value (ranging from 0 to 15) that is used to differentiate between different repeater systems operating on the same frequency. This is particularly useful in areas where multiple repeaters might be using the same frequency pair but are intended for different user groups. The color code is embedded in the DMR signal and must match between the transmitting radio and the repeater for the communication to be established.
-
-Mathematically, the color code can be represented as a binary value:
-\[
-\text{Color Code} = b_3b_2b_1b_0
-\]
-where each \( b_i \) is a binary digit (0 or 1). This 4-bit code allows for 16 unique combinations, providing a simple yet effective way to manage access control in DMR systems.
-
-The color code does not define the frequency pair, identify the codec, or determine the signal level required for access. Instead, it acts as a gatekeeper, ensuring that only radios with the correct color code can communicate through the repeater. This helps prevent interference and unauthorized access, making the system more secure and efficient.
-
-% Prompt for diagram: A diagram showing a DMR repeater system with radios transmitting signals with different color codes, and only the radio with the matching color code being able to communicate with the repeater.
+The color code in DMR (Digital Mobile Radio) repeater systems is a simple yet essential feature. It ensures that only radios with the correct color code can communicate through the repeater. This helps in preventing interference from other nearby DMR systems operating on the same frequency. The correct answer is \textbf{A}, as the color code must match the repeater's color code for access.

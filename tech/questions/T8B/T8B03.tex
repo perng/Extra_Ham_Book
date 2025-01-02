@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8B03]
 Which of the following are provided by satellite tracking programs?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Maps showing the real-time position of the satellite track over Earth
     \item The time, azimuth, and elevation of the start, maximum altitude, and end of a pass
     \item The apparent frequency of the satellite transmission, including effects of Doppler shift
@@ -11,26 +11,4 @@ Which of the following are provided by satellite tracking programs?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a super cool app on your phone that tells you everything about a satellite zooming around Earth. It’s like a GPS for satellites! This app can show you where the satellite is right now on a map, just like how you can see where your friend is on a map when you’re meeting up. It also tells you when the satellite will start flying over your head, when it will be highest in the sky, and when it will disappear. Plus, it even adjusts for the Doppler effect, which is like when a car honks and the sound changes as it drives past you. So, this app does all of that—pretty neat, right?
-
-\subsubsection{Advanced Explanation}
-Satellite tracking programs are sophisticated tools that provide a comprehensive set of data for monitoring satellites. These programs utilize orbital mechanics and real-time telemetry to offer the following features:
-
-1. \textbf{Real-time Position Mapping}: Using Keplerian elements and Earth's geodetic model, the program calculates the satellite's position and projects it onto a map. This is achieved through the transformation of orbital coordinates (e.g., right ascension and declination) into geographic coordinates (latitude and longitude).
-
-2. \textbf{Pass Details}: The program computes the time, azimuth, and elevation for the start, maximum altitude, and end of a satellite pass. This involves solving the visibility conditions based on the observer's location and the satellite's orbit. The azimuth ($A_z$) and elevation ($E_l$) are derived using spherical trigonometry:
-   \[
-   \cos(E_l) = \sin(\phi) \sin(\delta) + \cos(\phi) \cos(\delta) \cos(H)
-   \]
-   where $\phi$ is the observer's latitude, $\delta$ is the satellite's declination, and $H$ is the hour angle.
-
-3. \textbf{Doppler Shift Calculation}: The apparent frequency ($f'$) of the satellite transmission is adjusted for the Doppler effect, which is given by:
-   \[
-   f' = f \left( \frac{c}{c \pm v} \right)
-   \]
-   where $f$ is the transmitted frequency, $c$ is the speed of light, and $v$ is the relative velocity of the satellite.
-
-These features collectively enable precise tracking and communication with satellites, making them indispensable for amateur radio operators and professionals alike.
-
-% Diagram Prompt: Generate a diagram showing a satellite's orbit over Earth with labeled points for start, maximum altitude, and end of a pass, along with azimuth and elevation angles.
+Satellite tracking programs are comprehensive tools that provide a variety of information to users. They offer real-time maps showing the satellite's position over Earth, detailed pass information including time, azimuth, and elevation, and even account for the Doppler shift in the satellite's transmission frequency. Therefore, all the listed features are indeed provided by these programs.

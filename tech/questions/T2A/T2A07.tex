@@ -1,34 +1,20 @@
-\subsection{What is Meant by Repeater Offset?}
+\subsection{Repeater Offset}
 \label{T2A07}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2A07]
-What is meant by repeater offset”?  
-\begin{enumerate}[label=\Alph*.]  
-    \item \textbf{The difference between a repeater’s transmit and receive frequencies}  
-    \item The repeater has a time delay to prevent interference  
-    \item The repeater station identification is done on a separate frequency  
-    \item The number of simultaneous transmit frequencies used by a repeater  
-\end{enumerate}  
+What is meant by repeater offset”?
+\begin{enumerate}[noitemsep]
+    \item \textbf{The difference between a repeater’s transmit and receive frequencies}
+    \item The repeater has a time delay to prevent interference
+    \item The repeater station identification is done on a separate frequency
+    \item The number of simultaneous transmit frequencies used by a repeater
+\end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}  
-Imagine you’re playing a game of catch with a friend, but instead of throwing the ball directly to each other, you use a magical middleman who catches the ball and then throws it back to your friend. Now, this magical middleman has a special rule: he can’t catch and throw the ball on the same spot. He has to move a little to the side to avoid confusion. This moving to the side is like the repeater offset! It’s the difference between where the repeater catches your signal (receive frequency) and where it throws it back (transmit frequency). This way, everything stays organized, and no one gets mixed up.
+\subsubsection{Intuitive Explanation}
+Imagine you're at a party, and you want to talk to someone across the room, but it's too noisy. So, you ask a friend in the middle to relay your message. Now, your friend can't talk and listen at the same time, so they switch between listening to you and then repeating your message to the other person. This switching between listening and talking is like the repeater offset in radio communication. It's the difference between the frequency the repeater listens on and the frequency it transmits on.
 
-\subsubsection{Advanced Explanation}  
-In radio communication, a repeater is a device that receives a signal on one frequency and retransmits it on another frequency to extend the range of communication. The repeater offset refers to the specific frequency difference between the repeater’s receive frequency (\(f_{\text{rx}}\)) and its transmit frequency (\(f_{\text{tx}}\)). Mathematically, this can be expressed as:  
+\subsubsection{Advanced Explanation}
+In radio communication, a repeater is a device that receives a signal on one frequency and retransmits it on another frequency. The repeater offset is the difference between these two frequencies. This offset is necessary to prevent the repeater from interfering with its own reception. For example, if a repeater receives a signal on 146.94 MHz, it might retransmit that signal on 146.34 MHz, resulting in an offset of 600 kHz. This ensures that the repeater can receive and transmit simultaneously without causing interference. The specific offset value depends on the band and the region's regulatory requirements.
 
-\[
-\text{Repeater Offset} = f_{\text{tx}} - f_{\text{rx}}
-\]
-
-For example, if a repeater receives a signal at 146.940 MHz and retransmits it at 146.340 MHz, the offset is:  
-
-\[
-146.340 \, \text{MHz} - 146.940 \, \text{MHz} = -0.600 \, \text{MHz}
-\]
-
-This negative value indicates that the transmit frequency is lower than the receive frequency. The offset ensures that the repeater’s transmitted signal does not interfere with the received signal, allowing for clear and reliable communication.  
-
-Repeater offsets are standardized in many regions to avoid confusion and ensure compatibility between different repeater systems. For instance, in the U.S., the standard offset for the 2-meter band (144–148 MHz) is typically \(\pm 0.600 \, \text{MHz}\).  
-
-% [Prompt for diagram: A diagram showing the relationship between the receive frequency, transmit frequency, and repeater offset, with arrows indicating the direction of signal flow.]
+% Diagram Prompt: Generate a diagram showing a repeater receiving a signal on one frequency and transmitting it on another frequency with the offset labeled. Use SVG format for clarity and scalability.

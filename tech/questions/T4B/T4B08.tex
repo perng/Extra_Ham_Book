@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4B08]
 What is the advantage of having multiple receive bandwidth choices on a multimode transceiver?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item Permits monitoring several modes at once by selecting a separate filter for each mode
     \item \textbf{Permits noise or interference reduction by selecting a bandwidth matching the mode}
     \item Increases the number of frequencies that can be stored in memory
@@ -11,18 +11,5 @@ What is the advantage of having multiple receive bandwidth choices on a multimod
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to listen to your favorite radio station, but there's a lot of static and noise. It's like trying to hear your friend in a noisy cafeteria. If you could adjust your ears to only hear the exact frequency of your friend's voice, you'd understand them better, right? That's what multiple receive bandwidth choices do! They let you tune your ears to match the type of signal you're listening to, reducing the noise and making the signal clearer.
-
-\subsubsection{Advanced Explanation}
-In radio communication, the bandwidth of a signal refers to the range of frequencies it occupies. Different modes of communication (e.g., AM, FM, SSB) have different bandwidth requirements. By selecting a receive bandwidth that matches the mode, you can effectively filter out unwanted noise and interference that falls outside the desired frequency range. This is achieved through the use of band-pass filters, which allow frequencies within a certain range to pass through while attenuating frequencies outside that range.
-
-Mathematically, the signal-to-noise ratio (SNR) can be improved by reducing the bandwidth \( B \) of the receiver, as SNR is inversely proportional to \( B \):
-
-\[
-\text{SNR} \propto \frac{1}{B}
-\]
-
-Thus, by selecting a narrower bandwidth that matches the mode, you can significantly reduce noise and interference, leading to clearer reception. This is particularly important in multimode transceivers, where the ability to switch between different bandwidths allows for optimal performance across various communication modes.
-
-% Diagram Prompt: Generate a diagram showing the effect of different bandwidths on signal reception, with a narrow bandwidth filtering out noise and a wide bandwidth allowing more noise.
+\subsubsection*{Explanation}
+Having multiple receive bandwidth choices on a multimode transceiver allows the user to select a bandwidth that matches the mode being used. This helps in reducing noise or interference, as a narrower bandwidth can filter out unwanted signals more effectively. This is particularly useful in environments with high levels of interference or noise.

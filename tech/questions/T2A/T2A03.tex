@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2A03]
 What is a common repeater frequency offset in the 70 cm band?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Plus or minus 5 MHz}
     \item Plus or minus 600 kHz
     \item Plus or minus 500 kHz
@@ -11,14 +11,4 @@ What is a common repeater frequency offset in the 70 cm band?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're at a party, and you want to talk to your friend across the room. But instead of shouting directly, you use a repeater (like a messenger) to relay your message. Now, to avoid confusion, you and your friend agree to use slightly different frequencies—like one of you talking on a high note and the other on a low note. In the 70 cm band, this note difference is usually around 5 MHz. So, if you're transmitting on one frequency, the repeater listens on a frequency that's 5 MHz higher or lower. This way, everyone can chat without stepping on each other's toes!
-
-\subsubsection{Advanced Explanation}
-In radio communication, repeaters are used to extend the range of signals by receiving a signal on one frequency and retransmitting it on another. The difference between these two frequencies is known as the frequency offset. In the 70 cm band (420-450 MHz in the U.S.), a common frequency offset is $\pm$5 MHz. This offset ensures that the transmitted and received signals do not interfere with each other.
-
-Mathematically, if the repeater receives a signal at frequency $f_r$, it will retransmit the signal at frequency $f_t = f_r \pm 5 \text{ MHz}$. This offset is standardized to avoid confusion and interference in the band.
-
-The 70 cm band is part of the UHF (Ultra High Frequency) spectrum, which is widely used for amateur radio, public safety, and commercial communications. The choice of $\pm$5 MHz as a standard offset is based on historical usage and the need to maintain sufficient separation between the input and output frequencies to prevent interference.
-
-% Prompt for generating a diagram: A diagram showing the frequency spectrum of the 70 cm band with the repeater input and output frequencies marked, illustrating the $\pm$5 MHz offset.
+In the 70 cm band, which is part of the UHF spectrum, repeaters often use a frequency offset to separate the transmit and receive frequencies. This offset helps to avoid interference and allows for simultaneous transmission and reception. The most common offset in this band is \textbf{plus or minus 5 MHz}. This means that if a repeater is receiving on a certain frequency, it will transmit on a frequency that is 5 MHz higher or lower than the receive frequency.

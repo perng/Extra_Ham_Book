@@ -2,7 +2,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3A01]
 Why do VHF signal strengths sometimes vary greatly when the antenna is moved only a few feet?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item The signal path encounters different concentrations of water vapor
     \item VHF ionospheric propagation is very sensitive to path length
     \item \textbf{Multipath propagation cancels or reinforces signals}
@@ -10,20 +10,8 @@ Why do VHF signal strengths sometimes vary greatly when the antenna is moved onl
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're in a room with two speakers playing the same song. If you move just a few feet, the sound might get louder or softer because the sound waves from the two speakers are either adding up or canceling each other out. This is similar to what happens with VHF signals. When you move your antenna, the signals bouncing off buildings, trees, and other objects can either combine to make the signal stronger or cancel each other out, making it weaker. It's like a game of musical chairs for radio waves!
+\subsubsection*{Intuitive Explanation}
+Imagine you're in a room with two speakers playing the same song. If you move just a few feet, the sound might get louder or softer because the sound waves from the two speakers are either adding together or canceling each other out. Similarly, VHF signals can bounce off objects like buildings or hills, creating multiple paths to your antenna. Moving the antenna even a little can change how these waves combine, making the signal stronger or weaker.
 
-\subsubsection{Advanced Explanation}
-VHF (Very High Frequency) signals are typically in the range of 30 MHz to 300 MHz. These signals primarily propagate via line-of-sight, but they can also reflect off objects like buildings, hills, and even the ground. When multiple copies of the same signal arrive at the antenna via different paths (multipath propagation), they can interfere with each other. This interference can be either constructive (reinforcing the signal) or destructive (canceling the signal), depending on the phase difference between the arriving waves.
-
-The phase difference is determined by the path length difference, which can be calculated using the formula:
-
-\[
-\Delta \phi = \frac{2\pi \Delta d}{\lambda}
-\]
-
-where \(\Delta \phi\) is the phase difference, \(\Delta d\) is the path length difference, and \(\lambda\) is the wavelength of the signal. If the phase difference is an integer multiple of \(2\pi\), the signals add constructively, increasing the signal strength. If the phase difference is an odd multiple of \(\pi\), the signals cancel out, reducing the signal strength.
-
-Moving the antenna even a few feet can significantly change the path lengths of the reflected signals, leading to large variations in the received signal strength. This phenomenon is known as multipath fading and is a common issue in VHF communication systems.
-
-% Diagram prompt: A diagram showing multipath propagation with a transmitter, receiver, and multiple reflective surfaces, illustrating how signals can take different paths and interfere at the receiver.
+\subsubsection*{Advanced Explanation}
+VHF signals typically propagate via line-of-sight, but they can also reflect off surfaces such as buildings, terrain, or other obstacles. This creates multiple paths for the signal to reach the antenna, a phenomenon known as multipath propagation. When these reflected signals arrive at the antenna, they can interfere with the direct signal. Depending on the phase difference between the signals, they can either constructively interfere (reinforcing the signal) or destructively interfere (canceling the signal). Moving the antenna even a small distance can significantly alter the phase relationship between the signals, leading to noticeable variations in signal strength. This is why VHF signal strengths can vary greatly with small changes in antenna position.

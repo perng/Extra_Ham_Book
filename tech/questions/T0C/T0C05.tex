@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T0C05]
 Why do exposure limits vary with frequency?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Lower frequency RF fields have more energy than higher frequency fields
     \item Lower frequency RF fields do not penetrate the human body
     \item Higher frequency RF fields are transient in nature
@@ -11,20 +11,10 @@ Why do exposure limits vary with frequency?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine your body is like a sponge, and radio waves are like water. Just like a sponge absorbs water differently depending on how wet it already is, your body absorbs radio waves differently depending on their frequency. Some frequencies are like a light drizzle that the sponge barely notices, while others are like a heavy downpour that the sponge soaks up quickly. This is why exposure limits vary with frequency—your body is more sensitive to certain downpours of radio waves.
+\subsubsection*{Intuitive Explanation}
+Think of your body as a sponge and radio frequencies (RF) as water. Just like a sponge absorbs water differently depending on the type of water (hot, cold, salty, etc.), your body absorbs RF energy differently depending on the frequency. Some frequencies are like hot water—they get absorbed more easily, while others are like cold water—they don't get absorbed as much. That's why exposure limits vary with frequency; to protect you from the frequencies that your body absorbs more easily.
 
-\subsubsection{Advanced Explanation}
-The human body's absorption of RF energy is frequency-dependent due to the interaction between electromagnetic fields and biological tissues. This phenomenon is quantified by the Specific Absorption Rate (SAR), which measures the rate at which energy is absorbed by the body when exposed to an RF electromagnetic field. The SAR is given by:
+\subsubsection*{Advanced Explanation}
+The human body's absorption of RF energy is frequency-dependent due to the interaction between electromagnetic waves and biological tissues. At certain frequencies, the body's tissues resonate, leading to higher absorption rates. This phenomenon is known as the specific absorption rate (SAR). For example, frequencies around 30 MHz to 300 MHz are particularly effective at penetrating and being absorbed by the body, which is why exposure limits are stricter in this range. The International Commission on Non-Ionizing Radiation Protection (ICNIRP) and other regulatory bodies set exposure limits based on extensive research into how different frequencies interact with human tissues, ensuring safety across the RF spectrum.
 
-\[
-\text{SAR} = \frac{\sigma |E|^2}{\rho}
-\]
-
-where \(\sigma\) is the conductivity of the tissue, \(E\) is the electric field strength, and \(\rho\) is the mass density of the tissue.
-
-At certain frequencies, the body's tissues resonate, leading to higher absorption rates. For example, the resonance frequency for the human body is around 70 MHz, where the absorption is maximized. This is why exposure limits are stricter at frequencies where the body absorbs more energy, to prevent excessive heating and potential tissue damage.
-
-Additionally, the penetration depth of RF fields into the body also varies with frequency. Lower frequencies tend to penetrate deeper, while higher frequencies are absorbed more superficially. This further influences the exposure limits, as deeper penetration can affect internal organs more significantly.
-
-% Diagram prompt: A graph showing SAR vs. frequency, highlighting the resonance frequency of the human body.
+% Diagram prompt: Generate a graph showing the Specific Absorption Rate (SAR) versus frequency for human tissues. Use Python with Matplotlib for the graph. The x-axis should represent frequency (Hz) on a logarithmic scale, and the y-axis should represent SAR (W/kg). Highlight the frequency range where SAR peaks.

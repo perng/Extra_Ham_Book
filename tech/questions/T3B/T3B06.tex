@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3B06]
 What is the formula for converting frequency to approximate wavelength in meters?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Wavelength in meters equals frequency in hertz multiplied by 300
     \item Wavelength in meters equals frequency in hertz divided by 300
     \item Wavelength in meters equals frequency in megahertz divided by 300
@@ -11,22 +11,4 @@ What is the formula for converting frequency to approximate wavelength in meters
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're at a concert, and the band is playing a really fast song. The faster they play, the closer together the sound waves are. Now, think of frequency as how fast the band is playing, and wavelength as the distance between those sound waves. If you want to find out how far apart the waves are, you can use a simple trick: divide 300 by the speed of the song (in megahertz). That's because 300 is like a magic number that helps us figure out the distance between the waves when we know how fast they're coming at us.
-
-\subsubsection{Advanced Explanation}
-The relationship between frequency (\(f\)) and wavelength (\(\lambda\)) is given by the formula:
-\[
-\lambda = \frac{c}{f}
-\]
-where \(c\) is the speed of light in a vacuum, approximately \(3 \times 10^8\) meters per second. For practical purposes, especially in radio communications, we often simplify this by using the speed of light in air, which is close to \(3 \times 10^8\) m/s. When frequency is given in megahertz (MHz), the formula becomes:
-\[
-\lambda = \frac{300}{f_{\text{MHz}}}
-\]
-This is because \(1 \text{ MHz} = 10^6 \text{ Hz}\), and \(3 \times 10^8 \text{ m/s} \div 10^6 \text{ Hz} = 300 \text{ m}\). Therefore, the correct formula for converting frequency in megahertz to wavelength in meters is:
-\[
-\lambda = \frac{300}{f_{\text{MHz}}}
-\]
-This formula is particularly useful in radio technology for quickly estimating the wavelength of a signal based on its frequency.
-
-% Prompt for diagram: A diagram showing the relationship between frequency and wavelength, with examples of different frequencies and their corresponding wavelengths.
+To convert frequency to wavelength, the formula is straightforward. The wavelength (\(\lambda\)) in meters is approximately equal to 300 divided by the frequency (\(f\)) in megahertz (MHz). This is because the speed of light is approximately \(3 \times 10^8\) meters per second, and frequency in MHz is \(10^6\) hertz. Therefore, the formula simplifies to \(\lambda = \frac{300}{f}\).

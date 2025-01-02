@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7D10]
 What reading indicates that an ohmmeter is connected across a large, discharged capacitor?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{Increasing resistance with time}
     \item Decreasing resistance with time
     \item Steady full-scale reading
@@ -11,16 +11,10 @@ What reading indicates that an ohmmeter is connected across a large, discharged 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a big, empty water tank (the capacitor) and you’re trying to measure how hard it is to fill it up (the resistance). At first, it’s easy to pour water in because the tank is empty, but as it starts to fill up, it gets harder and harder to add more water. Similarly, when you connect an ohmmeter to a large, discharged capacitor, the resistance starts low but increases over time as the capacitor charges up. So, the correct answer is that the resistance increases with time.
+\subsubsection*{Intuitive Explanation}
+Imagine you have a big empty bucket (the capacitor) and you start filling it with water (charge). At first, the bucket is empty, so it’s easy to pour water in. As the bucket fills up, it becomes harder to add more water. Similarly, when you connect an ohmmeter to a discharged capacitor, it initially shows a low resistance because the capacitor is empty and ready to accept charge. As the capacitor charges up, the resistance increases because it’s getting full and less willing to accept more charge.
 
-\subsubsection{Advanced Explanation}
-When an ohmmeter is connected across a large, discharged capacitor, it applies a small voltage to the capacitor, causing it to start charging. The charging process of a capacitor can be described by the equation:
+\subsubsection*{Advanced Explanation}
+When an ohmmeter is connected across a discharged capacitor, it applies a small voltage to the capacitor and measures the resulting current. Initially, the capacitor acts like a short circuit because it is discharged, and the current is high, indicating low resistance. As the capacitor charges, the current decreases, and the resistance appears to increase. This is because the capacitor is storing charge, and the voltage across it builds up, opposing the applied voltage from the ohmmeter. Therefore, the correct reading is an increasing resistance with time.
 
-\[
-V(t) = V_0 \left(1 - e^{-\frac{t}{RC}}\right)
-\]
-
-where \( V(t) \) is the voltage across the capacitor at time \( t \), \( V_0 \) is the applied voltage, \( R \) is the resistance, and \( C \) is the capacitance. As the capacitor charges, the current flowing through it decreases, which in turn causes the apparent resistance measured by the ohmmeter to increase. This is because the ohmmeter measures resistance by applying a voltage and measuring the resulting current. As the capacitor charges, the current decreases, leading to an increasing resistance reading over time.
-
-% Diagram prompt: Generate a diagram showing the charging curve of a capacitor with time, illustrating the increasing resistance as the capacitor charges.
+% Diagram prompt: Generate a graph showing the resistance over time when an ohmmeter is connected to a discharged capacitor. Use Python with Matplotlib for the graph. The x-axis should represent time, and the y-axis should represent resistance. The graph should show an increasing curve, starting from a low resistance value and gradually increasing over time.

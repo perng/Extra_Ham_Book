@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7A04]
 Which term describes the ability of a receiver to discriminate between multiple signals?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Discrimination ratio
     \item Sensitivity
     \item \textbf{Selectivity}
@@ -11,18 +11,8 @@ Which term describes the ability of a receiver to discriminate between multiple 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're at a party with lots of people talking at the same time. You want to listen to your friend, but it's hard because everyone is so loud. A radio receiver is like your ears at that party. \textbf{Selectivity} is its ability to tune in to one conversation (signal) and ignore all the others. It’s like having super hearing that lets you focus on just one voice in a noisy room!
+\subsubsection*{Intuitive Explanation}
+Imagine you're at a party with multiple conversations happening at once. Your ability to focus on one conversation while ignoring the others is similar to a receiver's ability to pick out one signal from many. This ability is called \textbf{selectivity}.
 
-\subsubsection{Advanced Explanation}
-Selectivity in radio receivers refers to the ability to distinguish between signals of different frequencies. It is primarily determined by the receiver's intermediate frequency (IF) filters. These filters are designed to pass the desired signal while attenuating unwanted signals at other frequencies. Mathematically, selectivity can be expressed in terms of the filter's bandwidth and its attenuation characteristics. For example, a filter with a narrow bandwidth and high attenuation outside the passband will have high selectivity. 
-
-The quality factor (Q) of the filter is a key parameter, defined as:
-\[
-Q = \frac{f_0}{\Delta f}
-\]
-where \( f_0 \) is the center frequency and \( \Delta f \) is the bandwidth. A higher Q indicates better selectivity, as the filter can more effectively reject signals outside the desired frequency range.
-
-Selectivity is crucial in environments with multiple signals, such as crowded radio bands, to ensure that the receiver can isolate and demodulate the intended signal without interference from others.
-
-% Diagram Prompt: Generate a diagram showing a radio receiver with an IF filter, illustrating how selectivity works by filtering out unwanted signals.
+\subsubsection*{Advanced Explanation}
+Selectivity in radio receivers refers to the ability to distinguish between signals of different frequencies. It is a crucial parameter because it determines how well a receiver can isolate a desired signal from other signals that may be present on nearby frequencies. Selectivity is often achieved through the use of filters that allow the desired frequency to pass while attenuating others. High selectivity is essential in crowded frequency bands to avoid interference from adjacent channels.

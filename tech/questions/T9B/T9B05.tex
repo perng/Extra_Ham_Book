@@ -1,9 +1,9 @@
-\subsection{Frequency Effects in Coaxial Cable}
+\subsection{Effect of Frequency Increase in Coaxial Cable}
 \label{T9B05}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T9B05]
 What happens as the frequency of a signal in coaxial cable is increased?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item The characteristic impedance decreases
     \item The loss decreases
     \item The characteristic impedance increases
@@ -11,29 +11,8 @@ What happens as the frequency of a signal in coaxial cable is increased?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to send a message through a long, twisty tube (the coaxial cable). If you whisper (low frequency), the message might get through just fine. But if you start shouting (high frequency), the tube starts to absorb more of your energy, and your message gets weaker as it travels. So, the higher the frequency, the more energy you lose along the way. That's why the loss increases with frequency!
+\subsubsection*{Intuitive Explanation}
+Imagine you're trying to send a message through a long, narrow tunnel. If you whisper (low frequency), the message might travel quite far before it fades away. But if you shout (high frequency), the sound waves bounce around more and lose energy faster, so the message doesn't travel as far. Similarly, in a coaxial cable, higher frequency signals lose more energy as they travel, leading to increased loss.
 
-\subsubsection{Advanced Explanation}
-In coaxial cables, the loss is primarily due to two factors: conductor loss and dielectric loss. As the frequency of the signal increases, both of these losses tend to increase. 
-
-The conductor loss is given by:
-\[
-\alpha_c = \frac{R}{2Z_0}
-\]
-where \( R \) is the resistance per unit length and \( Z_0 \) is the characteristic impedance. At higher frequencies, the skin effect causes the resistance \( R \) to increase, leading to higher conductor loss.
-
-The dielectric loss is given by:
-\[
-\alpha_d = \frac{G Z_0}{2}
-\]
-where \( G \) is the conductance per unit length. As frequency increases, the dielectric material's ability to store and release energy diminishes, increasing \( G \) and thus the dielectric loss.
-
-Therefore, the total loss \( \alpha \) in the coaxial cable increases with frequency:
-\[
-\alpha = \alpha_c + \alpha_d
-\]
-
-This explains why the correct answer is that the loss increases as the frequency of the signal in coaxial cable is increased.
-
-% Diagram prompt: A diagram showing the relationship between frequency and loss in a coaxial cable, illustrating the increase in loss with frequency.
+\subsubsection*{Advanced Explanation}
+As the frequency of a signal in a coaxial cable increases, the skin effect becomes more pronounced. The skin effect causes the signal to travel more on the surface of the conductor rather than through its entire cross-section. This results in higher resistance and, consequently, higher loss. Additionally, dielectric losses in the insulating material between the conductors also increase with frequency. These combined effects lead to an overall increase in signal loss as the frequency increases. The characteristic impedance of the cable, however, remains relatively constant with frequency, assuming the cable is properly designed and terminated.

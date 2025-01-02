@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5D01]
 What formula is used to calculate current in a circuit?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item I = E R
     \item \textbf{I = E / R}
     \item I = E + R
@@ -11,31 +11,18 @@ What formula is used to calculate current in a circuit?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to push a ball through a pipe. The harder you push (that's the voltage, E), the faster the ball moves (that's the current, I). But if the pipe is narrow or has a lot of twists (that's the resistance, R), the ball moves slower. So, the current (I) is like how fast the ball moves, and it depends on how hard you push (E) divided by how much the pipe resists (R). That's why the formula is I = E / R. Easy, right?
+\subsubsection*{Intuitive Explanation}
+Imagine you have a water pipe. The water flow (current) depends on the pressure (voltage) and the resistance of the pipe. If you increase the pressure, more water flows. If the pipe is narrower (more resistance), less water flows. The formula \( I = \frac{E}{R} \) simply tells us that current is voltage divided by resistance. Easy, right?
 
-\subsubsection{Advanced Explanation}
-The relationship between current (I), voltage (E), and resistance (R) is described by Ohm's Law, which states:
-
+\subsubsection*{Advanced Explanation}
+Ohm's Law is a fundamental principle in electrical engineering that relates voltage (\( E \)), current (\( I \)), and resistance (\( R \)) in a circuit. The law states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. Mathematically, this is expressed as:
 \[
 I = \frac{E}{R}
 \]
-
-Where:
+where:
 \begin{itemize}
     \item \( I \) is the current in amperes (A),
     \item \( E \) is the voltage in volts (V),
-    \item \( R \) is the resistance in ohms (\(\Omega\)).
+    \item \( R \) is the resistance in ohms ($\Omega$).
 \end{itemize}
-
-Ohm's Law is fundamental in electrical engineering and physics, as it allows us to calculate the current flowing through a circuit when the voltage and resistance are known. The law implies that the current is directly proportional to the voltage and inversely proportional to the resistance. This means that if the voltage increases, the current increases, and if the resistance increases, the current decreases.
-
-For example, if you have a circuit with a voltage of 12 volts and a resistance of 4 ohms, the current can be calculated as:
-
-\[
-I = \frac{12\, \text{V}}{4\, \Omega} = 3\, \text{A}
-\]
-
-This calculation shows that 3 amperes of current will flow through the circuit.
-
-% Diagram prompt: A simple circuit diagram showing a voltage source (E), a resistor (R), and the current (I) flowing through the circuit.
+This formula is essential for analyzing and designing electrical circuits.

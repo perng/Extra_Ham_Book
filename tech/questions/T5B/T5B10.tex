@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T5B10]
 Which decibel value most closely represents a power decrease from 12 watts to 3 watts?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item -1 dB
     \item -3 dB
     \item \textbf{-6 dB}
@@ -11,28 +11,20 @@ Which decibel value most closely represents a power decrease from 12 watts to 3 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a big bag of 12 candies, and you give away some of them until you only have 3 left. That's a big drop in your candy stash! In the world of radio, we measure this kind of drop using something called decibels (dB). A decibel is just a way to compare two amounts of power. In this case, the power dropped from 12 watts to 3 watts, which is a big decrease. The correct answer, -6 dB, is like saying you lost half of your candy stash twice. First, you went from 12 to 6 (that's -3 dB), and then from 6 to 3 (another -3 dB). So, total, you lost -6 dB of power.
+\subsubsection*{Intuitive Explanation}
+Imagine you have a light bulb that's shining at 12 watts. If you dim it down to 3 watts, it's like turning down the brightness by a certain amount. Decibels (dB) are a way to measure this change in power. A decrease of 6 dB means the power has been reduced to one-fourth of its original value, which is exactly what happened here (12 watts to 3 watts).
 
-\subsubsection{Advanced Explanation}
-To calculate the power decrease in decibels, we use the formula:
+\subsubsection*{Advanced Explanation}
+The decibel (dB) is a logarithmic unit used to express the ratio of two power levels. The formula to calculate the power ratio in decibels is:
 
 \[
 \text{dB} = 10 \log_{10}\left(\frac{P_2}{P_1}\right)
 \]
 
-where \(P_1\) is the initial power and \(P_2\) is the final power. In this case, \(P_1 = 12\) watts and \(P_2 = 3\) watts. Plugging these values into the formula:
+Where \(P_1\) is the initial power and \(P_2\) is the final power. In this case, \(P_1 = 12\) watts and \(P_2 = 3\) watts. Plugging these values into the formula:
 
 \[
-\text{dB} = 10 \log_{10}\left(\frac{3}{12}\right) = 10 \log_{10}\left(\frac{1}{4}\right)
+\text{dB} = 10 \log_{10}\left(\frac{3}{12}\right) = 10 \log_{10}\left(\frac{1}{4}\right) = 10 \times (-0.602) \approx -6 \text{ dB}
 \]
 
-We know that \(\log_{10}\left(\frac{1}{4}\right) = \log_{10}(1) - \log_{10}(4) = 0 - 0.602 = -0.602\). Therefore:
-
-\[
-\text{dB} = 10 \times (-0.602) = -6.02 \text{ dB}
-\]
-
-This value is closest to -6 dB, which corresponds to option C. The decibel scale is logarithmic, meaning that a decrease of 3 dB represents a halving of power. Here, the power decreased by a factor of 4, which is equivalent to two halvings, hence a total decrease of 6 dB.
-
-% Diagram prompt: A graph showing the relationship between power levels and decibel changes, highlighting the points at 12 watts and 3 watts with corresponding dB values.
+Thus, a power decrease from 12 watts to 3 watts corresponds to a decrease of approximately -6 dB.

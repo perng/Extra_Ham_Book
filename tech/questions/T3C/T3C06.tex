@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T3C06]
 What type of propagation is responsible for allowing over-the-horizon VHF and UHF communications to ranges of approximately 300 miles on a regular basis?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item \textbf{Tropospheric ducting}
     \item D region refraction
     \item F2 region refraction
@@ -12,17 +12,9 @@ What type of propagation is responsible for allowing over-the-horizon VHF and UH
 \end{tcolorbox}
 
 \subsubsection*{Intuitive Explanation}
-Imagine the Earth’s atmosphere as a giant sandwich. The troposphere is the bottom layer, where all the weather happens. Sometimes, this layer acts like a tunnel or a duct that traps radio waves and guides them far beyond the horizon. It’s like when you whisper into a long tube, and the sound travels much farther than it normally would. This is why VHF and UHF signals can sometimes travel up to 300 miles, even though they usually can’t go that far. It’s all thanks to this tropospheric ducting trick!
+Imagine the Earth's atmosphere as a giant, invisible pipe. Sometimes, this pipe can trap radio waves and guide them over long distances, even beyond the horizon. This phenomenon is called tropospheric ducting. It’s like a secret tunnel for radio signals, allowing them to travel much farther than they normally would. This is especially useful for VHF and UHF communications, which usually have a limited range.
 
 \subsubsection*{Advanced Explanation}
-Tropospheric ducting is a phenomenon where radio waves in the VHF and UHF bands are trapped in a layer of the troposphere, allowing them to propagate over long distances beyond the line of sight. This occurs due to temperature inversions or sharp changes in humidity in the lower atmosphere, creating a waveguide-like effect. The refractive index of the atmosphere changes with altitude, and under certain conditions, it can cause the radio waves to bend and follow the curvature of the Earth.
+Tropospheric ducting occurs when there is a temperature inversion in the troposphere, the lowest layer of the Earth's atmosphere. This inversion creates a boundary layer that can trap radio waves, particularly in the VHF and UHF bands. The trapped waves are then guided along this layer, allowing them to propagate over distances much greater than the line-of-sight range. This effect is most common in regions with stable weather conditions and can facilitate communications over approximately 300 miles. Other propagation mechanisms, such as D region refraction, F2 region refraction, and Faraday rotation, do not typically support such long-range VHF and UHF communications on a regular basis.
 
-Mathematically, the refractive index \( n \) of the atmosphere is given by:
-\[
-n = 1 + \frac{77.6}{T} \left( P + \frac{4810 e}{T} \right) \times 10^{-6}
-\]
-where \( T \) is the temperature in Kelvin, \( P \) is the atmospheric pressure in millibars, and \( e \) is the partial pressure of water vapor in millibars. When a temperature inversion occurs, \( n \) decreases with altitude, creating a duct that traps the radio waves.
-
-This phenomenon is particularly effective for frequencies between 30 MHz and 300 MHz (VHF) and 300 MHz to 3 GHz (UHF). The ducting effect can extend the range of communication to approximately 300 miles, depending on atmospheric conditions.
-
-% Diagram Prompt: A diagram showing the Earth's surface, the troposphere, and radio waves being trapped in a duct-like layer, with labels for temperature inversion and the path of the radio waves.
+% Diagram prompt: Generate a diagram showing the Earth's surface with a temperature inversion layer in the troposphere, trapping VHF and UHF radio waves and guiding them over the horizon. Use SVG format for clarity and scalability.

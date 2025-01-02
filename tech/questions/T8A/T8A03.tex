@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T8A03]
 Which type of voice mode is often used for long-distance (weak signal) contacts on the VHF and UHF bands?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item FM
     \item DRM
     \item \textbf{SSB}
@@ -11,18 +11,8 @@ Which type of voice mode is often used for long-distance (weak signal) contacts 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you're trying to shout across a huge football field. If you shout normally (like FM), your voice might not reach the other side because it gets lost in the noise. But if you use a special technique where you only send the important parts of your voice (like SSB), it’s like using a megaphone that focuses your shout, making it easier for someone far away to hear you. That’s why SSB is great for long-distance chats on VHF and UHF bands!
+\subsubsection*{Intuitive Explanation}
+When you're trying to talk to someone far away on VHF or UHF bands, you need a mode that can cut through the noise and make your signal as clear as possible. Think of it like shouting across a noisy room—you want to use the most efficient way to get your message across. Single Sideband (SSB) is like a focused shout that uses less power and bandwidth, making it ideal for long-distance communication when signals are weak.
 
-\subsubsection{Advanced Explanation}
-Single Sideband (SSB) modulation is often used for long-distance communication on VHF and UHF bands due to its efficiency in bandwidth and power usage. Unlike Frequency Modulation (FM), which transmits both the carrier and two sidebands, SSB suppresses the carrier and one sideband, transmitting only the remaining sideband. This results in a narrower bandwidth and more efficient use of power, which is crucial for weak signal conditions.
-
-Mathematically, the SSB signal can be represented as:
-\[
-s_{\text{SSB}}(t) = A_c \cdot m(t) \cos(2\pi f_c t) \mp A_c \cdot \hat{m}(t) \sin(2\pi f_c t)
-\]
-where \( A_c \) is the carrier amplitude, \( m(t) \) is the message signal, \( f_c \) is the carrier frequency, and \( \hat{m}(t) \) is the Hilbert transform of \( m(t) \). The upper sideband is represented by the minus sign, and the lower sideband by the plus sign.
-
-SSB’s efficiency in both bandwidth and power makes it ideal for long-distance communication, especially when signal strength is weak. This is why it is preferred over FM, DRM, or PM for such scenarios.
-
-% Diagram prompt: Generate a diagram comparing the bandwidth of FM and SSB signals.
+\subsubsection*{Advanced Explanation}
+Single Sideband (SSB) is a modulation technique that transmits only one sideband of the carrier wave, either the upper or lower sideband, while suppressing the other sideband and the carrier itself. This results in a more efficient use of power and bandwidth compared to other modes like FM (Frequency Modulation) or PM (Phase Modulation). SSB is particularly effective for long-distance communication on VHF and UHF bands because it reduces the signal's susceptibility to noise and interference, allowing for clearer reception even when the signal is weak. Additionally, SSB requires less power to transmit over long distances, making it a preferred choice for weak signal contacts.

@@ -1,9 +1,9 @@
-\subsection{Power Density and Duty Cycle}
+\subsection{RF Safety Power Density and Duty Cycle}
 \label{T0C03}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T0C03]
 How does the allowable power density for RF safety change if duty cycle changes from 100 percent to 50 percent?
-\begin{enumerate}[label=\Alph*]
+\begin{enumerate}[noitemsep]
     \item It increases by a factor of 3
     \item It decreases by 50 percent
     \item \textbf{It increases by a factor of 2}
@@ -11,22 +11,8 @@ How does the allowable power density for RF safety change if duty cycle changes 
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a light bulb that’s super bright, but you only turn it on half the time. Since it’s not on all the time, it’s not as intense overall. But here’s the cool part: because it’s off half the time, you can actually make it twice as bright when it’s on, and it’ll still be safe overall. So, if the duty cycle (how often the light is on) goes from 100\% to 50\%, you can double the brightness (or power density) when it’s on, and it’ll still be safe!
+\subsubsection*{Intuitive Explanation}
+Think of the duty cycle as how often you're using a microwave oven. If you use it all the time (100\% duty cycle), you need to be careful not to overheat it. But if you only use it half the time (50\% duty cycle), you can afford to crank up the power a bit more without causing harm. This is because the average power over time is lower, so the allowable power density can be higher.
 
-\subsubsection{Advanced Explanation}
-The allowable power density for RF safety is inversely proportional to the duty cycle. Duty cycle (\(D\)) is defined as the ratio of the time the signal is on to the total time period. Mathematically, it can be expressed as:
-
-\[
-D = \frac{T_{\text{on}}}{T_{\text{total}}}
-\]
-
-If the duty cycle decreases from 100\% (\(D = 1\)) to 50\% (\(D = 0.5\)), the allowable power density (\(P_{\text{allow}}\)) can be increased by a factor of \( \frac{1}{D} \). Therefore, when \(D\) changes from 1 to 0.5, the allowable power density increases by a factor of 2:
-
-\[
-P_{\text{allow, new}} = P_{\text{allow, original}} \times \frac{1}{D} = P_{\text{allow, original}} \times 2
-\]
-
-This adjustment is allowed because the average power over time remains within safe limits, even though the peak power density is higher.
-
-% Diagram Prompt: Generate a diagram showing the relationship between duty cycle and allowable power density, with examples of 100% and 50% duty cycles.
+\subsubsection*{Advanced Explanation}
+The allowable power density for RF safety is determined by the average power over time. When the duty cycle decreases from 100\% to 50\%, the transmitter is only active half the time. This means the average power is halved, allowing the peak power density to be doubled without exceeding safety limits. This adjustment ensures that the exposure to RF energy remains within safe levels, even when the transmitter is operating at higher peak powers for shorter durations.

@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T7B04]
 Which of the following could you use to cure distorted audio caused by RF current on the shield of a microphone cable?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item Band-pass filter
     \item Low-pass filter
     \item Preamplifier
@@ -11,18 +11,8 @@ Which of the following could you use to cure distorted audio caused by RF curren
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine your microphone cable is like a garden hose, and the RF current is like water leaking out where it shouldn't. This leak causes weird noises in your audio, like static on a radio. A ferrite choke is like a clamp on the hose—it stops the leak by blocking the RF current. So, if you want to get rid of the annoying noise, just clamp it with a ferrite choke!
+\subsubsection*{Intuitive Explanation}
+Imagine your microphone cable is like a garden hose, and RF current is like water leaking out where it shouldn't. This leakage causes the audio to sound distorted, like static on a radio. A ferrite choke acts like a clamp on the hose, stopping the leak and cleaning up the sound.
 
-\subsubsection{Advanced Explanation}
-RF (Radio Frequency) current on the shield of a microphone cable can induce unwanted noise into the audio signal, leading to distortion. A ferrite choke is a passive device that suppresses high-frequency noise by increasing the impedance of the cable at RF frequencies. This is achieved through the ferrite material's high magnetic permeability, which absorbs the RF energy and converts it into heat.
-
-Mathematically, the impedance \( Z \) of the ferrite choke can be expressed as:
-\[
-Z = j\omega L
-\]
-where \( j \) is the imaginary unit, \( \omega \) is the angular frequency of the RF signal, and \( L \) is the inductance of the ferrite choke. By increasing \( Z \), the ferrite choke effectively blocks the RF current from flowing through the cable shield, thus curing the distorted audio.
-
-Other options like band-pass filters, low-pass filters, and preamplifiers are not suitable for this specific issue. Band-pass and low-pass filters are designed to filter specific frequency ranges, while a preamplifier amplifies the signal but does not address RF interference.
-
-% Diagram Prompt: Generate a diagram showing a microphone cable with a ferrite choke attached, illustrating the suppression of RF current.
+\subsubsection*{Advanced Explanation}
+RF current on the shield of a microphone cable can induce unwanted noise into the audio signal, leading to distortion. A ferrite choke is a passive device that suppresses high-frequency noise by absorbing RF energy. It works by increasing the impedance of the cable at RF frequencies, effectively blocking the RF current from entering the audio circuit. This is a common and effective solution for mitigating RF interference in audio equipment.

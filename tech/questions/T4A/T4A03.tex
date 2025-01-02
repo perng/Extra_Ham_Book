@@ -1,9 +1,9 @@
-\subsection{DC Power Connection for Transceivers}
+\subsection{DC Power Connection Wires for Transceivers}
 \label{T4A03}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T4A03]
 Why are short, heavy-gauge wires used for a transceiver’s DC power connection?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{To minimize voltage drop when transmitting}
     \item To provide a good counterpoise for the antenna
     \item To avoid RF interference
@@ -11,18 +11,5 @@ Why are short, heavy-gauge wires used for a transceiver’s DC power connection?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re trying to drink a thick milkshake through a long, skinny straw. It’s hard work, right? Now, if you use a short, wide straw, the milkshake flows easily. Similarly, when a transceiver needs power, short, thick wires (like the wide straw) let the electricity flow smoothly without losing too much energy. This keeps the transceiver happy and working well, especially when it’s sending out strong signals.
-
-\subsubsection{Advanced Explanation}
-The resistance \( R \) of a wire is given by the formula:
-\[
-R = \rho \frac{L}{A}
-\]
-where \( \rho \) is the resistivity of the material, \( L \) is the length of the wire, and \( A \) is the cross-sectional area. Using short, heavy-gauge wires reduces both \( L \) and increases \( A \), thereby minimizing the resistance \( R \). According to Ohm’s Law:
-\[
-V = IR
-\]
-where \( V \) is the voltage drop, \( I \) is the current, and \( R \) is the resistance. By minimizing \( R \), the voltage drop \( V \) is also minimized, ensuring that the transceiver receives sufficient voltage even during high current draw when transmitting. This is crucial for maintaining the efficiency and performance of the transceiver.
-
-% Diagram Prompt: Generate a diagram showing a transceiver connected to a power source with short, thick wires, illustrating the concept of minimizing voltage drop.
+\subsubsection*{Explanation}
+Short, heavy-gauge wires are used for a transceiver’s DC power connection primarily to minimize voltage drop when transmitting. Thicker wires (heavy-gauge) have lower resistance, which reduces the voltage drop across the wire when high current is drawn during transmission. Shorter wires further reduce resistance and voltage drop, ensuring that the transceiver receives adequate power for optimal performance.

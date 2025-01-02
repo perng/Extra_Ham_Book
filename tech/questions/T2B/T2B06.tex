@@ -1,9 +1,8 @@
-\subsection{What Type of Signaling Uses Pairs of Audio Tones?}
-\label{T2B06}
+\subsection{Signaling with Audio Tone Pairs}\label{T2B06}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T2B06]
 What type of signaling uses pairs of audio tones?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item \textbf{DTMF}
     \item CTCSS
     \item GPRS
@@ -11,18 +10,5 @@ What type of signaling uses pairs of audio tones?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you’re playing a game where you have to press two buttons on a phone at the same time to make a secret sound. That’s kind of like DTMF (Dual-Tone Multi-Frequency) signaling! It’s the system that uses pairs of audio tones to send information, like when you dial a phone number. Each number or symbol on your phone has its own unique pair of tones. So, when you press a button, it’s like sending a secret code that the phone system understands. Cool, right?
-
-\subsubsection{Advanced Explanation}
-DTMF signaling is a method used in telecommunication to encode the digits of a telephone number or other commands into pairs of audio frequencies. Each key on a telephone keypad corresponds to a specific pair of frequencies: one from a low-frequency group (697 Hz, 770 Hz, 852 Hz, 941 Hz) and one from a high-frequency group (1209 Hz, 1336 Hz, 1477 Hz). For example, pressing the '5' key generates a tone composed of 770 Hz and 1336 Hz.
-
-Mathematically, the signal can be represented as:
-\[
-s(t) = A_1 \sin(2\pi f_1 t) + A_2 \sin(2\pi f_2 t)
-\]
-where \( A_1 \) and \( A_2 \) are the amplitudes of the two tones, and \( f_1 \) and \( f_2 \) are the frequencies corresponding to the pressed key.
-
-DTMF is widely used in telephony for dialing, voicemail systems, and other applications where numeric input is required. It is distinct from other signaling methods like CTCSS (Continuous Tone-Coded Squelch System), which uses a single sub-audible tone to control access to a repeater, or GPRS (General Packet Radio Service) and D-STAR, which are digital communication protocols.
-
-% Diagram Prompt: Generate a diagram showing the DTMF frequency matrix with low-frequency and high-frequency groups, and the corresponding keys on a telephone keypad.
+\subsubsection*{Explanation}
+DTMF (Dual-Tone Multi-Frequency) signaling uses pairs of audio tones to represent different digits or commands. This method is commonly used in telephone systems for dialing numbers and in some radio systems for remote control operations. Each key press generates a unique combination of two tones, one from a low-frequency group and one from a high-frequency group. This allows for reliable and distinct signaling even over noisy channels.

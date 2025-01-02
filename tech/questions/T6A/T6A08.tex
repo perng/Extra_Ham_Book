@@ -3,7 +3,7 @@
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title=T6A08]
 What is the function of an SPDT switch?
-\begin{enumerate}[label=\Alph*)]
+\begin{enumerate}[noitemsep]
     \item A single circuit is opened or closed
     \item Two circuits are opened or closed
     \item \textbf{A single circuit is switched between one of two other circuits}
@@ -11,21 +11,8 @@ What is the function of an SPDT switch?
 \end{enumerate}
 \end{tcolorbox}
 
-\subsubsection{Intuitive Explanation}
-Imagine you have a light switch that can turn on either a red light or a green light, but not both at the same time. That's what an SPDT (Single Pole Double Throw) switch does! It’s like a traffic cop for electricity, directing the flow to one of two paths. So, when you flip the switch, it chooses between two options, like picking between chocolate or vanilla ice cream, but never both at the same time.
+\subsubsection*{Intuitive Explanation}
+An SPDT (Single Pole Double Throw) switch is like a railway switch that can direct a train onto one of two tracks. In electronics, it allows a single input to be connected to one of two outputs. Think of it as a simple way to choose between two options with a single switch.
 
-\subsubsection{Advanced Explanation}
-An SPDT (Single Pole Double Throw) switch is a type of electrical switch that has one input terminal (the pole) and two output terminals (the throws). The function of the SPDT switch is to connect the input terminal to one of the two output terminals, effectively switching the circuit between two different paths. 
-
-Mathematically, this can be represented as a binary decision:
-\[
-\text{Output} = 
-\begin{cases}
-\text{Output}_1 & \text{if switch is in position 1} \\
-\text{Output}_2 & \text{if switch is in position 2}
-\end{cases}
-\]
-
-This type of switch is commonly used in applications where a single input needs to be routed to one of two possible outputs, such as in audio equipment to switch between speakers or in electronic circuits to select between different signal paths.
-
-% Prompt for diagram: Generate a diagram showing an SPDT switch with one input terminal connected to two output terminals, illustrating the switching mechanism.
+\subsubsection*{Advanced Explanation}
+An SPDT switch has three terminals: one common terminal (the pole) and two other terminals (the throws). The common terminal can be connected to either of the two throws, but not both at the same time. This makes it useful for applications where you need to switch a single signal between two different paths, such as in audio equipment or control circuits. The key feature is that it only switches one circuit at a time, but provides two possible destinations for that circuit.
