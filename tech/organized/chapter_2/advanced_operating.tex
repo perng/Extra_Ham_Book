@@ -4,38 +4,107 @@
 \subsection*{FM Transmission Distortion}
 FM transmission distortion on voice peaks can occur when the input audio signal is too loud, causing over-modulation. This results in distorted audio at the receiving end. To avoid this, ensure that your microphone gain is properly adjusted and avoid speaking too loudly into the microphone. Over-modulation can also be caused by excessive transmit power, but this is less common in modern equipment.
 
-\subsection*{DTMF Signaling}
-Dual-Tone Multi-Frequency (DTMF) signaling uses pairs of audio tones to represent numbers, letters, or special characters. This signaling method is commonly used in amateur radio for remote control of repeaters, accessing voicemail systems, and other automated functions. Each DTMF tone is a combination of two frequencies, one from a low-frequency group and one from a high-frequency group.
 
 \subsection*{Digital Repeater Talkgroups}
 To join a digital repeater's talkgroup, you need to program your radio with the group's ID or code. Talkgroups allow multiple users to communicate on the same digital repeater without interfering with each other. Each talkgroup has a unique identifier, and your radio must be configured to use the correct ID to access the group. This system is commonly used in DMR (Digital Mobile Radio) networks.
 
 \subsection*{Frequency Interference Management}
-When two stations transmit on the same frequency and interfere with each other, they should negotiate continued use of the frequency. This is a common practice in amateur radio to ensure fair and efficient use of the spectrum. The Q signal \textbf{QRM} indicates that you are receiving interference from other stations, while \textbf{QSY} indicates that you are changing frequency to avoid interference.
-
-\begin{figure}[h]
+\begin{wrapfigure}{r}{0.35\textwidth}
     \centering
-    % \includegraphics[width=0.8\textwidth]{figures/talkgroup.png}
+    \includegraphics[width=0.3\textwidth]{tech/organized/chapter_2/images/talkgroup.png}
     \caption{Joining a Digital Repeater Talkgroup}
     \label{fig:talkgroup}
     % Diagram showing the process of joining a digital repeater talkgroup. The diagram should include steps like programming the radio with the group ID, accessing the repeater, and communicating within the talkgroup.
-\end{figure}
+\end{wrapfigure}
 
-\begin{table}[h]
+When two stations transmit on the same frequency and interfere with each other, they should negotiate continued use of the frequency. This is a common practice in amateur radio to ensure fair and efficient use of the spectrum. The Q signal \textbf{QRM} indicates that you are receiving interference from other stations, while \textbf{QSY} indicates that you are changing frequency to avoid interference.
+
+
+\begin{table}[h!]
     \centering
-    \begin{tabular}{|c|l|}
+    \caption{Common Q Signals and Their Detailed Meanings}
+    \begin{tabular}{|l|p{5.5cm}|p{5.5cm}|}
         \hline
-        \textbf{Q Signal} & \textbf{Meaning} \\
+        \textbf{Code} & \textbf{When Asked as Question} & \textbf{When Used as Statement} \\
         \hline
-        QRM & Interference from other stations \\
-        QSY & Changing frequency \\
-        QTH & Location \\
-        QSB & Fading signal \\
+        QRA & What ship or coast station is that? & This is \_\_\_\_. \\
+        \hline
+        QRB & What is your distance? & My distance is \_\_\_\_ kilometers/miles. \\
+        \hline
+        QRC & What is your true bearing? & My true bearing is \_\_\_\_ degrees. \\
+        \hline
+        QRD & Where are you bound for? & I am bound for \_\_\_\_. \\
+        \hline
+        QRF & Where are you bound from? & I am bound from \_\_\_\_. \\
+        \hline
+        QRG & What line do you belong to? & I belong to the \_\_\_\_ Line. \\
+        \hline
+        QRH & What is your wavelength in meters? & My wavelength is \_\_\_\_ meters. \\
+        \hline
+        QRJ & How many words have you to send? & I have \_\_\_\_ words to send. \\
+        \hline
+        QRK & How do you receive me? & I receive you: 1 (unreadable) to 5 (perfect). \\
+        \hline
+        QRL & Are you busy? & I am busy. Please do not interfere. \\
+        \hline
+        QRM & Are you being interfered with? & I am being interfered with. \\
+        \hline
+        QRN & Are the atmospherics strong? & Atmospheric noise is very strong. \\
         \hline
     \end{tabular}
-    \caption{Common Q Signals}
     \label{tab:q_signals}
 \end{table}
+
+Q signals can be used either as questions (by adding a question mark) or as statements. These signals are particularly useful because they:
+\begin{itemize}
+    \item Are internationally recognized
+    \item Overcome language barriers
+    \item Provide quick, standardized communication
+    \item Work well in poor signal conditions
+\end{itemize}
+
+\subsection*{Using Q Signals}
+Q signals are a standardized set of three-letter codes, all beginning with 'Q', that facilitate efficient communication, especially in poor conditions or across language barriers. These signals can be used in two ways:
+
+\begin{itemize}
+    \item As a question by adding a question mark
+    \item As a statement by providing the information
+\end{itemize}
+
+Common usage examples:
+\begin{itemize}
+    \item \textbf{Location Exchange}:
+        \begin{itemize}
+            \item Question: "QTH?"
+            \item Response: "QTH Atlanta, Georgia"
+            \item Meaning: "What is your location?" / "My location is Atlanta, Georgia"
+        \end{itemize}
+    \item \textbf{Signal Report}:
+        \begin{itemize}
+            \item Question: "QRK?"
+            \item Response: "QRK 4"
+            \item Meaning: "How do you receive me?" / "I receive you well (4 out of 5)"
+        \end{itemize}
+    \item \textbf{Interference Check}:
+        \begin{itemize}
+            \item Statement: "QRM" or "QRM?"
+            \item Response: "QSY 7.255"
+            \item Meaning: "I am experiencing interference" / "Let's change frequency to 7.255 MHz"
+        \end{itemize}
+    \item \textbf{Frequency Usage}:
+        \begin{itemize}
+            \item Question: "QRL?"
+            \item Response: "QRL" or "YES QRL"
+            \item Meaning: "Is this frequency in use?" / "Yes, this frequency is in use"
+        \end{itemize}
+\end{itemize}
+
+In practice, Q signals are often combined with standard voice communications. For example:
+\begin{itemize}
+    \item "QTH is Atlanta, name is John"
+    \item "Getting QRM from nearby station, QSY up 5"
+    \item "QRK 5, you are perfectly readable here"
+\end{itemize}
 
 \subsection*{Questions}
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T2B05}]

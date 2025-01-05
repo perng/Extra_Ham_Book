@@ -1,33 +1,101 @@
 \section{Message Handling and Radiograms}
 \label{section:message_handling}
 
-\subsection*{Message Handling and Radiograms}
-
 Amateur radio operators play a crucial role in emergency communication, and understanding the rules and procedures for message handling is essential. This section covers the circumstances under which operators can operate outside their licensed frequency privileges, the structure of radiograms, and the purpose of the squelch function in receivers.
+
+
+\subsection*{Understanding Radiograms}
+A radiogram is a formal written message that follows a standardized format for transmission via amateur radio. This format ensures accuracy and consistency when messages are relayed through multiple stations. A radiogram consists of four main parts:
+
+\begin{enumerate}
+    \item \textbf{Preamble}:
+        \begin{itemize}
+            \item Message number (assigned by the originating station)
+            \item Precedence (routine, welfare, priority, or emergency)
+            \item Handling instructions (optional)
+            \item Station of origin (first ham radio station to handle the message)
+            \item Check (word count of the message text)
+            \item Place of origin (where the message creator is located)
+            \item Time filed (optional)
+            \item Date (when the message was created)
+        \end{itemize}
+    
+    \item \textbf{Address}:
+        \begin{itemize}
+            \item Complete name of the recipient
+            \item Street address or P.O. box
+            \item City, state, and ZIP code
+            \item Phone number (recommended)
+        \end{itemize}
+    
+    \item \textbf{Text}:
+        \begin{itemize}
+            \item Limited to 25 words or less (standard practice)
+            \item Written in clear, concise language
+            \item Words counted exactly as written
+            \item Numbers spelled out
+            \item Punctuation spelled out (e.g., "QUERY" for question mark)
+        \end{itemize}
+    
+    \item \textbf{Signature}:
+        \begin{itemize}
+            \item Name of the person who created the message
+            \item Additional contact information if needed
+        \end{itemize}
+\end{enumerate}
+
+
+\begin{table}[h]
+    \centering
+    \caption{Example Radiogram Components}
+    \begin{tabular}{|l|l|p{6cm}|}
+        \hline
+        \textbf{Component} & \textbf{Example} & \textbf{Explanation} \\
+        \hline
+        Message Number & NR 207 & Assigned sequentially by originating station \\
+        \hline
+        Precedence & R & Routine (other options: P-Priority, W-Welfare, EMERGENCY) \\
+        \hline
+        Handling Instructions & HXG & Delivery by mail or telephone acceptable \\
+        \hline
+        Station of Origin & WB4ABC & First amateur station to handle message \\
+        \hline
+        Check & 12 & Word count in text portion \\
+        \hline
+        Place of Origin & ATLANTA GA & Where message originated \\
+        \hline
+        Time Filed & 1830 & Optional, in 24-hour format \\
+        \hline
+        Date & JUL 1 & Date message was originated \\
+        \hline
+        Address & \begin{tabular}{l}
+            JOHN SMITH \\
+            123 MAIN STREET \\
+            ANYTOWN GA 30000 \\
+            555 555 1234
+        \end{tabular} & Complete delivery information \\
+        \hline
+        Text & \begin{tabular}{l}
+            ARRIVED SAFELY \\ IN ATLANTA STOP \\
+            WEATHER IS \\ BEAUTIFUL STOP WILL \\
+            CALL TOMORROW \\ STOP LOVE \\
+        \end{tabular} & Message content, using STOP for periods \\
+        \hline
+        Signature & MARY & Message originator's name \\
+        \hline
+    \end{tabular}
+    \label{tab:radiogram_example}
+\end{table}
+
+
+Radiograms are particularly important during emergencies when accurate message handling is crucial, but they're also used for routine traffic handling to maintain proficiency in message handling procedures.
+
+
+
 
 \subsection*{Frequency Privileges in Emergencies}
 
 Amateur station control operators are generally required to operate within the frequency privileges of their license class. However, there are exceptions in situations involving the immediate safety of human life or protection of property. According to FCC regulations, operators may operate outside their licensed privileges in such emergencies. This flexibility ensures that amateur radio can be effectively used in critical situations where communication is vital.
-
-\subsection*{Radiogram Preamble}
-
-The preamble of a formal traffic message contains essential information needed to track and manage the message. This includes details such as the message number, precedence, handling instructions, and the station of origin. The preamble ensures that the message can be properly routed and delivered, even in complex networks.
-
-\begin{table}[h]
-    \centering
-    \caption{Radiogram Preamble Components}
-    \label{tab:radiogram_preamble}
-    \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Component} & \textbf{Description} \\
-        \hline
-        Message Number & Unique identifier for the message \\
-        Precedence & Indicates the urgency of the message \\
-        Handling Instructions & Special instructions for handling the message \\
-        Station of Origin & Call sign of the originating station \\
-        \hline
-    \end{tabular}
-\end{table}
 
 \subsection*{Meaning of 'Check' in a Radiogram Header}
 
@@ -36,15 +104,6 @@ The term "check" in a radiogram header refers to the number of words or word equ
 \subsection*{Squelch Function}
 
 The squelch function in a receiver is designed to mute the audio when no signal is present. This prevents the annoyance of hearing background noise when the receiver is not actively receiving a signal. By muting the audio in the absence of a signal, the squelch function improves the listening experience and reduces fatigue.
-
-\begin{figure}[h]
-    \centering
-    % \includegraphics{radiogram_preamble_structure.png}
-    \caption{Radiogram Preamble Structure}
-    \label{fig:radiogram_preamble}
-    % Diagram illustrating the structure of a radiogram preamble.
-    % The diagram should show the components of the preamble, such as the message number, precedence, handling instructions, and station of origin.
-\end{figure}
 
 \subsection*{Questions}
 

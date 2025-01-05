@@ -1,10 +1,42 @@
 \section{Repeater and Communication Basics}
 \label{section:repeater_basics}
 
-\subsection*{Repeater Frequency Offsets}
-Repeater frequency offsets are a fundamental concept in amateur radio operations. A repeater is a device that receives a signal on one frequency and retransmits it on another frequency. The difference between the repeater's transmit and receive frequencies is known as the \textit{repeater offset}. This offset is crucial because it allows the repeater to receive and transmit simultaneously without interference. For example, in the 2 meter band, a common repeater frequency offset is $\pm 600$ kHz. This means that if the repeater is receiving on 146.000 MHz, it will transmit on 146.600 MHz or 145.400 MHz, depending on the direction of the offset.
+\subsection*{Understanding Repeaters}
 
-The significance of repeater frequency offsets lies in their ability to extend the range of communication. By using a repeater, operators can communicate over much greater distances than would be possible with direct, simplex communication. This is particularly useful in areas with challenging terrain, where direct communication might be obstructed.
+A repeater is an automated station that extends the range of communications by receiving signals on one frequency (the input frequency) and simultaneously retransmitting them on another frequency (the output frequency). This system allows operators to communicate over much greater distances than would be possible with direct communication, particularly useful in areas with challenging terrain.
+
+
+Repeaters are typically:
+\begin{itemize}
+    \item Located in elevated positions (hills, towers, tall buildings)
+    \item Equipped with better antennas and more powerful transmitters than typical portable or mobile stations
+    \item Designed to operate automatically without an operator present
+    \item Used to greatly extend the communication range of lower-powered stations
+\end{itemize}
+
+Key repeater concepts include:
+\begin{itemize}
+    \item \textbf{Offset}: The difference between input and output frequencies (e.g., ±600 kHz for 2 meters, ±5 MHz for 70 cm)
+    \item \textbf{Access Tones}: Special sub-audible tones (CTCSS) or digital codes that may be required to activate the repeater
+    \item \textbf{Coverage Area}: The geographical area where the repeater can be effectively used
+    \item \textbf{Timeout Timer}: A safety feature that limits the length of transmissions
+\end{itemize}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.35\textwidth]{tech/organized/chapter_2/images/repeater.png}
+    \caption{How two stations can communicate over greater distances through a repeater. }
+    \label{fig:repeater_operation}
+\end{wrapfigure}
+
+For example, if a mobile station can normally communicate directly (simplex) for 5-10 miles, using a repeater might extend this range to 50 miles or more, depending on terrain and repeater location.
+
+\subsection*{Repeater Frequency Offsets}
+The difference between a repeater's transmit and receive frequencies (offset) is crucial because it allows the repeater to receive and transmit simultaneously without interference. Standard offsets vary by band:
+\begin{itemize}
+    \item 2 meter band: ±600 kHz offset
+    \item 70 cm band: ±5 MHz offset
+\end{itemize}
 
 \subsection*{National Calling Frequency for FM Simplex Operations}
 In the 2 meter band, the national calling frequency for FM simplex operations is 146.520 MHz. This frequency is designated as a common channel where operators can initiate contact with other stations. The importance of this frequency lies in its universal recognition among amateur radio operators. When an operator calls on 146.520 MHz, they are essentially broadcasting a signal to any station within range, inviting a response.
@@ -13,7 +45,31 @@ In the 2 meter band, the national calling frequency for FM simplex operations is
 The procedural signal 'CQ' is used in amateur radio to indicate a general call to any station. When an operator transmits 'CQ', they are essentially saying, "I am calling any station that can hear me." This signal is particularly useful when an operator is looking to make contact with any available station, rather than a specific one. The term 'CQ' has its origins in maritime communication, where it was used as a general call to all ships.
 
 \subsection*{Repeater Offset}
-The term 'repeater offset' refers to the difference between a repeater's transmit and receive frequencies. This offset is necessary to prevent the repeater from interfering with its own transmissions. For example, if a repeater is receiving on 147.000 MHz, it might transmit on 147.600 MHz, resulting in an offset of +600 kHz. This offset allows the repeater to operate efficiently, ensuring that the transmitted signal does not interfere with the received signal.
+The term 'repeater offset' refers to the difference between a repeater's transmit and receive frequencies. This offset is necessary to prevent the repeater from interfering with its own transmissions. For example:
+
+\begin{itemize}
+    \item If a 2-meter repeater receives on 147.000 MHz, it might transmit on 147.600 MHz (a +600 kHz offset)
+    \item If a 70cm repeater receives on 446.000 MHz, it might transmit on 441.000 MHz (a -5 MHz offset)
+\end{itemize}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{Band} & \textbf{Frequency Range} & \textbf{Common Offset} & \textbf{Direction} \\
+        \hline
+        2 meters & 144-148 MHz & 600 kHz & + above 147 MHz \\
+        & & & - below 147 MHz \\
+        \hline
+        70 cm & 440-450 MHz & 5 MHz & - typical in USA \\
+        & & & + in some regions \\
+        \hline
+    \end{tabular}
+    \caption{Standard Repeater Frequency Offsets}
+    \label{tab:repeater_offsets}
+\end{table}
+
+The offset direction (positive or negative) is standardized by band and region. For the 2-meter band in the United States, the offset direction changes at 147 MHz - negative below and positive above. This standardization helps operators quickly determine the correct transmit frequency when using a repeater.
 
 \subsection*{Questions}
 
@@ -122,27 +178,4 @@ This section covered several key concepts related to repeater and communication 
     \item \textbf{Repeater terminology}: Understanding terms like "repeater offset" and the procedural signal "CQ" is crucial for effective communication in amateur radio.
 \end{itemize}
 
-\subsection*{Figures and Tables}
 
-\begin{figure}[h!]
-    \centering
-    %\includegraphics[width=0.8\textwidth]{repeater_offset_diagram}
-    \caption{Repeater Frequency Offset Diagram}
-    \label{fig:repeater_offset}
-    % Diagram showing the relationship between repeater input and output frequencies.
-    % The diagram should illustrate the repeater receiving on one frequency and transmitting on another, with the offset clearly labeled.
-\end{figure}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Band} & \textbf{Common Repeater Frequency Offset} \\
-        \hline
-        2 meter & $\pm 600$ kHz \\
-        70 cm & $\pm 5$ MHz \\
-        \hline
-    \end{tabular}
-    \caption{Common Repeater Frequency Offsets}
-    \label{tab:repeater_offsets}
-\end{table}

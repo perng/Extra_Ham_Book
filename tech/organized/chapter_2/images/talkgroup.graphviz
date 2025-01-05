@@ -1,0 +1,22 @@
+digraph join_talkgroup {
+  rankdir=TB;
+  node [shape=box, style=filled, fillcolor=lightblue];
+
+  start [label="Start", shape=circle, fillcolor=lightgreen];
+  end [label="Communicating\nwithin Talkgroup", shape=doublecircle, fillcolor=lightgreen];
+
+  program [label="Program Radio\nwith Talkgroup ID", fillcolor="yellow"];
+  access [label="Access Repeater\n(Transmit on\nRepeater Frequency)", fillcolor="yellow"];
+  auth [label="Authentication\n(Optional)", fillcolor="orange"];
+  transmit [label="Transmit Voice/Data\non Talkgroup ID", fillcolor="yellow"];
+
+  start -> program [color=blue];
+  program -> access [color=blue];
+  access -> auth [style=dashed, color=gray]; 
+  auth -> transmit [style=dashed, color=gray];
+  access -> transmit [color=blue];
+  transmit -> end [color=blue];
+
+  {rank=same; auth; transmit;}
+
+}

@@ -14,5 +14,6 @@
 **/*.css
 **/*.opf
 **/*.gnuplot
-
+**/*.fdb_latexmk
+**/*.fls
 main-epub

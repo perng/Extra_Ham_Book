@@ -1,0 +1,37 @@
+digraph G {
+    rankdir=LR; // Left to right layout
+    node [fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+
+    // Simplex Communication
+    subgraph cluster_simplex {
+        label="Simplex Communication\n(Same Frequency)";
+        fontcolor=darkblue;
+        fontsize=12;
+
+        node [shape=box, style=filled, fillcolor=lightyellow, color=darkblue];
+        A [label="Device A\n(Transmit/Receive)"];
+        B [label="Device B\n(Transmit/Receive)"];
+
+        // Simplex communication: same frequency
+        A -> B [label="Transmission", color=darkblue, fontcolor=darkblue];
+        B -> A [label="Reception", color=darkblue, fontcolor=darkblue];
+    }
+
+    // Duplex Communication
+    subgraph cluster_duplex {
+        label="Duplex Communication\n(Different Frequencies)";
+        fontcolor=darkgreen;
+        fontsize=12;
+
+        node [shape=box, style=filled, fillcolor=lightpink, color=darkgreen];
+        C [label="Device C\n(Transmit on Freq 1)"];
+        D [label="Device D\n(Receive on Freq 1)"];
+        E [label="Device C\n(Receive on Freq 2)"];
+        F [label="Device D\n(Transmit on Freq 2)"];
+
+        // Duplex communication: different frequencies
+        C -> D [label="Transmission on Freq 1", color=darkgreen, fontcolor=darkgreen];
+        F -> E [label="Transmission on Freq 2", color=darkred, fontcolor=darkred];
+    }
+}
