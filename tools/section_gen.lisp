@@ -24,7 +24,7 @@
         "generate the multiple choice questions in a shaded box using '\\begin{{tcolorbox}}[colback=gray!10!white,colframe=black!75!black,title={question_id}]'
             then the question text, then enumerate (with noitemsep) the choices. 
             Mark the correct answer with bold. End with '\\end{{tcolorbox}}'."  
-            "enumerate options should be \begin{enumerate}[label=\Alph*,noitemsep]"
+            "enumerate options should be \begin{enumerate}[label=\Alph*),noitemsep]"
             "the correct answer should be bold")
     (element 'explanation        
         "Do not say 'The correct answer is' as the correct answer is already bold in the question."

@@ -5,17 +5,7 @@
 The Federal Communications Commission (FCC) currently offers three license classes for amateur radio operators: Technician, General, and Amateur Extra. Each class grants specific operating privileges, with the Technician class being the entry-level license. The General class provides additional frequency privileges, while the Amateur Extra class offers the most extensive operating privileges, including access to all amateur radio bands.
 
 \subsection*{Vanity Call Sign Rules}
-Amateur radio operators may select a desired call sign under the vanity call sign rules. Any licensed amateur, regardless of license class, is eligible to apply for a vanity call sign. The process involves submitting an application to the FCC, which is then reviewed for compliance with the rules. Figure~\ref{fig:vanity_call_sign_flow} illustrates the vanity call sign application process.
-
-% Figure placeholder for the vanity call sign application process
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{vanity_call_sign_flow.png} % Placeholder for the image
-    \caption{Vanity Call Sign Application Process}
-    \label{fig:vanity_call_sign_flow}
-    % Image prompt: Flowchart of the vanity call sign application process, created using Graphviz.
-    % The flowchart should include steps such as application submission, FCC review, and approval or rejection.
-\end{figure}
+Amateur radio operators may select a desired call sign under the vanity call sign rules. Any licensed amateur, regardless of license class, is eligible to apply for a vanity call sign. The process involves submitting an application to the FCC, which is then reviewed for compliance with the rules. 
 
 \subsection*{International Communications}
 FCC-licensed amateur radio stations are permitted to make international communications that are incidental to the purposes of the Amateur Radio Service. This includes remarks of a personal character, but excludes communications for business purposes. These rules ensure that amateur radio remains a non-commercial service.
@@ -26,21 +16,60 @@ Maintaining accurate contact information with the FCC is crucial. Failure to pro
 % Table summarizing license classes and privileges
 \begin{table}[h!]
     \centering
-    \caption{Amateur Radio License Classes and Privileges}
+    \caption{Amateur Radio License Classes and Privileges Comparison}
     \label{tab:license_classes}
-    \begin{tabular}{|l|l|l|}
+    \begin{tabular}{|l|p{9cm}|l|}
         \hline
-        \textbf{License Class} & \textbf{Privileges} & \textbf{Renewal Term} \\ \hline
-        Technician & Entry-level privileges & 10 years \\ \hline
-        General & Additional frequency access & 10 years \\ \hline
-        Amateur Extra & Full privileges & 10 years \\ \hline
+        \textbf{License Class} & \textbf{Privileges} & \textbf{Term} \\ 
+        \hline
+        Technician & 
+        \begin{itemize}[noitemsep,topsep=0pt]
+            \item All VHF/UHF amateur bands (50 MHz and above)
+            \item Limited HF privileges:
+                \begin{itemize}[noitemsep]
+                    \item CW on 80, 40, 15 meters
+                    \item CW, RTTY, data on 10 meters
+                    \item SSB phone on 10 meters (28.3-28.5 MHz)
+                \end{itemize}
+            \item Maximum 200 watts PEP output on 10 meters
+            \item Full privileges above 50 MHz
+        \end{itemize} & 
+        10 years \\ 
+        \hline
+        General & 
+        \begin{itemize}[noitemsep,topsep=0pt]
+            \item All Technician privileges, plus:
+            \item Most HF privileges (160-10 meters)
+            \item At least 83 voice channels on HF
+            \item Large segments for CW, phone, digital modes
+            \item Maximum 1500 watts PEP output on most bands
+            \item Some restrictions in 60, 30, 17, 12 meter bands
+        \end{itemize} & 
+        10 years \\ 
+        \hline
+        Amateur Extra & 
+        \begin{itemize}[noitemsep,topsep=0pt]
+            \item All General privileges, plus:
+            \item Full privileges on all amateur bands
+            \item Exclusive Extra-only sub-bands
+            \item Additional phone privileges in:
+                \begin{itemize}[noitemsep]
+                    \item 75/80 meters (3.6-3.7 MHz)
+                    \item 40 meters (7.125-7.175 MHz)
+                    \item 20 meters (14.150-14.175 MHz)
+                    \item 15 meters (21.200-21.225 MHz)
+                \end{itemize}
+            \item Shortest possible call signs available
+        \end{itemize} & 
+        10 years \\
+        \hline
     \end{tabular}
 \end{table}
 
 \subsection*{Questions}
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T1C01}]
     For which license classes are new licenses currently available from the FCC?
-    \begin{enumerate}[label=\Alph*,noitemsep]
+    \begin{enumerate}[label=\Alph*),noitemsep]
         \item Novice, Technician, General, Amateur Extra
         \item Technician, Technician Plus, General, Amateur Extra
         \item Novice, Technician Plus, General, Advanced
@@ -53,7 +82,7 @@ The FCC currently offers new licenses for the Technician, General, and Amateur E
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T1C02}]
     Who may select a desired call sign under the vanity call sign rules?
-    \begin{enumerate}[label=\Alph*,noitemsep]
+    \begin{enumerate}[label=\Alph*),noitemsep]
         \item Only a licensed amateur with a General or Amateur Extra Class license
         \item Only a licensed amateur with an Amateur Extra Class license
         \item Only a licensed amateur who has been licensed continuously for more than 10 years
@@ -66,7 +95,7 @@ Any licensed amateur, regardless of license class, may apply for a vanity call s
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T1C03}]
     What types of international communications are an FCC-licensed amateur radio station permitted to make?
-    \begin{enumerate}[label=\Alph*,noitemsep]
+    \begin{enumerate}[label=\Alph*),noitemsep]
         \item \textbf{Communications incidental to the purposes of the Amateur Radio Service and remarks of a personal character}
         \item Communications incidental to conducting business or remarks of a personal nature
         \item Only communications incidental to contest exchanges; all other communications are prohibited
@@ -79,7 +108,7 @@ FCC-licensed amateur radio stations are permitted to make international communic
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T1C04}]
     What may happen if the FCC is unable to reach you by email?
-    \begin{enumerate}[label=\Alph*,noitemsep]
+    \begin{enumerate}[label=\Alph*),noitemsep]
         \item Fine and suspension of operator license
         \item \textbf{Revocation of the station license or suspension of the operator license}
         \item Revocation of access to the license record in the FCC system

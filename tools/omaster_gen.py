@@ -30,6 +30,8 @@ latex_content = r"""\documentclass[12pt]{book}
 \usepackage{epstopdf} % For converting EPS to PDF
 \usepackage{pgfplots}
 \usepackage{tikz}
+\usepackage{float}
+\usepackage{wrapfig}
 \usepackage{svg}
 \usepackage{draftwatermark}
 \SetWatermarkText{Draft}
