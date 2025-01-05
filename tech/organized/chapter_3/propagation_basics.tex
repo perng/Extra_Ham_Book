@@ -1,0 +1,185 @@
+\section{Propagation Basics}
+\label{section:propagation_basics}
+
+\subsection*{UHF Signal Propagation}
+UHF signals are rarely heard beyond the radio horizon due to their limited propagation characteristics. Unlike lower frequency signals, UHF signals are not typically reflected or refracted by the ionosphere. Instead, they propagate primarily via line-of-sight, which restricts their range to the visual horizon. This is illustrated in Figure~\ref{fig:uhf_propagation}, which shows how UHF signals are absorbed or scattered by the Earth's atmosphere and terrain.
+
+% Insert figure for UHF propagation
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/uhf_propagation.svg}
+    \caption{UHF signal propagation and horizon limitations.}
+    \label{fig:uhf_propagation}
+    % Prompt: Diagram illustrating UHF signal propagation limitations, showing how signals are absorbed or scattered by the atmosphere and terrain.
+\end{figure}
+
+\subsection*{HF vs. VHF Communication}
+High-frequency (HF) communication differs significantly from very high-frequency (VHF) and ultra high-frequency (UHF) communication. HF signals (3–30 MHz) are capable of long-distance ionospheric propagation, allowing them to travel thousands of kilometers by reflecting off the ionosphere. In contrast, VHF and UHF signals (30 MHz and above) are primarily limited to line-of-sight propagation, making them less suitable for long-distance communication.
+
+\subsection*{Auroral Backscatter}
+VHF signals received via auroral backscatter exhibit unique characteristics. These signals are often distorted, and their strength varies considerably due to the irregular nature of the auroral ionization. This phenomenon occurs when VHF signals are scattered by the ionized regions of the aurora, resulting in fluctuating signal quality.
+
+\subsection*{Sporadic E Propagation}
+Sporadic E propagation is a key mechanism for occasional strong signals on the 10, 6, and 2-meter bands from beyond the radio horizon. This phenomenon occurs when dense patches of ionization form in the E layer of the ionosphere, reflecting VHF signals over long distances. Sporadic E is particularly common during summer months and can enable communication over hundreds or even thousands of kilometers.
+
+\subsection*{Knife-Edge Diffraction}
+Knife-edge diffraction allows radio signals to travel beyond obstructions such as mountains or buildings. When a signal encounters a sharp edge, it bends around the obstacle, enabling communication even when there is no direct line of sight. This effect is particularly useful in mountainous or urban environments where obstacles would otherwise block the signal.
+
+\subsection*{Tropospheric Ducting}
+Tropospheric ducting is a propagation mechanism that enables over-the-horizon VHF and UHF communication, often extending ranges up to 300 miles. This phenomenon occurs when temperature inversions in the troposphere create a duct-like layer that traps and guides radio waves. Figure~\ref{fig:tropospheric_ducting} illustrates the mechanism of tropospheric ducting.
+
+% Insert figure for tropospheric ducting
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/tropospheric_ducting.svg}
+    \caption{Tropospheric ducting mechanism.}
+    \label{fig:tropospheric_ducting}
+    % Prompt: Illustration of tropospheric ducting, showing how temperature inversions create a duct-like layer that traps and guides radio waves.
+\end{figure}
+
+\subsection*{Meteor Scatter}
+The 6-meter band is particularly well-suited for meteor scatter communication. When meteors enter the Earth's atmosphere, they create ionized trails that can reflect VHF signals. These trails are short-lived but can enable communication over distances of up to 1,500 kilometers.
+
+\subsection*{Temperature Inversions}
+Temperature inversions in the atmosphere are the primary cause of tropospheric ducting. These inversions occur when a layer of warm air lies above a layer of cooler air, creating a boundary that reflects radio waves back toward the Earth's surface.
+
+\subsection*{Propagation Mechanisms Summary}
+Table~\ref{tab:propagation_mechanisms} summarizes the different propagation mechanisms and their characteristics.
+
+% Insert table for propagation mechanisms
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Mechanism} & \textbf{Characteristics} \\
+        \hline
+        UHF Propagation & Limited to line-of-sight, rarely beyond horizon \\
+        HF Propagation & Long-distance ionospheric reflection \\
+        Auroral Backscatter & Distorted, variable signal strength \\
+        Sporadic E & Dense E-layer ionization, long-distance VHF \\
+        Knife-Edge Diffraction & Bends around obstacles \\
+        Tropospheric Ducting & Temperature inversions, 300-mile range \\
+        Meteor Scatter & Ionized meteor trails, 6-meter band \\
+        \hline
+    \end{tabular}
+    \caption{Propagation mechanisms and their effects.}
+    \label{tab:propagation_mechanisms}
+\end{table}
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C01}]
+    Why are simplex UHF signals rarely heard beyond their radio horizon?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item They are too weak to go very far
+        \item FCC regulations prohibit them from going more than 50 miles
+        \item \textbf{UHF signals are usually not propagated by the ionosphere}
+        \item UHF signals are absorbed by the ionospheric D region
+    \end{enumerate}
+\end{tcolorbox}
+UHF signals are primarily line-of-sight and are not reflected by the ionosphere, unlike HF signals. This limits their range to the radio horizon. Options A and D are incorrect because signal strength and D-region absorption are not the primary reasons. Option B is incorrect as FCC regulations do not impose such limits.
+
+%memory_trick T3C01
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C02}]
+    What is a characteristic of HF communication compared with communications on VHF and higher frequencies?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item HF antennas are generally smaller
+        \item HF accommodates wider bandwidth signals
+        \item \textbf{Long-distance ionospheric propagation is far more common on HF}
+        \item There is less atmospheric interference (static) on HF
+    \end{enumerate}
+\end{tcolorbox}
+HF signals are reflected by the ionosphere, enabling long-distance communication. VHF and UHF signals are primarily line-of-sight. Option A is incorrect because HF antennas are typically larger. Option B is incorrect as HF does not inherently accommodate wider bandwidths. Option D is incorrect because HF is more susceptible to atmospheric interference.
+
+%memory_trick T3C02
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C03}]
+    What is a characteristic of VHF signals received via auroral backscatter?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item They are often received from 10,000 miles or more
+        \item \textbf{They are distorted and signal strength varies considerably}
+        \item They occur only during winter nighttime hours
+        \item They are generally strongest when your antenna is aimed west
+    \end{enumerate}
+\end{tcolorbox}
+Auroral backscatter causes VHF signals to be distorted and fluctuate in strength due to the irregular ionization of the aurora. Option A is incorrect because the range is typically much shorter. Options C and D are incorrect as auroral backscatter is not limited to winter nights or specific antenna directions.
+
+%memory_trick T3C03
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C04}]
+    Which of the following types of propagation is most commonly associated with occasional strong signals on the 10, 6, and 2 meter bands from beyond the radio horizon?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Backscatter
+        \item \textbf{Sporadic E}
+        \item D region absorption
+        \item Gray-line propagation
+    \end{enumerate}
+\end{tcolorbox}
+Sporadic E propagation is responsible for strong signals on these bands due to dense ionization patches in the E layer. Options A, C, and D are incorrect as they do not typically produce strong signals on these bands.
+
+%memory_trick T3C04
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C05}]
+    Which of the following effects may allow radio signals to travel beyond obstructions between the transmitting and receiving stations?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{Knife-edge diffraction}
+        \item Faraday rotation
+        \item Quantum tunneling
+        \item Doppler shift
+    \end{enumerate}
+\end{tcolorbox}
+Knife-edge diffraction allows signals to bend around obstacles, enabling communication beyond obstructions. Options B, C, and D are unrelated to this effect.
+
+%memory_trick T3C05
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C06}]
+    What type of propagation is responsible for allowing over-the-horizon VHF and UHF communications to ranges of approximately 300 miles on a regular basis?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{Tropospheric ducting}
+        \item D region refraction
+        \item F2 region refraction
+        \item Faraday rotation
+    \end{enumerate}
+\end{tcolorbox}
+Tropospheric ducting, caused by temperature inversions, traps and guides VHF and UHF signals, enabling long-range communication. Options B, C, and D are incorrect as they do not apply to this phenomenon.
+
+%memory_trick T3C06
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C07}]
+    What band is best suited for communicating via meteor scatter?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 33 centimeters
+        \item \textbf{6 meters}
+        \item 2 meters
+        \item 70 centimeters
+    \end{enumerate}
+\end{tcolorbox}
+The 6-meter band is ideal for meteor scatter due to its wavelength, which matches the ionized trails created by meteors. Options A, C, and D are less effective for this purpose.
+
+%memory_trick T3C07
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C08}]
+    What causes tropospheric ducting?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Discharges of lightning during electrical storms
+        \item Sunspots and solar flares
+        \item Updrafts from hurricanes and tornadoes
+        \item \textbf{Temperature inversions in the atmosphere}
+    \end{enumerate}
+\end{tcolorbox}
+Temperature inversions create a duct-like layer in the troposphere that traps and guides radio waves. Options A, B, and C are unrelated to this phenomenon.
+
+%memory_trick T3C08
+
+\subsection*{Summary}
+This section covered the basics of radio wave propagation, focusing on the following key concepts:
+\begin{itemize}
+    \item \textbf{UHF Signal Propagation}: Limited to line-of-sight due to lack of ionospheric reflection.
+    \item \textbf{HF vs. VHF Communication}: HF enables long-distance communication via ionospheric reflection, while VHF is primarily line-of-sight.
+    \item \textbf{Auroral Backscatter}: VHF signals scattered by auroral ionization, resulting in distorted and variable signals.
+    \item \textbf{Sporadic E Propagation}: Enables long-distance VHF communication via dense E-layer ionization.
+    \item \textbf{Knife-Edge Diffraction}: Allows signals to bend around obstacles.
+    \item \textbf{Tropospheric Ducting}: Extends VHF and UHF ranges up to 300 miles via temperature inversions.
+    \item \textbf{Meteor Scatter}: Utilizes ionized meteor trails for communication, particularly on the 6-meter band.
+    \item \textbf{Temperature Inversions}: The primary cause of tropospheric ducting.
+\end{itemize}

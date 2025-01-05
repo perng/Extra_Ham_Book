@@ -1,0 +1,88 @@
+\section{Decibels and Power}
+\label{section:decibels_and_power}
+
+The decibel (dB) is a logarithmic unit used to express the ratio of two power levels. It is widely used in radio technology to measure power increases and decreases due to its ability to represent large ranges of values in a compact form. The decibel scale is particularly useful because it aligns with the way human perception works, which is often logarithmic rather than linear.
+
+\subsection*{Understanding Decibels}
+The decibel is defined as:
+\begin{equation}
+    \text{dB} = 10 \log_{10}\left(\frac{P_2}{P_1}\right)
+    \label{eq:decibel_formula}
+\end{equation}
+where \( P_1 \) is the reference power level and \( P_2 \) is the power level being measured. A positive dB value indicates a power increase, while a negative dB value indicates a power decrease.
+
+\subsection*{Power Increases and Decreases}
+When the power increases from \( P_1 \) to \( P_2 \), the decibel value is calculated using Equation \ref{eq:decibel_formula}. For example, a power increase from 5 watts to 10 watts results in:
+\begin{equation}
+    \text{dB} = 10 \log_{10}\left(\frac{10}{5}\right) = 10 \log_{10}(2) \approx 3 \, \text{dB}.
+    \label{eq:power_increase_example}
+\end{equation}
+Similarly, a power decrease from 12 watts to 3 watts results in:
+\begin{equation}
+    \text{dB} = 10 \log_{10}\left(\frac{3}{12}\right) = 10 \log_{10}(0.25) \approx -6 \, \text{dB}.
+    \label{eq:power_decrease_example}
+\end{equation}
+
+\subsection*{Logarithmic Nature of Decibels}
+The decibel scale is logarithmic, meaning that each 10 dB increase represents a tenfold increase in power. For instance, a power increase from 20 watts to 200 watts corresponds to:
+\begin{equation}
+    \text{dB} = 10 \log_{10}\left(\frac{200}{20}\right) = 10 \log_{10}(10) = 10 \, \text{dB}.
+    \label{eq:logarithmic_example}
+\end{equation}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/decibel_power.png}
+    % The figure should show a graph with power levels on the x-axis and decibel values on the y-axis.
+    % The graph should illustrate power increases and decreases, with examples such as 5W to 10W, 12W to 3W, and 20W to 200W.
+    \caption{Power changes in decibels.}
+    \label{fig:decibel_power}
+\end{figure}
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B09}]
+    Which decibel value most closely represents a power increase from 5 watts to 10 watts?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 2 dB
+        \item \textbf{3 dB}
+        \item 5 dB
+        \item 10 dB
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:decibel_formula}, the calculation is \( 10 \log_{10}(10/5) = 10 \log_{10}(2) \approx 3 \, \text{dB} \). The other options are incorrect because they do not match the calculated value.
+
+%memory_trick T5B09
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B10}]
+    Which decibel value most closely represents a power decrease from 12 watts to 3 watts?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item -1 dB
+        \item -3 dB
+        \item \textbf{-6 dB}
+        \item -9 dB
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:decibel_formula}, the calculation is \( 10 \log_{10}(3/12) = 10 \log_{10}(0.25) \approx -6 \, \text{dB} \). The other options are incorrect because they do not match the calculated value.
+
+%memory_trick T5B10
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B11}]
+    Which decibel value represents a power increase from 20 watts to 200 watts?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{10 dB}
+        \item 12 dB
+        \item 18 dB
+        \item 28 dB
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:decibel_formula}, the calculation is \( 10 \log_{10}(200/20) = 10 \log_{10}(10) = 10 \, \text{dB} \). The other options are incorrect because they do not match the calculated value.
+
+%memory_trick T5B11
+
+\subsection*{Summary}
+\begin{itemize}
+    \item \textbf{Decibels}: A logarithmic unit used to express power ratios.
+    \item \textbf{Power increase and decrease}: A positive dB value indicates a power increase, while a negative dB value indicates a power decrease.
+    \item \textbf{Logarithmic scale}: Each 10 dB increase represents a tenfold increase in power.
+\end{itemize}
+The decibel scale is a powerful tool for representing power changes in radio technology, allowing for easy comparison of large and small values.

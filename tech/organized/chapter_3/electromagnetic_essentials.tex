@@ -1,0 +1,185 @@
+\section{Electromagnetic Essentials}
+\label{section:electromagnetic_essentials}
+
+\subsection*{Introduction}
+This section covers the fundamental concepts of electromagnetic waves, including the relationship between electric and magnetic fields, wave polarization, the velocity of radio waves, and the relationship between wavelength and frequency. These concepts are essential for understanding how radio waves propagate and how they are used in amateur radio.
+
+\subsection*{Electric and Magnetic Fields}
+An electromagnetic wave consists of two perpendicular components: an electric field and a magnetic field. These fields oscillate at right angles to each other and to the direction of wave propagation. The relationship between the electric and magnetic fields is such that they are always perpendicular to each other, as shown in Figure~\ref{fig:em_fields}.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{em_fields.svg}
+    \caption{Electric and magnetic fields in an electromagnetic wave.}
+    \label{fig:em_fields}
+    % Diagram showing the relationship between electric and magnetic fields in an electromagnetic wave.
+    % The electric field (E) is vertical, and the magnetic field (B) is horizontal, both perpendicular to the direction of propagation (k).
+\end{figure}
+
+\subsection*{Wave Polarization}
+The polarization of a radio wave is defined by the orientation of its electric field. For example, if the electric field oscillates vertically, the wave is said to be vertically polarized. Conversely, if the electric field oscillates horizontally, the wave is horizontally polarized. The magnetic field is always perpendicular to the electric field and does not determine polarization.
+
+\subsection*{Components of a Radio Wave}
+A radio wave consists of two primary components: the electric field and the magnetic field. These fields are interdependent and propagate together through space. The electric field is responsible for the wave's interaction with matter, while the magnetic field plays a role in the wave's energy transfer.
+
+\subsection*{Velocity of Radio Waves}
+In free space, radio waves travel at the speed of light, which is approximately $3 \times 10^8$ meters per second. This velocity is constant and does not depend on the frequency or wavelength of the wave.
+
+\subsection*{Wavelength and Frequency Relationship}
+The wavelength ($\lambda$) and frequency ($f$) of a radio wave are inversely related. This relationship is expressed by the formula:
+\begin{equation}
+    \lambda = \frac{c}{f}
+    \label{eq:wavelength_frequency}
+\end{equation}
+where $c$ is the speed of light. As frequency increases, wavelength decreases, and vice versa. This relationship is illustrated in Figure~\ref{fig:wavelength_frequency}.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{wavelength_frequency.png}
+    \caption{Wavelength vs. frequency relationship.}
+    \label{fig:wavelength_frequency}
+    % Graph showing the inverse relationship between wavelength and frequency.
+    % The x-axis represents frequency (Hz), and the y-axis represents wavelength (m).
+\end{figure}
+
+\subsection*{Frequency to Wavelength Conversion}
+To convert frequency to wavelength in meters, the following formula is used:
+\begin{equation}
+    \lambda = \frac{300}{f_{\text{MHz}}}
+    \label{eq:frequency_wavelength}
+\end{equation}
+where $f_{\text{MHz}}$ is the frequency in megahertz. For example, a frequency of 150 MHz corresponds to a wavelength of 2 meters.
+
+\subsection*{Amateur Radio Band Identification}
+Amateur radio bands are often identified by their approximate wavelength in meters. For example, the 2-meter band corresponds to frequencies around 144 MHz. Table~\ref{tab:frequency_ranges} summarizes the frequency ranges for VHF, UHF, and HF bands.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Band} & \textbf{Frequency Range} \\
+        \hline
+        VHF & 30 MHz to 300 MHz \\
+        UHF & 300 MHz to 3000 MHz \\
+        HF & 3 MHz to 30 MHz \\
+        \hline
+    \end{tabular}
+    \caption{Frequency ranges for amateur radio bands.}
+    \label{tab:frequency_ranges}
+\end{table}
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B01}]
+    What is the relationship between the electric and magnetic fields of an electromagnetic wave?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item They travel at different speeds
+        \item They are in parallel
+        \item They revolve in opposite directions
+        \item \textbf{They are at right angles}
+    \end{enumerate}
+\end{tcolorbox}
+The electric and magnetic fields of an electromagnetic wave are always perpendicular to each other and to the direction of propagation. This is a fundamental property of electromagnetic waves.
+
+%memory_trick T3B01
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B02}]
+    What property of a radio wave defines its polarization?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{The orientation of the electric field}
+        \item The orientation of the magnetic field
+        \item The ratio of the energy in the magnetic field to the energy in the electric field
+        \item The ratio of the velocity to the wavelength
+    \end{enumerate}
+\end{tcolorbox}
+Polarization is determined by the orientation of the electric field. The magnetic field is always perpendicular to the electric field and does not influence polarization.
+
+%memory_trick T3B02
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B03}]
+    What are the two components of a radio wave?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Impedance and reactance
+        \item Voltage and current
+        \item \textbf{Electric and magnetic fields}
+        \item Ionizing and non-ionizing radiation
+    \end{enumerate}
+\end{tcolorbox}
+A radio wave consists of electric and magnetic fields that propagate together through space. These fields are interdependent and oscillate perpendicular to each other.
+
+%memory_trick T3B03
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B04}]
+    What is the velocity of a radio wave traveling through free space?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{Speed of light}
+        \item Speed of sound
+        \item Speed inversely proportional to its wavelength
+        \item Speed that increases as the frequency increases
+    \end{enumerate}
+\end{tcolorbox}
+Radio waves travel at the speed of light in free space, which is approximately $3 \times 10^8$ meters per second. This speed is constant and does not depend on the wave's frequency or wavelength.
+
+%memory_trick T3B04
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B05}]
+    What is the relationship between wavelength and frequency?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Wavelength gets longer as frequency increases
+        \item \textbf{Wavelength gets shorter as frequency increases}
+        \item Wavelength and frequency are unrelated
+        \item Wavelength and frequency increase as path length increases
+    \end{enumerate}
+\end{tcolorbox}
+Wavelength and frequency are inversely related. As frequency increases, wavelength decreases, and vice versa. This relationship is described by the formula $\lambda = \frac{c}{f}$.
+
+%memory_trick T3B05
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B06}]
+    What is the formula for converting frequency to approximate wavelength in meters?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Wavelength in meters equals frequency in hertz multiplied by 300
+        \item Wavelength in meters equals frequency in hertz divided by 300
+        \item Wavelength in meters equals frequency in megahertz divided by 300
+        \item \textbf{Wavelength in meters equals 300 divided by frequency in megahertz}
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for converting frequency to wavelength in meters is $\lambda = \frac{300}{f_{\text{MHz}}}$. This formula is derived from the relationship $\lambda = \frac{c}{f}$, where $c$ is the speed of light.
+
+%memory_trick T3B06
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B07}]
+    In addition to frequency, which of the following is used to identify amateur radio bands?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{The approximate wavelength in meters}
+        \item Traditional letter/number designators
+        \item Channel numbers
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+Amateur radio bands are often identified by their approximate wavelength in meters. For example, the 2-meter band corresponds to frequencies around 144 MHz.
+
+%memory_trick T3B07
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3B08}]
+    What frequency range is referred to as VHF?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 30 kHz to 300 kHz
+        \item \textbf{30 MHz to 300 MHz}
+        \item 300 kHz to 3000 kHz
+        \item 300 MHz to 3000 MHz
+    \end{enumerate}
+\end{tcolorbox}
+The VHF (Very High Frequency) range spans from 30 MHz to 300 MHz. This range is commonly used for FM radio, television broadcasting, and amateur radio.
+
+%memory_trick T3B08
+
+\subsection*{Summary}
+This section introduced the essential concepts of electromagnetic waves, including:
+\begin{itemize}
+    \item \textbf{Electric and magnetic fields}: These fields are perpendicular to each other and to the direction of wave propagation.
+    \item \textbf{Wave polarization}: Determined by the orientation of the electric field.
+    \item \textbf{Velocity of radio waves}: Radio waves travel at the speed of light in free space.
+    \item \textbf{Wavelength and frequency relationship}: Wavelength and frequency are inversely related.
+    \item \textbf{Frequency to wavelength conversion}: The formula $\lambda = \frac{300}{f_{\text{MHz}}}$ is used to convert frequency to wavelength in meters.
+    \item \textbf{Amateur radio band identification}: Bands are often identified by their approximate wavelength in meters.
+\end{itemize}

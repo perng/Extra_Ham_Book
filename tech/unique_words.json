@@ -1,0 +1,1284 @@
+[
+    {
+        "question_id": "T1A01",
+        "unique_words": [
+            "phases",
+            "skills",
+            "art",
+            "Advancing"
+        ]
+    },
+    {
+        "question_id": "T1A03",
+        "unique_words": [
+            "encouraged"
+        ]
+    },
+    {
+        "question_id": "T1A05",
+        "unique_words": [
+            "ULS"
+        ]
+    },
+    {
+        "question_id": "T1A06",
+        "unique_words": [
+            "observing",
+            "activities",
+            "experimental",
+            "purposes"
+        ]
+    },
+    {
+        "question_id": "T1A07",
+        "unique_words": [
+            "km",
+            "Earth's"
+        ]
+    },
+    {
+        "question_id": "T1A08",
+        "unique_words": [
+            "Volunteer"
+        ]
+    },
+    {
+        "question_id": "T1A09",
+        "unique_words": [
+            "eligible",
+            "area"
+        ]
+    },
+    {
+        "question_id": "T1B03",
+        "unique_words": [
+            "52.525"
+        ]
+    },
+    {
+        "question_id": "T1B05",
+        "unique_words": [
+            "systems"
+        ]
+    },
+    {
+        "question_id": "T1B07",
+        "unique_words": [
+            "50.0",
+            "144.0",
+            "50.1",
+            "144.1"
+        ]
+    },
+    {
+        "question_id": "T1B08",
+        "unique_words": [
+            "find",
+            "segments,",
+            "non-amateur"
+        ]
+    },
+    {
+        "question_id": "T1C03",
+        "unique_words": [
+            "character",
+            "purposes"
+        ]
+    },
+    {
+        "question_id": "T1C05",
+        "unique_words": [
+            "KF1XXX"
+        ]
+    },
+    {
+        "question_id": "T1C06",
+        "unique_words": [
+            "States",
+            "vessel",
+            "documented",
+            "waters",
+            "craft"
+        ]
+    },
+    {
+        "question_id": "T1C07",
+        "unique_words": [
+            "maintain"
+        ]
+    },
+    {
+        "question_id": "T1C10",
+        "unique_words": [
+            "FCC\u2019s"
+        ]
+    },
+    {
+        "question_id": "T1C11",
+        "unique_words": [
+            "renewed",
+            "No,"
+        ]
+    },
+    {
+        "question_id": "T1D03",
+        "unique_words": [
+            "commands",
+            "craft"
+        ]
+    },
+    {
+        "question_id": "T1D04",
+        "unique_words": [
+            "retransmission",
+            "spacecraft"
+        ]
+    },
+    {
+        "question_id": "T1D05",
+        "unique_words": [
+            "selling",
+            "basis"
+        ]
+    },
+    {
+        "question_id": "T1D08",
+        "unique_words": [
+            "educational",
+            "institution",
+            "classroom",
+            "instruction"
+        ]
+    },
+    {
+        "question_id": "T1D09",
+        "unique_words": [
+            "protection",
+            "directly",
+            "immediate"
+        ]
+    },
+    {
+        "question_id": "T1D10",
+        "unique_words": [
+            "reception"
+        ]
+    },
+    {
+        "question_id": "T1D11",
+        "unique_words": [
+            "craft"
+        ]
+    },
+    {
+        "question_id": "T1F01",
+        "unique_words": [
+            "upon",
+            "representative"
+        ]
+    },
+    {
+        "question_id": "T1F04",
+        "unique_words": [
+            "English"
+        ]
+    },
+    {
+        "question_id": "T1F07",
+        "unique_words": [
+            "agreement"
+        ]
+    },
+    {
+        "question_id": "T1F08",
+        "unique_words": [
+            "behalf"
+        ]
+    },
+    {
+        "question_id": "T1F11",
+        "unique_words": [
+            "four"
+        ]
+    },
+    {
+        "question_id": "T2A02",
+        "unique_words": [
+            "146.520"
+        ]
+    },
+    {
+        "question_id": "T2A09",
+        "unique_words": [
+            "\u201cmonitoring\u201d"
+        ]
+    },
+    {
+        "question_id": "T2A10",
+        "unique_words": [
+            "activities",
+            "voluntary",
+            "guideline"
+        ]
+    },
+    {
+        "question_id": "T2A11",
+        "unique_words": [
+            "Simplex"
+        ]
+    },
+    {
+        "question_id": "T2B05",
+        "unique_words": [
+            "talking"
+        ]
+    },
+    {
+        "question_id": "T2B07",
+        "unique_words": [
+            "ID"
+        ]
+    },
+    {
+        "question_id": "T2B08",
+        "unique_words": [
+            "negotiate",
+            "continued"
+        ]
+    },
+    {
+        "question_id": "T2B09",
+        "unique_words": [
+            "communicate",
+            "tying"
+        ]
+    },
+    {
+        "question_id": "T2B10",
+        "unique_words": [
+            "QRM"
+        ]
+    },
+    {
+        "question_id": "T2B11",
+        "unique_words": [
+            "QSY"
+        ]
+    },
+    {
+        "question_id": "T2B13",
+        "unique_words": [
+            "Mute"
+        ]
+    },
+    {
+        "question_id": "T2C02",
+        "unique_words": [
+            "order"
+        ]
+    },
+    {
+        "question_id": "T2C03",
+        "unique_words": [
+            "alphabet",
+            "standard",
+            "Spell",
+            "phonetic"
+        ]
+    },
+    {
+        "question_id": "T2C05",
+        "unique_words": [
+            "exchanged"
+        ]
+    },
+    {
+        "question_id": "T2C06",
+        "unique_words": [
+            "qualifications"
+        ]
+    },
+    {
+        "question_id": "T2C07",
+        "unique_words": [
+            "Unless",
+            "emergency,",
+            "reporting"
+        ]
+    },
+    {
+        "question_id": "T2C08",
+        "unique_words": [
+            "Passing",
+            "exactly"
+        ]
+    },
+    {
+        "question_id": "T2C09",
+        "unique_words": [
+            "situations",
+            "protection",
+            "immediate",
+            "involving"
+        ]
+    },
+    {
+        "question_id": "T2C10",
+        "unique_words": [
+            "needed"
+        ]
+    },
+    {
+        "question_id": "T2C11",
+        "unique_words": [
+            "equivalents"
+        ]
+    },
+    {
+        "question_id": "T3A01",
+        "unique_words": [
+            "cancels",
+            "reinforces",
+            "Multipath"
+        ]
+    },
+    {
+        "question_id": "T3A05",
+        "unique_words": [
+            "find",
+            "reflects"
+        ]
+    },
+    {
+        "question_id": "T3A06",
+        "unique_words": [
+            "multipath",
+            "flutter"
+        ]
+    },
+    {
+        "question_id": "T3A07",
+        "unique_words": [
+            "Precipitation"
+        ]
+    },
+    {
+        "question_id": "T3A08",
+        "unique_words": [
+            "Random",
+            "arriving"
+        ]
+    },
+    {
+        "question_id": "T3A09",
+        "unique_words": [
+            "reception",
+            "horizontally"
+        ]
+    },
+    {
+        "question_id": "T3A11",
+        "unique_words": [
+            "ionosphere"
+        ]
+    },
+    {
+        "question_id": "T3A12",
+        "unique_words": [
+            "little"
+        ]
+    },
+    {
+        "question_id": "T3B05",
+        "unique_words": [
+            "shorter"
+        ]
+    },
+    {
+        "question_id": "T3B07",
+        "unique_words": [
+            "approximate"
+        ]
+    },
+    {
+        "question_id": "T3C01",
+        "unique_words": [
+            "propagated",
+            "ionosphere"
+        ]
+    },
+    {
+        "question_id": "T3C03",
+        "unique_words": [
+            "distorted",
+            "varies",
+            "considerably"
+        ]
+    },
+    {
+        "question_id": "T3C04",
+        "unique_words": [
+            "Sporadic"
+        ]
+    },
+    {
+        "question_id": "T3C06",
+        "unique_words": [
+            "Tropospheric",
+            "ducting"
+        ]
+    },
+    {
+        "question_id": "T3C08",
+        "unique_words": [
+            "atmosphere",
+            "Temperature",
+            "inversions"
+        ]
+    },
+    {
+        "question_id": "T3C11",
+        "unique_words": [
+            "atmosphere",
+            "refracts"
+        ]
+    },
+    {
+        "question_id": "T4A02",
+        "unique_words": [
+            "measurements"
+        ]
+    },
+    {
+        "question_id": "T4A03",
+        "unique_words": [
+            "minimize"
+        ]
+    },
+    {
+        "question_id": "T4A04",
+        "unique_words": [
+            "WSJT-X"
+        ]
+    },
+    {
+        "question_id": "T4A05",
+        "unique_words": [
+            "line,"
+        ]
+    },
+    {
+        "question_id": "T4A06",
+        "unique_words": [
+            "audio,"
+        ]
+    },
+    {
+        "question_id": "T4A08",
+        "unique_words": [
+            "Flat"
+        ]
+    },
+    {
+        "question_id": "T4A09",
+        "unique_words": [
+            "draw",
+            "ampere-hour"
+        ]
+    },
+    {
+        "question_id": "T4A10",
+        "unique_words": [
+            "systems"
+        ]
+    },
+    {
+        "question_id": "T4A11",
+        "unique_words": [
+            "chassis"
+        ]
+    },
+    {
+        "question_id": "T4A12",
+        "unique_words": [
+            "manual",
+            "assists"
+        ]
+    },
+    {
+        "question_id": "T4B01",
+        "unique_words": [
+            "Distorted"
+        ]
+    },
+    {
+        "question_id": "T4B02",
+        "unique_words": [
+            "keypad",
+            "knob",
+            "VFO"
+        ]
+    },
+    {
+        "question_id": "T4B04",
+        "unique_words": [
+            "Store"
+        ]
+    },
+    {
+        "question_id": "T4B05",
+        "unique_words": [
+            "Tunes"
+        ]
+    },
+    {
+        "question_id": "T4B06",
+        "unique_words": [
+            "RIT",
+            "Clarifier"
+        ]
+    },
+    {
+        "question_id": "T4B07",
+        "unique_words": [
+            "talkgroups"
+        ]
+    },
+    {
+        "question_id": "T4B08",
+        "unique_words": [
+            "reduction"
+        ]
+    },
+    {
+        "question_id": "T4B10",
+        "unique_words": [
+            "2400"
+        ]
+    },
+    {
+        "question_id": "T4B12",
+        "unique_words": [
+            "signal\u2019s"
+        ]
+    },
+    {
+        "question_id": "T5A07",
+        "unique_words": [
+            "electrons"
+        ]
+    },
+    {
+        "question_id": "T5A08",
+        "unique_words": [
+            "Glass"
+        ]
+    },
+    {
+        "question_id": "T5B04",
+        "unique_words": [
+            "one-millionth"
+        ]
+    },
+    {
+        "question_id": "T5B07",
+        "unique_words": [
+            "3525"
+        ]
+    },
+    {
+        "question_id": "T5B08",
+        "unique_words": [
+            "microfarad"
+        ]
+    },
+    {
+        "question_id": "T5B10",
+        "unique_words": [
+            "-6"
+        ]
+    },
+    {
+        "question_id": "T5B13",
+        "unique_words": [
+            "2.425"
+        ]
+    },
+    {
+        "question_id": "T5C09",
+        "unique_words": [
+            "138"
+        ]
+    },
+    {
+        "question_id": "T5C12",
+        "unique_words": [
+            "opposition"
+        ]
+    },
+    {
+        "question_id": "T6A11",
+        "unique_words": [
+            "Carbon-zinc"
+        ]
+    },
+    {
+        "question_id": "T6B01",
+        "unique_words": [
+            "others"
+        ]
+    },
+    {
+        "question_id": "T6B05",
+        "unique_words": [
+            "Field-effect"
+        ]
+    },
+    {
+        "question_id": "T6B06",
+        "unique_words": [
+            "stripe"
+        ]
+    },
+    {
+        "question_id": "T6B09",
+        "unique_words": [
+            "cathode",
+            "Anode"
+        ]
+    },
+    {
+        "question_id": "T6B12",
+        "unique_words": [
+            "collector",
+            "base,",
+            "Emitter,"
+        ]
+    },
+    {
+        "question_id": "T6C01",
+        "unique_words": [
+            "Schematic"
+        ]
+    },
+    {
+        "question_id": "T6C07",
+        "unique_words": [
+            "emitting"
+        ]
+    },
+    {
+        "question_id": "T6D01",
+        "unique_words": [
+            "Rectifier"
+        ]
+    },
+    {
+        "question_id": "T6D02",
+        "unique_words": [
+            "electrically-controlled"
+        ]
+    },
+    {
+        "question_id": "T6D03",
+        "unique_words": [
+            "coupling",
+            "unwanted"
+        ]
+    },
+    {
+        "question_id": "T6D07",
+        "unique_words": [
+            "LED"
+        ]
+    },
+    {
+        "question_id": "T6D09",
+        "unique_words": [
+            "Integrated"
+        ]
+    },
+    {
+        "question_id": "T7A02",
+        "unique_words": [
+            "combines"
+        ]
+    },
+    {
+        "question_id": "T7A03",
+        "unique_words": [
+            "Mixer"
+        ]
+    },
+    {
+        "question_id": "T7A06",
+        "unique_words": [
+            "Transverter"
+        ]
+    },
+    {
+        "question_id": "T7A07",
+        "unique_words": [
+            "Switches"
+        ]
+    },
+    {
+        "question_id": "T7A09",
+        "unique_words": [
+            "selected"
+        ]
+    },
+    {
+        "question_id": "T7B01",
+        "unique_words": [
+            "farther"
+        ]
+    },
+    {
+        "question_id": "T7B02",
+        "unique_words": [
+            "unable",
+            "outside",
+            "reject"
+        ]
+    },
+    {
+        "question_id": "T7B04",
+        "unique_words": [
+            "Ferrite"
+        ]
+    },
+    {
+        "question_id": "T7B05",
+        "unique_words": [
+            "affected"
+        ]
+    },
+    {
+        "question_id": "T7B06",
+        "unique_words": [
+            "does",
+            "own",
+            "functioning"
+        ]
+    },
+    {
+        "question_id": "T7B07",
+        "unique_words": [
+            "band-reject"
+        ]
+    },
+    {
+        "question_id": "T7B09",
+        "unique_words": [
+            "installed"
+        ]
+    },
+    {
+        "question_id": "T7B11",
+        "unique_words": [
+            "unintelligible",
+            "distorted,",
+            "garbled,",
+            "Reports"
+        ]
+    },
+    {
+        "question_id": "T7C01",
+        "unique_words": [
+            "air"
+        ]
+    },
+    {
+        "question_id": "T7C02",
+        "unique_words": [
+            "analyzer"
+        ]
+    },
+    {
+        "question_id": "T7C03",
+        "unique_words": [
+            "sink",
+            "heat",
+            "non-inductive",
+            "mounted"
+        ]
+    },
+    {
+        "question_id": "T7C04",
+        "unique_words": [
+            "1:1"
+        ]
+    },
+    {
+        "question_id": "T7C05",
+        "unique_words": [
+            "transistors",
+            "protect"
+        ]
+    },
+    {
+        "question_id": "T7C06",
+        "unique_words": [
+            "mismatch"
+        ]
+    },
+    {
+        "question_id": "T7C07",
+        "unique_words": [
+            "heat",
+            "converted"
+        ]
+    },
+    {
+        "question_id": "T7C08",
+        "unique_words": [
+            "Directional",
+            "wattmeter"
+        ]
+    },
+    {
+        "question_id": "T7C09",
+        "unique_words": [
+            "Moisture"
+        ]
+    },
+    {
+        "question_id": "T7C10",
+        "unique_words": [
+            "enter"
+        ]
+    },
+    {
+        "question_id": "T7C11",
+        "unique_words": [
+            "requires",
+            "moisture"
+        ]
+    },
+    {
+        "question_id": "T7D08",
+        "unique_words": [
+            "Acid-core"
+        ]
+    },
+    {
+        "question_id": "T7D09",
+        "unique_words": [
+            "lumpy",
+            "rough"
+        ]
+    },
+    {
+        "question_id": "T8A06",
+        "unique_words": [
+            "Upper"
+        ]
+    },
+    {
+        "question_id": "T8A07",
+        "unique_words": [
+            "narrower"
+        ]
+    },
+    {
+        "question_id": "T8B01",
+        "unique_words": [
+            "status",
+            "Health"
+        ]
+    },
+    {
+        "question_id": "T8B02",
+        "unique_words": [
+            "users",
+            "Blocking"
+        ]
+    },
+    {
+        "question_id": "T8B05",
+        "unique_words": [
+            "status"
+        ]
+    },
+    {
+        "question_id": "T8B06",
+        "unique_words": [
+            "Keplerian"
+        ]
+    },
+    {
+        "question_id": "T8B07",
+        "unique_words": [
+            "motion",
+            "relative"
+        ]
+    },
+    {
+        "question_id": "T8B08",
+        "unique_words": [
+            "centimeter"
+        ]
+    },
+    {
+        "question_id": "T8C02",
+        "unique_words": [
+            "directional"
+        ]
+    },
+    {
+        "question_id": "T8C03",
+        "unique_words": [
+            "Contesting"
+        ]
+    },
+    {
+        "question_id": "T8C04",
+        "unique_words": [
+            "exchange",
+            "needed"
+        ]
+    },
+    {
+        "question_id": "T8C05",
+        "unique_words": [
+            "geographic"
+        ]
+    },
+    {
+        "question_id": "T8C07",
+        "unique_words": [
+            "delivering"
+        ]
+    },
+    {
+        "question_id": "T8C08",
+        "unique_words": [
+            "systems,",
+            "repeaters,",
+            "(VoIP)"
+        ]
+    },
+    {
+        "question_id": "T8C10",
+        "unique_words": [
+            "proof"
+        ]
+    },
+    {
+        "question_id": "T8C11",
+        "unique_words": [
+            "gateway"
+        ]
+    },
+    {
+        "question_id": "T8D02",
+        "unique_words": [
+            "way",
+            "groups",
+            "users",
+            "hearing"
+        ]
+    },
+    {
+        "question_id": "T8D04",
+        "unique_words": [
+            "analog"
+        ]
+    },
+    {
+        "question_id": "T8D05",
+        "unique_words": [
+            "conjunction",
+            "locations",
+            "map"
+        ]
+    },
+    {
+        "question_id": "T8D07",
+        "unique_words": [
+            "12.5",
+            "time-multiplexing"
+        ]
+    },
+    {
+        "question_id": "T8D09",
+        "unique_words": [
+            "name"
+        ]
+    },
+    {
+        "question_id": "T8D11",
+        "unique_words": [
+            "sends",
+            "detects",
+            "errors",
+            "retransmission"
+        ]
+    },
+    {
+        "question_id": "T8D12",
+        "unique_words": [
+            "amateur-radio",
+            "firmware",
+            "Wi-Fi"
+        ]
+    },
+    {
+        "question_id": "T8D13",
+        "unique_words": [
+            "capable"
+        ]
+    },
+    {
+        "question_id": "T9A01",
+        "unique_words": [
+            "concentrates"
+        ]
+    },
+    {
+        "question_id": "T9A02",
+        "unique_words": [
+            "inductors",
+            "Electrically"
+        ]
+    },
+    {
+        "question_id": "T9A03",
+        "unique_words": [
+            "horizontally"
+        ]
+    },
+    {
+        "question_id": "T9A05",
+        "unique_words": [
+            "Shortening"
+        ]
+    },
+    {
+        "question_id": "T9A06",
+        "unique_words": [
+            "Yagi"
+        ]
+    },
+    {
+        "question_id": "T9A07",
+        "unique_words": [
+            "shielding"
+        ]
+    },
+    {
+        "question_id": "T9A08",
+        "unique_words": [
+            "19"
+        ]
+    },
+    {
+        "question_id": "T9A10",
+        "unique_words": [
+            "Broadside"
+        ]
+    },
+    {
+        "question_id": "T9A12",
+        "unique_words": [
+            "1/4-wavelength"
+        ]
+    },
+    {
+        "question_id": "T9B03",
+        "unique_words": [
+            "considerations",
+            "easy",
+            "requires",
+            "installation"
+        ]
+    },
+    {
+        "question_id": "T9B04",
+        "unique_words": [
+            "transceiver's",
+            "matches"
+        ]
+    },
+    {
+        "question_id": "T9B06",
+        "unique_words": [
+            "N"
+        ]
+    },
+    {
+        "question_id": "T9B07",
+        "unique_words": [
+            "commonly"
+        ]
+    },
+    {
+        "question_id": "T9B09",
+        "unique_words": [
+            "Loose"
+        ]
+    },
+    {
+        "question_id": "T9B10",
+        "unique_words": [
+            "given",
+            "RG-213"
+        ]
+    },
+    {
+        "question_id": "T9B11",
+        "unique_words": [
+            "Air-insulated",
+            "hardline"
+        ]
+    },
+    {
+        "question_id": "T9B12",
+        "unique_words": [
+            "matched",
+            "well"
+        ]
+    },
+    {
+        "question_id": "T0A01",
+        "unique_words": [
+            "burns,",
+            "fire,",
+            "Shorting",
+            "explosion"
+        ]
+    },
+    {
+        "question_id": "T0A04",
+        "unique_words": [
+            "remove"
+        ]
+    },
+    {
+        "question_id": "T0A05",
+        "unique_words": [
+            "could",
+            "fire"
+        ]
+    },
+    {
+        "question_id": "T0A07",
+        "unique_words": [
+            "building",
+            "enter"
+        ]
+    },
+    {
+        "question_id": "T0A09",
+        "unique_words": [
+            "Bond",
+            "conductive",
+            "heavy"
+        ]
+    },
+    {
+        "question_id": "T0A10",
+        "unique_words": [
+            "Overheating",
+            "out-gassing"
+        ]
+    },
+    {
+        "question_id": "T0A11",
+        "unique_words": [
+            "Charge"
+        ]
+    },
+    {
+        "question_id": "T0A12",
+        "unique_words": [
+            "leads",
+            "measured"
+        ]
+    },
+    {
+        "question_id": "T0B04",
+        "unique_words": [
+            "clear",
+            "Look",
+            "overhead"
+        ]
+    },
+    {
+        "question_id": "T0B05",
+        "unique_words": [
+            "vibration",
+            "loosening"
+        ]
+    },
+    {
+        "question_id": "T0B06",
+        "unique_words": [
+            "falls,",
+            "come",
+            "closer"
+        ]
+    },
+    {
+        "question_id": "T0B07",
+        "unique_words": [
+            "installed",
+            "climbed",
+            "retracted,",
+            "unless"
+        ]
+    },
+    {
+        "question_id": "T0B08",
+        "unique_words": [
+            "rods",
+            "bonded",
+            "eight-foot",
+            "leg,"
+        ]
+    },
+    {
+        "question_id": "T0B09",
+        "unique_words": [
+            "could"
+        ]
+    },
+    {
+        "question_id": "T0B10",
+        "unique_words": [
+            "Sharp"
+        ]
+    },
+    {
+        "question_id": "T0C05",
+        "unique_words": [
+            "others",
+            "absorbs"
+        ]
+    },
+    {
+        "question_id": "T0C07",
+        "unique_words": [
+            "burn",
+            "skin"
+        ]
+    },
+    {
+        "question_id": "T0C09",
+        "unique_words": [
+            "re-evaluating",
+            "item",
+            "whenever",
+            "changed"
+        ]
+    },
+    {
+        "question_id": "T0C12",
+        "unique_words": [
+            "chemical",
+            "does",
+            "DNA"
+        ]
+    }
+]

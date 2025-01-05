@@ -1,7 +1,14 @@
 import json
+import argparse
+
+parser = argparse.ArgumentParser(description='Analyse the choices in the questions')
+parser.add_argument('-l', '--license', type=str, required=True, help='license class')
+args = parser.parse_args()
+assert args.license in ['extra', 'general', 'tech']
+
 
 # Load questions from questions2.json
-with open('questions2.json', 'r') as f:
+with open(f'{args.license}/questions2.json', 'r') as f:
     questions_data = json.load(f)
 
 # Initialize a collection for wrong choices
@@ -43,7 +50,7 @@ for chapter in questions_data:
                 print(f"No unique words found for question {question['question_id']}")
 
 # Output the results
-with open('unique_words.json', 'w') as f:
+with open(f'{args.license}/unique_words.json', 'w') as f:
     json.dump(results, f, indent=4)
 
 print("Unique words have been collected and saved to unique_words.json.")

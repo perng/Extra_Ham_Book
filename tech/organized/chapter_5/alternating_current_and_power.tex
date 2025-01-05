@@ -1,0 +1,104 @@
+\section{Alternating Current and Power}
+\label{section:alternating_current_and_power}
+
+\subsection*{Introduction}
+In this section, we will explore the fundamental concepts of alternating current (AC) and electrical power. We will discuss how AC differs from direct current (DC), the relationship between power, voltage, and current, the effect of resistance on current flow, and the significance of frequency in AC circuits.
+
+\subsection*{Alternating Current}
+Alternating current (AC) is a type of electrical current where the flow of electric charge periodically reverses direction. Unlike direct current (DC), which flows in a single direction, AC alternates between positive and negative directions. This periodic reversal is typically sinusoidal, as shown in Figure~\ref{fig:ac_waveform}.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{ac_waveform.png}
+    % Image prompt: A graph showing a sinusoidal AC waveform with time on the x-axis and voltage on the y-axis. The waveform should clearly show the periodic reversal of direction.
+    \caption{AC waveform showing the periodic reversal of current direction.}
+    \label{fig:ac_waveform}
+\end{figure}
+
+The mathematical representation of an AC voltage is given by:
+\begin{equation}
+    V(t) = V_{\text{peak}} \sin(2\pi f t)
+\end{equation}
+where \( V(t) \) is the voltage at time \( t \), \( V_{\text{peak}} \) is the peak voltage, and \( f \) is the frequency of the AC signal.
+
+\subsection*{Electrical Power}
+Electrical power is the rate at which electrical energy is consumed or transferred in a circuit. It is calculated using the formula:
+\begin{equation}
+    P = V \times I
+\end{equation}
+where \( P \) is the power in watts (W), \( V \) is the voltage in volts (V), and \( I \) is the current in amperes (A). In AC circuits, the power can also be expressed in terms of the root mean square (RMS) values of voltage and current:
+\begin{equation}
+    P = V_{\text{RMS}} \times I_{\text{RMS}}
+\end{equation}
+
+\subsection*{Resistance and Current Flow}
+Resistance is a property of a material that opposes the flow of electric current. In both AC and DC circuits, resistance reduces the current flow according to Ohm's Law:
+\begin{equation}
+    V = I \times R
+\end{equation}
+where \( R \) is the resistance in ohms (\(\Omega\)). In AC circuits, the opposition to current flow is not only due to resistance but also due to reactance, which depends on the frequency of the AC signal.
+
+\subsection*{Frequency of Alternating Current}
+The frequency of an AC signal is the number of complete cycles it completes per second. It is measured in hertz (Hz). For example, the standard frequency for AC power in most countries is 50 Hz or 60 Hz. The frequency determines how quickly the current alternates and is crucial for the design and operation of electrical systems.
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A09}]
+    Which of the following describes alternating current?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Current that alternates between a positive direction and zero
+        \item Current that alternates between a negative direction and zero
+        \item \textbf{Current that alternates between positive and negative directions}
+        \item All these answers are correct
+    \end{enumerate}
+\end{tcolorbox}
+Alternating current (AC) periodically reverses direction, meaning it alternates between positive and negative directions. This is the defining characteristic of AC, as opposed to DC, which flows in a single direction.
+
+%memory_trick T5A09
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A10}]
+    Which term describes the rate at which electrical energy is used?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Resistance
+        \item Current
+        \item \textbf{Power}
+        \item Voltage
+    \end{enumerate}
+\end{tcolorbox}
+Power is the rate at which electrical energy is used or transferred. It is calculated as the product of voltage and current (\( P = V \times I \)).
+
+%memory_trick T5A10
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A11}]
+    What type of current flow is opposed by resistance?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Direct current
+        \item Alternating current
+        \item RF current
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+Resistance opposes the flow of any type of current, whether it is direct current (DC), alternating current (AC), or radio frequency (RF) current. This is a fundamental property of resistance in electrical circuits.
+
+%memory_trick T5A11
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A12}]
+    What describes the number of times per second that an alternating current makes a complete cycle?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Pulse rate
+        \item Speed
+        \item Wavelength
+        \item \textbf{Frequency}
+    \end{enumerate}
+\end{tcolorbox}
+Frequency is the term that describes the number of complete cycles an alternating current completes per second. It is measured in hertz (Hz).
+
+%memory_trick T5A12
+
+\subsection*{Summary}
+In this section, we covered the following key concepts:
+\begin{itemize}
+    \item \textbf{Alternating Current (AC)}: A type of current that periodically reverses direction, typically in a sinusoidal waveform.
+    \item \textbf{Electrical Power}: The rate at which electrical energy is used, calculated as the product of voltage and current.
+    \item \textbf{Resistance and Current Flow}: Resistance opposes the flow of current in both AC and DC circuits, reducing the current according to Ohm's Law.
+    \item \textbf{Frequency of AC}: The number of complete cycles an AC signal completes per second, measured in hertz (Hz).
+\end{itemize}

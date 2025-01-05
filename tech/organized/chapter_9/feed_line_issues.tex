@@ -1,0 +1,108 @@
+\section{Feed Line Issues}
+\label{section:feed_line_issues}
+
+\subsection*{Introduction}
+In this section, we will explore common issues related to feed lines in radio communication systems. We will discuss the causes of erratic changes in SWR, compare different types of coaxial cables, evaluate feed line losses, and define the standing wave ratio (SWR) and its significance.
+
+\subsection*{Erratic Changes in SWR}
+Erratic changes in SWR can be caused by various factors, including loose connections in the antenna or feed line. These changes can lead to inefficient power transfer and potential damage to the transmitter. A loose connection can cause intermittent contact, leading to sudden changes in impedance and, consequently, SWR.
+
+\subsection*{Coaxial Cable Types}
+Coaxial cables, such as RG-58 and RG-213, have different electrical characteristics. RG-213 cable generally has less loss at a given frequency compared to RG-58. This is due to the larger diameter and better shielding of RG-213, which reduces signal attenuation.
+
+\subsection*{Feed Line Loss}
+Feed line loss is an important consideration, especially at VHF and UHF frequencies. Air-insulated hardline typically has the lowest loss among common feed line types. This is because the air dielectric reduces the loss compared to solid dielectric materials used in flexible coax.
+
+\subsection*{Standing Wave Ratio (SWR)}
+The standing wave ratio (SWR) is a measure of how well a load is matched to a transmission line. A low SWR indicates a good match, which is crucial for efficient power transfer and minimizing reflected power. High SWR can lead to increased losses and potential damage to the transmitter.
+
+\subsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B09}]
+What can cause erratic changes in SWR?
+\begin{enumerate}[label=\Alph*,noitemsep]
+    \item Local thunderstorm
+    \item \textbf{Loose connection in the antenna or feed line}
+    \item Over-modulation
+    \item Overload from a strong local station
+\end{enumerate}
+\end{tcolorbox}
+
+A loose connection in the antenna or feed line can cause erratic changes in SWR. This is because a loose connection can lead to intermittent contact, causing sudden changes in impedance. Other options, such as local thunderstorms or over-modulation, do not directly cause erratic SWR changes.
+
+%memory_trick T9B09
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B10}]
+What is the electrical difference between RG-58 and RG-213 coaxial cable?
+\begin{enumerate}[label=\Alph*,noitemsep]
+    \item There is no significant difference between the two types
+    \item RG-58 cable has two shields
+    \item \textbf{RG-213 cable has less loss at a given frequency}
+    \item RG-58 cable can handle higher power levels
+\end{enumerate}
+\end{tcolorbox}
+
+RG-213 cable has less loss at a given frequency compared to RG-58. This is due to the larger diameter and better shielding of RG-213, which reduces signal attenuation. RG-58 does not have two shields, and it cannot handle higher power levels than RG-213.
+
+%memory_trick T9B10
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B11}]
+Which of the following types of feed line has the lowest loss at VHF and UHF?
+\begin{enumerate}[label=\Alph*,noitemsep]
+    \item 50-ohm flexible coax
+    \item Multi-conductor unbalanced cable
+    \item \textbf{Air-insulated hardline}
+    \item 75-ohm flexible coax
+\end{enumerate}
+\end{tcolorbox}
+
+Air-insulated hardline has the lowest loss at VHF and UHF frequencies. This is because the air dielectric reduces the loss compared to solid dielectric materials used in flexible coax. Multi-conductor unbalanced cable and 75-ohm flexible coax have higher losses.
+
+%memory_trick T9B11
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B12}]
+What is standing wave ratio (SWR)?
+\begin{enumerate}[label=\Alph*,noitemsep]
+    \item \textbf{A measure of how well a load is matched to a transmission line}
+    \item The ratio of amplifier power output to input
+    \item The transmitter efficiency ratio
+    \item An indication of the quality of your station’s ground connection
+\end{enumerate}
+\end{tcolorbox}
+
+SWR is a measure of how well a load is matched to a transmission line. A low SWR indicates a good match, which is crucial for efficient power transfer and minimizing reflected power. The other options do not correctly define SWR.
+
+%memory_trick T9B12
+
+\subsection*{Summary}
+In this section, we discussed several key concepts related to feed line issues in radio communication systems:
+
+\begin{itemize}
+    \item \textbf{Erratic SWR changes}: Caused by loose connections in the antenna or feed line, leading to inefficient power transfer.
+    \item \textbf{Coaxial cable types}: RG-213 has less loss at a given frequency compared to RG-58 due to its larger diameter and better shielding.
+    \item \textbf{Feed line loss}: Air-insulated hardline has the lowest loss at VHF and UHF frequencies.
+    \item \textbf{Standing wave ratio (SWR)}: A measure of how well a load is matched to a transmission line, with low SWR indicating efficient power transfer.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{fig:erratic_swr}
+    \caption{Causes of erratic SWR changes. The diagram should illustrate loose connections, impedance mismatches, and other factors contributing to erratic SWR.}
+    \label{fig:erratic_swr}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Feed Line Type} & \textbf{Loss (dB/100 ft)} \\
+        \hline
+        RG-58 & 6.6 \\
+        RG-213 & 3.9 \\
+        Air-insulated hardline & 1.5 \\
+        75-ohm flexible coax & 5.0 \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Feed Line Loss}
+    \label{tab:feed_line_loss}
+\end{table}

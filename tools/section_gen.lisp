@@ -28,11 +28,15 @@
             "the correct answer should be bold")
     (element 'explanation        
         "Do not say 'The correct answer is' as the correct answer is already bold in the question."
-        "If the question is about FCC Part 97, quote the relevant part of the regulation."
+        "If the question is related to FCC Part 97, quote the relevant part of the regulation."
         "After each question, provide a  explanation. If calculation is required, show the calculation step by step. Also, explain why other options are wrong."
         "if the question can be answered from the section_text, make the explanation short and concise. Otherwise, explain the question in detail."
-        "At the end of the explanation, add a comment line '%memory_tric <question_id>'".
+        "again! do not say 'The correct answer is'."
+        
     )
+    (element 'memory-trick
+        "At the end of each of the explanations, add a comment line '%memory_trick <question_id>'".        
+    )   
 
     (element 'summary
         "generate a summary subsection titled 'Summary'"

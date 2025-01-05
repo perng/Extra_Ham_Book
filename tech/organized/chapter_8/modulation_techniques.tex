@@ -1,0 +1,164 @@
+\section{Modulation Techniques}
+\label{section:modulation_techniques}
+
+\subsection*{Introduction}
+Modulation techniques are fundamental to radio communication, enabling the transmission of information over long distances. This section explores the differences between Amplitude Modulation (AM), Frequency Modulation (FM), and Single Sideband (SSB) modulation. We will also discuss the bandwidth requirements for different types of signals and the advantages and disadvantages of SSB compared to FM. Finally, we will explain the concept of sideband selection in SSB communications.
+
+\subsection*{Differences Between AM, FM, and SSB}
+Amplitude Modulation (AM) varies the amplitude of the carrier wave in proportion to the signal being transmitted. Frequency Modulation (FM), on the other hand, varies the frequency of the carrier wave. Single Sideband (SSB) is a form of AM that eliminates one sideband and the carrier, resulting in a more efficient use of bandwidth.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{waveform_comparison.svg}
+    \caption{Comparison of AM, FM, and SSB waveforms.}
+    \label{fig:waveform_comparison}
+    % Diagram comparing AM, FM, and SSB waveforms. The diagram should show the amplitude and frequency variations for each modulation type.
+\end{figure}
+
+\subsection*{Bandwidth Requirements}
+The bandwidth of a signal is a critical factor in radio communication. SSB signals typically require less bandwidth compared to AM and FM signals. For example, a typical SSB voice signal has an approximate bandwidth of 3 kHz, while FM voice signals can require up to 15 kHz. Continuous Wave (CW) signals, used in Morse code, have the narrowest bandwidth, often less than 1 kHz.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{bandwidth_comparison.png}
+    \caption{Bandwidth comparison of SSB, FM, and CW signals.}
+    \label{fig:bandwidth_comparison}
+    % Graph showing bandwidth of SSB, FM, and CW signals. The graph should clearly illustrate the relative bandwidths of each signal type.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Modulation Type} & \textbf{Bandwidth} \\
+        \hline
+        SSB & 3 kHz \\
+        FM & 15 kHz \\
+        CW & <1 kHz \\
+        \hline
+    \end{tabular}
+    \caption{Bandwidth of Different Modulation Types}
+    \label{tab:bandwidth_summary}
+\end{table}
+
+\subsection*{Advantages and Disadvantages of SSB}
+SSB offers several advantages over FM, including narrower bandwidth and greater power efficiency. However, SSB signals can be more challenging to tune correctly and are more susceptible to interference. FM, while requiring more bandwidth, provides better signal quality and is easier to tune.
+
+\subsection*{Sideband Selection in SSB Communications}
+In SSB communications, the choice of upper or lower sideband depends on the frequency band being used. For example, upper sideband is typically used for 10 meter HF, VHF, and UHF communications. This selection helps optimize the transmission for the specific frequency range.
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A01}]
+    Which of the following is a form of amplitude modulation?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Spread spectrum
+        \item Packet radio
+        \item \textbf{Single sideband}
+        \item Phase shift keying (PSK)
+    \end{enumerate}
+\end{tcolorbox}
+SSB is a form of amplitude modulation that eliminates one sideband and the carrier. Spread spectrum and packet radio are not forms of amplitude modulation, and PSK is a type of phase modulation.
+
+%memory_trick T8A01
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A02}]
+    What type of modulation is commonly used for VHF packet radio transmissions?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{FM or PM}
+        \item SSB
+        \item AM
+        \item PSK
+    \end{enumerate}
+\end{tcolorbox}
+FM or PM is commonly used for VHF packet radio transmissions due to its robustness and ease of tuning. SSB and AM are less commonly used for this purpose, and PSK is typically used for digital communications.
+
+%memory_trick T8A02
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A03}]
+    Which type of voice mode is often used for long-distance (weak signal) contacts on the VHF and UHF bands?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item FM
+        \item DRM
+        \item \textbf{SSB}
+        \item PM
+    \end{enumerate}
+\end{tcolorbox}
+SSB is often used for long-distance contacts on the VHF and UHF bands because it is more power-efficient and has a narrower bandwidth, making it better suited for weak signal conditions.
+
+%memory_trick T8A03
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A04}]
+    Which type of modulation is commonly used for VHF and UHF voice repeaters?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item AM
+        \item SSB
+        \item PSK
+        \item \textbf{FM or PM}
+    \end{enumerate}
+\end{tcolorbox}
+FM or PM is commonly used for VHF and UHF voice repeaters because it provides better signal quality and is easier to tune. AM and SSB are less commonly used for repeaters, and PSK is typically used for digital communications.
+
+%memory_trick T8A04
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A05}]
+    Which of the following types of signal has the narrowest bandwidth?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item FM voice
+        \item SSB voice
+        \item \textbf{CW}
+        \item Slow-scan TV
+    \end{enumerate}
+\end{tcolorbox}
+CW signals have the narrowest bandwidth, often less than 1 kHz, making them ideal for long-distance communication with minimal interference.
+
+%memory_trick T8A05
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A06}]
+    Which sideband is normally used for 10 meter HF, VHF, and UHF single-sideband communications?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{Upper sideband}
+        \item Lower sideband
+        \item Suppressed sideband
+        \item Inverted sideband
+    \end{enumerate}
+\end{tcolorbox}
+Upper sideband is normally used for 10 meter HF, VHF, and UHF single-sideband communications. This choice optimizes the transmission for these frequency ranges.
+
+%memory_trick T8A06
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A07}]
+    What is a characteristic of single sideband (SSB) compared to FM?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item SSB signals are easier to tune in correctly
+        \item SSB signals are less susceptible to interference
+        \item \textbf{SSB signals have narrower bandwidth}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+SSB signals have narrower bandwidth compared to FM, making them more efficient in terms of spectrum usage. However, they can be more challenging to tune and are more susceptible to interference.
+
+%memory_trick T8A07
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A08}]
+    What is the approximate bandwidth of a typical single sideband (SSB) voice signal?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 1 kHz
+        \item \textbf{3 kHz}
+        \item 6 kHz
+        \item 15 kHz
+    \end{enumerate}
+\end{tcolorbox}
+A typical SSB voice signal has an approximate bandwidth of 3 kHz, making it more efficient than AM or FM signals in terms of bandwidth usage.
+
+%memory_trick T8A08
+
+\subsection*{Summary}
+This section covered the key concepts of modulation techniques, including Amplitude Modulation (AM), Frequency Modulation (FM), and Single Sideband (SSB). We discussed the bandwidth requirements for different types of signals and the advantages and disadvantages of SSB compared to FM. Additionally, we explained the concept of sideband selection in SSB communications.
+
+\begin{itemize}
+    \item \textbf{Amplitude Modulation (AM)}: Varies the amplitude of the carrier wave.
+    \item \textbf{Frequency Modulation (FM)}: Varies the frequency of the carrier wave.
+    \item \textbf{Single Sideband (SSB)}: A form of AM that eliminates one sideband and the carrier.
+    \item \textbf{Bandwidth of Signals}: SSB signals typically require less bandwidth compared to AM and FM signals.
+    \item \textbf{Sideband Selection}: Upper sideband is typically used for 10 meter HF, VHF, and UHF communications.
+\end{itemize}

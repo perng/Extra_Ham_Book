@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1736046626.6674 "/home/charles/extra-book/tech/organized/tech.tex" "tech.pdf" "tech" 1736046627.78892 2
-  "/home/charles/extra-book/tech/organized/tech.tex" 1736046625.08779 3178 33e41fe5ed05e4da8b96ad7328169ed9 ""
+["pdflatex"] 1736051453.70915 "/home/charles/extra-book/tech/organized/tech.tex" "tech.pdf" "tech" 1736051454.82914 2
+  "/home/charles/extra-book/tech/organized/tech.tex" 1736051452.24511 2064 ecff12df4f3fbc9f58408425333b2bb7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -213,9 +213,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1734819460 5485709 8129e419010b46b234085a26866cdb87 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1734819614 3343777 087c08ca3c1b21e9c4e5ebd9232d754b ""
   "/usr/local/texlive/2024/texmf.cnf" 1734819453.52196 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "tech.aux" 1736046627.69179 177 c806feef523ecb7da2faf52a37c29e17 "pdflatex"
-  "tech.tex" 1736046625.08779 3178 33e41fe5ed05e4da8b96ad7328169ed9 ""
-  "tech.toc" 1736046627.60279 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "tech.aux" 1736051454.73411 177 c806feef523ecb7da2faf52a37c29e17 "pdflatex"
+  "tech.tex" 1736051452.24511 2064 ecff12df4f3fbc9f58408425333b2bb7 ""
+  "tech.toc" 1736051454.63811 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "tech/organized/chapter_1/intro_amateur_radio.tex" 0 -1 0 ""
   (generated)
   "tech.aux"

@@ -1,0 +1,178 @@
+\section{Signal Essentials}
+\label{section:signal_essentials}
+
+\subsection*{Receiver Sensitivity}
+Receiver sensitivity refers to the ability of a receiver to detect weak signals. It is a critical parameter in radio communication, as it determines the minimum signal strength that can be reliably detected. High sensitivity allows a receiver to pick up distant or weak signals, which is essential for effective communication, especially in low-power or long-distance scenarios.
+
+\subsection*{Transceiver Functionality}
+A transceiver is a device that combines both a transmitter and a receiver in a single unit. It allows for two-way communication by enabling the transmission and reception of signals. Key components of a transceiver include the transmitter, receiver, and often a mixer for frequency conversion. Figure~\ref{fig:transceiver_block_diagram} illustrates the block diagram of a basic transceiver.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{transceiver_block_diagram.svg}
+    \caption{Block diagram of a basic transceiver showing key components.}
+    \label{fig:transceiver_block_diagram}
+    % Prompt: Diagram of a basic transceiver block diagram
+    % The figure should include blocks for the transmitter, receiver, mixer, and antenna.
+\end{figure}
+
+\subsection*{Frequency Conversion}
+Frequency conversion is the process of changing a signal from one frequency to another. This is typically achieved using a mixer, which combines the input signal with a local oscillator signal to produce sum and difference frequencies. The desired frequency is then filtered out. Figure~\ref{fig:frequency_conversion} demonstrates this process.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{frequency_conversion.svg}
+    \caption{Frequency conversion process using a mixer.}
+    \label{fig:frequency_conversion}
+    % Prompt: Illustration of frequency conversion using a mixer
+    % The figure should show the input signal, local oscillator, mixer, and output signal.
+\end{figure}
+
+\subsection*{Signal Discrimination}
+Selectivity is the ability of a receiver to discriminate between multiple signals, particularly those that are close in frequency. High selectivity ensures that the receiver can isolate the desired signal from unwanted interference, which is crucial for clear communication.
+
+\subsection*{Oscillator Circuits}
+An oscillator is a circuit that generates a signal at a specific frequency. It is a fundamental component in both transmitters and receivers, providing the carrier signal for modulation and the local oscillator signal for frequency conversion.
+
+\subsection*{Transverter Usage}
+A transverter is a device that converts the RF input and output of a transceiver to another frequency band. This allows the transceiver to operate on bands for which it was not originally designed, extending its versatility.
+
+\subsection*{PTT Input Function}
+The PTT (Push-To-Talk) input on a transceiver is used to switch the device from receive mode to transmit mode when grounded. This is essential for half-duplex communication, where the same frequency is used for both transmission and reception.
+
+\subsection*{Modulation Techniques}
+Modulation is the process of combining speech or data with an RF carrier signal. This allows the information to be transmitted over long distances. Common modulation techniques include AM (Amplitude Modulation), FM (Frequency Modulation), and SSB (Single Sideband). Table~\ref{tab:modulation_comparison} provides a comparison of these techniques.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{Modulation Type} & \textbf{Bandwidth} & \textbf{Efficiency} & \textbf{Complexity} \\
+        \hline
+        AM & High & Low & Low \\
+        FM & Medium & Medium & Medium \\
+        SSB & Low & High & High \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of AM, FM, and SSB modulation techniques.}
+    \label{tab:modulation_comparison}
+    % Prompt: Comparison of different modulation techniques
+\end{table}
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A01}]
+    Which term describes the ability of a receiver to detect the presence of a signal?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Linearity
+        \item \textbf{Sensitivity}
+        \item Selectivity
+        \item Total Harmonic Distortion
+    \end{enumerate}
+\end{tcolorbox}
+Sensitivity is the correct term, as it directly relates to the receiver's ability to detect weak signals. Linearity refers to the proportionality of input and output, selectivity refers to the ability to discriminate between signals, and total harmonic distortion is a measure of signal distortion.
+
+%memory_trick T7A01
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A02}]
+    What is a transceiver?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{A device that combines a receiver and transmitter}
+        \item A device for matching feed line impedance to 50 ohms
+        \item A device for automatically sending and decoding Morse code
+        \item A device for converting receiver and transmitter frequencies to another band
+    \end{enumerate}
+\end{tcolorbox}
+A transceiver integrates both a transmitter and a receiver, enabling two-way communication. The other options describe different devices or functions, such as impedance matching or frequency conversion.
+
+%memory_trick T7A02
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A03}]
+    Which of the following is used to convert a signal from one frequency to another?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Phase splitter
+        \item \textbf{Mixer}
+        \item Inverter
+        \item Amplifier
+    \end{enumerate}
+\end{tcolorbox}
+A mixer is used for frequency conversion by combining the input signal with a local oscillator signal. Phase splitters, inverters, and amplifiers serve different purposes in signal processing.
+
+%memory_trick T7A03
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A04}]
+    Which term describes the ability of a receiver to discriminate between multiple signals?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Discrimination ratio
+        \item Sensitivity
+        \item \textbf{Selectivity}
+        \item Harmonic distortion
+    \end{enumerate}
+\end{tcolorbox}
+Selectivity is the correct term, as it refers to the receiver's ability to distinguish between signals close in frequency. Sensitivity relates to detecting weak signals, while harmonic distortion is a measure of signal quality.
+
+%memory_trick T7A04
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A05}]
+    What is the name of a circuit that generates a signal at a specific frequency?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Reactance modulator
+        \item Phase modulator
+        \item Low-pass filter
+        \item \textbf{Oscillator}
+    \end{enumerate}
+\end{tcolorbox}
+An oscillator generates a signal at a specific frequency, making it essential for both transmitters and receivers. Reactance modulators, phase modulators, and low-pass filters serve different functions in signal processing.
+
+%memory_trick T7A05
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A06}]
+    What device converts the RF input and output of a transceiver to another band?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item High-pass filter
+        \item Low-pass filter
+        \item \textbf{Transverter}
+        \item Phase converter
+    \end{enumerate}
+\end{tcolorbox}
+A transverter is used to convert the RF input and output of a transceiver to another frequency band, allowing operation on different bands. High-pass and low-pass filters are used for signal filtering, while a phase converter changes the phase of a signal.
+
+%memory_trick T7A06
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A07}]
+    What is the function of a transceiver’s PTT input?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Input for a key used to send CW
+        \item \textbf{Switches transceiver from receive to transmit when grounded}
+        \item Provides a transmit tuning tone when grounded
+        \item Input for a preamplifier tuning tone
+    \end{enumerate}
+\end{tcolorbox}
+The PTT input switches the transceiver from receive to transmit mode when grounded, enabling half-duplex communication. The other options describe different functions not related to the PTT input.
+
+%memory_trick T7A07
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A08}]
+    Which of the following describes combining speech with an RF carrier signal?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item Impedance matching
+        \item Oscillation
+        \item \textbf{Modulation}
+        \item Low-pass filtering
+    \end{enumerate}
+\end{tcolorbox}
+Modulation is the process of combining speech or data with an RF carrier signal, enabling the transmission of information. Impedance matching, oscillation, and low-pass filtering are unrelated to this process.
+
+%memory_trick T7A08
+
+\subsection*{Summary}
+This section covered essential concepts in radio communication, including:
+\begin{itemize}
+    \item \textbf{Receiver Sensitivity}: The ability to detect weak signals.
+    \item \textbf{Transceiver Functionality}: A device combining a transmitter and receiver.
+    \item \textbf{Frequency Conversion}: The process of changing signal frequency using a mixer.
+    \item \textbf{Signal Discrimination}: The ability to distinguish between signals close in frequency.
+    \item \textbf{Oscillator Circuits}: Circuits that generate specific frequencies.
+    \item \textbf{Transverter Usage}: Devices that convert RF signals to another band.
+    \item \textbf{PTT Input Function}: Switches a transceiver from receive to transmit mode.
+    \item \textbf{Modulation Techniques}: Methods for combining speech or data with an RF carrier.
+\end{itemize}

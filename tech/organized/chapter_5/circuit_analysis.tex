@@ -1,0 +1,185 @@
+\section{Circuit Analysis}
+\label{section:circuit_analysis}
+
+\subsection*{Introduction}
+Ohm's Law is one of the fundamental principles in electrical engineering and circuit analysis. It describes the relationship between voltage (\(E\)), current (\(I\)), and resistance (\(R\)) in an electrical circuit. Ohm's Law is expressed mathematically as:
+
+\begin{equation}
+    E = I \times R
+    \label{eq:ohms_law}
+\end{equation}
+
+This equation states that the voltage across a conductor is directly proportional to the current flowing through it, with the constant of proportionality being the resistance. Ohm's Law is crucial for analyzing and designing electrical circuits, as it allows us to calculate unknown quantities when the other two are known.
+
+\subsection*{Calculating Current, Voltage, and Resistance}
+Using Ohm's Law, we can derive formulas to calculate current, voltage, and resistance:
+
+\begin{itemize}
+    \item \textbf{Current (\(I\))}: The current flowing through a circuit can be calculated using the formula:
+    \begin{equation}
+        I = \frac{E}{R}
+        \label{eq:current}
+    \end{equation}
+    
+    \item \textbf{Voltage (\(E\))}: The voltage across a circuit can be calculated using the formula:
+    \begin{equation}
+        E = I \times R
+        \label{eq:voltage}
+    \end{equation}
+    
+    \item \textbf{Resistance (\(R\))}: The resistance of a circuit can be calculated using the formula:
+    \begin{equation}
+        R = \frac{E}{I}
+        \label{eq:resistance}
+    \end{equation}
+\end{itemize}
+
+These formulas are essential for solving problems in circuit analysis, as demonstrated in the following examples.
+
+\subsection*{Relationship Between Voltage, Current, and Resistance}
+The relationship between voltage, current, and resistance is linear, as described by Ohm's Law. This means that if the voltage across a circuit increases, the current will also increase, provided the resistance remains constant. Conversely, if the resistance increases, the current will decrease for a given voltage. This relationship is illustrated in Figure~\ref{fig:ohms_law}.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{ohms_law_diagram.svg}
+    \caption{Ohm's Law: A diagram illustrating the relationship between voltage (\(E\)), current (\(I\)), and resistance (\(R\)). The diagram shows a simple circuit with a voltage source, resistor, and current flow.}
+    \label{fig:ohms_law}
+    % Prompt: Diagram illustrating Ohm's Law. The diagram should include a voltage source, a resistor, and arrows indicating the direction of current flow. The relationship between voltage, current, and resistance should be visually represented.
+\end{figure}
+
+\subsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D01}]
+    What formula is used to calculate current in a circuit?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \(I = E R\)
+        \item \textbf{\(I = E / R\)}
+        \item \(I = E + R\)
+        \item \(I = E - R\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating current is \(I = E / R\), as derived from Ohm's Law (Equation~\ref{eq:current}). The other options are incorrect because they do not represent the correct relationship between voltage, current, and resistance.
+
+%memory_trick T5D01
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D02}]
+    What formula is used to calculate voltage in a circuit?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{\(E = I \times R\)}
+        \item \(E = I / R\)
+        \item \(E = I + R\)
+        \item \(E = I - R\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating voltage is \(E = I \times R\), as stated in Ohm's Law (Equation~\ref{eq:voltage}). The other options are incorrect because they do not represent the correct relationship between voltage, current, and resistance.
+
+%memory_trick T5D02
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D03}]
+    What formula is used to calculate resistance in a circuit?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \(R = E \times I\)
+        \item \textbf{\(R = E / I\)}
+        \item \(R = E + I\)
+        \item \(R = E - I\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating resistance is \(R = E / I\), as derived from Ohm's Law (Equation~\ref{eq:resistance}). The other options are incorrect because they do not represent the correct relationship between voltage, current, and resistance.
+
+%memory_trick T5D03
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D04}]
+    What is the resistance of a circuit in which a current of 3 amperes flows when connected to 90 volts?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 3 ohms
+        \item \textbf{30 ohms}
+        \item 93 ohms
+        \item 270 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using the formula \(R = E / I\), we can calculate the resistance as follows:
+\[
+R = \frac{90\, \text{V}}{3\, \text{A}} = 30\, \Omega
+\]
+The other options are incorrect because they do not result from the correct application of Ohm's Law.
+
+%memory_trick T5D04
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D05}]
+    What is the resistance of a circuit for which the applied voltage is 12 volts and the current flow is 1.5 amperes?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 18 ohms
+        \item 0.125 ohms
+        \item \textbf{8 ohms}
+        \item 13.5 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using the formula \(R = E / I\), we can calculate the resistance as follows:
+\[
+R = \frac{12\, \text{V}}{1.5\, \text{A}} = 8\, \Omega
+\]
+The other options are incorrect because they do not result from the correct application of Ohm's Law.
+
+%memory_trick T5D05
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D06}]
+    What is the resistance of a circuit that draws 4 amperes from a 12-volt source?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item \textbf{3 ohms}
+        \item 16 ohms
+        \item 48 ohms
+        \item 8 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using the formula \(R = E / I\), we can calculate the resistance as follows:
+\[
+R = \frac{12\, \text{V}}{4\, \text{A}} = 3\, \Omega
+\]
+The other options are incorrect because they do not result from the correct application of Ohm's Law.
+
+%memory_trick T5D06
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D07}]
+    What is the current in a circuit with an applied voltage of 120 volts and a resistance of 80 ohms?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 9600 amperes
+        \item 200 amperes
+        \item 0.667 amperes
+        \item \textbf{1.5 amperes}
+    \end{enumerate}
+\end{tcolorbox}
+Using the formula \(I = E / R\), we can calculate the current as follows:
+\[
+I = \frac{120\, \text{V}}{80\, \Omega} = 1.5\, \text{A}
+\]
+The other options are incorrect because they do not result from the correct application of Ohm's Law.
+
+%memory_trick T5D07
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D08}]
+    What is the current through a 100-ohm resistor connected across 200 volts?
+    \begin{enumerate}[label=\Alph*,noitemsep]
+        \item 20,000 amperes
+        \item 0.5 amperes
+        \item \textbf{2 amperes}
+        \item 100 amperes
+    \end{enumerate}
+\end{tcolorbox}
+Using the formula \(I = E / R\), we can calculate the current as follows:
+\[
+I = \frac{200\, \text{V}}{100\, \Omega} = 2\, \text{A}
+\]
+The other options are incorrect because they do not result from the correct application of Ohm's Law.
+
+%memory_trick T5D08
+
+\subsection*{Summary}
+This section introduced the fundamental concepts of circuit analysis, focusing on Ohm's Law and its applications. The key concepts covered include:
+
+\begin{itemize}
+    \item \textbf{Ohm's Law}: The relationship between voltage, current, and resistance in a circuit, expressed as \(E = I \times R\).
+    \item \textbf{Current Calculation}: The formula \(I = E / R\) is used to calculate current when voltage and resistance are known.
+    \item \textbf{Voltage Calculation}: The formula \(E = I \times R\) is used to calculate voltage when current and resistance are known.
+    \item \textbf{Resistance Calculation}: The formula \(R = E / I\) is used to calculate resistance when voltage and current are known.
+\end{itemize}
+
+These principles are essential for analyzing and designing electrical circuits, as demonstrated through the examples and questions in this section.
