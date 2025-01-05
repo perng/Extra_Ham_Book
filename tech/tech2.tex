@@ -1,0 +1,40 @@
+\documentclass[12pt]{book}
+
+\usepackage{geometry} % Page layout
+\usepackage{titlesec} % Formatting headings
+\usepackage{fancyhdr} % Header/Footer
+\usepackage{hyperref} % Hyperlinks
+\usepackage{graphicx} % For images
+\usepackage{amsmath} % For math
+\usepackage{amssymb} % For math symbols
+\usepackage{enumitem} % Custom lists
+\usepackage[most]{tcolorbox}
+\usepackage{epstopdf} % For converting EPS to PDF
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{svg}
+\usetikzlibrary{circuits.ee.IEC} % Include this if using electrical components
+\usepackage{circuitikz}
+\pgfplotsset{compat=1.18} % Important for log10
+
+% Page layout
+\geometry{a4paper, margin=1in}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Extra HAM!}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
+\titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}[hang]{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+\chapter{RADIO WAVE PROPAGATION}
+\input{tech/organized/T5/sec:multipath}
+\end{document}

@@ -1,0 +1,188 @@
+{
+  "chapter_label": "chapter:electronic_and_electrical_components",
+  "chapter_title": "ELECTRONIC AND ELECTRICAL COMPONENTS",
+  "sections": [
+    {
+      "section_label": "section:basic_components",
+      "title": "Basic Components and Their Functions",
+      "questions": [
+        "T6A01",
+        "T6A02",
+        "T6A03",
+        "T6A04",
+        "T6A05",
+        "T6A06",
+        "T6A07",
+        "T6A08"
+      ],
+      "concepts": [
+        "Resistors",
+        "Potentiometers",
+        "Capacitors",
+        "Inductors",
+        "Switches"
+      ],
+      "prompts": [
+        "Explain the function of a resistor in a DC circuit and its role in opposing current flow.",
+        "Describe how a potentiometer works and its common applications in electronic circuits.",
+        "Discuss the energy storage mechanism in capacitors and inductors, highlighting the differences between them.",
+        "Explain the operation of an SPDT switch and its typical use in circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the symbol and internal structure of a resistor",
+          "software": "SVG",
+          "caption": "Symbol and structure of a resistor",
+          "label": "fig:resistor"
+        },
+        {
+          "prompt": "Diagram showing the symbol and internal structure of a potentiometer",
+          "software": "SVG",
+          "caption": "Symbol and structure of a potentiometer",
+          "label": "fig:potentiometer"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the properties of resistors, capacitors, and inductors",
+          "caption": "Comparison of basic electronic components",
+          "label": "tab:basic_components"
+        }
+      ]
+    },
+    {
+      "section_label": "section:semiconductor_components",
+      "title": "Semiconductor Components and Their Applications",
+      "questions": [
+        "T6B01",
+        "T6B02",
+        "T6B03",
+        "T6B04",
+        "T6B05",
+        "T6B06",
+        "T6B07",
+        "T6B08"
+      ],
+      "concepts": [
+        "Diodes",
+        "Transistors",
+        "Field-Effect Transistors (FETs)",
+        "Light-Emitting Diodes (LEDs)"
+      ],
+      "prompts": [
+        "Explain the forward voltage drop in diodes and its significance in circuit design.",
+        "Describe the operation of a transistor as an electronic switch and its role in amplification.",
+        "Discuss the structure and function of a Field-Effect Transistor (FET), including its gate, drain, and source.",
+        "Explain how a Light-Emitting Diode (LED) emits light and its common applications."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the symbol and internal structure of a diode",
+          "software": "SVG",
+          "caption": "Symbol and structure of a diode",
+          "label": "fig:diode"
+        },
+        {
+          "prompt": "Diagram showing the symbol and internal structure of a transistor",
+          "software": "SVG",
+          "caption": "Symbol and structure of a transistor",
+          "label": "fig:transistor"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of diodes and their applications",
+          "caption": "Comparison of diode types",
+          "label": "tab:diode_types"
+        }
+      ]
+    },
+    {
+      "section_label": "section:circuit_design_and_analysis",
+      "title": "Circuit Design and Analysis",
+      "questions": [
+        "T6C01",
+        "T6C02",
+        "T6C03",
+        "T6C04",
+        "T6C05",
+        "T6C06",
+        "T6C07",
+        "T6C08"
+      ],
+      "concepts": [
+        "Schematic Diagrams",
+        "Component Identification",
+        "Circuit Analysis"
+      ],
+      "prompts": [
+        "Explain the importance of schematic diagrams in circuit design and how they represent component connections.",
+        "Describe how to identify components in a schematic diagram and their roles in the circuit.",
+        "Discuss the process of analyzing a circuit using schematic diagrams and identifying key components."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Example schematic diagram with labeled components",
+          "software": "SVG",
+          "caption": "Example schematic diagram",
+          "label": "fig:schematic_example"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table listing common schematic symbols and their corresponding components",
+          "caption": "Common schematic symbols",
+          "label": "tab:schematic_symbols"
+        }
+      ]
+    },
+    {
+      "section_label": "section:advanced_electronics",
+      "title": "Advanced Electronics and Core Technologies",
+      "questions": [
+        "T6D01",
+        "T6D02",
+        "T6D03",
+        "T6D04",
+        "T6D05",
+        "T6D06",
+        "T6D07",
+        "T6D08"
+      ],
+      "concepts": [
+        "Rectifiers",
+        "Relays",
+        "Shielded Wire",
+        "Regulators",
+        "Resonant Circuits"
+      ],
+      "prompts": [
+        "Explain the function of a rectifier in converting AC to DC and its applications in power supplies.",
+        "Describe the operation of a relay and its use as an electrically-controlled switch.",
+        "Discuss the importance of shielded wire in preventing unwanted signal coupling and its applications.",
+        "Explain the role of a regulator in controlling voltage levels in a power supply."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the operation of a rectifier circuit",
+          "software": "SVG",
+          "caption": "Rectifier circuit operation",
+          "label": "fig:rectifier"
+        },
+        {
+          "prompt": "Diagram showing the structure and operation of a relay",
+          "software": "SVG",
+          "caption": "Relay structure and operation",
+          "label": "fig:relay"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of regulators and their applications",
+          "caption": "Comparison of voltage regulators",
+          "label": "tab:regulators"
+        }
+      ]
+    }
+  ]
+}

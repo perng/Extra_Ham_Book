@@ -1,0 +1,89 @@
+\documentclass[12pt]{book}
+
+\usepackage{geometry} % Page layout
+\usepackage{titlesec} % Formatting headings
+\usepackage{fancyhdr} % Header/Footer
+\usepackage{hyperref} % Hyperlinks
+\usepackage{graphicx} % For images
+\usepackage{amsmath} % For math
+\usepackage{amssymb} % For math symbols
+\usepackage{enumitem} % Custom lists
+\usepackage[most]{tcolorbox}
+\usepackage{epstopdf} % For converting EPS to PDF
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{svg}
+\usepackage{draftwatermark}
+\SetWatermarkText{Draft}
+\SetWatermarkScale{4}
+\SetWatermarkLightness{0.9}
+
+
+\pgfplotsset{compat=1.18} % Important for log10
+
+% Page layout
+\geometry{a4paper, margin=1in}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Technical Ham}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+
+\titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
+\titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}[hang]{\large\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+\chapter{COMMISSION RULES}
+\label{chapter:commission_rules}
+\input{tech/organized/chapter_1/intro_amateur_radio}
+\input{tech/organized/chapter_1/frequency_coordination}
+\input{tech/organized/chapter_1/licensing_call_signs}
+\input{tech/organized/chapter_1/operating_rules}
+\input{tech/organized/chapter_1/control_operator}
+\input{tech/organized/chapter_1/station_identification}
+\chapter{OPERATING PROCEDURES}
+\label{chapter:operating_procedures}
+\input{tech/organized/chapter_2/repeater_basics}
+\input{tech/organized/chapter_2/operating_essentials}
+\input{tech/organized/chapter_2/advanced_operating}
+\input{tech/organized/chapter_2/emergency_operations}
+\input{tech/organized/chapter_2/message_handling}
+\chapter{RADIO WAVE PROPAGATION}
+\label{chapter:radio_wave_propagation}
+\input{tech/organized/chapter_3/signal_variability}
+\input{tech/organized/chapter_3/electromagnetic_essentials}
+\input{tech/organized/chapter_3/propagation_basics}
+\chapter{AMATEUR RADIO PRACTICES}
+\label{chapter:amateur_radio_practices}
+\input{tech/organized/chapter_4/power_and_connections}
+\input{tech/organized/chapter_4/digital_modes_and_interfaces}
+\input{tech/organized/chapter_4/audio_and_signal_processing}
+\input{tech/organized/chapter_4/frequency_management}
+\chapter{ELECTRICAL PRINCIPLES}
+\label{chapter:electrical_principles}
+\input{tech/organized/chapter_5/electrical_units_and_concepts}
+\input{tech/organized/chapter_5/alternating_current_and_power}
+\input{tech/organized/chapter_5/electrical_measurements}
+\input{tech/organized/chapter_5/decibels_and_power}
+\input{tech/organized/chapter_5/capacitance_and_inductance}
+\input{tech/organized/chapter_5/power_calculations}
+\input{tech/organized/chapter_5/circuit_analysis}
+\input{tech/organized/chapter_5/series_and_parallel_circuits}
+\chapter{ELECTRONIC AND ELECTRICAL COMPONENTS}
+\label{chapter:electronic_and_electrical_components}
+\chapter{PRACTICAL CIRCUITS}
+\label{chapter:practical_circuits}
+\chapter{SIGNALS AND EMISSIONS}
+\label{chapter:signals_and_emissions}
+\chapter{ANTENNAS AND FEED LINES}
+\label{chapter:antennas_and_feed_lines}
+\chapter{SAFETY}
+\label{chapter:safety}
+
+\end{document}

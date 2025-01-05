@@ -1,0 +1,170 @@
+{
+  "chapter_label": "chapter:signals_and_emissions",
+  "chapter_title": "SIGNALS AND EMISSIONS",
+  "sections": [
+    {
+      "section_label": "section:modulation_techniques",
+      "title": "Modulation Techniques",
+      "questions": [
+        "T8A01", "T8A02", "T8A03", "T8A04", "T8A05", "T8A06", "T8A07", "T8A08"
+      ],
+      "concepts": [
+        "Amplitude Modulation (AM)",
+        "Frequency Modulation (FM)",
+        "Single Sideband (SSB)",
+        "Bandwidth of Signals",
+        "Sideband Selection"
+      ],
+      "prompts": [
+        "Explain the differences between AM, FM, and SSB modulation techniques.",
+        "Describe the bandwidth requirements for different types of signals, including SSB, FM, and CW.",
+        "Discuss the advantages and disadvantages of SSB compared to FM.",
+        "Explain the concept of sideband selection in SSB communications."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram comparing AM, FM, and SSB waveforms",
+          "software": "SVG",
+          "caption": "Comparison of AM, FM, and SSB waveforms",
+          "label": "fig:waveform_comparison"
+        },
+        {
+          "prompt": "Graph showing bandwidth of SSB, FM, and CW signals",
+          "software": "gnuplot",
+          "caption": "Bandwidth comparison of SSB, FM, and CW signals",
+          "label": "fig:bandwidth_comparison"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the bandwidth of different modulation types",
+          "caption": "Bandwidth of Different Modulation Types",
+          "label": "tab:bandwidth_summary"
+        }
+      ]
+    },
+    {
+      "section_label": "section:satellite_communications",
+      "title": "Satellite Communications",
+      "questions": [
+        "T8B01", "T8B02", "T8B03", "T8B04", "T8B05", "T8B06", "T8B07", "T8B08"
+      ],
+      "concepts": [
+        "Satellite Telemetry",
+        "Doppler Shift",
+        "U/V Mode",
+        "Spin Fading",
+        "LEO Satellites"
+      ],
+      "prompts": [
+        "Explain the role of telemetry in satellite communications.",
+        "Describe the impact of Doppler shift on satellite communications.",
+        "Discuss the concept of U/V mode in satellite operations.",
+        "Explain the causes and effects of spin fading in satellite signals."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating Doppler shift in satellite communications",
+          "software": "SVG",
+          "caption": "Doppler shift in satellite communications",
+          "label": "fig:doppler_shift"
+        },
+        {
+          "prompt": "Graph showing the effect of spin fading on satellite signals",
+          "software": "gnuplot",
+          "caption": "Effect of spin fading on satellite signals",
+          "label": "fig:spin_fading"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing key characteristics of LEO satellites",
+          "caption": "Characteristics of LEO Satellites",
+          "label": "tab:leo_satellites"
+        }
+      ]
+    },
+    {
+      "section_label": "section:radio_operations",
+      "title": "Radio Operations",
+      "questions": [
+        "T8C01", "T8C02", "T8C03", "T8C04", "T8C05", "T8C06", "T8C07", "T8C08"
+      ],
+      "concepts": [
+        "Radio Direction Finding",
+        "Contesting",
+        "Grid Locator",
+        "VoIP",
+        "IRLP"
+      ],
+      "prompts": [
+        "Explain the process of radio direction finding and its applications.",
+        "Discuss the role of contesting in amateur radio operations.",
+        "Describe the use of grid locators in amateur radio.",
+        "Explain how VoIP and IRLP are used in amateur radio communications."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the setup for radio direction finding",
+          "software": "SVG",
+          "caption": "Setup for radio direction finding",
+          "label": "fig:direction_finding"
+        },
+        {
+          "prompt": "Graph showing the relationship between grid locators and geographic locations",
+          "software": "gnuplot",
+          "caption": "Grid locator mapping",
+          "label": "fig:grid_locator"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key features of VoIP and IRLP",
+          "caption": "Comparison of VoIP and IRLP",
+          "label": "tab:voip_irlp"
+        }
+      ]
+    },
+    {
+      "section_label": "section:digital_communications",
+      "title": "Digital Communications",
+      "questions": [
+        "T8D01", "T8D02", "T8D03", "T8D04", "T8D05", "T8D06", "T8D07", "T8D08"
+      ],
+      "concepts": [
+        "Digital Modes",
+        "DMR",
+        "APRS",
+        "PSK",
+        "ARQ Transmission"
+      ],
+      "prompts": [
+        "Explain the different digital modes used in amateur radio, including DMR and APRS.",
+        "Describe the concept of talkgroups in DMR communications.",
+        "Discuss the applications of APRS in amateur radio.",
+        "Explain the principles of ARQ transmission and error correction."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the structure of a DMR talkgroup",
+          "software": "SVG",
+          "caption": "Structure of a DMR talkgroup",
+          "label": "fig:dmr_talkgroup"
+        },
+        {
+          "prompt": "Graph showing the data flow in an APRS network",
+          "software": "gnuplot",
+          "caption": "Data flow in an APRS network",
+          "label": "fig:aprs_flow"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key features of digital modes",
+          "caption": "Comparison of Digital Modes",
+          "label": "tab:digital_modes"
+        }
+      ]
+    }
+  ]
+}

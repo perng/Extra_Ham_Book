@@ -1,0 +1,168 @@
+{
+  "chapter_label": "chapter:radio_wave_propagation",
+  "chapter_title": "RADIO WAVE PROPAGATION",
+  "sections": [
+    {
+      "section_label": "section:signal_variability",
+      "title": "Signal Variability and Challenges",
+      "questions": [
+        "T3A01",
+        "T3A02",
+        "T3A03",
+        "T3A04",
+        "T3A05",
+        "T3A06",
+        "T3A07",
+        "T3A08"
+      ],
+      "concepts": [
+        "Multipath propagation",
+        "Signal absorption",
+        "Antenna polarization",
+        "Signal reflection",
+        "Picket fencing",
+        "Weather effects on signals",
+        "Irregular fading"
+      ],
+      "prompts": [
+        "Explain the concept of multipath propagation and its impact on VHF signal strength.",
+        "Describe how vegetation affects UHF and microwave signals.",
+        "Discuss the importance of antenna polarization in long-distance VHF and UHF communications.",
+        "Explain the consequences of mismatched antenna polarization in a radio link.",
+        "Describe how directional antennas can overcome obstructions in line-of-sight communication.",
+        "Define 'picket fencing' and its relevance to mobile signal propagation.",
+        "Explain how precipitation affects microwave signal range.",
+        "Discuss the causes of irregular fading in ionospheric signals."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing multipath propagation effects on VHF signals",
+          "software": "SVG",
+          "caption": "Multipath propagation causing signal cancellation and reinforcement",
+          "label": "fig:multipath_propagation"
+        },
+        {
+          "prompt": "Illustration of signal absorption by vegetation",
+          "software": "SVG",
+          "caption": "Effect of vegetation on UHF and microwave signals",
+          "label": "fig:vegetation_absorption"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the effects of different weather conditions on signal propagation",
+          "caption": "Weather effects on signal propagation",
+          "label": "tab:weather_effects"
+        }
+      ]
+    },
+    {
+      "section_label": "section:electromagnetic_essentials",
+      "title": "Electromagnetic Essentials",
+      "questions": [
+        "T3B01",
+        "T3B02",
+        "T3B03",
+        "T3B04",
+        "T3B05",
+        "T3B06",
+        "T3B07",
+        "T3B08"
+      ],
+      "concepts": [
+        "Electric and magnetic fields",
+        "Wave polarization",
+        "Velocity of radio waves",
+        "Wavelength and frequency relationship",
+        "Frequency to wavelength conversion",
+        "Amateur radio band identification"
+      ],
+      "prompts": [
+        "Explain the relationship between electric and magnetic fields in an electromagnetic wave.",
+        "Define wave polarization and its dependence on the electric field orientation.",
+        "Describe the components of a radio wave.",
+        "Discuss the velocity of radio waves in free space.",
+        "Explain the inverse relationship between wavelength and frequency.",
+        "Provide the formula for converting frequency to wavelength in meters.",
+        "Describe how amateur radio bands are identified using wavelength.",
+        "Define the frequency ranges for VHF, UHF, and HF bands."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between electric and magnetic fields in an electromagnetic wave",
+          "software": "SVG",
+          "caption": "Electric and magnetic fields in an electromagnetic wave",
+          "label": "fig:em_fields"
+        },
+        {
+          "prompt": "Graph showing the inverse relationship between wavelength and frequency",
+          "software": "gnuplot",
+          "caption": "Wavelength vs. frequency relationship",
+          "label": "fig:wavelength_frequency"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing frequency ranges for VHF, UHF, and HF bands",
+          "caption": "Frequency ranges for amateur radio bands",
+          "label": "tab:frequency_ranges"
+        }
+      ]
+    },
+    {
+      "section_label": "section:propagation_basics",
+      "title": "Propagation Basics",
+      "questions": [
+        "T3C01",
+        "T3C02",
+        "T3C03",
+        "T3C04",
+        "T3C05",
+        "T3C06",
+        "T3C07",
+        "T3C08"
+      ],
+      "concepts": [
+        "UHF signal propagation",
+        "HF vs. VHF communication",
+        "Auroral backscatter",
+        "Sporadic E propagation",
+        "Knife-edge diffraction",
+        "Tropospheric ducting",
+        "Meteor scatter",
+        "Temperature inversions"
+      ],
+      "prompts": [
+        "Explain why UHF signals are rarely heard beyond the radio horizon.",
+        "Compare HF communication with VHF and higher frequency communication.",
+        "Describe the characteristics of VHF signals received via auroral backscatter.",
+        "Explain the role of sporadic E propagation in long-distance communication.",
+        "Discuss how knife-edge diffraction allows signals to travel beyond obstructions.",
+        "Describe tropospheric ducting and its impact on VHF and UHF communication.",
+        "Explain why the 6-meter band is suitable for meteor scatter communication.",
+        "Discuss the causes of tropospheric ducting."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating UHF signal propagation limitations",
+          "software": "SVG",
+          "caption": "UHF signal propagation and horizon limitations",
+          "label": "fig:uhf_propagation"
+        },
+        {
+          "prompt": "Illustration of tropospheric ducting",
+          "software": "SVG",
+          "caption": "Tropospheric ducting mechanism",
+          "label": "fig:tropospheric_ducting"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing different propagation mechanisms and their characteristics",
+          "caption": "Propagation mechanisms and their effects",
+          "label": "tab:propagation_mechanisms"
+        }
+      ]
+    }
+  ]
+}

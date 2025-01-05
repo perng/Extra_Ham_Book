@@ -1,0 +1,147 @@
+{
+  "chapter_label": "chapter:safety",
+  "chapter_title": "SAFETY",
+  "sections": [
+    {
+      "section_label": "section:electrical_safety",
+      "title": "Electrical Safety and Hazards",
+      "questions": [
+        "T0A01",
+        "T0A02",
+        "T0A03",
+        "T0A04",
+        "T0A05",
+        "T0A06",
+        "T0A07",
+        "T0A08"
+      ],
+      "concepts": [
+        "Electrical hazards",
+        "Fuse and circuit breaker functionality",
+        "Grounding principles",
+        "Lightning protection"
+      ],
+      "prompts": [
+        "Explain the potential hazards of electrical current flowing through the human body, including tissue heating, cell disruption, and muscle contractions.",
+        "Describe the purpose of a fuse in an electrical circuit and why replacing a fuse with a higher-rated one can be dangerous.",
+        "Discuss the importance of proper grounding in electrical systems and how it prevents electrical shock.",
+        "Explain the role of a lightning arrester in a coaxial feed line and where it should be installed for optimal safety."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a typical 120V AC power circuit with fuse placement",
+          "software": "SVG",
+          "caption": "Diagram showing the correct placement of a fuse in a 120V AC power circuit.",
+          "label": "fig:fuse_placement"
+        },
+        {
+          "prompt": "Illustration of a lightning arrester installation on a coaxial feed line",
+          "software": "SVG",
+          "caption": "Illustration of a lightning arrester installed near the entry point of a coaxial feed line into a building.",
+          "label": "fig:lightning_arrester"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the effects of different electrical hazards on the human body",
+          "caption": "Comparison of electrical hazards and their effects on the human body.",
+          "label": "tab:electrical_hazards"
+        }
+      ]
+    },
+    {
+      "section_label": "section:tower_safety",
+      "title": "Tower Installation and Climbing Safety",
+      "questions": [
+        "T0B01",
+        "T0B02",
+        "T0B03",
+        "T0B04",
+        "T0B05",
+        "T0B06",
+        "T0B07",
+        "T0B08"
+      ],
+      "concepts": [
+        "Tower grounding",
+        "Climbing safety protocols",
+        "Lightning protection for towers",
+        "Guy line tensioning"
+      ],
+      "prompts": [
+        "Explain the importance of proper grounding for antenna towers and how it contributes to lightning protection.",
+        "Describe the safety precautions necessary when climbing an antenna tower, including the use of climbing harnesses and tie-offs.",
+        "Discuss the risks associated with climbing a tower without a helper or observer and why it should never be done.",
+        "Explain the purpose of a safety wire in a turnbuckle used for tensioning guy lines and how it prevents loosening due to vibration."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a properly grounded antenna tower with multiple ground rods",
+          "software": "SVG",
+          "caption": "Diagram showing the correct grounding method for an antenna tower using multiple ground rods.",
+          "label": "fig:tower_grounding"
+        },
+        {
+          "prompt": "Illustration of a climbing harness and tie-off system for tower climbing",
+          "software": "SVG",
+          "caption": "Illustration of a climbing harness and tie-off system used for safe tower climbing.",
+          "label": "fig:climbing_harness"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing safety precautions for tower installation and climbing",
+          "caption": "Summary of safety precautions for tower installation and climbing.",
+          "label": "tab:tower_safety"
+        }
+      ]
+    },
+    {
+      "section_label": "section:rf_safety",
+      "title": "RF Radiation and Exposure Safety",
+      "questions": [
+        "T0C01",
+        "T0C02",
+        "T0C03",
+        "T0C04",
+        "T0C05",
+        "T0C06",
+        "T0C07",
+        "T0C08"
+      ],
+      "concepts": [
+        "Non-ionizing radiation",
+        "RF exposure limits",
+        "Duty cycle and its impact on RF safety",
+        "Methods to reduce RF exposure"
+      ],
+      "prompts": [
+        "Explain the difference between ionizing and non-ionizing radiation, focusing on why radio signals are classified as non-ionizing.",
+        "Describe how the allowable power density for RF safety changes with variations in duty cycle.",
+        "Discuss the factors that affect RF exposure near an amateur station antenna, including frequency, power level, and distance.",
+        "Explain the methods available to determine whether a station complies with FCC RF exposure regulations, including calculations, computer modeling, and field strength measurements."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph showing RF exposure limits at different frequencies",
+          "software": "gnuplot",
+          "caption": "Graph illustrating the maximum permissible exposure limits for RF radiation at various frequencies.",
+          "label": "fig:rf_exposure_limits"
+        },
+        {
+          "prompt": "Diagram of an antenna relocation to reduce RF exposure",
+          "software": "SVG",
+          "caption": "Diagram showing how relocating an antenna can reduce RF exposure to nearby individuals.",
+          "label": "fig:antenna_relocation"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing RF exposure limits at different frequencies",
+          "caption": "Summary of RF exposure limits at various frequencies.",
+          "label": "tab:rf_exposure_limits"
+        }
+      ]
+    }
+  ]
+}

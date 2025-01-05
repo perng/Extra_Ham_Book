@@ -1,0 +1,188 @@
+{
+  "chapter_label": "chapter:commission_rules",
+  "sections": [
+    {
+      "title": "Introduction to the Amateur Radio Service",
+      "section_label": "sec:intro_amateur_radio",
+      "questions": ["T1A01", "T1A02", "T1A03", "T1A04", "T1A05", "T1A06", "T1A07"],
+      "concepts": [
+        "Purpose of the Amateur Radio Service",
+        "Regulatory authority of the FCC",
+        "Phonetic alphabet usage",
+        "License grants and documentation",
+        "Definitions of beacon and space station"
+      ],
+      "prompts": [
+        "Explain the Basis and Purpose of the Amateur Radio Service, including its technical and communication goals.",
+        "Describe the role of the FCC in regulating and enforcing amateur radio rules.",
+        "Discuss the importance of the phonetic alphabet in station identification and its FCC guidelines.",
+        "Explain the rules regarding operator/primary station license grants and their documentation.",
+        "Define and differentiate between a beacon and a space station as per FCC Part 97."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of the FCC and its role in amateur radio regulation",
+          "software": "Graphviz",
+          "caption": "FCC Regulatory Structure",
+          "label": "fig:fcc_structure"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key definitions from FCC Part 97, including beacon, space station, and license documentation.",
+        "caption": "Key Definitions from FCC Part 97",
+        "label": "tab:fcc_definitions"
+      }
+    },
+    {
+      "title": "Frequency Coordination and Band Usage",
+      "section_label": "sec:frequency_coordination",
+      "questions": ["T1A08", "T1A09", "T1B01", "T1B02", "T1B03", "T1B04", "T1B05", "T1B06"],
+      "concepts": [
+        "Role of frequency coordinators",
+        "Frequency ranges for Technician licensees",
+        "International Space Station (ISS) communication",
+        "Amateur band segments and their usage"
+      ],
+      "prompts": [
+        "Explain the role of volunteer frequency coordinators and how they are selected.",
+        "Describe the frequency ranges available for phone operation by Technician licensees.",
+        "Discuss the rules for contacting the International Space Station (ISS) on VHF bands.",
+        "Identify key amateur band segments and their specific uses, such as the 6-meter and 2-meter bands."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Frequency allocation chart for amateur radio bands",
+          "software": "Matplotlib",
+          "caption": "Amateur Radio Frequency Allocation",
+          "label": "fig:frequency_allocation"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the frequency ranges and privileges for Technician licensees.",
+        "caption": "Technician License Frequency Privileges",
+        "label": "tab:technician_frequencies"
+      }
+    },
+    {
+      "title": "Licensing and Call Sign Protocols",
+      "section_label": "sec:licensing_call_signs",
+      "questions": ["T1C01", "T1C02", "T1C03", "T1C04", "T1C05", "T1C06", "T1C07", "T1C08"],
+      "concepts": [
+        "License classes and availability",
+        "Vanity call sign rules",
+        "International communications",
+        "License renewal and revocation"
+      ],
+      "prompts": [
+        "Describe the current license classes available from the FCC and their privileges.",
+        "Explain the rules and process for selecting a vanity call sign.",
+        "Discuss the types of international communications permitted for amateur radio stations.",
+        "Outline the consequences of failing to maintain accurate contact information with the FCC."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart of the vanity call sign application process",
+          "software": "Graphviz",
+          "caption": "Vanity Call Sign Application Process",
+          "label": "fig:vanity_call_sign_flow"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the license classes, their privileges, and renewal terms.",
+        "caption": "Amateur Radio License Classes and Privileges",
+        "label": "tab:license_classes"
+      }
+    },
+    {
+      "title": "Operating Rules and Restrictions",
+      "section_label": "sec:operating_rules",
+      "questions": ["T1D01", "T1D02", "T1D03", "T1D04", "T1D05", "T1D06", "T1D07", "T1D08"],
+      "concepts": [
+        "Prohibited communications",
+        "One-way transmissions",
+        "Encoded messages",
+        "Music transmission",
+        "Equipment sales"
+      ],
+      "prompts": [
+        "Explain the restrictions on communications with certain countries and the role of the ITU.",
+        "Discuss the rules regarding one-way transmissions and broadcasting in amateur radio.",
+        "Describe the conditions under which encoded messages and music transmissions are permitted.",
+        "Outline the rules for using amateur stations to notify others of equipment for sale or trade."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the rules for one-way transmissions and broadcasting",
+          "software": "Graphviz",
+          "caption": "One-Way Transmission Rules",
+          "label": "fig:one_way_transmissions"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for prohibited communications and one-way transmissions.",
+        "caption": "Prohibited Communications and One-Way Transmission Rules",
+        "label": "tab:prohibited_communications"
+      }
+    },
+    {
+      "title": "Control Operator Responsibilities",
+      "section_label": "sec:control_operator",
+      "questions": ["T1E01", "T1E02", "T1E03", "T1E04", "T1E05", "T1E06", "T1E07", "T1E08"],
+      "concepts": [
+        "Control operator requirements",
+        "Satellite and space station operations",
+        "Transmitting frequency privileges",
+        "Control point definition"
+      ],
+      "prompts": [
+        "Explain the rules regarding control operators and their responsibilities.",
+        "Discuss the requirements for operating through amateur satellites or space stations.",
+        "Describe how transmitting frequency privileges are determined for an amateur station.",
+        "Define the concept of a control point and its significance in station operation."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between control operators and station operation",
+          "software": "Graphviz",
+          "caption": "Control Operator Responsibilities",
+          "label": "fig:control_operator"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the responsibilities and privileges of control operators.",
+        "caption": "Control Operator Responsibilities and Privileges",
+        "label": "tab:control_operator"
+      }
+    },
+    {
+      "title": "Station Identification and Third-Party Communications",
+      "section_label": "sec:station_identification",
+      "questions": ["T1F01", "T1F02", "T1F03", "T1F04", "T1F05", "T1F06", "T1F07", "T1F08"],
+      "concepts": [
+        "Station identification requirements",
+        "Tactical call signs",
+        "Third-party communications",
+        "Language restrictions"
+      ],
+      "prompts": [
+        "Explain the rules for station identification, including the use of tactical call signs.",
+        "Discuss the requirements for third-party communications and the role of the control operator.",
+        "Describe the language restrictions for station identification in phone sub-bands.",
+        "Outline the rules for using self-assigned indicators in call signs."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart of station identification rules and procedures",
+          "software": "Graphviz",
+          "caption": "Station Identification Rules",
+          "label": "fig:station_identification"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for station identification and third-party communications.",
+        "caption": "Station Identification and Third-Party Communication Rules",
+        "label": "tab:station_identification"
+      }
+    }
+  ]
+}
