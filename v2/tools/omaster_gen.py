@@ -53,7 +53,7 @@ latex_content = r"""\documentclass[12pt]{book}
 
 \titleformat{\chapter}[hang]{\huge\bfseries}{Chapter \thechapter}{1em}{}
 \titleformat{\section}[hang]{\Large\bfseries}{\thesection}{0.5em}{}
-\titleformat{\subsection}[hang]{\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection}{1em}{}
 
 \begin{document}
 
