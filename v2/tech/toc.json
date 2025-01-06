@@ -1,0 +1,1246 @@
+{
+  "title": "Table of Contents",
+  "parts": [
+    {
+      "part_title": "Technician License Course",
+      "label": "part:tech",
+      "chapters": [
+        {
+          "chapter_title": "Welcome to the World of Amateur Radio",
+          "label": "chap:welcome",
+          "sections": [
+            {
+              "section_title": " Chapter Introduction: Your Journey Begins",
+              "label": "sec:welcome-intro",
+              "subsections": [
+                {
+                  "title": "What You'll Learn in This Chapter",
+                  "label": "subsec:welcome-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Why Amateur Radio?",
+              "label": "sec:why-radio",
+              "subsections": [
+                {
+                  "title": "Practical Applications",
+                  "label": "subsec:practical-apps",
+                  "questions": []
+                },
+                {
+                  "title": "Emergency Communication",
+                  "label": "subsec:emergency-comm",
+                  "questions": []
+                },
+                {
+                  "title": "Community Service",
+                  "label": "subsec:community-service",
+                  "questions": []
+                },
+                {
+                  "title": "Technical Skill Development",
+                  "label": "subsec:tech-skills",
+                  "questions": []
+                },
+                {
+                  "title": "Global Communication",
+                  "label": "subsec:global-comm",
+                  "questions": []
+                },
+                {
+                  "title": "Experimentation and Innovation",
+                  "label": "subsec:experimentation",
+                  "questions": []
+                },
+                {
+                  "title": "Social and Personal Benefits",
+                  "label": "subsec:social-benefits",
+                  "questions": []
+                },
+                {
+                  "title": "Community and Social Interaction",
+                  "label": "subsec:social-interaction",
+                  "questions": []
+                },
+                {
+                  "title": "Challenge and Achievement",
+                  "label": "subsec:achievement",
+                  "questions": []
+                },
+                {
+                  "title": "Nostalgia and Tradition",
+                  "label": "subsec:nostalgia",
+                  "questions": []
+                },
+                {
+                  "title": "Lifelong Learning",
+                  "label": "subsec:lifelong-learning",
+                  "questions": []
+                },
+                {
+                  "title": "Vintage Equipment",
+                  "label": "subsec:vintage-equipment",
+                  "questions": []
+                },
+                {
+                  "title": "Contesting and Awards",
+                  "label": "subsec:contesting-awards",
+                  "questions": []
+                },
+                {
+                  "title": "Digital Modes Integration",
+                  "label": "subsec:digital-modes",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " What is Amateur Radio?",
+              "label": "sec:what-is-radio",
+              "subsections": [
+                {
+                  "title": "The Basis and Purpose of Amateur Radio",
+                  "label": "subsec:radio-purpose",
+                  "questions": ["T1A01"]
+                },
+                {
+                  "title": "Advancing Radio Art and Communication Skills",
+                  "label": "subsec:advancing-radio",
+                  "questions": ["T1A01"]
+                },
+                {
+                  "title": "International Goodwill",
+                  "label": "subsec:international-goodwill",
+                  "questions": ["T1A01", "T1C03"]
+                }
+              ]
+            },
+            {
+              "section_title": " Who Regulates Amateur Radio?",
+              "label": "sec:regulation",
+              "subsections": [
+                {
+                  "title": "The Role of the FCC",
+                  "label": "subsec:fcc-role",
+                  "questions": ["T1A02"]
+                }
+              ]
+            },
+            {
+              "section_title": " Understanding Your License",
+              "label": "sec:licensing",
+              "subsections": [
+                {
+                  "title": "License Classes and Privileges",
+                  "label": "subsec:license-classes",
+                  "questions": ["T1C01", "T1B06"]
+                },
+                {
+                  "title": "Obtaining and Renewing Your License",
+                  "label": "subsec:license-process",
+                  "questions": ["T1A04", "T1A05", "T1C08", "T1C09", "T1C10", "T1C11"]
+                },
+                {
+                  "title": "Selecting a Call Sign",
+                  "label": "subsec:callsign",
+                  "questions": ["T1C02", "T1C05"]
+                },
+                {
+                  "title": "Maintaining a Valid License and Contact Information",
+                  "label": "subsec:license-maintenance",
+                  "questions": ["T1C04", "T1C07"]
+                },
+                {
+                  "title": "Operating from Different Locations",
+                  "label": "subsec:operating-locations",
+                  "questions": ["T1C06"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Basic Electrical Principles",
+          "label": "chap:electrical",
+          "sections": [
+            {
+              "section_title": " Foundation Concepts",
+              "label": "sec:electrical-intro",
+              "subsections": [
+                {
+                  "title": "Key Topics in This Chapter",
+                  "label": "subsec:electrical-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Current, Voltage, and Resistance",
+              "label": "sec:current-voltage",
+              "subsections": [
+                {
+                  "title": "What is Electric Current?",
+                  "label": "subsec:current",
+                  "questions": ["T5A03", "T5A01"]
+                },
+                {
+                  "title": "What is Voltage?",
+                  "label": "subsec:voltage",
+                  "questions": ["T5A05"]
+                },
+                {
+                  "title": "What is Resistance?",
+                  "label": "subsec:resistance",
+                  "questions": ["T5A04"]
+                },
+                {
+                  "title": "Ohm's Law: Calculating Current, Voltage, and Resistance",
+                  "label": "subsec:ohms-law",
+                  "questions": ["T5D01", "T5D02", "T5D03", "T5D04", "T5D05", "T5D06", "T5D07", "T5D08", "T5D09", "T5D10", "T5D11", "T5D12"]
+                }
+              ]
+            },
+            {
+              "section_title": " Power",
+              "label": "sec:power",
+              "subsections": [
+                {
+                  "title": "What is Electrical Power?",
+                  "label": "subsec:power-basics",
+                  "questions": ["T5A02"]
+                },
+                {
+                  "title": "Calculating Power",
+                  "label": "subsec:power-calc",
+                  "questions": ["T5C08", "T5C09", "T5C10", "T5C11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Alternating Current (AC) vs. Direct Current (DC)",
+              "label": "sec:ac-dc",
+              "subsections": [
+                {
+                  "title": "Understanding AC",
+                  "label": "subsec:ac-basics",
+                  "questions": ["T5A09"]
+                },
+                {
+                  "title": "Understanding DC",
+                  "label": "subsec:dc-basics",
+                  "questions": []
+                },
+                {
+                  "title": "Frequency and Wavelength",
+                  "label": "subsec:frequency-wavelength",
+                  "questions": ["T5A06", "T5A12", "T3B04", "T3B05", "T3B06", "T3B07", "T3B08", "T3B09", "T3B10", "T3B11", "T5B02", "T5B07", "T5B12", "T5B13"]
+                }
+              ]
+            },
+            {
+              "section_title": " Conductors and Insulators",
+              "label": "sec:conductors",
+              "subsections": [
+                {
+                  "title": "What Makes a Good Conductor?",
+                  "label": "subsec:good-conductors",
+                  "questions": ["T5A07"]
+                },
+                {
+                  "title": "What Makes a Good Insulator?",
+                  "label": "subsec:good-insulators",
+                  "questions": ["T5A08"]
+                }
+              ]
+            },
+            {
+              "section_title": " Series and Parallel Circuits",
+              "label": "sec:circuits",
+              "subsections": [
+                {
+                  "title": "Current in Series Circuits",
+                  "label": "subsec:series-current",
+                  "questions": ["T5D13"]
+                },
+                {
+                  "title": "Voltage in Parallel Circuits",
+                  "label": "subsec:parallel-voltage",
+                  "questions": ["T5D14"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part II: Radio Equipment and Operation",
+      "label": "part:equipment",
+      "chapters": [
+        {
+          "chapter_title": "Your Radio Station",
+          "label": "chap:station",
+          "sections": [
+            {
+              "section_title": " Getting Started with Your Station",
+              "label": "sec:station-intro",
+              "subsections": [
+                {
+                  "title": "Chapter Preview",
+                  "label": "subsec:station-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Transceivers: The Heart of Your Station",
+              "label": "sec:transceivers",
+              "subsections": [
+                {
+                  "title": "What is a Transceiver?",
+                  "label": "subsec:transceiver-basics",
+                  "questions": ["T7A02"]
+                },
+                {
+                  "title": "Key Features and Controls",
+                  "label": "subsec:radio-controls",
+                  "questions": ["T4B02", "T4B04", "T4B06", "T4B08", "T4B12"]
+                },
+                {
+                  "title": "Understanding Squelch",
+                  "label": "subsec:squelch",
+                  "questions": ["T2B13", "T4B03"]
+                },
+                {
+                  "title": "PTT (Push-To-Talk) Operation",
+                  "label": "subsec:ptt",
+                  "questions": ["T7A07"]
+                }
+              ]
+            },
+            {
+              "section_title": " Power Supplies",
+              "label": "sec:power-supplies",
+              "subsections": [
+                {
+                  "title": "Choosing the Right Power Supply",
+                  "label": "subsec:power-supply-selection",
+                  "questions": ["T4A01"]
+                },
+                {
+                  "title": "Battery Basics",
+                  "label": "subsec:battery-basics",
+                  "questions": ["T6A10", "T6A11", "T0A10"]
+                },
+                {
+                  "title": "Safe Battery Handling",
+                  "label": "subsec:battery-safety",
+                  "questions": ["T0A01"]
+                }
+              ]
+            },
+            {
+              "section_title": " Microphones and Audio",
+              "label": "sec:audio",
+              "subsections": [
+                {
+                  "title": "Microphone Gain and Overmodulation",
+                  "label": "subsec:mic-gain",
+                  "questions": ["T4B01"]
+                },
+                {
+                  "title": "Dealing with Distorted Audio",
+                  "label": "subsec:audio-distortion",
+                  "questions": ["T7B05"]
+                }
+              ]
+            },
+            {
+              "section_title": " Digital Modes and Computer Integration",
+              "label": "sec:digital-modes",
+              "subsections": [
+                {
+                  "title": "Connecting Your Radio to a Computer",
+                  "label": "subsec:computer-interface",
+                  "questions": ["T4A04", "T4A06", "T4A07"]
+                },
+                {
+                  "title": "Digital Mode Software",
+                  "label": "subsec:digital-software",
+                  "questions": ["T8D10", "T4A04"]
+                },
+                {
+                  "title": "Understanding DMR",
+                  "label": "subsec:dmr",
+                  "questions": ["T2B07", "T2B12", "T8D02", "T8D07"]
+                },
+                {
+                  "title": "Packet Radio",
+                  "label": "subsec:packet",
+                  "questions": ["T8D08"]
+                },
+                {
+                  "title": "APRS (Automatic Packet Reporting System)",
+                  "label": "subsec:aprs",
+                  "questions": ["T8D03", "T8D05"]
+                },
+                {
+                  "title": "FT8",
+                  "label": "subsec:ft8",
+                  "questions": ["T8D13"]
+                },
+                {
+                  "title": "Mesh Networks",
+                  "label": "subsec:mesh",
+                  "questions": ["T8D12"]
+                },
+                {
+                  "title": "Data Transmission and Bandwidth",
+                  "label": "subsec:data-bandwidth",
+                  "questions": ["T8D08"]
+                }
+              ]
+            },
+            {
+              "section_title": " CW (Morse Code)",
+              "label": "sec:cw",
+              "subsections": [
+                {
+                  "title": "CW Bandwidth",
+                  "label": "subsec:cw-bandwidth",
+                  "questions": ["T8A11"]
+                },
+                {
+                  "title": "Electronic Keyer",
+                  "label": "subsec:keyer",
+                  "questions": ["T4A12"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Antennas and Feed Lines",
+          "label": "chap:antennas",
+          "sections": [
+            {
+              "section_title": " Essential Concepts",
+              "label": "sec:antennas-intro",
+              "subsections": [
+                {
+                  "title": "Chapter Roadmap",
+                  "label": "subsec:antennas-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Antenna Fundamentals",
+              "label": "sec:antennas-fundamentals",
+              "subsections": [
+                {
+                  "title": "What is an Antenna?",
+                  "label": "subsec:antennas-basics",
+                  "questions": []
+                },
+                {
+                  "title": "Dipole Antennas",
+                  "label": "subsec:antennas-dipole",
+                  "questions": ["T9A03", "T9A05", "T9A09", "T9A10"]
+                },
+                {
+                  "title": "Vertical Antennas",
+                  "label": "subsec:vertical-antennas",
+                  "questions": ["T9A08"]
+                },
+                {
+                  "title": "Beam Antennas",
+                  "label": "subsec:beam-antennas",
+                  "questions": ["T9A01", "T9A06"]
+                },
+                {
+                  "title": "Antenna Polarization",
+                  "label": "subsec:polarization",
+                  "questions": ["T3A03", "T3A04", "T9A03"]
+                },
+                {
+                  "title": "Antenna Gain",
+                  "label": "subsec:antenna-gain",
+                  "questions": ["T9A11"]
+                },
+                {
+                  "title": "Antenna Loading",
+                  "label": "subsec:antenna-loading",
+                  "questions": ["T9A02"]
+                },
+                {
+                  "title": "Mobile Antennas",
+                  "label": "subsec:mobile-antennas",
+                  "questions": ["T9A07", "T9A12"]
+                }
+              ]
+            },
+            {
+              "section_title": " Feed Lines",
+              "label": "sec:feedlines",
+              "subsections": [
+                {
+                  "title": "Coaxial Cable",
+                  "label": "subsec:coax",
+                  "questions": ["T9B02", "T9B03", "T9B08", "T9B10", "T9B11", "T0B10"]
+                },
+                {
+                  "title": "Impedance",
+                  "label": "subsec:impedance",
+                  "questions": ["T9B02"]
+                },
+                {
+                  "title": "Losses",
+                  "label": "subsec:feedline-losses",
+                  "questions": ["T9B08", "T9B10", "T9B11"]
+                },
+                {
+                  "title": "Proper Installation",
+                  "label": "subsec:feedline-installation",
+                  "questions": ["T9B09"]
+                },
+                {
+                  "title": "UV Resistance",
+                  "label": "subsec:uv-protection",
+                  "questions": ["T9B10"]
+                },
+                {
+                  "title": "Connectors",
+                  "label": "subsec:rf-connectors",
+                  "questions": ["T9B06", "T9B07"]
+                }
+              ]
+            },
+            {
+              "section_title": " SWR (Standing Wave Ratio)",
+              "label": "sec:swr",
+              "subsections": [
+                {
+                  "title": "What is SWR?",
+                  "label": "subsec:swr-basics",
+                  "questions": ["T9B12"]
+                },
+                {
+                  "title": "Measuring SWR",
+                  "label": "subsec:swr-measurement",
+                  "questions": ["T4A02", "T7C04", "T7C08"]
+                },
+                {
+                  "title": "Effects of High SWR",
+                  "label": "subsec:high-swr",
+                  "questions": ["T7C05"]
+                },
+                {
+                  "title": "Antenna Tuners",
+                  "label": "subsec:antenna-tuners",
+                  "questions": ["T9B04"]
+                }
+              ]
+            },
+            {
+              "section_title": " Antenna Installation",
+              "label": "sec:antenna-installation",
+              "subsections": [
+                {
+                  "title": "Safety Considerations",
+                  "label": "subsec:antenna-safety",
+                  "questions": ["T0B01", "T0B03", "T0B04", "T0B05", "T0B06", "T0B07", "T0B08", "T0B09", "T0B11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Grounding",
+              "label": "sec:grounding",
+              "subsections": [
+                {
+                  "title": "Importance of Grounding",
+                  "label": "subsec:grounding-importance",
+                  "questions": ["T0A06", "T0B08"]
+                },
+                {
+                  "title": "Lightning Protection",
+                  "label": "subsec:lightning-protection",
+                  "questions": ["T0B01", "T0A07"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Operating Procedures",
+          "label": "chap:operating",
+          "sections": [
+            {
+              "section_title": " Before You Get On The Air",
+              "label": "sec:operating-intro",
+              "subsections": [
+                {
+                  "title": "Chapter Goals",
+                  "label": "subsec:operating-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Making Contact",
+              "subsections": [
+                {
+                  "title": "Calling CQ",
+                  "questions": ["T2A05", "T2A08", "T2A12", "T4B06"]
+                },
+                {
+                  "title": "Responding to a CQ Call",
+                  "questions": ["T2A05"]
+                },
+                {
+                  "title": "Calling a Specific Station",
+                  "questions": ["T2A04"]
+                },
+                {
+                  "title": "Simplex vs. Duplex Operation",
+                  "questions": ["T2A11"]
+                },
+                {
+                  "title": "Using Phonetics",
+                  "questions": ["T1A03", "T2C03"]
+                }
+              ]
+            },
+            {
+              "section_title": " Repeater Operation",
+              "subsections": [
+                {
+                  "title": "What is a Repeater?",
+                  "questions": ["T1F09"]
+                },
+                {
+                  "title": "Repeater Offset",
+                  "questions": ["T2A01", "T2A03", "T2A07", "T2B01"]
+                },
+                {
+                  "title": "Simplex vs. Duplex Operation",
+                  "questions": ["T2A11"]
+                },
+                {
+                  "title": "National Calling Frequencies",
+                  "questions": ["T2A02", "T1B04"]
+                },
+                {
+                  "title": "\"Reverse\" Function",
+                  "questions": ["T2B01"]
+                },
+                {
+                  "title": "CTCSS and DTMF Tones",
+                  "questions": ["T2B02", "T2B06", "T8C06"]
+                },
+                {
+                  "title": "Linked Repeater Networks",
+                  "questions": ["T2B03", "T8C08", "T8C09", "T8C10"]
+                },
+                {
+                  "title": "Joining a Talkgroup",
+                  "questions": ["T2B07"]
+                },
+                {
+                  "title": "Repeater Etiquette",
+                  "questions": ["T2A09"]
+                }
+              ]
+            },
+            {
+              "section_title": " Nets",
+              "label": "sec:nets",
+              "subsections": [
+                {
+                  "title": "What is a Net?",
+                  "label": "subsec:nets-intro",
+                  "questions": []
+                },
+                {
+                  "title": "Net Control Station (NCS) Duties",
+                  "label": "subsec:net-control",
+                  "questions": ["T2C02"]
+                },
+                {
+                  "title": "Checking into a Net",
+                  "questions": ["T2C07"]
+                },
+                {
+                  "title": "Traffic Handling",
+                  "questions": ["T2C05", "T2C08", "T2C10", "T2C11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Contesting",
+              "label": "sec:contesting",
+              "subsections": [
+                {
+                  "title": "Contest Operations",
+                  "label": "subsec:contest-ops",
+                  "questions": ["T2C04", "T8C03", "T8C04"]
+                }
+              ]
+            },
+            {
+              "section_title": " Radio Direction Finding",
+              "label": "sec:rdf",
+              "subsections": [
+                {
+                  "title": "RDF Techniques and Applications",
+                  "label": "subsec:rdf-techniques",
+                  "questions": ["T8C01", "T8C02"]
+                }
+              ]
+            },
+            {
+              "section_title": " Emergency Communications",
+              "subsections": [
+                {
+                  "title": "RACES (Radio Amateur Civil Emergency Service)",
+                  "questions": ["T1A10", "T2C04"]
+                },
+                {
+                  "title": "ARES (Amateur Radio Emergency Service)",
+                  "questions": ["T2C06"]
+                },
+                {
+                  "title": "Operating Outside Your License Privileges in Emergencies",
+                  "questions": ["T2C09"]
+                }
+              ]
+            },
+            {
+              "section_title": " Rules of Engagement on the Air",
+              "label": "sec:rules-engagement",
+              "subsections": [
+                {
+                  "title": "Operating Procedures and Rules",
+                  "label": "subsec:operating-rules",
+                  "questions": ["T1D01", "T1D02", "T1D03", "T1D04", "T1D05", "T1D06", "T1D07", "T1D08", "T1D09", "T1D10", "T1D11"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part III: Radio Wave Propagation",
+      "label": "part:propagation",
+      "chapters": [
+        {
+          "chapter_title": "Understanding How Radio Waves Travel",
+          "label": "chap:wave-propagation",
+          "sections": [
+            {
+              "section_title": " The Basics of Propagation",
+              "label": "sec:propagation-intro",
+              "subsections": [
+                {
+                  "title": "Chapter Overview",
+                  "label": "subsec:propagation-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " The Electromagnetic Spectrum",
+              "label": "sec:em-spectrum",
+              "subsections": [
+                {
+                  "title": "Radio Waves as Electromagnetic Radiation",
+                  "label": "subsec:em-radiation",
+                  "questions": ["T3B01", "T3B02", "T3B03"]
+                }
+              ]
+            },
+            {
+              "section_title": " VHF/UHF Propagation",
+              "label": "sec:vhf-propagation",
+              "subsections": [
+                {
+                  "title": "Line of Sight",
+                  "label": "subsec:line-of-sight",
+                  "questions": ["T3A04", "T3A05"]
+                },
+                {
+                  "title": "Multipath Propagation",
+                  "label": "subsec:multipath",
+                  "questions": ["T3A01", "T3A06", "T3A09"]
+                },
+                {
+                  "title": "Tropospheric Ducting",
+                  "label": "subsec:tropospheric",
+                  "questions": ["T3C06", "T3C08"]
+                },
+                {
+                  "title": "Effects of Weather",
+                  "label": "subsec:weather-effects",
+                  "questions": ["T3A07"]
+                }
+              ]
+            },
+            {
+              "section_title": " HF Propagation",
+              "label": "sec:hf-propagation",
+              "subsections": [
+                {
+                  "title": "Ionospheric Propagation",
+                  "label": "subsec:ionospheric",
+                  "questions": ["T3A08", "T3A11"]
+                },
+                {
+                  "title": "F-Region Propagation",
+                  "label": "subsec:f-region",
+                  "questions": ["T3C10"]
+                },
+                {
+                  "title": "Sunspot Cycles",
+                  "label": "subsec:sunspots",
+                  "questions": ["T3C10"]
+                },
+                {
+                  "title": "Sporadic E",
+                  "label": "subsec:sporadic-e",
+                  "questions": ["T3C04"]
+                },
+                {
+                  "title": "10-Meter Propagation",
+                  "label": "subsec:ten-meter",
+                  "questions": ["T3C09"]
+                }
+              ]
+            },
+            {
+              "section_title": " Other Propagation Modes",
+              "label": "sec:other-propagation",
+              "subsections": [
+                {
+                  "title": "Meteor Scatter",
+                  "label": "subsec:meteor-scatter",
+                  "questions": ["T3C07"]
+                },
+                {
+                  "title": "Auroral Backscatter",
+                  "label": "subsec:auroral",
+                  "questions": ["T3C03"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part IV: Regulations and Safety",
+      "label": "part:regulations",
+      "chapters": [
+        {
+          "chapter_title": "FCC Rules and Regulations (Part 97)",
+          "label": "chap:fcc-rules",
+          "sections": [
+            {
+              "section_title": " Regulatory Framework",
+              "label": "sec:regulatory-intro",
+              "subsections": [
+                {
+                  "title": "Chapter Outline",
+                  "label": "subsec:regulatory-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " The Purpose of Amateur Radio",
+              "label": "sec:radio-purpose",
+              "subsections": [
+                {
+                  "title": "The Basis and Purpose of Amateur Radio Service",
+                  "label": "subsec:service-purpose",
+                  "questions": ["T1A01"]
+                }
+              ]
+            },
+            {
+              "section_title": " The Role of the FCC",
+              "label": "sec:fcc-role",
+              "subsections": [
+                {
+                  "title": "FCC Regulatory Authority",
+                  "label": "subsec:fcc-authority",
+                  "questions": ["T1A02"]
+                }
+              ]
+            },
+            {
+              "section_title": " Station Identification",
+              "label": "sec:station-id",
+              "subsections": [
+                {
+                  "title": "Station Identification Requirements",
+                  "label": "subsec:id-requirements",
+                  "questions": ["T1A03", "T1F02", "T1F03", "T1F04", "T1F05", "T1F06"]
+                }
+              ]
+            },
+            {
+              "section_title": " Control Operator Requirements",
+              "label": "sec:control-op",
+              "subsections": [
+                {
+                  "title": "Control Operator Duties and Responsibilities",
+                  "label": "subsec:op-duties",
+                  "questions": ["T1E01", "T1E02", "T1E03", "T1E04", "T1E05", "T1E06", "T1E07", "T1E08", "T1E09", "T1E10", "T1E11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Authorized and Prohibited Communications",
+              "label": "sec:authorized-comms",
+              "subsections": [
+                {
+                  "title": "International Communications",
+                  "label": "subsec:international",
+                  "questions": ["T1C03"]
+                },
+                {
+                  "title": "Third-Party Communications",
+                  "label": "subsec:third-party",
+                  "questions": ["T1F07", "T1F08"]
+                },
+                {
+                  "title": "Prohibited Content",
+                  "label": "subsec:prohibited",
+                  "questions": ["T1D06", "T1D10"]
+                },
+                {
+                  "title": "Business Communications",
+                  "label": "subsec:business",
+                  "questions": ["T1D05"]
+                },
+                {
+                  "title": "Broadcasting",
+                  "label": "subsec:broadcasting",
+                  "questions": ["T1D02", "T1D10"]
+                },
+                {
+                  "title": "Coded Messages",
+                  "label": "subsec:coded-messages",
+                  "questions": ["T1D03"]
+                },
+                {
+                  "title": "Music Transmission",
+                  "label": "subsec:music",
+                  "questions": ["T1D04"]
+                },
+                {
+                  "title": "News Gathering",
+                  "label": "subsec:news",
+                  "questions": ["T1D09"]
+                },
+                {
+                  "title": "Operating Without Identification",
+                  "label": "subsec:no-id",
+                  "questions": ["T1D11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Enforcement and Penalties",
+              "label": "sec:enforcement",
+              "subsections": [
+                {
+                  "title": "Station Inspections",
+                  "label": "subsec:inspections",
+                  "questions": ["T1F01"]
+                },
+                {
+                  "title": "Consequences of Rule Violations",
+                  "label": "subsec:violations",
+                  "questions": ["T1C04", "T1C07", "T1F10"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Electrical Safety",
+          "label": "chap:safety",
+          "sections": [
+            {
+              "section_title": " Safety First",
+              "label": "sec:safety-intro",
+              "subsections": [
+                {
+                  "title": "Critical Concepts",
+                  "label": "subsec:safety-preview",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Electrical Hazards",
+              "label": "sec:electrical-hazards",
+              "subsections": [
+                {
+                  "title": "Shock Hazards",
+                  "label": "subsec:shock-hazards",
+                  "questions": ["T0A02", "T0A06"]
+                },
+                {
+                  "title": "Short Circuits",
+                  "label": "subsec:short-circuits",
+                  "questions": ["T0A01"]
+                }
+              ]
+            },
+            {
+              "section_title": " Power Supply Safety",
+              "label": "sec:power-safety",
+              "subsections": [
+                {
+                  "title": "Stored Charge in Capacitors",
+                  "label": "subsec:capacitor-safety",
+                  "questions": ["T0A11"]
+                }
+              ]
+            },
+            {
+              "section_title": " Grounding",
+              "label": "sec:safety-grounding",
+              "subsections": [
+                {
+                  "title": "Station Grounding",
+                  "label": "subsec:station-ground",
+                  "questions": ["T0A06"]
+                },
+                {
+                  "title": "Tower Grounding",
+                  "label": "subsec:tower-ground",
+                  "questions": ["T0B08"]
+                },
+                {
+                  "title": "Lightning Protection",
+                  "label": "subsec:lightning",
+                  "questions": ["T0A07", "T0B01", "T0B10"]
+                }
+              ]
+            },
+            {
+              "section_title": " Safe Wiring Practices",
+              "label": "sec:safe-wiring",
+              "subsections": [
+                {
+                  "title": "Wire Gauge",
+                  "label": "subsec:wire-gauge",
+                  "questions": ["T4A03"]
+                },
+                {
+                  "title": "Fuses and Circuit Breakers",
+                  "label": "subsec:fuses",
+                  "questions": ["T0A05", "T0A08"]
+                },
+                {
+                  "title": "Three-Wire Cords and Plugs",
+                  "label": "subsec:three-wire",
+                  "questions": ["T0A06"]
+                },
+                {
+                  "title": "Color Coding of Wires",
+                  "label": "subsec:wire-colors",
+                  "questions": ["T0A03"]
+                }
+              ]
+            },
+            {
+              "section_title": " Battery Safety",
+              "label": "sec:battery-safety",
+              "subsections": [
+                {
+                  "title": "Safe Battery Handling and Storage",
+                  "label": "subsec:battery-handling",
+                  "questions": ["T0A10"]
+                }
+              ]
+            },
+            {
+              "section_title": " RF Exposure",
+              "label": "sec:rf-exposure",
+              "subsections": [
+                {
+                  "title": "Understanding RF Radiation",
+                  "label": "subsec:rf-radiation",
+                  "questions": ["T0C01", "T0C12"]
+                },
+                {
+                  "title": "Exposure Limits",
+                  "label": "subsec:exposure-limits",
+                  "questions": ["T0C02", "T0C04", "T0C05", "T0C13"]
+                },
+                {
+                  "title": "Duty Cycle",
+                  "label": "subsec:duty-cycle",
+                  "questions": ["T0C03", "T0C10", "T0C11"]
+                },
+                {
+                  "title": "Evaluating RF Exposure",
+                  "label": "subsec:eval-exposure",
+                  "questions": ["T0C06", "T0C09"]
+                },
+                {
+                  "title": "Minimizing Exposure",
+                  "label": "subsec:min-exposure",
+                  "questions": ["T0C08"]
+                },
+                {
+                  "title": "Antenna Placement",
+                  "label": "subsec:antenna-placement",
+                  "questions": ["T0B06"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Safe Tower and Antenna Installation",
+          "label": "chap:tower-safety",
+          "sections": [
+            {
+              "section_title": " Before You Climb",
+              "label": "sec:pre-climb",
+              "subsections": [
+                {
+                  "title": "Safety Fundamentals",
+                  "label": "subsec:climb-safety",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": " Tower Safety",
+              "label": "sec:tower-safety",
+              "subsections": [
+                {
+                  "title": "Tower Installation and Maintenance Safety",
+                  "label": "subsec:tower-maintenance",
+                  "questions": ["T0B02", "T0B03", "T0B07"]
+                }
+              ]
+            },
+            {
+              "section_title": " Working Near Power Lines",
+              "label": "sec:power-lines",
+              "subsections": [
+                {
+                  "title": "Power Line Safety Considerations",
+                  "label": "subsec:powerline-safety",
+                  "questions": ["T0B04", "T0B06"]
+                }
+              ]
+            },
+            {
+              "section_title": " Proper Grounding Techniques",
+              "label": "sec:proper-grounding",
+              "subsections": [
+                {
+                  "title": "Grounding Requirements and Methods",
+                  "label": "subsec:ground-methods",
+                  "questions": ["T0B08"]
+                }
+              ]
+            },
+            {
+              "section_title": " Securing Guy Wires",
+              "label": "sec:guy-wires",
+              "subsections": [
+                {
+                  "title": "Guy Wire Installation and Safety",
+                  "label": "subsec:guy-safety",
+                  "questions": ["T0B05"]
+                }
+              ]
+            },
+            {
+              "section_title": " Safe Use of Tools and Equipment",
+              "label": "sec:tool-safety",
+              "subsections": [
+                {
+                  "title": "Tool Safety and Proper Equipment Use",
+                  "label": "subsec:tool-use",
+                  "questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part V: Practice and Review",
+      "label": "part:practice",
+      "chapters": [
+        {
+          "chapter_title": "Practice Exam Questions",
+          "label": "chap:practice-exams",
+          "sections": [
+            {
+              "title": "Full-length practice exams covering all topics",
+              "label": "sec:practice-exams",
+              "subsections": []
+            }
+          ]
+        },
+        {
+          "title": "Appendix",
+          "label": "chap:appendix",
+          "sections": [
+            {
+              "title": "Reference Materials",
+              "label": "sec:reference",
+              "subsections": [
+                {
+                  "title": "Glossary of Terms",
+                  "label": "subsec:glossary",
+                  "questions": []
+                },
+                {
+                  "title": "FCC Part 97 Rules (Summary)",
+                  "label": "subsec:part97-summary",
+                  "questions": []
+                },
+                {
+                  "title": "Band Plans",
+                  "label": "subsec:band-plans",
+                  "questions": []
+                },
+                {
+                  "title": "Phonetic Alphabet",
+                  "label": "subsec:phonetics",
+                  "questions": []
+                },
+                {
+                  "title": "Q Signals",
+                  "label": "subsec:q-signals",
+                  "questions": []
+                },
+                {
+                  "title": "Useful Formulas",
+                  "label": "subsec:formulas",
+                  "questions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

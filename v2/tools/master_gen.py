@@ -12,7 +12,7 @@ args = parser.parse_args()
 titles = {'tech':'Technical Ham', 'general':'General Ham', 'extra':'Extra HAM!'}
 assert args.license in ['tech', 'general', 'extra']
 
-base_dir = args.license + '/organized/'
+base_dir = args.license + '/'
 
 
 # Start creating the LaTeX content
@@ -63,7 +63,7 @@ latex_content = r"""\documentclass[12pt]{book}
 
 latex_content = latex_content.replace('<book_title>', titles[args.license])
 
-input_dir = base_dir + f'/prompts/'
+input_dir = base_dir + f'prompts/'
 
 
 # Iterate through chapters and sections

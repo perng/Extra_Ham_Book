@@ -1,0 +1,170 @@
+{
+  "chapter_label": "chapter:practical_circuits",
+  "chapter_title": "PRACTICAL CIRCUITS",
+  "sections": [
+    {
+      "section_label": "section:signal_essentials",
+      "title": "Signal Essentials",
+      "questions": [
+        "T7A01", "T7A02", "T7A03", "T7A04", "T7A05", "T7A06", "T7A07", "T7A08"
+      ],
+      "concepts": [
+        "Receiver Sensitivity", "Transceiver Functionality", "Frequency Conversion", "Signal Discrimination", "Oscillator Circuits", "Transverter Usage", "PTT Input Function", "Modulation Techniques"
+      ],
+      "prompts": [
+        "Explain the concept of receiver sensitivity and its importance in radio communication.",
+        "Describe the function and components of a transceiver.",
+        "Discuss the role of a mixer in frequency conversion.",
+        "Explain the concept of selectivity in receivers and its significance.",
+        "Describe the function of an oscillator in generating specific frequencies.",
+        "Explain the purpose and operation of a transverter.",
+        "Discuss the role of the PTT input in transceiver operation.",
+        "Explain the process of modulation and its importance in radio communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a basic transceiver block diagram",
+          "software": "SVG",
+          "caption": "Block diagram of a basic transceiver showing key components.",
+          "label": "fig:transceiver_block_diagram"
+        },
+        {
+          "prompt": "Illustration of frequency conversion using a mixer",
+          "software": "SVG",
+          "caption": "Frequency conversion process using a mixer.",
+          "label": "fig:frequency_conversion"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different modulation techniques",
+          "caption": "Comparison of AM, FM, and SSB modulation techniques.",
+          "label": "tab:modulation_comparison"
+        }
+      ]
+    },
+    {
+      "section_label": "section:radio_troubleshooting",
+      "title": "Radio Troubleshooting Essentials",
+      "questions": [
+        "T7B01", "T7B02", "T7B03", "T7B04", "T7B05", "T7B06", "T7B07", "T7B08"
+      ],
+      "concepts": [
+        "Over-deviation in FM Transceivers", "RF Interference", "Harmonics and Spurious Emissions", "RF Feedback", "Ferrite Chokes", "Band-reject Filters", "Interference Resolution", "Cable TV Interference"
+      ],
+      "prompts": [
+        "Explain the issue of over-deviation in FM transceivers and how to address it.",
+        "Discuss the causes of RF interference in broadcast receivers.",
+        "Explain the role of harmonics and spurious emissions in RF interference.",
+        "Describe the use of ferrite chokes in reducing RF feedback.",
+        "Discuss the function of band-reject filters in mitigating interference.",
+        "Explain the steps to resolve interference issues with neighbors.",
+        "Describe the symptoms and causes of RF feedback in transmitters.",
+        "Discuss the steps to resolve cable TV interference caused by amateur radio transmissions."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing RF interference paths",
+          "software": "SVG",
+          "caption": "Illustration of RF interference paths and mitigation techniques.",
+          "label": "fig:rf_interference"
+        },
+        {
+          "prompt": "Illustration of a ferrite choke on a cable",
+          "software": "SVG",
+          "caption": "Ferrite choke installed on a cable to reduce RF feedback.",
+          "label": "fig:ferrite_choke"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Common RF interference sources and solutions",
+          "caption": "Table listing common RF interference sources and their solutions.",
+          "label": "tab:rf_interference_solutions"
+        }
+      ]
+    },
+    {
+      "section_label": "section:test_equipment_antenna_basics",
+      "title": "Test Equipment and Antenna Basics",
+      "questions": [
+        "T7C01", "T7C02", "T7C03", "T7C04", "T7C05", "T7C06", "T7C07", "T7C08"
+      ],
+      "concepts": [
+        "Dummy Loads", "Antenna Resonance", "SWR Measurement", "Impedance Matching", "Coaxial Cable Issues", "Heat Dissipation", "Directional Wattmeters", "Moisture in Cables"
+      ],
+      "prompts": [
+        "Explain the purpose and construction of a dummy load.",
+        "Describe how an antenna analyzer is used to determine resonance.",
+        "Discuss the significance of SWR in antenna systems.",
+        "Explain the concept of impedance matching and its importance.",
+        "Describe the causes of coaxial cable failure and how to prevent it.",
+        "Discuss the role of directional wattmeters in measuring SWR.",
+        "Explain the effects of moisture in coaxial cables and how to mitigate them.",
+        "Describe the importance of UV-resistant jackets in coaxial cables."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a dummy load connected to a transmitter",
+          "software": "SVG",
+          "caption": "Dummy load connected to a transmitter for testing purposes.",
+          "label": "fig:dummy_load"
+        },
+        {
+          "prompt": "Illustration of SWR measurement using a directional wattmeter",
+          "software": "SVG",
+          "caption": "Measurement of SWR using a directional wattmeter.",
+          "label": "fig:swr_measurement"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different types of coaxial cables",
+          "caption": "Table comparing air core, foam, and solid dielectric coaxial cables.",
+          "label": "tab:coaxial_cable_comparison"
+        }
+      ]
+    },
+    {
+      "section_label": "section:measuring_instruments",
+      "title": "Measuring Instruments in Electronics",
+      "questions": [
+        "T7D01", "T7D02", "T7D03", "T7D04", "T7D06", "T7D07", "T7D08", "T7D09"
+      ],
+      "concepts": [
+        "Voltage Measurement", "Current Measurement", "Multimeter Usage", "Solder Types", "Cold Solder Joints", "Capacitor Testing", "Ohmmeter Precautions"
+      ],
+      "prompts": [
+        "Explain the function of a voltmeter and how it is connected in a circuit.",
+        "Describe the correct way to connect a multimeter to measure current.",
+        "Discuss the precautions to take when using a multimeter to avoid damage.",
+        "Explain the differences between acid-core and rosin-core solder.",
+        "Describe the characteristics of a cold solder joint and how to avoid it.",
+        "Explain how to test a capacitor using an ohmmeter.",
+        "Discuss the precautions to take when measuring in-circuit resistance.",
+        "Describe the proper use of a multimeter for voltage and resistance measurements."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing correct multimeter connections for voltage and current measurement",
+          "software": "SVG",
+          "caption": "Correct multimeter connections for measuring voltage and current.",
+          "label": "fig:multimeter_connections"
+        },
+        {
+          "prompt": "Illustration of a cold solder joint vs. a proper solder joint",
+          "software": "SVG",
+          "caption": "Comparison of a cold solder joint and a proper solder joint.",
+          "label": "fig:solder_joint_comparison"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different types of solder and their applications",
+          "caption": "Table comparing acid-core, rosin-core, and lead-tin solder.",
+          "label": "tab:solder_comparison"
+        }
+      ]
+    }
+  ]
+}

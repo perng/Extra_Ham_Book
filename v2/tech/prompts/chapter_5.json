@@ -1,0 +1,276 @@
+{
+  "chapter_label": "chapter:electrical_principles",
+  "chapter_title": "ELECTRICAL PRINCIPLES",
+  "sections": [
+    {
+      "section_label": "section:electrical_units_and_concepts",
+      "title": "Electrical Units and Concepts",
+      "questions": [
+        "T5A01",
+        "T5A02",
+        "T5A03",
+        "T5A04",
+        "T5A05",
+        "T5A06",
+        "T5A07",
+        "T5A08"
+      ],
+      "concepts": [
+        "Electrical current",
+        "Electrical power",
+        "Electron flow",
+        "Electrical resistance",
+        "Voltage",
+        "Frequency",
+        "Conductors and insulators"
+      ],
+      "prompts": [
+        "Explain the concept of electrical current and its unit of measurement.",
+        "Describe the relationship between voltage, current, and resistance.",
+        "Discuss why metals are good conductors of electricity.",
+        "Define frequency and its unit of measurement.",
+        "Explain the difference between conductors and insulators."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of electrons in a conductor",
+          "software": "SVG",
+          "caption": "Electron flow in a conductor",
+          "label": "fig:electron_flow"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing units of electrical measurement",
+          "caption": "Units of Electrical Measurement",
+          "label": "tab:electrical_units"
+        }
+      ]
+    },
+    {
+      "section_label": "section:alternating_current_and_power",
+      "title": "Alternating Current and Power",
+      "questions": [
+        "T5A09",
+        "T5A10",
+        "T5A11",
+        "T5A12"
+      ],
+      "concepts": [
+        "Alternating current",
+        "Electrical power",
+        "Resistance and current flow",
+        "Frequency of AC"
+      ],
+      "prompts": [
+        "Explain the concept of alternating current and how it differs from direct current.",
+        "Describe the relationship between electrical power, voltage, and current.",
+        "Discuss how resistance affects current flow in AC and DC circuits.",
+        "Define the frequency of alternating current and its significance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph showing AC waveform",
+          "software": "Matplotlib",
+          "caption": "AC waveform",
+          "label": "fig:ac_waveform"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:electrical_measurements",
+      "title": "Electrical Measurements",
+      "questions": [
+        "T5B01",
+        "T5B02",
+        "T5B03",
+        "T5B04",
+        "T5B05",
+        "T5B06",
+        "T5B07",
+        "T5B08"
+      ],
+      "concepts": [
+        "Milliamperes",
+        "Hertz and kilohertz",
+        "Volts and kilovolts",
+        "Microvolts",
+        "Milliwatts",
+        "Picofarads and microfarads"
+      ],
+      "prompts": [
+        "Explain how to convert between different units of electrical measurement.",
+        "Discuss the significance of frequency in electrical measurements.",
+        "Describe the relationship between volts, millivolts, and microvolts.",
+        "Explain the concept of capacitance and its units."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing unit conversions for electrical measurements",
+          "software": "SVG",
+          "caption": "Unit conversions for electrical measurements",
+          "label": "fig:unit_conversions"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table showing common electrical unit conversions",
+          "caption": "Common Electrical Unit Conversions",
+          "label": "tab:unit_conversions"
+        }
+      ]
+    },
+    {
+      "section_label": "section:decibels_and_power",
+      "title": "Decibels and Power",
+      "questions": [
+        "T5B09",
+        "T5B10",
+        "T5B11"
+      ],
+      "concepts": [
+        "Decibels",
+        "Power increase and decrease",
+        "Logarithmic scale"
+      ],
+      "prompts": [
+        "Explain the concept of decibels and their use in measuring power changes.",
+        "Discuss how decibels represent power increases and decreases.",
+        "Describe the logarithmic nature of the decibel scale."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph showing power changes in decibels",
+          "software": "Matplotlib",
+          "caption": "Power changes in decibels",
+          "label": "fig:decibel_power"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:capacitance_and_inductance",
+      "title": "Capacitance and Inductance",
+      "questions": [
+        "T5C01",
+        "T5C02",
+        "T5C03",
+        "T5C04",
+        "T5C05",
+        "T5C12"
+      ],
+      "concepts": [
+        "Capacitance",
+        "Inductance",
+        "Impedance",
+        "Energy storage in electric and magnetic fields"
+      ],
+      "prompts": [
+        "Explain the concept of capacitance and its unit of measurement.",
+        "Describe the ability to store energy in a magnetic field and its unit of measurement.",
+        "Discuss the concept of impedance and its significance in AC circuits.",
+        "Explain how energy is stored in electric and magnetic fields."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing a capacitor and inductor in a circuit",
+          "software": "SVG",
+          "caption": "Capacitor and inductor in a circuit",
+          "label": "fig:capacitor_inductor"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:power_calculations",
+      "title": "Power Calculations",
+      "questions": [
+        "T5C08",
+        "T5C09",
+        "T5C10",
+        "T5C11"
+      ],
+      "concepts": [
+        "Electrical power",
+        "Power formula",
+        "Voltage and current"
+      ],
+      "prompts": [
+        "Explain the formula used to calculate electrical power in a DC circuit.",
+        "Discuss how to calculate power given voltage and current.",
+        "Describe the relationship between power, voltage, and current in a circuit."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing power calculation in a DC circuit",
+          "software": "SVG",
+          "caption": "Power calculation in a DC circuit",
+          "label": "fig:power_calculation"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:circuit_analysis",
+      "title": "Circuit Analysis",
+      "questions": [
+        "T5D01",
+        "T5D02",
+        "T5D03",
+        "T5D04",
+        "T5D05",
+        "T5D06",
+        "T5D07",
+        "T5D08"
+      ],
+      "concepts": [
+        "Ohm's Law",
+        "Current calculation",
+        "Voltage calculation",
+        "Resistance calculation"
+      ],
+      "prompts": [
+        "Explain Ohm's Law and its significance in circuit analysis.",
+        "Discuss how to calculate current, voltage, and resistance in a circuit.",
+        "Describe the relationship between voltage, current, and resistance in a circuit."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating Ohm's Law",
+          "software": "SVG",
+          "caption": "Ohm's Law",
+          "label": "fig:ohms_law"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:series_and_parallel_circuits",
+      "title": "Series and Parallel Circuits",
+      "questions": [
+        "T5D13",
+        "T5D14"
+      ],
+      "concepts": [
+        "Series circuits",
+        "Parallel circuits",
+        "Current and voltage in circuits"
+      ],
+      "prompts": [
+        "Explain the characteristics of series circuits.",
+        "Discuss the characteristics of parallel circuits.",
+        "Describe how current and voltage behave in series and parallel circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram comparing series and parallel circuits",
+          "software": "SVG",
+          "caption": "Series and parallel circuits",
+          "label": "fig:series_parallel"
+        }
+      ],
+      "table_prompt": []
+    }
+  ]
+}

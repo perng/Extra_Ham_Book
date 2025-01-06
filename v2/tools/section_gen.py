@@ -36,6 +36,7 @@ for chapter in data:
         for question in section['questions']:
             questions[question['question_id']] = json.dumps(question)
 
+print("number of questions:", len(questions))
 # Ensure the output directory exists
 
 # read "tools/section_gen.lisp" as a prompt
@@ -43,12 +44,13 @@ with open("tools/section_gen.lisp", "r") as f:
     prompt_template = f.read()
 
 
+
 # Loop over each section and its questions
 
-output_dir = base_dir + f'/organized/'
+output_dir = base_dir 
 os.makedirs(output_dir, exist_ok=True)
 
-prompt_path = base_dir + f'/organized/prompts/'
+prompt_path = base_dir + f'/prompts/'
 
 # Loop over each prompt files
 

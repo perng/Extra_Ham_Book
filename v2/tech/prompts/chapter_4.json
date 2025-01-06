@@ -1,0 +1,197 @@
+{
+  "chapter_label": "chapter:amateur_radio_practices",
+  "chapter_title": "AMATEUR RADIO PRACTICES",
+  "sections": [
+    {
+      "section_label": "section:power_and_connections",
+      "title": "Power Supplies and Critical Connections",
+      "questions": [
+        "T4A01",
+        "T4A03",
+        "T4A05",
+        "T4A08",
+        "T4A09",
+        "T4A11"
+      ],
+      "concepts": [
+        "Power supply ratings",
+        "Voltage drop minimization",
+        "RF power meter installation",
+        "RF bonding conductors",
+        "Battery power calculations",
+        "Vehicle grounding"
+      ],
+      "prompts": [
+        "Explain the importance of selecting the correct power supply rating for a mobile FM transceiver. [glossary:power_supply_rating]",
+        "Describe why short, heavy-gauge wires are used for DC power connections in transceivers. [glossary:voltage_drop]",
+        "Discuss the optimal placement of an RF power meter in a station setup. [glossary:rf_power_meter]",
+        "Explain the advantages of using flat copper strap for RF bonding. [glossary:rf_bonding]",
+        "Detail how to calculate the operational time of equipment powered by a battery. [glossary:battery_capacity]",
+        "Describe the correct method for grounding a mobile transceiver in a vehicle. [glossary:vehicle_grounding]"
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the correct installation of an RF power meter in a feed line.",
+          "software": "SVG",
+          "caption": "RF Power Meter Installation",
+          "label": "fig:rf_power_meter"
+        },
+        {
+          "prompt": "Illustration of a mobile transceiver grounding setup in a vehicle.",
+          "software": "SVG",
+          "caption": "Vehicle Grounding Setup",
+          "label": "fig:vehicle_grounding"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different power supply ratings and their suitability for various transceivers.",
+          "caption": "Power Supply Ratings Comparison",
+          "label": "tab:power_supply_ratings"
+        }
+      ]
+    },
+    {
+      "section_label": "section:digital_modes_and_interfaces",
+      "title": "Digital Modes and Computer Interfaces",
+      "questions": [
+        "T4A04",
+        "T4A06",
+        "T4A07",
+        "T4A10",
+        "T4A12"
+      ],
+      "concepts": [
+        "FT8 operation",
+        "Computer-radio interfaces",
+        "Digital mode hot spots",
+        "Electronic keyers"
+      ],
+      "prompts": [
+        "Explain how a transceiver is connected to a computer for FT8 operation. [glossary:ft8]",
+        "Describe the signals used in a computer-radio interface for digital modes. [glossary:digital_mode_interface]",
+        "Discuss the function of a digital mode hot spot in amateur radio. [glossary:digital_hot_spot]",
+        "Explain the purpose and use of an electronic keyer in Morse code communication. [glossary:electronic_keyer]"
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a computer-radio interface setup for digital modes.",
+          "software": "SVG",
+          "caption": "Computer-Radio Interface",
+          "label": "fig:computer_radio_interface"
+        },
+        {
+          "prompt": "Illustration of a digital mode hot spot setup.",
+          "software": "SVG",
+          "caption": "Digital Mode Hot Spot",
+          "label": "fig:digital_hot_spot"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the connections and signals used in a computer-radio interface.",
+          "caption": "Computer-Radio Interface Signals",
+          "label": "tab:computer_radio_interface"
+        }
+      ]
+    },
+    {
+      "section_label": "section:audio_and_signal_processing",
+      "title": "Audio and Signal Processing",
+      "questions": [
+        "T4B01",
+        "T4B03",
+        "T4B06",
+        "T4B08",
+        "T4B10",
+        "T4B12"
+      ],
+      "concepts": [
+        "Microphone gain effects",
+        "Squelch adjustment",
+        "RIT and Clarifier controls",
+        "Receiver bandwidth selection",
+        "Signal-to-noise ratio",
+        "FM signal distortion"
+      ],
+      "prompts": [
+        "Explain the impact of excessive microphone gain on SSB transmissions. [glossary:microphone_gain]",
+        "Describe how to adjust squelch to hear weak FM signals. [glossary:squelch]",
+        "Discuss the use of RIT or Clarifier controls in SSB communication. [glossary:rit_clarifier]",
+        "Explain the advantages of multiple receive bandwidth choices in a multimode transceiver. [glossary:receiver_bandwidth]",
+        "Detail the relationship between receiver filter bandwidth and signal-to-noise ratio in SSB reception. [glossary:signal_to_noise_ratio]",
+        "Describe the effects of tuning an FM receiver above or below a signal's frequency. [glossary:fm_distortion]"
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the effect of microphone gain on SSB transmission quality.",
+          "software": "SVG",
+          "caption": "Microphone Gain Effects",
+          "label": "fig:microphone_gain"
+        },
+        {
+          "prompt": "Illustration of squelch adjustment for weak FM signals.",
+          "software": "SVG",
+          "caption": "Squelch Adjustment",
+          "label": "fig:squelch_adjustment"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different receiver filter bandwidths and their impact on signal-to-noise ratio.",
+          "caption": "Receiver Bandwidth and SNR",
+          "label": "tab:receiver_bandwidth"
+        }
+      ]
+    },
+    {
+      "section_label": "section:frequency_management",
+      "title": "Frequency Management and Memory Channels",
+      "questions": [
+        "T4B02",
+        "T4B04",
+        "T4B05",
+        "T4B07",
+        "T4B09",
+        "T4B11"
+      ],
+      "concepts": [
+        "Frequency entry methods",
+        "Memory channels",
+        "Scanning function",
+        "DMR code plugs",
+        "Group selection in digital voice",
+        "D-STAR programming"
+      ],
+      "prompts": [
+        "Explain the methods for entering a transceiver's operating frequency. [glossary:frequency_entry]",
+        "Describe how to use memory channels for quick access to favorite frequencies. [glossary:memory_channels]",
+        "Discuss the purpose of the scanning function in an FM transceiver. [glossary:scanning_function]",
+        "Explain the contents and purpose of a DMR code plug. [glossary:dmr_code_plug]",
+        "Detail how to select a specific group of stations on a digital voice transceiver. [glossary:group_selection]",
+        "Describe the necessary programming steps for a D-STAR digital transceiver. [glossary:dstar_programming]"
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the process of entering frequencies into a transceiver.",
+          "software": "SVG",
+          "caption": "Frequency Entry Methods",
+          "label": "fig:frequency_entry"
+        },
+        {
+          "prompt": "Illustration of a DMR code plug setup.",
+          "software": "SVG",
+          "caption": "DMR Code Plug",
+          "label": "fig:dmr_code_plug"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the steps for programming a D-STAR transceiver.",
+          "caption": "D-STAR Programming Steps",
+          "label": "tab:dstar_programming"
+        }
+      ]
+    }
+  ]
+}

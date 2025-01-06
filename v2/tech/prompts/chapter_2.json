@@ -1,0 +1,181 @@
+{
+  "chapter_label": "chapter:operating_procedures",
+  "sections": [
+    {
+      "title": "Repeater Basics",
+      "section_label": "sec:repeater_basics",
+      "concepts": [
+        "Basic repeater operation and function",
+        "Repeater offset and frequency pairs",
+        "CTCSS and DTMF access tones",
+        "Linked repeater networks"
+      ],
+      "prompts": [
+        "Explain how repeaters work and their basic functions in amateur radio.",
+        "Describe repeater offset and why it's necessary for simultaneous transmission and reception.",
+        "Discuss the purpose and use of CTCSS and DTMF tones in repeater operations.",
+        "Explain linked repeater networks and their benefits for extended communication range."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing basic repeater operation with input/output frequencies",
+          "software": "Graphviz",
+          "caption": "Basic Repeater Operation",
+          "label": "fig:repeater_operation"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table showing common repeater frequency pairs and their offsets.",
+        "caption": "Standard Repeater Frequency Pairs",
+        "label": "tab:repeater_pairs"
+      }
+    },
+    {
+      "title": "Simplex Communication",
+      "section_label": "sec:simplex_comm",
+      "concepts": [
+        "Simplex vs duplex communication",
+        "National FM simplex calling frequency",
+        "CQ calls and procedures",
+        "Direct station-to-station contact"
+      ],
+      "prompts": [
+        "Define simplex communication and compare it to duplex operation.",
+        "Explain the importance of 146.520 MHz as the national FM simplex calling frequency.",
+        "Describe proper procedures for making CQ calls on simplex frequencies.",
+        "Discuss best practices for direct station-to-station communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram comparing simplex and duplex communication paths",
+          "software": "Graphviz",
+          "caption": "Simplex vs Duplex Communication",
+          "label": "fig:simplex_duplex"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing simplex and duplex operation characteristics.",
+        "caption": "Simplex vs Duplex Operations",
+        "label": "tab:simplex_duplex"
+      }
+    },
+    {
+      "title": "Advanced Repeater Techniques",
+      "section_label": "sec:advanced_repeater",
+      "concepts": [
+        "Digital repeaters and talkgroups",
+        "Talkgroup access and authentication",
+        "Q signals in repeater operation",
+        "Managing frequency interference"
+      ],
+      "prompts": [
+        "Explain digital repeaters and how talkgroups function.",
+        "Describe the process of joining and using talkgroups.",
+        "Discuss the use of Q signals for efficient communication.",
+        "Explain techniques for managing frequency interference."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart of digital repeater and talkgroup operation",
+          "software": "Graphviz",
+          "caption": "Digital Repeater Operation",
+          "label": "fig:digital_repeater"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table of common Q signals used in repeater operations.",
+        "caption": "Common Q Signals",
+        "label": "tab:q_signals"
+      }
+    },
+    {
+      "title": "Emergency Communications",
+      "section_label": "sec:emergency_comm",
+      "concepts": [
+        "Amateur radio role in emergencies",
+        "Emergency rules and regulations",
+        "Net Control Station duties",
+        "Phonetic alphabet usage",
+        "Emergency traffic handling"
+      ],
+      "prompts": [
+        "Describe the role of amateur radio in emergency situations.",
+        "Explain special FCC rules that apply during emergencies.",
+        "Discuss the responsibilities of a Net Control Station.",
+        "Explain the importance of using the phonetic alphabet.",
+        "Describe best practices for handling emergency traffic."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart of emergency net operation procedures",
+          "software": "Graphviz",
+          "caption": "Emergency Net Operations",
+          "label": "fig:emergency_net"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table of emergency procedures and protocols.",
+        "caption": "Emergency Operating Procedures",
+        "label": "tab:emergency_procedures"
+      }
+    },
+    {
+      "title": "Message Handling and Radiograms",
+      "section_label": "sec:message_handling",
+      "concepts": [
+        "Radiogram structure and purpose",
+        "Message components and format",
+        "Check value in radiograms",
+        "Emergency frequency privileges"
+      ],
+      "prompts": [
+        "Explain the purpose and structure of radiograms.",
+        "Break down the components of a formal radiogram message.",
+        "Discuss the meaning and importance of 'check' in radiograms.",
+        "Explain when operators can exceed normal frequency privileges."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of radiogram structure and components",
+          "software": "Graphviz",
+          "caption": "Radiogram Structure",
+          "label": "fig:radiogram"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table showing radiogram components and their purposes.",
+        "caption": "Radiogram Components",
+        "label": "tab:radiogram_components"
+      }
+    },
+    {
+      "title": "Receiver Operations",
+      "section_label": "sec:receiver_ops",
+      "concepts": [
+        "Squelch function and purpose",
+        "Receiver controls and features",
+        "Signal monitoring techniques",
+        "Interference reduction methods"
+      ],
+      "prompts": [
+        "Explain the squelch function and its purpose in receivers.",
+        "Describe common receiver controls and their functions.",
+        "Discuss techniques for monitoring weak signals.",
+        "Explain methods for reducing interference in receivers."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of basic receiver controls and functions",
+          "software": "Graphviz",
+          "caption": "Receiver Controls",
+          "label": "fig:receiver_controls"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table of common receiver controls and their purposes.",
+        "caption": "Receiver Controls and Functions",
+        "label": "tab:receiver_controls"
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+Table of Contents
+
+Part I: Getting Started with Amateur Radio
+
+Chapter 1: Welcome to the World of Amateur Radio
+
+1.1 What is Amateur Radio?
+The Basis and Purpose of Amateur Radio (T1A01)
+Advancing Radio Art and Communication Skills (T1A01)
+International Goodwill (T1A01, T1C03)
+1.2 Who Regulates Amateur Radio?
+The Role of the FCC (T1A02)
+1.3 Understanding Your License
+License Classes and Privileges (T1C01, T1B06)
+Obtaining and Renewing Your License (T1A04, T1A05, T1C08, T1C09, T1C10, T1C11)
+Selecting a Call Sign (T1C02, T1C05)
+Maintaining a Valid License and Contact Information (T1C04, T1C07)
+Operating from Different Locations (T1C06)
+Chapter 2:  Basic Electrical Principles
+
+2.1 Current, Voltage, and Resistance
+What is Electric Current? (T5A03, T5A01)
+What is Voltage? (T5A05)
+What is Resistance? (T5A04)
+Ohm's Law: Calculating Current, Voltage, and Resistance (T5D01, T5D02, T5D03, T5D04, T5D05, T5D06, T5D07, T5D08, T5D09, T5D10, T5D11, T5D12)
+2.2 Power
+What is Electrical Power? (T5A02)
+Calculating Power (T5C08, T5C09, T5C10, T5C11)
+2.3 Alternating Current (AC) vs. Direct Current (DC)
+Understanding AC (T5A09)
+Understanding DC
+Frequency and Wavelength (T5A06, T5A12, T3B04, T3B05, T3B06, T3B07, T3B08, T3B09, T3B10, T3B11, T5B02, T5B07, T5B12, T5B13)
+2.4 Conductors and Insulators
+What Makes a Good Conductor? (T5A07)
+What Makes a Good Insulator? (T5A08)
+2.5 Series and Parallel Circuits
+Current in Series Circuits (T5D13)
+Voltage in Parallel Circuits (T5D14)
+Part II:  Radio Equipment and Operation
+
+Chapter 3:  Your Radio Station
+
+3.1 Transceivers: The Heart of Your Station
+What is a Transceiver? (T7A02)
+Key Features and Controls (T4B02, T4B04, T4B06, T4B08, T4B12)
+Understanding Squelch (T2B13, T4B03)
+PTT (Push-To-Talk) Operation (T7A07)
+3.2 Power Supplies
+Choosing the Right Power Supply (T4A01)
+Battery Basics (T6A10, T6A11, T0A10)
+Safe Battery Handling (T0A01)
+3.3 Microphones and Audio
+Microphone Gain and Overmodulation (T4B01)
+Dealing with Distorted Audio (T7B05)
+3.4 Digital Modes and Computer Integration
+Connecting Your Radio to a Computer (T4A04, T4A06, T4A07)
+Digital Mode Software (WSJT-X, etc.) (T8D10, T4A04)
+Understanding DMR (T2B07, T2B12, T8D02, T8D07)
+Packet Radio (T8D08)
+APRS (Automatic Packet Reporting System) (T8D03, T8D05)
+FT8 (T8D13)
+Mesh Networks (T8D12)
+Data Transmission and Bandwidth (T8D08)
+3.5 CW (Morse Code) (T8D09)
+CW Bandwidth (T8A11)
+Electronic Keyer (T4A12)
+Chapter 4: Antennas and Feed Lines
+
+4.1 Antenna Fundamentals
+What is an Antenna?
+Dipole Antennas (T9A03, T9A05, T9A09, T9A10)
+Vertical Antennas (T9A08)
+Beam Antennas (T9A01, T9A06)
+Antenna Polarization (T3A03, T3A04, T9A03)
+Antenna Gain (T9A11)
+Antenna Loading (T9A02)
+Mobile Antennas (T9A07, T9A12)
+4.2 Feed Lines
+Coaxial Cable (T9B02, T9B03, T9B08, T9B10, T9B11, T0B10)
+Impedance (T9B02)
+Losses (T9B08, T9B10, T9B11)
+Proper Installation (T9B09)
+UV Resistance (T9B10)
+Connectors (T9B06, T9B07)
+4.3 SWR (Standing Wave Ratio)
+What is SWR? (T9B12)
+Measuring SWR (T4A02, T7C04, T7C08)
+Effects of High SWR (T7C05)
+Antenna Tuners (T9B04)
+4.4 Antenna Installation
+Safety Considerations (T0B01, T0B03, T0B04, T0B05, T0B06, T0B07, T0B08, T0B09, T0B11)
+4.5. Grounding
+Importance of Grounding (T0A06, T0B08)
+Lightning Protection (T0B01, T0A07)
+Chapter 5:  Operating Procedures
+
+5.1 Making Contact
+Calling CQ (T2A05, T2A08, T2A12, T4B06)
+Responding to a CQ Call (T2A05)
+Calling a Specific Station (T2A04)
+Simplex vs. Duplex Operation (T2A11)
+Using Phonetics (T1A03, T2C03)
+5.2 Repeater Operation
+What is a Repeater? (T1F09)
+Repeater Offset (T2A01, T2A03, T2A07, T2B01)
+Simplex vs. Duplex Operation (T2A11)
+National Calling Frequencies (T2A02, T1B04)
+"Reverse" Function (T2B01)
+CTCSS and DTMF Tones (T2B02, T2B06, T8C06)
+Linked Repeater Networks (T2B03, T8C08, T8C09, T8C10)
+Joining a Talkgroup (T2B07)
+Repeater Etiquette (T2A09)
+5.3 Nets
+What is a Net?
+Net Control Station (NCS) Duties (T2C02)
+Checking into a Net (T2C07)
+Traffic Handling (T2C05, T2C08, T2C10, T2C11)
+5.4 Contesting (T2C04, T8C03, T8C04)
+5.5 Radio Direction Finding (T8C01, T8C02)
+5.6 Emergency Communications
+RACES (Radio Amateur Civil Emergency Service) (T1A10, T2C04)
+ARES (Amateur Radio Emergency Service) (T2C06)
+Operating Outside Your License Privileges in Emergencies (T2C09)
+5.7 Rules of Engagement on the Air (T1D01-T1D11)
+Part III: Radio Wave Propagation
+
+Chapter 6: Understanding How Radio Waves Travel
+
+6.1 The Electromagnetic Spectrum
+Radio Waves as Electromagnetic Radiation (T3B01, T3B02, T3B03)
+6.2 VHF/UHF Propagation
+Line of Sight (T3A04, T3A05)
+Multipath Propagation (T3A01, T3A06, T3A09)
+Tropospheric Ducting (T3C06, T3C08)
+Effects of Weather (T3A07)
+6.3 HF Propagation
+Ionospheric Propagation (T3A08, T3A11)
+F-Region Propagation (T3C10)
+Sunspot Cycles (T3C10)
+Sporadic E (T3C04)
+10-Meter Propagation (T3C09)
+6.4 Other Propagation Modes
+Meteor Scatter (T3C07)
+Auroral Backscatter (T3C03)
+Part IV:  Regulations and Safety
+
+Chapter 7: FCC Rules and Regulations (Part 97)
+
+7.1 The Purpose of Amateur Radio (T1A01)
+7.2 The Role of the FCC (T1A02)
+7.3 Station Identification (T1A03, T1F02, T1F03, T1F04, T1F05, T1F06)
+7.4 Control Operator Requirements (T1E01, T1E02, T1E03, T1E04, T1E05, T1E06, T1E07, T1E08, T1E09, T1E10, T1E11)
+7.5 Authorized and Prohibited Communications
+International Communications (T1C03)
+Third-Party Communications (T1F07, T1F08)
+Prohibited Content (T1D06, T1D10)
+Business Communications (T1D05)
+Broadcasting (T1D02, T1D10)
+Coded Messages (T1D03)
+Music Transmission (T1D04)
+News Gathering (T1D09)
+Operating Without Identification (T1D11)
+7.6 Enforcement and Penalties
+Station Inspections (T1F01)
+Consequences of Rule Violations (T1C04, T1C07, T1F10)
+Chapter 8: Electrical Safety
+
+8.1 Electrical Hazards
+Shock Hazards (T0A02, T0A06)
+Short Circuits (T0A01)
+8.2 Power Supply Safety
+Stored Charge in Capacitors (T0A11)
+8.3 Grounding
+Station Grounding (T0A06)
+Tower Grounding (T0B08)
+Lightning Protection (T0A07, T0B01, T0B10)
+8.4 Safe Wiring Practices
+Wire Gauge (T4A03)
+Fuses and Circuit Breakers (T0A05, T0A08)
+Three-Wire Cords and Plugs (T0A06)
+Color Coding of Wires (T0A03)
+8.5 Battery Safety (T0A10)
+8.6 RF Exposure
+Understanding RF Radiation (T0C01, T0C12)
+Exposure Limits (T0C02, T0C04, T0C05, T0C13)
+Duty Cycle (T0C03, T0C10, T0C11)
+Evaluating RF Exposure (T0C06, T0C09)
+Minimizing Exposure (T0C08)
+Antenna Placement (T0B06)
+Chapter 9: Safe Tower and Antenna Installation
+
+9.1 Tower Safety (T0B02, T0B03, T0B07)
+9.2 Working Near Power Lines (T0B04, T0B06)
+9.3 Proper Grounding Techniques (T0B08)
+9.4 Securing Guy Wires (T0B05)
+9.5. Safe Use of Tools and Equipment
+Part V:  Practice and Review
+
+Chapter 10: Practice Exam Questions
+
+Full-length practice exams covering all topics
+Appendix
+
+Glossary of Terms
+FCC Part 97 Rules (Summary)
+Band Plans
+Phonetic Alphabet
+Q Signals
+Useful Formulas

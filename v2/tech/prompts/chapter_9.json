@@ -1,0 +1,182 @@
+{
+  "chapter_label": "chapter:antennas_and_feed_lines",
+  "chapter_title": "ANTENNAS AND FEED LINES",
+  "sections": [
+    {
+      "section_label": "section:antenna_basics",
+      "title": "Antenna Basics",
+      "questions": [
+        "T9A01",
+        "T9A02",
+        "T9A03",
+        "T9A04",
+        "T9A05",
+        "T9A06",
+        "T9A07",
+        "T9A08"
+      ],
+      "concepts": [
+        "Beam antenna",
+        "Antenna loading",
+        "Polarization",
+        "Antenna efficiency",
+        "Resonant frequency",
+        "Antenna gain",
+        "Shielding effect",
+        "Antenna length calculations"
+      ],
+      "prompts": [
+        "Explain the concept of a beam antenna and its directional properties.",
+        "Describe the process of antenna loading and its impact on antenna performance.",
+        "Discuss the significance of antenna polarization and its effect on signal transmission.",
+        "Analyze the efficiency of short, flexible antennas compared to full-sized antennas.",
+        "Explain how the resonant frequency of a dipole antenna can be altered.",
+        "Compare the gain of different types of antennas, such as Yagi, isotropic, and J-pole.",
+        "Evaluate the disadvantages of using a handheld VHF transceiver with a flexible antenna inside a vehicle.",
+        "Calculate the approximate length of a quarter-wavelength vertical antenna for a given frequency."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a beam antenna showing directional signal concentration",
+          "software": "SVG",
+          "caption": "Directional properties of a beam antenna",
+          "label": "fig:beam_antenna"
+        },
+        {
+          "prompt": "Illustration of antenna loading with inductors",
+          "software": "SVG",
+          "caption": "Antenna loading process",
+          "label": "fig:antenna_loading"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the gain of different antenna types",
+          "caption": "Comparison of Antenna Gain",
+          "label": "tab:antenna_gain"
+        }
+      ]
+    },
+    {
+      "section_label": "section:antenna_characteristics",
+      "title": "Antenna Characteristics",
+      "questions": [
+        "T9A09",
+        "T9A10",
+        "T9A11",
+        "T9A12"
+      ],
+      "concepts": [
+        "Half-wavelength dipole",
+        "Radiation pattern",
+        "Antenna gain",
+        "Whip antenna advantages"
+      ],
+      "prompts": [
+        "Calculate the length of a half-wavelength dipole antenna for a specific frequency.",
+        "Describe the radiation pattern of a half-wave dipole antenna.",
+        "Define antenna gain and explain its importance in signal transmission.",
+        "Discuss the advantages of a 5/8 wavelength whip antenna for VHF or UHF mobile service."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Radiation pattern of a half-wave dipole antenna",
+          "software": "SVG",
+          "caption": "Radiation pattern of a half-wave dipole",
+          "label": "fig:dipole_radiation"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "section_label": "section:feed_line_basics",
+      "title": "Feed Line Basics",
+      "questions": [
+        "T9B01",
+        "T9B02",
+        "T9B03",
+        "T9B04",
+        "T9B05",
+        "T9B06",
+        "T9B07",
+        "T9B08"
+      ],
+      "concepts": [
+        "SWR (Standing Wave Ratio)",
+        "Coaxial cable impedance",
+        "Antenna tuner function",
+        "Frequency effects on coaxial cable",
+        "RF connector types",
+        "Coaxial cable loss"
+      ],
+      "prompts": [
+        "Explain the benefits of low SWR in antenna systems.",
+        "Discuss the common impedance of coaxial cables used in amateur radio.",
+        "Evaluate why coaxial cable is the most common feed line for amateur radio antenna systems.",
+        "Describe the function of an antenna tuner (antenna coupler).",
+        "Analyze the effect of increasing frequency on signal loss in coaxial cable.",
+        "Compare different RF connector types and their suitability for various frequencies.",
+        "Discuss the characteristics of PL-259 type coax connectors.",
+        "Identify sources of loss in coaxial feed lines."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the effect of SWR on signal loss",
+          "software": "SVG",
+          "caption": "Effect of SWR on signal loss",
+          "label": "fig:swr_loss"
+        },
+        {
+          "prompt": "Illustration of different RF connector types",
+          "software": "SVG",
+          "caption": "Comparison of RF connector types",
+          "label": "fig:rf_connectors"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of coaxial cables and their loss characteristics",
+          "caption": "Comparison of Coaxial Cable Loss",
+          "label": "tab:coax_loss"
+        }
+      ]
+    },
+    {
+      "section_label": "section:feed_line_issues",
+      "title": "Feed Line Issues",
+      "questions": [
+        "T9B09",
+        "T9B10",
+        "T9B11",
+        "T9B12"
+      ],
+      "concepts": [
+        "Erratic SWR changes",
+        "Coaxial cable types",
+        "Feed line loss",
+        "Standing wave ratio (SWR)"
+      ],
+      "prompts": [
+        "Identify potential causes of erratic changes in SWR.",
+        "Compare the electrical characteristics of RG-58 and RG-213 coaxial cables.",
+        "Evaluate the types of feed lines with the lowest loss at VHF and UHF frequencies.",
+        "Define standing wave ratio (SWR) and explain its significance in antenna systems."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the causes of erratic SWR changes",
+          "software": "SVG",
+          "caption": "Causes of erratic SWR changes",
+          "label": "fig:erratic_swr"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the loss characteristics of different feed lines",
+          "caption": "Comparison of Feed Line Loss",
+          "label": "tab:feed_line_loss"
+        }
+      ]
+    }
+  ]
+}

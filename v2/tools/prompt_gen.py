@@ -36,7 +36,7 @@ with open("tools/prompt_gen.lisp", "r") as f:
 
 # Loop over each section and its questions
 
-output_dir = base_dir + f'/organized/prompts/'
+output_dir = base_dir + f'/prompts/'
 os.makedirs(output_dir, exist_ok=True)
 
 chapter_index = 1

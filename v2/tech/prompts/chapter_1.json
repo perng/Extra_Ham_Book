@@ -1,0 +1,273 @@
+{
+  "chapter_label": "chapter:commission_rules",
+  "sections": [
+    {
+      "title": "Purpose of Amateur Radio Service",
+      "section_label": "sec:amateur_purpose",
+      "questions": ["T1A01", "T1A02", "T1A10"],
+      "concepts": [
+        "Purpose and basis of Amateur Radio Service",
+        "FCC regulatory authority",
+        "RACES (Radio Amateur Civil Emergency Service)"
+      ],
+      "prompts": [
+        "Begin with a captivating introduction to amateur radio, its essence, and its appeal.",
+        "Explain the fundamental purpose of the Amateur Radio Service as defined by the FCC.",
+        "Describe the regulatory role of the FCC in amateur radio."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a diagram showing the relationship between FCC, Amateur Radio Service, and operators",
+          "software": "Graphviz",
+          "caption": "Amateur Radio Service Structure",
+          "label": "fig:amateur_structure"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing different aspects of Amateur Radio Service with other radio services",
+          "caption": "Amateur Radio Service Characteristics",
+          "label": "tab:service_comparison"
+        }
+      ]
+    },
+    {
+      "title": "License Requirements",
+      "section_label": "sec:license_requirements",
+      "questions": ["T1A03", "T1A04", "T1A05", "T1C02", "T1C04"],
+      "concepts": [
+        "License grant requirements",
+        "ULS database system",
+        "Call sign requirements",
+        "License limitations"
+      ],
+      "prompts": [
+        "Explain the process of obtaining an amateur radio license.",
+        "Describe the FCC's Universal Licensing System (ULS)."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a flowchart showing the amateur radio licensing process",
+          "software": "Graphviz",
+          "caption": "Amateur Radio Licensing Process",
+          "label": "fig:licensing_process"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table showing basic license requirements",
+          "caption": "Amateur Radio License Requirements",
+          "label": "tab:license_requirements"
+        }
+      ]
+    },
+    {
+      "title": "License Privileges and Terms",
+      "section_label": "sec:license_privileges",
+      "questions": ["T1C05", "T1C08", "T1C09", "T1C10", "T1C11"],
+      "concepts": [
+        "License privileges",
+        "License terms and renewal",
+        "License modifications",
+        "Operating restrictions"
+      ],
+      "prompts": [
+        "Detail the privileges associated with different license classes.",
+        "Explain license renewal and modification procedures."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a diagram showing license class progression",
+          "software": "Graphviz",
+          "caption": "Amateur License Class Structure",
+          "label": "fig:license_structure"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing privileges of different license classes",
+          "caption": "License Class Privileges",
+          "label": "tab:license_privileges"
+        }
+      ]
+    },
+    {
+      "title": "Basic Operating Rules",
+      "section_label": "sec:basic_rules",
+      "questions": ["T1D01", "T1D02", "T1D03", "T1D04", "T1D05", "T1D06"],
+      "concepts": [
+        "Permissible communications",
+        "Prohibited transmissions",
+        "Basic operating restrictions"
+      ],
+      "prompts": [
+        "Explain the basic types of permitted communications.",
+        "Describe prohibited types of transmissions."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a decision tree for determining permissible communications",
+          "software": "Graphviz",
+          "caption": "Permissible Communications Guide",
+          "label": "fig:permitted_comms"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table of permitted vs prohibited communications",
+          "caption": "Communication Guidelines",
+          "label": "tab:comm_guidelines"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Operating Rules",
+      "section_label": "sec:advanced_rules",
+      "questions": ["T1D07", "T1D08", "T1D09", "T1D10", "T1D11"],
+      "concepts": [
+        "International communications",
+        "Emergency communications",
+        "Broadcasting restrictions",
+        "Equipment testing"
+      ],
+      "prompts": [
+        "Detail the rules for international communications.",
+        "Explain emergency communication procedures."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a flowchart for emergency communication procedures",
+          "software": "Graphviz",
+          "caption": "Emergency Communications Flow",
+          "label": "fig:emergency_comms"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table summarizing international communication rules",
+          "caption": "International Communication Guidelines",
+          "label": "tab:international_rules"
+        }
+      ]
+    },
+    {
+      "title": "Control Operator Requirements",
+      "section_label": "sec:control_op",
+      "questions": ["T1E01", "T1E02", "T1E03", "T1E04", "T1E08", "T1E09", "T1E10", "T1E11"],
+      "concepts": [
+        "Control operator duties",
+        "Control types",
+        "Remote operation",
+        "Automatic control"
+      ],
+      "prompts": [
+        "Explain control operator responsibilities.",
+        "Describe different types of station control."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a diagram showing different types of station control",
+          "software": "Graphviz",
+          "caption": "Station Control Types",
+          "label": "fig:control_types"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing different types of station control",
+          "caption": "Station Control Comparison",
+          "label": "tab:control_types"
+        }
+      ]
+    },
+    {
+      "title": "Station Identification",
+      "section_label": "sec:station_id",
+      "questions": ["T1F01", "T1F02", "T1F03", "T1F04", "T1F05", "T1F06"],
+      "concepts": [
+        "Station identification requirements",
+        "ID timing rules",
+        "Language requirements",
+        "Self-assigned indicators"
+      ],
+      "prompts": [
+        "Detail station identification procedures and timing.",
+        "Explain language and method requirements for station identification."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a timeline showing station identification requirements",
+          "software": "Graphviz",
+          "caption": "Station Identification Timeline",
+          "label": "fig:id_timeline"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table of station identification requirements",
+          "caption": "Station ID Requirements",
+          "label": "tab:id_requirements"
+        }
+      ]
+    },
+    {
+      "title": "Special Operations and Services",
+      "section_label": "sec:special_ops",
+      "questions": ["T1A06", "T1A07", "T1A08", "T1A09", "T1F07", "T1F08"],
+      "concepts": [
+        "Beacon operations",
+        "Space station communications",
+        "Frequency coordination",
+        "Third-party communications"
+      ],
+      "prompts": [
+        "Explain beacon and space station operations.",
+        "Describe frequency coordinator roles and responsibilities."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a diagram showing special operation types",
+          "software": "Graphviz",
+          "caption": "Special Operations Overview",
+          "label": "fig:special_ops"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table summarizing special operation requirements",
+          "caption": "Special Operations Requirements",
+          "label": "tab:special_ops"
+        }
+      ]
+    },
+    {
+      "title": "Repeater and Club Operations",
+      "section_label": "sec:repeater_club",
+      "questions": ["T1F09", "T1F10", "T1F11"],
+      "concepts": [
+        "Repeater operations",
+        "Club station requirements",
+        "Repeater responsibilities"
+      ],
+      "prompts": [
+        "Detail repeater operation requirements.",
+        "Explain club station licensing and operations."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Create a diagram showing basic repeater operation",
+          "software": "Graphviz",
+          "caption": "Repeater Operation Basics",
+          "label": "fig:repeater_basics"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table of repeater and club station requirements",
+          "caption": "Repeater and Club Station Requirements",
+          "label": "tab:repeater_club_reqs"
+        }
+      ]
+    }
+  ]
+}
