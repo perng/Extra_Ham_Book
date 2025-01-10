@@ -1,0 +1,60 @@
+\subsection{Bandwidth Comparisons}
+\label{subsec:bandwidth}
+
+Bandwidth is a fundamental concept in radio communication, and understanding it is crucial for designing efficient communication systems. In simple terms, bandwidth refers to the range of frequencies occupied by a signal. Think of it like the width of a highway: the wider the highway, the more cars (or data) can travel simultaneously. In radio terms, the wider the bandwidth, the more information can be transmitted. However, bandwidth is a limited resource, so we need to use it wisely.
+
+\subsubsection*{AM Fast-Scan TV Bandwidth}
+AM fast-scan TV, also known as analog television, requires a relatively large bandwidth to transmit both video and audio signals. The approximate bandwidth for AM fast-scan TV is about 6 MHz. This is significantly wider than the bandwidth required for voice communication, which is why TV signals can carry so much more information. For comparison, a typical FM radio signal uses about 200 kHz, and a single sideband (SSB) signal uses only about 3 kHz. This difference in bandwidth is one of the reasons why AM fast-scan TV is no longer widely used—it simply takes up too much of the radio spectrum.
+
+\subsubsection*{FM vs. SSB Bandwidth}
+When it comes to bandwidth efficiency, single sideband (SSB) is the clear winner. SSB uses only half the bandwidth of a standard AM signal and a fraction of the bandwidth of an FM signal. However, FM has its advantages, such as better noise immunity and the ability to transmit stereo audio. The trade-off is that FM requires more bandwidth, which means fewer FM signals can coexist in the same frequency range compared to SSB signals. This is why SSB is often used in long-distance communication, where bandwidth is at a premium.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{bandwidth-comparison.svg}
+    % Diagram comparing the bandwidth of AM fast-scan TV, FM, and SSB signals.
+    % The figure should show three frequency spectra side by side, with AM fast-scan TV occupying the widest range, FM in the middle, and SSB the narrowest.
+    \caption{Bandwidth Comparison of AM Fast-Scan TV, FM, and SSB Signals}
+    \label{fig:bandwidth-comparison}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Modulation Type} & \textbf{Bandwidth} \\
+        \hline
+        AM Fast-Scan TV & 6 MHz \\
+        FM & 200 kHz \\
+        SSB & 3 kHz \\
+        \hline
+    \end{tabular}
+    \caption{Bandwidth Requirements for Different Modulation Types}
+    \label{tab:bandwidth-requirements}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A10}]
+    What is the approximate bandwidth of AM fast-scan TV transmissions?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item More than 10 MHz
+        \item \textbf{About 6 MHz}
+        \item About 3 MHz
+        \item About 1 MHz
+    \end{enumerate}
+\end{tcolorbox}
+
+The bandwidth of AM fast-scan TV is approximately 6 MHz. This is because the signal needs to carry both video and audio information, which requires a wide frequency range. Option A is incorrect because 10 MHz is too wide for AM fast-scan TV. Option C is the bandwidth of an SSB signal, and option D is far too narrow for any TV transmission.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A12}]
+    Which of the following is a disadvantage of FM compared with single sideband?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Voice quality is poorer
+        \item \textbf{Only one signal can be received at a time}
+        \item FM signals are harder to tune
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+FM signals require more bandwidth than SSB signals, which means fewer FM signals can coexist in the same frequency range. This is why only one FM signal can typically be received at a time in a given frequency band. Option A is incorrect because FM actually has better voice quality than SSB. Option C is also incorrect because FM signals are not harder to tune than SSB signals. Option D is incorrect because not all the choices are correct.

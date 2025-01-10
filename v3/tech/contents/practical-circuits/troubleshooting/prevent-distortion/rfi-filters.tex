@@ -1,0 +1,85 @@
+\subsection{RFI, Filtering Solutions}
+\label{subsec:rfi-filters}
+
+Radio Frequency Interference (RFI) is a common issue in both amateur and broadcast radio systems. It occurs when unwanted signals disrupt the intended reception of a radio transmission. Let's dive into the causes of RFI and how we can mitigate it.
+
+\subsubsection*{Causes of RFI in Broadcast AM or FM Radios}
+One of the primary causes of RFI in broadcast AM or FM radios is the inability of the receiver to reject strong signals outside the AM or FM band. This can lead to the unintentional reception of amateur radio transmissions. Imagine your favorite FM station suddenly interrupted by a ham operator discussing their latest antenna setup—quite the surprise, right? This happens because the receiver's front-end filtering isn't robust enough to block out-of-band signals, especially if they are strong.
+
+\subsubsection*{Harmonics and Spurious Emissions}
+Harmonics and spurious emissions are also significant contributors to RFI. Harmonics are integer multiples of the fundamental frequency, and spurious emissions are unwanted signals that can occur at various frequencies. Both can interfere with other radio services, causing distortion or complete signal loss. Think of harmonics as the "echoes" of your signal bouncing around where they shouldn't be, and spurious emissions as the "noise" that sneaks into other frequency bands.
+
+\subsubsection*{Ferrite Chokes to the Rescue}
+When it comes to curing distorted audio caused by RF current on the shield of a microphone cable, ferrite chokes are your best friend. A ferrite choke is a passive device that suppresses high-frequency noise by absorbing RF energy. By placing a ferrite choke around the microphone cable, you can effectively block RF currents from interfering with your audio signal. It's like putting a noise-canceling headset on your microphone cable!
+
+\subsubsection*{Filtering Solutions}
+There are several filtering solutions available to mitigate RFI. These include band-pass filters, low-pass filters, and high-pass filters, each designed to allow specific frequency ranges to pass while blocking others. For example, a low-pass filter can be used to block high-frequency harmonics, while a band-pass filter can be used to isolate a specific frequency range. The choice of filter depends on the specific RFI issue you're dealing with.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rfi-broadcast}
+    \caption{RFI in Broadcast Radios}
+    \label{fig:rfi-broadcast}
+    % Diagram illustrating RFI in broadcast AM or FM radios. The diagram should show a broadcast radio receiving both the intended AM/FM signal and an interfering amateur radio signal.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{ferrite-choke}
+    \caption{Ferrite Choke Application}
+    \label{fig:ferrite-choke}
+    % Illustration of a ferrite choke applied to a microphone cable. The figure should show the ferrite choke clamped around the cable, with arrows indicating the suppression of RF currents.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Filter Type} & \textbf{Application} \\
+        \hline
+        Band-pass Filter & Isolates a specific frequency range \\
+        Low-pass Filter & Blocks high-frequency harmonics \\
+        High-pass Filter & Blocks low-frequency noise \\
+        \hline
+    \end{tabular}
+    \caption{Filtering Solutions for RFI}
+    \label{tab:rfi-filters}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B02}]
+    What would cause a broadcast AM or FM radio to receive an amateur radio transmission unintentionally?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{The receiver is unable to reject strong signals outside the AM or FM band}
+        \item The microphone gain of the transmitter is turned up too high
+        \item The audio amplifier of the transmitter is overloaded
+        \item The deviation of an FM transmitter is set too low
+    \end{enumerate}
+\end{tcolorbox}
+
+This happens because the receiver's front-end filtering isn't robust enough to block out-of-band signals, especially if they are strong. The other options are unrelated to the receiver's ability to filter signals.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B03}]
+    Which of the following can cause radio frequency interference?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Fundamental overload
+        \item Harmonics
+        \item Spurious emissions
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+
+All these factors can contribute to RFI. Fundamental overload occurs when a receiver is overwhelmed by a strong signal, harmonics are multiples of the fundamental frequency, and spurious emissions are unwanted signals at various frequencies.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B04}]
+    Which of the following could you use to cure distorted audio caused by RF current on the shield of a microphone cable?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Band-pass filter
+        \item Low-pass filter
+        \item Preamplifier
+        \item \textbf{Ferrite choke}
+    \end{enumerate}
+\end{tcolorbox}
+
+A ferrite choke is specifically designed to suppress RF currents on cables, making it the ideal solution for this problem. Band-pass and low-pass filters are used for frequency filtering, and a preamplifier would only amplify the noise along with the signal.

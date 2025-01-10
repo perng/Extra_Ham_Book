@@ -1,0 +1,60 @@
+\subsection{Resistance Testing Safety}
+\label{subsec:resistance-testing}
+
+When working with an ohmmeter, especially in scenarios involving capacitors or in-circuit resistance measurements, it's crucial to understand what readings to expect and how to ensure safety. Let's dive into these topics with a bit of humor—because, let's face it, nothing says "fun" like a discharged capacitor and an ohmmeter!
+
+\subsubsection*{Ohmmeter Readings Across a Discharged Capacitor}
+Imagine you're connecting an ohmmeter across a large, discharged capacitor. What should you expect? Well, the ohmmeter will initially show a low resistance, but as the capacitor charges up from the ohmmeter's internal battery, the resistance will increase over time. This is because the capacitor is essentially "filling up" with charge, and as it does, it resists the flow of current more and more. So, if you see the resistance increasing with time, congratulations! You've just confirmed that your ohmmeter is connected across a large, discharged capacitor. If you see anything else, like a steady full-scale reading or alternating between open and short circuit, you might want to double-check your setup.
+
+\subsubsection*{Precautions for In-Circuit Resistance Measurement}
+Now, let's talk about measuring in-circuit resistance. This is where things can get a bit tricky. The most important precaution? Make sure the circuit is not powered. Yes, that's right—no power, no problem. If the circuit is powered, you could damage your ohmmeter or, worse, yourself. Also, ensure that the circuit is not grounded and that it's operating at the correct frequency—just kidding! Those are not the precautions you need to worry about. The key is to keep the circuit unpowered. 
+
+Here’s a handy table summarizing the precautions:
+
+\begin{table}[h]
+\centering
+\caption{Precautions for in-circuit resistance measurement.}
+\label{tab:resistance-precautions}
+\begin{tabular}{|l|p{8cm}|}
+\hline
+\textbf{Precaution} & \textbf{Description} \\ \hline
+Ensure the circuit is not powered & Always disconnect the power source before measuring resistance. \\ \hline
+Check for capacitors & Ensure capacitors are discharged to avoid false readings or damage. \\ \hline
+Use appropriate settings & Set the ohmmeter to the correct range for accurate measurements. \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+% \includegraphics[width=0.8\textwidth]{figures/ohmmeter-circuit.svg}
+% Diagram showing the correct method for measuring in-circuit resistance with an ohmmeter.
+% The figure should include an ohmmeter connected to a circuit with a resistor and a capacitor, showing the correct placement of probes and the absence of power.
+\caption{Correct method for measuring in-circuit resistance.}
+\label{fig:ohmmeter-circuit}
+\end{figure}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7D10}]
+What reading indicates that an ohmmeter is connected across a large, discharged capacitor?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{Increasing resistance with time}
+    \item Decreasing resistance with time
+    \item Steady full-scale reading
+    \item Alternating between open and short circuit
+\end{enumerate}
+\end{tcolorbox}
+
+When an ohmmeter is connected across a large, discharged capacitor, the resistance will increase over time as the capacitor charges. This is because the capacitor's ability to store charge increases, leading to a higher resistance reading. The other options are incorrect because they do not reflect the behavior of a charging capacitor.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7D11}]
+Which of the following precautions should be taken when measuring in-circuit resistance with an ohmmeter?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Ensure that the applied voltages are correct
+    \item \textbf{Ensure that the circuit is not powered}
+    \item Ensure that the circuit is grounded
+    \item Ensure that the circuit is operating at the correct frequency
+\end{enumerate}
+\end{tcolorbox}
+
+The correct precaution is to ensure that the circuit is not powered. This prevents damage to the ohmmeter and ensures accurate readings. The other options are irrelevant or incorrect in the context of resistance measurement.

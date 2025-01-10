@@ -1,0 +1,105 @@
+{
+  "section_title": "Preventing Distortion and Overload",
+  "label": "sec:prevent-distortion",
+  "subsections": [
+    {
+      "title": "Over-deviation, Fundamental Overload",
+      "label": "subsec:over-dev",
+      "questions": ["T7B01", "T7B05"],
+      "concepts": ["Over-deviation", "Fundamental Overload", "Microphone Distance", "Filtering"],
+      "prompts": [
+        "Explain the concept of over-deviation in FM transceivers and how it affects signal quality.",
+        "Describe the steps to mitigate over-deviation in FM handheld or mobile transceivers.",
+        "Discuss the phenomenon of fundamental overload in non-amateur radio or TV receivers and how it can be reduced or eliminated.",
+        "Provide examples of filters used to block amateur signals at the antenna input of affected receivers."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the effect of over-deviation in FM signals",
+          "software": "SVG",
+          "caption": "Effect of Over-deviation in FM Signals",
+          "label": "fig:over-deviation"
+        },
+        {
+          "prompt": "Block diagram of a filter used to block amateur signals at the antenna input",
+          "software": "Graphviz",
+          "caption": "Filter Block Diagram",
+          "label": "fig:filter-block"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different methods to reduce fundamental overload",
+          "caption": "Methods to Reduce Fundamental Overload",
+          "label": "tab:overload-methods"
+        }
+      ]
+    },
+    {
+      "title": "RFI, Filtering Solutions",
+      "label": "subsec:rfi-filters",
+      "questions": ["T7B02", "T7B03", "T7B04"],
+      "concepts": ["RFI (Radio Frequency Interference)", "Harmonics", "Spurious Emissions", "Ferrite Choke"],
+      "prompts": [
+        "Explain the causes of RFI in broadcast AM or FM radios and how it leads to unintentional reception of amateur radio transmissions.",
+        "Discuss the role of harmonics and spurious emissions in causing RFI.",
+        "Describe the use of ferrite chokes in curing distorted audio caused by RF current on microphone cables.",
+        "Provide examples of filtering solutions to mitigate RFI."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating RFI in broadcast AM or FM radios",
+          "software": "SVG",
+          "caption": "RFI in Broadcast Radios",
+          "label": "fig:rfi-broadcast"
+        },
+        {
+          "prompt": "Illustration of a ferrite choke applied to a microphone cable",
+          "software": "SVG",
+          "caption": "Ferrite Choke Application",
+          "label": "fig:ferrite-choke"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different filtering solutions for RFI",
+          "caption": "Filtering Solutions for RFI",
+          "label": "tab:rfi-filters"
+        }
+      ]
+    },
+    {
+      "title": "Addressing Interference, TVI, etc.",
+      "label": "subsec:interference",
+      "questions": ["T7B06", "T7B07", "T7B08", "T7B09", "T7B10", "T7B11"],
+      "concepts": ["TVI (Television Interference)", "Band-Reject Filter", "RF Feedback", "Coaxial Connectors"],
+      "prompts": [
+        "Explain the steps to take if a neighbor reports interference from your amateur station.",
+        "Discuss the use of band-reject filters to reduce overload of VHF transceivers by nearby commercial FM stations.",
+        "Describe the symptoms of RF feedback in a transmitter or transceiver and how to address it.",
+        "Provide guidance on resolving non-fiber optic cable TV interference caused by amateur radio transmissions."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the installation of a band-reject filter",
+          "software": "SVG",
+          "caption": "Band-Reject Filter Installation",
+          "label": "fig:band-reject"
+        },
+        {
+          "prompt": "Illustration of RF feedback symptoms in a transmitter",
+          "software": "SVG",
+          "caption": "RF Feedback Symptoms",
+          "label": "fig:rf-feedback"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Comparison of different methods to address TVI and RF feedback",
+          "caption": "Methods to Address TVI and RF Feedback",
+          "label": "tab:tvi-rf-feedback"
+        }
+      ]
+    }
+  ]
+}

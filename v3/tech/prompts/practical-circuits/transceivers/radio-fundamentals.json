@@ -1,0 +1,103 @@
+{
+  "section_title": "Fundamentals of Radios",
+  "label": "sec:radio-fundamentals",
+  "section_label": "sec:radio-fundamentals",
+  "subsections": [
+    {
+      "title": "Receiver Sensitivity and Selectivity",
+      "label": "subsec:rx-sense-select",
+      "questions": ["T7A01", "T7A04"],
+      "concepts": ["Sensitivity", "Selectivity"],
+      "prompts": [
+        "Explain the concept of receiver sensitivity in radio technology, including how it is measured and its importance in detecting weak signals.",
+        "Describe the concept of receiver selectivity, focusing on how it allows a receiver to discriminate between multiple signals and its role in reducing interference.",
+        "Compare and contrast sensitivity and selectivity, highlighting their respective roles in receiver performance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the relationship between sensitivity and signal detection in a radio receiver.",
+          "software": "SVG",
+          "caption": "Sensitivity in Radio Receivers",
+          "label": "fig:sensitivity-diagram"
+        },
+        {
+          "prompt": "Diagram showing how selectivity filters out unwanted signals in a radio receiver.",
+          "software": "SVG",
+          "caption": "Selectivity in Radio Receivers",
+          "label": "fig:selectivity-diagram"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing sensitivity and selectivity, including definitions, measurement methods, and their impact on receiver performance.",
+        "caption": "Comparison of Sensitivity and Selectivity",
+        "label": "tab:sensitivity-selectivity"
+      }
+    },
+    {
+      "title": "Mixer, Oscillator, Frequency Conversion",
+      "label": "subsec:mixer-osc",
+      "questions": ["T7A03", "T7A05"],
+      "concepts": ["Mixer", "Oscillator", "Frequency Conversion"],
+      "prompts": [
+        "Explain the role of a mixer in radio technology, including how it performs frequency conversion and its importance in signal processing.",
+        "Describe the function of an oscillator in generating a signal at a specific frequency, including its role in frequency synthesis and modulation.",
+        "Discuss the process of frequency conversion, highlighting the interaction between mixers and oscillators in radio systems."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Block diagram of a mixer circuit showing input, output, and local oscillator connections.",
+          "software": "SVG",
+          "caption": "Mixer Circuit Diagram",
+          "label": "fig:mixer-diagram"
+        },
+        {
+          "prompt": "Diagram of an oscillator circuit generating a specific frequency signal.",
+          "software": "SVG",
+          "caption": "Oscillator Circuit Diagram",
+          "label": "fig:oscillator-diagram"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key components and functions of mixers and oscillators in frequency conversion.",
+        "caption": "Mixer and Oscillator Functions",
+        "label": "tab:mixer-oscillator"
+      }
+    },
+    {
+      "title": "Transverter, PTT lines, etc.",
+      "label": "subsec:transverter-ptt",
+      "questions": ["T7A06", "T7A07", "T7A08"],
+      "concepts": ["Transverter", "PTT (Push-to-Talk)", "Modulation"],
+      "prompts": [
+        "Explain the function of a transverter in radio systems, including how it converts RF input and output to another band.",
+        "Describe the role of the PTT (Push-to-Talk) input in a transceiver, including how it switches between receive and transmit modes.",
+        "Discuss the concept of modulation, focusing on how speech is combined with an RF carrier signal and its importance in radio communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Block diagram of a transverter showing frequency conversion between bands.",
+          "software": "SVG",
+          "caption": "Transverter Block Diagram",
+          "label": "fig:transverter-diagram"
+        },
+        {
+          "prompt": "Diagram illustrating the PTT (Push-to-Talk) mechanism in a transceiver.",
+          "software": "SVG",
+          "caption": "PTT Mechanism in Transceivers",
+          "label": "fig:ptt-diagram"
+        },
+        {
+          "prompt": "Diagram showing the process of modulation, combining speech with an RF carrier signal.",
+          "software": "SVG",
+          "caption": "Modulation Process",
+          "label": "fig:modulation-diagram"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the functions of transverters, PTT lines, and modulation in radio communication.",
+        "caption": "Functions of Transverters, PTT, and Modulation",
+        "label": "tab:transverter-ptt-modulation"
+      }
+    }
+  ]
+}

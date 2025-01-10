@@ -1,0 +1,102 @@
+\subsection{Doppler Shift, Tracking, Avoiding Excess Power}
+\label{subsec:sat-tracking}
+
+\subsubsection*{Doppler Shift in Satellite Communications}
+When you're communicating with a satellite, one of the fascinating phenomena you'll encounter is the Doppler shift. Imagine you're standing on a train platform, and a train is zooming past you while blowing its horn. As the train approaches, the pitch of the horn sounds higher, and as it moves away, the pitch drops. This is the Doppler effect in action, and it happens with radio waves too! In satellite communications, the Doppler shift refers to the change in frequency of the signal due to the relative motion between the satellite and the Earth station. If the satellite is moving towards you, the frequency of the signal increases, and if it's moving away, the frequency decreases. This effect is crucial to account for, especially in low Earth orbit (LEO) satellites, where the relative speed is significant.
+
+The Doppler shift can be calculated using the formula:
+\begin{equation}
+    f' = f \left( \frac{c \pm v}{c \mp v} \right)
+\end{equation}
+where \( f' \) is the observed frequency, \( f \) is the transmitted frequency, \( c \) is the speed of light, and \( v \) is the relative velocity between the satellite and the Earth station. The plus and minus signs depend on whether the satellite is approaching or receding.
+
+\subsubsection*{Satellite Tracking Programs}
+Satellite tracking programs are like your GPS for the sky. They help you figure out where the satellite is, when it will be overhead, and even what frequency you should be listening to, considering the Doppler shift. These programs take in a set of inputs, such as the Keplerian elements (which describe the satellite's orbit), and provide outputs like the time, azimuth, and elevation of the satellite's pass. They also give you the apparent frequency of the satellite's transmission, taking into account the Doppler shift. So, if you're planning to communicate with a satellite, these programs are your best friend.
+
+\subsubsection*{Avoiding Excessive Effective Radiated Power}
+Now, let's talk about power. While it might be tempting to crank up the power on your uplink to make sure the satellite hears you, this can actually cause more harm than good. Using excessive effective radiated power (ERP) can block access to the satellite for other users. Imagine shouting into a crowded room—everyone else will have a hard time hearing anything else. The same principle applies here. Excessive power can also lead to other issues, like overloading the satellite's batteries or even causing it to reboot. So, it's important to use just enough power to get your signal across without stepping on anyone else's toes.
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B02}]
+What is the impact of using excessive effective radiated power on a satellite uplink?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Possibility of commanding the satellite to an improper mode
+    \item \textbf{Blocking access by other users}
+    \item Overloading the satellite batteries
+    \item Possibility of rebooting the satellite control computer
+\end{enumerate}
+\end{tcolorbox}
+Using excessive ERP can block access to the satellite for other users, making it difficult for them to communicate. This is similar to shouting in a crowded room, where your voice drowns out others.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B03}]
+Which of the following are provided by satellite tracking programs?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Maps showing the real-time position of the satellite track over Earth
+    \item The time, azimuth, and elevation of the start, maximum altitude, and end of a pass
+    \item The apparent frequency of the satellite transmission, including effects of Doppler shift
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+Satellite tracking programs provide all the listed outputs, including real-time position maps, pass details, and frequency adjustments for Doppler shift.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B06}]
+Which of the following are inputs to a satellite tracking program?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The satellite transmitted power
+    \item \textbf{The Keplerian elements}
+    \item The last observed time of zero Doppler shift
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+The Keplerian elements are the primary inputs to a satellite tracking program, as they describe the satellite's orbit. The other options are not typically used as inputs.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B07}]
+What is Doppler shift in reference to satellite communications?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item A change in the satellite orbit
+    \item A mode where the satellite receives signals on one band and transmits on another
+    \item \textbf{An observed change in signal frequency caused by relative motion between the satellite and Earth station}
+    \item A special digital communications mode for some satellites
+\end{enumerate}
+\end{tcolorbox}
+Doppler shift is the change in frequency of the signal due to the relative motion between the satellite and the Earth station. This effect is crucial to account for in satellite communications.
+
+\subsubsection*{Figures}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{doppler-shift.png}
+    \caption{Doppler Shift Effect on Signal Frequency}
+    \label{fig:doppler-shift}
+    % Prompt: Graph illustrating the Doppler shift effect on signal frequency over time.
+    % Software: gnuplot
+    % Description: A plot showing the frequency of a signal as a satellite approaches and recedes from an Earth station.
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{sat-tracking.png}
+    \caption{Satellite Position and Tracking Data}
+    \label{fig:sat-tracking}
+    % Prompt: Diagram showing the relationship between satellite position and tracking data.
+    % Software: Graphviz
+    % Description: A diagram illustrating how satellite position data is used to generate tracking information.
+\end{figure}
+
+\subsubsection*{Table}
+
+\begin{table}[h!]
+    \centering
+    \caption{Satellite Tracking Program Inputs and Outputs}
+    \label{tab:tracking-inputs-outputs}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Inputs} & \textbf{Outputs} \\
+        \hline
+        Keplerian elements & Time, azimuth, and elevation of pass \\
+        & Apparent frequency (with Doppler shift) \\
+        & Real-time position maps \\
+        \hline
+    \end{tabular}
+\end{table}

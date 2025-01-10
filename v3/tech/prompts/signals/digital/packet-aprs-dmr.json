@@ -1,0 +1,168 @@
+{
+  "section_title": "Packet, APRS, DMR, etc.",
+  "label": "sec:packet-aprs-dmr",
+  "section_label": "sec:packet-aprs-dmr",
+  "subsections": [
+    {
+      "title": "Packet Basics",
+      "label": "subsec:packet-basics",
+      "questions": ["T8D01", "T8D08", "T8D09"],
+      "concepts": ["Packet Radio", "Error Detection", "Automatic Repeat Request", "Morse Code"],
+      "prompts": [
+        "Explain the concept of packet radio, including its purpose and how it differs from other digital communication modes.",
+        "Describe the role of error detection in packet radio transmissions, including the use of checksums.",
+        "Discuss the automatic repeat request (ARQ) mechanism in packet radio and how it ensures reliable communication.",
+        "Clarify the relationship between Morse code (CW) and packet radio, if any, and explain why Morse code is considered a digital mode."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a packet radio transmission, including headers, payload, and checksum.",
+          "software": "SVG",
+          "caption": "Structure of a Packet Radio Transmission",
+          "label": "fig:packet-structure"
+        },
+        {
+          "prompt": "Flowchart illustrating the automatic repeat request (ARQ) process in packet radio.",
+          "software": "Graphviz",
+          "caption": "ARQ Process in Packet Radio",
+          "label": "fig:arq-process"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing packet radio with other digital communication modes (e.g., FT8, DMR) in terms of bandwidth, error detection, and use cases.",
+          "caption": "Comparison of Digital Communication Modes",
+          "label": "tab:digital-mode-comparison"
+        }
+      ]
+    },
+    {
+      "title": "APRS",
+      "label": "subsec:aprs2",
+      "questions": ["T8D03", "T8D05"],
+      "concepts": ["APRS", "GPS Data", "Text Messaging", "Weather Data", "Real-Time Tactical Communication"],
+      "prompts": [
+        "Explain the purpose and functionality of APRS (Automatic Packet Reporting System) in amateur radio.",
+        "Describe the types of data that can be transmitted via APRS, including GPS position data, text messages, and weather data.",
+        "Discuss the real-time tactical communication applications of APRS, particularly in conjunction with map-based station location tracking."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the components of an APRS system, including GPS, transceiver, and mapping software.",
+          "software": "SVG",
+          "caption": "Components of an APRS System",
+          "label": "fig:aprs-components"
+        },
+        {
+          "prompt": "Map visualization showing APRS station locations and data transmission paths.",
+          "software": "web",
+          "caption": "APRS Station Locations and Data Paths",
+          "label": "fig:aprs-map"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the types of data transmitted by APRS and their applications.",
+          "caption": "APRS Data Types and Applications",
+          "label": "tab:aprs-data-types"
+        }
+      ]
+    },
+    {
+      "title": "DMR Talkgroups",
+      "label": "subsec:dmr-talkgroups2",
+      "questions": ["T8D02", "T8D07"],
+      "concepts": ["DMR", "Talkgroups", "Time-Multiplexing", "Digital Voice Signals"],
+      "prompts": [
+        "Explain the concept of talkgroups in DMR (Digital Mobile Radio) and how they enable channel sharing among users.",
+        "Describe the time-multiplexing technique used in DMR to transmit two digital voice signals on a single 12.5 kHz repeater channel.",
+        "Discuss the advantages of DMR talkgroups for group communication and how they reduce interference from other users."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the time-multiplexing process in DMR, showing how two voice signals share a single channel.",
+          "software": "SVG",
+          "caption": "Time-Multiplexing in DMR",
+          "label": "fig:dmr-time-multiplexing"
+        },
+        {
+          "prompt": "Flowchart showing how talkgroups are organized and accessed in a DMR repeater system.",
+          "software": "Graphviz",
+          "caption": "DMR Talkgroup Organization",
+          "label": "fig:dmr-talkgroups"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing DMR talkgroups with other channel-sharing methods, such as CTCSS and CDMA.",
+          "caption": "Comparison of Channel-Sharing Methods",
+          "label": "tab:channel-sharing-comparison"
+        }
+      ]
+    },
+    {
+      "title": "Mesh Networks",
+      "label": "subsec:mesh",
+      "questions": ["T8D12"],
+      "concepts": ["Mesh Networks", "Wi-Fi Equipment", "Data Network"],
+      "prompts": [
+        "Explain the concept of amateur radio mesh networks and how they differ from traditional repeater networks.",
+        "Describe the use of commercial Wi-Fi equipment with modified firmware in amateur radio mesh networks.",
+        "Discuss the advantages of mesh networks for data transmission in amateur radio, particularly in emergency communication scenarios."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the topology of an amateur radio mesh network, including nodes and data paths.",
+          "software": "SVG",
+          "caption": "Amateur Radio Mesh Network Topology",
+          "label": "fig:mesh-topology"
+        },
+        {
+          "prompt": "Illustration of modified Wi-Fi equipment used in amateur radio mesh networks.",
+          "software": "web",
+          "caption": "Modified Wi-Fi Equipment for Mesh Networks",
+          "label": "fig:mesh-wifi"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing mesh networks with traditional repeater networks in terms of scalability, reliability, and use cases.",
+          "caption": "Comparison of Mesh Networks and Repeater Networks",
+          "label": "tab:mesh-repeater-comparison"
+        }
+      ]
+    },
+    {
+      "title": "FT8 and Weak-Signal Modes",
+      "label": "subsec:ft8-weak",
+      "questions": ["T8D10", "T8D13"],
+      "concepts": ["FT8", "Weak-Signal Modes", "WSJT-X", "Earth-Moon-Earth", "Meteor Scatter"],
+      "prompts": [
+        "Explain the FT8 digital mode, including its characteristics and suitability for low signal-to-noise operation.",
+        "Describe the weak-signal propagation modes supported by the WSJT-X software suite, such as Earth-Moon-Earth (EME) and meteor scatter.",
+        "Discuss the advantages of FT8 and other weak-signal modes for long-distance communication under challenging propagation conditions."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the FT8 signal structure and its key features, such as forward error correction.",
+          "software": "SVG",
+          "caption": "FT8 Signal Structure",
+          "label": "fig:ft8-structure"
+        },
+        {
+          "prompt": "Illustration of Earth-Moon-Earth (EME) communication using FT8.",
+          "software": "web",
+          "caption": "Earth-Moon-Earth Communication with FT8",
+          "label": "fig:eme-ft8"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the weak-signal modes supported by WSJT-X and their applications.",
+          "caption": "Weak-Signal Modes in WSJT-X",
+          "label": "tab:wsjt-x-modes"
+        }
+      ]
+    }
+  ]
+}

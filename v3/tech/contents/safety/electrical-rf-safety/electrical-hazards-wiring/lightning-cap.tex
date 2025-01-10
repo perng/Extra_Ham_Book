@@ -1,0 +1,84 @@
+\subsection{Lightning Arrestors, Capacitor Discharge}
+\label{subsec:lightning-cap}
+
+\subsubsection*{Lightning Arrestors}
+Lightning arrestors are like the unsung heroes of your radio setup. They protect your equipment from the wrath of lightning strikes, which can induce high voltages in your coaxial feed lines. The best place to install a lightning arrester is on a grounded panel near where the feed lines enter the building. This placement ensures that any high voltage induced by lightning is safely diverted to the ground before it can reach your precious transceiver or other equipment. For a visual representation, check out Figure~\ref{fig:lightning-arrester}.
+
+\subsubsection*{Capacitor Discharge}
+Now, let's talk about capacitors. These little guys store energy, and when you turn off a power supply, they can still hold a charge. This stored charge can be dangerous if not handled properly. Imagine reaching into a power supply and getting zapped by the charge stored in the filter capacitors—ouch! Always discharge capacitors safely before working on any equipment. Figure~\ref{fig:capacitor-charge} illustrates this concept.
+
+\subsubsection*{Battery Hazards}
+Batteries are another area where caution is key. Charging or discharging a battery too quickly can lead to overheating or out-gassing. Overheating can damage the battery, and out-gassing can release harmful chemicals. Always follow the manufacturer's guidelines for charging and discharging batteries to avoid these hazards. Figure~\ref{fig:battery-hazards} shows the potential dangers of rapid battery charging.
+
+\begin{table}[h]
+    \centering
+    \caption{Hazards in Electrical Systems}
+    \label{tab:electrical-hazards}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Hazard} & \textbf{Description} \\
+        \hline
+        Lightning Arrestors & High voltage from lightning strikes can damage equipment. \\
+        Capacitor Discharge & Stored charge in capacitors can cause electric shock. \\
+        Battery Hazards & Rapid charging/discharging can cause overheating and out-gassing. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{lightning-arrester.svg}
+    \caption{Lightning Arrester Installation}
+    \label{fig:lightning-arrester}
+    % Diagram showing the installation of a lightning arrester in a coaxial feed line near the building entry point.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{battery-hazards.svg}
+    \caption{Battery Charging Hazards}
+    \label{fig:battery-hazards}
+    % Illustration of the hazards of rapid battery charging, including overheating and out-gassing.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{capacitor-charge.svg}
+    \caption{Charge Stored in Filter Capacitors}
+    \label{fig:capacitor-charge}
+    % Diagram showing the charge stored in filter capacitors in a power supply after it is turned off.
+\end{figure}
+
+\subsubsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0A07}]
+    Where should a lightning arrester be installed in a coaxial feed line?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item At the output connector of a transceiver
+        \item At the antenna feed point
+        \item At the ac power service panel
+        \item \textbf{On a grounded panel near where feed lines enter the building}
+    \end{enumerate}
+\end{tcolorbox}
+The correct placement for a lightning arrester is on a grounded panel near where the feed lines enter the building. This ensures that any high voltage from lightning is safely diverted to the ground before it can reach your equipment.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0A10}]
+    What hazard is caused by charging or discharging a battery too quickly?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Overheating or out-gassing}
+        \item Excess output ripple
+        \item Half-wave rectification
+        \item Inverse memory effect
+    \end{enumerate}
+\end{tcolorbox}
+Charging or discharging a battery too quickly can cause overheating or out-gassing, which can damage the battery and release harmful chemicals.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0A11}]
+    What hazard exists in a power supply immediately after turning it off?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Circulating currents in the dc filter
+        \item Leakage flux in the power transformer
+        \item Voltage transients from kickback diodes
+        \item \textbf{Charge stored in filter capacitors}
+    \end{enumerate}
+\end{tcolorbox}
+After turning off a power supply, the charge stored in the filter capacitors can still be present, posing a risk of electric shock if not properly discharged.

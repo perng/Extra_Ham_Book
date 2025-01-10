@@ -1,0 +1,123 @@
+{
+  "section_title": "Dipoles, Verticals, Beams",
+  "label": "sec:dipoles-verticals-beams",
+  "subsections": [
+    {
+      "title": "Dipole Basics",
+      "label": "subsec:dipole",
+      "questions": ["T9A03", "T9A04", "T9A05", "T9A09", "T9A10"],
+      "concepts": ["Dipole Antenna", "Horizontally Polarized Antenna", "Antenna Efficiency", "Resonant Frequency", "Half-Wavelength Dipole", "Radiation Pattern"],
+      "prompts": [
+        "Explain the concept of a dipole antenna and its orientation relative to Earth's surface.",
+        "Discuss the efficiency of short, flexible antennas compared to full-sized quarter-wave antennas.",
+        "Describe how the resonant frequency of a dipole antenna can be increased or decreased.",
+        "Calculate the approximate length of a half-wavelength dipole antenna for a given frequency.",
+        "Explain the radiation pattern of a half-wave dipole antenna and the direction of its strongest signal."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a dipole antenna showing its orientation and radiation pattern.",
+          "software": "SVG",
+          "caption": "Dipole Antenna Orientation and Radiation Pattern",
+          "label": "fig:dipole-orientation"
+        },
+        {
+          "prompt": "Comparison of short flexible antenna vs. full-sized quarter-wave antenna.",
+          "software": "SVG",
+          "caption": "Comparison of Antenna Types",
+          "label": "fig:antenna-comparison"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing the characteristics of different dipole antenna lengths and their resonant frequencies.",
+        "caption": "Comparison of Dipole Antenna Lengths and Resonant Frequencies",
+        "label": "tab:dipole-lengths"
+      }
+    },
+    {
+      "title": "Vertical Antennas, Ground-Planes",
+      "label": "subsec:verticals",
+      "questions": ["T9A01", "T9A08"],
+      "concepts": ["Vertical Antenna", "Ground-Plane Antenna", "Quarter-Wavelength Vertical Antenna"],
+      "prompts": [
+        "Explain the concept of a vertical antenna and its typical applications.",
+        "Describe the construction and function of a ground-plane antenna.",
+        "Calculate the approximate length of a quarter-wavelength vertical antenna for a given frequency."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a vertical antenna with ground plane.",
+          "software": "SVG",
+          "caption": "Vertical Antenna with Ground Plane",
+          "label": "fig:vertical-antenna"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table showing the lengths of quarter-wavelength vertical antennas for different frequencies.",
+        "caption": "Quarter-Wavelength Vertical Antenna Lengths",
+        "label": "tab:vertical-lengths"
+      }
+    },
+    {
+      "title": "Beam/Yagi, Gain Concepts",
+      "label": "subsec:beam-yagi",
+      "questions": ["T9A02", "T9A06", "T9A11"],
+      "concepts": ["Beam Antenna", "Yagi Antenna", "Antenna Gain", "Antenna Loading"],
+      "prompts": [
+        "Explain the concept of a beam antenna and how it concentrates signals in one direction.",
+        "Describe the structure and function of a Yagi antenna.",
+        "Discuss the concept of antenna gain and how it is measured relative to a reference antenna.",
+        "Explain the process of antenna loading and its effects on antenna performance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a Yagi antenna showing its elements and radiation pattern.",
+          "software": "SVG",
+          "caption": "Yagi Antenna Structure and Radiation Pattern",
+          "label": "fig:yagi-antenna"
+        },
+        {
+          "prompt": "Illustration of antenna gain compared to an isotropic radiator.",
+          "software": "SVG",
+          "caption": "Antenna Gain Comparison",
+          "label": "fig:antenna-gain"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing the gain of different types of antennas, including Yagi, isotropic, and J-pole.",
+        "caption": "Comparison of Antenna Gain",
+        "label": "tab:antenna-gain"
+      }
+    },
+    {
+      "title": "Mobile Antennas",
+      "label": "subsec:mobile",
+      "questions": ["T9A07", "T9A12"],
+      "concepts": ["Mobile Antenna", "VHF/UHF Whip Antenna", "Shielding Effect", "5/8 Wavelength Whip Antenna"],
+      "prompts": [
+        "Discuss the challenges of using a handheld VHF transceiver with a flexible antenna inside a vehicle.",
+        "Explain the advantages of a 5/8 wavelength whip antenna for VHF or UHF mobile service.",
+        "Describe the shielding effect of a vehicle on mobile antenna performance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a mobile antenna setup inside a vehicle showing the shielding effect.",
+          "software": "SVG",
+          "caption": "Mobile Antenna Shielding Effect",
+          "label": "fig:mobile-shielding"
+        },
+        {
+          "prompt": "Comparison of 1/4-wavelength and 5/8-wavelength whip antennas.",
+          "software": "SVG",
+          "caption": "Comparison of Whip Antennas",
+          "label": "fig:whip-comparison"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing the performance of 1/4-wavelength and 5/8-wavelength whip antennas.",
+        "caption": "Comparison of Whip Antenna Performance",
+        "label": "tab:whip-performance"
+      }
+    }
+  ]
+}

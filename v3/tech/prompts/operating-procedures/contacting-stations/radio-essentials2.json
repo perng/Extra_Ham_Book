@@ -1,0 +1,144 @@
+{
+  "section_title": "Radio Operating Essentials",
+  "label": "sec:radio-essentials2",
+  "subsections": [
+    {
+      "title": "Repeater Use, Reverse Function, Tones",
+      "label": "subsec:repeater-use",
+      "questions": [
+        "T2B01",
+        "T2B02",
+        "T2B03",
+        "T2B04",
+        "T2B05",
+        "T2B06",
+        "T2B07",
+        "T2B08",
+        "T2B09",
+        "T2B10",
+        "T2B11",
+        "T2B12",
+        "T2B13"
+      ],
+      "concepts": [
+        "Reverse Function",
+        "CTCSS",
+        "Linked Repeater Network",
+        "Repeater Access Issues",
+        "FM Transmission Distortion",
+        "DTMF",
+        "Digital Repeater Talkgroup",
+        "Frequency Interference",
+        "Simplex Channels",
+        "Q Signals",
+        "DMR Color Code",
+        "Squelch Function"
+      ],
+      "prompts": [
+        "Explain the purpose and usage of the 'reverse' function in VHF/UHF transceivers, focusing on its role in listening to repeater input frequencies.",
+        "Describe the concept of CTCSS and its role in opening the squelch of a receiver during voice transmissions.",
+        "Discuss the structure and functionality of a linked repeater network, including how signals are transmitted across multiple repeaters.",
+        "Analyze common issues that prevent access to a repeater despite hearing its output, such as improper offset, incorrect CTCSS tone, or DCS code.",
+        "Explain the causes of FM transmission audio distortion on voice peaks and how to mitigate this issue.",
+        "Define DTMF and explain its use in radio communication, particularly in signaling.",
+        "Describe the process of joining a digital repeater's talkgroup, including the necessary programming steps.",
+        "Discuss the protocol for handling frequency interference between two stations transmitting on the same frequency.",
+        "Explain the purpose of simplex channels in VHF/UHF band plans and their advantages over repeater use.",
+        "Define and explain the use of Q signals such as QRM and QSY in radio communication.",
+        "Describe the purpose of the color code in DMR repeater systems and its role in repeater access.",
+        "Explain the function of the squelch in a radio receiver and its importance in muting audio when no signal is present."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the 'reverse' function in a VHF/UHF transceiver, showing the flow of signals between the repeater and the transceiver.",
+          "software": "SVG",
+          "caption": "Reverse Function in VHF/UHF Transceiver",
+          "label": "fig:reverse-function"
+        },
+        {
+          "prompt": "Flowchart of a linked repeater network, showing how signals are transmitted across multiple repeaters.",
+          "software": "Graphviz",
+          "caption": "Linked Repeater Network",
+          "label": "fig:linked-repeater"
+        },
+        {
+          "prompt": "Diagram showing the relationship between CTCSS tones and squelch activation in a receiver.",
+          "software": "SVG",
+          "caption": "CTCSS and Squelch Activation",
+          "label": "fig:ctcss-squelch"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing common Q signals and their meanings in radio communication.",
+          "caption": "Common Q Signals and Their Meanings",
+          "label": "tab:q-signals"
+        }
+      ]
+    },
+    {
+      "title": "Nets, Traffic Handling",
+      "label": "subsec:nets-traffic",
+      "questions": [
+        "T2C01",
+        "T2C02",
+        "T2C03",
+        "T2C04",
+        "T2C05",
+        "T2C06",
+        "T2C07",
+        "T2C08",
+        "T2C09",
+        "T2C10",
+        "T2C11"
+      ],
+      "concepts": [
+        "FCC Rules in Amateur Radio",
+        "Net Control Station Duties",
+        "Phonetic Alphabet Usage",
+        "RACES",
+        "Traffic in Net Operations",
+        "ARES",
+        "Net Participation Protocol",
+        "Traffic Handling Best Practices",
+        "Frequency Privileges in Emergencies",
+        "Radiogram Preamble",
+        "Radiogram Header Check"
+      ],
+      "prompts": [
+        "Explain the applicability of FCC rules to amateur radio operations, including exceptions during emergencies.",
+        "Describe the typical duties of a Net Control Station, including their role in organizing and directing communications.",
+        "Discuss the use of the phonetic alphabet in ensuring accurate reception of unusual words in voice messages.",
+        "Define RACES and explain its role in civil defense communications during national emergencies.",
+        "Explain the term 'traffic' in the context of net operations and its significance in message exchange.",
+        "Describe the Amateur Radio Emergency Service (ARES) and its role in public service communications.",
+        "Outline the standard practices for participating in a net, including protocols for transmitting and responding to the net control station.",
+        "Discuss the characteristics of good traffic handling, emphasizing the importance of passing messages exactly as received.",
+        "Explain the conditions under which amateur station control operators are permitted to operate outside their licensed frequency privileges.",
+        "Describe the information contained in the preamble of a formal traffic message and its purpose in message tracking.",
+        "Define the term 'check' in a radiogram header and explain its significance in message handling."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a typical net operation, including the roles of the net control station and participating stations.",
+          "software": "Graphviz",
+          "caption": "Structure of a Net Operation",
+          "label": "fig:net-structure"
+        },
+        {
+          "prompt": "Flowchart illustrating the process of handling traffic in a net, from message reception to delivery.",
+          "software": "Graphviz",
+          "caption": "Traffic Handling Process in a Net",
+          "label": "fig:traffic-handling"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key components of a radiogram preamble and their purposes.",
+          "caption": "Components of a Radiogram Preamble",
+          "label": "tab:radiogram-preamble"
+        }
+      ]
+    }
+  ]
+}

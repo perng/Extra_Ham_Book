@@ -1,0 +1,138 @@
+{
+  "section_title": "Radio/Audio Controls",
+  "label": "sec:radio-audio-ctrls",
+  "subsections": [
+    {
+      "title": "Mic Gain, Squelch, etc.",
+      "label": "subsec:mic-squelch",
+      "questions": [
+        "T4B01",
+        "T4B02",
+        "T4B03",
+        "T4B04",
+        "T4B05",
+        "T4B06",
+        "T4B07",
+        "T4B08",
+        "T4B09",
+        "T4B10",
+        "T4B11",
+        "T4B12"
+      ],
+      "concepts": [
+        "Microphone Gain",
+        "Squelch",
+        "Frequency Entry Methods",
+        "Memory Channels",
+        "Scanning Function",
+        "RIT/Clarifier",
+        "DMR Code Plug",
+        "Receive Bandwidth",
+        "Digital Voice Group Selection",
+        "Receiver Filter Bandwidth",
+        "D-STAR Configuration",
+        "FM Receiver Tuning"
+      ],
+      "prompts": [
+        "Explain the concept of microphone gain and its impact on SSB transmissions. Discuss how excessive gain can lead to distorted audio and why this is problematic.",
+        "Describe the various methods for entering a transceiver's operating frequency, including the use of a keypad or VFO knob. Compare these methods with other frequency entry techniques.",
+        "Discuss the purpose of squelch in FM receivers and how adjusting the squelch threshold can help in receiving weak signals. Provide examples of scenarios where this adjustment is necessary.",
+        "Explain the concept of memory channels in transceivers and how they can be used to quickly access favorite frequencies. Discuss the advantages of using memory channels over manual frequency entry.",
+        "Describe the scanning function in FM transceivers and how it helps in monitoring a range of frequencies for activity. Discuss the benefits of scanning in different operating environments.",
+        "Explain the role of the RIT (Receiver Incremental Tuning) or Clarifier in adjusting the pitch of SSB signals. Discuss how this feature can be used to correct pitch discrepancies during communication.",
+        "Discuss the purpose and contents of a DMR code plug, including how it stores access information for repeaters and talkgroups. Explain how this simplifies the operation of DMR transceivers.",
+        "Explain the concept of receive bandwidth in multimode transceivers and how selecting the appropriate bandwidth can reduce noise and interference. Provide examples of bandwidth settings for different modes.",
+        "Describe how a specific group of stations is selected on a digital voice transceiver, including the use of identification codes. Discuss the advantages of group selection in digital communication.",
+        "Discuss the importance of receiver filter bandwidth in SSB reception and how it affects the signal-to-noise ratio. Compare different bandwidth settings and their impact on audio quality.",
+        "Explain the configuration requirements for a D-STAR digital transceiver, including the necessity of programming your call sign before transmitting. Discuss the implications of incorrect configuration.",
+        "Describe the effects of tuning an FM receiver above or below a signal's frequency, including the resulting audio distortion. Discuss how this can impact communication quality."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between microphone gain and audio distortion in SSB transmissions",
+          "software": "SVG",
+          "caption": "Impact of Microphone Gain on SSB Transmissions",
+          "label": "fig:mic-gain-distortion"
+        },
+        {
+          "prompt": "Illustration of a transceiver's keypad and VFO knob for frequency entry",
+          "software": "SVG",
+          "caption": "Frequency Entry Methods on a Transceiver",
+          "label": "fig:frequency-entry"
+        },
+        {
+          "prompt": "Graph showing the effect of squelch threshold adjustment on weak FM signal reception",
+          "software": "gnuplot",
+          "caption": "Squelch Threshold Adjustment for Weak FM Signals",
+          "label": "fig:squelch-threshold"
+        },
+        {
+          "prompt": "Diagram of a transceiver's memory channel interface for quick frequency access",
+          "software": "SVG",
+          "caption": "Memory Channel Interface for Quick Frequency Access",
+          "label": "fig:memory-channel"
+        },
+        {
+          "prompt": "Flowchart of the scanning function in an FM transceiver",
+          "software": "Graphviz",
+          "caption": "FM Transceiver Scanning Function",
+          "label": "fig:scanning-function"
+        },
+        {
+          "prompt": "Diagram illustrating the use of RIT/Clarifier in SSB signal pitch adjustment",
+          "software": "SVG",
+          "caption": "RIT/Clarifier in SSB Signal Pitch Adjustment",
+          "label": "fig:rit-clarifier"
+        },
+        {
+          "prompt": "Illustration of a DMR code plug and its contents",
+          "software": "SVG",
+          "caption": "Contents of a DMR Code Plug",
+          "label": "fig:dmr-code-plug"
+        },
+        {
+          "prompt": "Graph comparing different receive bandwidth settings and their impact on noise reduction",
+          "software": "gnuplot",
+          "caption": "Receive Bandwidth Settings and Noise Reduction",
+          "label": "fig:receive-bandwidth"
+        },
+        {
+          "prompt": "Diagram showing the process of selecting a group of stations on a digital voice transceiver",
+          "software": "SVG",
+          "caption": "Group Selection on a Digital Voice Transceiver",
+          "label": "fig:group-selection"
+        },
+        {
+          "prompt": "Graph showing the relationship between receiver filter bandwidth and signal-to-noise ratio in SSB reception",
+          "software": "gnuplot",
+          "caption": "Receiver Filter Bandwidth and Signal-to-Noise Ratio",
+          "label": "fig:filter-bandwidth"
+        },
+        {
+          "prompt": "Diagram of a D-STAR transceiver configuration interface",
+          "software": "SVG",
+          "caption": "D-STAR Transceiver Configuration Interface",
+          "label": "fig:dstar-config"
+        },
+        {
+          "prompt": "Graph illustrating the effects of tuning an FM receiver above or below a signal's frequency",
+          "software": "gnuplot",
+          "caption": "Effects of FM Receiver Tuning",
+          "label": "fig:fm-tuning"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different receiver filter bandwidths and their impact on SSB reception",
+          "caption": "Comparison of Receiver Filter Bandwidths for SSB Reception",
+          "label": "tab:filter-bandwidth-comparison"
+        },
+        {
+          "prompt": "Table summarizing the effects of excessive microphone gain on SSB transmissions",
+          "caption": "Effects of Excessive Microphone Gain on SSB Transmissions",
+          "label": "tab:mic-gain-effects"
+        }
+      ]
+    }
+  ]
+}

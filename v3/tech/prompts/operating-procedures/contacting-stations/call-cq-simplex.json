@@ -1,0 +1,78 @@
+{
+  "section_title": "Simplex vs. Duplex, Calling CQ",
+  "label": "sec:call-cq-simplex",
+  "section_label": "sec:call-cq-simplex",
+  "subsections": [
+    {
+      "title": "Offsets, National Calling Frequencies",
+      "label": "subsec:offsets-national",
+      "questions": [
+        "T2A01",
+        "T2A02",
+        "T2A03",
+        "T2A04",
+        "T2A05",
+        "T2A06",
+        "T2A07",
+        "T2A08",
+        "T2A09",
+        "T2A10",
+        "T2A11",
+        "T2A12"
+      ],
+      "concepts": [
+        "Repeater Frequency Offset",
+        "National Calling Frequency",
+        "FM Simplex Operations",
+        "Repeater Operations",
+        "Procedural Signal CQ",
+        "Band Plan",
+        "Simplex Communication"
+      ],
+      "prompts": [
+        "Explain the concept of repeater frequency offset, including its purpose and common values in the 2 meter and 70 cm bands.",
+        "Describe the national calling frequency for FM simplex operations in the 2 meter band and its significance.",
+        "Discuss the appropriate procedure for calling another station on a repeater when you know the other station's call sign.",
+        "Explain how to respond to a station calling CQ and the importance of proper identification.",
+        "Describe the requirements for making on-the-air test transmissions, including the need for station identification.",
+        "Explain the meaning of the procedural signal 'CQ' and its use in amateur radio operations.",
+        "Discuss how a station indicates that it is listening on a repeater and looking for a contact.",
+        "Explain the concept of a band plan and its role in amateur radio operations beyond FCC privileges.",
+        "Define simplex communication and contrast it with duplex communication.",
+        "Describe the steps to take before calling CQ to ensure proper frequency usage and etiquette."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between repeater transmit and receive frequencies with offset.",
+          "software": "SVG",
+          "caption": "Repeater Frequency Offset Diagram",
+          "label": "fig:repeater-offset"
+        },
+        {
+          "prompt": "Illustration of the 2 meter band with the national calling frequency highlighted.",
+          "software": "SVG",
+          "caption": "2 Meter Band National Calling Frequency",
+          "label": "fig:2m-calling-frequency"
+        },
+        {
+          "prompt": "Flowchart showing the steps for calling another station on a repeater.",
+          "software": "Graphviz",
+          "caption": "Procedure for Calling a Station on a Repeater",
+          "label": "fig:repeater-calling-procedure"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing common repeater frequency offsets for the 2 meter and 70 cm bands.",
+          "caption": "Common Repeater Frequency Offsets",
+          "label": "tab:repeater-offsets"
+        },
+        {
+          "prompt": "Table summarizing the national calling frequencies for different amateur radio bands.",
+          "caption": "National Calling Frequencies",
+          "label": "tab:national-calling-frequencies"
+        }
+      ]
+    }
+  ]
+}

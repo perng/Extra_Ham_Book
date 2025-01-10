@@ -1,0 +1,91 @@
+{
+  "section_title": "AC vs. DC, Frequency, Wavelength",
+  "label": "sec:ac-dc-freq",
+  "section_label": "sec:ac-dc-freq",
+  "subsections": [
+    {
+      "title": "Definitions and Effects",
+      "label": "subsec:ac-basics2",
+      "questions": [],
+      "concepts": [
+        "Electromagnetic Wave",
+        "Polarization",
+        "Electric Field",
+        "Magnetic Field"
+      ],
+      "prompts": [
+        "Explain the fundamental properties of electromagnetic waves, focusing on the relationship between electric and magnetic fields.",
+        "Describe the concept of polarization in radio waves and how it is determined by the orientation of the electric field.",
+        "Discuss the significance of electric and magnetic fields as the two primary components of a radio wave."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between electric and magnetic fields in an electromagnetic wave.",
+          "software": "SVG",
+          "caption": "Relationship between electric and magnetic fields in an electromagnetic wave.",
+          "label": "fig:em-wave"
+        },
+        {
+          "prompt": "Illustration of radio wave polarization showing the orientation of the electric field.",
+          "software": "SVG",
+          "caption": "Radio wave polarization determined by the orientation of the electric field.",
+          "label": "fig:polarization"
+        }
+      ],
+      "table_prompt": []
+    },
+    {
+      "title": "Frequency & Wavelength Calculations",
+      "label": "subsec:freq-wavelength",
+      "questions": [
+        "T3B01",
+        "T3B02",
+        "T3B03",
+        "T3B04",
+        "T3B05",
+        "T3B06",
+        "T3B07",
+        "T3B08",
+        "T3B09",
+        "T3B10",
+        "T3B11",
+        "T5A06",
+        "T5A12"
+      ],
+      "concepts": [
+        "Velocity of Radio Waves",
+        "Wavelength-Frequency Relationship",
+        "Frequency Bands",
+        "Unit of Frequency"
+      ],
+      "prompts": [
+        "Explain the velocity of radio waves in free space and its significance in radio communication.",
+        "Describe the inverse relationship between wavelength and frequency, and provide the formula for converting frequency to wavelength.",
+        "Discuss the identification of amateur radio bands using both frequency and wavelength.",
+        "Explain the frequency ranges for VHF, UHF, and HF bands and their applications in radio communication.",
+        "Define the unit of frequency and its relevance in describing alternating current cycles."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph showing the inverse relationship between wavelength and frequency.",
+          "software": "Matplotlib",
+          "caption": "Inverse relationship between wavelength and frequency.",
+          "label": "fig:wavelength-frequency"
+        },
+        {
+          "prompt": "Chart illustrating the frequency ranges for VHF, UHF, and HF bands.",
+          "software": "SVG",
+          "caption": "Frequency ranges for VHF, UHF, and HF bands.",
+          "label": "fig:frequency-bands"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the frequency ranges for VHF, UHF, and HF bands.",
+          "caption": "Frequency ranges for VHF, UHF, and HF bands.",
+          "label": "tab:frequency-ranges"
+        }
+      ]
+    }
+  ]
+}

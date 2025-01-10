@@ -1,0 +1,50 @@
+{
+  "section_title": "Power and Decibels",
+  "label": "sec:power-decibels",
+  "section_label": "sec:power-decibels",
+  "subsections": [
+    {
+      "title": "Electrical Power, Decibel Calculations",
+      "label": "subsec:power-db",
+      "questions": [
+        "T5A02",
+        "T5B09",
+        "T5B10",
+        "T5B11"
+      ],
+      "concepts": [
+        "Electrical Power",
+        "Decibel Calculations",
+        "Power Increase in Decibels",
+        "Power Decrease in Decibels"
+      ],
+      "prompts": [
+        "Explain the concept of electrical power, including its units and significance in radio technology.",
+        "Describe how decibel calculations are used to represent power changes in radio systems.",
+        "Provide examples of power increases and decreases in decibels, using the questions as a reference.",
+        "Discuss the practical implications of understanding decibel values in radio communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between power levels and decibel values.",
+          "software": "SVG",
+          "caption": "Relationship between power levels and decibel values.",
+          "label": "fig:power-db-relationship"
+        },
+        {
+          "prompt": "Graph illustrating power increase and decrease in decibels.",
+          "software": "Matplotlib",
+          "caption": "Graph of power changes in decibels.",
+          "label": "fig:power-db-graph"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing power changes and corresponding decibel values.",
+          "caption": "Summary of power changes and decibel values.",
+          "label": "tab:power-db-summary"
+        }
+      ]
+    }
+  ]
+}

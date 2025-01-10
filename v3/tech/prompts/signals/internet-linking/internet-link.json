@@ -1,0 +1,78 @@
+{
+  "section_title": "Internet Linking Concepts",
+  "label": "sec:internet-link",
+  "subsections": [
+    {
+      "title": "IRLP",
+      "label": "subsec:irlp",
+      "questions": ["T8C06", "T8C08", "T8C09", "T8C10"],
+      "concepts": ["IRLP", "DTMF signals", "Voice Over Internet Protocol (VoIP)"],
+      "prompts": [
+        "Explain the concept of IRLP and how it connects amateur radio systems via the internet using VoIP.",
+        "Describe how over-the-air access to IRLP nodes is accomplished using DTMF signals.",
+        "Discuss the role of IRLP in enabling communication between repeaters and other amateur radio systems."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the connection of amateur radio systems via IRLP using VoIP.",
+          "software": "Graphviz",
+          "caption": "IRLP System Architecture",
+          "label": "fig:irlp-architecture"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing IRLP with other internet linking protocols like EchoLink and D-STAR.",
+        "caption": "Comparison of Internet Linking Protocols",
+        "label": "tab:irlp-comparison"
+      }
+    },
+    {
+      "title": "EchoLink",
+      "label": "subsec:echolink",
+      "questions": ["T8C11"],
+      "concepts": ["EchoLink", "Gateway"],
+      "prompts": [
+        "Explain the concept of EchoLink and how it allows amateur stations to connect to the internet.",
+        "Describe the role of a gateway in EchoLink and how it facilitates communication between amateur stations.",
+        "Discuss the registration process required to use EchoLink, including proof of license."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the EchoLink system and its gateway functionality.",
+          "software": "Graphviz",
+          "caption": "EchoLink System Architecture",
+          "label": "fig:echolink-architecture"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key features of EchoLink and its use cases.",
+        "caption": "EchoLink Features and Use Cases",
+        "label": "tab:echolink-features"
+      }
+    },
+    {
+      "title": "Voice Over IP (VoIP)",
+      "label": "subsec:voip",
+      "questions": ["T8C07"],
+      "concepts": ["Voice Over IP (VoIP)", "Digital Voice Communication"],
+      "prompts": [
+        "Explain the concept of VoIP and how it enables voice communication over the internet using digital techniques.",
+        "Discuss the advantages of using VoIP in amateur radio communication.",
+        "Compare VoIP with traditional analog voice communication methods."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the process of digital voice communication using VoIP.",
+          "software": "Graphviz",
+          "caption": "VoIP Communication Process",
+          "label": "fig:voip-process"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing VoIP with traditional analog voice communication methods.",
+        "caption": "Comparison of VoIP and Analog Voice Communication",
+        "label": "tab:voip-comparison"
+      }
+    }
+  ]
+}

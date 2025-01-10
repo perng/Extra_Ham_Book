@@ -1,0 +1,113 @@
+\subsection{Amplifier Basics}
+\label{subsec:amp-basics}
+
+In this section, we'll dive into the world of amplifiers, those unsung heroes of the radio world that make sure your signal gets where it needs to go. We'll cover everything from transceivers to RF power amplifiers, and even touch on those nifty little switches that make sure everything runs smoothly. So, grab a cup of coffee, and let's get started!
+
+\subsubsection*{Transceiver: The Jack of All Trades}
+A transceiver is like the Swiss Army knife of radio equipment. It combines both a receiver and a transmitter into a single device, making it incredibly versatile. Imagine trying to juggle two separate devices every time you wanted to switch between sending and receiving signals—sounds like a nightmare, right? Well, that's exactly what a transceiver saves you from. It seamlessly integrates both functions, allowing you to communicate efficiently without breaking a sweat.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{transceiver-diagram}
+    \caption{Diagram of a transceiver showing the integration of receiver and transmitter components.}
+    \label{fig:transceiver-diagram}
+    % Image prompt: Diagram of a transceiver showing the integration of receiver and transmitter components.
+\end{figure}
+
+\subsubsection*{The SSB/CW-FM Switch: Mode Master}
+Ever wondered how a VHF power amplifier knows whether you're in Single Sideband (SSB), Continuous Wave (CW), or Frequency Modulation (FM) mode? Enter the SSB/CW-FM switch. This little guy ensures that your amplifier is set up correctly for the mode you're operating in. It doesn't change the mode itself—that's your job—but it makes sure the amplifier is optimized for whatever mode you've chosen. Think of it as the amplifier's personal trainer, keeping it in tip-top shape for whatever you throw at it.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{vhf-amp-switch}
+    \caption{Illustration of a VHF power amplifier with the SSB/CW-FM switch highlighted.}
+    \label{fig:vhf-amp-switch}
+    % Image prompt: Illustration of a VHF power amplifier with the SSB/CW-FM switch highlighted.
+\end{figure}
+
+\subsubsection*{RF Power Amplifier: The Muscle}
+If your transceiver is the brain, then the RF power amplifier is the brawn. This device takes the relatively weak signal from your transceiver and boosts it to a level that can be transmitted over long distances. Without it, your signal might not even make it out of your backyard. So, if you're looking to reach someone on the other side of the world, you'll want to make sure your RF power amplifier is up to the task.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rf-power-amp-diagram}
+    \caption{Block diagram showing the placement of an RF power amplifier in a transceiver setup.}
+    \label{fig:rf-power-amp-diagram}
+    % Image prompt: Block diagram showing the placement of an RF power amplifier in a transceiver setup.
+\end{figure}
+
+\subsubsection*{RF Preamplifier: The First Responder}
+The RF preamplifier is the first line of defense in your signal reception process. It's installed between the antenna and the receiver, and its job is to amplify weak signals before they reach the receiver. This is crucial because weak signals can easily get lost in the noise, making them impossible to decode. By boosting these signals early on, the RF preamplifier ensures that your receiver has a fighting chance of picking them up.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rf-preamplifier-installation}
+    \caption{Diagram showing the installation of an RF preamplifier between the antenna and receiver.}
+    \label{fig:rf-preamplifier-installation}
+    % Image prompt: Diagram showing the installation of an RF preamplifier between the antenna and receiver.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Device} & \textbf{Function} \\
+        \hline
+        Transceiver & Combines receiver and transmitter into a single device \\
+        RF Power Amplifier & Boosts the transmitted signal from the transceiver \\
+        RF Preamplifier & Amplifies weak signals before they reach the receiver \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of transceiver, RF power amplifier, and RF preamplifier functions.}
+    \label{tab:comparison-functions}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A02}]
+    What is a transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{A device that combines a receiver and transmitter}
+        \item A device for matching feed line impedance to 50 ohms
+        \item A device for automatically sending and decoding Morse code
+        \item A device for converting receiver and transmitter frequencies to another band
+    \end{enumerate}
+\end{tcolorbox}
+
+A transceiver is a device that combines both a receiver and a transmitter into a single unit. This integration allows for seamless switching between sending and receiving signals, making it a versatile tool in radio communication. The other options describe different devices or functions that are not related to the definition of a transceiver.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A09}]
+    What is the function of the SSB/CW-FM switch on a VHF power amplifier?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Change the mode of the transmitted signal
+        \item \textbf{Set the amplifier for proper operation in the selected mode}
+        \item Change the frequency range of the amplifier to operate in the proper segment of the band
+        \item Reduce the received signal noise
+    \end{enumerate}
+\end{tcolorbox}
+
+The SSB/CW-FM switch on a VHF power amplifier ensures that the amplifier is configured correctly for the mode you're operating in. It doesn't change the mode itself but optimizes the amplifier's settings for SSB, CW, or FM modes. The other options describe functions that are either unrelated or incorrect for this specific switch.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A10}]
+    What device increases the transmitted output power from a transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A voltage divider
+        \item \textbf{An RF power amplifier}
+        \item An impedance network
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+An RF power amplifier is specifically designed to increase the transmitted output power from a transceiver. Voltage dividers and impedance networks serve different purposes and do not amplify signals. Therefore, the correct answer is B.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A11}]
+    Where is an RF preamplifier installed?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Between the antenna and receiver}
+        \item At the output of the transmitter power amplifier
+        \item Between the transmitter and the antenna tuner
+        \item At the output of the receiver audio amplifier
+    \end{enumerate}
+\end{tcolorbox}
+
+An RF preamplifier is installed between the antenna and the receiver to amplify weak signals before they reach the receiver. This placement ensures that the signals are strong enough to be processed effectively. The other options describe incorrect locations for an RF preamplifier.

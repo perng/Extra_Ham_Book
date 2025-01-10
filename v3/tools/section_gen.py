@@ -65,9 +65,9 @@ for part in toc['parts']:
         print(chapter['chapter_title'])
         first_section = True  # Add flag to track first section
         for section in chapter['sections']:
-            if first_section:  # Skip first section
-                first_section = False
-                continue
+            # if first_section:  # Skip first section
+            #     first_section = False
+            #     continue
             section_id = section['label'].split(':')[1]
             print(f"Part: {part_id}, Chapter: {chapter_id}, Section: {section_id}")
             prompt_file = base_dir + f'prompts/{part_id}/{chapter_id}/{section_id}.json'

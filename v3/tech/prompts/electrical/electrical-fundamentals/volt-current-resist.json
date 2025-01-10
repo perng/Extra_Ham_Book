@@ -1,0 +1,118 @@
+{
+  "section_title": "Voltage, Current, Resistance",
+  "label": "sec:volt-current-resist",
+  "subsections": [
+    {
+      "title": "Core Definitions",
+      "label": "subsec:core-defs",
+      "questions": [
+        "T5A01",
+        "T5A03",
+        "T5A04",
+        "T5A05",
+        "T5A07",
+        "T5A08",
+        "T5A09",
+        "T5A10",
+        "T5A11"
+      ],
+      "concepts": [
+        "Electrical Current",
+        "Electron Flow",
+        "Electrical Resistance",
+        "Voltage",
+        "Conductors",
+        "Insulators",
+        "Alternating Current",
+        "Electrical Power"
+      ],
+      "prompts": [
+        "Explain the concept of electrical current, including its units and how it is measured.",
+        "Describe the flow of electrons in an electric circuit and its significance.",
+        "Define electrical resistance, its units, and its role in a circuit.",
+        "Explain what voltage is and how it causes electron flow.",
+        "Discuss why metals are good conductors of electricity, focusing on the role of free electrons.",
+        "Identify and explain the properties of good electrical insulators.",
+        "Describe alternating current, including its characteristics and how it differs from direct current.",
+        "Define electrical power and explain how it relates to the rate of energy usage."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of electrons in a simple electric circuit.",
+          "software": "SVG",
+          "caption": "Electron flow in an electric circuit.",
+          "label": "fig:electron-flow"
+        },
+        {
+          "prompt": "Illustration comparing conductors and insulators at the atomic level.",
+          "software": "SVG",
+          "caption": "Comparison of conductors and insulators.",
+          "label": "fig:conductors-insulators"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the units and definitions of key electrical concepts: current, voltage, resistance, and power.",
+          "caption": "Summary of key electrical concepts.",
+          "label": "tab:electrical-concepts"
+        }
+      ]
+    },
+    {
+      "title": "Ohm’s Law and Circuit Calculations",
+      "label": "subsec:ohms-law",
+      "questions": [
+        "T5D01",
+        "T5D02",
+        "T5D03",
+        "T5D04",
+        "T5D05",
+        "T5D06",
+        "T5D07",
+        "T5D08",
+        "T5D09",
+        "T5D10",
+        "T5D11",
+        "T5D12",
+        "T5D13",
+        "T5D14"
+      ],
+      "concepts": [
+        "Ohm's Law",
+        "Series Circuit",
+        "Parallel Circuit",
+        "Circuit Calculations"
+      ],
+      "prompts": [
+        "Explain Ohm's Law, including the relationship between voltage, current, and resistance.",
+        "Describe how to calculate current in a circuit using Ohm's Law.",
+        "Describe how to calculate voltage in a circuit using Ohm's Law.",
+        "Describe how to calculate resistance in a circuit using Ohm's Law.",
+        "Provide examples of calculating resistance, current, and voltage in various circuits.",
+        "Explain the characteristics of series circuits, including how current and voltage behave.",
+        "Explain the characteristics of parallel circuits, including how current and voltage behave."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating Ohm's Law with a simple circuit showing voltage, current, and resistance.",
+          "software": "SVG",
+          "caption": "Ohm's Law in a simple circuit.",
+          "label": "fig:ohms-law"
+        },
+        {
+          "prompt": "Comparison diagram of series and parallel circuits, highlighting differences in current and voltage.",
+          "software": "SVG",
+          "caption": "Series vs. parallel circuits.",
+          "label": "fig:series-parallel"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the formulas for calculating current, voltage, and resistance using Ohm's Law.",
+          "caption": "Ohm's Law formulas.",
+          "label": "tab:ohms-law-formulas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "section_title": "Getting Your License",
+  "label": "sec:getting-license",
+  "subsections": [
+    {
+      "title": "Obtaining and Renewing",
+      "label": "subsec:obtain-renew",
+      "questions": ["T1A04", "T1A05", "T1C08", "T1C09", "T1C10", "T1C11"],
+      "concepts": ["License Grant", "FCC ULS Database", "License Term", "Grace Period", "Transmission Authorization"],
+      "prompts": [
+        "Explain the process of obtaining an amateur radio license, including the role of the FCC ULS database.",
+        "Describe the normal term of an amateur radio license and the implications of the grace period for renewal.",
+        "Discuss the rules governing when a new licensee can begin transmitting on amateur radio bands.",
+        "Explain the restrictions on transmitting during the grace period if a license has expired."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart of the amateur radio license application and renewal process",
+          "software": "Graphviz",
+          "caption": "Flowchart of the amateur radio license application and renewal process",
+          "label": "fig:license-flowchart"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing key points about obtaining and renewing an amateur radio license",
+        "caption": "Summary of License Obtaining and Renewing",
+        "label": "tab:license-summary"
+      }
+    },
+    {
+      "title": "Call Signs",
+      "label": "subsec:call-signs",
+      "questions": ["T1C02", "T1C05"],
+      "concepts": ["Vanity Call Sign Rules", "Call Sign Formats"],
+      "prompts": [
+        "Explain the rules for selecting a vanity call sign and who is eligible to do so.",
+        "Describe the valid formats for Technician class call signs."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a typical amateur radio call sign",
+          "software": "SVG",
+          "caption": "Structure of an Amateur Radio Call Sign",
+          "label": "fig:call-sign-structure"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the rules and formats for amateur radio call signs",
+        "caption": "Summary of Call Sign Rules and Formats",
+        "label": "tab:call-sign-summary"
+      }
+    },
+    {
+      "title": "License Maintenance, Contact Information",
+      "label": "subsec:maint-contact",
+      "questions": ["T1C04", "T1C07"],
+      "concepts": ["License Revocation", "Contact Information Requirements"],
+      "prompts": [
+        "Discuss the importance of maintaining accurate contact information with the FCC and the consequences of failing to do so.",
+        "Explain the potential consequences of not providing a correct email address to the FCC."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the process of updating contact information with the FCC",
+          "software": "SVG",
+          "caption": "Process for Updating Contact Information with the FCC",
+          "label": "fig:contact-update-process"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the requirements and consequences related to license maintenance and contact information",
+        "caption": "Summary of License Maintenance and Contact Information Requirements",
+        "label": "tab:license-maintenance-summary"
+      }
+    },
+    {
+      "title": "Operating Locations",
+      "label": "subsec:operating-location",
+      "questions": ["T1C06"],
+      "concepts": ["Operating Locations", "International Waters"],
+      "prompts": [
+        "Explain the rules governing where an FCC-licensed amateur station may transmit, including the specifics of operating from international waters."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Map showing permissible operating locations for FCC-licensed amateur stations",
+          "software": "web",
+          "caption": "Permissible Operating Locations for FCC-Licensed Amateur Stations",
+          "label": "fig:operating-locations-map"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the rules for operating locations of FCC-licensed amateur stations",
+        "caption": "Summary of Operating Location Rules",
+        "label": "tab:operating-location-summary"
+      }
+    }
+  ]
+}

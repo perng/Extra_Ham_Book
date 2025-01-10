@@ -1,0 +1,123 @@
+\subsection{Proper Use}
+\label{subsec:proper-use}
+
+In this section, we'll dive into the proper use of some essential tools and concepts in radio technology. We'll cover dummy loads, antenna analyzers, SWR readings, and feed line losses. By the end of this section, you'll have a solid understanding of how these tools and concepts work, and why they are crucial for any radio operator.
+
+\subsubsection*{Dummy Loads: The Silent Heroes}
+
+A dummy load is a device that allows you to test your transmitter without actually transmitting signals over the air. This is particularly useful when you want to avoid interfering with other radio communications. The primary purpose of a dummy load is to prevent transmitting signals over the air when making tests. It essentially acts as a "silent" antenna, absorbing the power from your transmitter and converting it into heat.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{dummy-load}
+    \caption{Dummy Load Connected to a Transmitter}
+    \label{fig:dummy-load}
+    % Diagram of a dummy load connected to a transmitter for testing purposes.
+\end{figure}
+
+A typical dummy load consists of a non-inductive resistor mounted on a heat sink. The resistor is designed to handle the power dissipation, while the heat sink ensures that the heat is effectively managed. This setup allows you to safely test your transmitter without risking damage to your equipment or causing interference.
+
+\subsubsection*{Antenna Analyzers: Tuning Your Antenna}
+
+An antenna analyzer is a handy tool that helps you determine if your antenna is resonant at the desired operating frequency. Resonance is crucial because it ensures that your antenna is efficiently radiating the signal. An antenna analyzer measures the impedance of the antenna and provides you with the necessary information to adjust it for optimal performance.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{antenna-analyzer}
+    \caption{Antenna Analyzer Measuring Resonance}
+    \label{fig:antenna-analyzer}
+    % Illustration of an antenna analyzer measuring resonance frequency.
+\end{figure}
+
+\subsubsection*{SWR Readings: The Tale of Impedance Mismatch}
+
+Standing Wave Ratio (SWR) is a measure of how well your antenna is matched to your transmitter. An SWR reading of 4:1 indicates a significant impedance mismatch. This means that a portion of the power you're transmitting is being reflected back to the transmitter, rather than being radiated by the antenna. High SWR can lead to increased power loss and potential damage to your transmitter.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{swr-graph}
+    \caption{SWR and Impedance Mismatch Relationship}
+    \label{fig:swr-graph}
+    % Graph showing SWR values and their relationship to impedance mismatch.
+\end{figure}
+
+\subsubsection*{Feed Line Loss: Where Does the Power Go?}
+
+When power is lost in a feed line, it doesn't just disappear into thin air. Instead, it is converted into heat. This heat is a result of the resistance in the feed line, which causes some of the transmitted power to be dissipated as thermal energy. While this might not seem like a big deal, it can significantly affect the overall efficiency of your radio system.
+
+\begin{table}[h]
+    \centering
+    \caption{SWR Readings and Interpretations}
+    \label{tab:swr-readings}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{SWR Reading} & \textbf{Interpretation} \\
+        \hline
+        1:1 & Perfect match \\
+        2:1 & Good match \\
+        4:1 & Significant mismatch \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C01}]
+    What is the primary purpose of a dummy load?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{To prevent transmitting signals over the air when making tests}
+        \item To prevent over-modulation of a transmitter
+        \item To improve the efficiency of an antenna
+        \item To improve the signal-to-noise ratio of a receiver
+    \end{enumerate}
+\end{tcolorbox}
+
+The primary purpose of a dummy load is to prevent transmitting signals over the air when making tests. This is crucial for avoiding interference with other radio communications and ensuring that your tests are conducted safely.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C02}]
+    Which of the following is used to determine if an antenna is resonant at the desired operating frequency?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A VTVM
+        \item \textbf{An antenna analyzer}
+        \item A Q meter
+        \item A frequency counter
+    \end{enumerate}
+\end{tcolorbox}
+
+An antenna analyzer is used to determine if an antenna is resonant at the desired operating frequency. It measures the impedance of the antenna and provides the necessary information to adjust it for optimal performance.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C03}]
+    What does a dummy load consist of?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A high-gain amplifier and a TR switch
+        \item \textbf{A non-inductive resistor mounted on a heat sink}
+        \item A low-voltage power supply and a DC relay
+        \item A 50-ohm reactance used to terminate a transmission line
+    \end{enumerate}
+\end{tcolorbox}
+
+A dummy load consists of a non-inductive resistor mounted on a heat sink. The resistor is designed to handle the power dissipation, while the heat sink ensures that the heat is effectively managed.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C06}]
+    What does an SWR reading of 4:1 indicate?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Loss of -4 dB
+        \item Good impedance match
+        \item Gain of +4 dB
+        \item \textbf{Impedance mismatch}
+    \end{enumerate}
+\end{tcolorbox}
+
+An SWR reading of 4:1 indicates a significant impedance mismatch. This means that a portion of the power you're transmitting is being reflected back to the transmitter, rather than being radiated by the antenna.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C07}]
+    What happens to power lost in a feed line?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item It increases the SWR
+        \item It is radiated as harmonics
+        \item \textbf{It is converted into heat}
+        \item It distorts the signal
+    \end{enumerate}
+\end{tcolorbox}
+
+When power is lost in a feed line, it is converted into heat. This heat is a result of the resistance in the feed line, which causes some of the transmitted power to be dissipated as thermal energy.

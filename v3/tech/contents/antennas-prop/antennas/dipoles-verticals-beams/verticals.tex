@@ -1,0 +1,79 @@
+\subsection{Vertical Antennas, Ground-Planes}
+\label{subsec:verticals}
+
+In this section, we'll dive into the world of vertical antennas and their close cousins, ground-plane antennas. These antennas are like the unsung heroes of the radio world—simple, effective, and often overlooked. Let's start by understanding what makes them tick.
+
+\subsubsection*{Vertical Antennas}
+A vertical antenna is exactly what it sounds like: an antenna that stands vertically. These antennas are omnidirectional, meaning they radiate and receive signals equally in all horizontal directions. This makes them particularly useful for applications where you need to communicate with stations in all directions, such as in mobile communications or base stations. Think of them as the friendly neighborhood antennas, always ready to chat with anyone around.
+
+\subsubsection*{Ground-Plane Antennas}
+Now, let's talk about ground-plane antennas. These are a type of vertical antenna that includes a ground plane—a flat, conductive surface that acts as a mirror for the antenna's signals. The ground plane helps to improve the antenna's performance by reflecting signals that would otherwise be lost into the ground. It's like having a trusty sidekick that ensures your signals don't go to waste.
+
+\subsubsection*{Quarter-Wavelength Vertical Antennas}
+One of the most common types of vertical antennas is the quarter-wavelength vertical antenna. As the name suggests, this antenna is approximately one-quarter the wavelength of the frequency it's designed for. The length of the antenna is crucial because it determines how well the antenna resonates at the desired frequency. 
+
+To calculate the length of a quarter-wavelength vertical antenna, you can use the following formula:
+
+\begin{equation}
+L = \frac{300}{4f}
+\end{equation}
+
+where \( L \) is the length in meters and \( f \) is the frequency in megahertz (MHz). For example, if you're working with a frequency of 146 MHz, the length of the antenna would be:
+
+\begin{equation}
+L = \frac{300}{4 \times 146} \approx 0.513 \text{ meters} \approx 19 \text{ inches}
+\end{equation}
+
+So, for 146 MHz, a quarter-wavelength vertical antenna would be approximately 19 inches long. Easy, right?
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{vertical-antenna}
+    % Diagram of a vertical antenna with ground plane.
+    % The figure should show a vertical antenna with a ground plane consisting of several radial wires extending horizontally from the base of the antenna.
+    \caption{Vertical Antenna with Ground Plane}
+    \label{fig:vertical-antenna}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Frequency (MHz) & Length (inches) \\
+        \hline
+        146 & 19 \\
+        440 & 6.7 \\
+        50 & 56 \\
+        \hline
+    \end{tabular}
+    \caption{Quarter-Wavelength Vertical Antenna Lengths}
+    \label{tab:vertical-lengths}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A01}]
+    What is a beam antenna?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item An antenna built from aluminum I-beams
+        \item An omnidirectional antenna invented by Clarence Beam
+        \item \textbf{An antenna that concentrates signals in one direction}
+        \item An antenna that reverses the phase of received signals
+    \end{enumerate}
+\end{tcolorbox}
+
+A beam antenna is designed to focus signals in a specific direction, making it highly directional. This is useful for long-distance communication where you want to maximize signal strength in a particular direction. The other options are either incorrect or irrelevant.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A08}]
+    What is the approximate length, in inches, of a quarter-wavelength vertical antenna for 146 MHz?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 112
+        \item 50
+        \item \textbf{19}
+        \item 12
+    \end{enumerate}
+\end{tcolorbox}
+
+Using the formula \( L = \frac{300}{4f} \), we calculated that a quarter-wavelength vertical antenna for 146 MHz is approximately 19 inches long. The other options are either too long or too short for this frequency.
+
+And there you have it! A quick tour of vertical antennas and ground-plane antennas. Whether you're setting up a base station or just tinkering with your radio setup, these antennas are a solid choice for reliable communication.

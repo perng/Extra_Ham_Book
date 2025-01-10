@@ -1,0 +1,141 @@
+\subsection{Coax Impedance and Loss}
+\label{subsec:coax-imp}
+
+Coaxial cables are the unsung heroes of amateur radio, quietly carrying signals from your transmitter to your antenna (and back). But not all coax is created equal. Let's dive into the world of coaxial cable impedance, signal loss, and why 50 ohms is the magic number in amateur radio.
+
+\subsubsection*{Coaxial Cable Impedance}
+The impedance of a coaxial cable is a measure of how much the cable resists the flow of electrical energy. In amateur radio, the most common impedance is 50 ohms. Why 50 ohms, you ask? Well, it's a sweet spot that balances power handling and signal loss. If the impedance is too low, the cable can't handle much power. If it's too high, the signal loss increases. So, 50 ohms is like the Goldilocks of impedances—just right.
+
+\subsubsection*{Signal Loss in Coaxial Cables}
+Signal loss in coaxial cables is like the toll you pay for using a highway. The longer the cable, the more tolls you pay, and the weaker your signal gets. Several factors contribute to this loss:
+\begin{itemize}
+    \item \textbf{Resistance in the conductors}: The inner conductor and the outer shield both have some resistance, which converts some of your signal into heat.
+    \item \textbf{Dielectric losses}: The insulating material (dielectric) between the inner conductor and the outer shield isn't perfect. It absorbs some of the energy, especially at higher frequencies.
+    \item \textbf{Radiation losses}: Some of the signal can escape through the outer shield, especially if it's not well-shielded.
+\end{itemize}
+
+As the frequency of the signal increases, the losses also increase. This is why VHF and UHF signals are more prone to loss than HF signals.
+
+\subsubsection*{Comparing Coaxial Cables}
+Not all coaxial cables are created equal. Let's compare two common types: RG-58 and RG-213.
+\begin{itemize}
+    \item \textbf{RG-58}: This is a thinner, more flexible cable, but it has higher loss, especially at higher frequencies. It's great for short runs but not ideal for long distances.
+    \item \textbf{RG-213}: This is a thicker, less flexible cable, but it has lower loss and can handle more power. It's better suited for longer runs and higher power levels.
+\end{itemize}
+
+\subsubsection*{Practical Implications}
+When choosing a coaxial cable for your amateur radio setup, consider the following:
+\begin{itemize}
+    \item \textbf{Length of the run}: Longer runs require cables with lower loss.
+    \item \textbf{Frequency of operation}: Higher frequencies require cables with lower loss.
+    \item \textbf{Power handling}: Higher power levels require cables that can handle the heat.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{coax-structure}
+    \caption{Structure of a coaxial cable.}
+    \label{fig:coax-structure}
+    % Diagram showing the structure of a coaxial cable with labels for the inner conductor, dielectric, and outer shield.
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{coax-loss}
+    \caption{Signal loss comparison for different coaxial cables.}
+    \label{fig:coax-loss}
+    % Graph showing signal loss in dB per 100 feet for different types of coaxial cables (e.g., RG-58, RG-213) at various frequencies.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Cable Type} & \textbf{Impedance (ohms)} & \textbf{Loss (dB/100ft)} & \textbf{Power Handling (W)} \\
+        \hline
+        RG-58 & 50 & 6.0 & 300 \\
+        RG-213 & 50 & 2.5 & 1500 \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of common coaxial cables.}
+    \label{tab:coax-comparison}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B01}]
+What is a benefit of low SWR?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Reduced television interference
+    \item \textbf{Reduced signal loss}
+    \item Less antenna wear
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+Low SWR (Standing Wave Ratio) means that more of your signal is being transmitted to the antenna and less is being reflected back. This reduces signal loss, making your transmission more efficient.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B02}]
+What is the most common impedance of coaxial cables used in amateur radio?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item 8 ohms
+    \item \textbf{50 ohms}
+    \item 600 ohms
+    \item 12 ohms
+\end{enumerate}
+\end{tcolorbox}
+50 ohms is the most common impedance in amateur radio because it strikes a balance between power handling and signal loss.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B03}]
+Why is coaxial cable the most common feed line for amateur radio antenna systems?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{It is easy to use and requires few special installation considerations}
+    \item It has less loss than any other type of feed line
+    \item It can handle more power than any other type of feed line
+    \item It is less expensive than any other type of feed line
+\end{enumerate}
+\end{tcolorbox}
+Coaxial cable is easy to use and doesn't require special installation considerations, making it the go-to choice for amateur radio operators.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B05}]
+What happens as the frequency of a signal in coaxial cable is increased?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The characteristic impedance decreases
+    \item The loss decreases
+    \item The characteristic impedance increases
+    \item \textbf{The loss increases}
+\end{enumerate}
+\end{tcolorbox}
+As the frequency increases, the loss in the coaxial cable also increases due to higher dielectric and conductor losses.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B08}]
+Which of the following is a source of loss in coaxial feed line?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Water intrusion into coaxial connectors
+    \item High SWR
+    \item Multiple connectors in the line
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+All these factors contribute to signal loss in coaxial cables. Water intrusion can cause corrosion, high SWR reflects power back, and multiple connectors introduce additional resistance.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B10}]
+What is the electrical difference between RG-58 and RG-213 coaxial cable?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item There is no significant difference between the two types
+    \item RG-58 cable has two shields
+    \item \textbf{RG-213 cable has less loss at a given frequency}
+    \item RG-58 cable can handle higher power levels
+\end{enumerate}
+\end{tcolorbox}
+RG-213 has less loss at a given frequency compared to RG-58, making it better for longer runs or higher frequencies.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B11}]
+Which of the following types of feed line has the lowest loss at VHF and UHF?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item 50-ohm flexible coax
+    \item Multi-conductor unbalanced cable
+    \item \textbf{Air-insulated hardline}
+    \item 75-ohm flexible coax
+\end{enumerate}
+\end{tcolorbox}
+Air-insulated hardline has the lowest loss at VHF and UHF due to its superior construction and lower dielectric losses.

@@ -1,0 +1,79 @@
+{
+  "section_title": "Units and Conversions",
+  "label": "sec:units-conversions",
+  "subsections": [
+    {
+      "title": "Metric Units (k, M, etc.)",
+      "label": "subsec:metric",
+      "questions": [
+        "T5B01",
+        "T5B02",
+        "T5B03",
+        "T5B04",
+        "T5B05",
+        "T5B06",
+        "T5B07",
+        "T5B08",
+        "T5B12",
+        "T5B13"
+      ],
+      "concepts": [
+        "Metric Prefixes",
+        "Unit Conversions",
+        "Milliamperes",
+        "Hertz",
+        "Kilovolt",
+        "Microvolt",
+        "Milliwatts",
+        "Picofarads",
+        "Frequency Units"
+      ],
+      "prompts": [
+        "Explain the concept of metric prefixes and their significance in radio technology.",
+        "Describe the process of converting between different units of electrical measurements, such as amperes to milliamperes.",
+        "Discuss the importance of understanding frequency units like hertz, kilohertz, and megahertz in radio communications.",
+        "Provide examples of how to convert between units of voltage, such as volts to kilovolts and microvolts.",
+        "Explain the relationship between milliwatts and watts, and how to perform conversions between these units.",
+        "Describe the significance of picofarads in capacitance and how to convert them to microfarads.",
+        "Discuss the practical applications of understanding frequency conversions, such as converting MHz to kHz and GHz."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between different metric prefixes (kilo, mega, milli, micro, etc.) and their corresponding values.",
+          "software": "SVG",
+          "caption": "Metric Prefixes and Their Values",
+          "label": "fig:metric-prefixes"
+        },
+        {
+          "prompt": "Flowchart illustrating the process of converting between different units of electrical measurements.",
+          "software": "Graphviz",
+          "caption": "Unit Conversion Flowchart",
+          "label": "fig:unit-conversion-flowchart"
+        },
+        {
+          "prompt": "Graph showing the relationship between frequency units (Hz, kHz, MHz, GHz).",
+          "software": "Matplotlib",
+          "caption": "Frequency Unit Relationships",
+          "label": "fig:frequency-units"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing common metric prefixes and their corresponding values.",
+          "caption": "Common Metric Prefixes",
+          "label": "tab:metric-prefixes"
+        },
+        {
+          "prompt": "Table showing conversion factors between different units of electrical measurements.",
+          "caption": "Unit Conversion Factors",
+          "label": "tab:unit-conversion-factors"
+        },
+        {
+          "prompt": "Table listing common frequency units and their conversions.",
+          "caption": "Frequency Unit Conversions",
+          "label": "tab:frequency-conversions"
+        }
+      ]
+    }
+  ]
+}

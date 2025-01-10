@@ -1,0 +1,124 @@
+{
+  "section_title": "Capacitance, Inductance, and Impedance",
+  "label": "sec:cap-ind-imp",
+  "section_label": "sec:cap-ind-imp",
+  "subsections": [
+    {
+      "title": "Capacitors",
+      "label": "subsec:capacitors",
+      "questions": ["T5C01", "T5C02"],
+      "concepts": ["Capacitance", "Farad"],
+      "prompts": [
+        "Explain the concept of capacitance and its role in storing energy in an electric field.",
+        "Describe the unit of capacitance, the farad, and its significance in electrical circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing a capacitor in a circuit and its electric field.",
+          "software": "SVG",
+          "caption": "Capacitor in a circuit with electric field representation.",
+          "label": "fig:capacitor-circuit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing capacitance values for different types of capacitors.",
+        "caption": "Comparison of capacitance values for various capacitor types.",
+        "label": "tab:capacitance-values"
+      }
+    },
+    {
+      "title": "Inductors",
+      "label": "subsec:inductors",
+      "questions": ["T5C03", "T5C04"],
+      "concepts": ["Inductance", "Henry"],
+      "prompts": [
+        "Explain the concept of inductance and its role in storing energy in a magnetic field.",
+        "Describe the unit of inductance, the henry, and its significance in electrical circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing an inductor in a circuit and its magnetic field.",
+          "software": "SVG",
+          "caption": "Inductor in a circuit with magnetic field representation.",
+          "label": "fig:inductor-circuit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing inductance values for different types of inductors.",
+        "caption": "Comparison of inductance values for various inductor types.",
+        "label": "tab:inductance-values"
+      }
+    },
+    {
+      "title": "Impedance, Reactance, etc.",
+      "label": "subsec:imp-react",
+      "questions": ["T5C05", "T5C12", "T5C13"],
+      "concepts": ["Impedance", "Reactance", "Ohm"],
+      "prompts": [
+        "Explain the concept of impedance and its role in opposing AC current flow.",
+        "Describe the unit of impedance, the ohm, and its significance in AC circuits.",
+        "Discuss the difference between impedance and reactance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing impedance in an AC circuit.",
+          "software": "SVG",
+          "caption": "Impedance in an AC circuit.",
+          "label": "fig:impedance-circuit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table comparing impedance values for different circuit components.",
+        "caption": "Comparison of impedance values for various circuit components.",
+        "label": "tab:impedance-values"
+      }
+    },
+    {
+      "title": "RF and Frequency Abbreviations",
+      "label": "subsec:rf-abbrev",
+      "questions": ["T5C06", "T5C07"],
+      "concepts": ["RF", "Megahertz", "Kilohertz"],
+      "prompts": [
+        "Explain the abbreviation 'RF' and its significance in radio frequency signals.",
+        "Describe the abbreviations for megahertz (MHz) and kilohertz (kHz) and their usage in frequency measurement."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the frequency spectrum with RF, MHz, and kHz labeled.",
+          "software": "SVG",
+          "caption": "Frequency spectrum with RF, MHz, and kHz labeled.",
+          "label": "fig:frequency-spectrum"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table showing common RF and frequency abbreviations.",
+        "caption": "Common RF and frequency abbreviations.",
+        "label": "tab:rf-abbreviations"
+      }
+    },
+    {
+      "title": "Calculating Power with Voltage/Current",
+      "label": "subsec:calc-power",
+      "questions": ["T5C08", "T5C09", "T5C10", "T5C11"],
+      "concepts": ["Electrical Power", "Voltage", "Current", "Watt"],
+      "prompts": [
+        "Explain the formula for calculating electrical power in a DC circuit (P = I E).",
+        "Provide examples of calculating power using voltage and current values.",
+        "Discuss the relationship between power, voltage, and current in electrical circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing a simple DC circuit with voltage, current, and power labeled.",
+          "software": "SVG",
+          "caption": "Simple DC circuit with voltage, current, and power labeled.",
+          "label": "fig:dc-circuit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table showing power calculations for different voltage and current values.",
+        "caption": "Power calculations for various voltage and current values.",
+        "label": "tab:power-calculations"
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "section_title": "Multimeters and Soldering",
+  "label": "sec:multimeters-soldering",
+  "section_label": "sec:multimeters-soldering",
+  "subsections": [
+    {
+      "title": "Measuring Voltage, Current, Resistance",
+      "label": "subsec:voltage-current",
+      "questions": ["T7D01", "T7D02", "T7D03", "T7D04"],
+      "concepts": ["Voltmeter", "Ammeter", "Ohmmeter", "Series Connection", "Parallel Connection"],
+      "prompts": [
+        "Explain the function and usage of a voltmeter in measuring electric potential.",
+        "Describe how a voltmeter is connected to a component to measure applied voltage.",
+        "Explain how a multimeter is connected to a component when configured to measure current.",
+        "Discuss the instrument used to measure electric current and its connection method."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the correct connection of a voltmeter in parallel to measure voltage.",
+          "software": "SVG",
+          "caption": "Voltmeter connected in parallel to measure voltage.",
+          "label": "fig:voltmeter-parallel"
+        },
+        {
+          "prompt": "Diagram showing the correct connection of an ammeter in series to measure current.",
+          "software": "SVG",
+          "caption": "Ammeter connected in series to measure current.",
+          "label": "fig:ammeter-series"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the connection methods for voltmeters and ammeters.",
+        "caption": "Comparison of voltmeter and ammeter connection methods.",
+        "label": "tab:voltmeter-ammeter-comparison"
+      }
+    },
+    {
+      "title": "Avoiding Damage with a Multimeter",
+      "label": "subsec:multimeter-damage",
+      "questions": ["T7D06", "T7D07"],
+      "concepts": ["Multimeter Damage", "Voltage Setting", "Resistance Setting"],
+      "prompts": [
+        "Explain the potential damage that can occur when using a multimeter incorrectly, such as measuring voltage on the resistance setting.",
+        "Discuss the types of measurements that can be made using a multimeter and the importance of using the correct settings."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Illustration of a multimeter showing the correct settings for measuring voltage and resistance.",
+          "software": "SVG",
+          "caption": "Multimeter settings for voltage and resistance measurement.",
+          "label": "fig:multimeter-settings"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table listing common multimeter settings and the potential damage that can occur if used incorrectly.",
+        "caption": "Common multimeter settings and potential damage.",
+        "label": "tab:multimeter-damage"
+      }
+    },
+    {
+      "title": "Soldering Techniques",
+      "label": "subsec:soldering",
+      "questions": ["T7D08", "T7D09"],
+      "concepts": ["Acid-Core Solder", "Rosin-Core Solder", "Cold Solder Joint"],
+      "prompts": [
+        "Explain why acid-core solder should not be used in radio and electronic applications.",
+        "Describe the characteristic appearance of a cold solder joint and why it is undesirable."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Image showing the difference between a good solder joint and a cold solder joint.",
+          "software": "web",
+          "caption": "Comparison of good and cold solder joints.",
+          "label": "fig:solder-joints"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing different types of solder and their suitability for electronic applications.",
+        "caption": "Comparison of solder types for electronic applications.",
+        "label": "tab:solder-types"
+      }
+    },
+    {
+      "title": "Resistance Testing Safety",
+      "label": "subsec:resistance-testing",
+      "questions": ["T7D10", "T7D11"],
+      "concepts": ["Ohmmeter", "Discharged Capacitor", "In-Circuit Resistance Measurement"],
+      "prompts": [
+        "Explain what reading indicates that an ohmmeter is connected across a large, discharged capacitor.",
+        "Discuss the precautions that should be taken when measuring in-circuit resistance with an ohmmeter."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the correct method for measuring in-circuit resistance with an ohmmeter.",
+          "software": "SVG",
+          "caption": "Correct method for measuring in-circuit resistance.",
+          "label": "fig:ohmmeter-circuit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table listing the precautions for measuring in-circuit resistance with an ohmmeter.",
+        "caption": "Precautions for in-circuit resistance measurement.",
+        "label": "tab:resistance-precautions"
+      }
+    }
+  ]
+}

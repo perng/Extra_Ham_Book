@@ -1,0 +1,94 @@
+\subsection{AM, Single-Sideband}
+\label{subsec:am-ssb}
+
+Single Sideband (SSB) modulation is a form of amplitude modulation (AM) that is widely used in radio communications, particularly for voice transmission. Unlike traditional AM, which transmits both the carrier and two sidebands (upper and lower), SSB suppresses the carrier and one of the sidebands, transmitting only the remaining sideband. This results in a more efficient use of bandwidth and power, making SSB particularly advantageous for long-distance communication.
+
+\subsubsection*{Upper Sideband vs. Lower Sideband}
+In SSB, the choice between Upper Sideband (USB) and Lower Sideband (LSB) depends on the frequency band being used. For example, USB is typically used for 10 meter HF, VHF, and UHF bands, while LSB is more common in lower frequency bands. The reason for this is largely historical and based on convention, but it also has to do with the way signals propagate at different frequencies.
+
+\subsubsection*{Bandwidth Efficiency}
+One of the key advantages of SSB is its narrow bandwidth. A typical SSB voice signal has a bandwidth of approximately 3 kHz, compared to 6 kHz for AM and even wider for FM. This narrower bandwidth allows more channels to be packed into the same frequency range, which is particularly useful in crowded bands like the HF spectrum. Additionally, the reduced bandwidth means less noise is picked up, improving signal clarity over long distances.
+
+\subsubsection*{Comparison with Other Modulation Types}
+When compared to FM, SSB signals are not only narrower in bandwidth but also more efficient in terms of power usage. FM, while more resistant to certain types of interference, requires a wider bandwidth and more power to transmit the same information. This makes SSB a preferred choice for weak signal communication, especially in the VHF and UHF bands where long-distance contacts are often made under challenging conditions.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{ssb-spectrum}
+    \caption{Frequency Spectrum Comparison of SSB, AM, and FM Signals}
+    \label{fig:ssb-spectrum}
+    % Diagram showing the frequency spectrum of an SSB signal compared to AM and FM signals.
+    % The figure should clearly illustrate the narrower bandwidth of SSB and the presence of both sidebands in AM.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Modulation Type} & \textbf{Bandwidth} & \textbf{Efficiency} & \textbf{Typical Usage} \\
+        \hline
+        SSB & 3 kHz & High & Long-distance voice \\
+        AM & 6 kHz & Medium & Broadcast radio \\
+        FM & 15 kHz & Low & Local communication \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of SSB, AM, and FM Modulation Techniques}
+    \label{tab:modulation-comparison}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A01}]
+    Which of the following is a form of amplitude modulation?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Spread spectrum
+        \item Packet radio
+        \item \textbf{Single sideband}
+        \item Phase shift keying (PSK)
+    \end{enumerate}
+\end{tcolorbox}
+Single sideband (SSB) is a form of amplitude modulation. Spread spectrum and packet radio are digital modulation techniques, while phase shift keying (PSK) is a form of phase modulation.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A03}]
+    Which type of voice mode is often used for long-distance (weak signal) contacts on the VHF and UHF bands?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item FM
+        \item DRM
+        \item \textbf{SSB}
+        \item PM
+    \end{enumerate}
+\end{tcolorbox}
+SSB is often used for long-distance contacts on VHF and UHF bands due to its narrow bandwidth and efficient power usage, making it ideal for weak signal communication.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A06}]
+    Which sideband is normally used for 10 meter HF, VHF, and UHF single-sideband communications?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Upper sideband}
+        \item Lower sideband
+        \item Suppressed sideband
+        \item Inverted sideband
+    \end{enumerate}
+\end{tcolorbox}
+Upper sideband (USB) is typically used for 10 meter HF, VHF, and UHF communications. This is a convention that has been established over time and is widely followed in amateur radio.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A07}]
+    What is a characteristic of single sideband (SSB) compared to FM?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item SSB signals are easier to tune in correctly
+        \item SSB signals are less susceptible to interference
+        \item \textbf{SSB signals have narrower bandwidth}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+SSB signals have a narrower bandwidth compared to FM, which makes them more efficient for long-distance communication. While SSB signals are not necessarily easier to tune or less susceptible to interference, their narrow bandwidth is a significant advantage.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A08}]
+    What is the approximate bandwidth of a typical single sideband (SSB) voice signal?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 1 kHz
+        \item \textbf{3 kHz}
+        \item 6 kHz
+        \item 15 kHz
+    \end{enumerate}
+\end{tcolorbox}
+The approximate bandwidth of a typical SSB voice signal is 3 kHz. This narrow bandwidth allows for more efficient use of the frequency spectrum and is one of the reasons SSB is preferred for long-distance communication.

@@ -1,0 +1,83 @@
+{
+  "section_title": "Reference Materials",
+  "label": "sec:references",
+  "section_label": "sec:references",
+  "subsections": [
+    {
+      "title": "Glossary, Band Plans, Q Signals",
+      "label": "subsec:glossary-band-q",
+      "questions": [],
+      "concepts": [
+        "Glossary",
+        "Band Plans",
+        "Q Signals"
+      ],
+      "prompts": [
+        "Explain the purpose and structure of a glossary in the context of amateur radio.",
+        "Describe the significance of band plans in amateur radio operations.",
+        "Discuss the use and importance of Q signals in radio communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a typical amateur radio glossary.",
+          "software": "SVG",
+          "caption": "Structure of a typical amateur radio glossary.",
+          "label": "fig:glossary-structure"
+        },
+        {
+          "prompt": "Visual representation of a band plan for a specific frequency range.",
+          "software": "gnuplot",
+          "caption": "Band plan for a specific frequency range.",
+          "label": "fig:band-plan"
+        },
+        {
+          "prompt": "Illustration of common Q signals used in amateur radio.",
+          "software": "web",
+          "caption": "Common Q signals used in amateur radio.",
+          "label": "fig:q-signals"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table listing common Q signals and their meanings.",
+          "caption": "Common Q signals and their meanings.",
+          "label": "tab:q-signals"
+        }
+      ]
+    },
+    {
+      "title": "Phonetic Alphabet, Formulas",
+      "label": "subsec:phonetic-formulas",
+      "questions": [],
+      "concepts": [
+        "Phonetic Alphabet",
+        "Formulas"
+      ],
+      "prompts": [
+        "Explain the importance of the phonetic alphabet in radio communication.",
+        "Discuss the role of formulas in understanding and designing radio circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the phonetic alphabet used in radio communication.",
+          "software": "SVG",
+          "caption": "Phonetic alphabet used in radio communication.",
+          "label": "fig:phonetic-alphabet"
+        },
+        {
+          "prompt": "Visual representation of key formulas used in radio circuit design.",
+          "software": "gnuplot",
+          "caption": "Key formulas used in radio circuit design.",
+          "label": "fig:radio-formulas"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table listing key formulas used in radio circuit design.",
+          "caption": "Key formulas used in radio circuit design.",
+          "label": "tab:radio-formulas"
+        }
+      ]
+    }
+  ]
+}

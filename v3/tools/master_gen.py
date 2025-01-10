@@ -9,7 +9,13 @@ import argparse
 parser = argparse.ArgumentParser(description='Process questions and optionally print prompts.')
 parser.add_argument('-l', '--license', type=str, required=True, help='license class')
 args = parser.parse_args()
-titles = {'tech':'Technical Ham', 'general':'General Ham', 'extra':'Extra HAM!'}
+titles = {'tech':'Beyond Memorization: Ham Technician Class', 
+          'general':'Beyond Memorization: Ham General Class', 
+          'extra':'Beyond Memorization: Ham Amateur Extra Class'}
+sub_titles = {'tech':'Building a Strong Foundation for New Amateur Operators', 
+               'general':'Elevating Your Radio Skills and Expanding Horizons', 
+               'extra':'Reaching the Pinnacle of Amateur Radio Expertise'}
+
 assert args.license in ['tech', 'general', 'extra']
 
 
@@ -68,13 +74,33 @@ latex_content = r"""\documentclass[12pt]{book}
 % Ensure subsubsections are unnumbered in TOC as well
 \setcounter{secnumdepth}{2}  % Only number down to subsection level
 
+%\setcounter{tocdepth}{1}
 \begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}    
+    {\Huge\bfseries <book_title>\par}
+    \vspace{2cm}    
+    {\Large <book_subtitle>\par}
+    
+    \vspace{3cm}
+    
+    {\large\today\par}
+    
+    \vfill
+    
+    {\large Prepared by AK6KP\par}
+\end{titlepage}
+
+\cleardoublepage
 
 \tableofcontents
 \newpage
 """
 
 latex_content = latex_content.replace('<book_title>', titles[args.license])
+latex_content = latex_content.replace('<book_subtitle>', sub_titles[args.license])
 
 
 base_dir = args.license + '/'
@@ -109,4 +135,4 @@ latex_content += r"\end{document}"
 with open(base_dir + f'{args.license}.tex', 'w') as f:
     f.write(latex_content)
 
-print("master.tex has been generated successfully.")
+print(f"{args.license}.tex has been generated successfully.")

@@ -1,0 +1,103 @@
+{
+  "section_title": "Station Identification and Control Operators",
+  "label": "sec:station-id-operators",
+  "subsections": [
+    {
+      "title": "Station ID Requirements",
+      "label": "subsec:id-requirements",
+      "questions": [
+        "T1F02",
+        "T1F03",
+        "T1F04",
+        "T1F05",
+        "T1F06",
+        "T1A03"
+      ],
+      "concepts": [
+        "Tactical Call Signs",
+        "Call Sign Identification Frequency",
+        "Language for Identification",
+        "Phone Emission Identification",
+        "Self-Assigned Indicators",
+        "Phonetic Alphabet Usage"
+      ],
+      "prompts": [
+        "Explain the concept of tactical call signs and their role in amateur radio communications.",
+        "Describe the FCC rules regarding the frequency of call sign identification during transmissions.",
+        "Discuss the permissible languages for station identification in phone sub-bands.",
+        "Explain the methods of call sign identification required for phone transmissions.",
+        "Describe the acceptable self-assigned indicators for phone transmissions.",
+        "Discuss the FCC's stance on the use of the phonetic alphabet for station identification."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the timing of call sign identification during a transmission.",
+          "software": "SVG",
+          "caption": "Timing of Call Sign Identification",
+          "label": "fig:call-sign-timing"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the FCC rules for station identification.",
+          "caption": "FCC Rules for Station Identification",
+          "label": "tab:station-id-rules"
+        }
+      ]
+    },
+    {
+      "title": "Control Operator Duties",
+      "label": "subsec:control-ops",
+      "questions": [
+        "T1E01",
+        "T1E02",
+        "T1E03",
+        "T1E04",
+        "T1E05",
+        "T1E06",
+        "T1E07",
+        "T1E08",
+        "T1E09",
+        "T1E10",
+        "T1E11"
+      ],
+      "concepts": [
+        "Control Operator Responsibilities",
+        "Automatic Control",
+        "Remote Control",
+        "Station Control Point",
+        "License Class Privileges",
+        "Station Licensee vs. Control Operator"
+      ],
+      "prompts": [
+        "Explain the role and responsibilities of a control operator in an amateur radio station.",
+        "Discuss the concept of automatic control and its applications in amateur radio.",
+        "Describe the requirements and implications of remote control operation.",
+        "Explain the significance of the station control point in amateur radio operations.",
+        "Discuss how the control operator's license class determines the station's transmitting frequency privileges.",
+        "Describe the relationship between the station licensee and the control operator, and their shared responsibilities."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the relationship between the station licensee and the control operator.",
+          "software": "SVG",
+          "caption": "Relationship Between Licensee and Control Operator",
+          "label": "fig:licensee-control-operator"
+        },
+        {
+          "prompt": "Flowchart showing the decision-making process for determining control operator responsibilities.",
+          "software": "Graphviz",
+          "caption": "Control Operator Decision Flowchart",
+          "label": "fig:control-operator-flowchart"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the duties and responsibilities of a control operator.",
+          "caption": "Control Operator Duties and Responsibilities",
+          "label": "tab:control-operator-duties"
+        }
+      ]
+    }
+  ]
+}

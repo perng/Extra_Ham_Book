@@ -1,0 +1,70 @@
+\subsection{DMR Talkgroups}
+\label{subsec:dmr-talkgroups2}
+
+In this section, we'll dive into the fascinating world of DMR (Digital Mobile Radio) talkgroups. If you've ever wondered how multiple users can share a single channel without stepping on each other's toes, you're in the right place. Let's break it down.
+
+\subsubsection*{What are Talkgroups?}
+Talkgroups are essentially a way for groups of users to share a channel at different times without hearing other users on the channel. Imagine you're at a party, and instead of everyone talking at once, you have different groups chatting in their own little corners. That's what talkgroups do—they keep the conversation organized and interference-free.
+
+\subsubsection*{Time-Multiplexing in DMR}
+DMR uses a technique called time-multiplexing to transmit two digital voice signals on a single 12.5 kHz repeater channel. Think of it as a time-share condo: two users get to use the same channel, but at different times. This is achieved by dividing the channel into time slots, each carrying a separate voice signal. The result? Efficient use of bandwidth and more users can communicate simultaneously.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{dmr-time-multiplexing}
+    \caption{Time-Multiplexing in DMR}
+    \label{fig:dmr-time-multiplexing}
+    % Diagram illustrating the time-multiplexing process in DMR, showing how two voice signals share a single channel.
+\end{figure}
+
+\subsubsection*{Advantages of DMR Talkgroups}
+Talkgroups offer several advantages for group communication. First, they reduce interference from other users, making conversations clearer. Second, they allow for efficient channel sharing, which is especially useful in crowded frequency bands. Finally, they provide a level of privacy, as only members of the talkgroup can hear the conversation.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{dmr-talkgroups}
+    \caption{DMR Talkgroup Organization}
+    \label{fig:dmr-talkgroups}
+    % Flowchart showing how talkgroups are organized and accessed in a DMR repeater system.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Method} & \textbf{Description} & \textbf{Advantages} \\
+        \hline
+        DMR Talkgroups & Time-multiplexing & Efficient, low interference \\
+        CTCSS & Continuous Tone-Coded Squelch System & Simple, but limited users \\
+        CDMA & Code Division Multiple Access & High capacity, complex \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Channel-Sharing Methods}
+    \label{tab:channel-sharing-comparison}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D02}]
+    What is a “talkgroup” on a DMR repeater?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A group of operators sharing common interests
+        \item \textbf{A way for groups of users to share a channel at different times without hearing other users on the channel}
+        \item A protocol that increases the signal-to-noise ratio when multiple repeaters are linked together
+        \item A net that meets at a specified time
+    \end{enumerate}
+\end{tcolorbox}
+
+Talkgroups allow multiple users to share a single channel by dividing it into time slots. This way, users in different talkgroups can communicate without interfering with each other. Options A, C, and D describe other concepts but do not accurately define a talkgroup.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D07}]
+    Which of the following describes DMR?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{A technique for time-multiplexing two digital voice signals on a single 12.5 kHz repeater channel}
+        \item An automatic position tracking mode for FM mobiles communicating through repeaters
+        \item An automatic computer logging technique for hands-off logging when communicating while operating a vehicle
+        \item A digital technique for transmitting on two repeater inputs simultaneously for automatic error correction
+    \end{enumerate}
+\end{tcolorbox}
+
+DMR uses time-multiplexing to allow two digital voice signals to share a single 12.5 kHz channel. This is a key feature of DMR, distinguishing it from other digital radio technologies. Options B, C, and D describe functionalities that are not related to DMR's core technology.

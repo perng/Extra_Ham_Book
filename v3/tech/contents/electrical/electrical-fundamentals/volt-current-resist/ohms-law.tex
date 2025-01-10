@@ -1,0 +1,237 @@
+\subsection{Ohm’s Law and Circuit Calculations}
+\label{subsec:ohms-law}
+
+Ohm's Law is one of the most fundamental principles in electrical engineering, and it’s as simple as it is powerful. It describes the relationship between voltage (\(E\)), current (\(I\)), and resistance (\(R\)) in a circuit. The law is often summarized by the equation:
+
+\begin{equation}
+    E = I \times R
+    \label{eq:ohms-law}
+\end{equation}
+
+This equation tells us that the voltage across a resistor is equal to the current flowing through it multiplied by its resistance. But wait, there’s more! Ohm’s Law can be rearranged to solve for any of the three variables, depending on what you’re trying to find. For example, if you want to calculate current, you can rearrange the equation to:
+
+\begin{equation}
+    I = \frac{E}{R}
+    \label{eq:current}
+\end{equation}
+
+Similarly, if you need to find resistance, you can use:
+
+\begin{equation}
+    R = \frac{E}{I}
+    \label{eq:resistance}
+\end{equation}
+
+These formulas are your best friends when it comes to analyzing circuits. Let’s break it down further.
+
+
+\subsubsection*{Calculating Current}
+To calculate current, you need to know the voltage and resistance in the circuit. Using Equation \ref{eq:current}, you can find the current by dividing the voltage by the resistance. For example, if you have a circuit with a 12-volt battery and a 4-ohm resistor, the current would be:
+
+\[
+I = \frac{12\,\text{V}}{4\,\Omega} = 3\,\text{A}
+\]
+
+\subsubsection*{Calculating Voltage}
+If you know the current and resistance, you can calculate the voltage using Equation \ref{eq:ohms-law}. For instance, if a circuit has a current of 2 amperes and a resistance of 5 ohms, the voltage would be:
+
+\[
+E = 2\,\text{A} \times 5\,\Omega = 10\,\text{V}
+\]
+
+\subsubsection*{Calculating Resistance}
+Finally, if you know the voltage and current, you can find the resistance using Equation \ref{eq:resistance}. For example, if a circuit has a voltage of 9 volts and a current of 3 amperes, the resistance would be:
+
+\[
+R = \frac{9\,\text{V}}{3\,\text{A}} = 3\,\Omega
+\]
+
+\subsubsection*{Series and Parallel Circuits}
+In a series circuit, the current is the same through all components, but the voltage across each component can vary. This is because the total resistance in a series circuit is the sum of all individual resistances. On the other hand, in a parallel circuit, the voltage is the same across all components, but the current can vary. The total resistance in a parallel circuit is less than the smallest individual resistance.
+
+\begin{figure}[h!]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{figures/ohms-law}
+    \caption{Ohm's Law in a simple circuit.}
+    \label{fig:ohms-law}
+    % Diagram illustrating Ohm's Law with a simple circuit showing voltage, current, and resistance.
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    %\includegraphics[width=0.8\textwidth]{figures/series-parallel}
+    \caption{Series vs. parallel circuits.}
+    \label{fig:series-parallel}
+    % Comparison diagram of series and parallel circuits, highlighting differences in current and voltage.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Quantity} & \textbf{Formula} \\
+        \hline
+        Voltage (\(E\)) & \(E = I \times R\) \\
+        Current (\(I\)) & \(I = \frac{E}{R}\) \\
+        Resistance (\(R\)) & \(R = \frac{E}{I}\) \\
+        \hline
+    \end{tabular}
+    \caption{Ohm's Law formulas.}
+    \label{tab:ohms-law-formulas}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D01}]
+    What formula is used to calculate current in a circuit?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \(I = E R\)
+        \item \textbf{\(I = E / R\)}
+        \item \(I = E + R\)
+        \item \(I = E - R\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating current is \(I = E / R\), as shown in Equation \ref{eq:current}. The other options are incorrect because they either multiply, add, or subtract the voltage and resistance, which doesn’t make sense in the context of Ohm’s Law.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D02}]
+    What formula is used to calculate voltage in a circuit?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{\(E = I \times R\)}
+        \item \(E = I / R\)
+        \item \(E = I + R\)
+        \item \(E = I - R\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating voltage is \(E = I \times R\), as shown in Equation \ref{eq:ohms-law}. The other options are incorrect because they either divide, add, or subtract the current and resistance, which doesn’t align with Ohm’s Law.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D03}]
+    What formula is used to calculate resistance in a circuit?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \(R = E \times I\)
+        \item \textbf{\(R = E / I\)}
+        \item \(R = E + I\)
+        \item \(R = E - I\)
+    \end{enumerate}
+\end{tcolorbox}
+The correct formula for calculating resistance is \(R = E / I\), as shown in Equation \ref{eq:resistance}. The other options are incorrect because they either multiply, add, or subtract the voltage and current, which doesn’t follow Ohm’s Law.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D04}]
+    What is the resistance of a circuit in which a current of 3 amperes flows when connected to 90 volts?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 3 ohms
+        \item \textbf{30 ohms}
+        \item 93 ohms
+        \item 270 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:resistance}, the resistance is calculated as \(R = \frac{90\,\text{V}}{3\,\text{A}} = 30\,\Omega\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D05}]
+    What is the resistance of a circuit for which the applied voltage is 12 volts and the current flow is 1.5 amperes?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 18 ohms
+        \item 0.125 ohms
+        \item \textbf{8 ohms}
+        \item 13.5 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:resistance}, the resistance is calculated as \(R = \frac{12\,\text{V}}{1.5\,\text{A}} = 8\,\Omega\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D06}]
+    What is the resistance of a circuit that draws 4 amperes from a 12-volt source?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{3 ohms}
+        \item 16 ohms
+        \item 48 ohms
+        \item 8 ohms
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:resistance}, the resistance is calculated as \(R = \frac{12\,\text{V}}{4\,\text{A}} = 3\,\Omega\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D07}]
+    What is the current in a circuit with an applied voltage of 120 volts and a resistance of 80 ohms?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 9600 amperes
+        \item 200 amperes
+        \item 0.667 amperes
+        \item \textbf{1.5 amperes}
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:current}, the current is calculated as \(I = \frac{120\,\text{V}}{80\,\Omega} = 1.5\,\text{A}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D08}]
+    What is the current through a 100-ohm resistor connected across 200 volts?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 20,000 amperes
+        \item 0.5 amperes
+        \item \textbf{2 amperes}
+        \item 100 amperes
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:current}, the current is calculated as \(I = \frac{200\,\text{V}}{100\,\Omega} = 2\,\text{A}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D09}]
+    What is the current through a 24-ohm resistor connected across 240 volts?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 24,000 amperes
+        \item 0.1 amperes
+        \item \textbf{10 amperes}
+        \item 216 amperes
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:current}, the current is calculated as \(I = \frac{240\,\text{V}}{24\,\Omega} = 10\,\text{A}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D10}]
+    What is the voltage across a 2-ohm resistor if a current of 0.5 amperes flows through it?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{1 volt}
+        \item 0.25 volts
+        \item 2.5 volts
+        \item 1.5 volts
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:ohms-law}, the voltage is calculated as \(E = 0.5\,\text{A} \times 2\,\Omega = 1\,\text{V}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D11}]
+    What is the voltage across a 10-ohm resistor if a current of 1 ampere flows through it?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 1 volt
+        \item \textbf{10 volts}
+        \item 11 volts
+        \item 9 volts
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:ohms-law}, the voltage is calculated as \(E = 1\,\text{A} \times 10\,\Omega = 10\,\text{V}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D12}]
+    What is the voltage across a 10-ohm resistor if a current of 2 amperes flows through it?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 8 volts
+        \item 0.2 volts
+        \item 12 volts
+        \item \textbf{20 volts}
+    \end{enumerate}
+\end{tcolorbox}
+Using Equation \ref{eq:ohms-law}, the voltage is calculated as \(E = 2\,\text{A} \times 10\,\Omega = 20\,\text{V}\). The other options are incorrect because they either misapply the formula or perform incorrect calculations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D13}]
+    In which type of circuit is DC current the same through all components?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Series}
+        \item Parallel
+        \item Resonant
+        \item Branch
+    \end{enumerate}
+\end{tcolorbox}
+In a series circuit, the current is the same through all components. This is because there’s only one path for the current to flow. In parallel circuits, the current can vary across different branches.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5D14}]
+    In which type of circuit is voltage the same across all components?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Series
+        \item \textbf{Parallel}
+        \item Resonant
+        \item Branch
+    \end{enumerate}
+\end{tcolorbox}
+In a parallel circuit, the voltage is the same across all components. This is because each component is connected directly to the voltage source. In series circuits, the voltage can vary across different components.

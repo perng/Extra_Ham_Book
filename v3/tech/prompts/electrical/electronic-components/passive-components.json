@@ -1,0 +1,110 @@
+{
+  "section_title": "Resistors, Capacitors, Inductors",
+  "label": "sec:passive-components",
+  "section_label": "sec:passive-components",
+  "subsections": [
+    {
+      "title": "Basics",
+      "label": "subsec:basics-passive",
+      "questions": [
+        "T6A01",
+        "T6A02",
+        "T6A03",
+        "T6A04",
+        "T6A05",
+        "T6A06",
+        "T6A07",
+        "T6A08",
+        "T6A09",
+        "T6A10",
+        "T6A11",
+        "T6A12"
+      ],
+      "concepts": [
+        "Resistor",
+        "Potentiometer",
+        "Capacitor",
+        "Inductor",
+        "SPDT Switch",
+        "Fuse",
+        "Rechargeable Battery Chemistries",
+        "Non-Rechargeable Battery Chemistries",
+        "Single-Pole Single-Throw Switch"
+      ],
+      "prompts": [
+        "Explain the fundamental role of a resistor in a DC circuit and how it opposes the flow of current.",
+        "Describe the construction and function of a potentiometer, including its use as an adjustable volume control.",
+        "Discuss the concept of capacitance and how a capacitor stores energy in an electric field.",
+        "Explain the construction of a capacitor, focusing on the conductive surfaces separated by an insulator.",
+        "Describe the function of an inductor and how it stores energy in a magnetic field.",
+        "Explain the typical construction of an inductor as a coil of wire and its role in circuits.",
+        "Discuss the function of an SPDT switch and how it differs from other types of switches.",
+        "Explain the purpose of a fuse in protecting circuit components from current overloads.",
+        "Compare and contrast rechargeable and non-rechargeable battery chemistries, providing examples of each.",
+        "Describe the characteristics of a single-pole single-throw switch and its representation in circuit diagrams."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of current through a resistor in a DC circuit.",
+          "software": "SVG",
+          "caption": "Current flow through a resistor in a DC circuit.",
+          "label": "fig:resistor-current-flow"
+        },
+        {
+          "prompt": "Illustration of a potentiometer with adjustable wiper and its use in a volume control circuit.",
+          "software": "SVG",
+          "caption": "Potentiometer in a volume control circuit.",
+          "label": "fig:potentiometer-volume-control"
+        },
+        {
+          "prompt": "Diagram of a capacitor showing conductive plates separated by an insulator.",
+          "software": "SVG",
+          "caption": "Structure of a capacitor.",
+          "label": "fig:capacitor-structure"
+        },
+        {
+          "prompt": "Illustration of an inductor as a coil of wire and its magnetic field.",
+          "software": "SVG",
+          "caption": "Inductor and its magnetic field.",
+          "label": "fig:inductor-magnetic-field"
+        },
+        {
+          "prompt": "Diagram of an SPDT switch showing its switching mechanism.",
+          "software": "SVG",
+          "caption": "SPDT switch mechanism.",
+          "label": "fig:spdt-switch"
+        },
+        {
+          "prompt": "Illustration of a fuse protecting a circuit from current overload.",
+          "software": "SVG",
+          "caption": "Fuse in a circuit.",
+          "label": "fig:fuse-circuit"
+        },
+        {
+          "prompt": "Comparison chart of rechargeable and non-rechargeable battery chemistries.",
+          "software": "SVG",
+          "caption": "Comparison of battery chemistries.",
+          "label": "fig:battery-chemistries"
+        },
+        {
+          "prompt": "Diagram of a single-pole single-throw switch in a circuit.",
+          "software": "SVG",
+          "caption": "Single-pole single-throw switch.",
+          "label": "fig:spst-switch"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing the properties of resistors, capacitors, and inductors.",
+          "caption": "Comparison of Resistors, Capacitors, and Inductors.",
+          "label": "tab:resistor-capacitor-inductor-comparison"
+        },
+        {
+          "prompt": "Create a table listing common rechargeable and non-rechargeable battery chemistries with their characteristics.",
+          "caption": "Common Battery Chemistries.",
+          "label": "tab:battery-chemistries"
+        }
+      ]
+    }
+  ]
+}

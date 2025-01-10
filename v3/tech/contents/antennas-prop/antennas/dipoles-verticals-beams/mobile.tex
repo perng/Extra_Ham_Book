@@ -1,0 +1,69 @@
+\subsection{Mobile Antennas}
+\label{subsec:mobile}
+
+When it comes to mobile antennas, there are a few challenges and advantages that are worth discussing. Let's dive into some of the key concepts, starting with the challenges of using a handheld VHF transceiver with a flexible antenna inside a vehicle.
+
+\subsubsection*{Challenges of Using a Handheld VHF Transceiver in a Vehicle}
+Using a handheld VHF transceiver with a flexible antenna inside a vehicle can be tricky. One of the main issues is the \textit{shielding effect} of the vehicle. The metal body of the car acts like a Faraday cage, which can significantly reduce the signal strength. This happens because the metal structure of the vehicle blocks or reflects the radio waves, making it harder for the antenna to transmit or receive signals effectively. Imagine trying to have a conversation with someone while standing inside a metal box—it's not going to be easy!
+
+\subsubsection*{Advantages of a 5/8 Wavelength Whip Antenna}
+Now, let's talk about something a bit more positive: the advantages of a 5/8 wavelength whip antenna for VHF or UHF mobile service. Compared to a 1/4-wavelength antenna, the 5/8 wavelength whip antenna has more gain. This means it can transmit and receive signals more effectively, especially in mobile environments where signal strength can be a challenge. The 5/8 wavelength design also helps in directing the signal more horizontally, which is ideal for mobile communication where you're typically trying to reach other stations on the ground rather than in the sky.
+
+\subsubsection*{The Shielding Effect of a Vehicle}
+The shielding effect of a vehicle is a critical factor to consider when using mobile antennas. As mentioned earlier, the metal body of the car can block or reflect radio waves, reducing the effectiveness of your antenna. This is why many mobile operators prefer to use external antennas mounted on the roof or trunk of the vehicle. These external antennas are less affected by the shielding effect and can provide better performance.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{mobile-shielding}
+    \caption{Mobile Antenna Shielding Effect}
+    \label{fig:mobile-shielding}
+    % Diagram showing a mobile antenna setup inside a vehicle, with arrows indicating how the metal body of the car blocks or reflects radio waves, reducing signal strength.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{whip-comparison}
+    \caption{Comparison of Whip Antennas}
+    \label{fig:whip-comparison}
+    % Diagram comparing the radiation patterns of a 1/4-wavelength and a 5/8-wavelength whip antenna, showing the increased gain and horizontal radiation of the 5/8-wavelength antenna.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Comparison of Whip Antenna Performance}
+    \label{tab:whip-performance}
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Antenna Type} & \textbf{Gain (dBi)} & \textbf{Radiation Pattern} \\
+        \hline
+        1/4-wavelength & 2.15 & Omnidirectional \\
+        5/8-wavelength & 3.5 & More horizontal \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A07}]
+    What is a disadvantage of using a handheld VHF transceiver with a flexible antenna inside a vehicle?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Signal strength is reduced due to the shielding effect of the vehicle}
+        \item The bandwidth of the antenna will decrease, increasing SWR
+        \item The SWR might decrease, decreasing the signal strength
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+The shielding effect of the vehicle's metal body reduces the signal strength, making it harder for the antenna to transmit or receive signals effectively. The other options are incorrect because the bandwidth and SWR are not directly affected by the shielding effect in the way described.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A12}]
+    What is an advantage of a 5/8 wavelength whip antenna for VHF or UHF mobile service?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{It has more gain than a 1/4-wavelength antenna}
+        \item It radiates at a very high angle
+        \item It eliminates distortion caused by reflected signals
+        \item It has 10 times the power gain of a 1/4 wavelength whip
+    \end{enumerate}
+\end{tcolorbox}
+
+The 5/8 wavelength whip antenna has more gain than a 1/4-wavelength antenna, which means it can transmit and receive signals more effectively. The other options are incorrect because the 5/8 wavelength antenna does not radiate at a very high angle, nor does it eliminate distortion caused by reflected signals. Additionally, it does not have 10 times the power gain of a 1/4 wavelength whip.

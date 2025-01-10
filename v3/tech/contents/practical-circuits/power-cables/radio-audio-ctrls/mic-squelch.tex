@@ -1,0 +1,328 @@
+\subsection{Mic Gain, Squelch, etc.}
+\label{subsec:mic-squelch}
+
+In this section, we'll dive into some of the finer details of radio operation, focusing on microphone gain, squelch, and other related concepts. These might seem like small details, but trust me, they can make a big difference in your radio experience. So, let's get started!
+
+\subsubsection*{Microphone Gain and SSB Transmissions}
+
+Microphone gain is essentially how sensitive your microphone is to your voice. Think of it like turning up the volume on your voice before it even hits the transmitter. While this might sound like a good thing, too much gain can lead to distorted audio. Imagine shouting into a microphone—your voice might start to sound like a robot or, worse, like you're underwater. This is because excessive gain can cause the audio signal to clip, leading to distortion. In SSB (Single Sideband) transmissions, this distortion can make your signal hard to understand, which is the last thing you want when you're trying to communicate clearly.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/mic-gain-distortion}
+    \caption{Impact of Microphone Gain on SSB Transmissions}
+
+    \label{fig:mic-gain-distortion}
+    % Diagram showing the relationship between microphone gain and audio distortion in SSB transmissions
+\end{figure}
+
+\subsubsection*{Frequency Entry Methods}
+
+When it comes to entering frequencies on your transceiver, you have a few options. The most common methods are using the keypad or the VFO (Variable Frequency Oscillator) knob. The keypad is straightforward—just punch in the frequency you want. The VFO knob, on the other hand, lets you scroll through frequencies manually. Both methods have their pros and cons, but they’re generally more user-friendly than other techniques like CTCSS or DTMF encoding, which are more specialized.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/frequency-entry}
+    \caption{Frequency Entry Methods on a Transceiver}
+    \label{fig:frequency-entry}
+    % Illustration of a transceiver's keypad and VFO knob for frequency entry
+\end{figure}
+
+\subsubsection*{Squelch and Weak FM Signals}
+
+Squelch is like a gatekeeper for your receiver. It keeps the noise out when there’s no signal, but lets the signal through when it’s strong enough. Adjusting the squelch threshold is crucial for hearing weak FM signals. If you set it too high, you might miss a faint signal. Set it too low, and you’ll be bombarded with noise. The trick is to find that sweet spot where the receiver output audio is just barely on all the time, allowing you to catch those weak signals without the constant hiss of background noise.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/squelch-threshold}
+    \caption{Squelch Threshold Adjustment for Weak FM Signals}
+    \label{fig:squelch-threshold}
+    % Graph showing the effect of squelch threshold adjustment on weak FM signal reception
+\end{figure}
+
+\subsubsection*{Memory Channels}
+
+Memory channels are a lifesaver when you want quick access to your favorite frequencies. Instead of manually entering the frequency every time, you can store it in a memory channel and recall it with a single button press. It’s like having a speed dial for your radio. This is especially handy when you’re in the middle of an intense QSO (conversation) and don’t want to fumble with the keypad.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/memory-channel}
+    \caption{Memory Channel Interface for Quick Frequency Access}
+    \label{fig:memory-channel}
+    % Diagram of a transceiver's memory channel interface for quick frequency access
+\end{figure}
+
+\subsubsection*{Scanning Function}
+
+The scanning function in FM transceivers is like having a radar for radio frequencies. It tunes through a range of frequencies to check for activity, which is incredibly useful when you’re trying to find someone to talk to or monitoring a busy channel. It’s like flipping through radio stations, but for ham radio. This feature is particularly handy in environments where frequencies are constantly changing, like during a contest or emergency situation.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/scanning-function}
+    \caption{FM Transceiver Scanning Function}
+    \label{fig:scanning-function}
+    % Flowchart of the scanning function in an FM transceiver
+\end{figure}
+
+\subsubsection*{RIT/Clarifier}
+
+The RIT (Receiver Incremental Tuning) or Clarifier is your best friend when dealing with SSB signals that sound a bit off. If the voice pitch of a returning signal seems too high or low, you can use the RIT/Clarifier to fine-tune the frequency and correct the pitch. It’s like adjusting the tuning on a guitar—just a little twist can make all the difference.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/rit-clarifier}
+    \caption{RIT/Clarifier in SSB Signal Pitch Adjustment}
+    \label{fig:rit-clarifier}
+    % Diagram illustrating the use of RIT/Clarifier in SSB signal pitch adjustment
+\end{figure}
+
+\subsubsection*{DMR Code Plug}
+
+A DMR (Digital Mobile Radio) code plug is essentially a configuration file that contains all the necessary information for your DMR transceiver to operate. This includes access information for repeaters and talkgroups. Think of it as the brain of your DMR radio—without it, your radio wouldn’t know where to connect or how to communicate.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/dmr-code-plug}
+    \caption{Contents of a DMR Code Plug}
+    \label{fig:dmr-code-plug}
+    % Illustration of a DMR code plug and its contents
+\end{figure}
+
+\subsubsection*{Receive Bandwidth}
+
+Receive bandwidth is all about finding the right balance between signal clarity and noise reduction. Different modes require different bandwidth settings. For example, a narrower bandwidth might be better for reducing noise, but it could also cut out some of the signal’s detail. On the other hand, a wider bandwidth might give you more detail, but at the cost of increased noise. It’s a trade-off, and finding the right setting can make a big difference in your reception quality.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/receive-bandwidth}
+    \caption{Receive Bandwidth Settings and Noise Reduction}
+    \label{fig:receive-bandwidth}
+    % Graph comparing different receive bandwidth settings and their impact on noise reduction
+\end{figure}
+
+\subsubsection*{Digital Voice Group Selection}
+
+Selecting a specific group of stations on a digital voice transceiver is usually done by entering the group’s identification code. This is particularly useful in digital communication, where you might want to talk to a specific group of people without broadcasting to everyone. It’s like having a private chat room within the larger network.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/group-selection}
+    \caption{Group Selection on a Digital Voice Transceiver}
+    \label{fig:group-selection}
+    % Diagram showing the process of selecting a group of stations on a digital voice transceiver
+\end{figure}
+
+\subsubsection*{Receiver Filter Bandwidth}
+
+The receiver filter bandwidth plays a crucial role in SSB reception. A wider bandwidth might give you a better signal-to-noise ratio, but it could also let in more noise. Conversely, a narrower bandwidth might reduce noise, but it could also cut out some of the signal’s detail. The key is to find the right balance for your specific situation.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/filter-bandwidth}
+    \caption{Receiver Filter Bandwidth and Signal-to-Noise Ratio}
+    \label{fig:filter-bandwidth}
+    % Graph showing the relationship between receiver filter bandwidth and signal-to-noise ratio in SSB reception
+\end{figure}
+
+\subsubsection*{D-STAR Configuration}
+
+Before you can transmit on a D-STAR digital transceiver, you need to program your call sign into the device. This is a crucial step, as it ensures that your transmissions are properly identified. Without this configuration, your radio might not even transmit, or worse, it could transmit without proper identification, which is a big no-no in the ham radio world.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/dstar-config}
+    \caption{D-STAR Transceiver Configuration Interface}
+    \label{fig:dstar-config}
+    % Diagram of a D-STAR transceiver configuration interface
+\end{figure}
+
+\subsubsection*{FM Receiver Tuning}
+
+Tuning an FM receiver above or below a signal’s frequency can have some interesting effects. If you tune too far, you might hear a change in the audio pitch, or even some distortion. This is because the receiver is no longer perfectly aligned with the signal’s frequency, leading to a loss of clarity. It’s like trying to listen to a radio station that’s just slightly out of range—you might catch some of it, but it won’t be crystal clear.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/fm-tuning}
+    \caption{Effects of FM Receiver Tuning}
+    \label{fig:fm-tuning}
+    % Graph illustrating the effects of tuning an FM receiver above or below a signal's frequency
+\end{figure}
+
+\subsubsection*{Tables}
+
+\begin{table}[h]
+    \centering
+    \caption{Comparison of Receiver Filter Bandwidths for SSB Reception}
+    \label{tab:filter-bandwidth-comparison}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Bandwidth (Hz)} & \textbf{Impact on SSB Reception} \\
+        \hline
+        500 & Narrow, reduces noise but may cut signal detail \\
+        1000 & Moderate, balances noise reduction and signal clarity \\
+        2400 & Wide, better signal-to-noise ratio but more noise \\
+        5000 & Very wide, maximum detail but highest noise \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Effects of Excessive Microphone Gain on SSB Transmissions}
+    \label{tab:mic-gain-effects}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Microphone Gain Level} & \textbf{Effect on SSB Transmissions} \\
+        \hline
+        Low & Clear audio, but may be too quiet \\
+        Moderate & Optimal balance of clarity and volume \\
+        High & Distorted audio, clipping, and reduced intelligibility \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B01}]
+    What is the effect of excessive microphone gain on SSB transmissions?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Frequency instability
+        \item \textbf{Distorted transmitted audio}
+        \item Increased SWR
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+Excessive microphone gain can cause the audio signal to clip, leading to distorted transmitted audio. This distortion makes the signal hard to understand, which is problematic for clear communication.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B02}]
+    Which of the following can be used to enter a transceiver’s operating frequency?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{The keypad or VFO knob}
+        \item The CTCSS or DTMF encoder
+        \item The Automatic Frequency Control
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+The keypad or VFO knob are the most common methods for entering a transceiver’s operating frequency. Other methods like CTCSS or DTMF encoding are more specialized and not typically used for frequency entry.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B03}]
+    How is squelch adjusted so that a weak FM signal can be heard?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Set the squelch threshold so that receiver output audio is on all the time}
+        \item Turn up the audio level until it overcomes the squelch threshold
+        \item Turn on the anti-squelch function
+        \item Enable squelch enhancement
+    \end{enumerate}
+\end{tcolorbox}
+
+Setting the squelch threshold so that the receiver output audio is on all the time allows weak FM signals to be heard without being drowned out by noise.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B04}]
+    What is a way to enable quick access to a favorite frequency or channel on your transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Enable the frequency offset
+        \item \textbf{Store it in a memory channel}
+        \item Enable the VOX
+        \item Use the scan mode to select the desired frequency
+    \end{enumerate}
+\end{tcolorbox}
+
+Storing a favorite frequency in a memory channel allows for quick and easy access, making it much more convenient than manually entering the frequency each time.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B05}]
+    What does the scanning function of an FM transceiver do?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Checks incoming signal deviation
+        \item Prevents interference to nearby repeaters
+        \item \textbf{Tunes through a range of frequencies to check for activity}
+        \item Checks for messages left on a digital bulletin board
+    \end{enumerate}
+\end{tcolorbox}
+
+The scanning function tunes through a range of frequencies to check for activity, which is useful for monitoring multiple channels or finding active frequencies.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B06}]
+    Which of the following controls could be used if the voice pitch of a single-sideband signal returning to your CQ call seems too high or low?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The AGC or limiter
+        \item The bandwidth selection
+        \item The tone squelch
+        \item \textbf{The RIT or Clarifier}
+    \end{enumerate}
+\end{tcolorbox}
+
+The RIT (Receiver Incremental Tuning) or Clarifier can be used to adjust the pitch of an SSB signal, ensuring that the voice sounds natural and clear.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B07}]
+    What does a DMR “code plug” contain?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Your call sign in CW for automatic identification
+        \item \textbf{Access information for repeaters and talkgroups}
+        \item The codec for digitizing audio
+        \item The DMR software version
+    \end{enumerate}
+\end{tcolorbox}
+
+A DMR code plug contains access information for repeaters and talkgroups, which is essential for configuring your DMR transceiver.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B08}]
+    What is the advantage of having multiple receive bandwidth choices on a multimode transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Permits monitoring several modes at once by selecting a separate filter for each mode
+        \item \textbf{Permits noise or interference reduction by selecting a bandwidth matching the mode}
+        \item Increases the number of frequencies that can be stored in memory
+        \item Increases the amount of offset between receive and transmit frequencies
+    \end{enumerate}
+\end{tcolorbox}
+
+Having multiple receive bandwidth choices allows you to select a bandwidth that matches the mode you’re using, which can help reduce noise and interference.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B09}]
+    How is a specific group of stations selected on a digital voice transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item By retrieving the frequencies from transceiver memory
+        \item By enabling the group’s CTCSS tone
+        \item \textbf{By entering the group’s identification code}
+        \item By activating automatic identification
+    \end{enumerate}
+\end{tcolorbox}
+
+A specific group of stations is selected by entering the group’s identification code, which allows you to communicate with that group without broadcasting to everyone.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B10}]
+    Which of the following receiver filter bandwidths provides the best signal-to-noise ratio for SSB reception?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 500 Hz
+        \item 1000 Hz
+        \item \textbf{2400 Hz}
+        \item 5000 Hz
+    \end{enumerate}
+\end{tcolorbox}
+
+A receiver filter bandwidth of 2400 Hz provides a good balance between signal clarity and noise reduction, offering the best signal-to-noise ratio for SSB reception.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B11}]
+    Which of the following must be programmed into a D-STAR digital transceiver before transmitting?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Your call sign}
+        \item Your output power
+        \item The codec type being used
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+Your call sign must be programmed into a D-STAR transceiver before transmitting. This is a fundamental requirement for D-STAR operation as it ensures proper identification of your transmissions in the digital network.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T4B12}]
+    What is the result of tuning an FM receiver above or below a signal's frequency?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Change in audio pitch
+        \item Sideband inversion
+        \item Generation of a heterodyne tone
+        \item \textbf{Distortion of the signal's audio}
+    \end{enumerate}
+\end{tcolorbox}
+
+When an FM receiver is tuned off-frequency (either above or below the signal's frequency), the result is distortion of the audio signal. This occurs because FM demodulation relies on proper center frequency alignment for accurate signal recovery.

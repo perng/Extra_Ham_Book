@@ -1,0 +1,78 @@
+\subsection{Mixer, Oscillator, Frequency Conversion}
+\label{subsec:mixer-osc}
+
+In this section, we'll dive into the fascinating world of mixers, oscillators, and frequency conversion. These components are the unsung heroes of radio technology, quietly working behind the scenes to make sure your signals get where they need to go. Let's break it down, shall we?
+
+\subsubsection*{The Role of a Mixer}
+
+A mixer is like the DJ of the radio world—it takes two signals and blends them together to create something new. Specifically, a mixer performs frequency conversion, which is essential for shifting signals from one frequency to another. This is crucial in radio systems because it allows us to transmit and receive signals at different frequencies without interference.
+
+Imagine you have a signal at frequency \( f_1 \) and you want to convert it to frequency \( f_2 \). The mixer takes this signal and combines it with another signal from a local oscillator (more on that later) at frequency \( f_{LO} \). The result is a new signal at the sum or difference of these frequencies, typically \( f_1 + f_{LO} \) or \( f_1 - f_{LO} \). This process is known as heterodyning, and it's the backbone of frequency conversion in radio systems.
+
+\subsubsection*{The Function of an Oscillator}
+
+Now, let's talk about the oscillator. If the mixer is the DJ, the oscillator is the beat generator. It produces a signal at a specific frequency, which is then used by the mixer to perform frequency conversion. Oscillators are also key players in frequency synthesis and modulation, where they help generate the precise frequencies needed for various radio applications.
+
+An oscillator circuit typically consists of an amplifier and a feedback loop that sustains the oscillation. The frequency of the output signal is determined by the components in the circuit, such as capacitors and inductors. This makes oscillators incredibly versatile, as they can be tuned to produce a wide range of frequencies.
+
+\subsubsection*{Frequency Conversion: The Big Picture}
+
+Frequency conversion is the process of changing a signal's frequency, and it's where mixers and oscillators come together in perfect harmony. The mixer takes the input signal and the oscillator's signal, and through the magic of heterodyning, produces a new signal at the desired frequency. This is essential in radio systems, where signals often need to be shifted to different frequencies for transmission, reception, or further processing.
+
+For example, in a superheterodyne receiver, the incoming signal is mixed with a local oscillator signal to produce an intermediate frequency (IF) that's easier to process. This allows the receiver to be more selective and sensitive, improving overall performance.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{mixer-diagram}
+    \caption{Mixer Circuit Diagram}
+    \label{fig:mixer-diagram}
+    % Block diagram of a mixer circuit showing input, output, and local oscillator connections.
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{oscillator-diagram}
+    \caption{Oscillator Circuit Diagram}
+    \label{fig:oscillator-diagram}
+    % Diagram of an oscillator circuit generating a specific frequency signal.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Component} & \textbf{Function} \\
+        \hline
+        Mixer & Performs frequency conversion by combining input signals with a local oscillator signal. \\
+        Oscillator & Generates a signal at a specific frequency for use in frequency conversion and modulation. \\
+        \hline
+    \end{tabular}
+    \caption{Mixer and Oscillator Functions}
+    \label{tab:mixer-oscillator}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A03}]
+    Which of the following is used to convert a signal from one frequency to another?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Phase splitter
+        \item \textbf{Mixer}
+        \item Inverter
+        \item Amplifier
+    \end{enumerate}
+\end{tcolorbox}
+
+A mixer is used to convert a signal from one frequency to another by combining it with a local oscillator signal. This process is known as heterodyning. The other options—phase splitter, inverter, and amplifier—do not perform frequency conversion.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A05}]
+    What is the name of a circuit that generates a signal at a specific frequency?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Reactance modulator
+        \item Phase modulator
+        \item Low-pass filter
+        \item \textbf{Oscillator}
+    \end{enumerate}
+\end{tcolorbox}
+
+An oscillator is a circuit that generates a signal at a specific frequency. Reactance modulators, phase modulators, and low-pass filters do not generate signals at specific frequencies; they modify or filter existing signals.

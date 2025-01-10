@@ -1,0 +1,80 @@
+\subsection{Impedance, Reactance, etc.}
+\label{subsec:imp-react}
+
+In this section, we’ll dive into the fascinating world of impedance and reactance. If you’ve ever wondered why your AC circuits behave differently from DC circuits, you’re in the right place. Let’s start by understanding what impedance is and why it’s such a big deal in AC circuits.
+
+\subsubsection*{What is Impedance?}
+Impedance is the opposition that a circuit presents to alternating current (AC). Think of it as the AC version of resistance, but with a twist. While resistance opposes DC current, impedance takes into account not just resistance but also reactance, which is the opposition caused by inductors and capacitors. Mathematically, impedance \( Z \) is represented as:
+\begin{equation}
+    Z = R + jX
+\end{equation}
+where \( R \) is the resistance, \( X \) is the reactance, and \( j \) is the imaginary unit (because, yes, AC circuits love to get complex).
+
+\subsubsection*{The Unit of Impedance: The Ohm}
+Just like resistance, impedance is measured in ohms (\( \Omega \)). This makes sense because impedance is essentially the AC equivalent of resistance. So, when you see a circuit component with an impedance of 50 ohms, it means it opposes AC current flow with a magnitude of 50 ohms. Simple, right?
+
+\subsubsection*{Impedance vs. Reactance}
+Now, let’s clear up a common confusion: the difference between impedance and reactance. Reactance is a component of impedance and is caused by inductors and capacitors. Inductive reactance (\( X_L \)) and capacitive reactance (\( X_C \)) are given by:
+\begin{equation}
+    X_L = 2\pi f L
+\end{equation}
+\begin{equation}
+    X_C = \frac{1}{2\pi f C}
+\end{equation}
+where \( f \) is the frequency, \( L \) is the inductance, and \( C \) is the capacitance. Impedance, on the other hand, is the combination of resistance and reactance, as shown in equation (1).
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{impedance-circuit.svg} % Placeholder for the image
+    \caption{Impedance in an AC circuit. The diagram shows how impedance combines resistance and reactance to oppose AC current flow.}
+    \label{fig:impedance-circuit}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Component} & \textbf{Impedance} \\
+        \hline
+        Resistor & \( R \) \\
+        Inductor & \( jX_L \) \\
+        Capacitor & \( -jX_C \) \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of impedance values for various circuit components.}
+    \label{tab:impedance-values}
+\end{table}
+
+\subsubsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C05}]
+    What is the unit of impedance?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The volt
+        \item The ampere
+        \item The coulomb
+        \item \textbf{The ohm}
+    \end{enumerate}
+\end{tcolorbox}
+The unit of impedance is the ohm (\( \Omega \)), just like resistance. This is because impedance is essentially the AC equivalent of resistance, and both are measures of opposition to current flow.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C12}]
+    What is impedance?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{The opposition to AC current flow}
+        \item The inverse of resistance
+        \item The Q or Quality Factor of a component
+        \item The power handling capability of a component
+    \end{enumerate}
+\end{tcolorbox}
+Impedance is the opposition to AC current flow, combining both resistance and reactance. The other options are incorrect because impedance is not the inverse of resistance, nor is it related to the Quality Factor or power handling capability.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C13}]
+    What is the abbreviation for kilohertz?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item KHZ
+        \item khz
+        \item khZ
+        \item \textbf{kHz}
+    \end{enumerate}
+\end{tcolorbox}
+The correct abbreviation for kilohertz is kHz. The lowercase 'k' stands for kilo, and the uppercase 'Hz' stands for hertz. The other options are incorrect due to improper capitalization or letter order.

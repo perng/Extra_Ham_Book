@@ -1,0 +1,69 @@
+\subsection{Modes (U/V), Spin Fading, LEO}
+\label{subsec:sat-modes}
+
+\subsubsection*{U/V Mode}
+When we say a satellite is operating in \textbf{U/V mode}, we're talking about the frequency bands it uses for communication. Specifically, the uplink (the signal sent from Earth to the satellite) is in the \textbf{70 centimeter band}, while the downlink (the signal sent from the satellite back to Earth) is in the \textbf{2 meter band}. This is a common setup for amateur radio satellites, and it allows for efficient communication between the ground station and the satellite. If you're curious about the exact frequencies, take a look at Figure~\ref{fig:uv-mode-bands}, which shows a diagram of the frequency bands used in U/V mode.
+
+\subsubsection*{Spin Fading}
+Now, let's talk about something called \textbf{spin fading}. This is a phenomenon where the signal from a satellite fades in and out as the satellite rotates. Why does this happen? Well, satellites often spin to stabilize themselves, and as they do, their antennas rotate too. This rotation can cause the signal strength to fluctuate, especially if the antennas are not perfectly aligned with your ground station. It's like trying to catch a ball while spinning around—sometimes you catch it, and sometimes you miss. Figure~\ref{fig:spin-fading} illustrates this effect, showing how the signal strength varies as the satellite spins.
+
+\subsubsection*{LEO Satellites}
+A \textbf{LEO satellite} is one that orbits the Earth at a relatively low altitude, typically between 160 and 2,000 kilometers. These satellites are called \textbf{Low Earth Orbit} (LEO) satellites, and they have some unique characteristics. For one, they orbit the Earth much faster than satellites in higher orbits, completing a full orbit in about 90 to 120 minutes. This means they're only visible from a given point on Earth for a short period, usually a few minutes. LEO satellites are commonly used for communication, Earth observation, and even scientific research. If you're interested in the specifics, check out Table~\ref{tab:leo-characteristics}, which summarizes the key characteristics of LEO satellites. Figure~\ref{fig:leo-orbit} also provides a visual representation of a LEO satellite's orbit around Earth.
+
+\subsubsection*{Telemetry and Uplink Power}
+Finally, let's touch on telemetry and uplink power. \textbf{Telemetry} is the data sent by a satellite that provides information about its status, such as battery voltage, temperature, and signal strength. The good news is that \textbf{anyone} can receive telemetry from a space station—you don't need any special permissions or equipment. As for uplink power, it's important to make sure your signal isn't too weak or too strong. A good rule of thumb is that your signal strength on the downlink should be about the same as the beacon. If it's too weak, your signal might not reach the satellite; if it's too strong, you could interfere with other users.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B08}]
+What is meant by the statement that a satellite is operating in U/V mode?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The satellite uplink is in the 15 meter band and the downlink is in the 10 meter band
+    \item \textbf{The satellite uplink is in the 70 centimeter band and the downlink is in the 2 meter band}
+    \item The satellite operates using ultraviolet frequencies
+    \item The satellite frequencies are usually variable
+\end{enumerate}
+\end{tcolorbox}
+In U/V mode, the satellite uses the 70 cm band for uplink and the 2 m band for downlink. This is a common configuration for amateur radio satellites, allowing for efficient communication.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B09}]
+What causes spin fading of satellite signals?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Circular polarized noise interference radiated from the sun
+    \item \textbf{Rotation of the satellite and its antennas}
+    \item Doppler shift of the received signal
+    \item Interfering signals within the satellite uplink band
+\end{enumerate}
+\end{tcolorbox}
+Spin fading occurs due to the rotation of the satellite and its antennas, causing the signal strength to fluctuate as the antennas move in and out of alignment with the ground station.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B10}]
+What is a LEO satellite?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item A sun synchronous satellite
+    \item A highly elliptical orbit satellite
+    \item A satellite in low energy operation mode
+    \item \textbf{A satellite in low earth orbit}
+\end{enumerate}
+\end{tcolorbox}
+A LEO satellite is one that orbits the Earth at a low altitude, typically between 160 and 2,000 kilometers. These satellites are known for their fast orbital periods and are commonly used for communication and Earth observation.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B11}]
+Who may receive telemetry from a space station?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{Anyone}
+    \item A licensed radio amateur with a transmitter equipped for interrogating the satellite
+    \item A licensed radio amateur who has been certified by the protocol developer
+    \item A licensed radio amateur who has registered for an access code from AMSAT
+\end{enumerate}
+\end{tcolorbox}
+Telemetry from a space station can be received by anyone. There are no restrictions on who can access this data, making it accessible to all interested parties.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B12}]
+Which of the following is a way to determine whether your satellite uplink power is neither too low nor too high?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Check your signal strength report in the telemetry data
+    \item Listen for distortion on your downlink signal
+    \item \textbf{Your signal strength on the downlink should be about the same as the beacon}
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+To ensure your uplink power is appropriate, your signal strength on the downlink should be roughly the same as the beacon. This indicates that your signal is neither too weak nor too strong, ensuring effective communication with the satellite.

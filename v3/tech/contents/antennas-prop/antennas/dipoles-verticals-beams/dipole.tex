@@ -1,0 +1,102 @@
+\subsection{Dipole Basics}
+\label{subsec:dipole}
+
+Let's dive into the world of dipole antennas! If you've ever wondered how your radio communicates with the world, the dipole antenna is one of the most fundamental building blocks. A dipole antenna is essentially a straight electrical conductor, typically split in the middle, and fed with a radio frequency signal. When oriented parallel to Earth's surface, it becomes a \textbf{horizontally polarized antenna}. This means the electric field of the radio wave is parallel to the ground, which is great for certain types of communication, like amateur radio.
+
+Now, let's talk about efficiency. The short, flexible antennas that come with handheld radios are convenient, but they often sacrifice efficiency. Compared to a full-sized quarter-wave antenna, these little guys just don't radiate as much power. This is because their small size limits their ability to effectively couple with the surrounding electromagnetic field. So, while they're handy, they're not the most efficient option out there.
+
+What about tuning your dipole? The resonant frequency of a dipole antenna is determined by its length. If you want to increase the resonant frequency, you need to \textbf{shorten} the antenna. Conversely, lengthening it will decrease the resonant frequency. This is because the resonant frequency is inversely proportional to the antenna's length. So, if you're looking to tweak your antenna for a specific frequency, grab your wire cutters (or your soldering iron) and get to work!
+
+Speaking of length, let's calculate the approximate length of a half-wavelength dipole for the 6-meter band. The formula for the length of a half-wavelength dipole is:
+\begin{equation}
+L = \frac{468}{f}
+\end{equation}
+where \( L \) is the length in feet and \( f \) is the frequency in MHz. For the 6-meter band, which is around 50 MHz, the length comes out to about 112 inches. That's a pretty manageable size for most setups.
+
+Finally, let's talk about radiation patterns. A half-wave dipole doesn't radiate equally in all directions. Instead, it radiates most strongly \textbf{broadside} to the antenna. This means the strongest signal is perpendicular to the length of the antenna. So, if you're trying to maximize your signal strength, make sure you're pointing your antenna in the right direction!
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{dipole-orientation}
+    \caption{Dipole Antenna Orientation and Radiation Pattern. The diagram shows the orientation of the dipole relative to Earth's surface and the resulting radiation pattern.}
+    \label{fig:dipole-orientation}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{antenna-comparison}
+    \caption{Comparison of Antenna Types. The figure compares the efficiency and radiation patterns of a short flexible antenna versus a full-sized quarter-wave antenna.}
+    \label{fig:antenna-comparison}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Antenna Length} & \textbf{Resonant Frequency} \\
+        \hline
+        Full-wave & Lower \\
+        Half-wave & Medium \\
+        Quarter-wave & Higher \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Dipole Antenna Lengths and Resonant Frequencies.}
+    \label{tab:dipole-lengths}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A03}]
+    Which of the following describes a simple dipole oriented parallel to Earth's surface?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A ground-wave antenna
+        \item \textbf{A horizontally polarized antenna}
+        \item A travelling-wave antenna
+        \item A vertically polarized antenna
+    \end{enumerate}
+\end{tcolorbox}
+A dipole antenna oriented parallel to Earth's surface is horizontally polarized. This means the electric field of the radio wave is parallel to the ground, making it ideal for certain types of communication.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A04}]
+    What is a disadvantage of the short, flexible antenna supplied with most handheld radio transceivers, compared to a full-sized quarter-wave antenna?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{It has low efficiency}
+        \item It transmits only circularly polarized signals
+        \item It is mechanically fragile
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+The short, flexible antennas found on handheld radios are less efficient than full-sized quarter-wave antennas. This is due to their smaller size, which limits their ability to effectively radiate power.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A05}]
+    Which of the following increases the resonant frequency of a dipole antenna?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Lengthening it
+        \item Inserting coils in series with radiating wires
+        \item \textbf{Shortening it}
+        \item Adding capacitive loading to the ends of the radiating wires
+    \end{enumerate}
+\end{tcolorbox}
+Shortening a dipole antenna increases its resonant frequency. This is because the resonant frequency is inversely proportional to the antenna's length.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A09}]
+    What is the approximate length, in inches, of a half-wavelength 6 meter dipole antenna?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 6
+        \item 50
+        \item \textbf{112}
+        \item 236
+    \end{enumerate}
+\end{tcolorbox}
+The length of a half-wavelength dipole for the 6-meter band (around 50 MHz) is approximately 112 inches. This is calculated using the formula \( L = \frac{468}{f} \), where \( L \) is the length in feet and \( f \) is the frequency in MHz.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A10}]
+    In which direction does a half-wave dipole antenna radiate the strongest signal?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Equally in all directions
+        \item Off the ends of the antenna
+        \item In the direction of the feed line
+        \item \textbf{Broadside to the antenna}
+    \end{enumerate}
+\end{tcolorbox}
+A half-wave dipole antenna radiates most strongly broadside to the antenna, meaning the strongest signal is perpendicular to the length of the antenna.

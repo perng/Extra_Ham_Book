@@ -1,0 +1,62 @@
+{
+  "section_title": "RF Power Amplifiers and Preamps",
+  "label": "sec:rf-amps",
+  "section_label": "sec:rf-amps",
+  "subsections": [
+    {
+      "title": "Amplifier Basics",
+      "label": "subsec:amp-basics",
+      "questions": [
+        "T7A02",
+        "T7A09",
+        "T7A10",
+        "T7A11"
+      ],
+      "concepts": [
+        "Transceiver",
+        "SSB/CW-FM Switch",
+        "RF Power Amplifier",
+        "RF Preamplifier"
+      ],
+      "prompts": [
+        "Explain the concept of a transceiver, including its components and how it combines a receiver and transmitter.",
+        "Describe the function of the SSB/CW-FM switch on a VHF power amplifier and how it ensures proper operation in different modes.",
+        "Discuss the role of an RF power amplifier in increasing the transmitted output power from a transceiver.",
+        "Explain where an RF preamplifier is typically installed and its importance in the signal reception process."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a transceiver showing the integration of receiver and transmitter components.",
+          "software": "SVG",
+          "caption": "Diagram of a transceiver.",
+          "label": "fig:transceiver-diagram"
+        },
+        {
+          "prompt": "Illustration of a VHF power amplifier with the SSB/CW-FM switch highlighted.",
+          "software": "SVG",
+          "caption": "VHF power amplifier with SSB/CW-FM switch.",
+          "label": "fig:vhf-amp-switch"
+        },
+        {
+          "prompt": "Block diagram showing the placement of an RF power amplifier in a transceiver setup.",
+          "software": "SVG",
+          "caption": "Block diagram of RF power amplifier in a transceiver.",
+          "label": "fig:rf-power-amp-diagram"
+        },
+        {
+          "prompt": "Diagram showing the installation of an RF preamplifier between the antenna and receiver.",
+          "software": "SVG",
+          "caption": "Installation of RF preamplifier.",
+          "label": "fig:rf-preamplifier-installation"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing the functions of a transceiver, RF power amplifier, and RF preamplifier.",
+          "caption": "Comparison of transceiver, RF power amplifier, and RF preamplifier functions.",
+          "label": "tab:comparison-functions"
+        }
+      ]
+    }
+  ]
+}

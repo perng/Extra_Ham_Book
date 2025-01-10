@@ -1,0 +1,51 @@
+{
+  "section_title": "Why Get Licensed?",
+  "label": "sec:why-licensed",
+  "section_label": "sec:why-licensed",
+  "subsections": [
+    {
+      "title": "Community, Emergency, Experimentation, etc.",
+      "label": "subsec:why-ham",
+      "questions": [],
+      "concepts": [
+        "Amateur Radio Community",
+        "Emergency Communication",
+        "Radio Experimentation",
+        "Licensing Benefits"
+      ],
+      "prompts": [
+        "Explain the role of the amateur radio community in fostering collaboration and knowledge sharing among enthusiasts.",
+        "Discuss the importance of amateur radio in emergency communication scenarios, including examples of real-world applications.",
+        "Describe how amateur radio licensing enables experimentation with radio technology, including the types of experiments that can be conducted.",
+        "Outline the benefits of obtaining an amateur radio license, including access to frequencies, legal protections, and community recognition."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of the amateur radio community and its various roles.",
+          "software": "Graphviz",
+          "caption": "Structure of the Amateur Radio Community",
+          "label": "fig:community-structure"
+        },
+        {
+          "prompt": "Illustration of amateur radio operators assisting in emergency communication during a disaster.",
+          "software": "web",
+          "caption": "Amateur Radio in Emergency Communication",
+          "label": "fig:emergency-communication"
+        },
+        {
+          "prompt": "Diagram of a typical amateur radio experimentation setup, including transceivers, antennas, and other equipment.",
+          "software": "KiCad",
+          "caption": "Amateur Radio Experimentation Setup",
+          "label": "fig:experimentation-setup"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing the benefits of amateur radio licensing versus unlicensed operation.",
+          "caption": "Comparison of Licensed vs. Unlicensed Amateur Radio Operation",
+          "label": "tab:licensed-vs-unlicensed"
+        }
+      ]
+    }
+  ]
+}

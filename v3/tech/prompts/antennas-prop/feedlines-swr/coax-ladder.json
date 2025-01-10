@@ -1,0 +1,122 @@
+{
+  "section_title": "Coax, Ladder Line, Connectors",
+  "label": "sec:coax-ladder",
+  "section_label": "sec:coax-ladder",
+  "subsections": [
+    {
+      "title": "Coax Impedance and Loss",
+      "label": "subsec:coax-imp",
+      "questions": ["T9B01", "T9B02", "T9B03", "T9B05", "T9B08", "T9B10", "T9B11"],
+      "concepts": ["Coaxial Cable Impedance", "Signal Loss in Coaxial Cable", "Frequency-Dependent Loss", "Coaxial Cable Types"],
+      "prompts": [
+        "Explain the concept of coaxial cable impedance and why 50 ohms is the most common impedance in amateur radio.",
+        "Describe the factors that contribute to signal loss in coaxial cables and how frequency affects this loss.",
+        "Compare the electrical characteristics of different types of coaxial cables, such as RG-58 and RG-213.",
+        "Discuss the practical implications of using coaxial cables with different loss characteristics in amateur radio setups."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a coaxial cable with labels for the inner conductor, dielectric, and outer shield.",
+          "software": "SVG",
+          "caption": "Structure of a coaxial cable.",
+          "label": "fig:coax-structure"
+        },
+        {
+          "prompt": "Graph showing signal loss in dB per 100 feet for different types of coaxial cables (e.g., RG-58, RG-213) at various frequencies.",
+          "software": "Matplotlib",
+          "caption": "Signal loss comparison for different coaxial cables.",
+          "label": "fig:coax-loss"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the electrical characteristics (impedance, loss, power handling) of common coaxial cables used in amateur radio.",
+        "caption": "Comparison of common coaxial cables.",
+        "label": "tab:coax-comparison"
+      }
+    },
+    {
+      "title": "Connectors (PL-259, Type N, etc.)",
+      "label": "subsec:connectors",
+      "questions": ["T9B06", "T9B07"],
+      "concepts": ["RF Connector Types", "PL-259 Connector", "Type N Connector"],
+      "prompts": [
+        "Explain the differences between PL-259 and Type N connectors, including their typical usage frequencies and applications.",
+        "Discuss the advantages and disadvantages of using PL-259 connectors in amateur radio setups.",
+        "Describe the importance of choosing the right RF connector for high-frequency operations."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the physical structure of a PL-259 connector.",
+          "software": "SVG",
+          "caption": "Structure of a PL-259 connector.",
+          "label": "fig:pl259-structure"
+        },
+        {
+          "prompt": "Diagram showing the physical structure of a Type N connector.",
+          "software": "SVG",
+          "caption": "Structure of a Type N connector.",
+          "label": "fig:typeN-structure"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the characteristics (frequency range, power handling, durability) of PL-259 and Type N connectors.",
+        "caption": "Comparison of PL-259 and Type N connectors.",
+        "label": "tab:connector-comparison"
+      }
+    },
+    {
+      "title": "Installation and Maintenance",
+      "label": "subsec:install-maint",
+      "questions": ["T9B09"],
+      "concepts": ["Antenna Installation", "Feed Line Maintenance", "SWR Monitoring"],
+      "prompts": [
+        "Explain the importance of proper installation and maintenance of antenna systems, including feed lines and connectors.",
+        "Discuss the common causes of erratic SWR readings and how to troubleshoot them.",
+        "Describe best practices for maintaining coaxial cables and connectors to ensure optimal performance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing a typical amateur radio antenna installation with labels for the antenna, feed line, and connectors.",
+          "software": "SVG",
+          "caption": "Typical amateur radio antenna installation.",
+          "label": "fig:antenna-installation"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table listing common issues in antenna installation and maintenance, along with their solutions.",
+        "caption": "Common issues and solutions in antenna installation and maintenance.",
+        "label": "tab:antenna-issues"
+      }
+    },
+    {
+      "title": "Standing Wave Ratio (SWR)",
+      "label": "subsec:standing-wave",
+      "questions": ["T9B04", "T9B12"],
+      "concepts": ["Standing Wave Ratio (SWR)", "Impedance Matching", "Antenna Tuner"],
+      "prompts": [
+        "Explain the concept of Standing Wave Ratio (SWR) and its significance in antenna systems.",
+        "Describe how an antenna tuner (antenna coupler) works to match the antenna system impedance to the transceiver's output impedance.",
+        "Discuss the relationship between SWR and signal efficiency in amateur radio setups."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph showing the relationship between SWR and signal efficiency.",
+          "software": "Matplotlib",
+          "caption": "Relationship between SWR and signal efficiency.",
+          "label": "fig:swr-efficiency"
+        },
+        {
+          "prompt": "Diagram showing the operation of an antenna tuner in matching impedance.",
+          "software": "SVG",
+          "caption": "Operation of an antenna tuner.",
+          "label": "fig:antenna-tuner"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the effects of different SWR values on signal efficiency and potential damage to equipment.",
+        "caption": "Effects of SWR on signal efficiency and equipment.",
+        "label": "tab:swr-effects"
+      }
+    }
+  ]
+}

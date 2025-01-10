@@ -1,0 +1,72 @@
+\subsection{Satellite Telemetry and Beacons}
+\label{subsec:sat-telemetry-beacons}
+
+Satellite telemetry and beacons are essential components of amateur radio satellites. They provide critical information about the satellite's health, status, and operational parameters. Let's dive into what these terms mean and why they are important.
+
+\subsubsection*{Purpose and Types of Telemetry Information}
+Satellite beacons transmit telemetry data, which is essentially the satellite's way of saying, "Hey, I'm still alive and here's how I'm doing!" This data typically includes information about the satellite's health and status, such as battery voltage, temperature, and the status of various subsystems. For example, if the satellite's solar panels are not generating enough power, the telemetry data will reflect that. This information is crucial for ground operators to monitor and maintain the satellite's functionality.
+
+\subsubsection*{Common Modes of Transmission}
+Amateur radio satellites use various modes of transmission to communicate with ground stations. These modes include Single Sideband (SSB), Frequency Modulation (FM), and Continuous Wave (CW)/data. Each mode has its advantages and is chosen based on the specific requirements of the mission. For instance, SSB is often used for voice communication, while CW/data is preferred for telemetry and beacon signals due to its efficiency and simplicity.
+
+\subsubsection*{What is a Satellite Beacon?}
+A satellite beacon is a continuous transmission from a satellite that contains status information. Think of it as the satellite's heartbeat, constantly sending out signals to let us know it's operational. This beacon is not just a simple signal; it carries vital telemetry data that helps operators on the ground monitor the satellite's health and performance.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{sat-beacon-telemetry}
+    \caption{Satellite Beacon and Telemetry Data Flow}
+    \label{fig:sat-beacon-telemetry}
+    % Diagram showing the components of a satellite beacon and the telemetry data flow.
+    % The figure should include a satellite with labeled components (e.g., solar panels, antennas, transmitters) and arrows indicating the flow of telemetry data from the satellite to a ground station.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Type of Information} & \textbf{Description} \\
+        \hline
+        Battery Voltage & Indicates the current voltage level of the satellite's batteries. \\
+        Temperature & Shows the internal and external temperature of the satellite. \\
+        Subsystem Status & Provides the operational status of various subsystems (e.g., solar panels, transmitters). \\
+        \hline
+    \end{tabular}
+    \caption{Types of Telemetry Information}
+    \label{tab:telemetry-types}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B01}]
+    What telemetry information is typically transmitted by satellite beacons?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The signal strength of received signals
+        \item Time of day accurate to plus or minus 1/10 second
+        \item \textbf{Health and status of the satellite}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+The correct answer is \textbf{C}. Satellite beacons primarily transmit health and status information, such as battery voltage and subsystem status, to help ground operators monitor the satellite's condition.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B04}]
+    What mode of transmission is commonly used by amateur radio satellites?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item SSB
+        \item FM
+        \item CW/data
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+The correct answer is \textbf{D}. Amateur radio satellites use a variety of transmission modes, including SSB, FM, and CW/data, depending on the specific requirements of the mission.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8B05}]
+    What is a satellite beacon?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The primary transmit antenna on the satellite
+        \item An indicator light that shows where to point your antenna
+        \item A reflective surface on the satellite
+        \item \textbf{A transmission from a satellite that contains status information}
+    \end{enumerate}
+\end{tcolorbox}
+The correct answer is \textbf{D}. A satellite beacon is a continuous transmission that carries status information, allowing ground operators to monitor the satellite's health and performance.

@@ -1,0 +1,118 @@
+{
+  "section_title": "PSK, ARQ, and Other Error Correction",
+  "label": "sec:psk-arq",
+  "section_label": "sec:psk-arq",
+  "subsections": [
+    {
+      "title": "PSK (Phase Shift Keying)",
+      "label": "subsec:psk-digital",
+      "questions": [
+        {
+          "question_id": "T8D04",
+          "question": "What type of transmission is indicated by the term \"NTSC?\"",
+          "answer": "C",
+          "choices": {
+            "A": "A Normal Transmission mode in Static Circuit",
+            "B": "A special mode for satellite uplink",
+            "C": "An analog fast-scan color TV signal",
+            "D": "A frame compression scheme for TV signals"
+          }
+        },
+        {
+          "question_id": "T8D06",
+          "question": "What does the abbreviation \"PSK\" mean?",
+          "answer": "B",
+          "choices": {
+            "A": "Pulse Shift Keying",
+            "B": "Phase Shift Keying",
+            "C": "Packet Short Keying",
+            "D": "Phased Slide Keying"
+          }
+        }
+      ],
+      "concepts": [
+        "Phase Shift Keying (PSK)",
+        "Digital Modulation",
+        "Analog Transmission",
+        "NTSC Signal"
+      ],
+      "prompts": [
+        "Explain the concept of Phase Shift Keying (PSK) and its role in digital modulation.",
+        "Describe the differences between PSK and other digital modulation techniques.",
+        "Discuss the significance of NTSC signals in analog transmission and how they relate to PSK.",
+        "Provide examples of applications where PSK is commonly used in radio communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the concept of Phase Shift Keying (PSK) with phase shifts represented on a polar plot.",
+          "software": "Matplotlib",
+          "caption": "Phase Shift Keying (PSK) diagram showing phase shifts.",
+          "label": "fig:psk-diagram"
+        },
+        {
+          "prompt": "Comparison of PSK with other digital modulation techniques like FSK and ASK.",
+          "software": "Graphviz",
+          "caption": "Comparison of PSK, FSK, and ASK modulation techniques.",
+          "label": "fig:modulation-comparison"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing PSK with other digital modulation techniques (e.g., FSK, ASK) in terms of bandwidth efficiency, complexity, and error rate.",
+          "caption": "Comparison of PSK with other digital modulation techniques.",
+          "label": "tab:modulation-comparison"
+        }
+      ]
+    },
+    {
+      "title": "ARQ Systems",
+      "label": "subsec:arq-systems",
+      "questions": [
+        {
+          "question_id": "T8D11",
+          "question": "What is an ARQ transmission system?",
+          "answer": "C",
+          "choices": {
+            "A": "A special transmission format limited to video signals",
+            "B": "A system used to encrypt command signals to an amateur radio satellite",
+            "C": "An error correction method in which the receiving station detects errors and sends a request for retransmission",
+            "D": "A method of compressing data using autonomous reiterative Q codes prior to final encoding"
+          }
+        }
+      ],
+      "concepts": [
+        "Automatic Repeat Request (ARQ)",
+        "Error Correction",
+        "Data Transmission",
+        "Retransmission Request"
+      ],
+      "prompts": [
+        "Explain the concept of Automatic Repeat Request (ARQ) and its role in error correction during data transmission.",
+        "Describe the process by which ARQ systems detect errors and request retransmission.",
+        "Discuss the advantages and limitations of ARQ systems in radio communication.",
+        "Provide examples of real-world applications where ARQ systems are used."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart illustrating the ARQ process, including error detection and retransmission request.",
+          "software": "Graphviz",
+          "caption": "Flowchart of the ARQ process.",
+          "label": "fig:arq-flowchart"
+        },
+        {
+          "prompt": "Diagram showing the interaction between transmitter and receiver in an ARQ system.",
+          "software": "Matplotlib",
+          "caption": "Interaction between transmitter and receiver in an ARQ system.",
+          "label": "fig:arq-interaction"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of ARQ systems (e.g., Stop-and-Wait ARQ, Go-Back-N ARQ, Selective Repeat ARQ) in terms of efficiency, complexity, and error handling.",
+          "caption": "Comparison of different ARQ systems.",
+          "label": "tab:arq-comparison"
+        }
+      ]
+    }
+  ]
+}

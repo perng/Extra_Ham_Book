@@ -1,0 +1,68 @@
+{
+  "section_title": "SWR, Transmission Line Loss, etc.",
+  "label": "sec:swr-line-loss",
+  "section_label": "sec:swr-line-loss",
+  "subsections": [
+    {
+      "title": "Measuring SWR, Effects of High SWR",
+      "label": "subsec:measuring-swr",
+      "questions": ["T7C04", "T7C05", "T7C08"],
+      "concepts": ["SWR (Standing Wave Ratio)", "Impedance Matching", "Directional Wattmeter", "Solid-State Transmitter Protection"],
+      "prompts": [
+        "Explain the concept of SWR (Standing Wave Ratio) and its significance in radio communication.",
+        "Describe how an SWR meter works and what a 1:1 reading indicates.",
+        "Discuss the effects of high SWR on solid-state transmitters and why output power is reduced to protect the amplifier transistors.",
+        "Explain the role of a directional wattmeter in measuring SWR and how it differs from other instruments like voltmeters or ohmmeters."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between SWR, impedance matching, and signal reflection on a transmission line.",
+          "software": "SVG",
+          "caption": "SWR and Impedance Matching on a Transmission Line",
+          "label": "fig:swr-impedance"
+        },
+        {
+          "prompt": "Illustration of a directional wattmeter connected to a transmission line, showing how it measures forward and reflected power.",
+          "software": "SVG",
+          "caption": "Directional Wattmeter Measuring SWR",
+          "label": "fig:directional-wattmeter"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the effects of different SWR levels on transmitter performance and antenna efficiency.",
+        "caption": "Effects of SWR on Transmitter Performance",
+        "label": "tab:swr-effects"
+      }
+    },
+    {
+      "title": "Coax Failures, Installation",
+      "label": "subsec:coax-fail",
+      "questions": ["T7C09", "T7C10", "T7C11"],
+      "concepts": ["Coaxial Cable Failures", "Moisture Contamination", "Ultraviolet Light Resistance", "Air Core Coaxial Cable"],
+      "prompts": [
+        "Explain the common causes of coaxial cable failures, focusing on moisture contamination and its impact on signal integrity.",
+        "Discuss why the outer jacket of coaxial cable should be resistant to ultraviolet light and how UV exposure can lead to cable damage.",
+        "Compare air core coaxial cable with foam or solid dielectric types, highlighting the disadvantages of air core cables, especially in preventing moisture ingress."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the structure of a coaxial cable, highlighting the outer jacket, dielectric, and conductor layers.",
+          "software": "SVG",
+          "caption": "Structure of a Coaxial Cable",
+          "label": "fig:coax-structure"
+        },
+        {
+          "prompt": "Illustration of moisture ingress in a coaxial cable due to a damaged outer jacket.",
+          "software": "SVG",
+          "caption": "Moisture Contamination in Coaxial Cable",
+          "label": "fig:coax-moisture"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the properties of air core, foam, and solid dielectric coaxial cables, including their resistance to moisture and UV light.",
+        "caption": "Comparison of Coaxial Cable Types",
+        "label": "tab:coax-comparison"
+      }
+    }
+  ]
+}

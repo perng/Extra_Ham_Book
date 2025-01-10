@@ -2585,7 +2585,7 @@
                         }
                     },
                     {
-                        "question_id": "T6A12(A)",
+                        "question_id": "T6A12",
                         "question": "What type of switch is represented by component 3 in figure T-2?",
                         "answer": "A",
                         "choices": {

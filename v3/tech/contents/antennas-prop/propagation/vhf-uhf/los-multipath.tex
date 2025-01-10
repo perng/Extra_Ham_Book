@@ -1,0 +1,219 @@
+\subsection{Line of Sight, Multipath, Ducting}
+\label{subsec:los-multipath}
+
+In this section, we'll dive into some fascinating phenomena that affect VHF and UHF signals. You might have noticed that sometimes, moving your antenna just a few feet can cause the signal strength to vary dramatically. This is due to \textbf{multipath propagation}, where signals take multiple paths to reach the receiver, sometimes canceling each other out and sometimes reinforcing each other. Imagine it like ripples in a pond—when two ripples meet, they can either amplify or cancel each other, depending on their phase. This is why even a small movement can make a big difference in signal strength.
+
+Vegetation, on the other hand, is a bit of a party pooper for UHF and microwave signals. It tends to \textbf{absorb} these signals, reducing their strength. So, if you're trying to communicate through a forest, you might find your signal struggling to get through. This is particularly important for microwave frequencies, where absorption by vegetation can significantly reduce the range.
+
+When it comes to long-distance VHF and UHF communications, \textbf{antenna polarization} plays a crucial role. For CW and SSB contacts, horizontal polarization is typically used. Why? Because it tends to perform better over long distances, especially when dealing with ionospheric propagation. If the antennas at opposite ends of a VHF or UHF link aren't using the same polarization, the received signal strength can drop significantly. It's like trying to shake hands with someone who's offering their left hand while you're offering your right—it just doesn't work as well.
+
+Now, let's talk about \textbf{signal reflection}. If buildings or other obstructions are blocking your direct line of sight to a repeater, you can sometimes find a path that reflects signals to the repeater. This is where directional antennas come in handy—they can help you find those reflective paths and keep your communication going.
+
+Ever heard of \textbf{picket fencing}? No, it's not about building fences. In mobile VHF/UHF communications, it refers to the rapid flutter in signal strength caused by multipath propagation. It's like driving through a picket fence—your signal keeps getting interrupted as you move.
+
+Weather can also play a role, especially at microwave frequencies. Precipitation, like rain or snow, can absorb and scatter microwave signals, reducing their range. So, if you're planning a microwave link, keep an eye on the weather forecast!
+
+Finally, let's touch on \textbf{tropospheric ducting}. This is a phenomenon where temperature inversions in the atmosphere create a "duct" that can trap VHF and UHF signals, allowing them to travel much farther than usual—sometimes up to 300 miles! It's like a superhighway for your signals, bypassing the usual line-of-sight limitations.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/multipath-propagation.svg}
+    \caption{Multipath propagation causing signal cancellation and reinforcement.}
+    \label{fig:multipath-propagation}
+    % Diagram illustrating multipath propagation and its effect on VHF signal strength.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/vegetation-absorption.svg}
+    \caption{Absorption of UHF and microwave signals by vegetation.}
+    \label{fig:vegetation-absorption}
+    % Graph showing the absorption of UHF and microwave signals by vegetation.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/antenna-polarization.svg}
+    \caption{Comparison of horizontal and vertical polarization in VHF/UHF antennas.}
+    \label{fig:antenna-polarization}
+    % Diagram comparing horizontal and vertical polarization in VHF/UHF antennas.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/signal-reflection.svg}
+    \caption{Signal reflection to bypass obstructions in VHF/UHF communications.}
+    \label{fig:signal-reflection}
+    % Illustration of signal reflection to overcome obstructions in VHF/UHF communications.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/picket-fencing.svg}
+    \caption{Picket fencing caused by multipath propagation in mobile communications.}
+    \label{fig:picket-fencing}
+    % Diagram showing the concept of 'picket fencing' in mobile VHF/UHF communications.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/precipitation-effect.svg}
+    \caption{Effect of precipitation on microwave signal range.}
+    \label{fig:precipitation-effect}
+    % Graph depicting the effect of precipitation on microwave signal range.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/elliptical-polarization.svg}
+    \caption{Elliptical polarization in ionospheric propagation.}
+    \label{fig:elliptical-polarization}
+    % Diagram explaining elliptical polarization in ionospheric propagation.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/tropospheric-ducting.svg}
+    \caption{Tropospheric ducting enabling over-the-horizon VHF/UHF communications.}
+    \label{fig:tropospheric-ducting}
+    % Illustration of tropospheric ducting enabling over-the-horizon VHF/UHF communications.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/temperature-inversions.svg}
+    \caption{Temperature inversions leading to tropospheric ducting.}
+    \label{fig:temperature-inversions}
+    % Diagram showing temperature inversions causing tropospheric ducting.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Summary of factors affecting VHF/UHF signal propagation.}
+    \label{tab:vhf-uhf-propagation-factors}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Factor} & \textbf{Effect on Signal} \\
+        \hline
+        Multipath Propagation & Signal cancellation or reinforcement \\
+        Vegetation Absorption & Signal strength reduction \\
+        Antenna Polarization & Signal strength reduction if mismatched \\
+        Signal Reflection & Overcoming obstructions \\
+        Picket Fencing & Rapid signal flutter \\
+        Precipitation & Reduced microwave range \\
+        Tropospheric Ducting & Extended signal range \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A01}]
+    Why do VHF signal strengths sometimes vary greatly when the antenna is moved only a few feet?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The signal path encounters different concentrations of water vapor
+        \item VHF ionospheric propagation is very sensitive to path length
+        \item \textbf{Multipath propagation cancels or reinforces signals}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+Multipath propagation causes signals to take multiple paths, leading to interference that can either cancel or reinforce the signal. This is why even a small movement of the antenna can result in significant changes in signal strength.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A02}]
+    What is the effect of vegetation on UHF and microwave signals?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Knife-edge diffraction
+        \item \textbf{Absorption}
+        \item Amplification
+        \item Polarization rotation
+    \end{enumerate}
+\end{tcolorbox}
+Vegetation absorbs UHF and microwave signals, reducing their strength. This is particularly problematic in environments with dense foliage.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A03}]
+    What antenna polarization is normally used for long-distance CW and SSB contacts on the VHF and UHF bands?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Right-hand circular
+        \item Left-hand circular
+        \item \textbf{Horizontal}
+        \item Vertical
+    \end{enumerate}
+\end{tcolorbox}
+Horizontal polarization is typically used for long-distance VHF and UHF communications, especially for CW and SSB contacts, as it tends to perform better over long distances.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A04}]
+    What happens when antennas at opposite ends of a VHF or UHF line of sight radio link are not using the same polarization?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item The modulation sidebands might become inverted
+        \item \textbf{Received signal strength is reduced}
+        \item Signals have an echo effect
+        \item Nothing significant will happen
+    \end{enumerate}
+\end{tcolorbox}
+Mismatched polarization leads to a reduction in received signal strength, as the antennas are not optimally aligned to receive the signal.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A05}]
+    When using a directional antenna, how might your station be able to communicate with a distant repeater if buildings or obstructions are blocking the direct line of sight path?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Change from vertical to horizontal polarization
+        \item \textbf{Try to find a path that reflects signals to the repeater}
+        \item Try the long path
+        \item Increase the antenna SWR
+    \end{enumerate}
+\end{tcolorbox}
+Directional antennas can be used to find reflective paths that bypass obstructions, allowing communication with distant repeaters even when direct line of sight is blocked.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A06}]
+    What is the meaning of the term “picket fencing”?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Alternating transmissions during a net operation
+        \item \textbf{Rapid flutter on mobile signals due to multipath propagation}
+        \item A type of ground system used with vertical antennas
+        \item Local vs long-distance communications
+    \end{enumerate}
+\end{tcolorbox}
+Picket fencing refers to the rapid flutter in signal strength experienced in mobile communications due to multipath propagation.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A07}]
+    What weather condition might decrease range at microwave frequencies?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item High winds
+        \item Low barometric pressure
+        \item \textbf{Precipitation}
+        \item Colder temperatures
+    \end{enumerate}
+\end{tcolorbox}
+Precipitation, such as rain or snow, can absorb and scatter microwave signals, reducing their range.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3A09}]
+    Which of the following results from the fact that signals propagated by the ionosphere are elliptically polarized?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Digital modes are unusable
+        \item \textbf{Either vertically or horizontally polarized antennas may be used for transmission or reception}
+        \item FM voice is unusable
+        \item Both the transmitting and receiving antennas must be of the same polarization
+    \end{enumerate}
+\end{tcolorbox}
+Elliptical polarization allows for flexibility in antenna polarization, meaning either vertical or horizontal antennas can be used for transmission or reception.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C06}]
+    What type of propagation is responsible for allowing over-the-horizon VHF and UHF communications to ranges of approximately 300 miles on a regular basis?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Tropospheric ducting}
+        \item D region refraction
+        \item F2 region refraction
+        \item Faraday rotation
+    \end{enumerate}
+\end{tcolorbox}
+Tropospheric ducting is a phenomenon where temperature inversions in the atmosphere create a "duct" that traps VHF and UHF signals, allowing them to travel much farther than usual.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T3C08}]
+    What causes tropospheric ducting?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Discharges of lightning during electrical storms
+        \item Sunspots and solar flares
+        \item Updrafts from hurricanes and tornadoes
+        \item \textbf{Temperature inversions in the atmosphere}
+    \end{enumerate}
+\end{tcolorbox}
+Temperature inversions in the atmosphere are the primary cause of tropospheric ducting, creating conditions that trap and guide VHF and UHF signals over long distances.

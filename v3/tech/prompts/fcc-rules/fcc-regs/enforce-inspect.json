@@ -1,0 +1,61 @@
+{
+  "section_title": "Enforcement, Inspections, and Penalties",
+  "label": "sec:enforce-inspect",
+  "section_label": "sec:enforce-inspect",
+  "subsections": [
+    {
+      "title": "Inspections",
+      "label": "subsec:inspections",
+      "questions": ["T1F01"],
+      "concepts": ["FCC Inspection Requirements", "Station Records"],
+      "prompts": [
+        "Explain the legal requirements for amateur radio stations to be available for FCC inspections, including the conditions under which inspections can occur.",
+        "Describe the types of records that must be maintained by an amateur radio station and how they should be organized for FCC inspections.",
+        "Discuss the implications of failing to comply with FCC inspection requests and the potential consequences for the station operator."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the process of an FCC inspection of an amateur radio station",
+          "software": "SVG",
+          "caption": "Process of FCC Inspection",
+          "label": "fig:fcc-inspection-process"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key points of FCC inspection requirements for amateur radio stations",
+        "caption": "FCC Inspection Requirements Summary",
+        "label": "tab:fcc-inspection-summary"
+      }
+    },
+    {
+      "title": "Penalties for Violations",
+      "label": "subsec:penalties",
+      "questions": ["T1F10", "T1F11"],
+      "concepts": ["Repeater Violations Accountability", "Club Station License Requirements"],
+      "prompts": [
+        "Explain the accountability of control operators in cases where a repeater inadvertently retransmits communications that violate FCC rules.",
+        "Describe the requirements for issuing a club station license grant, including the necessary conditions and documentation.",
+        "Discuss the potential penalties for violations of FCC rules by amateur radio operators and how they can be mitigated."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart showing the accountability chain in repeater violations",
+          "software": "Graphviz",
+          "caption": "Accountability in Repeater Violations",
+          "label": "fig:repeater-violations-accountability"
+        },
+        {
+          "prompt": "Diagram illustrating the requirements for a club station license grant",
+          "software": "SVG",
+          "caption": "Club Station License Requirements",
+          "label": "fig:club-license-requirements"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the penalties for different types of FCC rule violations in amateur radio",
+        "caption": "Penalties for FCC Rule Violations",
+        "label": "tab:fcc-violation-penalties"
+      }
+    }
+  ]
+}

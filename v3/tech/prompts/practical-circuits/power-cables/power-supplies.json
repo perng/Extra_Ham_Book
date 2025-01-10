@@ -1,0 +1,84 @@
+{
+  "section_title": "Power Supplies",
+  "label": "sec:power-supplies",
+  "subsections": [
+    {
+      "title": "Choosing and Using",
+      "label": "subsec:psu-choice",
+      "questions": [
+        "T4A01",
+        "T4A02",
+        "T4A03",
+        "T4A04",
+        "T4A05",
+        "T4A06",
+        "T4A07",
+        "T4A08",
+        "T4A09",
+        "T4A10",
+        "T4A11",
+        "T4A12"
+      ],
+      "concepts": [
+        "Power Supply Ratings",
+        "SWR Meter Selection",
+        "DC Power Connection Wires",
+        "FT8 Configuration",
+        "RF Power Meter Installation",
+        "Computer-Radio Interface Signals",
+        "Digital Mode Connections",
+        "RF Bonding Conductors",
+        "Battery Runtime Calculation",
+        "Digital Mode Hot Spot Function",
+        "Mobile Transceiver Grounding",
+        "Electronic Keyer"
+      ],
+      "prompts": [
+        "Explain the importance of selecting the correct power supply rating for a mobile FM transceiver, including the relationship between voltage, current, and power output.",
+        "Describe the factors to consider when selecting an SWR meter, focusing on frequency, power level, and their impact on accurate measurements.",
+        "Discuss why short, heavy-gauge wires are preferred for DC power connections in transceivers, emphasizing voltage drop and efficiency.",
+        "Explain how a transceiver is configured for FT8 operation, including the role of computer software and audio connections.",
+        "Describe the optimal placement of an RF power meter in a station setup and its significance in monitoring transmitter performance.",
+        "Discuss the types of signals used in a computer-radio interface for digital mode operation, including audio and keying signals.",
+        "Explain the correct connections between a computer and a transceiver for digital mode operation, focusing on audio input/output and keying.",
+        "Describe the preferred conductors for RF bonding, including the advantages of flat copper strap over other materials.",
+        "Explain how to calculate the runtime of equipment powered by a battery, focusing on ampere-hour ratings and average current draw.",
+        "Discuss the function of a digital mode hot spot in enabling digital voice and data communication over the internet.",
+        "Explain the importance of proper grounding for a mobile transceiver, including the connection to the vehicle's chassis ground.",
+        "Describe the purpose and functionality of an electronic keyer in Morse code communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the relationship between voltage, current, and power in a mobile FM transceiver power supply.",
+          "software": "SVG",
+          "caption": "Power Supply Voltage and Current Relationship",
+          "label": "fig:power-supply-relationship"
+        },
+        {
+          "prompt": "Illustration of a station setup with an RF power meter installed in the feed line between the transmitter and antenna.",
+          "software": "SVG",
+          "caption": "RF Power Meter Installation",
+          "label": "fig:rf-power-meter-installation"
+        },
+        {
+          "prompt": "Diagram of a computer-radio interface for digital mode operation, showing audio and keying signal connections.",
+          "software": "SVG",
+          "caption": "Computer-Radio Interface for Digital Modes",
+          "label": "fig:computer-radio-interface"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of conductors used for RF bonding, including their advantages and disadvantages.",
+          "caption": "Comparison of RF Bonding Conductors",
+          "label": "tab:rf-bonding-conductors"
+        },
+        {
+          "prompt": "Table showing the calculation of battery runtime based on ampere-hour ratings and average current draw.",
+          "caption": "Battery Runtime Calculation",
+          "label": "tab:battery-runtime-calculation"
+        }
+      ]
+    }
+  ]
+}

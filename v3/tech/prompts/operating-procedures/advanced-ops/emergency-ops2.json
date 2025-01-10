@@ -1,0 +1,70 @@
+{
+  "section_title": "Emergency Operations (ARES, RACES)",
+  "label": "sec:emergency-ops2",
+  "section_label": "sec:emergency-ops2",
+  "subsections": [
+    {
+      "title": "Operating in Emergencies",
+      "label": "subsec:emerg-ops",
+      "questions": [],
+      "concepts": [
+        "ARES",
+        "RACES",
+        "Emergency Communication Protocols",
+        "Net Control Station Duties",
+        "Traffic Handling Best Practices",
+        "Frequency Privileges in Emergencies",
+        "Radiogram Preamble",
+        "Radiogram Header Check",
+        "Net Participation Protocol"
+      ],
+      "prompts": [
+        "Explain the role of ARES (Amateur Radio Emergency Service) in emergency communication scenarios. Highlight its organizational structure and key responsibilities.",
+        "Describe the purpose and operational framework of RACES (Radio Amateur Civil Emergency Service). How does it differ from ARES?",
+        "Discuss the importance of Net Control Station duties during emergency operations. What are the key responsibilities and challenges faced by Net Control Operators?",
+        "Explain the best practices for handling traffic during emergency communications. How can operators ensure efficient and accurate message relay?",
+        "Describe the frequency privileges granted to amateur radio operators during emergencies. How do these privileges differ from normal operating conditions?",
+        "Explain the structure and significance of a radiogram preamble in emergency communications. What information does it typically include?",
+        "Discuss the importance of the radiogram header check in ensuring message accuracy during emergency operations. How is it performed?",
+        "Explain the protocols for net participation during emergency operations. What are the key guidelines for operators to follow?"
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the organizational structure of ARES and RACES, highlighting key roles and responsibilities.",
+          "software": "Graphviz",
+          "caption": "Organizational Structure of ARES and RACES",
+          "label": "fig:ares-races-structure"
+        },
+        {
+          "prompt": "Flowchart illustrating the process of handling traffic during emergency communications, from message receipt to relay.",
+          "software": "Graphviz",
+          "caption": "Traffic Handling Process in Emergency Communications",
+          "label": "fig:traffic-handling-flow"
+        },
+        {
+          "prompt": "Diagram showing the frequency privileges for amateur radio operators during emergencies, comparing them to normal operating conditions.",
+          "software": "Matplotlib",
+          "caption": "Frequency Privileges in Emergency Operations",
+          "label": "fig:frequency-privileges"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the roles and responsibilities of ARES and RACES in emergency communications.",
+          "caption": "Comparison of ARES and RACES Roles",
+          "label": "tab:ares-races-comparison"
+        },
+        {
+          "prompt": "Table summarizing the key components of a radiogram preamble and their significance in emergency communications.",
+          "caption": "Components of a Radiogram Preamble",
+          "label": "tab:radiogram-preamble"
+        },
+        {
+          "prompt": "Table outlining the best practices for net participation during emergency operations.",
+          "caption": "Best Practices for Net Participation in Emergencies",
+          "label": "tab:net-participation-best-practices"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "section_title": "Sample Exams",
+  "label": "sec:sample-exams",
+  "subsections": [
+    {
+      "title": "Practice Test Pools",
+      "label": "subsec:practice-pools",
+      "questions": [],
+      "concepts": [],
+      "prompts": [],
+      "image_prompts": [],
+      "table_prompt": []
+    }
+  ]
+}

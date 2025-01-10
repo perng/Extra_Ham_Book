@@ -1,0 +1,47 @@
+{
+  "section_title": "Contesting Basics",
+  "label": "sec:contesting-basics",
+  "section_label": "sec:contesting-basics",
+  "subsections": [
+    {
+      "title": "Contest Exchanges",
+      "label": "subsec:contest-exchanges",
+      "questions": [
+        "T8C03",
+        "T8C04",
+        "T8C05"
+      ],
+      "concepts": [
+        "Contesting",
+        "Contest Exchange",
+        "Grid Locator"
+      ],
+      "prompts": [
+        "Explain the concept of contesting in amateur radio, focusing on its purpose and how it differs from other operating activities like net operations or public service events.",
+        "Describe the proper procedure for contacting another station during a contest, emphasizing the importance of sending only the minimum information needed for proper identification and the contest exchange.",
+        "Define what a grid locator is and explain its significance in amateur radio, particularly in the context of contesting and geographic location identification."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of a typical contest exchange, including the exchange of call signs and grid locators.",
+          "software": "Graphviz",
+          "caption": "Flow of a typical contest exchange.",
+          "label": "fig:contest-exchange-flow"
+        },
+        {
+          "prompt": "Map illustrating the use of grid locators in amateur radio, showing how they divide the world into specific geographic areas.",
+          "software": "web",
+          "caption": "World map with grid locators.",
+          "label": "fig:grid-locator-map"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key differences between contesting and other operating activities like net operations and public service events.",
+          "caption": "Comparison of contesting with other operating activities.",
+          "label": "tab:contesting-comparison"
+        }
+      ]
+    }
+  ]
+}

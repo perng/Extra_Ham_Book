@@ -1,0 +1,272 @@
+\subsection{Non-Ionizing Radiation, MPE Limits}
+\label{subsec:non-ionizing}
+
+Let's dive into the world of non-ionizing radiation and the Maximum Permissible Exposure (MPE) limits. You might be wondering, "What exactly is non-ionizing radiation?" Well, it's the type of radiation that doesn't have enough energy to remove tightly bound electrons from atoms, which means it doesn't ionize them. This is in contrast to ionizing radiation, like X-rays or gamma rays, which can knock electrons out of atoms and cause chemical changes in cells, potentially damaging DNA. Examples of non-ionizing radiation include radio waves, microwaves, and visible light. So, when you're tuning your amateur radio, you're dealing with non-ionizing radiation, which is generally considered safer—though not entirely without risks.
+
+Now, let's talk about Maximum Permissible Exposure (MPE) limits. These are the safety thresholds set by regulatory bodies like the FCC to ensure that people aren't exposed to harmful levels of RF energy. The MPE limits vary with frequency because the human body absorbs RF energy differently at different frequencies. For instance, at lower frequencies, the body absorbs less energy, so the MPE limits are higher. At higher frequencies, the body absorbs more energy, so the MPE limits are lower. This is why you'll find that the MPE limit at 50 MHz is lower than at 3.5 MHz.
+
+Duty cycle is another critical factor in determining safe RF radiation exposure levels. The duty cycle is the percentage of time that a transmitter is actually transmitting. If you reduce the duty cycle from 100% to 50%, the average power density decreases, which means you can safely increase the power density by a factor of 2 without exceeding the MPE limits. This is because the exposure is averaged over time, and a lower duty cycle means less overall exposure.
+
+Several factors affect RF exposure near an amateur station antenna. These include the frequency and power level of the RF field, the distance from the antenna to a person, and the radiation pattern of the antenna. For example, a high-power transmitter operating at a frequency where the body absorbs more energy will have a higher exposure risk. Similarly, being closer to the antenna increases exposure, and certain antenna radiation patterns can focus energy in specific directions, increasing exposure in those areas.
+
+To ensure your station complies with FCC RF exposure regulations, you can use several methods: calculations based on FCC OET Bulletin 65, computer modeling, or field strength measurements using calibrated equipment. Each method has its pros and cons, but all are acceptable for determining compliance.
+
+One hazard to be aware of is RF burns, which can occur if you touch an antenna during transmission. This happens because the RF energy can cause heating in the skin, leading to burns. It's not the same as electrocution or radiation poisoning, but it's still something to avoid.
+
+To reduce exposure to RF radiation, you can take actions like relocating antennas or transmitters to increase the distance between them and people. Increasing the duty cycle, however, would have the opposite effect, so that's not a good idea.
+
+Ensuring your station stays in compliance with RF safety regulations involves re-evaluating the station whenever you make changes to the transmitter or antenna system. This is crucial because even small changes can affect RF exposure levels.
+
+Finally, let's not forget the importance of duty cycle in determining safe RF radiation exposure levels. The duty cycle affects the average exposure to radiation, not the peak exposure. This is why it's one of the factors used to calculate safe exposure levels.
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C01}]
+What type of radiation are radio signals?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Gamma radiation
+    \item Ionizing radiation
+    \item Alpha radiation
+    \item \textbf{Non-ionizing radiation}
+\end{enumerate}
+\end{tcolorbox}
+Radio signals are a form of non-ionizing radiation, which means they don't have enough energy to ionize atoms or molecules. This makes them generally safer than ionizing radiation, like gamma rays, which can cause chemical changes in cells.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C02}]
+At which of the following frequencies does maximum permissible exposure have the lowest value?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item 3.5 MHz
+    \item \textbf{50 MHz}
+    \item 440 MHz
+    \item 1296 MHz
+\end{enumerate}
+\end{tcolorbox}
+The MPE limits are lowest at 50 MHz because the human body absorbs more RF energy at this frequency compared to lower frequencies like 3.5 MHz. Higher frequencies like 440 MHz and 1296 MHz also have lower MPE limits, but 50 MHz is the lowest among the given options.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C03}]
+How does the allowable power density for RF safety change if duty cycle changes from 100 percent to 50 percent?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item It increases by a factor of 3
+    \item It decreases by 50 percent
+    \item \textbf{It increases by a factor of 2}
+    \item There is no adjustment allowed for lower duty cycle
+\end{enumerate}
+\end{tcolorbox}
+When the duty cycle decreases from 100% to 50%, the average power density decreases, allowing you to increase the power density by a factor of 2 without exceeding the MPE limits. This is because the exposure is averaged over time, and a lower duty cycle means less overall exposure.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C04}]
+What factors affect the RF exposure of people near an amateur station antenna?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Frequency and power level of the RF field
+    \item Distance from the antenna to a person
+    \item Radiation pattern of the antenna
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+All these factors—frequency, power level, distance, and radiation pattern—affect RF exposure. For example, higher power levels and closer distances increase exposure, while certain radiation patterns can focus energy in specific directions.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C05}]
+Why do exposure limits vary with frequency?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Lower frequency RF fields have more energy than higher frequency fields
+    \item Lower frequency RF fields do not penetrate the human body
+    \item Higher frequency RF fields are transient in nature
+    \item \textbf{The human body absorbs more RF energy at some frequencies than at others}
+\end{enumerate}
+\end{tcolorbox}
+Exposure limits vary with frequency because the human body absorbs RF energy differently at different frequencies. At certain frequencies, the body absorbs more energy, necessitating lower exposure limits to ensure safety.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C06}]
+Which of the following is an acceptable method to determine whether your station complies with FCC RF exposure regulations?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item By calculation based on FCC OET Bulletin 65
+    \item By calculation based on computer modeling
+    \item By measurement of field strength using calibrated equipment
+    \item \textbf{All these choices are correct}
+\end{enumerate}
+\end{tcolorbox}
+All these methods—calculations based on FCC OET Bulletin 65, computer modeling, and field strength measurements—are acceptable for determining compliance with FCC RF exposure regulations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C07}]
+What hazard is created by touching an antenna during a transmission?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Electrocution
+    \item \textbf{RF burn to skin}
+    \item Radiation poisoning
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+Touching an antenna during transmission can cause RF burns to the skin due to the heating effect of RF energy. This is different from electrocution or radiation poisoning, which are not typically caused by RF exposure.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C08}]
+Which of the following actions can reduce exposure to RF radiation?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{Relocate antennas}
+    \item Relocate the transmitter
+    \item Increase the duty cycle
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+Relocating antennas or transmitters can reduce exposure to RF radiation by increasing the distance between the source and people. Increasing the duty cycle, however, would increase exposure, so it's not a good option.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C09}]
+How can you make sure your station stays in compliance with RF safety regulations?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item By informing the FCC of any changes made in your station
+    \item \textbf{By re-evaluating the station whenever an item in the transmitter or antenna system is changed}
+    \item By making sure your antennas have low SWR
+    \item All these choices are correct
+\end{enumerate}
+\end{tcolorbox}
+Re-evaluating the station whenever changes are made to the transmitter or antenna system is crucial for ensuring compliance with RF safety regulations. This helps to account for any changes in RF exposure levels.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C10}]
+Why is duty cycle one of the factors used to determine safe RF radiation exposure levels?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{It affects the average exposure to radiation}
+    \item It affects the peak exposure to radiation
+    \item It takes into account the antenna feed line loss
+    \item It takes into account the thermal effects of the final amplifier
+\end{enumerate}
+\end{tcolorbox}
+Duty cycle affects the average exposure to radiation because it determines the percentage of time the transmitter is actually transmitting. A lower duty cycle means less overall exposure, allowing for higher power densities without exceeding safety limits.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C11}]
+What is the definition of duty cycle during the averaging time for RF exposure?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The difference between the lowest power output and the highest power output of a transmitter
+    \item The difference between the PEP and average power output of a transmitter
+    \item \textbf{The percentage of time that a transmitter is transmitting}
+    \item The percentage of time that a transmitter is not transmitting
+\end{enumerate}
+\end{tcolorbox}
+Duty cycle is defined as the percentage of time that a transmitter is actually transmitting during the averaging time for RF exposure. This is crucial for calculating average exposure levels.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C12}]
+How does RF radiation differ from ionizing radiation (radioactivity)?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{RF radiation does not have sufficient energy to cause chemical changes in cells and damage DNA}
+    \item RF radiation can only be detected with an RF dosimeter
+    \item RF radiation is limited in range to a few feet
+    \item RF radiation is perfectly safe
+\end{enumerate}
+\end{tcolorbox}
+RF radiation differs from ionizing radiation in that it doesn't have enough energy to cause chemical changes in cells or damage DNA. Ionizing radiation, like X-rays, can ionize atoms and cause such damage.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T0C13}]
+Who is responsible for ensuring that no person is exposed to RF energy above the FCC exposure limits?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The FCC
+    \item \textbf{The station licensee}
+    \item Anyone who is near an antenna
+    \item The local zoning board
+\end{enumerate}
+\end{tcolorbox}
+The station licensee is responsible for ensuring that no person is exposed to RF energy above the FCC exposure limits. This includes re-evaluating the station whenever changes are made to the transmitter or antenna system.
+
+\subsubsection*{Figures}
+
+% Figure 1: Comparison of Ionizing and Non-Ionizing Radiation
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{radiation-comparison.svg}
+    % Diagram showing the difference between ionizing and non-ionizing radiation, including examples of each type.
+    \caption{Comparison of Ionizing and Non-Ionizing Radiation}
+    \label{fig:radiation-comparison}
+\end{figure}
+
+% Figure 2: MPE Limits vs Frequency
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{mpe-frequency.png}
+    % Graph showing how Maximum Permissible Exposure (MPE) limits vary with frequency.
+    \caption{MPE Limits vs Frequency}
+    \label{fig:mpe-frequency}
+\end{figure}
+
+% Figure 3: Duty Cycle and Power Density
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{duty-cycle-power-density.svg}
+    % Illustration of how duty cycle affects power density and exposure limits.
+    \caption{Duty Cycle and Power Density}
+    \label{fig:duty-cycle-power-density}
+\end{figure}
+
+% Figure 4: Factors Affecting RF Exposure
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rf-exposure-factors.svg}
+    % Diagram showing factors affecting RF exposure near an amateur station antenna, including frequency, power level, distance, and radiation pattern.
+    \caption{Factors Affecting RF Exposure}
+    \label{fig:rf-exposure-factors}
+\end{figure}
+
+% Figure 5: RF Burn Mechanism
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rf-burn-mechanism.svg}
+    % Illustration of how RF burns occur when touching an antenna during transmission.
+    \caption{RF Burn Mechanism}
+    \label{fig:rf-burn-mechanism}
+\end{figure}
+
+\subsubsection*{Tables}
+
+% Table 1: Comparison of RF Radiation and Ionizing Radiation
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Characteristic} & \textbf{RF Radiation vs Ionizing Radiation} \\
+        \hline
+        Energy Level & RF radiation has lower energy, non-ionizing. Ionizing radiation has higher energy, can ionize atoms. \\
+        \hline
+        Biological Effects & RF radiation generally doesn't damage DNA. Ionizing radiation can cause DNA damage. \\
+        \hline
+        Examples & RF: Radio waves, microwaves. Ionizing: X-rays, gamma rays. \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of RF Radiation and Ionizing Radiation}
+    \label{tab:rf-vs-ionizing}
+\end{table}
+
+% Table 2: MPE Limits at Different Frequencies
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Frequency} & \textbf{MPE Limit (W/m²)} \\
+        \hline
+        3.5 MHz & 100 \\
+        \hline
+        50 MHz & 10 \\
+        \hline
+        440 MHz & 5 \\
+        \hline
+        1296 MHz & 2 \\
+        \hline
+    \end{tabular}
+    \caption{MPE Limits at Different Frequencies}
+    \label{tab:mpe-limits}
+\end{table}
+
+% Table 3: Factors Affecting RF Exposure
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Factor} & \textbf{Impact on RF Exposure} \\
+        \hline
+        Frequency & Higher frequencies generally have lower MPE limits. \\
+        \hline
+        Power Level & Higher power levels increase exposure. \\
+        \hline
+        Distance & Closer distances increase exposure. \\
+        \hline
+        Radiation Pattern & Directional antennas can focus energy, increasing exposure in certain directions. \\
+        \hline
+    \end{tabular}
+    \caption{Factors Affecting RF Exposure}
+    \label{tab:rf-exposure-factors}
+\end{table}

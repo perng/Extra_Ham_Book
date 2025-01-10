@@ -1,0 +1,95 @@
+{
+    "title": "Extra Class License Course",
+    "parts": [
+      {
+        "part_title": "Part I: SUBELEMENT E1 – COMMISSION RULES",
+        "label": "part:e1",
+        "chapters": [
+          {
+            "chapter_title": "Whispers Across the Waves: The Silent Symphony of Signal and Shadow",
+            "label": "chap:e1a",
+            "questions": [
+              "E1A01","E1A02","E1A03","E1A04","E1A05","E1A06","E1A07","E1A08","E1A09","E1A10","E1A11"
+            ]
+          },
+          {
+            "chapter_title": "Station Under Siege: The Rules of Engagement in the Radio Frontier",
+            "label": "chap:e1b",
+            "questions": [
+              "E1B01","E1B02","E1B03","E1B04","E1B05","E1B06","E1B07","E1B08","E1B09","E1B10","E1B11"
+            ]
+          },
+          {
+            "chapter_title": "Rules of Engagement: The Symphony of Signals and the Dance of Compliance",
+            "label": "chap:e1c",
+            "questions": [
+              "E1C01","E1C02","E1C03","E1C04","E1C05","E1C06","E1C07","E1C08","E1C09","E1C10","E1C11","E1C12"
+            ]
+          },
+          {
+            "chapter_title": "Stay Grounded, Reach for the Stars: The Code of Cosmic Connections",
+            "label": "chap:e1d",
+            "questions": [
+              "E1D01","E1D02","E1D03","E1D04","E1D05","E1D06","E1D07","E1D08","E1D09","E1D10","E1D11","E1D12"
+            ]
+          },
+          {
+            "chapter_title": "Passing the Test: Where Dedication Meets Mastery in the Volunteer Examiner Arena",
+            "label": "chap:e1e",
+            "questions": [
+              "E1E01","E1E02","E1E03","E1E04","E1E05","E1E06","E1E07","E1E08","E1E09","E1E10","E1E11"
+            ]
+          }
+        ]
+      },
+      {
+        "part_title": "Part II: SUBELEMENT E2 – OPERATING PROCEDURES",
+        "label": "part:e2",
+        "chapters": [
+          {
+            "chapter_title": "Uncharted Frequencies: The Rules of the Radio Wild West",
+            "label": "chap:e1f",
+            "questions": [
+              "E1F01","E1F02","E1F03","E1F04","E1F05","E1F06","E1F07","E1F08","E1F09","E1F10","E1F11"
+            ]
+          },
+          {
+            "chapter_title": "Echoes Among the Stars: Navigating the Cosmos with Amateur Radio",
+            "label": "chap:e2a",
+            "questions": [
+              "E2A01","E2A02","E2A03","E2A04","E2A05","E2A06","E2A07","E2A08","E2A09","E2A10","E2A11","E2A12"
+            ]
+          },
+          {
+            "chapter_title": "Eyes on the Screen: The Dance of Fast and Slow in Television's Evolution",
+            "label": "chap:e2b",
+            "questions": [
+              "E2B01","E2B02","E2B03","E2B04","E2B05","E2B06","E2B07","E2B08","E2B09","E2B10","E2B11","E2B12"
+            ]
+          },
+          {
+            "chapter_title": "Dialing Into Adventure: The Art of Connection in the Digital Wilderness",
+            "label": "chap:e2c",
+            "questions": [
+              "E2C01","E2C02","E2C03","E2C04","E2C05","E2C06","E2C07","E2C08","E2C09","E2C10","E2C11","E2C12"
+            ]
+          },
+          {
+            "chapter_title": "Beyond the Waves: Mastering the Secrets of Digital Realms and Celestial Communication",
+            "label": "chap:e2d",
+            "questions": [
+              "E2D01","E2D02","E2D03","E2D04","E2D05","E2D06","E2D07","E2D08","E2D09","E2D10","E2D11"
+            ]
+          },
+          {
+            "chapter_title": "Whispers in the Wave: The Art of Frequencies in HF Communication",
+            "label": "chap:e2e",
+            "questions": [
+              "E2E01","E2E02","E2E03","E2E04","E2E05","E2E06","E2E07","E2E08","E2E09","E2E10","E2E11","E2E12","E2E13"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

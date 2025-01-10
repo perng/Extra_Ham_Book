@@ -1,19 +1,28 @@
 import json
+import argparse
+
+parser = argparse.ArgumentParser(description='Process questions and optionally print prompts.')
+parser.add_argument('-l', '--license', type=str, required=True, help='license class')
+
+args = parser.parse_args()
+
+assert args.license in ['extra', 'general', 'tech']
+
 
 # Load TOC data
-with open('tech/toc.json', 'r') as f:
+with open(f'{args.license}/toc2.json', 'r') as f:
     toc_data = json.load(f)
 
 # Load questions data
-with open('../v2/tech/questions2.json', 'r') as f:
+with open(f'../v1/{args.license}/questions2.json', 'r') as f:
     questions_data = json.load(f)
 
 # Get all question IDs from questions2.json
 question_ids = set()
 for chapter in questions_data:
     for section in chapter['sections']:
-        for question in section['questions']:
-            question_ids.add(question['question_id'])
+            for question in section['questions']:
+                question_ids.add(question['question_id'])
 
 # Get all question IDs from TOC and track duplicates
 toc_questions = set()
@@ -22,8 +31,15 @@ duplicate_questions = set()
 def process_chapters(chapters):
     for chapter in chapters:
         for section in chapter.get('sections', []):
-            for subsection in section.get('subsections', []):
-                for qid in subsection.get('questions', []):
+            if 'subsections' in section:
+                for subsection in section.get('subsections', []):
+                    for qid in subsection.get('questions', []):
+                        if qid in toc_questions:
+                            duplicate_questions.add(qid)
+                        else:
+                            toc_questions.add(qid)
+            else:
+                for qid in section.get('questions', []):
                     if qid in toc_questions:
                         duplicate_questions.add(qid)
                     else:

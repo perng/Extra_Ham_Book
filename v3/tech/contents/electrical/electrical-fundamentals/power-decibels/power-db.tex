@@ -1,0 +1,121 @@
+\subsection{Electrical Power, Decibel Calculations}
+\label{subsec:power-db}
+
+Let's dive into the world of electrical power and decibel calculations! If you've ever wondered how we measure the strength of signals in radio systems, you're in the right place. Electrical power is the backbone of radio technology, and understanding it is crucial for anyone working with radios. So, let's start with the basics.
+
+\subsubsection*{Electrical Power}
+Electrical power is the rate at which electrical energy is transferred by an electric circuit. In simpler terms, it's how much "oomph" your radio signal has. The unit of power is the \textbf{Watt} (W), named after the Scottish engineer James Watt. You might have heard of other units like volts or amperes, but when it comes to power, watts are the star of the show. 
+
+In radio technology, power is everything. It determines how far your signal can travel and how well it can overcome obstacles. Whether you're transmitting a signal or receiving one, power is the key player.
+
+\subsubsection*{Decibel Calculations}
+Now, let's talk about decibels (dB). Decibels are a logarithmic unit used to express the ratio of two values of a physical quantity, often power or intensity. In radio systems, decibels are used to describe power changes in a way that's easy to understand and compare.
+
+The formula to calculate the decibel value for a power change is:
+
+\begin{equation}
+\text{dB} = 10 \log_{10}\left(\frac{P_2}{P_1}\right)
+\label{eq:db-calc}
+\end{equation}
+
+where \(P_1\) is the initial power and \(P_2\) is the final power. This formula is your best friend when dealing with power changes in radio systems.
+
+\subsubsection*{Examples of Power Changes in Decibels}
+Let's look at some examples to make this clearer. Suppose you increase the power from 5 watts to 10 watts. Using equation \ref{eq:db-calc}, we get:
+
+\[
+\text{dB} = 10 \log_{10}\left(\frac{10}{5}\right) = 10 \log_{10}(2) \approx 3 \text{ dB}
+\]
+
+So, a power increase from 5 watts to 10 watts is approximately 3 dB. Similarly, if you decrease the power from 12 watts to 3 watts, the calculation would be:
+
+\[
+\text{dB} = 10 \log_{10}\left(\frac{3}{12}\right) = 10 \log_{10}(0.25) \approx -6 \text{ dB}
+\]
+
+This means a power decrease from 12 watts to 3 watts is approximately -6 dB.
+
+\subsubsection*{Practical Implications}
+Understanding decibel values is crucial in radio communication. It helps you determine how much power you need to transmit a signal over a certain distance or how much power you can expect to lose due to obstacles. It's like knowing the fuel efficiency of your car—it helps you plan your journey better.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/power-db-relationship.svg}
+    \caption{Relationship between power levels and decibel values.}
+    \label{fig:power-db-relationship}
+    % Diagram showing the relationship between power levels and decibel values.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/power-db-graph.png}
+    \caption{Graph of power changes in decibels.}
+    \label{fig:power-db-graph}
+    % Graph illustrating power increase and decrease in decibels.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Power Change} & \textbf{Decibel Value} \\
+    \hline
+    5 W to 10 W & 3 dB \\
+    12 W to 3 W & -6 dB \\
+    20 W to 200 W & 10 dB \\
+    \hline
+    \end{tabular}
+    \caption{Summary of power changes and decibel values.}
+    \label{tab:power-db-summary}
+\end{table}
+
+\subsubsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A02}]
+Electrical power is measured in which of the following units?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Volts
+    \item \textbf{Watts}
+    \item Watt-hours
+    \item Amperes
+\end{enumerate}
+\end{tcolorbox}
+Electrical power is measured in watts. Volts measure voltage, amperes measure current, and watt-hours measure energy, not power.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B09}]
+Which decibel value most closely represents a power increase from 5 watts to 10 watts?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item 2 dB
+    \item \textbf{3 dB}
+    \item 5 dB
+    \item 10 dB
+\end{enumerate}
+\end{tcolorbox}
+
+Using $\text{dB} = 10 \log_{10}(\frac{P_2}{P_1})$:
+$\text{dB} = 10 \log_{10}(\frac{10\text{ W}}{5\text{ W}}) = 10 \log_{10}(2) \approx 3\text{ dB}$
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B10}]
+Which decibel value most closely represents a power decrease from 12 watts to 3 watts?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item -1 dB
+    \item -3 dB
+    \item \textbf{-6 dB}
+    \item -9 dB
+\end{enumerate}
+\end{tcolorbox}
+
+Using $\text{dB} = 10 \log_{10}(\frac{P_2}{P_1})$:
+$\text{dB} = 10 \log_{10}(\frac{3\text{ W}}{12\text{ W}}) = 10 \log_{10}(0.25) \approx -6\text{ dB}$
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5B11}]
+Which decibel value represents a power increase from 20 watts to 200 watts?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{10 dB}
+    \item 12 dB
+    \item 18 dB
+    \item 28 dB
+\end{enumerate}
+\end{tcolorbox}
+
+Using $\text{dB} = 10 \log_{10}(\frac{P_2}{P_1})$:
+$\text{dB} = 10 \log_{10}(\frac{200\text{ W}}{20\text{ W}}) = 10 \log_{10}(10) = 10\text{ dB}$

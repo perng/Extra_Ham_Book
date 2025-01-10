@@ -1,0 +1,79 @@
+\subsection{Coax Failures, Installation}
+\label{subsec:coax-fail}
+
+Coaxial cables are the unsung heroes of radio communication, quietly carrying signals from your transmitter to your antenna. But like any hero, they have their weaknesses. Let’s dive into the common causes of coaxial cable failures, focusing on moisture contamination and its impact on signal integrity.
+
+\subsubsection*{Moisture Contamination}
+Moisture is the arch-nemesis of coaxial cables. When water sneaks into the cable, it can wreak havoc on the signal integrity. This is because water has a higher dielectric constant than the cable's dielectric material, which changes the impedance of the cable. The result? Signal reflections, increased loss, and ultimately, a degraded communication link. Imagine trying to shout through a wet towel—it’s not going to work well, is it?
+
+\subsubsection*{Ultraviolet Light Resistance}
+Now, let’s talk about the outer jacket of coaxial cables. Why should it be resistant to ultraviolet (UV) light? Well, UV light is like the sun’s way of saying, “I’m going to ruin your day.” Over time, UV exposure can degrade the outer jacket, making it brittle and prone to cracking. Once the jacket is compromised, moisture can easily enter the cable, leading to the same issues we just discussed. So, a UV-resistant jacket is like sunscreen for your cable—essential for long-term health.
+
+\subsubsection*{Air Core Coaxial Cable}
+Air core coaxial cables have their own set of challenges. Compared to foam or solid dielectric types, air core cables require special techniques to prevent moisture ingress. This is because the air inside the cable can condense into water under certain conditions, leading to the same moisture-related problems. While air core cables can offer lower loss at high frequencies, they are more finicky when it comes to environmental conditions.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{coax-structure}
+    \caption{Structure of a Coaxial Cable. The diagram highlights the outer jacket, dielectric, and conductor layers.}
+    \label{fig:coax-structure}
+    % Prompt: Diagram showing the structure of a coaxial cable, highlighting the outer jacket, dielectric, and conductor layers.
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{coax-moisture}
+    \caption{Moisture Contamination in Coaxial Cable. The illustration shows moisture ingress due to a damaged outer jacket.}
+    \label{fig:coax-moisture}
+    % Prompt: Illustration of moisture ingress in a coaxial cable due to a damaged outer jacket.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Property} & \textbf{Air Core} & \textbf{Foam} & \textbf{Solid Dielectric} \\
+        \hline
+        Moisture Resistance & Low & Medium & High \\
+        UV Resistance & Medium & High & High \\
+        Loss per Foot & Low & Medium & High \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Coaxial Cable Types. The table compares the properties of air core, foam, and solid dielectric coaxial cables.}
+    \label{tab:coax-comparison}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C09}]
+    Which of the following causes failure of coaxial cables?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Moisture contamination}
+        \item Solder flux contamination
+        \item Rapid fluctuation in transmitter output power
+        \item Operation at 100\% duty cycle for an extended period
+    \end{enumerate}
+\end{tcolorbox}
+Moisture contamination is a primary cause of coaxial cable failure. It changes the cable's impedance, leading to signal reflections and increased loss. The other options, while potentially problematic, are not directly related to cable failure.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C10}]
+    Why should the outer jacket of coaxial cable be resistant to ultraviolet light?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Ultraviolet resistant jackets prevent harmonic radiation
+        \item Ultraviolet light can increase losses in the cable’s jacket
+        \item Ultraviolet and RF signals can mix, causing interference
+        \item \textbf{Ultraviolet light can damage the jacket and allow water to enter the cable}
+    \end{enumerate}
+\end{tcolorbox}
+UV light can degrade the outer jacket, making it brittle and prone to cracking. This allows moisture to enter, leading to cable failure. The other options are either incorrect or irrelevant.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C11}]
+    What is a disadvantage of air core coaxial cable when compared to foam or solid dielectric types?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item It has more loss per foot
+        \item It cannot be used for VHF or UHF antennas
+        \item \textbf{It requires special techniques to prevent moisture in the cable}
+        \item It cannot be used at below freezing temperatures
+    \end{enumerate}
+\end{tcolorbox}
+Air core coaxial cables require special techniques to prevent moisture ingress, as the air inside can condense into water under certain conditions. This is a significant disadvantage compared to foam or solid dielectric types, which are more resistant to moisture.

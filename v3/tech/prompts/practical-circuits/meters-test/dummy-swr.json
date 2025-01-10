@@ -1,0 +1,64 @@
+{
+  "section_title": "Dummy Loads, SWR Meters, Antenna Analyzers",
+  "label": "sec:dummy-swr",
+  "section_label": "sec:dummy-swr",
+  "subsections": [
+    {
+      "title": "Proper Use",
+      "label": "subsec:proper-use",
+      "questions": [
+        "T7C01",
+        "T7C02",
+        "T7C03",
+        "T7C06",
+        "T7C07"
+      ],
+      "concepts": [
+        "Dummy Load",
+        "Antenna Analyzer",
+        "SWR (Standing Wave Ratio)",
+        "Impedance Mismatch",
+        "Feed Line Loss"
+      ],
+      "prompts": [
+        "Explain the primary purpose of a dummy load and its role in preventing signal transmission during tests.",
+        "Describe the components of a dummy load and how it is constructed to handle power dissipation.",
+        "Discuss the function of an antenna analyzer in determining antenna resonance at a desired frequency.",
+        "Explain what an SWR reading of 4:1 indicates and its implications for impedance matching.",
+        "Describe what happens to power lost in a feed line and how it affects system performance."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a dummy load connected to a transmitter for testing purposes.",
+          "software": "SVG",
+          "caption": "Dummy Load Connected to a Transmitter",
+          "label": "fig:dummy-load"
+        },
+        {
+          "prompt": "Illustration of an antenna analyzer measuring resonance frequency.",
+          "software": "SVG",
+          "caption": "Antenna Analyzer Measuring Resonance",
+          "label": "fig:antenna-analyzer"
+        },
+        {
+          "prompt": "Graph showing SWR values and their relationship to impedance mismatch.",
+          "software": "gnuplot",
+          "caption": "SWR and Impedance Mismatch Relationship",
+          "label": "fig:swr-graph"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of dummy loads and their specifications.",
+          "caption": "Comparison of Dummy Load Specifications",
+          "label": "tab:dummy-load-specs"
+        },
+        {
+          "prompt": "Table summarizing SWR readings and their interpretations.",
+          "caption": "SWR Readings and Interpretations",
+          "label": "tab:swr-readings"
+        }
+      ]
+    }
+  ]
+}

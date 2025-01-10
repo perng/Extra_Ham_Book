@@ -1,0 +1,105 @@
+\subsection{Calculating Power with Voltage/Current}
+\label{subsec:calc-power}
+
+In this section, we'll dive into the world of electrical power calculations. Don't worry, it's not as shocking as it sounds! (Pun intended.) We'll start by understanding the basic formula for calculating power in a DC circuit and then work through some examples to solidify your understanding.
+
+\subsubsection*{The Power Formula}
+The formula for calculating electrical power \( P \) in a DC circuit is straightforward:
+\begin{equation}
+    P = I \times E
+    \label{eq:power-formula}
+\end{equation}
+where:
+\begin{itemize}
+    \item \( P \) is the power in watts (W),
+    \item \( I \) is the current in amperes (A),
+    \item \( E \) is the voltage in volts (V).
+\end{itemize}
+
+This equation tells us that power is the product of current and voltage. So, if you know the voltage across a component and the current flowing through it, you can easily calculate the power being delivered.
+
+\subsubsection*{Examples of Power Calculations}
+Let's put this formula to work with some examples. Suppose you have a DC circuit with a voltage of 13.8 volts and a current of 10 amperes. Using the power formula:
+\begin{equation}
+    P = 10 \, \text{A} \times 13.8 \, \text{V} = 138 \, \text{W}
+    \label{eq:power-example1}
+\end{equation}
+So, the power delivered is 138 watts. Easy, right?
+
+Now, let's try another example. If you have a voltage of 12 volts and a current of 2.5 amperes:
+\begin{equation}
+    P = 2.5 \, \text{A} \times 12 \, \text{V} = 30 \, \text{W}
+    \label{eq:power-example2}
+\end{equation}
+Here, the power delivered is 30 watts.
+
+\subsubsection*{Relationship Between Power, Voltage, and Current}
+The relationship between power, voltage, and current is fundamental in electrical circuits. As you can see from the formula, power increases with either an increase in voltage or current. This means that if you want to deliver more power, you can either increase the voltage or the current (or both, if you're feeling adventurous).
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{dc-circuit.svg}
+    \caption{Simple DC circuit with voltage, current, and power labeled.}
+    \label{fig:dc-circuit}
+    % Prompt: Diagram showing a simple DC circuit with voltage, current, and power labeled.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Voltage (V) & Current (A) & Power (W) \\
+        \hline
+        13.8 & 10 & 138 \\
+        12 & 2.5 & 30 \\
+        12 & 10 & 120 \\
+        \hline
+    \end{tabular}
+    \caption{Power calculations for various voltage and current values.}
+    \label{tab:power-calculations}
+\end{table}
+
+\subsubsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C08}]
+    What is the formula used to calculate electrical power (P) in a DC circuit?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \( P = I E \)
+        \item \( P = E / I \)
+        \item \( P = E - I \)
+        \item \( P = I + E \)
+    \end{enumerate}
+\end{tcolorbox}
+The formula for calculating electrical power in a DC circuit is \( P = I E \). This is derived from the basic relationship between power, voltage, and current. The other options are incorrect because they either involve incorrect operations or do not represent the correct relationship between the variables.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C09}]
+    How much power is delivered by a voltage of 13.8 volts DC and a current of 10 amperes?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{138 watts}
+        \item 0.7 watts
+        \item 23.8 watts
+        \item 3.8 watts
+    \end{enumerate}
+\end{tcolorbox}
+Using the power formula \( P = I E \), we calculate \( P = 10 \, \text{A} \times 13.8 \, \text{V} = 138 \, \text{W} \). The other options are incorrect because they do not match the result of this calculation.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C10}]
+    How much power is delivered by a voltage of 12 volts DC and a current of 2.5 amperes?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 4.8 watts
+        \item \textbf{30 watts}
+        \item 14.5 watts
+        \item 0.208 watts
+    \end{enumerate}
+\end{tcolorbox}
+Using the power formula \( P = I E \), we calculate \( P = 2.5 \, \text{A} \times 12 \, \text{V} = 30 \, \text{W} \). The other options are incorrect because they do not match the result of this calculation.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5C11}]
+    How much current is required to deliver 120 watts at a voltage of 12 volts DC?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 0.1 amperes
+        \item \textbf{10 amperes}
+        \item 12 amperes
+        \item 132 amperes
+    \end{enumerate}
+\end{tcolorbox}
+To find the current, we rearrange the power formula to \( I = P / E \). Plugging in the values, \( I = 120 \, \text{W} / 12 \, \text{V} = 10 \, \text{A} \). The other options are incorrect because they do not match the result of this calculation.

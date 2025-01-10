@@ -1,0 +1,67 @@
+{
+  "section_title": "Direction Finding (Foxhunting)",
+  "label": "sec:direction-finding",
+  "section_label": "sec:direction-finding",
+  "subsections": [
+    {
+      "title": "Locating Noise & Interference",
+      "label": "subsec:locating-noise",
+      "questions": [
+        {
+          "question_id": "T8C01",
+          "question": "Which of the following methods is used to locate sources of noise interference or jamming?",
+          "answer": "C",
+          "choices": {
+            "A": "Echolocation",
+            "B": "Doppler radar",
+            "C": "Radio direction finding",
+            "D": "Phase locking"
+          }
+        },
+        {
+          "question_id": "T8C02",
+          "question": "Which of these items would be useful for a hidden transmitter hunt?",
+          "answer": "B",
+          "choices": {
+            "A": "Calibrated SWR meter",
+            "B": "A directional antenna",
+            "C": "A calibrated noise bridge",
+            "D": "All these choices are correct"
+          }
+        }
+      ],
+      "concepts": [
+        "Radio Direction Finding",
+        "Noise Interference",
+        "Jamming",
+        "Directional Antenna"
+      ],
+      "prompts": [
+        "Explain the concept of radio direction finding and its importance in locating noise interference or jamming.",
+        "Describe the role of a directional antenna in a hidden transmitter hunt and how it aids in locating sources of interference.",
+        "Discuss the limitations and challenges of using radio direction finding in real-world scenarios."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the process of radio direction finding with a directional antenna.",
+          "software": "SVG",
+          "caption": "Radio Direction Finding Process",
+          "label": "fig:radio-direction-finding"
+        },
+        {
+          "prompt": "Illustration of a hidden transmitter hunt setup with a directional antenna.",
+          "software": "SVG",
+          "caption": "Hidden Transmitter Hunt Setup",
+          "label": "fig:hidden-transmitter-hunt"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different methods for locating noise interference or jamming.",
+          "caption": "Comparison of Noise Interference Location Methods",
+          "label": "tab:noise-interference-methods"
+        }
+      ]
+    }
+  ]
+}

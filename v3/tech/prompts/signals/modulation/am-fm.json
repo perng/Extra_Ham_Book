@@ -1,0 +1,104 @@
+{
+  "section_title": "Amplitude and Frequency Modulation",
+  "label": "sec:am-fm",
+  "section_label": "sec:am-fm",
+  "subsections": [
+    {
+      "title": "AM, Single-Sideband",
+      "label": "subsec:am-ssb",
+      "questions": ["T8A01", "T8A03", "T8A06", "T8A07", "T8A08"],
+      "concepts": ["Single Sideband (SSB)", "Upper Sideband", "Lower Sideband", "Bandwidth of SSB"],
+      "prompts": [
+        "Explain the concept of Single Sideband (SSB) modulation, including its advantages over other forms of amplitude modulation.",
+        "Describe the differences between Upper Sideband (USB) and Lower Sideband (LSB) and their typical usage in different frequency bands.",
+        "Discuss the bandwidth characteristics of SSB signals and why they are more efficient for long-distance communication.",
+        "Compare the bandwidth of SSB signals with other modulation types, such as FM and AM."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the frequency spectrum of an SSB signal compared to AM and FM signals.",
+          "software": "SVG",
+          "caption": "Frequency Spectrum Comparison of SSB, AM, and FM Signals",
+          "label": "fig:ssb-spectrum"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the bandwidth, efficiency, and typical usage of SSB, AM, and FM signals.",
+        "caption": "Comparison of SSB, AM, and FM Modulation Techniques",
+        "label": "tab:modulation-comparison"
+      }
+    },
+    {
+      "title": "Frequency Modulation",
+      "label": "subsec:fm",
+      "questions": ["T8A02", "T8A04", "T8A09"],
+      "concepts": ["Frequency Modulation (FM)", "Bandwidth of FM", "VHF/UHF Repeaters"],
+      "prompts": [
+        "Explain the principles of Frequency Modulation (FM) and how it differs from Amplitude Modulation (AM).",
+        "Describe the typical bandwidth requirements for FM signals, especially in the context of VHF and UHF repeaters.",
+        "Discuss the advantages and disadvantages of FM compared to SSB, particularly in terms of signal quality and bandwidth usage."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the frequency deviation in an FM signal.",
+          "software": "SVG",
+          "caption": "Frequency Deviation in FM Signals",
+          "label": "fig:fm-deviation"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key characteristics of FM signals, including bandwidth, typical usage, and advantages over AM.",
+        "caption": "Characteristics of Frequency Modulation (FM)",
+        "label": "tab:fm-characteristics"
+      }
+    },
+    {
+      "title": "CW (Morse Code)",
+      "label": "subsec:cw",
+      "questions": ["T8A05", "T8A11"],
+      "concepts": ["Continuous Wave (CW)", "Morse Code", "Bandwidth of CW"],
+      "prompts": [
+        "Explain the concept of Continuous Wave (CW) transmission and its historical significance in radio communication.",
+        "Describe the bandwidth requirements for CW signals and why they are considered the narrowest among common modulation types.",
+        "Discuss the use of Morse Code in CW transmissions and its relevance in modern amateur radio."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the frequency spectrum of a CW signal compared to SSB and FM signals.",
+          "software": "SVG",
+          "caption": "Frequency Spectrum of CW Signals",
+          "label": "fig:cw-spectrum"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table comparing the bandwidth and typical usage of CW, SSB, and FM signals.",
+        "caption": "Comparison of CW, SSB, and FM Modulation Techniques",
+        "label": "tab:cw-comparison"
+      }
+    },
+    {
+      "title": "Bandwidth Comparisons",
+      "label": "subsec:bandwidth",
+      "questions": ["T8A10", "T8A12"],
+      "concepts": ["Bandwidth", "AM Fast-Scan TV", "FM vs SSB Bandwidth"],
+      "prompts": [
+        "Explain the concept of bandwidth in the context of radio signals and why it is a critical factor in communication.",
+        "Describe the bandwidth requirements for AM fast-scan TV transmissions and how they compare to other modulation types.",
+        "Discuss the trade-offs between FM and SSB in terms of bandwidth usage and signal quality."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram comparing the bandwidth of AM fast-scan TV, FM, and SSB signals.",
+          "software": "SVG",
+          "caption": "Bandwidth Comparison of AM Fast-Scan TV, FM, and SSB Signals",
+          "label": "fig:bandwidth-comparison"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the bandwidth requirements for AM fast-scan TV, FM, and SSB signals.",
+        "caption": "Bandwidth Requirements for Different Modulation Types",
+        "label": "tab:bandwidth-requirements"
+      }
+    }
+  ]
+}

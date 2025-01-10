@@ -1,0 +1,81 @@
+\subsection{Receiver Sensitivity and Selectivity}
+\label{subsec:rx-sense-select}
+
+When it comes to radio receivers, two of the most critical performance metrics are \textit{sensitivity} and \textit{selectivity}. These terms might sound like they belong in a psychology textbook, but in the world of radio technology, they are all about how well your receiver can pick up and distinguish signals. Let’s dive into what these terms mean and why they matter.
+
+\subsubsection*{Sensitivity: The Art of Hearing Whispers}
+Receiver sensitivity is all about how well your receiver can detect weak signals. Think of it as the receiver’s ability to hear a whisper in a noisy room. The more sensitive the receiver, the fainter the signals it can pick up. Sensitivity is typically measured in microvolts ($\mu V$) or decibels relative to one milliwatt (dBm). The lower the value, the better the sensitivity. For example, a receiver with a sensitivity of $0.1 \mu V$ can detect much weaker signals than one with a sensitivity of $1 \mu V$.
+
+Mathematically, sensitivity can be expressed as:
+\begin{equation}
+    S = 10 \log_{10} \left( \frac{P_{\text{min}}}{1 \text{mW}} \right)
+    \label{eq:sensitivity}
+\end{equation}
+where $P_{\text{min}}$ is the minimum detectable power. This equation tells us that sensitivity is a logarithmic measure of the smallest signal power the receiver can detect.
+
+\subsubsection*{Selectivity: The Art of Ignoring Noise}
+While sensitivity is about detecting weak signals, selectivity is about ignoring the ones you don’t want. Selectivity refers to the receiver’s ability to discriminate between multiple signals, especially those that are close in frequency. Imagine trying to listen to your favorite radio station while another station is broadcasting on a nearby frequency. A receiver with good selectivity can filter out the unwanted station, letting you enjoy your music without interference.
+
+Selectivity is often measured in terms of bandwidth and rejection ratio. A narrower bandwidth generally means better selectivity, as it allows the receiver to focus on a smaller range of frequencies. The rejection ratio indicates how well the receiver can suppress signals outside its desired bandwidth.
+
+\subsubsection*{Sensitivity vs. Selectivity: A Friendly Rivalry}
+While sensitivity and selectivity are both crucial for receiver performance, they often pull in opposite directions. A highly sensitive receiver might pick up weak signals, but it could also pick up more noise and interference. On the other hand, a highly selective receiver might filter out unwanted signals, but it could also miss some of the weaker ones. The key is to strike a balance between the two, depending on your specific needs.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{sensitivity-diagram}
+    % Diagram illustrating the relationship between sensitivity and signal detection in a radio receiver.
+    \caption{Sensitivity in Radio Receivers}
+    \label{fig:sensitivity-diagram}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{selectivity-diagram}
+    % Diagram showing how selectivity filters out unwanted signals in a radio receiver.
+    \caption{Selectivity in Radio Receivers}
+    \label{fig:selectivity-diagram}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Parameter} & \textbf{Sensitivity} & \textbf{Selectivity} \\
+        \hline
+        Definition & Ability to detect weak signals & Ability to discriminate between signals \\
+        \hline
+        Measurement & Microvolts ($\mu V$) or dBm & Bandwidth and rejection ratio \\
+        \hline
+        Impact & Detects faint signals & Reduces interference \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Sensitivity and Selectivity}
+    \label{tab:sensitivity-selectivity}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A01}]
+    Which term describes the ability of a receiver to detect the presence of a signal?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Linearity
+        \item \textbf{Sensitivity}
+        \item Selectivity
+        \item Total Harmonic Distortion
+    \end{enumerate}
+\end{tcolorbox}
+
+Sensitivity is the term that describes a receiver's ability to detect weak signals. It is measured in microvolts or dBm, and a lower value indicates better sensitivity. The other options, such as linearity and total harmonic distortion, are related to different aspects of receiver performance.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7A04}]
+    Which term describes the ability of a receiver to discriminate between multiple signals?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Discrimination ratio
+        \item Sensitivity
+        \item \textbf{Selectivity}
+        \item Harmonic distortion
+    \end{enumerate}
+\end{tcolorbox}
+
+Selectivity is the ability of a receiver to distinguish between multiple signals, especially those close in frequency. It is crucial for reducing interference. Sensitivity, on the other hand, is about detecting weak signals, while harmonic distortion is related to signal quality.

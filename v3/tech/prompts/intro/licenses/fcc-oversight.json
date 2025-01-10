@@ -1,0 +1,39 @@
+{
+  "section_title": "FCC and the Amateur Service",
+  "label": "sec:fcc-oversight",
+  "section_label": "sec:fcc-oversight",
+  "subsections": [
+    {
+      "title": "Who Regulates and Enforces the Rules?",
+      "label": "subsec:fcc-enforces",
+      "questions": ["T1A02"],
+      "concepts": ["FCC", "Regulation", "Enforcement"],
+      "prompts": [
+        "Explain the role of the FCC in regulating the Amateur Radio Service in the United States.",
+        "Describe the enforcement mechanisms used by the FCC to ensure compliance with Amateur Radio Service rules.",
+        "Discuss the importance of regulatory oversight in maintaining the integrity and functionality of the Amateur Radio Service."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the organizational structure of the FCC and its relation to the Amateur Radio Service.",
+          "software": "Graphviz",
+          "caption": "Organizational structure of the FCC and its relation to the Amateur Radio Service.",
+          "label": "fig:fcc-structure"
+        },
+        {
+          "prompt": "Flowchart illustrating the process of rule enforcement by the FCC in the Amateur Radio Service.",
+          "software": "Graphviz",
+          "caption": "Process of rule enforcement by the FCC in the Amateur Radio Service.",
+          "label": "fig:fcc-enforcement-process"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key responsibilities of the FCC in regulating the Amateur Radio Service.",
+          "caption": "Key responsibilities of the FCC in regulating the Amateur Radio Service.",
+          "label": "tab:fcc-responsibilities"
+        }
+      ]
+    }
+  ]
+}

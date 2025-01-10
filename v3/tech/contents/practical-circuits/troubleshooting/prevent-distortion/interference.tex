@@ -1,0 +1,131 @@
+\subsection{Addressing Interference, TVI, etc.}
+\label{subsec:interference}
+
+Interference can be a real headache, especially when it involves your neighbors' TV or radio reception. Let's dive into some common scenarios and how to handle them like a pro.
+
+\subsubsection*{Steps to Take if a Neighbor Reports Interference}
+
+If a neighbor tells you that your station's transmissions are interfering with their radio or TV reception, don't panic! The first thing you should do is ensure that your station is functioning properly. Check if your own radio or television experiences interference when tuned to the same channel. This simple step can often reveal if the issue is on your end.
+
+\subsubsection*{Using Band-Reject Filters}
+
+Overload of a VHF transceiver by a nearby commercial FM station can be a tricky problem. One effective solution is to install a band-reject filter. This filter helps to block out the unwanted frequencies from the commercial FM station, allowing your VHF transceiver to operate without interference. For a visual guide, refer to Figure~\ref{fig:band-reject}.
+
+% Figure: Band-Reject Filter Installation
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{band-reject-filter-installation.svg}
+    \caption{Band-Reject Filter Installation. The diagram shows the proper placement of a band-reject filter in a VHF transceiver setup to mitigate interference from nearby commercial FM stations.}
+    \label{fig:band-reject}
+\end{figure}
+
+\subsubsection*{Symptoms of RF Feedback}
+
+RF feedback in a transmitter or transceiver can manifest as garbled, distorted, or unintelligible voice transmissions. If you're receiving reports of such issues, it's a clear sign that RF feedback might be the culprit. Addressing this involves checking your equipment and ensuring that all connections are secure and properly shielded. For more details, see Figure~\ref{fig:rf-feedback}.
+
+% Figure: RF Feedback Symptoms
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{rf-feedback-symptoms.svg}
+    \caption{RF Feedback Symptoms. The illustration depicts common symptoms of RF feedback, such as distorted audio and unintelligible transmissions.}
+    \label{fig:rf-feedback}
+\end{figure}
+
+\subsubsection*{Resolving Non-Fiber Optic Cable TV Interference}
+
+When dealing with non-fiber optic cable TV interference caused by your amateur radio transmissions, the first step is to ensure that all TV feed line coaxial connectors are installed properly. This simple check can often resolve the issue without the need for additional filters or amplifiers.
+
+\subsubsection*{Comparison of Methods to Address TVI and RF Feedback}
+
+To give you a clearer picture, Table~\ref{tab:tvi-rf-feedback} compares different methods to address TVI and RF feedback. This table can serve as a handy reference when troubleshooting interference issues.
+
+% Table: Methods to Address TVI and RF Feedback
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Method} & \textbf{Description} \\
+        \hline
+        Band-Reject Filter & Blocks unwanted frequencies from nearby FM stations. \\
+        Proper Coaxial Connectors & Ensures secure and interference-free connections. \\
+        RF Feedback Checks & Identifies and mitigates feedback issues in transmitters. \\
+        \hline
+    \end{tabular}
+    \caption{Methods to Address TVI and RF Feedback. This table compares different approaches to resolving interference issues.}
+    \label{tab:tvi-rf-feedback}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B06}]
+    Which of the following actions should you take if a neighbor tells you that your station’s transmissions are interfering with their radio or TV reception?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Make sure that your station is functioning properly and that it does not cause interference to your own radio or television when it is tuned to the same channel}
+        \item Immediately turn off your transmitter and contact the nearest FCC office for assistance
+        \item Install a harmonic doubler on the output of your transmitter and tune it until the interference is eliminated
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+The correct approach is to first ensure that your station is functioning properly and not causing interference to your own equipment. This helps to rule out any issues on your end before taking further action.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B07}]
+    Which of the following can reduce overload of a VHF transceiver by a nearby commercial FM station?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Installing an RF preamplifier
+        \item Using double-shielded coaxial cable
+        \item Installing bypass capacitors on the microphone cable
+        \item \textbf{Installing a band-reject filter}
+    \end{enumerate}
+\end{tcolorbox}
+
+A band-reject filter is specifically designed to block out unwanted frequencies, making it the most effective solution for reducing overload from nearby commercial FM stations.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B08}]
+    What should you do if something in a neighbor’s home is causing harmful interference to your amateur station?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Work with your neighbor to identify the offending device
+        \item Politely inform your neighbor that FCC rules prohibit the use of devices that cause interference
+        \item Make sure your station meets the standards of good amateur practice
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+
+All the listed actions are appropriate when dealing with interference from a neighbor's device. Cooperation and adherence to FCC rules are key.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B09}]
+    What should be the first step to resolve non-fiber optic cable TV interference caused by your amateur radio transmission?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Add a low-pass filter to the TV antenna input
+        \item Add a high-pass filter to the TV antenna input
+        \item Add a preamplifier to the TV antenna input
+        \item \textbf{Be sure all TV feed line coaxial connectors are installed properly}
+    \end{enumerate}
+\end{tcolorbox}
+
+Ensuring that all TV feed line coaxial connectors are properly installed is the first and most straightforward step to resolve interference issues.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B10}]
+    What might be a problem if you receive a report that your audio signal through an FM repeater is distorted or unintelligible?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Your transmitter is slightly off frequency
+        \item Your batteries are running low
+        \item You are in a bad location
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+
+All the listed issues can contribute to distorted or unintelligible audio signals through an FM repeater. It's important to check each potential cause.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B11}]
+    What is a symptom of RF feedback in a transmitter or transceiver?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Excessive SWR at the antenna connection
+        \item The transmitter will not stay on the desired frequency
+        \item \textbf{Reports of garbled, distorted, or unintelligible voice transmissions}
+        \item Frequent blowing of power supply fuses
+    \end{enumerate}
+\end{tcolorbox}
+
+RF feedback typically manifests as garbled, distorted, or unintelligible voice transmissions. This is a clear indicator that RF feedback is occurring and needs to be addressed.
+

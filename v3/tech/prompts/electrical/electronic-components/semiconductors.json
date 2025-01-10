@@ -1,0 +1,112 @@
+{
+  "section_title": "Diodes, Transistors, and Semiconductors",
+  "label": "sec:semiconductors",
+  "subsections": [
+    {
+      "title": "Diode Fundamentals",
+      "label": "subsec:diodes",
+      "questions": ["T6B01", "T6B02", "T6B06", "T6B07", "T6B09"],
+      "concepts": ["Diode", "Forward Voltage Drop", "Cathode", "Anode", "Light-Emitting Diode (LED)"],
+      "prompts": [
+        "Explain the concept of forward voltage drop in diodes, including how it varies across different diode types.",
+        "Describe the function of a diode in allowing current to flow in only one direction.",
+        "Discuss how the cathode lead of a semiconductor diode is typically marked on its package.",
+        "Explain the mechanism by which a light-emitting diode (LED) emits light when forward current is applied.",
+        "Identify and describe the names and functions of the electrodes in a diode."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the forward voltage drop across different types of diodes.",
+          "software": "SVG",
+          "caption": "Forward Voltage Drop in Different Diode Types",
+          "label": "fig:forward_voltage_drop"
+        },
+        {
+          "prompt": "Illustration of a diode allowing current to flow in one direction.",
+          "software": "SVG",
+          "caption": "Current Flow in a Diode",
+          "label": "fig:diode_current_flow"
+        },
+        {
+          "prompt": "Image showing the marking of the cathode lead on a semiconductor diode.",
+          "software": "web",
+          "caption": "Cathode Marking on a Diode",
+          "label": "fig:cathode_marking"
+        },
+        {
+          "prompt": "Diagram illustrating the light emission process in an LED.",
+          "software": "SVG",
+          "caption": "Light Emission in an LED",
+          "label": "fig:led_light_emission"
+        },
+        {
+          "prompt": "Diagram labeling the anode and cathode of a diode.",
+          "software": "SVG",
+          "caption": "Diode Electrodes",
+          "label": "fig:diode_electrodes"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing the forward voltage drop of different diode types.",
+          "caption": "Comparison of Forward Voltage Drop in Diode Types",
+          "label": "tab:forward_voltage_comparison"
+        }
+      ]
+    },
+    {
+      "title": "Transistors (BJT, FET), Amplification",
+      "label": "subsec:transistors",
+      "questions": ["T6B03", "T6B04", "T6B05", "T6B08", "T6B10", "T6B11", "T6B12"],
+      "concepts": ["Transistor", "Bipolar Junction Transistor (BJT)", "Field-Effect Transistor (FET)", "Gate", "Drain", "Source", "Emitter", "Base", "Collector", "Amplification", "Gain"],
+      "prompts": [
+        "Explain the use of a transistor as an electronic switch.",
+        "Describe the structure of a transistor, focusing on the three regions of semiconductor material.",
+        "Discuss the characteristics and components of a Field-Effect Transistor (FET), including the gate, drain, and source.",
+        "Explain the meaning and significance of the abbreviation FET.",
+        "Describe how a transistor can provide power gain and the concept of signal amplification.",
+        "Define the term 'gain' in the context of a device's ability to amplify a signal.",
+        "Identify and describe the names and functions of the electrodes in a bipolar junction transistor."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing a transistor used as an electronic switch.",
+          "software": "SVG",
+          "caption": "Transistor as an Electronic Switch",
+          "label": "fig:transistor_switch"
+        },
+        {
+          "prompt": "Illustration of the three regions of a bipolar junction transistor.",
+          "software": "SVG",
+          "caption": "Bipolar Junction Transistor Structure",
+          "label": "fig:bjt_structure"
+        },
+        {
+          "prompt": "Diagram of a Field-Effect Transistor (FET) showing the gate, drain, and source.",
+          "software": "SVG",
+          "caption": "Field-Effect Transistor (FET) Structure",
+          "label": "fig:fet_structure"
+        },
+        {
+          "prompt": "Graph showing the power gain provided by a transistor.",
+          "software": "gnuplot",
+          "caption": "Transistor Power Gain",
+          "label": "fig:transistor_power_gain"
+        },
+        {
+          "prompt": "Diagram labeling the emitter, base, and collector of a bipolar junction transistor.",
+          "software": "SVG",
+          "caption": "BJT Electrodes",
+          "label": "fig:bjt_electrodes"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table comparing the characteristics of BJT and FET transistors.",
+          "caption": "Comparison of BJT and FET Transistors",
+          "label": "tab:bjt_fet_comparison"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "section_title": "HF Propagation and Beyond",
+  "label": "sec:hf-prop",
+  "subsections": [
+    {
+      "title": "Ionosphere, Sunspots, Sporadic E",
+      "label": "subsec:ionosphere",
+      "questions": [
+        "T3A08",
+        "T3A10",
+        "T3A11",
+        "T3A12",
+        "T3C01",
+        "T3C02",
+        "T3C03",
+        "T3C04",
+        "T3C05",
+        "T3C07",
+        "T3C09",
+        "T3C10",
+        "T3C11"
+      ],
+      "concepts": [
+        "Ionosphere",
+        "Sunspots",
+        "Sporadic E",
+        "Multi-path propagation",
+        "Auroral backscatter",
+        "Knife-edge diffraction",
+        "Meteor scatter",
+        "F region propagation",
+        "Radio horizon"
+      ],
+      "prompts": [
+        "Explain the role of the ionosphere in HF and VHF radio wave propagation, including how it refracts or bends signals.",
+        "Describe the impact of sunspots on HF propagation, particularly during periods of high and low sunspot activity.",
+        "Discuss the phenomenon of Sporadic E and its effects on the 10, 6, and 2 meter bands.",
+        "Explain how multi-path propagation affects data transmissions, including the potential for increased error rates.",
+        "Describe the characteristics of VHF signals received via auroral backscatter, including signal distortion and strength variability.",
+        "Explain the concept of knife-edge diffraction and how it allows radio signals to travel beyond obstructions.",
+        "Discuss the best bands and conditions for communicating via meteor scatter.",
+        "Explain the optimal times for long-distance 10 meter band propagation via the F region during high sunspot activity.",
+        "Describe why the radio horizon for VHF and UHF signals is more distant than the visual horizon, including the role of atmospheric refraction."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the layers of the ionosphere and their effects on radio wave propagation.",
+          "software": "SVG",
+          "caption": "Layers of the ionosphere and their impact on radio wave propagation.",
+          "label": "fig:ionosphere-layers"
+        },
+        {
+          "prompt": "Graph showing the relationship between sunspot activity and HF propagation quality.",
+          "software": "Matplotlib",
+          "caption": "Sunspot activity and its effect on HF propagation.",
+          "label": "fig:sunspot-activity"
+        },
+        {
+          "prompt": "Illustration of Sporadic E propagation and its effects on different frequency bands.",
+          "software": "SVG",
+          "caption": "Sporadic E propagation and its impact on radio signals.",
+          "label": "fig:sporadic-e"
+        },
+        {
+          "prompt": "Diagram showing multi-path propagation and its effects on signal quality.",
+          "software": "SVG",
+          "caption": "Multi-path propagation and its impact on signal quality.",
+          "label": "fig:multi-path"
+        },
+        {
+          "prompt": "Illustration of auroral backscatter and its effects on VHF signals.",
+          "software": "SVG",
+          "caption": "Auroral backscatter and its impact on VHF signals.",
+          "label": "fig:auroral-backscatter"
+        },
+        {
+          "prompt": "Diagram showing knife-edge diffraction and how it allows signals to travel beyond obstructions.",
+          "software": "SVG",
+          "caption": "Knife-edge diffraction and its effect on signal propagation.",
+          "label": "fig:knife-edge-diffraction"
+        },
+        {
+          "prompt": "Graph showing the best bands for meteor scatter communication.",
+          "software": "Matplotlib",
+          "caption": "Optimal bands for meteor scatter communication.",
+          "label": "fig:meteor-scatter-bands"
+        },
+        {
+          "prompt": "Diagram showing the F region propagation and its effects on long-distance communication.",
+          "software": "SVG",
+          "caption": "F region propagation and its impact on long-distance communication.",
+          "label": "fig:f-region-propagation"
+        },
+        {
+          "prompt": "Illustration of the radio horizon compared to the visual horizon, showing atmospheric refraction.",
+          "software": "SVG",
+          "caption": "Radio horizon vs. visual horizon, illustrating atmospheric refraction.",
+          "label": "fig:radio-horizon"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the effects of different propagation phenomena on various frequency bands.",
+          "caption": "Effects of propagation phenomena on frequency bands.",
+          "label": "tab:propagation-effects"
+        }
+      ]
+    }
+  ]
+}

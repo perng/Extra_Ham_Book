@@ -1,0 +1,109 @@
+{
+  "section_title": "VHF/UHF",
+  "label": "sec:vhf-uhf",
+  "section_label": "sec:vhf-uhf",
+  "subsections": [
+    {
+      "title": "Line of Sight, Multipath, Ducting",
+      "label": "subsec:los-multipath",
+      "questions": [
+        "T3A01",
+        "T3A02",
+        "T3A03",
+        "T3A04",
+        "T3A05",
+        "T3A06",
+        "T3A07",
+        "T3A09",
+        "T3C06",
+        "T3C08"
+      ],
+      "concepts": [
+        "Multipath Propagation",
+        "Vegetation Absorption",
+        "Antenna Polarization",
+        "Signal Reflection",
+        "Picket Fencing",
+        "Weather Effects on Microwave Signals",
+        "Elliptical Polarization",
+        "Tropospheric Ducting",
+        "Temperature Inversions"
+      ],
+      "prompts": [
+        "Explain the concept of multipath propagation and how it affects VHF signal strengths when the antenna is moved slightly.",
+        "Describe the impact of vegetation on UHF and microwave signals, focusing on absorption.",
+        "Discuss the importance of antenna polarization in long-distance VHF and UHF communications, particularly for CW and SSB contacts.",
+        "Explain the consequences of mismatched antenna polarization in VHF and UHF line-of-sight radio links.",
+        "Describe how directional antennas can overcome obstructions in VHF/UHF communications by utilizing signal reflection.",
+        "Define 'picket fencing' and explain its cause in mobile VHF/UHF communications.",
+        "Discuss how precipitation affects the range of microwave frequencies.",
+        "Explain the implications of elliptical polarization in ionospheric propagation for antenna selection.",
+        "Describe tropospheric ducting and its role in enabling over-the-horizon VHF and UHF communications.",
+        "Explain the causes of tropospheric ducting, focusing on temperature inversions in the atmosphere."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating multipath propagation and its effect on VHF signal strength.",
+          "software": "SVG",
+          "caption": "Multipath propagation causing signal cancellation and reinforcement.",
+          "label": "fig:multipath-propagation"
+        },
+        {
+          "prompt": "Graph showing the absorption of UHF and microwave signals by vegetation.",
+          "software": "Matplotlib",
+          "caption": "Absorption of UHF and microwave signals by vegetation.",
+          "label": "fig:vegetation-absorption"
+        },
+        {
+          "prompt": "Diagram comparing horizontal and vertical polarization in VHF/UHF antennas.",
+          "software": "SVG",
+          "caption": "Comparison of horizontal and vertical polarization in VHF/UHF antennas.",
+          "label": "fig:antenna-polarization"
+        },
+        {
+          "prompt": "Illustration of signal reflection to overcome obstructions in VHF/UHF communications.",
+          "software": "SVG",
+          "caption": "Signal reflection to bypass obstructions in VHF/UHF communications.",
+          "label": "fig:signal-reflection"
+        },
+        {
+          "prompt": "Diagram showing the concept of 'picket fencing' in mobile VHF/UHF communications.",
+          "software": "SVG",
+          "caption": "Picket fencing caused by multipath propagation in mobile communications.",
+          "label": "fig:picket-fencing"
+        },
+        {
+          "prompt": "Graph depicting the effect of precipitation on microwave signal range.",
+          "software": "Matplotlib",
+          "caption": "Effect of precipitation on microwave signal range.",
+          "label": "fig:precipitation-effect"
+        },
+        {
+          "prompt": "Diagram explaining elliptical polarization in ionospheric propagation.",
+          "software": "SVG",
+          "caption": "Elliptical polarization in ionospheric propagation.",
+          "label": "fig:elliptical-polarization"
+        },
+        {
+          "prompt": "Illustration of tropospheric ducting enabling over-the-horizon VHF/UHF communications.",
+          "software": "SVG",
+          "caption": "Tropospheric ducting enabling over-the-horizon VHF/UHF communications.",
+          "label": "fig:tropospheric-ducting"
+        },
+        {
+          "prompt": "Diagram showing temperature inversions causing tropospheric ducting.",
+          "software": "SVG",
+          "caption": "Temperature inversions leading to tropospheric ducting.",
+          "label": "fig:temperature-inversions"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the effects of different factors on VHF/UHF signal propagation.",
+          "caption": "Summary of factors affecting VHF/UHF signal propagation.",
+          "label": "tab:vhf-uhf-propagation-factors"
+        }
+      ]
+    }
+  ]
+}

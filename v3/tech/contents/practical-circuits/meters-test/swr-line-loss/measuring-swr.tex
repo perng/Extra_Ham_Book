@@ -1,0 +1,91 @@
+\subsection{Measuring SWR, Effects of High SWR}
+\label{subsec:measuring-swr}
+
+In this section, we'll dive into the world of Standing Wave Ratio (SWR), a critical concept in radio communication. SWR is essentially a measure of how well your antenna is matched to your transmission line. If you've ever wondered why your signal isn't as strong as it should be, SWR might be the culprit. Let's break it down.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/swr-impedance}
+    \caption{SWR and Impedance Matching on a Transmission Line}
+    \label{fig:swr-impedance}
+    % Diagram showing the relationship between SWR, impedance matching, and signal reflection on a transmission line.
+\end{figure}
+
+
+\subsubsection*{What is SWR?}
+SWR, or Standing Wave Ratio, is a ratio that compares the maximum voltage to the minimum voltage along a transmission line. When your antenna and transmission line are perfectly matched, the SWR is 1:1. This means all the power from your transmitter is being efficiently transferred to the antenna. However, if there's a mismatch, some of that power gets reflected back, causing standing waves. The higher the SWR, the more power is reflected, and the less efficient your system becomes.
+
+
+
+\subsubsection*{How Does an SWR Meter Work?}
+An SWR meter is a handy tool that measures the ratio of forward power to reflected power. When you see a reading of 1:1, it's like the meter is giving you a thumbs-up—your system is perfectly matched. But if the SWR is higher, say 2:1 or 3:1, it's time to troubleshoot. High SWR can lead to signal loss and even damage your equipment.
+
+\subsubsection*{Effects of High SWR on Solid-State Transmitters}
+Now, let's talk about what happens when SWR gets too high. Most solid-state transmitters are designed to protect themselves. When the SWR increases beyond a certain level, the transmitter reduces its output power. This isn't just a random decision—it's to protect the output amplifier transistors from overheating and potentially frying. Think of it as the transmitter's way of saying, "Hey, something's not right here, let's dial it back."
+
+\subsubsection*{The Role of a Directional Wattmeter}
+A directional wattmeter is another tool in your radio toolkit. Unlike a voltmeter or ohmmeter, which measure voltage and resistance, a directional wattmeter measures both forward and reflected power. This allows you to calculate the SWR and ensure your system is running efficiently. It's like having a radar for your radio signals.
+
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/directional-wattmeter}
+    \caption{Direction Wattmeter Measuring SWR}
+    \label{fig:directional-wattmeter}
+    % Illustration of a directional wattmeter connected to a transmission line, showing how it measures forward and reflected power.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{SWR Level} & \textbf{Transmitter Performance} & \textbf{Antenna Efficiency} \\
+        \hline
+        1:1 & Optimal & 100\% \\
+        2:1 & Slightly Reduced & ~90\% \\
+        3:1 & Reduced & ~75\% \\
+        4:1 & Significantly Reduced & ~50\% \\
+        \hline
+    \end{tabular}
+    \caption{Effects of SWR on Transmitter Performance}
+    \label{tab:swr-effects}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C04}]
+    What reading on an SWR meter indicates a perfect impedance match between the antenna and the feed line?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item 50:50
+        \item Zero
+        \item \textbf{1:1}
+        \item Full Scale
+    \end{enumerate}
+\end{tcolorbox}
+
+A reading of 1:1 on an SWR meter indicates a perfect impedance match. This means all the power from the transmitter is being efficiently transferred to the antenna without any reflection.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C05}]
+    Why do most solid-state transmitters reduce output power as SWR increases beyond a certain level?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{To protect the output amplifier transistors}
+        \item To comply with FCC rules on spectral purity
+        \item Because power supplies cannot supply enough current at high SWR
+        \item To lower the SWR on the transmission line
+    \end{enumerate}
+\end{tcolorbox}
+
+Solid-state transmitters reduce output power to protect the output amplifier transistors from overheating and potential damage. High SWR causes more power to be reflected back, which can overheat the transistors.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7C08}]
+    Which instrument can be used to determine SWR?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Voltmeter
+        \item Ohmmeter
+        \item Iambic pentameter
+        \item \textbf{Directional wattmeter}
+    \end{enumerate}
+\end{tcolorbox}
+
+A directional wattmeter is used to determine SWR by measuring both forward and reflected power. This allows for the calculation of SWR, ensuring the system is running efficiently.
+

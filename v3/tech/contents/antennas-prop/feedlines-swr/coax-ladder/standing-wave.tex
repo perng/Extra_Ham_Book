@@ -1,0 +1,77 @@
+\subsection{Standing Wave Ratio (SWR)}
+\label{subsec:standing-wave}
+
+\subsubsection*{What is SWR and Why Should You Care?}
+Standing Wave Ratio, or SWR, is a measure of how well your antenna system is matched to your transmission line. Think of it as a way to check if your antenna and transmitter are on the same page—literally. When the impedance of your antenna system matches the impedance of your transmission line, you get maximum power transfer, and your signal efficiency is at its peak. If they don’t match, you end up with reflected waves, which can lead to signal loss and even damage to your equipment. Not cool, right?
+
+The SWR is expressed as a ratio, typically written as \( \text{SWR} = \frac{V_{\text{max}}}{V_{\text{min}}} \), where \( V_{\text{max}} \) and \( V_{\text{min}} \) are the maximum and minimum voltage amplitudes of the standing wave on the transmission line. Ideally, you want an SWR of 1:1, which means no reflected waves and perfect impedance matching. In the real world, an SWR of 2:1 or less is generally acceptable for most amateur radio setups.
+
+\subsubsection*{The Role of the Antenna Tuner}
+Now, let’s talk about the unsung hero of the antenna world: the antenna tuner (or antenna coupler). Its main job is to match the impedance of your antenna system to the output impedance of your transceiver. This is crucial because, as we’ve just discussed, mismatched impedance leads to higher SWR, which in turn leads to inefficiency and potential damage.
+
+An antenna tuner works by adjusting the impedance seen by the transmitter, effectively "tricking" it into thinking that the antenna system is perfectly matched. This is done using a combination of inductors and capacitors that can be adjusted to balance out the impedance mismatch. Think of it as a mediator between your transmitter and antenna, ensuring they work together harmoniously.
+
+\subsubsection*{SWR and Signal Efficiency}
+So, how does SWR affect your signal efficiency? Well, the higher the SWR, the more power is reflected back into your transmitter instead of being radiated by the antenna. This not only reduces your effective radiated power (ERP) but can also cause your transmitter to overheat. In extreme cases, it can even damage your equipment. 
+
+To give you a better idea, take a look at Figure~\ref{fig:swr-efficiency}, which shows the relationship between SWR and signal efficiency. As you can see, as the SWR increases, the efficiency drops off pretty quickly. That’s why keeping your SWR as low as possible is so important.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{swr-efficiency.png}
+    % Graph showing the relationship between SWR and signal efficiency.
+    % X-axis: SWR (1:1 to 5:1)
+    % Y-axis: Signal Efficiency (0% to 100%)
+    % A curve showing a steep decline in efficiency as SWR increases.
+    \caption{Relationship between SWR and signal efficiency.}
+    \label{fig:swr-efficiency}
+\end{figure}
+
+\subsubsection*{Effects of SWR on Equipment}
+To summarize the effects of different SWR values, we’ve put together Table~\ref{tab:swr-effects}. This table shows how SWR impacts both signal efficiency and the risk of equipment damage. As you can see, keeping your SWR low is not just about getting the best performance—it’s also about protecting your gear.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{SWR} & \textbf{Signal Efficiency} & \textbf{Risk of Damage} \\
+        \hline
+        1:1 & 100\% & None \\
+        2:1 & 90\% & Low \\
+        3:1 & 75\% & Moderate \\
+        4:1 & 60\% & High \\
+        5:1 & 50\% & Very High \\
+        \hline
+    \end{tabular}
+    \caption{Effects of SWR on signal efficiency and equipment.}
+    \label{tab:swr-effects}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B04}]
+    What is the major function of an antenna tuner (antenna coupler)?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{It matches the antenna system impedance to the transceiver's output impedance}
+        \item It helps a receiver automatically tune in weak stations
+        \item It allows an antenna to be used on both transmit and receive
+        \item It automatically selects the proper antenna for the frequency band being used
+    \end{enumerate}
+\end{tcolorbox}
+
+The antenna tuner's primary role is to match the impedance of the antenna system to the transceiver's output impedance. This ensures maximum power transfer and minimizes reflected waves, which can lead to inefficiency and equipment damage. The other options describe functions that are either unrelated or incorrect.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9B12}]
+    What is standing wave ratio (SWR)?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{A measure of how well a load is matched to a transmission line}
+        \item The ratio of amplifier power output to input
+        \item The transmitter efficiency ratio
+        \item An indication of the quality of your station’s ground connection
+    \end{enumerate}
+\end{tcolorbox}
+
+SWR is a measure of how well the load (usually the antenna) is matched to the transmission line. A low SWR indicates good impedance matching, while a high SWR indicates a mismatch. The other options describe different concepts unrelated to SWR.
+
+\subsubsection*{Final Thoughts}
+So, there you have it—SWR in a nutshell. It’s a crucial concept in amateur radio, and understanding it can make a big difference in your station’s performance. Keep an eye on your SWR, use an antenna tuner if needed, and you’ll be well on your way to efficient and effective communication. Happy transmitting!

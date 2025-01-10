@@ -1,0 +1,87 @@
+\subsection{Beam/Yagi, Gain Concepts}
+\label{subsec:beam-yagi}
+
+Alright, let’s dive into the world of beam antennas, Yagi antennas, and the ever-important concept of antenna gain. If you’ve ever wondered how antennas can focus signals in one direction or why some antennas seem to “boost” your signal, this is the section for you. We’ll break it down step by step, and by the end, you’ll be able to explain these concepts like a pro.
+
+\subsubsection*{Beam Antennas: Focusing Signals Like a Flashlight}
+A beam antenna is like the flashlight of the radio world. Instead of sending signals in all directions (like an isotropic radiator), a beam antenna concentrates the signal in one specific direction. This is super useful when you want to communicate with a specific station or avoid interference from other directions. The key idea here is \textit{directivity}—the ability to focus energy in a particular direction. Think of it as shouting into a megaphone instead of just yelling into the wind.
+
+\subsubsection*{Yagi Antennas: The Classic Beam Antenna}
+Now, let’s talk about the Yagi antenna, which is a specific type of beam antenna. A Yagi antenna consists of multiple elements: a driven element (the part connected to the transmitter), one or more reflectors, and several directors. The reflectors and directors work together to focus the signal in one direction, making the Yagi antenna highly directional. You’ve probably seen these on rooftops—they look like a series of parallel rods. The Yagi is a favorite among ham radio operators because of its simplicity and effectiveness.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{yagi-antenna}
+    \caption{Yagi Antenna Structure and Radiation Pattern}
+    \label{fig:yagi-antenna}
+    % Diagram of a Yagi antenna showing its elements and radiation pattern.
+    % The driven element is connected to the transmitter, while the reflectors and directors focus the signal.
+\end{figure}
+
+\subsubsection*{Antenna Gain: What’s the Big Deal?}
+Antenna gain is a measure of how much an antenna boosts the signal in a particular direction compared to a reference antenna, usually an isotropic radiator (which radiates equally in all directions). Gain is expressed in decibels (dB), and it’s a way to quantify how “good” an antenna is at focusing energy. For example, a Yagi antenna might have a gain of 10 dB, meaning it’s 10 times more effective in its preferred direction than an isotropic radiator.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{antenna-gain}
+    \caption{Antenna Gain Comparison}
+    \label{fig:antenna-gain}
+    % Illustration of antenna gain compared to an isotropic radiator.
+    % The Yagi antenna shows a focused beam, while the isotropic radiator shows a uniform sphere.
+\end{figure}
+
+\subsubsection*{Antenna Loading: Tweaking the Length}
+Antenna loading is a technique used to adjust the electrical length of an antenna. This is often done by adding inductors or capacitors to the antenna elements. For example, if you want to make an antenna resonate at a lower frequency without physically making it longer, you can add an inductor to “electrically lengthen” it. This is particularly useful for mobile antennas, where physical size is a constraint.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Antenna Type} & \textbf{Gain (dB)} \\
+        \hline
+        Isotropic Radiator & 0 \\
+        J-Pole & 2-3 \\
+        5/8 Wave Vertical & 3-4 \\
+        Yagi & 10-15 \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Antenna Gain}
+    \label{tab:antenna-gain}
+\end{table}
+
+\subsubsection*{Questions}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A02}]
+Which of the following describes a type of antenna loading?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item \textbf{Electrically lengthening by inserting inductors in radiating elements}
+    \item Inserting a resistor in the radiating portion of the antenna to make it resonant
+    \item Installing a spring in the base of a mobile vertical antenna to make it more flexible
+    \item Strengthening the radiating elements of a beam antenna to better resist wind damage
+\end{enumerate}
+\end{tcolorbox}
+
+Antenna loading involves adjusting the electrical length of an antenna, often by adding inductors or capacitors. Option A correctly describes this process. The other options are either unrelated or describe physical modifications rather than electrical ones.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A06}]
+Which of the following types of antenna offers the greatest gain?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item 5/8 wave vertical
+    \item Isotropic
+    \item J pole
+    \item \textbf{Yagi}
+\end{enumerate}
+\end{tcolorbox}
+
+The Yagi antenna is known for its high gain due to its directional design. As shown in Table~\ref{tab:antenna-gain}, a Yagi can achieve gains of 10-15 dB, which is significantly higher than the other options listed.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T9A11}]
+What is antenna gain?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item The additional power that is added to the transmitter power
+    \item The additional power that is required in the antenna when transmitting on a higher frequency
+    \item \textbf{The increase in signal strength in a specified direction compared to a reference antenna}
+    \item The increase in impedance on receive or transmit compared to a reference antenna
+\end{enumerate}
+\end{tcolorbox}
+
+Antenna gain is all about directionality. It measures how much stronger the signal is in a specific direction compared to a reference antenna, usually an isotropic radiator. Option C captures this perfectly. The other options either confuse gain with power or impedance, which are different concepts.

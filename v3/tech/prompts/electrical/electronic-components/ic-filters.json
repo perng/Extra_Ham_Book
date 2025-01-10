@@ -1,0 +1,82 @@
+{
+  "section_title": "Integrated Circuits, Filters, Rectifiers",
+  "label": "sec:ic-filters",
+  "section_label": "sec:ic-filters",
+  "subsections": [
+    {
+      "title": "Rectifiers, Regulators, etc.",
+      "label": "subsec:rect-reg",
+      "questions": ["T6D01", "T6D02", "T6D03", "T6D04", "T6D05", "T6D06", "T6D07"],
+      "concepts": ["Rectifier", "Relay", "Shielded Wire", "Meter", "Regulator", "Transformer", "LED"],
+      "prompts": [
+        "Explain the function of a rectifier in converting alternating current to direct current.",
+        "Describe the operation of a relay as an electrically-controlled switch.",
+        "Discuss the importance of shielded wire in preventing unwanted signal coupling.",
+        "Explain how a meter displays electrical quantities as numeric values.",
+        "Describe the role of a regulator in controlling voltage from a power supply.",
+        "Explain how a transformer changes AC voltage levels.",
+        "Discuss the use of LEDs as visual indicators in electronic circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the conversion of AC to DC using a rectifier.",
+          "software": "SVG",
+          "caption": "AC to DC conversion using a rectifier.",
+          "label": "fig:rectifier"
+        },
+        {
+          "prompt": "Schematic of a relay circuit.",
+          "software": "SVG",
+          "caption": "Relay circuit schematic.",
+          "label": "fig:relay"
+        },
+        {
+          "prompt": "Illustration of shielded wire preventing signal interference.",
+          "software": "SVG",
+          "caption": "Shielded wire preventing signal interference.",
+          "label": "fig:shielded-wire"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of rectifiers.",
+          "caption": "Comparison of rectifier types.",
+          "label": "tab:rectifiers"
+        }
+      ]
+    },
+    {
+      "title": "Transformers, Indicators, etc.",
+      "label": "subsec:transformers-ind",
+      "questions": ["T6D08", "T6D09", "T6D10", "T6D11"],
+      "concepts": ["Resonant Circuit", "Integrated Circuit", "Inductor", "Capacitor"],
+      "prompts": [
+        "Explain the concept of a resonant circuit using an inductor and capacitor.",
+        "Describe the function and components of an integrated circuit.",
+        "Discuss the role of an inductor in controlling current flow in a circuit.",
+        "Explain the function of a capacitor in a resonant circuit."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram of a resonant circuit with an inductor and capacitor.",
+          "software": "SVG",
+          "caption": "Resonant circuit with inductor and capacitor.",
+          "label": "fig:resonant-circuit"
+        },
+        {
+          "prompt": "Schematic of an integrated circuit.",
+          "software": "SVG",
+          "caption": "Integrated circuit schematic.",
+          "label": "fig:ic"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing different types of integrated circuits.",
+          "caption": "Comparison of integrated circuit types.",
+          "label": "tab:ics"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "section_title": "Repeater Operation",
+  "label": "sec:repeater",
+  "section_label": "sec:repeater",
+  "subsections": [
+    {
+      "title": "What is a Repeater, Offsets",
+      "label": "subsec:repeater-basics",
+      "questions": ["T1F09"],
+      "concepts": ["Repeater Station", "Channel Offsets"],
+      "prompts": [
+        "Explain the fundamental concept of a repeater station in amateur radio, including its purpose and how it operates.",
+        "Describe the concept of channel offsets in the context of repeater operation, including why they are necessary and how they are used.",
+        "Provide a detailed explanation of the technical aspects of how a repeater station simultaneously retransmits signals on different channels.",
+        "Discuss the role of repeater stations in enhancing communication range and reliability in amateur radio."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram illustrating the operation of a repeater station, showing signal reception and retransmission on different channels.",
+          "software": "SVG",
+          "caption": "Operation of a Repeater Station",
+          "label": "fig:repeater-operation"
+        },
+        {
+          "prompt": "Graph showing the relationship between input and output frequencies in a repeater station, highlighting channel offsets.",
+          "software": "gnuplot",
+          "caption": "Frequency Relationship in Repeater Operation",
+          "label": "fig:repeater-frequency"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key differences between a repeater station and other types of amateur stations, such as beacon stations and message forwarding stations.",
+        "caption": "Comparison of Amateur Station Types",
+        "label": "tab:station-comparison"
+      }
+    }
+  ]
+}

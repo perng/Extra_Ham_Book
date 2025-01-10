@@ -1,0 +1,43 @@
+{
+  "section_title": "Operating Etiquette and Procedures",
+  "label": "sec:etiquette-procedures",
+  "section_label": "sec:etiquette-procedures",
+  "subsections": [
+    {
+      "title": "Basic Concepts (Calling CQ, etc.)",
+      "label": "subsec:basics-calling",
+      "questions": [],
+      "concepts": [
+        "Calling CQ",
+        "Operating Etiquette",
+        "Procedures"
+      ],
+      "prompts": [
+        "Explain the concept of 'Calling CQ' in amateur radio operations, including its purpose and typical usage scenarios.",
+        "Describe the importance of operating etiquette in amateur radio, focusing on how it ensures smooth communication and mutual respect among operators.",
+        "Outline the standard procedures followed during amateur radio operations, emphasizing the steps taken to establish and maintain communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the steps involved in Calling CQ",
+          "software": "SVG",
+          "caption": "Steps involved in Calling CQ",
+          "label": "fig:calling-cq-steps"
+        },
+        {
+          "prompt": "Illustration of proper operating etiquette in amateur radio",
+          "software": "web",
+          "caption": "Proper operating etiquette in amateur radio",
+          "label": "fig:operating-etiquette"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key steps in Calling CQ",
+          "caption": "Key Steps in Calling CQ",
+          "label": "tab:calling-cq-steps"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+\subsection{Core Definitions}
+\label{subsec:core-defs}
+
+Let's dive into some core definitions that are essential for understanding radio technology. These concepts are the building blocks of everything we'll discuss later, so let's make sure we're on the same page (pun intended).
+
+\subsubsection*{Electrical Current}
+Electrical current is the flow of electric charge, typically carried by electrons in a conductor. It's measured in \textbf{Amperes} (A), named after André-Marie Ampère, who was quite the electrifying figure in the world of physics. The current can be calculated using the formula:
+\begin{equation}
+    I = \frac{Q}{t}
+    \label{eq:current}
+\end{equation}
+where \( I \) is the current, \( Q \) is the charge in Coulombs, and \( t \) is the time in seconds. Think of it like water flowing through a pipe—the more water (charge) that flows per second, the higher the current.
+
+\subsubsection*{Electron Flow}
+In an electric circuit, electrons flow from the negative terminal to the positive terminal. This flow is what we call \textbf{current}. It's like a river of electrons, and the direction of the flow is crucial for understanding how circuits work. 
+%For a visual representation, check out Figure~\ref{fig:electron-flow}.
+
+\subsubsection*{Electrical Resistance}
+Resistance is the opposition to the flow of current in a circuit. It's measured in \textbf{Ohms} (\(\Omega\)), named after Georg Simon Ohm, who must have had a lot of resistance to naming things after himself. Resistance is like the friction in our river analogy—it slows down the flow of electrons.
+
+\subsubsection*{Voltage}
+Voltage, also known as electric potential difference, is the force that causes electrons to flow in a circuit. It's measured in \textbf{Volts} (V), named after Alessandro Volta, who probably never imagined his name would be used in so many battery commercials. Voltage can be thought of as the "push" that gets the electrons moving.
+
+\subsubsection*{Conductors and Insulators}
+Metals are generally good conductors of electricity because they have many free electrons that can move easily. This is why copper and aluminum are commonly used in electrical wiring. On the other hand, materials like glass are good insulators because they don't have free electrons to carry the current. 
+%For a detailed comparison, see Figure~\ref{fig:conductors-insulators}.
+
+\subsubsection*{Alternating Current}
+Alternating current (AC) is a type of current that periodically reverses direction. This is different from direct current (DC), which flows in one direction only. AC is what powers most of our homes and appliances. It alternates between positive and negative directions, making it ideal for long-distance power transmission.
+
+\subsubsection*{Electrical Power}
+Electrical power is the rate at which electrical energy is used. It's measured in \textbf{Watts} (W), named after James Watt, who probably didn't foresee his name being used to measure the power of light bulbs. The power in a circuit can be calculated using:
+\begin{equation}
+    P = V \times I
+    \label{eq:power}
+\end{equation}
+where \( P \) is power, \( V \) is voltage, and \( I \) is current. This equation tells us how much energy is being used per second.
+
+\begin{table}[h]
+    \centering
+    \caption{Summary of key electrical concepts.}
+    \label{tab:electrical-concepts}
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Concept} & \textbf{Unit} & \textbf{Definition} \\
+        \hline
+        Current & Amperes (A) & Flow of electric charge \\
+        Voltage & Volts (V) & Electric potential difference \\
+        Resistance & Ohms (\(\Omega\)) & Opposition to current flow \\
+        Power & Watts (W) & Rate of energy usage \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[h]
+%     \centering
+%     % \includegraphics[width=0.8\textwidth]{electron-flow}
+%     \caption{Electron flow in an electric circuit.}
+%     \label{fig:electron-flow}
+%     % Diagram showing the flow of electrons in a simple electric circuit.
+% \end{figure}
+
+% \begin{figure}[h]
+%     \centering
+%     % \includegraphics[width=0.8\textwidth]{conductors-insulators}
+%     \caption{Comparison of conductors and insulators.}
+%     \label{fig:conductors-insulators}
+%     % Illustration comparing conductors and insulators at the atomic level.
+% \end{figure}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A01}]
+    Electrical current is measured in which of the following units?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Volts
+        \item Watts
+        \item Ohms
+        \item \textbf{Amperes}
+    \end{enumerate}
+\end{tcolorbox}
+Electrical current is measured in Amperes (A). Volts measure voltage, Watts measure power, and Ohms measure resistance.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A03}]
+    What is the name for the flow of electrons in an electric circuit?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Voltage
+        \item Resistance
+        \item Capacitance
+        \item \textbf{Current}
+    \end{enumerate}
+\end{tcolorbox}
+The flow of electrons in an electric circuit is called current. Voltage is the force that causes the flow, resistance opposes it, and capacitance is the ability to store charge.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A04}]
+    What are the units of electrical resistance?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Siemens
+        \item Mhos
+        \item \textbf{Ohms}
+        \item Coulombs
+    \end{enumerate}
+\end{tcolorbox}
+Electrical resistance is measured in Ohms (\(\Omega\)). Siemens and Mhos are units of conductance, and Coulombs measure charge.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A05}]
+    What is the electrical term for the force that causes electron flow?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Voltage}
+        \item Ampere-hours
+        \item Capacitance
+        \item Inductance
+    \end{enumerate}
+\end{tcolorbox}
+Voltage is the force that causes electron flow. Ampere-hours measure charge, capacitance is the ability to store charge, and inductance is the property of a conductor that opposes changes in current.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A07}]
+    Why are metals generally good conductors of electricity?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item They have relatively high density
+        \item \textbf{They have many free electrons}
+        \item They have many free protons
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+Metals are good conductors because they have many free electrons that can move easily, allowing for the flow of current. Density and protons are not directly related to conductivity.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A08}]
+    Which of the following is a good electrical insulator?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Copper
+        \item \textbf{Glass}
+        \item Aluminum
+        \item Mercury
+    \end{enumerate}
+\end{tcolorbox}
+Glass is a good electrical insulator because it does not have free electrons to carry current. Copper, aluminum, and mercury are all conductors.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A09}]
+    Which of the following describes alternating current?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Current that alternates between a positive direction and zero
+        \item Current that alternates between a negative direction and zero
+        \item \textbf{Current that alternates between positive and negative directions}
+        \item All these answers are correct
+    \end{enumerate}
+\end{tcolorbox}
+Alternating current (AC) alternates between positive and negative directions. It does not just alternate between a direction and zero.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A10}]
+    Which term describes the rate at which electrical energy is used?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Resistance
+        \item Current
+        \item \textbf{Power}
+        \item Voltage
+    \end{enumerate}
+\end{tcolorbox}
+Power is the rate at which electrical energy is used. Resistance opposes current, current is the flow of charge, and voltage is the force that causes the flow.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A11}]
+    What type of current flow is opposed by resistance?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Direct current
+        \item Alternating current
+        \item RF current
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+Resistance opposes all types of current flow, whether it's direct current (DC), alternating current (AC), or radio frequency (RF) current. Resistance is a universal party pooper for electron flow.

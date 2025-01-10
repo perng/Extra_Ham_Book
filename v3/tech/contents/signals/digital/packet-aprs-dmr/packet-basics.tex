@@ -1,0 +1,80 @@
+\subsection{Packet Basics}
+\label{subsec:packet-basics}
+
+Packet radio is a fascinating digital communication mode that has been a cornerstone of amateur radio for decades. Unlike traditional analog modes, packet radio breaks data into discrete packets, each containing a header, payload, and checksum. This structure allows for efficient and reliable communication, even in noisy environments. The header typically includes the call sign of the destination station, ensuring that the packet reaches the correct recipient. The payload carries the actual data, while the checksum is used for error detection, ensuring the integrity of the transmitted information.
+
+\subsubsection*{Error Detection and Checksums}
+One of the key features of packet radio is its robust error detection mechanism. Each packet includes a checksum, which is a mathematical value calculated from the data in the packet. When the packet is received, the checksum is recalculated and compared to the one sent. If they match, the packet is considered error-free. If not, the packet is discarded, and the sender is notified to retransmit the data. This process is crucial for maintaining the reliability of communication, especially in environments with high levels of interference.
+
+\subsubsection*{Automatic Repeat Request (ARQ)}
+To further enhance reliability, packet radio employs an Automatic Repeat Request (ARQ) mechanism. If a packet is lost or corrupted during transmission, the receiver sends a request to the sender to retransmit the packet. This process continues until the packet is successfully received. ARQ ensures that data is delivered accurately, even in challenging conditions. The flowchart in Figure~\ref{fig:arq-process} illustrates this process in detail.
+
+\subsubsection*{Morse Code and Packet Radio}
+While Morse code (CW) is often associated with analog communication, it is actually a digital mode. Morse code represents information as a series of on-off keying (OOK) signals, which can be considered a form of digital modulation. However, Morse code is fundamentally different from packet radio, as it does not use packets or error detection mechanisms. Instead, Morse code relies on the operator's skill to interpret the signals, making it a unique and enduring mode of communication.
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{packet-structure}
+    \caption{Structure of a Packet Radio Transmission. The diagram shows the header, payload, and checksum components of a packet.}
+    \label{fig:packet-structure}
+    % Prompt: Diagram showing the structure of a packet radio transmission, including headers, payload, and checksum.
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{arq-process}
+    \caption{ARQ Process in Packet Radio. The flowchart illustrates the steps involved in the automatic repeat request mechanism.}
+    \label{fig:arq-process}
+    % Prompt: Flowchart illustrating the automatic repeat request (ARQ) process in packet radio.
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Comparison of Digital Communication Modes}
+    \label{tab:digital-mode-comparison}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Mode} & \textbf{Bandwidth} & \textbf{Error Detection} & \textbf{Use Cases} \\
+        \hline
+        Packet Radio & Medium & Yes & Data transmission, messaging \\
+        FT8 & Narrow & Yes & Weak signal communication \\
+        DMR & Wide & Yes & Voice and data communication \\
+        \hline
+    \end{tabular}
+    % Prompt: Table comparing packet radio with other digital communication modes (e.g., FT8, DMR) in terms of bandwidth, error detection, and use cases.
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D01}]
+    Which of the following is a digital communications mode?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Packet radio
+        \item IEEE 802.11
+        \item FT8
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+All the options listed are indeed digital communication modes. Packet radio, IEEE 802.11 (Wi-Fi), and FT8 are all examples of digital modes used in various communication contexts.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D08}]
+    Which of the following is included in packet radio transmissions?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A check sum that permits error detection
+        \item A header that contains the call sign of the station to which the information is being sent
+        \item Automatic repeat request in case of error
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+Packet radio transmissions include all the listed components: a checksum for error detection, a header with the destination call sign, and an automatic repeat request mechanism to ensure reliable communication.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D09}]
+    What is CW?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A type of electromagnetic propagation
+        \item A digital mode used primarily on 2 meter FM
+        \item A technique for coil winding
+        \item \textbf{Another name for a Morse code transmission}
+    \end{enumerate}
+\end{tcolorbox}
+CW stands for Continuous Wave, which is another name for Morse code transmission. Morse code is a digital mode that uses on-off keying to represent information, making it distinct from other digital modes like packet radio.

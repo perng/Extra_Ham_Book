@@ -1,0 +1,71 @@
+\subsection{PSK (Phase Shift Keying)}
+\label{subsec:psk-digital}
+
+Phase Shift Keying (PSK) is a digital modulation technique where the phase of the carrier signal is varied to represent different data symbols. This method is widely used in radio communication due to its efficiency in bandwidth utilization and robustness against noise. In PSK, the phase of the carrier signal is shifted by specific amounts to encode binary data. For example, in Binary Phase Shift Keying (BPSK), a phase shift of 0 degrees might represent a binary '0', while a phase shift of 180 degrees represents a binary '1'. 
+
+\subsubsection*{How PSK Works}
+Imagine you're trying to send a message using a flashlight. Instead of turning the light on and off (which would be like Amplitude Shift Keying, or ASK), you decide to rotate the flashlight to different angles to represent different letters. In PSK, the "angles" are the phase shifts of the carrier wave, and the "letters" are the binary data you're trying to transmit. This method allows for more efficient use of the available bandwidth compared to ASK or Frequency Shift Keying (FSK).
+
+\subsubsection*{Comparison with Other Modulation Techniques}
+PSK is often compared with other digital modulation techniques like FSK and ASK. While FSK changes the frequency of the carrier signal to represent data, and ASK changes the amplitude, PSK changes the phase. Each technique has its pros and cons. For instance, PSK is more bandwidth-efficient than FSK but can be more susceptible to phase noise. A detailed comparison is provided in Table~\ref{tab:modulation-comparison}.
+
+\begin{table}[h]
+\centering
+\caption{Comparison of PSK with other digital modulation techniques.}
+\label{tab:modulation-comparison}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Modulation} & \textbf{Bandwidth Efficiency} & \textbf{Complexity} & \textbf{Error Rate} \\
+\hline
+PSK & High & Medium & Low \\
+FSK & Low & Low & Medium \\
+ASK & Medium & Low & High \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{NTSC Signals and PSK}
+NTSC, or National Television System Committee, is a standard for analog television signals. While NTSC is primarily associated with analog transmission, understanding it can provide context for how digital modulation techniques like PSK are used in modern communication systems. NTSC signals are analog, but the principles of modulation—changing a carrier signal to encode information—are similar to those used in digital modulation techniques like PSK.
+
+\begin{figure}[h]
+\centering
+% \includegraphics[width=0.8\textwidth]{figures/psk-diagram.png}
+\caption{Phase Shift Keying (PSK) diagram showing phase shifts.}
+\label{fig:psk-diagram}
+% Diagram illustrating the concept of Phase Shift Keying (PSK) with phase shifts represented on a polar plot.
+\end{figure}
+
+\begin{figure}[h]
+\centering
+% \includegraphics[width=0.8\textwidth]{figures/modulation-comparison.png}
+\caption{Comparison of PSK, FSK, and ASK modulation techniques.}
+\label{fig:modulation-comparison}
+% Comparison of PSK with other digital modulation techniques like FSK and ASK.
+\end{figure}
+
+\subsubsection*{Applications of PSK}
+PSK is commonly used in various applications, including satellite communication, wireless networks, and digital television broadcasting. Its ability to efficiently use bandwidth and resist noise makes it ideal for these high-demand environments.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D04}]
+What type of transmission is indicated by the term "NTSC?"
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item A Normal Transmission mode in Static Circuit
+    \item A special mode for satellite uplink
+    \item \textbf{An analog fast-scan color TV signal}
+    \item A frame compression scheme for TV signals
+\end{enumerate}
+\end{tcolorbox}
+
+NTSC stands for National Television System Committee, and it refers to the analog fast-scan color TV signal standard used in North America and parts of South America and Asia. The other options are either unrelated or incorrect interpretations of the term.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D06}]
+What does the abbreviation "PSK" mean?
+\begin{enumerate}[label=\Alph*),noitemsep]
+    \item Pulse Shift Keying
+    \item \textbf{Phase Shift Keying}
+    \item Packet Short Keying
+    \item Phased Slide Keying
+\end{enumerate}
+\end{tcolorbox}
+
+PSK stands for Phase Shift Keying, a digital modulation technique where the phase of the carrier signal is varied to represent different data symbols. The other options are either incorrect or unrelated to the actual meaning of PSK.

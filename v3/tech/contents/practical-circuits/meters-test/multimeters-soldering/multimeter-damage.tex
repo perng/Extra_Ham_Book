@@ -1,0 +1,64 @@
+\subsection{Avoiding Damage with a Multimeter}
+\label{subsec:multimeter-damage}
+
+Using a multimeter might seem straightforward, but if you’re not careful, you can turn your trusty tool into a very expensive paperweight. Let’s dive into how to avoid damaging your multimeter and ensure it stays functional for years to come.
+
+\subsubsection*{The Perils of Incorrect Settings}
+One of the most common ways to damage a multimeter is by using the wrong setting for the measurement you’re trying to take. For example, if you attempt to measure voltage while the multimeter is set to the resistance setting, you’re essentially asking the multimeter to do something it’s not designed for. This can cause internal damage, such as blowing a fuse or even frying the circuitry. Imagine trying to use a spoon to cut a steak—it’s just not going to end well.
+
+Similarly, measuring resistance while the multimeter is set to the voltage setting can also cause issues. The multimeter sends a small current through the circuit to measure resistance, and if the circuit is live, this can lead to incorrect readings or damage. Always double-check your settings before taking a measurement!
+
+\subsubsection*{What Can You Measure with a Multimeter?}
+A multimeter is a versatile tool that can measure a variety of electrical properties, but it’s not a magic wand. The most common measurements are voltage and resistance. Voltage is the potential difference between two points in a circuit, while resistance is the opposition to current flow. These are the bread and butter of multimeter measurements.
+
+However, a multimeter won’t measure signal strength, noise, impedance, or reactance directly. If you need those measurements, you’ll need specialized equipment. So, while your multimeter is a jack-of-all-trades, it’s not a master of everything.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{multimeter-settings}
+    \caption{Multimeter settings for voltage and resistance measurement.}
+    \label{fig:multimeter-settings}
+    % Prompt: Illustration of a multimeter showing the correct settings for measuring voltage and resistance.
+    % The figure should include a multimeter with clearly labeled dials for voltage (V) and resistance ($\Omega$) settings.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Setting} & \textbf{Potential Damage} \\
+        \hline
+        Voltage (V) & Damage if used to measure resistance in a live circuit. \\
+        Resistance ($\Omega$) & Damage if used to measure voltage directly. \\
+        Current (A) & Damage if used without proper current shunt or in parallel. \\
+        \hline
+    \end{tabular}
+    \caption{Common multimeter settings and potential damage.}
+    \label{tab:multimeter-damage}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7D06}]
+    Which of the following can damage a multimeter?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Attempting to measure resistance using the voltage setting
+        \item Failing to connect one of the probes to ground
+        \item \textbf{Attempting to measure voltage when using the resistance setting}
+        \item Not allowing it to warm up properly
+    \end{enumerate}
+\end{tcolorbox}
+
+Attempting to measure voltage while the multimeter is set to the resistance setting can cause internal damage, such as blowing a fuse or frying the circuitry. The other options, while not ideal, are less likely to cause immediate damage.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7D07}]
+    Which of the following measurements are made using a multimeter?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Signal strength and noise
+        \item Impedance and reactance
+        \item \textbf{Voltage and resistance}
+        \item All these choices are correct
+    \end{enumerate}
+\end{tcolorbox}
+
+A multimeter is primarily used to measure voltage and resistance. It cannot directly measure signal strength, noise, impedance, or reactance, so option C is correct.

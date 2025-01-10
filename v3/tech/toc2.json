@@ -1,0 +1,1094 @@
+{
+  "title": "Ham Technician License Course",
+  "parts": [
+    {
+      "part_title": "Part I: Introduction to Amateur Radio",
+      "label": "part:intro",
+      "chapters": [
+        {
+          "chapter_title": "Welcome to Amateur Radio",
+          "label": "chap:welcome",
+          "sections": [
+            {
+              "section_title": "What is Amateur Radio?",
+              "label": "sec:what-is-radio",
+              "subsections": [
+                {
+                  "title": "Purpose and Advancement of Radio Art",
+                  "label": "subsec:purpose-advancement",
+                  "questions": [
+                    "T1A01"
+                  ]
+                },
+                {
+                  "title": "FCC Part 97 Definitions & Concepts",
+                  "label": "subsec:fcc-definitions",
+                  "questions": [
+                    "T1A06",
+                    "T1A07",
+                    "T1A08",
+                    "T1A09",
+                    "T1A10",
+                    "T1A11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Why Get Licensed?",
+              "label": "sec:why-licensed",
+              "subsections": [
+                {
+                  "title": "Community, Emergency, Experimentation, etc.",
+                  "label": "subsec:why-ham",
+                  "questions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "License Structure and Privileges",
+          "label": "chap:licenses",
+          "sections": [
+            {
+              "section_title": "FCC and the Amateur Service",
+              "label": "sec:fcc-oversight",
+              "subsections": [
+                {
+                  "title": "Who Regulates and Enforces the Rules?",
+                  "label": "subsec:fcc-enforces",
+                  "questions": [
+                    "T1A02"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "License Classes and Frequency Privileges",
+              "label": "sec:license-classes",
+              "subsections": [
+                {
+                  "title": "Classes of Licenses",
+                  "label": "subsec:license-classes-overview",
+                  "questions": [
+                    "T1C01"
+                  ]
+                },
+                {
+                  "title": "HF/VHF/UHF Privileges and Sub-bands",
+                  "label": "subsec:freq-privs",
+                  "questions": [
+                    "T1B01",
+                    "T1B02",
+                    "T1B03",
+                    "T1B04",
+                    "T1B05",
+                    "T1B06",
+                    "T1B07",
+                    "T1B08",
+                    "T1B09",
+                    "T1B10",
+                    "T1B11",
+                    "T1B12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Getting Your License",
+              "label": "sec:getting-license",
+              "subsections": [
+                {
+                  "title": "Obtaining and Renewing",
+                  "label": "subsec:obtain-renew",
+                  "questions": [
+                    "T1A04",
+                    "T1A05",
+                    "T1C08",
+                    "T1C09",
+                    "T1C10",
+                    "T1C11"
+                  ]
+                },
+                {
+                  "title": "Call Signs",
+                  "label": "subsec:call-signs",
+                  "questions": [
+                    "T1C02",
+                    "T1C05",
+                    "T1C07"
+                  ]
+                },
+                {
+                  "title": "License Maintenance, Contact Information, and Operating Locations",
+                  "label": "subsec:maint-contact",
+                  "questions": [
+                    "T1C04",
+                    "T1C06"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part II: FCC Rules and Station Operation",
+      "label": "part:fcc-rules",
+      "chapters": [
+        {
+          "chapter_title": "FCC Rules and Regulations",
+          "label": "chap:fcc-regs",
+          "sections": [
+            {
+              "section_title": "Regulatory Framework",
+              "label": "sec:regulatory-framework",
+              "subsections": [
+                {
+                  "title": "Definitions, Basis, and Purpose",
+                  "label": "subsec:reg-basis",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": "Authorized vs. Prohibited Communications",
+              "label": "sec:auth-vs-prohib",
+              "subsections": [
+                {
+                  "title": "International Communications and Third-Party Traffic",
+                  "label": "subsec:intl-third-party",
+                  "questions": [
+                    "T1C03",
+                    "T1F07",
+                    "T1F08"
+                  ]
+                },
+                {
+                  "title": "Prohibited Content",
+                  "label": "subsec:prohibited-content",
+                  "questions": [
+                    "T1D02",
+                    "T1D06",
+                    "T1D10"
+                  ]
+                },
+                {
+                  "title": "Business Communications, Broadcasting, and Music",
+                  "label": "subsec:biz-broadcast-music",
+                  "questions": [
+                    "T1D04",
+                    "T1D05"
+                  ]
+                },
+                {
+                  "title": "Coded Messages and News Gathering",
+                  "label": "subsec:coded-news",
+                  "questions": [
+                    "T1D03",
+                    "T1D09"
+                  ]
+                },
+                {
+                  "title": "When is Interference Permitted?",
+                  "label": "subsec:intf-permitted",
+                  "questions": [
+                    "T1D01",
+                    "T1D07",
+                    "T1D08"
+                  ]
+                },
+                {
+                  "title": "Operating Without Identification",
+                  "label": "subsec:operating-no-id",
+                  "questions": [
+                    "T1D11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Station Identification, Control Operators, and Enforcement",
+              "label": "sec:station-id-operators",
+              "subsections": [
+                {
+                  "title": "Station ID Requirements",
+                  "label": "subsec:id-requirements",
+                  "questions": [
+                    "T1F02",
+                    "T1F03",
+                    "T1F04",
+                    "T1F05",
+                    "T1F06",
+                    "T1A03"
+                  ]
+                },
+                {
+                  "title": "Control Operator Duties",
+                  "label": "subsec:control-ops",
+                  "questions": [
+                    "T1E01",
+                    "T1E02",
+                    "T1E03",
+                    "T1E04",
+                    "T1E05",
+                    "T1E06",
+                    "T1E07",
+                    "T1E08",
+                    "T1E09",
+                    "T1E10",
+                    "T1E11"
+                  ]
+                },
+                {
+                  "title": "Enforcement, Inspections, and Penalties",
+                  "label": "subsec:enforcement",
+                  "questions": [
+                    "T1F01",
+                    "T1F10",
+                    "T1F11"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Operating Rules and Procedures",
+          "label": "chap:operating-rules",
+          "sections": [
+            {
+              "section_title": "Operating Etiquette and Procedures",
+              "label": "sec:etiquette-procedures",
+              "subsections": [
+                {
+                  "title": "Basic Concepts (Calling CQ, etc.)",
+                  "label": "subsec:basics-calling",
+                  "questions": []
+                }
+              ]
+            },
+            {
+              "section_title": "Repeater Operation",
+              "label": "sec:repeater",
+              "subsections": [
+                {
+                  "title": "What is a Repeater, Offsets",
+                  "label": "subsec:repeater-basics",
+                  "questions": [
+                    "T1F09"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part III: Basic Electrical Principles and Components",
+      "label": "part:electrical",
+      "chapters": [
+        {
+          "chapter_title": "Electrical Fundamentals",
+          "label": "chap:electrical-fundamentals",
+          "sections": [
+            {
+              "section_title": "Voltage, Current, and Resistance",
+              "label": "sec:volt-current-resist",
+              "subsections": [
+                {
+                  "title": "Core Definitions",
+                  "label": "subsec:core-defs",
+                  "questions": [
+                    "T5A01",
+                    "T5A03",
+                    "T5A04",
+                    "T5A05",
+                    "T5A07",
+                    "T5A08",
+                    "T5A09",
+                    "T5A10",
+                    "T5A11"
+                  ]
+                },
+                {
+                  "title": "Ohm's Law and Circuit Calculations",
+                  "label": "subsec:ohms-law",
+                  "questions": [
+                    "T5D01",
+                    "T5D02",
+                    "T5D03",
+                    "T5D04",
+                    "T5D05",
+                    "T5D06",
+                    "T5D07",
+                    "T5D08",
+                    "T5D09",
+                    "T5D10",
+                    "T5D11",
+                    "T5D12",
+                    "T5D13",
+                    "T5D14"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Power and Decibels",
+              "label": "sec:power-decibels",
+              "subsections": [
+                {
+                  "title": "Electrical Power and Decibel Calculations",
+                  "label": "subsec:power-db",
+                  "questions": [
+                    "T5A02",
+                    "T5B09",
+                    "T5B10",
+                    "T5B11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Units and Conversions",
+              "label": "sec:units-conversions",
+              "subsections": [
+                {
+                  "title": "Metric Units (k, M, etc.)",
+                  "label": "subsec:metric",
+                  "questions": [
+                    "T5B01",
+                    "T5B02",
+                    "T5B03",
+                    "T5B04",
+                    "T5B05",
+                    "T5B06",
+                    "T5B07",
+                    "T5B08",
+                    "T5B12",
+                    "T5B13"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "AC, Impedance, and Circuit Concepts",
+          "label": "chap:ac-circuits",
+          "sections": [
+            {
+              "section_title": "AC vs. DC, Frequency, Wavelength",
+              "label": "sec:ac-dc-freq",
+              "subsections": [
+                {
+                  "title": "Definitions and Effects",
+                  "label": "subsec:ac-basics2",
+                  "questions": []
+                },
+                {
+                  "title": "Frequency and Wavelength Calculations",
+                  "label": "subsec:freq-wavelength",
+                  "questions": [
+                    "T3B01",
+                    "T3B02",
+                    "T3B03",
+                    "T3B04",
+                    "T3B05",
+                    "T3B06",
+                    "T3B07",
+                    "T3B08",
+                    "T3B09",
+                    "T3B10",
+                    "T3B11",
+                    "T5A06",
+                    "T5A12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Capacitance, Inductance, and Impedance",
+              "label": "sec:cap-ind-imp",
+              "subsections": [
+                {
+                  "title": "Capacitors",
+                  "label": "subsec:capacitors",
+                  "questions": [
+                    "T5C01",
+                    "T5C02"
+                  ]
+                },
+                {
+                  "title": "Inductors",
+                  "label": "subsec:inductors",
+                  "questions": [
+                    "T5C03",
+                    "T5C04"
+                  ]
+                },
+                {
+                  "title": "Impedance and Reactance",
+                  "label": "subsec:imp-react",
+                  "questions": [
+                    "T5C05",
+                    "T5C12",
+                    "T5C13"
+                  ]
+                },
+                {
+                  "title": "RF and Frequency Abbreviations",
+                  "label": "subsec:rf-abbrev",
+                  "questions": [
+                    "T5C06",
+                    "T5C07"
+                  ]
+                },
+                {
+                  "title": "Calculating Power with Voltage/Current",
+                  "label": "subsec:calc-power",
+                  "questions": [
+                    "T5C08",
+                    "T5C09",
+                    "T5C10",
+                    "T5C11"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Electronic and Electrical Components",
+          "label": "chap:electronic-components",
+          "sections": [
+            {
+              "section_title": "Resistors, Capacitors, and Inductors",
+              "label": "sec:passive-components",
+              "subsections": [
+                {
+                  "title": "Basics",
+                  "label": "subsec:basics-passive",
+                  "questions": [
+                    "T6A01",
+                    "T6A02",
+                    "T6A03",
+                    "T6A04",
+                    "T6A05",
+                    "T6A06",
+                    "T6A07",
+                    "T6A08",
+                    "T6A09",
+                    "T6A10",
+                    "T6A11",
+                    "T6A12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Diodes, Transistors, and Semiconductors",
+              "label": "sec:semiconductors",
+              "subsections": [
+                {
+                  "title": "Diode Fundamentals",
+                  "label": "subsec:diodes",
+                  "questions": [
+                    "T6B01",
+                    "T6B02",
+                    "T6B06",
+                    "T6B07",
+                    "T6B09"
+                  ]
+                },
+                {
+                  "title": "Transistors (BJT, FET) and Amplification",
+                  "label": "subsec:transistors",
+                  "questions": [
+                    "T6B03",
+                    "T6B04",
+                    "T6B05",
+                    "T6B08",
+                    "T6B10",
+                    "T6B11",
+                    "T6B12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Circuit Symbols and Schematics",
+              "label": "sec:schematics",
+              "subsections": [
+                {
+                  "title": "Reading Schematics",
+                  "label": "subsec:schem-reading",
+                  "questions": [
+                    "T6C01",
+                    "T6C02",
+                    "T6C03",
+                    "T6C04",
+                    "T6C05",
+                    "T6C06",
+                    "T6C07",
+                    "T6C08",
+                    "T6C09",
+                    "T6C10",
+                    "T6C11",
+                    "T6C12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Integrated Circuits, Filters, and Rectifiers",
+              "label": "sec:ic-filters",
+              "subsections": [
+                {
+                  "title": "Rectifiers, Regulators, etc.",
+                  "label": "subsec:rect-reg",
+                  "questions": [
+                    "T6D01",
+                    "T6D02",
+                    "T6D03",
+                    "T6D04",
+                    "T6D05",
+                    "T6D06",
+                    "T6D07"
+                  ]
+                },
+                {
+                  "title": "Transformers, Indicators, etc.",
+                  "label": "subsec:transformers-ind",
+                  "questions": [
+                    "T6D08",
+                    "T6D09",
+                    "T6D10",
+                    "T6D11"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part IV: Practical Circuits and Station Equipment",
+      "label": "part:practical-circuits",
+      "chapters": [
+        {
+          "chapter_title": "Station Equipment",
+          "label": "chap:transceivers",
+          "sections": [
+            {
+              "section_title": "Transceivers, Receivers, and Transmitters",
+              "label": "sec:radio-fundamentals",
+              "subsections": [
+                {
+                  "title": "Receiver Sensitivity and Selectivity",
+                  "label": "subsec:rx-sense-select",
+                  "questions": [
+                    "T7A01",
+                    "T7A04"
+                  ]
+                },
+                {
+                  "title": "Mixer, Oscillator, and Frequency Conversion",
+                  "label": "subsec:mixer-osc",
+                  "questions": [
+                    "T7A03",
+                    "T7A05"
+                  ]
+                },
+                {
+                  "title": "Transverter and PTT Lines",
+                  "label": "subsec:transverter-ptt",
+                  "questions": [
+                    "T7A06",
+                    "T7A07",
+                    "T7A08"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "RF Power Amplifiers and Preamps",
+              "label": "sec:rf-amps",
+              "subsections": [
+                {
+                  "title": "Amplifier Basics",
+                  "label": "subsec:amp-basics",
+                  "questions": [
+                    "T7A02",
+                    "T7A09",
+                    "T7A10",
+                    "T7A11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Power Supplies",
+              "label": "sec:power-supplies",
+              "subsections": [
+                {
+                  "title": "Choosing and Using",
+                  "label": "subsec:psu-choice",
+                  "questions": [
+                    "T4A01",
+                    "T4A02",
+                    "T4A03",
+                    "T4A04",
+                    "T4A05",
+                    "T4A06",
+                    "T4A07",
+                    "T4A08",
+                    "T4A09",
+                    "T4A10",
+                    "T4A11",
+                    "T4A12"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Radio/Audio Controls",
+              "label": "sec:radio-audio-ctrls",
+              "subsections": [
+                {
+                  "title": "Mic Gain, Squelch, etc.",
+                  "label": "subsec:mic-squelch",
+                  "questions": [
+                    "T4B01",
+                    "T4B02",
+                    "T4B03",
+                    "T4B04",
+                    "T4B05",
+                    "T4B06",
+                    "T4B07",
+                    "T4B08",
+                    "T4B09",
+                    "T4B10",
+                    "T4B11",
+                    "T4B12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Troubleshooting and Interference",
+          "label": "chap:troubleshooting",
+          "sections": [
+            {
+              "section_title": "Preventing Distortion and Overload",
+              "label": "sec:prevent-distortion",
+              "subsections": [
+                {
+                  "title": "Over-deviation and Fundamental Overload",
+                  "label": "subsec:over-dev",
+                  "questions": [
+                    "T7B01",
+                    "T7B05"
+                  ]
+                },
+                {
+                  "title": "RFI and Filtering Solutions",
+                  "label": "subsec:rfi-filters",
+                  "questions": [
+                    "T7B02",
+                    "T7B03",
+                    "T7B04"
+                  ]
+                },
+                {
+                  "title": "Addressing Interference, TVI, etc.",
+                  "label": "subsec:interference",
+                  "questions": [
+                    "T7B06",
+                    "T7B07",
+                    "T7B08",
+                    "T7B09",
+                    "T7B10",
+                    "T7B11"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Meters and Test Equipment",
+          "label": "chap:meters-test",
+          "sections": [
+            {
+              "section_title": "Dummy Loads, SWR Meters, and Antenna Analyzers",
+              "label": "sec:dummy-swr",
+              "subsections": [
+                {
+                  "title": "Proper Use",
+                  "label": "subsec:proper-use",
+                  "questions": [
+                    "T7C01",
+                    "T7C02",
+                    "T7C03",
+                    "T7C06",
+                    "T7C07"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "SWR, Transmission Line Loss, etc.",
+              "label": "sec:swr-line-loss",
+              "subsections": [
+                {
+                  "title": "Measuring SWR and Effects of High SWR",
+                  "label": "subsec:measuring-swr",
+                  "questions": [
+                    "T7C04",
+                    "T7C05",
+                    "T7C08"
+                  ]
+                },
+                {
+                  "title": "Coax Failures and Installation",
+                  "label": "subsec:coax-fail",
+                  "questions": [
+                    "T7C09",
+                    "T7C10",
+                    "T7C11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Multimeters and Soldering",
+              "label": "sec:multimeters-soldering",
+              "subsections": [
+                {
+                  "title": "Measuring Voltage, Current, Resistance",
+                  "label": "subsec:voltage-current",
+                  "questions": [
+                    "T7D01",
+                    "T7D02",
+                    "T7D03",
+                    "T7D04"
+                  ]
+                },
+                {
+                  "title": "Avoiding Damage with a Multimeter",
+                  "label": "subsec:multimeter-damage",
+                  "questions": [
+                    "T7D06",
+                    "T7D07"
+                  ]
+                },
+                {
+                  "title": "Soldering Techniques and Resistance Testing Safety",
+                  "label": "subsec:soldering",
+                  "questions": [
+                    "T7D08",
+                    "T7D09",
+                    "T7D10",
+                    "T7D11"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part V: Antennas, Feed Lines, and Propagation",
+      "label": "part:antennas-prop",
+      "chapters": [
+        {
+          "chapter_title": "Antenna Fundamentals",
+          "label": "chap:antennas",
+          "sections": [
+            {
+              "section_title": "Dipoles, Verticals, Beams",
+              "label": "sec:dipoles-verticals-beams",
+              "subsections": [
+                {
+                  "title": "Dipole Basics",
+                  "label": "subsec:dipole",
+                  "questions": [
+                    "T9A03",
+                    "T9A04",
+                    "T9A05",
+                    "T9A09",
+                    "T9A10"
+                  ]
+                },
+                {
+                  "title": "Vertical Antennas and Ground-Planes",
+                  "label": "subsec:verticals",
+                  "questions": [
+                    "T9A01",
+                    "T9A08"
+                  ]
+                },
+                {
+                  "title": "Beam/Yagi and Gain Concepts",
+                  "label": "subsec:beam-yagi",
+                  "questions": [
+                    "T9A02",
+                    "T9A06",
+                    "T9A11"
+                  ]
+                },
+                {
+                  "title": "Mobile Antennas",
+                  "label": "subsec:mobile",
+                  "questions": [
+                    "T9A07",
+                    "T9A12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Feed Lines and SWR",
+          "label": "chap:feedlines-swr",
+          "sections": [
+            {
+              "section_title": "Coax, Ladder Line, Connectors",
+              "label": "sec:coax-ladder",
+              "subsections": [
+                {
+                  "title": "Coax Impedance and Loss",
+                  "label": "subsec:coax-imp",
+                  "questions": [
+                    "T9B01",
+                    "T9B02",
+                    "T9B03",
+                    "T9B05",
+                    "T9B08",
+                    "T9B10",
+                    "T9B11"
+                  ]
+                },
+                {
+                  "title": "Connectors (PL-259, Type N, etc.)",
+                  "label": "subsec:connectors",
+                  "questions": [
+                    "T9B06",
+                    "T9B07"
+                  ]
+                },
+                {
+                  "title": "Installation and Maintenance",
+                  "label": "subsec:install-maint",
+                  "questions": [
+                    "T9B09"
+                  ]
+                },
+                {
+                  "title": "Standing Wave Ratio (SWR)",
+                  "label": "subsec:standing-wave",
+                  "questions": [
+                    "T9B04",
+                    "T9B12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Radio Wave Propagation",
+          "label": "chap:propagation",
+          "sections": [
+            {
+              "section_title": "VHF/UHF",
+              "label": "sec:vhf-uhf",
+              "subsections": [
+                {
+                  "title": "Line of Sight, Multipath, and Ducting",
+                  "label": "subsec:los-multipath",
+                  "questions": [
+                    "T3A01",
+                    "T3A02",
+                    "T3A03",
+                    "T3A04",
+                    "T3A05",
+                    "T3A06",
+                    "T3A07",
+                    "T3A09",
+                    "T3C06",
+                    "T3C08"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "HF Propagation and Beyond",
+              "label": "sec:hf-prop",
+              "subsections": [
+                {
+                  "title": "Ionosphere, Sunspots, Sporadic E",
+                  "label": "subsec:ionosphere",
+                  "questions": [
+                    "T3A08",
+                    "T3A10",
+                    "T3A11",
+                    "T3A12",
+                    "T3C01",
+                    "T3C02",
+                    "T3C03",
+                    "T3C04",
+                    "T3C05",
+                    "T3C07",
+                    "T3C09",
+                    "T3C10",
+                    "T3C11"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part VI: Signals, Emissions, and Digital Modes",
+      "label": "part:signals",
+      "chapters": [
+        {
+          "chapter_title": "Modulation Modes (AM, FM, SSB, CW)",
+          "label": "chap:modulation",
+          "sections": [
+            {
+              "section_title": "Amplitude and Frequency Modulation",
+              "label": "sec:am-fm",
+              "subsections": [
+                {
+                  "title": "AM and Single-Sideband",
+                  "label": "subsec:am-ssb",
+                  "questions": [
+                    "T8A01",
+                    "T8A03",
+                    "T8A06",
+                    "T8A07",
+                    "T8A08"
+                  ]
+                },
+                {
+                  "title": "Frequency Modulation",
+                  "label": "subsec:fm",
+                  "questions": [
+                    "T8A02",
+                    "T8A04",
+                    "T8A09"
+                  ]
+                },
+                {
+                  "title": "CW (Morse Code)",
+                  "label": "subsec:cw",
+                  "questions": [
+                    "T8A05",
+                    "T8A11"
+                  ]
+                },
+                {
+                  "title": "Bandwidth Comparisons",
+                  "label": "subsec:bandwidth",
+                  "questions": [
+                    "T8A10",
+                    "T8A12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Satellite Operations",
+          "label": "chap:satellite-ops",
+          "sections": [
+            {
+              "section_title": "Working Amateur Satellites",
+              "label": "sec:amateur-sats",
+              "subsections": [
+                {
+                  "title": "Satellite Telemetry and Beacons",
+                  "label": "subsec:sat-telemetry-beacons",
+                  "questions": [
+                    "T8B01",
+                    "T8B04",
+                    "T8B05"
+                  ]
+                },
+                {
+                  "title": "Doppler Shift, Tracking, and Avoiding Excess Power",
+                  "label": "subsec:sat-tracking",
+                  "questions": [
+                    "T8B02",
+                    "T8B03",
+                    "T8B06",
+                    "T8B07"
+                  ]
+                },
+                {
+                  "title": "Modes (U/V), Spin Fading, and LEO",
+                  "label": "subsec:sat-modes",
+                  "questions": [
+                    "T8B08",
+                    "T8B09",
+                    "T8B10",
+                    "T8B11",
+                    "T8B12"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Digital Modes and Networking",
+          "label": "chap:digital",
+          "sections": [
+            {
+              "section_title": "Digital Communications Modes",
+              "label": "sec:digital-modes",
+              "subsections": [
+                {
+                  "title": "Packet, APRS, DMR, etc.",
+                  "label": "subsec:packet-aprs-dmr",
+                  "questions": [
+                    "T8D01",
+                    "T8D02",
+                    "T8D03",
+                    "T8D05",
+                    "T8D07",
+                    "T8D08",
+                    "T8D09",
+                    "T8D12"
+                  ]
+                },
+                {
+                  "title": "FT8 and Weak-Signal Modes",
+                  "label": "subsec:ft8-weak",
+                  "questions": [
+                    "T8D10",
+                    "T8D13"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

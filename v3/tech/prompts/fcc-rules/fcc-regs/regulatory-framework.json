@@ -1,0 +1,16 @@
+{
+  "section_title": "Regulatory Framework",
+  "label": "sec:regulatory-framework",
+  "section_label": "sec:regulatory-framework",
+  "subsections": [
+    {
+      "title": "Definitions, Basis, and Purpose",
+      "label": "subsec:reg-basis",
+      "questions": [],
+      "concepts": [],
+      "prompts": [],
+      "image_prompts": [],
+      "table_prompt": []
+    }
+  ]
+}

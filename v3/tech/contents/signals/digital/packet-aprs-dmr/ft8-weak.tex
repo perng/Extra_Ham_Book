@@ -1,0 +1,70 @@
+\subsection{FT8 and Weak-Signal Modes}
+\label{subsec:ft8-weak}
+
+In this section, we'll dive into the fascinating world of FT8 and other weak-signal modes, which have revolutionized amateur radio communication, especially under challenging propagation conditions. Let's start by exploring the FT8 digital mode, its unique characteristics, and why it's so well-suited for low signal-to-noise operation.
+
+\subsubsection*{What is FT8?}
+FT8 is a digital mode specifically designed for weak-signal communication. It's part of the WSJT-X software suite, which is a collection of tools aimed at making the most out of marginal propagation conditions. FT8 stands out because it can decode signals that are barely above the noise floor, making it ideal for long-distance communication when traditional modes might fail. The mode uses a combination of forward error correction (FEC) and a highly efficient modulation scheme to achieve this. Think of it as a digital whisper that can travel thousands of miles, even when the conditions are less than ideal.
+
+\subsubsection*{Weak-Signal Propagation Modes in WSJT-X}
+The WSJT-X software suite supports a variety of weak-signal propagation modes, each tailored for specific conditions. For example, Earth-Moon-Earth (EME) communication, also known as "moonbounce," involves bouncing signals off the moon to communicate with stations on the other side of the globe. Another interesting mode is meteor scatter, where signals are reflected off the ionized trails left by meteors entering the Earth's atmosphere. These modes are particularly useful when traditional propagation paths are unavailable or unreliable.
+
+\subsubsection*{Advantages of FT8 and Weak-Signal Modes}
+One of the biggest advantages of FT8 and other weak-signal modes is their ability to maintain communication over long distances, even when the signal is extremely weak. This is particularly useful during periods of low solar activity when the ionosphere is less reflective. Additionally, these modes are highly automated, allowing for efficient communication with minimal manual intervention. This makes them accessible to a wide range of operators, from beginners to seasoned experts.
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{ft8-structure}
+    \caption{FT8 Signal Structure. The diagram illustrates the key features of the FT8 signal, including its forward error correction mechanism.}
+    \label{fig:ft8-structure}
+    % Image prompt: Diagram showing the FT8 signal structure and its key features, such as forward error correction.
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{eme-ft8}
+    \caption{Earth-Moon-Earth Communication with FT8. The illustration shows how FT8 can be used for EME communication, bouncing signals off the moon to reach distant stations.}
+    \label{fig:eme-ft8}
+    % Image prompt: Illustration of Earth-Moon-Earth (EME) communication using FT8.
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Mode} & \textbf{Application} \\
+        \hline
+        FT8 & Low signal-to-noise communication \\
+        EME & Long-distance communication via moonbounce \\
+        Meteor Scatter & Short-duration communication via meteor trails \\
+        \hline
+    \end{tabular}
+    \caption{Weak-Signal Modes in WSJT-X. This table summarizes the various weak-signal modes supported by the WSJT-X software suite and their typical applications.}
+    \label{tab:wsjt-x-modes}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D10}]
+    Which of the following operating activities is supported by digital mode software in the WSJT-X software suite?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Earth-Moon-Earth
+        \item Weak signal propagation beacons
+        \item Meteor scatter
+        \item \textbf{All these choices are correct}
+    \end{enumerate}
+\end{tcolorbox}
+
+The WSJT-X software suite is incredibly versatile, supporting a wide range of weak-signal activities, including Earth-Moon-Earth (EME), weak signal propagation beacons, and meteor scatter. This makes option D the correct choice.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8D13}]
+    What is FT8?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item A wideband FM voice mode
+        \item \textbf{A digital mode capable of low signal-to-noise operation}
+        \item An eight channel multiplex mode for FM repeaters
+        \item A digital slow-scan TV mode with forward error correction and automatic color compensation
+    \end{enumerate}
+\end{tcolorbox}
+
+FT8 is a digital mode specifically designed for low signal-to-noise operation, making it ideal for weak-signal communication. This aligns with option B. The other options describe different modes or technologies that are not related to FT8.

@@ -1,0 +1,117 @@
+{
+  "section_title": "Electrical Hazards and Safe Wiring",
+  "label": "sec:electrical-hazards-wiring",
+  "section_label": "sec:electrical-hazards-wiring",
+  "subsections": [
+    {
+      "title": "Shock Hazards, Fuses, Circuit Breakers",
+      "label": "subsec:shock-fuses",
+      "questions": ["T0A01", "T0A02", "T0A04", "T0A05", "T0A08", "T0A09", "T0A12"],
+      "concepts": ["Shock Hazards", "Fuses", "Circuit Breakers", "Electrical Safety", "Voltage Measurement"],
+      "prompts": [
+        "Explain the concept of shock hazards in electrical circuits, including how electrical current can affect the human body.",
+        "Describe the purpose and function of fuses in electrical circuits, including how they protect against overloads.",
+        "Discuss the role of circuit breakers in electrical safety, including how they differ from fuses.",
+        "Explain the importance of correctly installing fuses and circuit breakers in 120V AC power circuits.",
+        "Describe the precautions necessary when measuring high voltages with a voltmeter, including the importance of using properly rated equipment."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of electrical current through a human body and its effects on tissues and cells.",
+          "software": "SVG",
+          "caption": "Effects of Electrical Current on the Human Body",
+          "label": "fig:current-effects"
+        },
+        {
+          "prompt": "Schematic of a fuse in an electrical circuit, showing how it interrupts current flow during an overload.",
+          "software": "KiCad",
+          "caption": "Fuse in an Electrical Circuit",
+          "label": "fig:fuse-circuit"
+        },
+        {
+          "prompt": "Diagram of a circuit breaker in a 120V AC power circuit, showing its placement in series with the hot conductor.",
+          "software": "KiCad",
+          "caption": "Circuit Breaker Installation in a 120V AC Circuit",
+          "label": "fig:circuit-breaker"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table comparing the characteristics of fuses and circuit breakers, including their response time, resetability, and typical applications.",
+          "caption": "Comparison of Fuses and Circuit Breakers",
+          "label": "tab:fuse-vs-breaker"
+        }
+      ]
+    },
+    {
+      "title": "Grounding and Safety Practices",
+      "label": "subsec:ground-safety",
+      "questions": ["T0A03", "T0A06"],
+      "concepts": ["Grounding", "Electrical Safety Practices", "Three-Wire Cords"],
+      "prompts": [
+        "Explain the importance of grounding in electrical systems, including how it prevents electrical shock.",
+        "Describe the safety practices for guarding against electrical shock in a station, including the use of three-wire cords and common safety grounds.",
+        "Discuss the significance of black wire insulation in a three-wire 120V cable and its role in electrical safety."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the grounding of electrical equipment in a station, including the connection to a common safety ground.",
+          "software": "SVG",
+          "caption": "Grounding in Electrical Equipment",
+          "label": "fig:grounding"
+        },
+        {
+          "prompt": "Illustration of a three-wire 120V cable, highlighting the black wire insulation and its role in the circuit.",
+          "software": "SVG",
+          "caption": "Three-Wire 120V Cable",
+          "label": "fig:three-wire-cable"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the safety practices for preventing electrical shock in a station, including the use of three-wire cords and grounding.",
+          "caption": "Electrical Safety Practices",
+          "label": "tab:safety-practices"
+        }
+      ]
+    },
+    {
+      "title": "Lightning Arrestors, Capacitor Discharge",
+      "label": "subsec:lightning-cap",
+      "questions": ["T0A07", "T0A10", "T0A11"],
+      "concepts": ["Lightning Arrestors", "Capacitor Discharge", "Battery Hazards"],
+      "prompts": [
+        "Explain the purpose and installation of lightning arrestors in coaxial feed lines, including their role in protecting equipment.",
+        "Describe the hazards associated with charging or discharging a battery too quickly, including overheating and out-gassing.",
+        "Discuss the risks posed by charge stored in filter capacitors in a power supply after it is turned off."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the installation of a lightning arrester in a coaxial feed line near the building entry point.",
+          "software": "SVG",
+          "caption": "Lightning Arrester Installation",
+          "label": "fig:lightning-arrester"
+        },
+        {
+          "prompt": "Illustration of the hazards of rapid battery charging, including overheating and out-gassing.",
+          "software": "SVG",
+          "caption": "Battery Charging Hazards",
+          "label": "fig:battery-hazards"
+        },
+        {
+          "prompt": "Diagram showing the charge stored in filter capacitors in a power supply after it is turned off.",
+          "software": "SVG",
+          "caption": "Charge Stored in Filter Capacitors",
+          "label": "fig:capacitor-charge"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the hazards associated with lightning arrestors, capacitor discharge, and battery charging.",
+          "caption": "Hazards in Electrical Systems",
+          "label": "tab:electrical-hazards"
+        }
+      ]
+    }
+  ]
+}

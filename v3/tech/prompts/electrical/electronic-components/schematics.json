@@ -1,0 +1,70 @@
+{
+  "section_title": "Circuit Symbols & Schematics",
+  "label": "sec:schematics",
+  "subsections": [
+    {
+      "title": "Reading Schematics",
+      "label": "subsec:schem-reading",
+      "questions": [
+        "T6C01",
+        "T6C02",
+        "T6C03",
+        "T6C04",
+        "T6C05",
+        "T6C06",
+        "T6C07",
+        "T6C08",
+        "T6C09",
+        "T6C10",
+        "T6C11",
+        "T6C12"
+      ],
+      "concepts": [
+        "Schematic",
+        "Resistor",
+        "Transistor",
+        "Battery",
+        "Lamp",
+        "Ground symbol",
+        "Capacitor",
+        "Regulator IC",
+        "Light emitting diode",
+        "Variable resistor",
+        "Transformer",
+        "Variable inductor",
+        "Antenna"
+      ],
+      "prompts": [
+        "Explain the purpose and importance of a schematic diagram in electrical engineering.",
+        "Describe the standard symbols used for resistors, transistors, and batteries in schematics.",
+        "Discuss how to identify and interpret the ground symbol in a schematic.",
+        "Explain the role of capacitors and inductors in electronic circuits as represented in schematics.",
+        "Describe the function of a light-emitting diode (LED) and its representation in schematics.",
+        "Discuss the use of variable components like resistors and inductors in schematics.",
+        "Explain the significance of transformers in electronic circuits and their schematic representation.",
+        "Describe how antennas are represented in schematics and their role in radio circuits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "A detailed schematic diagram showing common electronic components like resistors, capacitors, transistors, and LEDs.",
+          "software": "SVG",
+          "caption": "Example schematic diagram with standard electronic components.",
+          "label": "fig:schematic-example"
+        },
+        {
+          "prompt": "A comparison of physical components and their schematic symbols.",
+          "software": "SVG",
+          "caption": "Comparison of physical components and their schematic symbols.",
+          "label": "fig:component-symbols"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Create a table listing common electronic components and their corresponding schematic symbols.",
+          "caption": "Common electronic components and their schematic symbols.",
+          "label": "tab:component-symbols"
+        }
+      ]
+    }
+  ]
+}

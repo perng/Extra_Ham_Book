@@ -1,0 +1,97 @@
+{
+  "section_title": "Working Amateur Satellites",
+  "label": "sec:amateur-sats",
+  "subsections": [
+    {
+      "title": "Satellite Telemetry and Beacons",
+      "label": "subsec:sat-telemetry-beacons",
+      "questions": ["T8B01", "T8B04", "T8B05"],
+      "concepts": ["Satellite Telemetry", "Satellite Beacons"],
+      "prompts": [
+        "Explain the purpose and types of telemetry information transmitted by satellite beacons.",
+        "Describe the common modes of transmission used by amateur radio satellites.",
+        "Define what a satellite beacon is and its role in satellite communication."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the components of a satellite beacon and the telemetry data flow.",
+          "software": "SVG",
+          "caption": "Satellite Beacon and Telemetry Data Flow",
+          "label": "fig:sat-beacon-telemetry"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the types of telemetry information transmitted by satellite beacons.",
+        "caption": "Types of Telemetry Information",
+        "label": "tab:telemetry-types"
+      }
+    },
+    {
+      "title": "Doppler Shift, Tracking, Avoiding Excess Power",
+      "label": "subsec:sat-tracking",
+      "questions": ["T8B02", "T8B03", "T8B06", "T8B07"],
+      "concepts": ["Doppler Shift", "Satellite Tracking", "Effective Radiated Power"],
+      "prompts": [
+        "Explain the concept of Doppler shift in satellite communications and its impact on signal frequency.",
+        "Describe the inputs and outputs of satellite tracking programs.",
+        "Discuss the consequences of using excessive effective radiated power on a satellite uplink."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Graph illustrating the Doppler shift effect on signal frequency over time.",
+          "software": "gnuplot",
+          "caption": "Doppler Shift Effect on Signal Frequency",
+          "label": "fig:doppler-shift"
+        },
+        {
+          "prompt": "Diagram showing the relationship between satellite position and tracking data.",
+          "software": "Graphviz",
+          "caption": "Satellite Position and Tracking Data",
+          "label": "fig:sat-tracking"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the inputs and outputs of satellite tracking programs.",
+        "caption": "Satellite Tracking Program Inputs and Outputs",
+        "label": "tab:tracking-inputs-outputs"
+      }
+    },
+    {
+      "title": "Modes (U/V), Spin Fading, LEO",
+      "label": "subsec:sat-modes",
+      "questions": ["T8B08", "T8B09", "T8B10", "T8B11", "T8B12"],
+      "concepts": ["U/V Mode", "Spin Fading", "LEO Satellites"],
+      "prompts": [
+        "Explain what it means for a satellite to operate in U/V mode.",
+        "Describe the phenomenon of spin fading and its causes.",
+        "Define what a LEO satellite is and its characteristics.",
+        "Discuss who can receive telemetry from a space station and how to determine appropriate uplink power."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the frequency bands used in U/V mode satellite communication.",
+          "software": "SVG",
+          "caption": "U/V Mode Frequency Bands",
+          "label": "fig:uv-mode-bands"
+        },
+        {
+          "prompt": "Illustration of spin fading effect on satellite signals.",
+          "software": "Matplotlib",
+          "caption": "Spin Fading Effect",
+          "label": "fig:spin-fading"
+        },
+        {
+          "prompt": "Diagram of a LEO satellite orbit around Earth.",
+          "software": "SVG",
+          "caption": "LEO Satellite Orbit",
+          "label": "fig:leo-orbit"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Table summarizing the characteristics of LEO satellites.",
+        "caption": "Characteristics of LEO Satellites",
+        "label": "tab:leo-characteristics"
+      }
+    }
+  ]
+}

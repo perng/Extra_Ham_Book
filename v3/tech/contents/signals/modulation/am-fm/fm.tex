@@ -1,0 +1,73 @@
+\subsection{Frequency Modulation}
+\label{subsec:fm}
+
+Frequency Modulation (FM) is a method of encoding information in a carrier wave by varying its frequency. Unlike Amplitude Modulation (AM), where the amplitude of the carrier wave is varied, FM keeps the amplitude constant while changing the frequency in proportion to the input signal. This makes FM more resistant to noise and interference, which is why it's commonly used in VHF and UHF voice communications, including repeaters.
+
+\subsubsection*{How FM Works}
+In FM, the frequency of the carrier wave is altered based on the amplitude of the modulating signal. For example, if you're transmitting a voice signal, the frequency of the carrier wave will increase when the voice signal's amplitude increases and decrease when the amplitude decreases. This variation in frequency is called \textit{frequency deviation}. The amount of deviation depends on the amplitude of the modulating signal and the modulation index, which is the ratio of the frequency deviation to the frequency of the modulating signal.
+
+The bandwidth of an FM signal is determined by the frequency deviation and the modulating signal's frequency. A higher deviation or a higher modulating frequency results in a wider bandwidth. For VHF and UHF repeaters, the typical bandwidth of an FM voice signal is between 10 and 15 kHz, as shown in Figure~\ref{fig:fm-deviation}.
+
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{fm-deviation} % Placeholder for the image
+    \caption{Frequency Deviation in FM Signals. The diagram shows how the frequency of the carrier wave varies with the amplitude of the modulating signal.}
+    \label{fig:fm-deviation}
+\end{figure}
+
+\subsubsection*{Advantages and Disadvantages of FM}
+FM has several advantages over AM and Single Sideband (SSB) modulation. First, FM is less susceptible to noise and interference because noise typically affects the amplitude of a signal, not its frequency. Second, FM provides better signal quality, especially for voice communications. However, FM requires more bandwidth than SSB, which can be a disadvantage in crowded frequency bands.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Characteristics of Frequency Modulation (FM)}
+    \label{tab:fm-characteristics}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Characteristic} & \textbf{Description} \\
+        \hline
+        Bandwidth & 10-15 kHz for VHF/UHF voice signals \\
+        \hline
+        Typical Usage & VHF/UHF repeaters, FM radio broadcasting \\
+        \hline
+        Advantages & Noise resistance, better signal quality \\
+        \hline
+        Disadvantages & Higher bandwidth usage compared to SSB \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A02}]
+    What type of modulation is commonly used for VHF packet radio transmissions?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{FM or PM}
+        \item SSB
+        \item AM
+        \item PSK
+    \end{enumerate}
+\end{tcolorbox}
+FM or PM (Phase Modulation) is commonly used for VHF packet radio transmissions because of their noise resistance and reliability. SSB and AM are less common due to their susceptibility to noise, and PSK is typically used for digital communications.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A04}]
+    Which type of modulation is commonly used for VHF and UHF voice repeaters?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item AM
+        \item SSB
+        \item PSK
+        \item \textbf{FM or PM}
+    \end{enumerate}
+\end{tcolorbox}
+FM or PM is the standard for VHF and UHF voice repeaters because of their superior noise resistance and signal quality. AM and SSB are less suitable for these applications due to their higher susceptibility to interference.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T8A09}]
+    What is the approximate bandwidth of a VHF repeater FM voice signal?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Less than 500 Hz
+        \item About 150 kHz
+        \item \textbf{Between 10 and 15 kHz}
+        \item Between 50 and 125 kHz
+    \end{enumerate}
+\end{tcolorbox}
+The bandwidth of a VHF repeater FM voice signal is typically between 10 and 15 kHz. This range ensures clear voice transmission while minimizing the use of spectrum. Options A and B are incorrect because they are too narrow or too wide, respectively. Option D is also incorrect as it exceeds the typical bandwidth for FM voice signals.

@@ -1,0 +1,67 @@
+\subsection{Over-deviation, Fundamental Overload}
+\label{subsec:over-dev}
+
+Let's dive into the world of FM transceivers and the pesky issues of over-deviation and fundamental overload. These are two common problems that can affect both amateur and non-amateur radio systems, and understanding them is key to maintaining clear and reliable communication.
+
+\subsubsection*{Over-deviation in FM Transceivers}
+
+Over-deviation occurs when the frequency deviation in an FM signal exceeds the maximum allowed limit. This can happen if the input signal (like your voice) is too strong, causing the transmitter to modulate the carrier frequency beyond its designed range. The result? A distorted signal that can be difficult to decode at the receiver end. Think of it as trying to listen to a song where the volume keeps jumping up and down—it’s not a pleasant experience!
+
+To mitigate over-deviation, one simple trick is to adjust your microphone distance. If you’re told your FM handheld or mobile transceiver is over-deviating, try talking a bit farther away from the microphone. This reduces the input signal strength and keeps the frequency deviation within acceptable limits. No need to shout or let your transceiver cool off—distance is your friend here.
+
+\subsubsection*{Fundamental Overload}
+
+Now, let’s talk about fundamental overload. This happens when a strong amateur radio signal overwhelms a non-amateur radio or TV receiver. The receiver, not designed to handle such strong signals, gets overloaded, leading to interference or even complete loss of reception. It’s like trying to listen to a whisper while standing next to a jet engine—it just doesn’t work.
+
+To reduce or eliminate fundamental overload, you can use a filter at the antenna input of the affected receiver. This filter blocks the strong amateur signal, allowing the receiver to function normally. Switching the transmitter to a different mode or power level won’t help much here—what you need is a good old-fashioned filter.
+
+\subsubsection*{Filters to the Rescue}
+
+Filters are the unsung heroes of radio communication. They come in various forms, but the goal is always the same: to block unwanted signals. For example, a band-pass filter can be used to allow only the desired frequency range to pass through, effectively blocking strong amateur signals that fall outside this range. 
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/filter-block.png}
+    \caption{Block diagram of a filter used to block amateur signals at the antenna input.}
+    \label{fig:filter-block}
+    % Prompt: Block diagram of a filter used to block amateur signals at the antenna input. The diagram should show the antenna, the filter, and the receiver, with arrows indicating the flow of signals.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Method} & \textbf{Effectiveness} \\ \hline
+    Use a filter at the antenna input & High \\ \hline
+    Switch transmitter mode & Low \\ \hline
+    Adjust transmitter power & Medium \\ \hline
+    \end{tabular}
+    \caption{Comparison of different methods to reduce fundamental overload.}
+    \label{tab:overload-methods}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B01}]
+    What can you do if you are told your FM handheld or mobile transceiver is over-deviating?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Talk louder into the microphone
+        \item Let the transceiver cool off
+        \item Change to a higher power level
+        \item \textbf{Talk farther away from the microphone}
+    \end{enumerate}
+\end{tcolorbox}
+
+If your FM transceiver is over-deviating, the best solution is to talk farther away from the microphone. This reduces the input signal strength, keeping the frequency deviation within the allowed range. Talking louder or changing the power level won’t help, and letting the transceiver cool off is irrelevant to this issue.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T7B05}]
+    How can fundamental overload of a non-amateur radio or TV receiver by an amateur signal be reduced or eliminated?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Block the amateur signal with a filter at the antenna input of the affected receiver}
+        \item Block the interfering signal with a filter on the amateur transmitter
+        \item Switch the transmitter from FM to SSB
+        \item Switch the transmitter to a narrow-band mode
+    \end{enumerate}
+\end{tcolorbox}
+
+To reduce or eliminate fundamental overload, the most effective method is to block the amateur signal with a filter at the antenna input of the affected receiver. This prevents the strong amateur signal from overwhelming the receiver. Blocking the signal at the transmitter or switching modes won’t solve the problem, as the issue lies with the receiver’s inability to handle the strong signal.

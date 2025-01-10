@@ -1,0 +1,133 @@
+\subsection{Diode Fundamentals}
+\label{subsec:diodes}
+
+Let's dive into the fascinating world of diodes! These little electronic components are like the one-way streets of the electronics world—they let current flow in only one direction. But there's more to them than just that. Let's explore some key concepts.
+
+\subsubsection*{Forward Voltage Drop}
+When you apply a voltage across a diode in the forward direction (that is, positive voltage to the anode and negative to the cathode), the diode starts conducting current. However, it doesn't do this immediately. There's a small voltage drop across the diode, known as the forward voltage drop. This drop varies depending on the type of diode. For example, a silicon diode typically has a forward voltage drop of around 0.7 volts, while a Schottky diode might have a drop as low as 0.3 volts. This is because different materials and constructions lead to different energy barriers that electrons need to overcome.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{fig:forward_voltage_drop}
+    \caption{Forward Voltage Drop in Different Diode Types}
+    \label{fig:forward_voltage_drop}
+    % Diagram showing the forward voltage drop across different types of diodes.
+\end{figure}
+
+\subsubsection*{Current Flow in a Diode}
+As mentioned earlier, diodes allow current to flow in only one direction. This is due to the PN junction inside the diode, which creates a barrier that prevents current from flowing in the reverse direction. When you apply a forward voltage, this barrier is reduced, and current can flow. Think of it like a gate that only opens one way—pretty neat, right?
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{fig:diode_current_flow}
+    \caption{Current Flow in a Diode}
+    \label{fig:diode_current_flow}
+    % Illustration of a diode allowing current to flow in one direction.
+\end{figure}
+
+\subsubsection*{Cathode Marking on a Diode}
+Ever wondered how to tell which side of a diode is the cathode? It's usually marked with a stripe on the package. This stripe is your guide to identifying the cathode, so you don't accidentally connect it the wrong way around. It's like the diode's way of saying, "Hey, this end goes here!"
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{fig:cathode_marking}
+    \caption{Cathode Marking on a Diode}
+    \label{fig:cathode_marking}
+    % Image showing the marking of the cathode lead on a semiconductor diode.
+\end{figure}
+
+\subsubsection*{Light Emission in an LED}
+Light-emitting diodes (LEDs) are a special type of diode that emit light when forward current is applied. This happens because the electrons recombine with holes in the semiconductor material, releasing energy in the form of photons. The color of the light depends on the energy gap of the semiconductor material. So, next time you see an LED light up, you'll know it's all about those electrons getting cozy with holes!
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{fig:led_light_emission}
+    \caption{Light Emission in an LED}
+    \label{fig:led_light_emission}
+    % Diagram illustrating the light emission process in an LED.
+\end{figure}
+
+\subsubsection*{Diode Electrodes}
+Every diode has two electrodes: the anode and the cathode. The anode is the positive side, and the cathode is the negative side. When you apply a forward voltage, current flows from the anode to the cathode. It's like the diode's way of saying, "This is the way, folks!"
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics{fig:diode_electrodes}
+    \caption{Diode Electrodes}
+    \label{fig:diode_electrodes}
+    % Diagram labeling the anode and cathode of a diode.
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \caption{Comparison of Forward Voltage Drop in Diode Types}
+    \label{tab:forward_voltage_comparison}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Diode Type} & \textbf{Forward Voltage Drop (V)} \\
+        \hline
+        Silicon Diode & 0.7 \\
+        Schottky Diode & 0.3 \\
+        Germanium Diode & 0.3 \\
+        LED (Red) & 1.8 \\
+        LED (Blue) & 3.3 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Questions}
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T6B01}]
+    Which is true about forward voltage drop in a diode?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{It is lower in some diode types than in others}
+        \item It is proportional to peak inverse voltage
+        \item It indicates that the diode is defective
+        \item It has no impact on the voltage delivered to the load
+    \end{enumerate}
+\end{tcolorbox}
+The forward voltage drop varies depending on the diode type, as different materials and constructions lead to different energy barriers. This is why some diodes, like Schottky diodes, have a lower forward voltage drop compared to silicon diodes.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T6B02}]
+    What electronic component allows current to flow in only one direction?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Resistor
+        \item Fuse
+        \item \textbf{Diode}
+        \item Driven element
+    \end{enumerate}
+\end{tcolorbox}
+A diode is specifically designed to allow current to flow in only one direction, thanks to its PN junction.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T6B06}]
+    How is the cathode lead of a semiconductor diode often marked on the package?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item With the word "cathode"
+        \item \textbf{With a stripe}
+        \item With the letter C
+        \item With the letter K
+    \end{enumerate}
+\end{tcolorbox}
+The cathode is typically marked with a stripe on the diode's package, making it easy to identify.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T6B07}]
+    What causes a light-emitting diode (LED) to emit light?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item \textbf{Forward current}
+        \item Reverse current
+        \item Capacitively-coupled RF signal
+        \item Inductively-coupled RF signal
+    \end{enumerate}
+\end{tcolorbox}
+When forward current is applied to an LED, electrons recombine with holes, releasing energy in the form of photons, which we see as light.
+
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T6B09}]
+    What are the names for the electrodes of a diode?
+    \begin{enumerate}[label=\Alph*),noitemsep]
+        \item Plus and minus
+        \item Source and drain
+        \item \textbf{Anode and cathode}
+        \item Gate and base
+    \end{enumerate}
+\end{tcolorbox}
+The two electrodes of a diode are called the anode (positive side) and the cathode (negative side). These terms are standard in diode terminology.

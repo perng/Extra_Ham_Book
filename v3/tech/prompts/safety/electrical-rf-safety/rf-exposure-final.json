@@ -1,0 +1,99 @@
+{
+  "section_title": "RF Exposure",
+  "label": "sec:rf-exposure-final",
+  "subsections": [
+    {
+      "title": "Non-Ionizing Radiation, MPE Limits",
+      "label": "subsec:non-ionizing",
+      "questions": [
+        "T0C01",
+        "T0C02",
+        "T0C03",
+        "T0C04",
+        "T0C05",
+        "T0C06",
+        "T0C07",
+        "T0C08",
+        "T0C09",
+        "T0C10",
+        "T0C11",
+        "T0C12",
+        "T0C13"
+      ],
+      "concepts": [
+        "Non-Ionizing Radiation",
+        "Maximum Permissible Exposure (MPE)",
+        "Duty Cycle",
+        "RF Exposure Factors",
+        "RF Safety Compliance",
+        "RF Burns",
+        "Duty Cycle Definition",
+        "RF Radiation vs Ionizing Radiation",
+        "Station Licensee Responsibility"
+      ],
+      "prompts": [
+        "Explain the concept of non-ionizing radiation and how it differs from ionizing radiation. Include examples and implications for human exposure.",
+        "Describe the concept of Maximum Permissible Exposure (MPE) limits and how they vary with frequency. Provide examples of how these limits are applied in amateur radio.",
+        "Discuss the role of duty cycle in determining safe RF radiation exposure levels. Explain how changes in duty cycle affect power density and exposure limits.",
+        "Identify and explain the factors that affect RF exposure of people near an amateur station antenna. Include frequency, power level, distance, and radiation pattern.",
+        "Explain why exposure limits vary with frequency and how the human body absorbs RF energy differently at different frequencies.",
+        "Describe the acceptable methods for determining whether a station complies with FCC RF exposure regulations. Include calculations, computer modeling, and field strength measurements.",
+        "Discuss the hazards of touching an antenna during transmission, focusing on RF burns and how they occur.",
+        "Explain the actions that can be taken to reduce exposure to RF radiation, such as relocating antennas or transmitters.",
+        "Describe how to ensure a station stays in compliance with RF safety regulations, including re-evaluating the station after changes to the transmitter or antenna system.",
+        "Explain the definition of duty cycle during the averaging time for RF exposure and its importance in determining safe exposure levels.",
+        "Compare and contrast RF radiation with ionizing radiation, focusing on their effects on human cells and DNA.",
+        "Discuss the responsibilities of the station licensee in ensuring that no person is exposed to RF energy above the FCC exposure limits."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the difference between ionizing and non-ionizing radiation, including examples of each type.",
+          "software": "SVG",
+          "caption": "Comparison of Ionizing and Non-Ionizing Radiation",
+          "label": "fig:radiation-comparison"
+        },
+        {
+          "prompt": "Graph showing how Maximum Permissible Exposure (MPE) limits vary with frequency.",
+          "software": "Matplotlib",
+          "caption": "MPE Limits vs Frequency",
+          "label": "fig:mpe-frequency"
+        },
+        {
+          "prompt": "Illustration of how duty cycle affects power density and exposure limits.",
+          "software": "SVG",
+          "caption": "Duty Cycle and Power Density",
+          "label": "fig:duty-cycle-power-density"
+        },
+        {
+          "prompt": "Diagram showing factors affecting RF exposure near an amateur station antenna, including frequency, power level, distance, and radiation pattern.",
+          "software": "SVG",
+          "caption": "Factors Affecting RF Exposure",
+          "label": "fig:rf-exposure-factors"
+        },
+        {
+          "prompt": "Illustration of how RF burns occur when touching an antenna during transmission.",
+          "software": "SVG",
+          "caption": "RF Burn Mechanism",
+          "label": "fig:rf-burn-mechanism"
+        }
+      ],
+      "table_prompt": [
+        {
+          "prompt": "Table summarizing the key differences between RF radiation and ionizing radiation.",
+          "caption": "Comparison of RF Radiation and Ionizing Radiation",
+          "label": "tab:rf-vs-ionizing"
+        },
+        {
+          "prompt": "Table showing the Maximum Permissible Exposure (MPE) limits at different frequencies.",
+          "caption": "MPE Limits at Different Frequencies",
+          "label": "tab:mpe-limits"
+        },
+        {
+          "prompt": "Table summarizing the factors affecting RF exposure and their impact.",
+          "caption": "Factors Affecting RF Exposure",
+          "label": "tab:rf-exposure-factors"
+        }
+      ]
+    }
+  ]
+}

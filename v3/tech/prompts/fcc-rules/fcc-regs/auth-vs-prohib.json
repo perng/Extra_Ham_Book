@@ -1,0 +1,146 @@
+{
+  "section_title": "Authorized vs. Prohibited Communications",
+  "label": "sec:auth-vs-prohib",
+  "section_label": "sec:auth-vs-prohib",
+  "subsections": [
+    {
+      "title": "International Communications, Third-Party Traffic",
+      "label": "subsec:intl-third-party",
+      "questions": ["T1C03", "T1F07", "T1F08"],
+      "concepts": ["Third-Party Communications", "International Communications Agreements"],
+      "prompts": [
+        "Explain the concept of third-party communications in amateur radio, including the role of the control operator and the restrictions that apply.",
+        "Discuss the conditions under which international communications are permitted for amateur radio stations, including the role of third-party agreements.",
+        "Describe the restrictions and requirements for non-licensed individuals communicating with foreign stations under the supervision of a licensed operator."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the flow of third-party communications in amateur radio, including the roles of the control operator and the third party.",
+          "software": "Graphviz",
+          "caption": "Flow of Third-Party Communications in Amateur Radio",
+          "label": "fig:third-party-flow"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the key differences between authorized and prohibited international communications in amateur radio.",
+        "caption": "Authorized vs. Prohibited International Communications",
+        "label": "tab:intl-comms"
+      }
+    },
+    {
+      "title": "Prohibited Content",
+      "label": "subsec:prohibited-content",
+      "questions": ["T1D02", "T1D06", "T1D10"],
+      "concepts": ["Broadcasting in Amateur Radio", "Prohibited Language"],
+      "prompts": [
+        "Define broadcasting in the context of amateur radio and explain why it is generally prohibited.",
+        "Discuss the restrictions on transmitting indecent or obscene language in amateur radio communications.",
+        "Explain the FCC's definition of broadcasting and how it applies to amateur radio transmissions."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Illustration showing the difference between broadcasting and two-way communication in amateur radio.",
+          "software": "SVG",
+          "caption": "Broadcasting vs. Two-Way Communication in Amateur Radio",
+          "label": "fig:broadcast-vs-two-way"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the types of prohibited content in amateur radio communications.",
+        "caption": "Prohibited Content in Amateur Radio",
+        "label": "tab:prohibited-content"
+      }
+    },
+    {
+      "title": "Business Communications, Broadcasting, Music",
+      "label": "subsec:biz-broadcast-music",
+      "questions": ["T1D04", "T1D05"],
+      "concepts": ["Business Communications", "Music Transmission"],
+      "prompts": [
+        "Explain the conditions under which amateur radio stations are authorized to transmit music, including the specific scenarios where this is allowed.",
+        "Discuss the rules governing the use of amateur radio stations for business communications, including the sale or trade of equipment."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the scenarios where music transmission is permitted in amateur radio.",
+          "software": "Graphviz",
+          "caption": "Permitted Scenarios for Music Transmission in Amateur Radio",
+          "label": "fig:music-transmission"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for business communications and music transmission in amateur radio.",
+        "caption": "Rules for Business Communications and Music Transmission",
+        "label": "tab:biz-music-rules"
+      }
+    },
+    {
+      "title": "Coded Messages, News Gathering",
+      "label": "subsec:coded-news",
+      "questions": ["T1D03", "T1D09"],
+      "concepts": ["Coded Messages", "News Gathering"],
+      "prompts": [
+        "Explain the conditions under which coded messages are permitted in amateur radio, including the specific scenarios where this is allowed.",
+        "Discuss the rules governing the use of amateur radio stations for news gathering and broadcasting support, including the conditions under which this is permitted."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart showing the conditions under which coded messages and news gathering are permitted in amateur radio.",
+          "software": "Graphviz",
+          "caption": "Conditions for Coded Messages and News Gathering in Amateur Radio",
+          "label": "fig:coded-news-flow"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for coded messages and news gathering in amateur radio.",
+        "caption": "Rules for Coded Messages and News Gathering",
+        "label": "tab:coded-news-rules"
+      }
+    },
+    {
+      "title": "When is Interference Permitted?",
+      "label": "subsec:intf-permitted",
+      "questions": ["T1D01", "T1D07", "T1D08"],
+      "concepts": ["Permitted Interference", "Compensation for Operation"],
+      "prompts": [
+        "Explain the circumstances under which interference is permitted in amateur radio, including the specific scenarios where this is allowed.",
+        "Discuss the rules governing compensation for operating an amateur radio station, including the conditions under which this is permitted."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Diagram showing the scenarios where interference is permitted in amateur radio.",
+          "software": "Graphviz",
+          "caption": "Permitted Scenarios for Interference in Amateur Radio",
+          "label": "fig:interference-scenarios"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for permitted interference and compensation in amateur radio.",
+        "caption": "Rules for Permitted Interference and Compensation",
+        "label": "tab:intf-comp-rules"
+      }
+    },
+    {
+      "title": "Operating Without Identification",
+      "label": "subsec:operating-no-id",
+      "questions": ["T1D11"],
+      "concepts": ["Station Identification"],
+      "prompts": [
+        "Explain the conditions under which an amateur radio station may operate without identifying on the air, including the specific scenarios where this is allowed."
+      ],
+      "image_prompts": [
+        {
+          "prompt": "Flowchart showing the conditions under which an amateur station may operate without identification.",
+          "software": "Graphviz",
+          "caption": "Conditions for Operating Without Identification in Amateur Radio",
+          "label": "fig:no-id-flow"
+        }
+      ],
+      "table_prompt": {
+        "prompt": "Create a table summarizing the rules for operating without identification in amateur radio.",
+        "caption": "Rules for Operating Without Identification",
+        "label": "tab:no-id-rules"
+      }
+    }
+  ]
+}
