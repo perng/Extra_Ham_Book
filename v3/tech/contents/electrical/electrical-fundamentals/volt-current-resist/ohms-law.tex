@@ -24,6 +24,32 @@ Similarly, if you need to find resistance, you can use:
 
 These formulas are your best friends when it comes to analyzing circuits. Let’s break it down further.
 
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the triangle
+        \draw[thick] (0,0) -- (3,0) -- (1.5,2.6) -- cycle;
+        
+        % Add the dividing lines
+        \draw[thick] (1.5,0) -- (1.5,1.3);
+        \draw[thick] (0.75,1.3) -- (2.25,1.3);
+        
+        % Add the variables
+        \node at (1.5,2.0) {\Large E};  % Voltage at top
+        \node at (0.75,0.4) {\Large I}; % Current at bottom left
+        \node at (2.25,0.4) {\Large R}; % Resistance at bottom right
+        
+        % Add multiplication and division symbols in filled circles
+        \node[circle, fill=black!10, minimum size=0.02cm] at (1.5,0.4) {\tiny $\times$};  % Multiplication symbol
+        \node[circle, fill=black!10, minimum size=0.02cm] at (1.1,1.3) {\tiny $\div$};    % Division symbol
+        \node[circle, fill=black!10, minimum size=0.02cm] at (1.9,1.3) {\tiny$\div$};    % Division symbol
+        
+        % Optional: Add a caption below
+        \node[below] at (1.5,-0.5) {Ohm's Law Triangle};
+    \end{tikzpicture}
+    \caption{Ohm's Law Triangle: To find any value, cover that letter and perform the operation shown between the remaining letters. For voltage (E), multiply I × R. For current (I), divide E ÷ R. For resistance (R), divide E ÷ I.}
+    \label{fig:ohms-law-triangle}
+\end{figure}
 
 \subsubsection*{Calculating Current}
 To calculate current, you need to know the voltage and resistance in the circuit. Using Equation \ref{eq:current}, you can find the current by dividing the voltage by the resistance. For example, if you have a circuit with a 12-volt battery and a 4-ohm resistor, the current would be:
@@ -51,8 +77,8 @@ In a series circuit, the current is the same through all components, but the vol
 
 \begin{figure}[h!]
     \centering
-    %\includegraphics[width=0.8\textwidth]{figures/ohms-law}
-    \caption{Ohm's Law in a simple circuit.}
+    % \includegraphics[width=0.8\textwidth]{tech/images/simple-loop-circuit.png}
+    \caption{Ohm's Law in a simple circuit}
     \label{fig:ohms-law}
     % Diagram illustrating Ohm's Law with a simple circuit showing voltage, current, and resistance.
 \end{figure}
@@ -60,6 +86,7 @@ In a series circuit, the current is the same through all components, but the vol
 \begin{figure}[h!]
     \centering
     %\includegraphics[width=0.8\textwidth]{figures/series-parallel}
+
     \caption{Series vs. parallel circuits.}
     \label{fig:series-parallel}
     % Comparison diagram of series and parallel circuits, highlighting differences in current and voltage.

@@ -35,39 +35,86 @@ So, a power increase from 5 watts to 10 watts is approximately 3 dB. Similarly, 
 
 This means a power decrease from 12 watts to 3 watts is approximately -6 dB.
 
-\subsubsection*{Practical Implications}
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \scriptsize
+        \begin{tabular}{|c|c||c|c|}
+            \hline
+            \textbf{Ratio} & \textbf{dB} & \textbf{Ratio} & \textbf{dB} \\
+            \hline
+            10000 & +40.0 & 1/10000 & -40.0 \\
+            1000 & +30.0 & 1/1000 & -30.0 \\
+            100 & +20.0 & 1/100 & -20.0 \\
+            90 & +19.5 & 1/90 & -19.5 \\
+            80 & +19.0 & 1/80 & -19.0 \\
+            70 & +18.5 & 1/70 & -18.5 \\
+            60 & +17.8 & 1/60 & -17.8 \\
+            50 & +17.0 & 1/50 & -17.0 \\
+            40 & +16.0 & 1/40 & -16.0 \\
+            30 & +14.8 & 1/30 & -14.8 \\
+            20 & +13.0 & 1/20 & -13.0 \\
+            10 & +10.0 & 1/10 & -10.0 \\
+            9 & +9.5 & 1/9 & -9.5 \\
+            8 & +9.0 & 1/8 & -9.0 \\
+            7 & +8.5 & 1/7 & -8.5 \\
+            6 & +7.8 & 1/6 & -7.8 \\
+            5 & +7.0 & 1/5 & -7.0 \\
+            4 & +6.0 & 1/4 & -6.0 \\
+            3 & +4.8 & 1/3 & -4.8 \\
+            2 & +3.0 & 1/2 & -3.0 \\
+            1 & 0.0 & 1 & 0.0 \\
+            \hline
+        \end{tabular}
+        \captionof{table}{Power Ratios to dB}
+        \label{tab:power-db-ratios}
+    \end{minipage}%
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \scriptsize
+        \begin{tabular}{|c|c||c|c|}
+            \hline
+            \textbf{dB} & \textbf{Ratio} & \textbf{dB} & \textbf{Ratio} \\
+            \hline
+            +20 & 100.0 & -20 & 0.010 \\
+            +19 & 79.4 & -19 & 0.013 \\
+            +18 & 63.1 & -18 & 0.016 \\
+            +17 & 50.1 & -17 & 0.020 \\
+            +16 & 39.8 & -16 & 0.025 \\
+            +15 & 31.6 & -15 & 0.032 \\
+            +14 & 25.1 & -14 & 0.040 \\
+            +13 & 20.0 & -13 & 0.050 \\
+            +12 & 15.8 & -12 & 0.063 \\
+            +11 & 12.6 & -11 & 0.079 \\
+            +10 & 10.0 & -10 & 0.100 \\
+            +9 & 7.94 & -9 & 0.126 \\
+            +8 & 6.31 & -8 & 0.158 \\
+            +7 & 5.01 & -7 & 0.200 \\
+            +6 & 3.98 & -6 & 0.251 \\
+            +5 & 3.16 & -5 & 0.316 \\
+            +4 & 2.51 & -4 & 0.398 \\
+            +3 & 2.00 & -3 & 0.500 \\
+            +2 & 1.58 & -2 & 0.631 \\
+            +1 & 1.26 & -1 & 0.794 \\
+            0 & 1.00 & 0 & 1.000 \\
+            \hline
+        \end{tabular}
+        \captionof{table}{dB to Power Ratios}
+        \label{tab:db-power-ratios}
+    \end{minipage}
+    \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={Key Points}]
+        Common values to remember:
+        \begin{itemize}
+            \item Double power (+3 dB) / Half power (-3 dB)
+            \item 10 times power (+10 dB) / One-tenth power (-10 dB)
+            \item 100 times power (+20 dB) / One-hundredth power (-20 dB)
+        \end{itemize}
+        \end{tcolorbox}
+        \end{figure}
+
 Understanding decibel values is crucial in radio communication. It helps you determine how much power you need to transmit a signal over a certain distance or how much power you can expect to lose due to obstacles. It's like knowing the fuel efficiency of your car—it helps you plan your journey better.
 
-\begin{figure}[h]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{figures/power-db-relationship.svg}
-    \caption{Relationship between power levels and decibel values.}
-    \label{fig:power-db-relationship}
-    % Diagram showing the relationship between power levels and decibel values.
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{figures/power-db-graph.png}
-    \caption{Graph of power changes in decibels.}
-    \label{fig:power-db-graph}
-    % Graph illustrating power increase and decrease in decibels.
-\end{figure}
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|}
-    \hline
-    \textbf{Power Change} & \textbf{Decibel Value} \\
-    \hline
-    5 W to 10 W & 3 dB \\
-    12 W to 3 W & -6 dB \\
-    20 W to 200 W & 10 dB \\
-    \hline
-    \end{tabular}
-    \caption{Summary of power changes and decibel values.}
-    \label{tab:power-db-summary}
-\end{table}
 
 \subsubsection*{Questions}
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A02}]

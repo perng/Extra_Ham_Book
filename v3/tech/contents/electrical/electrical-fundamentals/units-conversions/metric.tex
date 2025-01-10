@@ -21,76 +21,98 @@ Capacitance, measured in farads (F), often involves very small values, such as p
 \subsubsection*{Practical Applications of Frequency Conversions}
 Frequency conversions are not just theoretical; they have practical applications in radio technology. For example, converting MHz to kHz is necessary when working with different radio bands. Similarly, converting GHz to MHz is important in microwave communications. These conversions ensure that signals are transmitted and received at the correct frequencies, avoiding interference and ensuring clear communication.
 
-\begin{figure}[htbp]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{metric-prefixes}
-    \caption{Metric Prefixes and Their Values}
-    \label{fig:metric-prefixes}
-    % Diagram showing the relationship between different metric prefixes (kilo, mega, milli, micro, etc.) and their corresponding values.
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     % \includegraphics[width=0.8\textwidth]{metric-prefixes}
+%     \caption{Metric Prefixes and Their Values}
+%     \label{fig:metric-prefixes}
+%     % Diagram showing the relationship between different metric prefixes (kilo, mega, milli, micro, etc.) and their corresponding values.
+% \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{unit-conversion-flowchart}
-    \caption{Unit Conversion Flowchart}
-    \label{fig:unit-conversion-flowchart}
-    % Flowchart illustrating the process of converting between different units of electrical measurements.
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     % \includegraphics[width=0.8\textwidth]{unit-conversion-flowchart}
+%     \caption{Unit Conversion Flowchart}
+%     \label{fig:unit-conversion-flowchart}
+%     % Flowchart illustrating the process of converting between different units of electrical measurements.
+% \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{frequency-units}
-    \caption{Frequency Unit Relationships}
-    \label{fig:frequency-units}
-    % Graph showing the relationship between frequency units (Hz, kHz, MHz, GHz).
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     % \includegraphics[width=0.8\textwidth]{frequency-units}
+%     \caption{Frequency Unit Relationships}
+%     \label{fig:frequency-units}
+%     % Graph showing the relationship between frequency units (Hz, kHz, MHz, GHz).
+% \end{figure}
 
 \begin{table}[htbp]
     \centering
-    \caption{Common Metric Prefixes}
+    \caption{Common Metric Prefixes and Electrical Units}
     \label{tab:metric-prefixes}
-    \begin{tabular}{|c|c|c|}
+    \footnotesize
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
         \hline
-        Prefix & Symbol & Value \\
+        Prefix & Symbol & Scientific & Current & Voltage & Resistance & Capacitance & Inductance & Frequency \\
+        & & Notation & (Amperes) & (Volts) & (Ohms) & (Farads) & (Henries) & (Hertz) \\
         \hline
-        Kilo & k & $10^3$ \\
-        Mega & M & $10^6$ \\
-        Milli & m & $10^{-3}$ \\
-        Micro & $\mu$ & $10^{-6}$ \\
+        Tera & T & $10^{12}$ & TA & TV & T$\Omega$ & TF & TH & THz \\
+        Giga & G & $10^9$ & GA & GV & G$\Omega$ & GF & GH & GHz \\
+        Mega & M & $10^6$ & MA & MV & M$\Omega$ & MF & MH & MHz \\
+        Kilo & k & $10^3$ & kA & kV & k$\Omega$ & kF & kH & kHz \\
         \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[htbp]
-    \centering
-    \caption{Unit Conversion Factors}
-    \label{tab:unit-conversion-factors}
-    \begin{tabular}{|c|c|}
+        (unit) & - & $10^0$ & A & V & $\Omega$ & F & H & Hz \\
         \hline
-        Conversion & Factor \\
-        \hline
-        1 A to mA & 1,000 \\
-        1 V to kV & 0.001 \\
-        1 W to mW & 1,000 \\
-        1 F to pF & $10^{12}$ \\
+        milli & m & $10^{-3}$ & mA & mV & m$\Omega$ & mF & mH & mHz \\
+        micro & $\mu$ & $10^{-6}$ & $\mu$A & $\mu$V & $\mu\Omega$ & $\mu$F & $\mu$H & $\mu$Hz \\
+        nano & n & $10^{-9}$ & nA & nV & n$\Omega$ & nF & nH & nHz \\
+        pico & p & $10^{-12}$ & pA & pV & p$\Omega$ & pF & pH & pHz \\
+        femto & f & $10^{-15}$ & fA & fV & f$\Omega$ & fF & fH & fHz \\
         \hline
     \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
-    \centering
-    \caption{Frequency Unit Conversions}
-    \label{tab:frequency-conversions}
-    \begin{tabular}{|c|c|}
-        \hline
-        Conversion & Factor \\
-        \hline
-        1 Hz to kHz & 0.001 \\
-        1 kHz to MHz & 0.001 \\
-        1 MHz to GHz & 0.001 \\
-        \hline
-    \end{tabular}
-\end{table}
+\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={Common Usage}]
+Most frequently used combinations in amateur radio:
+\begin{itemize}
+    \item Current: mA, A
+    \item Voltage: mV, V, kV
+    \item Resistance: $\Omega$, k$\Omega$, M$\Omega$
+    \item Capacitance: pF, nF, $\mu$F
+    \item Inductance: $\mu$H, mH, H
+    \item Frequency: Hz, kHz, MHz, GHz
+\end{itemize}
+\end{tcolorbox}
+
+% \begin{table}[htbp]
+%     \centering
+%     \caption{Unit Conversion Factors}
+%     \label{tab:unit-conversion-factors}
+%     \begin{tabular}{|c|c|}
+%         \hline
+%         Conversion & Factor \\
+%         \hline
+%         1 A to mA & 1,000 \\
+%         1 V to kV & 0.001 \\
+%         1 W to mW & 1,000 \\
+%         1 F to pF & $10^{12}$ \\
+%         \hline
+%     \end{tabular}
+% \end{table}
+
+% \begin{table}[htbp]
+%     \centering
+%     \caption{Frequency Unit Conversions}
+%     \label{tab:frequency-conversions}
+%     \begin{tabular}{|c|c|}
+%         \hline
+%         Conversion & Factor \\
+%         \hline
+%         1 Hz to kHz & 0.001 \\
+%         1 kHz to MHz & 0.001 \\
+%         1 MHz to GHz & 0.001 \\
+%         \hline
+%     \end{tabular}
+% \end{table}
 
 \textbf{Questions}
 
