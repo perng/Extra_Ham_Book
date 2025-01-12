@@ -1,40 +1,45 @@
 \subsection{Transistors (BJT, FET), Amplification}
 \label{subsec:transistors}
 
-Transistors are the unsung heroes of modern electronics. They’re like tiny traffic cops, directing the flow of electrons in circuits. But unlike traffic cops, they don’t need coffee breaks. In this section, we’ll explore how transistors work, focusing on two main types: Bipolar Junction Transistors (BJTs) and Field-Effect Transistors (FETs). We’ll also dive into the concept of amplification and how these little devices can make weak signals strong enough to be useful.
+Transistors are semiconductor devices that serve as the fundamental building blocks of modern electronics. Think of them as tiny electronic switches or amplifiers that can control the flow of electricity. What makes transistors truly remarkable is that they can use a small electrical signal to control a much larger one—like using a small stream of water to control a powerful river!
+
+At their core, transistors are made from layers of semiconductor materials (usually silicon) that have been specially treated or "doped" to create specific electrical properties. These layers work together to control the flow of electrons in ways that make our modern electronic devices possible. Without transistors, we wouldn't have computers, smartphones, or any of the digital technology we rely on today.
+
+Transistors can perform three essential functions:
+\begin{itemize}
+    \item Amplification: Making weak signals stronger
+    \item Switching: Turning electrical signals on and off
+    \item Control: Regulating the amount of current flowing through a circuit
+\end{itemize}
+
+In this section, we'll explore how transistors work, focusing on two main types: Bipolar Junction Transistors (BJTs) and Field-Effect Transistors (FETs). We'll also dive into the concept of amplification and how these little devices can make weak signals strong enough to be useful.
 
 \subsubsection*{Transistor as an Electronic Switch}
 One of the most common uses of a transistor is as an electronic switch. Imagine you have a light bulb, and you want to turn it on and off using a small signal. A transistor can do this job perfectly. When a small current or voltage is applied to the base (in a BJT) or the gate (in a FET), it allows a larger current to flow between the collector and emitter (in a BJT) or the drain and source (in a FET). This is like flipping a switch—except it’s all done electronically, no physical flipping required!
 
-% Diagram showing a transistor used as an electronic switch.
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.6\textwidth]{transistor_switch.svg}
-    \caption{Transistor as an Electronic Switch. The diagram shows how a small input signal controls a larger output current.}
-    \label{fig:transistor_switch}
-\end{figure}
+
 
 \subsubsection*{Structure of a Transistor}
-A transistor, whether it’s a BJT or a FET, is made up of three regions of semiconductor material. In a BJT, these regions are called the emitter, base, and collector. The base is the middle layer, and it’s very thin. The emitter and collector are on either side. In a FET, the regions are called the source, gate, and drain. The gate controls the flow of electrons from the source to the drain. Think of it like a water faucet: the gate is the handle, and the source and drain are the pipes.
+A transistor, whether it's a BJT or a FET, is made up of three regions of semiconductor material, each connected to an electrode (an electrical conductor through which current can flow into or out of a component). In a BJT, these electrodes are called the emitter, base, and collector. The base is the middle layer, and it's very thin. The emitter and collector are on either side. In a FET, the electrodes are called the source, gate, and drain. The gate controls the flow of electrons from the source to the drain. Think of it like a water faucet: the gate is the handle, and the source and drain are the pipes.
 
 % Illustration of the three regions of a bipolar junction transistor.
 \begin{figure}[h!]
     \centering
-    % \includegraphics[width=0.6\textwidth]{bjt_structure.svg}
-    \caption{Bipolar Junction Transistor Structure. The diagram shows the emitter, base, and collector regions.}
+    \includegraphics[width=0.6\textwidth]{tech/images/bjt-transistor.png}
+    \caption{Bipolar Junction Transistor Structure: Cross-sectional view of an NPN transistor showing the three semiconductor layers (Emitter, Base, and Collector), along with the symbol. The base region is very thin compared to the emitter and collector regions. Electron flow  $I_c$, $I_b$, $I_e$ represent the current on the collector, base, and emitter, respectively. }
     \label{fig:bjt_structure}
 \end{figure}
 
 \subsubsection*{Field-Effect Transistor (FET)}
 FETs are a bit different from BJTs. Instead of using a current to control the flow of electrons, FETs use a voltage. The gate in a FET is like a gatekeeper—it controls how many electrons can pass from the source to the drain. FETs are often used in low-power applications because they’re very efficient. They’re also the backbone of modern integrated circuits, like the ones in your smartphone.
 
-% Diagram of a Field-Effect Transistor (FET) showing the gate, drain, and source.
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.6\textwidth]{fet_structure.svg}
-    \caption{Field-Effect Transistor (FET) Structure. The diagram shows the gate, drain, and source regions.}
-    \label{fig:fet_structure}
-\end{figure}
+% % Diagram of a Field-Effect Transistor (FET) showing the gate, drain, and source.
+% \begin{figure}[h!]
+%     \centering
+%     % \includegraphics[width=0.6\textwidth]{fet_structure.svg}
+%     \caption{Field-Effect Transistor (FET) Structure. The diagram shows the gate, drain, and source regions.}
+%     \label{fig:fet_structure}
+% \end{figure}
 
 \subsubsection*{What Does FET Stand For?}
 FET stands for Field-Effect Transistor. The “field-effect” part refers to the way the gate controls the flow of electrons. It creates an electric field that either allows or blocks the flow of electrons from the source to the drain. This is different from a BJT, which uses a current to control the flow.
@@ -45,8 +50,31 @@ One of the most important features of a transistor is its ability to amplify sig
 % Graph showing the power gain provided by a transistor.
 \begin{figure}[h!]
     \centering
-    % \includegraphics[width=0.6\textwidth]{transistor_power_gain.svg}
-    \caption{Transistor Power Gain. The graph shows how a small input signal results in a larger output signal.}
+    \begin{minipage}{0.45\textwidth}
+        \begin{tikzpicture}[scale=0.6]
+            % Grid and axes
+            \draw[->] (0,0) -- (8,0) node[right] {Time};
+            \draw[->] (0,-2) -- (0,2) node[above] {Voltage};
+            
+            % Input signal (smaller amplitude)
+            \draw[blue, thick, smooth] plot[domain=0:8,samples=100] 
+                (\x,{0.5*sin(2*\x r)});
+                
+            % Output signal (larger amplitude)
+            \draw[red, thick, smooth] plot[domain=0:8,samples=100] 
+                (\x,{1.5*sin(2*\x r)});
+            
+            \draw[blue, thick, smooth] (8,1.5) -- (9,1.5) node[right]{Input};
+            \draw[red, thick, smooth] (8,0.8) -- (9,0.8) node[right]{Output};
+        \end{tikzpicture}
+        \caption*{(a) Signal amplification: A small input signal (blue) is amplified to produce a larger output signal (red)}
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=0.3\textwidth]{tech/images/transistor-amplifier.png}
+        \caption*{(b) Schematic diagram of a common emitter amplifier circuit}
+    \end{minipage}
+    \caption{Transistor Power Gain. }
     \label{fig:transistor_power_gain}
 \end{figure}
 
@@ -57,12 +85,12 @@ Gain is a term that describes how much a device can amplify a signal. It’s usu
 In a BJT, the three electrodes are called the emitter, base, and collector. The emitter is where the electrons start their journey, the base controls the flow, and the collector is where they end up. It’s like a relay race: the emitter hands off the electrons to the base, which then passes them to the collector.
 
 % Diagram labeling the emitter, base, and collector of a bipolar junction transistor.
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.6\textwidth]{bjt_electrodes.svg}
-    \caption{BJT Electrodes. The diagram labels the emitter, base, and collector of a BJT.}
-    \label{fig:bjt_electrodes}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     % \includegraphics[width=0.6\textwidth]{bjt_electrodes.svg}
+%     \caption{BJT Electrodes. The diagram labels the emitter, base, and collector of a BJT.}
+%     \label{fig:bjt_electrodes}
+% \end{figure}
 
 \subsubsection*{Comparison of BJT and FET Transistors}
 To wrap things up, let’s compare BJTs and FETs. BJTs are current-controlled devices, while FETs are voltage-controlled. BJTs are generally better for high-power applications, while FETs are more efficient for low-power applications. Both have their strengths and weaknesses, and the choice between them depends on the specific application.

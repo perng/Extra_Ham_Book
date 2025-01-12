@@ -1,7 +1,19 @@
 \subsection{Core Definitions}
 \label{subsec:core-defs}
 
-Let's dive into some core definitions that are essential for understanding radio technology. These concepts are the building blocks of everything we'll discuss later, so let's make sure we're on the same page (pun intended).
+Let's dive into some core definitions that are essential for understanding radio technology. These concepts are the building blocks of everything we'll discuss later. We have already discussed some of these concepts in Section~\ref{subsec:minimal-core-defs} but here we will discuss them in more detail.
+
+\subsubsection*{Electric Charge}
+Electric charge is the fundamental property of matter that causes it to experience electromagnetic forces. It's measured in \textbf{Coulombs} (C), named after Charles-Augustin de Coulomb, who probably spent a lot of time rubbing balloons on his hair for science. One Coulomb is approximately equal to \(6.242 \times 10^{18}\) elementary charges (like electrons or protons).
+
+Think of electric charge like tiny magnets that can either attract or repel each other:
+\begin{itemize}[noitemsep]
+    \item Positive charges (like protons) repel other positive charges
+    \item Negative charges (like electrons) repel other negative charges
+    \item Positive and negative charges attract each other (opposites attract!)
+\end{itemize}
+
+When we talk about current flow in a circuit, we're really talking about the movement of these charges. A current of one Ampere means one Coulomb of charge is flowing past a point each second. That's a lot of electrons doing a synchronized dance through your circuit!
 
 \subsubsection*{Electrical Current}
 Electrical current is the flow of electric charge, typically carried by electrons in a conductor. It's measured in \textbf{Amperes} (A), named after André-Marie Ampère, who was quite the electrifying figure in the world of physics. The current can be calculated using the formula:
@@ -29,12 +41,9 @@ Metals are generally good conductors of electricity because they have many free 
 Alternating current (AC) is a type of current that periodically reverses direction. This is different from direct current (DC), which flows in one direction only. AC is what powers most of our homes and appliances. It alternates between positive and negative directions, making it ideal for long-distance power transmission.
 
 \subsubsection*{Electrical Power}
-Electrical power is the rate at which electrical energy is used. It's measured in \textbf{Watts} (W), named after James Watt, who probably didn't foresee his name being used to measure the power of light bulbs. The power in a circuit can be calculated using:
-\begin{equation}
-    P = V \times I
-    \label{eq:power}
-\end{equation}
-where \( P \) is power, \( V \) is voltage, and \( I \) is current. This equation tells us how much energy is being used per second.
+Electrical power is the rate at which electrical energy is transferred by an electric circuit. In simpler terms, it's how much "oomph" your radio signal has. The unit of power is the \textbf{Watt} (W), named after the Scottish engineer James Watt. You might have heard of other units like volts or amperes, but when it comes to power, watts are the star of the show. 
+
+In radio technology, power is everything. It determines how far your signal can travel and how well it can overcome obstacles. Whether you're transmitting a signal or receiving one, power is the key player.
 
 \begin{table}[h]
     \centering
@@ -44,6 +53,7 @@ where \( P \) is power, \( V \) is voltage, and \( I \) is current. This equatio
         \hline
         \textbf{Concept} & \textbf{Unit} & \textbf{Definition} \\
         \hline
+        Charge & Coulombs (C) & Fundamental property causing electromagnetic force \\
         Current & Amperes (A) & Flow of electric charge \\
         Voltage & Volts (V) & Electric potential difference \\
         Resistance & Ohms (\(\Omega\)) & Opposition to current flow \\
@@ -147,16 +157,6 @@ Glass is a good electrical insulator because it does not have free electrons to 
 \end{tcolorbox}
 Alternating current (AC) alternates between positive and negative directions. It does not just alternate between a direction and zero.
 
-\begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A10}]
-    Which term describes the rate at which electrical energy is used?
-    \begin{enumerate}[label=\Alph*),noitemsep]
-        \item Resistance
-        \item Current
-        \item \textbf{Power}
-        \item Voltage
-    \end{enumerate}
-\end{tcolorbox}
-Power is the rate at which electrical energy is used. Resistance opposes current, current is the flow of charge, and voltage is the force that causes the flow.
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T5A11}]
     What type of current flow is opposed by resistance?
@@ -168,3 +168,4 @@ Power is the rate at which electrical energy is used. Resistance opposes current
     \end{enumerate}
 \end{tcolorbox}
 Resistance opposes all types of current flow, whether it's direct current (DC), alternating current (AC), or radio frequency (RF) current. Resistance is a universal party pooper for electron flow.
+

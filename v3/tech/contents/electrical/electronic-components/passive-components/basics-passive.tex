@@ -3,12 +3,33 @@
 
 Let's dive into the fundamental components that make up the backbone of any electronic circuit. These components are like the unsung heroes of the electronics world—often overlooked but absolutely essential. We'll start with resistors, capacitors, inductors, and switches, and then move on to some battery chemistry basics. By the end of this section, you'll have a solid understanding of how these components work and why they're so important.
 
+
+
+\begin{figure}[h!]
+    \centering
+    \footnotesize
+    \begin{tabular}{ccccc}
+        % Row 1 - Resistive and Protection Components
+        \includegraphics[width=0.11\textwidth]{tech/images/resistor} &
+        \includegraphics[width=0.11\textwidth]{tech/images/potentiometer} &
+        \includegraphics[width=0.11\textwidth]{tech/images/fuse} &
+        \includegraphics[width=0.11\textwidth]{tech/images/capacitor} &
+        \includegraphics[width=0.11\textwidth]{tech/images/variable-capacitor} \\
+        Through-hole Resistor & Potentiometer & Glass Fuse & Ceramic Capacitor & Variable Capacitor \\[2em]
+        % Row 2 - Inductors and Switches
+        \includegraphics[width=0.11\textwidth]{tech/images/inductor} &
+        \includegraphics[width=0.11\textwidth]{tech/images/variable-inductor} &
+        \includegraphics[width=0.11\textwidth]{tech/images/spst} &
+        \includegraphics[width=0.11\textwidth]{tech/images/spdt} & \\
+        Toroid Inductor & Variable Inductor & SPST Switch & SPDT Switch & \\
+    \end{tabular}
+    \caption{Common electronic components used in radio circuits. Top row: fixed resistor with color-coded bands, potentiometer for variable resistance, glass fuse for circuit protection, fixed ceramic capacitor, and variable capacitor for tuning. Bottom row: toroidal inductor, variable inductor for RF adjustments, SPST switch for on/off control, and SPDT switch for selecting between two circuits.}
+    \label{fig:component-photos}
+\end{figure}
+
+
 \subsubsection*{Resistors: The Traffic Cops of Current}
-A resistor is like the traffic cop of a DC circuit—it controls the flow of current. When current tries to flow through a resistor, it faces opposition, which we call resistance. This opposition is measured in ohms ($\Omega$). The higher the resistance, the harder it is for current to flow. This relationship is described by Ohm's Law:
-\begin{equation}
-    V = I \cdot R
-\end{equation}
-where $V$ is voltage, $I$ is current, and $R$ is resistance. So, if you increase the resistance, the current decreases, assuming the voltage stays the same. Simple, right?
+A resistor is like the traffic cop of a DC circuit—it controls the flow of current. When current tries to flow through a resistor, it faces opposition, which we call resistance. This opposition is measured in ohms ($\Omega$). The higher the resistance, the harder it is for current to flow. This relationship is described by Ohm's Law (Equation~\ref{eq:ohms-law}).
 
 \subsubsection*{Potentiometers: The Volume Knob}
 Ever wondered how the volume knob on your stereo works? That's a potentiometer in action! A potentiometer is essentially a variable resistor. It has three terminals: two fixed ends and a movable wiper. By adjusting the wiper, you can change the resistance between the wiper and one of the fixed ends. This is how you control the volume—by adjusting the resistance, you control the amount of current flowing through the circuit, which in turn controls the volume.
@@ -66,69 +87,6 @@ A Single-Pole Single-Throw (SPST) switch is the simplest type of switch. It has 
     \end{tabular}
 \end{table}
 
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{resistor-current-flow}
-    \caption{Current flow through a resistor in a DC circuit.}
-    \label{fig:resistor-current-flow}
-    % Diagram showing the flow of current through a resistor in a DC circuit.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{potentiometer-volume-control}
-    \caption{Potentiometer in a volume control circuit.}
-    \label{fig:potentiometer-volume-control}
-    % Illustration of a potentiometer with adjustable wiper and its use in a volume control circuit.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{capacitor-structure}
-    \caption{Structure of a capacitor.}
-    \label{fig:capacitor-structure}
-    % Diagram of a capacitor showing conductive plates separated by an insulator.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{inductor-magnetic-field}
-    \caption{Inductor and its magnetic field.}
-    \label{fig:inductor-magnetic-field}
-    % Illustration of an inductor as a coil of wire and its magnetic field.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{spdt-switch}
-    \caption{SPDT switch mechanism.}
-    \label{fig:spdt-switch}
-    % Diagram of an SPDT switch showing its switching mechanism.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{fuse-circuit}
-    \caption{Fuse in a circuit.}
-    \label{fig:fuse-circuit}
-    % Illustration of a fuse protecting a circuit from current overload.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{battery-chemistries}
-    \caption{Comparison of battery chemistries.}
-    \label{fig:battery-chemistries}
-    % Comparison chart of rechargeable and non-rechargeable battery chemistries.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{spst-switch}
-    \caption{Single-pole single-throw switch.}
-    \label{fig:spst-switch}
-    % Diagram of a single-pole single-throw switch in a circuit.
-\end{figure}
 
 \subsubsection*{Questions}
 

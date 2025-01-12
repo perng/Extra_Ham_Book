@@ -17,7 +17,8 @@
                   "title": "Purpose and Advancement of Radio Art",
                   "label": "subsec:purpose-advancement",
                   "questions": [
-                    "T1A01", "T1A02"
+                    "T1A01",
+                    "T1A02"
                   ]
                 },
                 {
@@ -55,33 +56,35 @@
               "section_title": "FCC and the Amateur Service",
               "label": "sec:fcc-oversight",
               "subsections": [
-              {
-              "section_title": "License Classes and Frequency Privileges",
-              "label": "sec:license-classes",
-              "subsections": [
                 {
-                  "title": "Classes of Licenses",
-                  "label": "subsec:license-classes-overview",
-                  "questions": [
-                    "T1C01"
-                  ]
-                },
-                {
-                  "title": "HF/VHF/UHF Privileges and Sub-bands",
-                  "label": "subsec:freq-privs",
-                  "questions": [
-                    "T1B01",
-                    "T1B02",
-                    "T1B03",
-                    "T1B04",
-                    "T1B05",
-                    "T1B06",
-                    "T1B07",
-                    "T1B08",
-                    "T1B09",
-                    "T1B10",
-                    "T1B11",
-                    "T1B12"
+                  "title": "License Classes and Frequency Privileges",
+                  "label": "sec:license-classes",
+                  "subsections": [
+                    {
+                      "title": "Classes of Licenses",
+                      "label": "subsec:license-classes-overview",
+                      "questions": [
+                        "T1C01"
+                      ]
+                    },
+                    {
+                      "title": "HF/VHF/UHF Privileges and Sub-bands",
+                      "label": "subsec:freq-privs",
+                      "questions": [
+                        "T1B01",
+                        "T1B02",
+                        "T1B03",
+                        "T1B04",
+                        "T1B05",
+                        "T1B06",
+                        "T1B07",
+                        "T1B08",
+                        "T1B09",
+                        "T1B10",
+                        "T1B11",
+                        "T1B12"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -123,6 +126,55 @@
                   "label": "subsec:operating-location",
                   "questions": [
                     "T1C06"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chapter_title": "Basic Electrical Terminology for Radio Operators",
+          "label": "chap:minimal-electrical-fundamentals",
+          "sections": [
+            {
+              "section_title": "Frequency and Power",
+              "label": "sec:freq-power",
+              "subsections": [
+                {
+                  "title": "Core Definitions",
+                  "label": "subsec:minimal-freq-power-defs",
+                  "questions": [
+                    "T5A01",
+                    "T5A03",
+                    "T5A04",
+                    "T5A05",
+                    "T5A07",
+                    "T5A08",
+                    "T5A09",
+                    "T5A10",
+                    "T5A11"
+                  ]
+                }
+              ]
+            },
+            {
+              "section_title": "Units and Conversions",
+              "label": "sec:minimal-basic-units-conversions",
+              "subsections": [
+                {
+                  "title": "Metric Units (k, M, etc.)",
+                  "label": "subsec:minimal-metric",
+                  "questions": [
+                    "T5B01",
+                    "T5B02",
+                    "T5B03",
+                    "T5B04",
+                    "T5B05",
+                    "T5B06",
+                    "T5B07",
+                    "T5B08",
+                    "T5B12",
+                    "T5B13"
                   ]
                 }
               ]
@@ -301,7 +353,7 @@
       "label": "part:electrical",
       "chapters": [
         {
-          "chapter_title": "Electrical Fundamentals",
+          "chapter_title": "Basic Electrical Foundations for Radio Operators",
           "label": "chap:electrical-fundamentals",
           "sections": [
             {
@@ -321,42 +373,6 @@
                     "T5A09",
                     "T5A10",
                     "T5A11"
-                  ]
-                },
-                {
-                  "title": "Ohm’s Law and Circuit Calculations",
-                  "label": "subsec:ohms-law",
-                  "questions": [
-                    "T5D01",
-                    "T5D02",
-                    "T5D03",
-                    "T5D04",
-                    "T5D05",
-                    "T5D06",
-                    "T5D07",
-                    "T5D08",
-                    "T5D09",
-                    "T5D10",
-                    "T5D11",
-                    "T5D12",
-                    "T5D13",
-                    "T5D14"
-                  ]
-                }
-              ]
-            },
-            {
-              "section_title": "Power and Decibels",
-              "label": "sec:power-decibels",
-              "subsections": [
-                {
-                  "title": "Electrical Power, Decibel Calculations",
-                  "label": "subsec:power-db",
-                  "questions": [
-                    "T5A02",
-                    "T5B09",
-                    "T5B10",
-                    "T5B11"
                   ]
                 }
               ]
@@ -386,35 +402,31 @@
           ]
         },
         {
-          "chapter_title": "AC, Impedance, and Circuit Concepts",
-          "label": "chap:ac-circuits",
+          "chapter_title": "Impedance and Circuit Concepts",
+          "label": "chap:impedance-circuits",
           "sections": [
             {
-              "section_title": "AC vs. DC, Frequency, Wavelength",
-              "label": "sec:ac-dc-freq",
+              "section_title": "Ohm's Law",
+              "label": "sec:ohms-law",
               "subsections": [
                 {
-                  "title": "Definitions and Effects",
-                  "label": "subsec:ac-basics2",
-                  "questions": []
-                },
-                {
-                  "title": "Frequency & Wavelength Calculations",
-                  "label": "subsec:freq-wavelength",
+                  "title": "Ohm’s Law and Circuit Calculations",
+                  "label": "subsec:ohms-law",
                   "questions": [
-                    "T3B01",
-                    "T3B02",
-                    "T3B03",
-                    "T3B04",
-                    "T3B05",
-                    "T3B06",
-                    "T3B07",
-                    "T3B08",
-                    "T3B09",
-                    "T3B10",
-                    "T3B11",
-                    "T5A06",
-                    "T5A12"
+                    "T5D01",
+                    "T5D02",
+                    "T5D03",
+                    "T5D04",
+                    "T5D05",
+                    "T5D06",
+                    "T5D07",
+                    "T5D08",
+                    "T5D09",
+                    "T5D10",
+                    "T5D11",
+                    "T5D12",
+                    "T5D13",
+                    "T5D14"
                   ]
                 }
               ]
@@ -446,14 +458,6 @@
                     "T5C05",
                     "T5C12",
                     "T5C13"
-                  ]
-                },
-                {
-                  "title": "RF and Frequency Abbreviations",
-                  "label": "subsec:rf-abbrev",
-                  "questions": [
-                    "T5C06",
-                    "T5C07"
                   ]
                 },
                 {
@@ -593,6 +597,61 @@
           "chapter_title": "Transceivers, Receivers, and Transmitters",
           "label": "chap:transceivers",
           "sections": [
+            {
+              "section_title": "Frequency, Wavelength",
+              "label": "sec:ac-dc-freq",
+              "subsections": [
+                {
+                  "title": "Definitions and Effects",
+                  "label": "subsec:ac-basics2",
+                  "questions": []
+                },
+                {
+                  "title": "Frequency & Wavelength Calculations",
+                  "label": "subsec:freq-wavelength",
+                  "questions": [
+                    "T3B01",
+                    "T3B02",
+                    "T3B03",
+                    "T3B04",
+                    "T3B05",
+                    "T3B06",
+                    "T3B07",
+                    "T3B08",
+                    "T3B09",
+                    "T3B10",
+                    "T3B11",
+                    "T5A06",
+                    "T5A12"
+                  ]
+                },
+                {
+                  "title": "RF and Frequency Abbreviations",
+                  "label": "subsec:rf-abbrev",
+                  "questions": [
+                    "T5C06",
+                    "T5C07"
+                  ]
+                }
+
+              ]
+            },
+            {
+              "section_title": "Decibels",
+              "label": "sec:power-decibels",
+              "subsections": [
+                {
+                  "title": "Decibel Calculations",
+                  "label": "subsec:power-db",
+                  "questions": [
+                    "T5A02",
+                    "T5B09",
+                    "T5B10",
+                    "T5B11"
+                  ]
+                }
+              ]
+            },            
             {
               "section_title": "Fundamentals of Radios",
               "label": "sec:radio-fundamentals",
@@ -873,54 +932,6 @@
           ]
         },
         {
-          "chapter_title": "Feed Lines and SWR",
-          "label": "chap:feedlines-swr",
-          "sections": [
-            {
-              "section_title": "Coax, Ladder Line, Connectors",
-              "label": "sec:coax-ladder",
-              "subsections": [
-                {
-                  "title": "Coax Impedance and Loss",
-                  "label": "subsec:coax-imp",
-                  "questions": [
-                    "T9B01",
-                    "T9B02",
-                    "T9B03",
-                    "T9B05",
-                    "T9B08",
-                    "T9B10",
-                    "T9B11"
-                  ]
-                },
-                {
-                  "title": "Connectors (PL-259, Type N, etc.)",
-                  "label": "subsec:connectors",
-                  "questions": [
-                    "T9B06",
-                    "T9B07"
-                  ]
-                },
-                {
-                  "title": "Installation and Maintenance",
-                  "label": "subsec:install-maint",
-                  "questions": [
-                    "T9B09"
-                  ]
-                },
-                {
-                  "title": "Standing Wave Ratio (SWR)",
-                  "label": "subsec:standing-wave",
-                  "questions": [
-                    "T9B04",
-                    "T9B12"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "chapter_title": "Radio Wave Propagation",
           "label": "chap:propagation",
           "sections": [
@@ -972,7 +983,56 @@
               ]
             }
           ]
+        },
+        {
+          "chapter_title": "Feed Lines and SWR",
+          "label": "chap:feedlines-swr",
+          "sections": [
+            {
+              "section_title": "Coax, Ladder Line, Connectors",
+              "label": "sec:coax-ladder",
+              "subsections": [
+                {
+                  "title": "Coax Impedance and Loss",
+                  "label": "subsec:coax-imp",
+                  "questions": [
+                    "T9B01",
+                    "T9B02",
+                    "T9B03",
+                    "T9B05",
+                    "T9B08",
+                    "T9B10",
+                    "T9B11"
+                  ]
+                },
+                {
+                  "title": "Connectors (PL-259, Type N, etc.)",
+                  "label": "subsec:connectors",
+                  "questions": [
+                    "T9B06",
+                    "T9B07"
+                  ]
+                },
+                {
+                  "title": "Installation and Maintenance",
+                  "label": "subsec:install-maint",
+                  "questions": [
+                    "T9B09"
+                  ]
+                },
+                {
+                  "title": "Standing Wave Ratio (SWR)",
+                  "label": "subsec:standing-wave",
+                  "questions": [
+                    "T9B04",
+                    "T9B12"
+                  ]
+                }
+              ]
+            }
+          ]
         }
+
       ]
     },
     {

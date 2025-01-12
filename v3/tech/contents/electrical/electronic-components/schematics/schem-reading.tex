@@ -12,8 +12,7 @@ In schematics, each component is represented by a unique symbol. For example, a 
 \subsubsection*{Identifying Components}
 Let's take a closer look at some common components and their symbols:
 
-\begin{itemize}
-    \item \textbf{Resistor}: Represented by a zigzag line. Resistors are used to limit the flow of current in a circuit.
+\begin{itemize}[noitemsep]    \item \textbf{Resistor}: Represented by a zigzag line. Resistors are used to limit the flow of current in a circuit.
     \item \textbf{Transistor}: Typically shown as a combination of lines and arrows. Transistors are used to amplify or switch electronic signals.
     \item \textbf{Battery}: Depicted as a series of long and short lines. Batteries provide the power needed to run the circuit.
     \item \textbf{Ground Symbol}: A horizontal line with three downward-pointing lines. This symbol represents the reference point in a circuit, often connected to the earth or a common return path.
@@ -34,38 +33,81 @@ Transformers are depicted as two coils with a line between them. They are used t
 \subsubsection*{Antennas}
 Antennas are represented by a simple line with a small triangle at the end. They are used to transmit or receive radio signals, making them a key component in radio circuits.
 
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=0.8\textwidth]{schematic-example}
-    \caption{Example schematic diagram with standard electronic components.}
-    \label{fig:schematic-example}
-    % Prompt: A detailed schematic diagram showing common electronic components like resistors, capacitors, transistors, and LEDs.
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     %\includegraphics[width=0.8\textwidth]{schematic-example}
+%     \caption{Example schematic diagram with standard electronic components.}
+%     \label{fig:schematic-example}
+%     % Prompt: A detailed schematic diagram showing common electronic components like resistors, capacitors, transistors, and LEDs.
+% \end{figure}
 
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=0.8\textwidth]{component-symbols}
-    \caption{Comparison of physical components and their schematic symbols.}
-    \label{fig:component-symbols}
-    % Prompt: A comparison of physical components and their schematic symbols.
-\end{figure}
+% \begin{figure}[h]
+%     \centering
+%     %\includegraphics[width=0.8\textwidth]{component-symbols}
+%     \caption{Comparison of physical components and their schematic symbols.}
+%     \label{fig:component-symbols}
+%     % Prompt: A comparison of physical components and their schematic symbols.
+% \end{figure}
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{|c|c|c|c|}
         \hline
-        \textbf{Component} & \textbf{Schematic Symbol} \\
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[R] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[pR,scale=0.7] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[C] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[vC] (1,0);
+        \end{tikzpicture} \\[1ex]
+        Resistor & Variable Resistor & Capacitor & Variable Capacitor \\[3ex]
         \hline
-        Resistor & Zigzag line \\
-        Transistor & Lines and arrows \\
-        Battery & Long and short lines \\
-        Ground & Horizontal line with three downward lines \\
-        Capacitor & Two parallel lines \\
-        Inductor & Series of loops \\
-        LED & Triangle with a line and arrow \\
-        Variable Resistor & Zigzag line with an arrow \\
-        Transformer & Two coils with a line \\
-        Antenna & Line with a triangle \\
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[L] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[vL] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) node[transformer core,scale=0.7]{};
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline=-1.5ex]
+            \draw (0,-1) node[antenna,scale=0.7] {};
+        \end{tikzpicture} \\[1ex]
+        Inductor & Variable Inductor & Transformer & Antenna \\[3ex]
+        \hline
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[D,scale=0.7] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[led,scale=0.7] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[zD,scale=0.7] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[bulb] (1,0);
+        \end{tikzpicture} \\[1ex]
+        Diode & LED & Zener Diode & Bulb \\[3ex]
+        \hline
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) node[npn,scale=0.7] (npn) {};
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) node[pnp,scale=0.7] (pnp) {};
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) to[battery1] (1,0);
+        \end{tikzpicture} &
+        \begin{tikzpicture}[baseline]
+            \draw (0,0) node[ground] {};
+        \end{tikzpicture} \\[1ex]
+        Transistor (NPN) & Transistor (PNP) & Battery & Ground \\[3ex]
         \hline
     \end{tabular}
     \caption{Common electronic components and their schematic symbols.}

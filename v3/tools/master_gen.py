@@ -39,6 +39,8 @@ latex_content = r"""\documentclass[12pt]{book}
 \usepackage{wrapfig}
 \usepackage{svg}
 \usepackage{draftwatermark}
+\usepackage{circuitikz}
+\usepackage{caption}
 \SetWatermarkText{Draft}
 \SetWatermarkScale{4}
 \SetWatermarkLightness{0.9}
@@ -123,11 +125,11 @@ for part in toc['parts']:
                 subsection_id = subsection['label'].split(':')[1]
                 latex_file = f'{args.license}/contents/{part_id}/{chapter_id}/{section_id}/{subsection_id}'
                 latex_file_path = latex_file + '.tex'
-                print(latex_file_path)
+                # print(latex_file_path)
                 if os.path.exists(latex_file_path):
                     latex_content += f"\\input{{{latex_file}}}\n"
                 else:
-                    print(f"Subsection {subsection_id} not found in {latex_file}")
+                    print(f"Subsection {subsection_id} not found in {latex_file_path}")
 
 latex_content += r"\end{document}"
 
