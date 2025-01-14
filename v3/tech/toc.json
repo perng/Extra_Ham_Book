@@ -574,7 +574,7 @@
                   ]
                 },
                 {
-                  "title": "Transformers, Indicators, etc.",
+                  "title": "Resonant Circuits and Integrated Circuits",
                   "label": "subsec:transformers-ind",
                   "questions": [
                     "T6D08",
@@ -604,11 +604,6 @@
                 {
                   "title": "Definitions and Effects",
                   "label": "subsec:ac-basics2",
-                  "questions": []
-                },
-                {
-                  "title": "Frequency & Wavelength Calculations",
-                  "label": "subsec:freq-wavelength",
                   "questions": [
                     "T3B01",
                     "T3B02",

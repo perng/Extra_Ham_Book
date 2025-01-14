@@ -12,12 +12,17 @@
 \usepackage{epstopdf} % For converting EPS to PDF
 \usepackage{pgfplots}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{svg}
 \usepackage{draftwatermark}
 \usepackage{circuitikz}
 \usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
 \SetWatermarkText{Draft}
 \SetWatermarkScale{4}
 \SetWatermarkLightness{0.9}
@@ -76,183 +81,182 @@
 
 \tableofcontents
 \newpage
-% \part{Introduction to Amateur Radio}
-% \chapter{Welcome to Amateur Radio}
-% \section{What is Amateur Radio?}
-% \input{tech/contents/intro/welcome/what-is-radio/purpose-advancement}
-% \input{tech/contents/intro/welcome/what-is-radio/fcc-definitions}
-% \section{Why Get Licensed?}
-% \input{tech/contents/intro/welcome/why-licensed/why-ham}
-% \chapter{License Structure and Privileges}
-% \section{FCC and the Amateur Service}
-% \input{tech/contents/intro/licenses/fcc-oversight/license-classes}
-% \section{Getting Your License}
-% \input{tech/contents/intro/licenses/getting-license/obtain-renew}
-% \input{tech/contents/intro/licenses/getting-license/call-signs}
-% \input{tech/contents/intro/licenses/getting-license/maint-contact}
-% \input{tech/contents/intro/licenses/getting-license/operating-location}
-% \chapter{Minimal Electrical Foundations for Radio Operators}
-% \section{Frequency and Power}
-% \input{tech/contents/intro/minimal-electrical-fundamentals/freq-power/minimal-freq-power-defs}
-% \section{Units and Conversions}
-% \input{tech/contents/intro/minimal-electrical-fundamentals/minimal-basic-units-conversions/minimal-metric}
-% \part{FCC Rules and Station Operation}
-% \chapter{FCC Rules and Regulations}
-% \section{Regulatory Framework}
-% \input{tech/contents/fcc-rules/fcc-regs/regulatory-framework/reg-basis}
-% \section{Authorized vs. Prohibited Communications}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/intl-third-party}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/prohibited-content}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/biz-broadcast-music}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/coded-news}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/intf-permitted}
-% \input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/operating-no-id}
-% \section{Station Identification and Control Operators}
-% \input{tech/contents/fcc-rules/fcc-regs/station-id-operators/id-requirements}
-% \input{tech/contents/fcc-rules/fcc-regs/station-id-operators/control-ops}
-% \section{Enforcement, Inspections, and Penalties}
-% \input{tech/contents/fcc-rules/fcc-regs/enforce-inspect/inspections}
-% \input{tech/contents/fcc-rules/fcc-regs/enforce-inspect/penalties}
-% \chapter{Operating Rules and Procedures}
-% \section{Operating Etiquette and Procedures}
-% \input{tech/contents/fcc-rules/operating-rules/etiquette-procedures/basics-calling}
-% \section{Repeater Operation}
-% \input{tech/contents/fcc-rules/operating-rules/repeater/repeater-basics}
-% \part{Basic Electrical Principles and Components}
-% \chapter{Basic Electrical Foundations for Radio Operators}
-% \section{Voltage, Current, Resistance}
-% \input{tech/contents/electrical/electrical-fundamentals/volt-current-resist/core-defs}
-% \section{Units and Conversions}
-% \input{tech/contents/electrical/electrical-fundamentals/units-conversions/metric}
-% \chapter{Impedance and Circuit Concepts}
-% \section{Ohm's Law}
-% \input{tech/contents/electrical/impedance-circuits/ohms-law/ohms-law}
-% \section{Capacitance, Inductance, and Impedance}
-% \input{tech/contents/electrical/impedance-circuits/cap-ind-imp/capacitors}
-% \input{tech/contents/electrical/impedance-circuits/cap-ind-imp/inductors}
-% \input{tech/contents/electrical/impedance-circuits/cap-ind-imp/imp-react}
-% \input{tech/contents/electrical/impedance-circuits/cap-ind-imp/calc-power}
+\part{Introduction to Amateur Radio}
+\chapter{Welcome to Amateur Radio}
+\section{What is Amateur Radio?}
+\input{tech/contents/intro/welcome/what-is-radio/purpose-advancement}
+\input{tech/contents/intro/welcome/what-is-radio/fcc-definitions}
+\section{Why Get Licensed?}
+\input{tech/contents/intro/welcome/why-licensed/why-ham}
+\chapter{License Structure and Privileges}
+\section{FCC and the Amateur Service}
+\input{tech/contents/intro/licenses/fcc-oversight/license-classes}
+\section{Getting Your License}
+\input{tech/contents/intro/licenses/getting-license/obtain-renew}
+\input{tech/contents/intro/licenses/getting-license/call-signs}
+\input{tech/contents/intro/licenses/getting-license/maint-contact}
+\input{tech/contents/intro/licenses/getting-license/operating-location}
+\chapter{Basic Electrical Terminology for Radio Operators}
+\section{Frequency and Power}
+\input{tech/contents/intro/minimal-electrical-fundamentals/freq-power/minimal-freq-power-defs}
+\section{Units and Conversions}
+\input{tech/contents/intro/minimal-electrical-fundamentals/minimal-basic-units-conversions/minimal-metric}
+\part{FCC Rules and Station Operation}
+\chapter{FCC Rules and Regulations}
+\section{Regulatory Framework}
+\input{tech/contents/fcc-rules/fcc-regs/regulatory-framework/reg-basis}
+\section{Authorized vs. Prohibited Communications}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/intl-third-party}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/prohibited-content}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/biz-broadcast-music}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/coded-news}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/intf-permitted}
+\input{tech/contents/fcc-rules/fcc-regs/auth-vs-prohib/operating-no-id}
+\section{Station Identification and Control Operators}
+\input{tech/contents/fcc-rules/fcc-regs/station-id-operators/id-requirements}
+\input{tech/contents/fcc-rules/fcc-regs/station-id-operators/control-ops}
+\section{Enforcement, Inspections, and Penalties}
+\input{tech/contents/fcc-rules/fcc-regs/enforce-inspect/inspections}
+\input{tech/contents/fcc-rules/fcc-regs/enforce-inspect/penalties}
+\chapter{Operating Rules and Procedures}
+\section{Operating Etiquette and Procedures}
+\input{tech/contents/fcc-rules/operating-rules/etiquette-procedures/basics-calling}
+\section{Repeater Operation}
+\input{tech/contents/fcc-rules/operating-rules/repeater/repeater-basics}
+\part{Basic Electrical Principles and Components}
+\chapter{Basic Electrical Foundations for Radio Operators}
+\section{Voltage, Current, Resistance}
+\input{tech/contents/electrical/electrical-fundamentals/volt-current-resist/core-defs}
+\section{Units and Conversions}
+\input{tech/contents/electrical/electrical-fundamentals/units-conversions/metric}
+\chapter{Impedance and Circuit Concepts}
+\section{Ohm's Law}
+\input{tech/contents/electrical/impedance-circuits/ohms-law/ohms-law}
+\section{Capacitance, Inductance, and Impedance}
+\input{tech/contents/electrical/impedance-circuits/cap-ind-imp/capacitors}
+\input{tech/contents/electrical/impedance-circuits/cap-ind-imp/inductors}
+\input{tech/contents/electrical/impedance-circuits/cap-ind-imp/imp-react}
+\input{tech/contents/electrical/impedance-circuits/cap-ind-imp/calc-power}
 \chapter{Electronic and Electrical Components}
-% \section{Resistors, Capacitors, Inductors}
-% \input{tech/contents/electrical/electronic-components/passive-components/basics-passive}
+\section{Resistors, Capacitors, Inductors}
+\input{tech/contents/electrical/electronic-components/passive-components/basics-passive}
 \section{Diodes, Transistors, and Semiconductors}
-% \input{tech/contents/electrical/electronic-components/semiconductors/diodes}
+\input{tech/contents/electrical/electronic-components/semiconductors/diodes}
 \input{tech/contents/electrical/electronic-components/semiconductors/transistors}
 \section{Circuit Symbols and Schematics}
 \input{tech/contents/electrical/electronic-components/schematics/schem-reading}
-% \section{Integrated Circuits, Filters, Rectifiers}
-% \input{tech/contents/electrical/electronic-components/ic-filters/rect-reg}
-% \input{tech/contents/electrical/electronic-components/ic-filters/transformers-ind}
-% \part{Practical Circuits and Station Equipment}
-% \chapter{Transceivers, Receivers, and Transmitters}
-% \section{Frequency, Wavelength}
-% \input{tech/contents/practical-circuits/transceivers/ac-dc-freq/ac-basics2}
-% \input{tech/contents/practical-circuits/transceivers/ac-dc-freq/freq-wavelength}
-% \input{tech/contents/practical-circuits/transceivers/ac-dc-freq/rf-abbrev}
-% \section{Decibels}
-% \input{tech/contents/practical-circuits/transceivers/power-decibels/power-db}
-% \section{Fundamentals of Radios}
-% \input{tech/contents/practical-circuits/transceivers/radio-fundamentals/rx-sense-select}
-% \input{tech/contents/practical-circuits/transceivers/radio-fundamentals/mixer-osc}
-% \input{tech/contents/practical-circuits/transceivers/radio-fundamentals/transverter-ptt}
-% \section{RF Power Amplifiers and Preamps}
-% \input{tech/contents/practical-circuits/transceivers/rf-amps/amp-basics}
-% \chapter{Power Supplies, Cables, and Station Setup}
-% \section{Power Supplies}
-% \input{tech/contents/practical-circuits/power-cables/power-supplies/psu-choice}
-% \section{Radio/Audio Controls}
-% \input{tech/contents/practical-circuits/power-cables/radio-audio-ctrls/mic-squelch}
-% \chapter{Meters, Test Equipment, Troubleshooting and Interference}
-% \section{Preventing Distortion and Overload}
-% \input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/over-dev}
-% \input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/rfi-filters}
-% \input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/interference}
-% \section{Dummy Loads, SWR Meters, Antenna Analyzers}
-% \input{tech/contents/practical-circuits/troubleshooting/dummy-swr/proper-use}
-% \section{SWR, Transmission Line Loss, etc.}
-% \input{tech/contents/practical-circuits/troubleshooting/swr-line-loss/measuring-swr}
-% \input{tech/contents/practical-circuits/troubleshooting/swr-line-loss/coax-fail}
-% \section{Multimeters and Soldering}
-% \input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/voltage-current}
-% \input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/multimeter-damage}
-% \input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/soldering}
-% \input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/resistance-testing}
-% \part{Antennas, Feed Lines, and Propagation}
-% \chapter{Antenna Fundamentals}
-% \section{Dipoles, Verticals, Beams}
-% \input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/dipole}
-% \input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/verticals}
-% \input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/beam-yagi}
-% \input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/mobile}
-% \chapter{Radio Wave Propagation}
-% \section{VHF/UHF}
-% \input{tech/contents/antennas-prop/propagation/vhf-uhf/los-multipath}
-% \section{HF Propagation and Beyond}
-% \input{tech/contents/antennas-prop/propagation/hf-prop/ionosphere}
-% \chapter{Feed Lines and SWR}
-% \section{Coax, Ladder Line, Connectors}
-% \input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/coax-imp}
-% \input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/connectors}
-% \input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/install-maint}
-% \input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/standing-wave}
-% \part{Signals, Emissions, and Digital Modes}
-% \chapter{Modulation Modes (AM, FM, SSB, CW)}
-% \section{Amplitude and Frequency Modulation}
-% \input{tech/contents/signals/modulation/am-fm/am-ssb}
-% \input{tech/contents/signals/modulation/am-fm/fm}
-% \input{tech/contents/signals/modulation/am-fm/cw}
-% \input{tech/contents/signals/modulation/am-fm/bandwidth}
-% \chapter{Satellite Operations}
-% \section{Working Amateur Satellites}
-% \input{tech/contents/signals/satellite-ops/amateur-sats/sat-telemetry-beacons}
-% \input{tech/contents/signals/satellite-ops/amateur-sats/sat-tracking}
-% \input{tech/contents/signals/satellite-ops/amateur-sats/sat-modes}
-% \chapter{Digital Modes and Networking}
-% \section{Packet, APRS, DMR, etc.}
-% \input{tech/contents/signals/digital/packet-aprs-dmr/packet-basics}
-% \input{tech/contents/signals/digital/packet-aprs-dmr/aprs2}
-% \input{tech/contents/signals/digital/packet-aprs-dmr/dmr-talkgroups2}
-% \input{tech/contents/signals/digital/packet-aprs-dmr/mesh}
-% \input{tech/contents/signals/digital/packet-aprs-dmr/ft8-weak}
-% \section{PSK, ARQ, and Other Error Correction}
-% \input{tech/contents/signals/digital/psk-arq/psk-digital}
-% \input{tech/contents/signals/digital/psk-arq/arq-systems}
-% \chapter{EchoLink, IRLP, and VoIP}
-% \section{Internet Linking Concepts}
-% \input{tech/contents/signals/internet-linking/internet-link/irlp}
-% \input{tech/contents/signals/internet-linking/internet-link/echolink}
-% \input{tech/contents/signals/internet-linking/internet-link/voip}
-% \part{Safety: Electrical, RF, and Tower}
-% \chapter{Electrical and RF Safety}
-% \section{Electrical Hazards and Safe Wiring}
-% \input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/shock-fuses}
-% \input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/ground-safety}
-% \input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/lightning-cap}
-% \section{RF Exposure}
-% \input{tech/contents/safety/electrical-rf-safety/rf-exposure-final/non-ionizing}
-% \chapter{Antenna and Tower Safety}
-% \section{Installing and Maintaining Towers}
-% \input{tech/contents/safety/tower-safety2/install-maint-tower/climb-safety2}
-% \part{Operating Procedures (Expanded)}
-% \chapter{Contacting Other Stations and Nets}
-% \section{Simplex vs. Duplex, Calling CQ}
-% \input{tech/contents/operating-procedures/contacting-stations/call-cq-simplex/offsets-national}
-% \section{Radio Operating Essentials}
-% \input{tech/contents/operating-procedures/contacting-stations/radio-essentials2/repeater-use}
-% \input{tech/contents/operating-procedures/contacting-stations/radio-essentials2/nets-traffic}
-% \chapter{Contesting, Direction Finding, Emergency Ops}
-% \section{Contesting Basics}
-% \input{tech/contents/operating-procedures/advanced-ops/contesting-basics/contest-exchanges}
-% \section{Direction Finding (Foxhunting)}
-% \input{tech/contents/operating-procedures/advanced-ops/direction-finding/locating-noise}
-% \section{Emergency Operations (ARES, RACES)}
-% \input{tech/contents/operating-procedures/advanced-ops/emergency-ops2/emerg-ops}
-% \part{Practice Exams and Appendix}
-% \chapter{Practice Exams}
-% \section{Sample Exams}
-% \input{tech/contents/practice-appendix/practice-exams/sample-exams/practice-pools}
-% \chapter{Appendix}
-% \section{Reference Materials}
-% \input{tech/contents/practice-appendix/appendices/references/glossary-band-q}
-% \input{tech/contents/practice-appendix/appendices/references/phonetic-formulas}
+\section{Integrated Circuits, Filters, Rectifiers}
+\input{tech/contents/electrical/electronic-components/ic-filters/rect-reg}
+\input{tech/contents/electrical/electronic-components/ic-filters/transformers-ind}
+\part{Practical Circuits and Station Equipment}
+\chapter{Transceivers, Receivers, and Transmitters}
+\section{Frequency, Wavelength}
+\input{tech/contents/practical-circuits/transceivers/ac-dc-freq/ac-basics2}
+\input{tech/contents/practical-circuits/transceivers/ac-dc-freq/rf-abbrev}
+\section{Decibels}
+\input{tech/contents/practical-circuits/transceivers/power-decibels/power-db}
+\section{Fundamentals of Radios}
+\input{tech/contents/practical-circuits/transceivers/radio-fundamentals/rx-sense-select}
+\input{tech/contents/practical-circuits/transceivers/radio-fundamentals/mixer-osc}
+\input{tech/contents/practical-circuits/transceivers/radio-fundamentals/transverter-ptt}
+\section{RF Power Amplifiers and Preamps}
+\input{tech/contents/practical-circuits/transceivers/rf-amps/amp-basics}
+\chapter{Power Supplies, Cables, and Station Setup}
+\section{Power Supplies}
+\input{tech/contents/practical-circuits/power-cables/power-supplies/psu-choice}
+\section{Radio/Audio Controls}
+\input{tech/contents/practical-circuits/power-cables/radio-audio-ctrls/mic-squelch}
+\chapter{Meters, Test Equipment, Troubleshooting and Interference}
+\section{Preventing Distortion and Overload}
+\input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/over-dev}
+\input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/rfi-filters}
+\input{tech/contents/practical-circuits/troubleshooting/prevent-distortion/interference}
+\section{Dummy Loads, SWR Meters, Antenna Analyzers}
+\input{tech/contents/practical-circuits/troubleshooting/dummy-swr/proper-use}
+\section{SWR, Transmission Line Loss, etc.}
+\input{tech/contents/practical-circuits/troubleshooting/swr-line-loss/measuring-swr}
+\input{tech/contents/practical-circuits/troubleshooting/swr-line-loss/coax-fail}
+\section{Multimeters and Soldering}
+\input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/voltage-current}
+\input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/multimeter-damage}
+\input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/soldering}
+\input{tech/contents/practical-circuits/troubleshooting/multimeters-soldering/resistance-testing}
+\part{Antennas, Feed Lines, and Propagation}
+\chapter{Antenna Fundamentals}
+\section{Dipoles, Verticals, Beams}
+\input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/dipole}
+\input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/verticals}
+\input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/beam-yagi}
+\input{tech/contents/antennas-prop/antennas/dipoles-verticals-beams/mobile}
+\chapter{Radio Wave Propagation}
+\section{VHF/UHF}
+\input{tech/contents/antennas-prop/propagation/vhf-uhf/los-multipath}
+\section{HF Propagation and Beyond}
+\input{tech/contents/antennas-prop/propagation/hf-prop/ionosphere}
+\chapter{Feed Lines and SWR}
+\section{Coax, Ladder Line, Connectors}
+\input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/coax-imp}
+\input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/connectors}
+\input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/install-maint}
+\input{tech/contents/antennas-prop/feedlines-swr/coax-ladder/standing-wave}
+\part{Signals, Emissions, and Digital Modes}
+\chapter{Modulation Modes (AM, FM, SSB, CW)}
+\section{Amplitude and Frequency Modulation}
+\input{tech/contents/signals/modulation/am-fm/am-ssb}
+\input{tech/contents/signals/modulation/am-fm/fm}
+\input{tech/contents/signals/modulation/am-fm/cw}
+\input{tech/contents/signals/modulation/am-fm/bandwidth}
+\chapter{Satellite Operations}
+\section{Working Amateur Satellites}
+\input{tech/contents/signals/satellite-ops/amateur-sats/sat-telemetry-beacons}
+\input{tech/contents/signals/satellite-ops/amateur-sats/sat-tracking}
+\input{tech/contents/signals/satellite-ops/amateur-sats/sat-modes}
+\chapter{Digital Modes and Networking}
+\section{Packet, APRS, DMR, etc.}
+\input{tech/contents/signals/digital/packet-aprs-dmr/packet-basics}
+\input{tech/contents/signals/digital/packet-aprs-dmr/aprs2}
+\input{tech/contents/signals/digital/packet-aprs-dmr/dmr-talkgroups2}
+\input{tech/contents/signals/digital/packet-aprs-dmr/mesh}
+\input{tech/contents/signals/digital/packet-aprs-dmr/ft8-weak}
+\section{PSK, ARQ, and Other Error Correction}
+\input{tech/contents/signals/digital/psk-arq/psk-digital}
+\input{tech/contents/signals/digital/psk-arq/arq-systems}
+\chapter{EchoLink, IRLP, and VoIP}
+\section{Internet Linking Concepts}
+\input{tech/contents/signals/internet-linking/internet-link/irlp}
+\input{tech/contents/signals/internet-linking/internet-link/echolink}
+\input{tech/contents/signals/internet-linking/internet-link/voip}
+\part{Safety: Electrical, RF, and Tower}
+\chapter{Electrical and RF Safety}
+\section{Electrical Hazards and Safe Wiring}
+\input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/shock-fuses}
+\input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/ground-safety}
+\input{tech/contents/safety/electrical-rf-safety/electrical-hazards-wiring/lightning-cap}
+\section{RF Exposure}
+\input{tech/contents/safety/electrical-rf-safety/rf-exposure-final/non-ionizing}
+\chapter{Antenna and Tower Safety}
+\section{Installing and Maintaining Towers}
+\input{tech/contents/safety/tower-safety2/install-maint-tower/climb-safety2}
+\part{Operating Procedures (Expanded)}
+\chapter{Contacting Other Stations and Nets}
+\section{Simplex vs. Duplex, Calling CQ}
+\input{tech/contents/operating-procedures/contacting-stations/call-cq-simplex/offsets-national}
+\section{Radio Operating Essentials}
+\input{tech/contents/operating-procedures/contacting-stations/radio-essentials2/repeater-use}
+\input{tech/contents/operating-procedures/contacting-stations/radio-essentials2/nets-traffic}
+\chapter{Contesting, Direction Finding, Emergency Ops}
+\section{Contesting Basics}
+\input{tech/contents/operating-procedures/advanced-ops/contesting-basics/contest-exchanges}
+\section{Direction Finding (Foxhunting)}
+\input{tech/contents/operating-procedures/advanced-ops/direction-finding/locating-noise}
+\section{Emergency Operations (ARES, RACES)}
+\input{tech/contents/operating-procedures/advanced-ops/emergency-ops2/emerg-ops}
+\part{Practice Exams and Appendix}
+\chapter{Practice Exams}
+\section{Sample Exams}
+\input{tech/contents/practice-appendix/practice-exams/sample-exams/practice-pools}
+\chapter{Appendix}
+\section{Reference Materials}
+\input{tech/contents/practice-appendix/appendices/references/glossary-band-q}
+\input{tech/contents/practice-appendix/appendices/references/phonetic-formulas}
 \end{document}

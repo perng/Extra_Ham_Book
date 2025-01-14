@@ -7,7 +7,26 @@ When it comes to setting up your radio station, choosing the right components is
 Selecting the correct power supply for your mobile FM transceiver is like choosing the right fuel for your car—get it wrong, and you're not going anywhere fast. The power supply must match the voltage and current requirements of your transceiver to ensure optimal performance. For a typical 50-watt output mobile FM transceiver, you'll need a power supply that can deliver 13.8 volts at 12 amperes. This ensures that your transceiver gets the juice it needs without overloading the power supply.
 
 \subsubsection*{SWR Meter Selection}
-An SWR meter is your best friend when it comes to tuning your antenna. But not all SWR meters are created equal. When selecting one, consider the frequency and power level at which you'll be making measurements. A meter that works great at low power might not cut it when you crank up the watts. Always check the specifications to ensure the meter can handle your station's requirements.
+SWR (Standing Wave Ratio) measures how well your antenna system matches your transmitter. Think of it like fitting pipes together—when they match perfectly, power flows smoothly (low SWR). When they don't match well, some power bounces back (high SWR), potentially damaging your transmitter. An SWR meter is your best friend when it comes to tuning your antenna. But not all SWR meters are created equal. When selecting one, consider the frequency and power level at which you'll be making measurements. A meter that works great at low power might not cut it when you crank up the watts. Always check the specifications to ensure the meter can handle your station's requirements.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{tech/images/swr_meter.jpg}
+        \caption{SWR Meter showing forward and reflected power measurements}
+        \label{fig:swr-meter}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{tech/images/keyer.jpg}
+        \caption{Electronic Keyer for automated Morse code timing}
+        \label{fig:electronic-keyer}
+    \end{subfigure}
+    \caption{Common amateur radio station equipment: (a) SWR Meter for antenna system measurements and (b) Electronic Keyer for CW operation}
+    \label{fig:station-equipment}
+\end{figure}
 
 \subsubsection*{DC Power Connection Wires}
 Ever wonder why those wires connecting your transceiver to the power supply are so short and thick? It's all about minimizing voltage drop. When you're transmitting, your transceiver draws a lot of current, and if the wires are too long or too thin, you'll lose voltage along the way. Short, heavy-gauge wires ensure that your transceiver gets the full voltage it needs, keeping your signal strong and clear.
@@ -39,29 +58,6 @@ Proper grounding is essential for a mobile transceiver. The negative power retur
 \subsubsection*{Electronic Keyer}
 An electronic keyer is a handy tool for Morse code enthusiasts. It assists in manual sending by automating the timing of dots and dashes, making your code more consistent and easier to read. It's a must-have for anyone serious about CW operation.
 
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{power-supply-relationship.svg}
-    \caption{Power Supply Voltage and Current Relationship}
-    \label{fig:power-supply-relationship}
-    % Diagram showing the relationship between voltage, current, and power in a mobile FM transceiver power supply.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{rf-power-meter-installation.svg}
-    \caption{RF Power Meter Installation}
-    \label{fig:rf-power-meter-installation}
-    % Illustration of a station setup with an RF power meter installed in the feed line between the transmitter and antenna.
-\end{figure}
-
-\begin{figure}[h!]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{computer-radio-interface.svg}
-    \caption{Computer-Radio Interface for Digital Modes}
-    \label{fig:computer-radio-interface}
-    % Diagram of a computer-radio interface for digital mode operation, showing audio and keying signal connections.
-\end{figure}
 
 \begin{table}[h!]
     \centering
@@ -94,6 +90,8 @@ An electronic keyer is a handy tool for Morse code enthusiasts. It assists in ma
     \caption{Battery Runtime Calculation}
     \label{tab:battery-runtime-calculation}
 \end{table}
+
+
 
 \subsubsection*{Questions}
 

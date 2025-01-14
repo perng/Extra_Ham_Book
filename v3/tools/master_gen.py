@@ -35,12 +35,17 @@ latex_content = r"""\documentclass[12pt]{book}
 \usepackage{epstopdf} % For converting EPS to PDF
 \usepackage{pgfplots}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{svg}
 \usepackage{draftwatermark}
 \usepackage{circuitikz}
 \usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
 \SetWatermarkText{Draft}
 \SetWatermarkScale{4}
 \SetWatermarkLightness{0.9}
