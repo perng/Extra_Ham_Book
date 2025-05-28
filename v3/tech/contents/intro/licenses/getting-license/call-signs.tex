@@ -26,7 +26,71 @@ The length of the suffix can indicate license class:
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{tech/images/call-sign-structure.png}
+    % \includegraphics[width=0.8\textwidth]{images/call-sign-structure.png}
+    \scalebox{0.8}{
+        \begin{tikzpicture}[
+            every node/.style={font=\small},
+            box/.style={
+                draw=black,
+                thick,
+                minimum width=2cm,
+                minimum height=1cm,
+                align=center
+            },
+            myprefix/.style={box, fill=blue!20},  % Changed from prefix to myprefix
+            myregion/.style={box, fill=green!20}, % Changed from region to myregion
+            mysuffix/.style={box, fill=orange!30}, % Changed from suffix to mysuffix
+            legendbox/.style={
+                draw=black,
+                thick,
+                minimum width=1cm,
+                minimum height=1cm
+            }
+        ]
+        
+        % Background
+        \fill[gray!10] (-1,0) rectangle (17,8);
+        
+        % Regular Call Sign
+        \node[font=\large] at (2,7.5) {Regular Call Sign Format};
+        
+        % Prefix box
+        \node[myprefix] (reg_prefix) at (2,6) {Prefix}; % Changed prefix to myprefix
+        % Region box
+        \node[myregion, right=0pt of reg_prefix] (reg_region) {Region}; % Changed region to myregion
+        % Suffix box
+        \node[mysuffix, right=0pt of reg_region, minimum width=3cm] (reg_suffix) {Suffix}; % Changed suffix to mysuffix
+        
+        % Example Regular Call Sign
+        \node at (2,4.5) {Example: K1ABC};
+        
+        % Vanity Call Sign
+        \node[font=\large] at (2,3.5) {Vanity Call Sign Format};
+        
+        % Prefix box
+        \node[myprefix] (van_prefix) at (2,2) {Prefix};
+        % Region box
+        \node[myregion, right=0pt of van_prefix] (van_region) {Region};
+        % Suffix box
+        \node[mysuffix, right=0pt of van_region, minimum width=5cm] (van_suffix) {Custom Suffix};
+        
+        % Example Vanity Call Sign
+        \node at (2,0.5) {Example: W1XYZ};
+        
+        % Legend
+        \node[font=\large] at (10,7.5) {Legend};
+        
+        \node[myprefix, legendbox] at (10,6.5) {};
+        \node[anchor=west] at (10.5,6.5) {Prefix: Indicates country or region};
+        
+        \node[myregion, legendbox] at (10,5.5) {};
+        \node[anchor=west] at (10.5,5.5) {Region: Designates license area};
+        
+        \node[mysuffix, legendbox] at (10,4.5) {};
+        \node[anchor=west] at (10.5,4.5) {Suffix: Assigned or custom identifier};
+        
+        \end{tikzpicture}
+    }
     \caption{Structure of an Amateur Radio Call Sign}
     \label{fig:call-sign-structure}
     % Diagram showing the structure of a typical amateur radio call sign.
@@ -47,7 +111,7 @@ The length of the suffix can indicate license class:
     \label{tab:call-sign-formats}
 \end{table}
 
-\subsubsection*{Questions}
+\subsubsection{Questions}
 
 \begin{tcolorbox}[colback=gray!10!white,colframe=black!75!black,title={T1C02}]
     Who may select a desired call sign under the vanity call sign rules?
